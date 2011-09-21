@@ -1,0 +1,4 @@
+*>=sys-devel/binutils-2.13.90.0.4
+
+*sys-devel/libtool
+*virtual/dev-manager 

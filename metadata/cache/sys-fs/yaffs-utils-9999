@@ -1,0 +1,22 @@
+>=dev-vcs/git-1.6
+
+0
+
+
+http://www.aleph1.co.uk/yaffs/
+GPL-2
+tools for generating YAFFS images
+
+eutils git multilib portability toolchain-funcs
+
+
+
+
+2
+
+install prepare unpack
+
+
+
+
+
