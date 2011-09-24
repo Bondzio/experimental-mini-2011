@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.18 2011/09/20 16:01:14 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r1.ebuild,v 1.23 2011/09/23 14:44:42 scarabeus Exp $
 
 EAPI=3
 
@@ -98,9 +98,8 @@ unset ADDONS_URI
 unset EXT_URI
 unset ADDONS_SRC
 
-IUSE="binfilter +branding custom-cflags dbus debug eds gnome graphite
-gstreamer gtk jemalloc kde ldap mysql nsplugin odk opengl svg templates test
-+vba webdav"
+IUSE="binfilter +branding dbus debug eds gnome +graphite gstreamer gtk +jemalloc
+kde ldap mysql nsplugin odk opengl svg templates test +vba webdav"
 LICENSE="LGPL-3"
 SLOT="0"
 [[ ${PV} == *9999* ]] || KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
@@ -135,7 +134,6 @@ COMMON_DEPEND="
 	media-libs/freetype:2
 	>=media-libs/libpng-1.4
 	media-libs/libvisio
-	>=media-libs/vigra-1.7
 	net-print/cups
 	sci-mathematics/lpsolve
 	>=sys-libs/db-4.8
@@ -176,6 +174,8 @@ RDEPEND="${COMMON_DEPEND}
 	!app-office/libreoffice-bin
 	!app-office/openoffice-bin
 	!app-office/openoffice
+	media-fonts/libertine-ttf
+	media-fonts/liberation-fonts
 	java? ( >=virtual/jre-1.6 )
 "
 
@@ -184,15 +184,20 @@ PDEPEND="
 	>=app-office/libreoffice-l10n-3.4
 "
 
+# FIXME: cppunit should be moved to test conditional
+#        after everything upstream is under gbuild
+#        as dmake execute tests right away
 DEPEND="${COMMON_DEPEND}
 	>=dev-libs/boost-1.46
 	>=dev-libs/libxml2-2.7.8
 	dev-libs/libxslt
 	dev-perl/Archive-Zip
+	dev-util/cppunit
 	>=dev-util/gperf-3
 	dev-util/intltool
 	dev-util/mdds
 	>=dev-util/pkgconfig-0.26
+	>=media-libs/vigra-1.7
 	>=net-misc/curl-7.21.7
 	>=sys-apps/findutils-4.5.9
 	sys-devel/bison
@@ -215,7 +220,6 @@ DEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-3.3.1-neon_remove_SSPI_support.diff"
-	"${FILESDIR}/${PN}-kill-cppunit.patch"
 )
 
 # Uncoment me when updating to eapi4
@@ -224,9 +228,6 @@ PATCHES=(
 #	gnome? ( gtk )
 #	nsplugin? ( gtk )
 #"
-
-# Needs lots and lots of work and compiling
-RESTRICT="test"
 
 S="${WORKDIR}/${PN}-core-${PV}"
 
@@ -240,15 +241,6 @@ pkg_setup() {
 	if [[ $(gcc-major-version) -lt 4 ]]; then
 		eerror "Compilation with gcc older than 4.0 is not supported"
 		die "Too old gcc found."
-	fi
-
-	if use custom-cflags; then
-		ewarn "You are using custom CFLAGS, which is NOT supported and can cause"
-		ewarn "all sorts of build and runtime errors."
-		ewarn
-		ewarn "Before reporting a bug, please make sure you rebuild and try with"
-		ewarn "basic CFLAGS, otherwise the bug will not be accepted."
-		ewarn
 	fi
 
 	if ! use gtk; then
@@ -317,13 +309,7 @@ src_unpack() {
 src_prepare() {
 	# optimization flags
 	export ARCH_FLAGS="${CXXFLAGS}"
-	use debug || export LINKFLAGSOPTIMIZE="${LDFLAGS}"
-
-	# compiler flags
-	use custom-cflags || strip-flags
-	use debug || filter-flags "-g*"
-	# silent miscompiles; LO/OOo adds -O2/1/0 where appropriate
-	filter-flags "-O*"
+	export LINKFLAGSOPTIMIZE="${LDFLAGS}"
 
 	base_src_prepare
 	eautoreconf
@@ -344,13 +330,9 @@ src_configure() {
 	use gnome && themes+=" tango"
 	use kde && themes+=" oxygen"
 
-	# dmake: not worth of splitting out
-	# cppunit: patched not to run anything, just main() { return 0; }
-	#          workaround to upstream running the tests during build
 	# sane: just sane.h header that is used for scan in writer, not
 	#       linked or anything else, worthless to depend on
 	internal_libs+="
-		--without-system-cppunit
 		--without-system-sane
 	"
 
@@ -408,7 +390,6 @@ src_configure() {
 		--with-system-db \
 		--with-system-dicts \
 		--with-system-libvisio \
-		--with-system-libtextcat --with-external-libtextcat-data \
 		--with-system-translate-toolkit \
 		--enable-cairo-canvas \
 		--enable-largefile \
@@ -489,6 +470,10 @@ src_compile() {
 	make build || die
 }
 
+src_test() {
+	make check || die
+}
+
 src_install() {
 	# This is not Makefile so no buildserver
 	make DESTDIR="${D}" distro-pack-install -o build || die
@@ -496,9 +481,6 @@ src_install() {
 	# Fix bash completion placement
 	newbashcomp "${ED}"/etc/bash_completion.d/libreoffice.sh ${PN} || die
 	rm -rf "${ED}"/etc/
-
-	# hack fix the gdb printers upstream!
-	rm -rf "${ED}"/var/
 
 	# symlink the plugin to system location
 	if use nsplugin; then

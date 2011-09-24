@@ -1,15 +1,13 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-9999.ebuild,v 1.147 2011/09/08 18:57:26 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/vlc-9999.ebuild,v 1.149 2011/09/22 15:29:42 aballier Exp $
 
 EAPI="4"
 
 SCM=""
 if [ "${PV%9999}" != "${PV}" ] ; then
-	SCM=git
+	SCM=git-2
 	EGIT_BOOTSTRAP="bootstrap"
-	EGIT_BRANCH=master
-	EGIT_PROJECT=${P}
 	if [ "${PV%.9999}" != "${PV}" ] ; then
 		EGIT_REPO_URI="git://git.videolan.org/vlc/vlc-${PV%.9999}.git"
 	else
@@ -60,7 +58,7 @@ IUSE="a52 aac aalib alsa altivec atmo +audioqueue avahi +avcodec
 	win32codecs wingdi wma-fixed +X x264 +xcb xml xosd xv zvbi"
 
 RDEPEND="
-		sys-libs/zlib
+		>=sys-libs/zlib-1.2.5.1-r2[minizip]
 		a52? ( >=media-libs/a52dec-0.7.4-r3 )
 		aalib? ( media-libs/aalib )
 		aac? ( >=media-libs/faad2-2.6.1 )
@@ -181,14 +179,11 @@ S="${WORKDIR}/${MY_P}"
 src_unpack() {
 	unpack ${A}
 	if [ "${PV%9999}" != "${PV}" ] ; then
-		git_src_unpack
+		git-2_src_unpack
 	fi
 }
 
 src_prepare() {
-	if [ "${PV%9999}" != "${PV}" ] ; then
-		git_src_prepare
-	fi
 	# Make it build with libtool 1.5
 	rm -f m4/lt* m4/libtool.m4
 
