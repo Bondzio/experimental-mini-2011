@@ -31,6 +31,7 @@ PRELIBS="libs/obsdcompat"
 
 src_prepare() {
 	S="${S}/build-aux" elibtoolize --shallow
+	epatch ${FILESDIR}/${P}-poppler018.patch
 }
 
 src_configure() {

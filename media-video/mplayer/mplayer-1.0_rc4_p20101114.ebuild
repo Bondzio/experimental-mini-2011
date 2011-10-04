@@ -241,6 +241,7 @@ src_unpack() {
 }
 
 src_prepare() {
+	epatch "$FILESDIR"/high_pitch_gcc46.patch
 	if [[ ${PV} = *9999* ]]; then
 		# Set SVN version manually
 		subversion_wc_info

@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-1.0_rc4_p20110322.ebuild,v 1.5 2011/09/24 14:24:42 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-1.0_rc4_p20110322.ebuild,v 1.4 2011/07/15 06:15:32 mattst88 Exp $
 
 EAPI=4
 
@@ -196,7 +196,6 @@ fi
 REQUIRED_USE="bindist? ( !amr !faac !win32codecs )"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-gcc46.patch
 )
 
 pkg_setup() {
@@ -256,6 +255,7 @@ src_unpack() {
 }
 
 src_prepare() {
+	epatch "$FILESDIR"/high_pitch_gcc46.patch
 	if [[ ${PV} = *9999* ]]; then
 		# Set SVN version manually
 		subversion_wc_info
