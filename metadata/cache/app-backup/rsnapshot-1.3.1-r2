@@ -7,7 +7,7 @@ http://www.rsnapshot.org
 GPL-2
 A filesystem backup utility based on rsync
 *
-eutils multilib portability toolchain-funcs
+eutils multilib portability toolchain-funcs user
 
 
 

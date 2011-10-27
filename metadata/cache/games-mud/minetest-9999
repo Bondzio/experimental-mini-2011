@@ -7,7 +7,7 @@ http://celeron.55.lt/~celeron55/minetest/
 GPL-2
 An InfiniMiner/Minecraft inspired game.
 ~x86 ~amd64
-base cmake-utils eutils flag-o-matic games git multilib portability toolchain-funcs
+base cmake-utils eutils flag-o-matic games git multilib portability toolchain-funcs user
 +client nls +server
 
 

@@ -7,7 +7,7 @@ http://www.gnu.org/software/texinfo/
 GPL-3
 The GNU info program and utilities
 *
-eutils flag-o-matic multilib portability toolchain-funcs
+eutils flag-o-matic multilib portability toolchain-funcs user
 nls static
 
 

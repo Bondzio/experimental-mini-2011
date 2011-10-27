@@ -7,7 +7,7 @@ http://kerneltools.org/
 GPL-2
 tools for managing linux kernel modules
 *
-eutils flag-o-matic multilib portability toolchain-funcs
+eutils flag-o-matic multilib portability toolchain-funcs user
 static
 
 

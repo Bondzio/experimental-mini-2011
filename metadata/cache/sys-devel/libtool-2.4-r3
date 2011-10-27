@@ -7,7 +7,7 @@ http://www.gnu.org/software/libtool/
 GPL-2
 A shared library tool for developers
 *
-autotools eutils libtool multilib portability toolchain-funcs
+autotools eutils libtool multilib portability toolchain-funcs user
 vanilla
 
 

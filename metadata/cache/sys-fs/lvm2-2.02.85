@@ -7,7 +7,7 @@ http://sources.redhat.com/lvm2/
 GPL-2
 User-land utilities for LVM2 (device-mapper) software.
 *
-autotools eutils flag-o-matic libtool multilib portability toolchain-funcs
+autotools eutils flag-o-matic libtool multilib portability toolchain-funcs user
 rc_enable
 
 

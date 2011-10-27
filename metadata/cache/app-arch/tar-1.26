@@ -7,7 +7,7 @@ http://www.gnu.org/software/tar/
 GPL-3
 Use this to make tarballs :)
 *
-eutils flag-o-matic multilib portability toolchain-funcs
+eutils flag-o-matic multilib portability toolchain-funcs user
 nls static userland_GNU
 
 
