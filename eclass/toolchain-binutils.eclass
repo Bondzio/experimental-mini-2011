@@ -1,6 +1,6 @@
 # Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/toolchain-binutils.eclass,v 1.102 2011/10/28 07:58:38 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/toolchain-binutils.eclass,v 1.101 2011/09/19 14:34:58 vapier Exp $
 #
 # Maintainer: Toolchain Ninjas <toolchain@gentoo.org>
 #
@@ -56,11 +56,7 @@ case ${BTYPE} in
 	cvs)  SRC_URI="";;
 	snap) SRC_URI="ftp://gcc.gnu.org/pub/binutils/snapshots/binutils-${BVER}.tar.bz2";;
 	rel)
-		SRC_URI="mirror://kernel/linux/devel/binutils/binutils-${PV}.tar.bz2
-			mirror://kernel/linux/devel/binutils/test/binutils-${PV}.tar.bz2
-			mirror://gnu/binutils/binutils-${PV}.tar.bz2"
-		# disable kernel mirrors until kernel.org is back up #383579
-		SRC_URI="mirror://gnu/binutils/binutils-${PV}.tar.bz2"
+		SRC_URI="http://ftp.osuosl.org/pub/funtoo/distfiles/binutils-${BVER}.tar.bz2"
 esac
 add_src_uri() {
 	[[ -z $2 ]] && return
@@ -116,6 +112,7 @@ tc-binutils_apply_patches() {
 	cd "${S}"
 
 	if ! use vanilla ; then
+		EPATCH_EXCLUDE=
 		[[ ${SYMLINK_LIB} != "yes" ]] && EPATCH_EXCLUDE+=" 65_all_binutils-*-amd64-32bit-path.patch"
 		if [[ -n ${PATCHVER} ]] ; then
 			EPATCH_SOURCE=${WORKDIR}/patch
