@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+EAPI=3
+KEYWORDS=*
+RDEPEND=sys-apps/openrc sys-apps/baselayout
+SLOT=0
+_md5_=fc9efb385efe9a8f433edfa295b7ab22
