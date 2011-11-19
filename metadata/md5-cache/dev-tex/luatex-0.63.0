@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/zziplib media-libs/libpng >=app-text/poppler-0.12.3-r3[xpdf-headers] sys-libs/zlib virtual/tex-base
 SLOT=0
 SRC_URI=http://foundry.supelec.fr/gf/download/frsrelease/382/1568/luatex-beta-0.63.0.tar.bz2
-_eclasses_=libtool	76720aa53cbace6123aac554983eadfa	multilib	c4883399ddd3e1d2bd291607b30fded4	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
+_eclasses_=libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	c4883399ddd3e1d2bd291607b30fded4	toolchain-funcs	39892b66d54a54fdd2b28731b975d8bf
 _md5_=4f9a351c30b6cf538c3f779b6e3fbaa6
