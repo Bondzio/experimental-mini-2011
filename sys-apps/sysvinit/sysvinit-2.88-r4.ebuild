@@ -14,7 +14,8 @@ KEYWORDS="*"
 IUSE="selinux ibm static kernel_FreeBSD"
 
 RDEPEND="selinux? ( >=sys-libs/libselinux-1.28 )"
-DEPEND="${RDEPEND} virtual/os-headers"
+DEPEND="${RDEPEND}
+	virtual/os-headers"
 
 S=${WORKDIR}/${P}dsf
 
