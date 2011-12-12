@@ -38,7 +38,7 @@ SLOT="0"
 KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd"
 
 INTEL_CARDS="intel"
-RADEON_CARDS="r100 r200 r300 r600 radeon"
+RADEON_CARDS="radeon"
 VIDEO_CARDS="${INTEL_CARDS} ${RADEON_CARDS} mach64 mga nouveau r128 savage sis vmware tdfx via"
 for card in ${VIDEO_CARDS}; do
 	IUSE_VIDEO_CARDS+=" video_cards_${card}"
@@ -84,9 +84,9 @@ for card in ${INTEL_CARDS}; do
 done
 
 for card in ${RADEON_CARDS}; do
-        RDEPEND="${RDEPEND}
-		video_cards_${card}? ( x11-libs/libdrm[video_cards_${card}] )
-        "
+	RDEPEND="${RDEPEND}
+		video_cards_${card}? ( ${LIBDRM_DEPSTRING}[video_cards_radeon] )
+	"
 done
 
 DEPEND="${RDEPEND}

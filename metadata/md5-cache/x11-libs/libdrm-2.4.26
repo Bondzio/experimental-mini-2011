@@ -3,7 +3,7 @@ DEPEND=dev-libs/libpthread-stubs video_cards_intel? ( >=x11-libs/libpciaccess-0.
 DESCRIPTION=X.Org libdrm library
 EAPI=4
 HOMEPAGE=http://dri.freedesktop.org/
-IUSE=video_cards_intel video_cards_nouveau video_cards_r300 video_cards_r600 video_cards_radeon video_cards_vmware +libkms static-libs
+IUSE=video_cards_intel video_cards_nouveau video_cards_radeon video_cards_vmware libkms static-libs
 KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=MIT
 RDEPEND=dev-libs/libpthread-stubs video_cards_intel? ( >=x11-libs/libpciaccess-0.10 )
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://dri.freedesktop.org/libdrm/libdrm-2.4.26.tar.bz2
 _eclasses_=autotools	b81740a014934d6736a8795cdedb452e	autotools-utils	8568b5523693d69a929254eca0bf9e75	base	dba02c674ce4dff67657c692954d7ef0	eutils	56c868c387979233365d02c584c057a1	flag-o-matic	f829a384b238abde8d21ba4d22139892	libtool	7c8f664cd4d1d18a9a75a4fd690594b8	multilib	96c2a0a85a74a03e8bed788c8c4ac424	portability	0d9341be2bffb3ace510580f192f231e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	xorg-2	093ea4dbb66911426bbf98ed86963ed2
-_md5_=dbb8bb6fa7a1f65f01aa1a711166c2d4
+_md5_=e3384bb09b8def788929139b13a242a6

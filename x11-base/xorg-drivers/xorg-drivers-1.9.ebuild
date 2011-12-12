@@ -8,7 +8,7 @@ SRC_URI=""
 
 LICENSE="as-is"
 SLOT="0"
-KEYWORDS="*"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd"
 
 IUSE_INPUT_DEVICES="
 	input_devices_acecad
@@ -51,8 +51,6 @@ IUSE_VIDEO_CARDS="
 	video_cards_omapfb
 	video_cards_r128
 	video_cards_radeon
-	video_cards_r300
-	video_cards_r600
 	video_cards_rendition
 	video_cards_s3
 	video_cards_s3virge
@@ -123,8 +121,6 @@ PDEPEND="
 	video_cards_omapfb?        ( x11-drivers/xf86-video-omapfb )
 	video_cards_r128?          ( x11-drivers/xf86-video-r128 )
 	video_cards_radeon?        ( x11-drivers/xf86-video-ati )
-	video_cards_r300?          ( x11-drivers/xf86-video-ati )
-	video_cards_r600?          ( x11-drivers/xf86-video-ati )
 	video_cards_rendition?     ( x11-drivers/xf86-video-rendition )
 	video_cards_s3?            ( x11-drivers/xf86-video-s3 )
 	video_cards_s3virge?       ( x11-drivers/xf86-video-s3virge )

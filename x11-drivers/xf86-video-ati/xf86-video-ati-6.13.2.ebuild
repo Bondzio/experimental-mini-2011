@@ -12,10 +12,7 @@ IUSE=""
 
 RDEPEND=">=x11-base/xorg-server-1.6.3[-minimal]"
 DEPEND="${RDEPEND}
-        || ( <x11-libs/libdrm-2.4.22
-                x11-libs/libdrm[video_cards_radeon]
-                x11-libs/libdrm[video_cards_r300]
-                x11-libs/libdrm[video_cards_r600] )
+	|| ( <x11-libs/libdrm-2.4.22 x11-libs/libdrm[video_cards_radeon] )
 	x11-proto/fontsproto
 	x11-proto/glproto
 	x11-proto/randrproto
