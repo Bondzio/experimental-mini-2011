@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DESCRIPTION=convert python profile data to kcachegrind calltree form
+EAPI=3
+HOMEPAGE=http://pypi.python.org/pypi/pyprof2calltree/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://pypi/p/pyprof2calltree/pyprof2calltree-1.1.0.tar.gz
+_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	412a8596c4b1620189e299c8dd303d0a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=8c5c5633bfef5a6d8e8b315322ed6013

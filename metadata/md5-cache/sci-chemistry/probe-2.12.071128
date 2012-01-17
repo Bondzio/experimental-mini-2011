@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=app-arch/unzip
+DESCRIPTION=Evaluates atomic packing within or between molecules
+HOMEPAGE=http://kinemage.biochem.duke.edu/software/probe.php
+KEYWORDS=amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
+LICENSE=richardson
+SLOT=0
+SRC_URI=http://kinemage.biochem.duke.edu/downloads/software/probe/probe.2.12.071128.src.zip
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=439beed5639648ad6682a1382bd2e3bf

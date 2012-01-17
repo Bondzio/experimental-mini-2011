@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare prerm setup test
+DEPEND=virtual/emacs app-emacs/haskell-mode >=dev-lang/ghc-6.12 dev-haskell/mtl =dev-haskell/quickcheck-2* dev-haskell/haskell-src dev-haskell/haskeline >=dev-haskell/binary-0.4.4 =dev-haskell/xhtml-3000.2* >=dev-haskell/zlib-0.4 >=dev-haskell/alex-2.0 >=dev-haskell/happy-1.15 >=dev-haskell/cabal-1.1.4
+DESCRIPTION=A dependently typed programming language.
+EAPI=2
+HOMEPAGE=http://appserv.cs.chalmers.se/users/ulfn/wiki/agda.php
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=virtual/emacs app-emacs/haskell-mode dev-lang/ghc
+SLOT=0
+SRC_URI=http://code.haskell.org/Agda/Agda-2.2.6.tar.gz
+_eclasses_=elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	ghc-package	83329f14231f6ba420fb965d858f37c0	haskell-cabal	c640d33b3ca22d10d4fc775cb69a4e00	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=62d9bb00ec917edd3ed5e144be209f39

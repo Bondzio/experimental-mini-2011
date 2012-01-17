@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DESCRIPTION=Descent 3 - 3-Dimensional indoor/outdoor spaceship combat
+HOMEPAGE=http://www.lokigames.com/products/descent3/
+IUSE=nocd videos
+KEYWORDS=amd64 x86
+LICENSE=LOKI-EULA
+PROPERTIES=interactive
+RDEPEND=sys-libs/glibc virtual/opengl sys-libs/lib-compat-loki x86? ( x11-libs/libX11 x11-libs/libXext =media-libs/libsdl-1.2* ) amd64? ( app-emulation/emul-linux-x86-xlibs app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-sdl >=sys-libs/lib-compat-loki-0.2 )
+RESTRICT=strip
+SLOT=0
+SRC_URI=mirror://lokigames/descent3/descent3-1.4.0a-x86.run mirror://lokigames/descent3/descent3-1.4.0b-x86.run
+_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=95feb4966e8b89979a3288394a0f1cc8
