@@ -1,6 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Virtual for the device filesystem manager
-KEYWORDS=*
-RDEPEND=sys-fs/udev
-SLOT=0
-_md5_=0a06985970a89486ee6bcb57154ed57c
