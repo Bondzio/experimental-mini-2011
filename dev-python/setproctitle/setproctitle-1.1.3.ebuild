@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/setproctitle/setproctitle-1.1.3.ebuild,v 1.1 2011/12/24 08:50:30 patrick Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils toolchain-funcs
@@ -27,14 +27,12 @@ DOCS="HISTORY README"
 src_prepare() {
 	python_copy_sources
 
-	conversion() {
-		[[ "${PYTHON_ABI}" == 2.* ]] && return
-		2to3-${PYTHON_ABI} -w --no-diffs tests > /dev/null
+	preparation() {
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
+			2to3-${PYTHON_ABI} -nw --no-diffs tests
+		fi
 	}
-	python_execute_function \
-		--action-message 'Applying patches for $(python_get_implementation) $(python_get_version)' \
-		--failure-message 'Applying patches for $(python_get_implementation) $(python_get_version) failed' \
-		-s conversion
+	python_execute_function -s preparation
 }
 
 distutils_src_test_pre_hook() {
@@ -43,8 +41,7 @@ distutils_src_test_pre_hook() {
 
 src_test() {
 	build_pyrun() {
-		echo $(tc-getCC) ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -I$(python_get_includedir) -o tests/pyrun-${PYTHON_ABI} tests/pyrun.c $(python_get_library -l)
-		$(tc-getCC) ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -I$(python_get_includedir) -o tests/pyrun-${PYTHON_ABI} tests/pyrun.c $(python_get_library -l)
+		python_execute $(tc-getCC) ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} -I$(python_get_includedir) -o tests/pyrun-${PYTHON_ABI} tests/pyrun.c $(python_get_library -l)
 	}
 	python_execute_function -q -s build_pyrun
 

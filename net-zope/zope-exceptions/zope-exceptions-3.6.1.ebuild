@@ -1,9 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-exceptions/zope-exceptions-3.6.1.ebuild,v 1.2 2010/10/30 19:01:15 arfrever Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -20,14 +19,14 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-interface"
-# net-zope/zope-fixers is required for building with Python 3.
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
+	$(python_abi_depend net-zope/zope-interface)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools
-	net-zope/zope-fixers"
+	$(python_abi_depend dev-python/setuptools)
+	$(python_abi_depend -i "3.*" net-zope/zope-fixers)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN/-//}"
+PYTHON_MODULES="${PN/-//}"

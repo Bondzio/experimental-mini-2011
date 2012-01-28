@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/minimock/minimock-1.2.7.ebuild,v 1.1 2011/09/14 07:57:03 djc Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -21,10 +20,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="docs/changelog.rst docs/index.rst"
-PYTHON_MODNAME="minimock.py"
+PYTHON_MODULES="minimock.py"

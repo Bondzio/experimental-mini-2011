@@ -1,9 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-processlifetime/zope-processlifetime-1.0.ebuild,v 1.5 2010/10/30 19:08:11 arfrever Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -19,12 +19,12 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-interface"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
+	$(python_abi_depend net-zope/zope-interface)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="${PN/-//}"
 DOCS="CHANGES.txt README.txt"
+PYTHON_MODULES="${PN/-//}"

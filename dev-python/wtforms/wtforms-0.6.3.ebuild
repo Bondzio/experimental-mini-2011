@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/wtforms/wtforms-0.6.3.ebuild,v 1.1 2011/09/09 09:01:38 djc Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -34,13 +33,15 @@ src_compile() {
 
 	if use doc; then
 		einfo "Generation of documentation"
-		cd docs
-		PYTHONPATH=".." emake html || die "Building of documentation failed"
+		pushd docs > /dev/null
+		PYTHONPATH=".." emake html
+		popd > /dev/null
 	fi
 }
 
 src_test() {
 	cd tests
+
 	testing() {
 		"$(PYTHON)" runtests.py
 	}
@@ -51,6 +52,9 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dohtml -r docs/_build/html/* || die "Installation of documentation failed"
+		pushd docs/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 }

@@ -1,12 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/sip/sip-4.13.1.ebuild,v 1.1 2011/12/24 08:35:16 hwoarang Exp $
 
-EAPI="3"
-PYTHON_DEPEND="*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
 
 inherit eutils python toolchain-funcs
 
@@ -21,14 +20,14 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="debug doc"
 
-S="${WORKDIR}/${MY_P}"
-
 DEPEND=""
 RDEPEND=""
 
+S="${WORKDIR}/${MY_P}"
+
 src_prepare() {
 	epatch "${FILESDIR}/${PN}-4.9.3-darwin.patch"
-	sed -i 's/-O2//g' specs/* || die
+	sed -e "s/ -O2//g" -i specs/* || die "sed failed"
 	python_copy_sources
 }
 
@@ -49,8 +48,7 @@ src_configure() {
 			CXXFLAGS="${CXXFLAGS}"
 			LFLAGS="${LDFLAGS}"
 			STRIP=":")
-		echo "${myconf[@]}"
-		"${myconf[@]}"
+		python_execute "${myconf[@]}"
 	}
 	python_execute_function -s configuration
 }
@@ -58,10 +56,10 @@ src_configure() {
 src_install() {
 	python_src_install
 
-	dodoc NEWS || die "dodoc failed"
+	dodoc NEWS
 
 	if use doc; then
-		dohtml -r doc/html/* || die "dohtml failed"
+		dohtml -r doc/html/*
 	fi
 }
 

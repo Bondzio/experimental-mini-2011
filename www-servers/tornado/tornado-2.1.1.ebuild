@@ -1,10 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="3"
-PYTHON_DEPEND="2 3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+# Support for Python 3 is experimental.
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 
 inherit distutils
 
@@ -17,13 +19,23 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-python/pycurl || ( dev-lang/python:2.7 dev-lang/python:2.6 dev-python/simplejson )"
-DEPEND="${RDEPEND} dev-python/setuptools"
+RDEPEND="$(python_abi_depend dev-python/pycurl)
+	$(python_abi_depend virtual/python-json)"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)"
 
 src_test() {
 	testing() {
-		PYTHONPATH="." "$(PYTHON)" tornado/test/runtests.py
+		python_execute PYTHONPATH="." "$(PYTHON)" tornado/test/runtests.py
 	}
 	python_execute_function testing
 }
 
+src_install() {
+	distutils_src_install
+
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/tornado/test"
+	}
+	python_execute_function -q delete_tests
+}

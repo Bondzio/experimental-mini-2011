@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2*
 DESCRIPTION=Fast XML-RPC implementation for Python
 EAPI=3
 HOMEPAGE=http://sourceforge.net/projects/py-xmlrpc/
 IUSE=examples
 KEYWORDS=alpha ~amd64 ia64 ppc sparc x86
 LICENSE=LGPL-2.1
-RDEPEND=>=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/py-xmlrpc/py-xmlrpc-0.8.8.3.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=de81a76ee10c7ec4eacfe0c59b4cd652

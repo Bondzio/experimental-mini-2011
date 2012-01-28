@@ -1,12 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/peppercorn/peppercorn-0.3.ebuild,v 1.1 2011/07/30 01:57:57 rafaelmartins Exp $
 
-EAPI=3
-
-SUPPORT_PYTHON_ABIS=1
-PYTHON_DEPEND="2"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -18,24 +16,37 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="repoze"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="doc test"
+IUSE="doc"
 
-DEPEND="dev-python/setuptools
+DEPEND="$(python_abi_depend dev-python/setuptools)
 	doc? ( dev-python/sphinx )"
 RDEPEND=""
+
+DOCS="CHANGES.txt README.txt"
 
 src_compile() {
 	distutils_src_compile
 
 	if use doc; then
-		(cd docs && emake html) || die "make html failed"
+		einfo "Generation of documentation"
+		pushd docs > /dev/null
+		emake html
+		popd > /dev/null
 	fi
 }
 
 src_install() {
 	distutils_src_install
 
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/peppercorn/tests.py"
+	}
+	python_execute_function -q delete_tests
+
 	if use doc; then
-		dohtml -r docs/.build/html/* || die "dohtml failed"
+		pushd docs/.build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
 	fi
 }

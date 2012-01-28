@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=test? ( dev-util/source-highlight media-sound/lilypond media-gfx/imagemagick dev-texlive/texlive-latex app-text/dvipng media-gfx/graphviz ) dev-util/aap www-client/lynx dev-util/source-highlight dev-vcs/mercurial || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEPEND=test? ( dev-util/source-highlight media-sound/lilypond media-gfx/imagemagick dev-texlive/texlive-latex app-text/dvipng media-gfx/graphviz ) dev-util/aap www-client/lynx dev-util/source-highlight dev-vcs/mercurial || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=A text document format for writing short documents, articles, books and UNIX man pages
 EAPI=3
 HOMEPAGE=http://www.methods.co.nz/asciidoc/
 IUSE=examples graphviz highlight test vim-syntax
 LICENSE=GPL-2
-RDEPEND=>=app-text/docbook-xsl-stylesheets-1.75 dev-libs/libxslt graphviz? ( media-gfx/graphviz ) app-text/docbook-xml-dtd:4.5 highlight? ( dev-util/source-highlight ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=>=app-text/docbook-xsl-stylesheets-1.75 dev-libs/libxslt graphviz? ( media-gfx/graphviz ) app-text/docbook-xml-dtd:4.5 highlight? ( dev-util/source-highlight ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	mercurial	6b6a71a66ff84de14ff08ccd91bb635b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	mercurial	6b6a71a66ff84de14ff08ccd91bb635b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b67c15d64fe3bd7f2c5d1877f38a5f6a

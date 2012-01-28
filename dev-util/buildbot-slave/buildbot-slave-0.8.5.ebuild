@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/buildbot-slave/buildbot-slave-0.8.5.ebuild,v 1.1 2011/12/26 10:13:55 djc Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 DISTUTILS_SRC_TEST="trial buildslave"
 DISTUTILS_DISABLE_TEST_DEPENDENCY="1"
 
@@ -20,14 +19,14 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-interix ~amd64-linux"
 IUSE="test"
 
-RDEPEND="dev-python/setuptools
-	>=dev-python/twisted-2
+RDEPEND="$(python_abi_depend dev-python/setuptools)
+	$(python_abi_depend ">=dev-python/twisted-8.0.0")
 	!!<dev-util/buildbot-0.8.1
 	!<dev-util/buildbot-0.8.3"
 DEPEND="${RDEPEND}
-	test? ( dev-python/mock )"
+	test? ( $(python_abi_depend dev-python/mock) )"
 
-PYTHON_MODNAME="buildslave"
+PYTHON_MODULES="buildslave"
 
 pkg_setup() {
 	python_pkg_setup
@@ -37,10 +36,15 @@ pkg_setup() {
 src_install() {
 	distutils_src_install
 
-	doman docs/buildslave.1 || die "doman failed"
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/buildslave/test"
+	}
+	python_execute_function -q delete_tests
 
-	newconfd "${FILESDIR}/buildslave.confd" buildslave || die "newconfd failed"
-	newinitd "${FILESDIR}/buildslave.initd" buildslave || die "newinitd failed"
+	doman docs/buildslave.1
+
+	newconfd "${FILESDIR}/buildslave.confd" buildslave
+	newinitd "${FILESDIR}/buildslave.initd" buildslave
 }
 
 pkg_postinst() {

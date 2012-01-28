@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/multimapping/multimapping-2.13.0.ebuild,v 1.4 2011/01/13 22:31:39 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -22,20 +20,20 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/extensionclass"
+RDEPEND="$(python_abi_depend net-zope/extensionclass)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${MY_PN}"
+PYTHON_MODULES="${MY_PN}"
 
 distutils_src_test_pre_hook() {
 	local module
 	for module in MultiMapping; do
-		ln -fs "../../$(ls -d build-${PYTHON_ABI}/lib.*)/${module}/_${module}.so" "src/${module}/_${module}.so" || die "Symlinking ${module}/_${module}.so failed with Python ${PYTHON_ABI}"
+		ln -fs "../../$(ls -d build-${PYTHON_ABI}/lib.*)/${module}/_${module}$(python_get_extension_module_suffix)" "src/${module}/_${module}$(python_get_extension_module_suffix)" || die "Symlinking ${module}/_${module}$(python_get_extension_module_suffix) failed with $(python_get_implementation_and_version)"
 	done
 }
 

@@ -1,12 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyudev/pyudev-0.13.ebuild,v 1.1 2011/11/11 00:17:29 sbriesen Exp $
 
-EAPI="4"
-PYTHON_DEPEND="*:2.6"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45] *-jython"
-#DISTUTILS_SRC_TEST="py.test"  # FIXME: some tests are known to fail
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 *-jython"
+DISTUTILS_SRC_TEST="py.test"
 
 inherit distutils
 
@@ -20,20 +19,20 @@ KEYWORDS="~amd64 ~x86"
 IUSE="pygobject pyqt4 pyside"
 
 RDEPEND=">=sys-fs/udev-151
-	pygobject? ( dev-python/pygobject:2 )
-	pyqt4? ( dev-python/PyQt4 )
+	pygobject? ( $(python_abi_depend -e "*-pypy-*" dev-python/pygobject:2) )
+	pyqt4? ( $(python_abi_depend -e "*-pypy-*" dev-python/PyQt4) )
 	pyside? ( dev-python/pyside )"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
-	# test? ( dev-python/mock )"
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend dev-python/mock) )"
 
 DOCS="CHANGES.rst README.rst"
 
 src_prepare() {
 	distutils_src_prepare
 
-	# tests: fix run_path
-	sed -i -e "s|== \('/run/udev'\)|in (\1,'/dev/.udev')|g" tests/test_core.py
+	# Fix run_path.
+	sed -i -e "s|== \('/run/udev'\)|in (\1, '/dev/.udev')|g" tests/test_core.py
 
 	if ! use pygobject; then
 		rm -f pyudev/glib.py

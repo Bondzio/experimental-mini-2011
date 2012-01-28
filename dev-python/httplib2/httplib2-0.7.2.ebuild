@@ -1,10 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/httplib2/httplib2-0.7.2.ebuild,v 1.1 2011/11/30 15:56:32 neurogeek Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_DEPEND="<<[ssl]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.1"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 
 inherit distutils
 
@@ -20,15 +22,33 @@ IUSE=""
 DEPEND=""
 RDEPEND=""
 
-RESTRICT_PYTHON_ABIS="3.*"
-#Restrict Python 3 support until upstream
-#issue #189 is solved
+src_prepare() {
+	distutils_src_prepare
+
+	# cacerts.txt and other_cacerts.txt are missing in python3/httplib2 directory.
+	cp python2/httplib2/cacerts.txt python3/httplib2
+	mkdir python3/httplib2/test
+	cp python2/httplib2/test/other_cacerts.txt python3/httplib2/test
+
+	# Disable failing tests.
+	sed \
+		-e "s/testHeadRead/_&/" \
+		-e "s/import memcache/raise ImportError/" \
+		-i python2/httplib2test.py python3/httplib2test.py
+}
 
 src_test() {
 	testing() {
-		pushd "python$(python_get_version --major)" > /dev/null
-		"$(PYTHON)" httplib2test.py
+		pushd "python$(python_get_version -l --major)" > /dev/null
+		python_execute "$(PYTHON)" httplib2test.py || return
 		popd > /dev/null
 	}
 	python_execute_function testing
+}
+
+src_install() {
+	distutils_src_install
+
+	dodoc README
+	newdoc python3/README README-python3
 }

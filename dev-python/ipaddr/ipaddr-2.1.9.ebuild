@@ -1,9 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/ipaddr/ipaddr-2.1.9.ebuild,v 1.2 2011/11/06 08:49:29 maksbotan Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils
 
@@ -21,7 +21,7 @@ RDEPEND=""
 
 DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
 DOCS="README RELEASENOTES"
-PYTHON_MODNAME="ipaddr.py"
+PYTHON_MODULES="ipaddr.py"
 
 src_prepare() {
 	distutils_src_prepare

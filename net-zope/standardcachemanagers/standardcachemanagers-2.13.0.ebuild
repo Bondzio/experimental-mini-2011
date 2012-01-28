@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/standardcachemanagers/standardcachemanagers-2.13.0.ebuild,v 1.2 2011/01/14 10:13:16 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -21,15 +19,16 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/accesscontrol
-	net-zope/transaction
-	>=net-zope/zope-2.12
-	net-zope/zope-component"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[Products])
+	$(python_abi_depend net-zope/accesscontrol)
+	$(python_abi_depend net-zope/transaction)
+	$(python_abi_depend net-zope/zope)
+	$(python_abi_depend net-zope/zope-component)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${MY_PN/.//}"
+PYTHON_MODULES="${MY_PN/.//}"

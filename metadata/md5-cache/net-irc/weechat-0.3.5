@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
-DEPEND=charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) ncurses? ( sys-libs/ncurses ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) nls? ( >=sys-devel/gettext-0.15 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) ncurses? ( sys-libs/ncurses ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) nls? ( >=sys-devel/gettext-0.15 ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Portable and multi-interface IRC client.
 EAPI=3
 HOMEPAGE=http://weechat.org/
 IUSE=lua +perl +python ruby tcl +alias +charset +fifo +logger +relay +rmodifier +scripts +spell +xfer +ncurses +irc +crypt doc nls +ssl elibc_FreeBSD ruby_targets_ruby18
 KEYWORDS=amd64 ppc x86 ~x86-fbsd ~amd64-linux ~x86-linux
 LICENSE=GPL-3
-RDEPEND=charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) ncurses? ( sys-libs/ncurses ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+RDEPEND=charset? ( virtual/libiconv ) lua? ( dev-lang/lua[deprecated] ) ncurses? ( sys-libs/ncurses ) perl? ( dev-lang/perl ) ruby? ( ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://weechat.org/files/src/weechat-0.3.5.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	cmake-utils	d9f3f2f6cc1a1d6ad8e31702e44133e5	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	java-utils-2	0b830e0a2e6c4bdf1c81fec1b53d95f1	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	ruby-ng	4f1be3b6db6ebad08d2c6d7996907767	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=c4771d37fb413bf20a2a84219f6e2d3d

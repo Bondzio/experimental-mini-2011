@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/qt4-r2.eclass,v 1.16 2011/12/28 10:57:38 pesa Exp $
 
 # @ECLASS: qt4-r2.eclass
 # @MAINTAINER:
@@ -11,7 +10,7 @@
 # dealing with packages using Qt4 libraries. Requires EAPI=2 or later.
 
 case ${EAPI} in
-	2|3|4)	: ;;
+	2|3|4|4-python)	: ;;
 	*)	die "EAPI=${EAPI} is not supported by ${ECLASS} eclass." ;;
 esac
 

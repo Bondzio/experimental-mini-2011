@@ -1,9 +1,8 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-dottedname/zope-dottedname-3.4.6.ebuild,v 1.5 2010/10/30 19:00:06 arfrever Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit distutils
 
@@ -19,10 +18,11 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
-RDEPEND=""
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="${PN/-//}"
 DOCS="CHANGES.txt"
+PYTHON_MODULES="${PN/-//}"

@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=dev-util/gtk-doc-am dev-util/intltool dev-util/pkgconfig doc? ( dev-util/gtk-doc ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DEPEND=dev-util/gtk-doc-am dev-util/intltool dev-util/pkgconfig doc? ( dev-util/gtk-doc ) || ( =sys-devel/automake-1.11* ) >=sys-devel/autoconf-2.61 sys-devel/libtool >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* )
 DESCRIPTION=Japanese handwriting recognition engine
 EAPI=3
 HOMEPAGE=http://tomoe.sourceforge.jp/
 IUSE=doc hyperestraier mysql ruby python static-libs subversion
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
-RDEPEND=>=dev-libs/glib-2.4 ruby? ( dev-ruby/ruby-glib2 ) hyperestraier? ( app-text/hyperestraier ) subversion? ( >=dev-libs/apr-1 dev-vcs/subversion ) mysql? ( dev-db/mysql ) python? ( dev-python/pygobject:2 dev-python/pygtk:2 ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+RDEPEND=>=dev-libs/glib-2.4 ruby? ( dev-ruby/ruby-glib2 ) hyperestraier? ( app-text/hyperestraier ) subversion? ( >=dev-libs/apr-1 dev-vcs/subversion ) mysql? ( dev-db/mysql ) python? ( dev-python/pygobject:2 dev-python/pygtk:2 ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/tomoe/tomoe-0.6.0.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8d01665fa51880a95c6ae9f814015150

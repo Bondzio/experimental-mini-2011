@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/grokcore-site/grokcore-site-1.5.ebuild,v 1.1 2011/01/06 21:31:31 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -18,22 +16,23 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND=">=dev-python/martian-0.13
-	>=net-zope/grokcore-component-2.1
-	net-zope/zodb
-	net-zope/zope-annotation
-	net-zope/zope-component
-	net-zope/zope-container
-	net-zope/zope-interface
-	net-zope/zope-lifecycleevent
-	net-zope/zope-site"
+RDEPEND="$(python_abi_depend net-zope/namespaces-grok)
+	$(python_abi_depend ">=dev-python/martian-0.13")
+	$(python_abi_depend ">=net-zope/grokcore-component-2.1")
+	$(python_abi_depend net-zope/zodb)
+	$(python_abi_depend net-zope/zope-annotation)
+	$(python_abi_depend net-zope/zope-component)
+	$(python_abi_depend net-zope/zope-container)
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-lifecycleevent)
+	$(python_abi_depend net-zope/zope-site)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN/-//}"
+PYTHON_MODULES="${PN/-//}"

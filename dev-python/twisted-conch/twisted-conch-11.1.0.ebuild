@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/twisted-conch/twisted-conch-11.1.0.ebuild,v 1.1 2011/12/27 06:57:07 floppym Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython *-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 MY_PACKAGE="Conch"
 
 inherit twisted versionator
@@ -15,12 +14,12 @@ DESCRIPTION="Twisted SSHv2 implementation"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE=""
 
-DEPEND="=dev-python/twisted-$(get_version_component_range 1-2)*
-	dev-python/pyasn1
-	dev-python/pycrypto"
+DEPEND="$(python_abi_depend "=dev-python/twisted-$(get_version_component_range 1-2)*")
+	$(python_abi_depend dev-python/pyasn1)
+	$(python_abi_depend dev-python/pycrypto)"
 RDEPEND="${DEPEND}"
 
-PYTHON_MODNAME="twisted/conch twisted/plugins"
+PYTHON_MODULES="twisted/conch twisted/plugins"
 
 src_prepare() {
 	distutils_src_prepare

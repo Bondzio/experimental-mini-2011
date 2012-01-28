@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zconfig/zconfig-2.9.0.ebuild,v 1.1 2011/03/25 01:33:30 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils eutils
@@ -23,14 +21,14 @@ KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE="test"
 
 DEPEND="app-arch/unzip
-	dev-python/setuptools
-	test? ( net-zope/zope-testing )"
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend net-zope/zope-testing) )"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="NEWS.txt README.txt"
-PYTHON_MODNAME="${MY_PN}"
+PYTHON_MODULES="${MY_PN}"
 
 src_prepare() {
 	distutils_src_prepare
@@ -40,6 +38,8 @@ src_prepare() {
 src_install() {
 	distutils_src_install
 
-	# Don't install tests.
-	rm -fr "${ED}"usr/$(get_libdir)/python*/site-packages/ZConfig/tests
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/ZConfig/tests"
+	}
+	python_execute_function -q delete_tests
 }

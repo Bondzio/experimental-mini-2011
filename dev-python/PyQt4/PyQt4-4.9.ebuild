@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/PyQt4/PyQt4-4.9.ebuild,v 1.3 2012/01/25 13:24:31 wired Exp $
 
-EAPI="3"
-PYTHON_DEPEND="*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython *-pypy-*"
 
 inherit python qt4-r2 toolchain-funcs
 
@@ -24,14 +23,14 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux"
 IUSE="X assistant +dbus debug declarative doc examples kde multimedia opengl phonon sql svg webkit xmlpatterns"
 
-DEPEND=">=dev-python/sip-4.13.1
+DEPEND="$(python_abi_depend ">=dev-python/sip-4.13.1")
 	>=x11-libs/qt-core-${QT_VER}:4
 	>=x11-libs/qt-script-${QT_VER}:4
 	>=x11-libs/qt-test-${QT_VER}:4
 	X? ( >=x11-libs/qt-gui-${QT_VER}:4[dbus?] )
 	assistant? ( >=x11-libs/qt-assistant-${QT_VER}:4 )
 	dbus? (
-		>=dev-python/dbus-python-0.80
+		$(python_abi_depend -e "2.4 2.5" ">=dev-python/dbus-python-0.80")
 		>=x11-libs/qt-dbus-${QT_VER}:4
 	)
 	declarative? ( >=x11-libs/qt-declarative-${QT_VER}:4 )
@@ -49,9 +48,7 @@ RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_P}"
 
-PATCHES=(
-	"${FILESDIR}/${PN}-4.7.2-configure.py.patch"
-)
+PATCHES=("${FILESDIR}/${PN}-4.7.2-configure.py.patch")
 
 PYTHON_VERSIONED_EXECUTABLES=("/usr/bin/pyuic4")
 
@@ -121,8 +118,7 @@ src_configure() {
 			CFLAGS="${CFLAGS}"
 			CXXFLAGS="${CXXFLAGS}"
 			LFLAGS="${LDFLAGS}")
-		echo "${myconf[@]}"
-		"${myconf[@]}" || return 1
+		python_execute "${myconf[@]}" || return 1
 
 		local mod
 		for mod in QtCore $(use X && echo QtDesigner QtGui) $(use dbus && echo QtDBus) $(use declarative && echo QtDeclarative) $(use opengl && echo QtOpenGL); do
@@ -157,15 +153,15 @@ src_install() {
 	python_execute_function -s installation
 	python_merge_intermediate_installation_images "${T}/images"
 
-	dodoc NEWS THANKS || die "dodoc failed"
+	dodoc NEWS THANKS
 
 	if use doc; then
-		dohtml -r doc/html/* || die "dohtml failed"
+		dohtml -r doc/html/*
 	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}
-		doins -r examples || die "doins failed"
+		doins -r examples
 	fi
 }
 

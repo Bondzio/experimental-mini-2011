@@ -1,12 +1,12 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/beaker/beaker-1.6.2.ebuild,v 1.2 2011/12/26 09:06:09 patrick Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4"
-PYTHON_TESTS_RESTRICTED_ABIS="3.*"
-PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4"
+# https://bitbucket.org/bbangert/beaker/issue/94
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="2.5 3.* *-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -23,15 +23,29 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x86-macos"
 IUSE="test"
 
-DEPEND="dev-python/setuptools
-	test? ( dev-python/webtest )"
+# Disabled tests from tests/test_memcached.py require dev-python/mock.
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend -e "2.5 3.1" dev-python/webtest) )"
 RDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
+DISTUTILS_USE_SEPARATE_SOURCE_DIRECTORIES="1"
+
 src_prepare() {
+	# Workaround for potential future fix for http://bugs.python.org/issue11276.
+	# https://bitbucket.org/bbangert/beaker/issue/85
+	sed -e "/import anydbm/a dbm = anydbm" -i beaker/container.py
+
+	# Skip Memcached tests.
+	sed -e "/from nose import SkipTest/a raise SkipTest" -i tests/test_memcached.py
+
 	distutils_src_prepare
 
-	# Workaround for http://bugs.python.org/issue11276.
-	sed -e "s/import anydbm/& as anydbm/;/import anydbm/a dbm = anydbm" -i beaker/container.py
+	prepare_tests() {
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
+			2to3-${PYTHON_ABI} -nw --no-diffs tests
+		fi
+	}
+	python_execute_function -s prepare_tests
 }

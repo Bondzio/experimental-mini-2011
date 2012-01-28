@@ -1,17 +1,16 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-tales/zope-tales-3.5.1.ebuild,v 1.2 2010/10/30 19:12:39 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
 MY_PN="${PN/-/.}"
 MY_P="${MY_PN}-${PV}"
 
-DESCRIPTION="Zope 3 Template Application Language Expression Syntax (TALES)"
+DESCRIPTION="Zope Template Application Language Expression Syntax (TALES)"
 HOMEPAGE="http://pypi.python.org/pypi/zope.tales"
 SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.zip"
 
@@ -20,14 +19,14 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-interface
-	net-zope/zope-tal"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-tal)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN/-//}"
+PYTHON_MODULES="${PN/-//}"

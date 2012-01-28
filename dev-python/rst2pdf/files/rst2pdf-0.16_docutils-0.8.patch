@@ -1,7 +1,5 @@
-Index: rst2pdf/createpdf.py
-===================================================================
---- rst2pdf/createpdf.py	(revision 2441)
-+++ rst2pdf/createpdf.py	(working copy)
+--- rst2pdf/createpdf.py
++++ rst2pdf/createpdf.py
 @@ -56,6 +56,7 @@
  from optparse import OptionParser
  import logging
@@ -23,10 +21,8 @@ Index: rst2pdf/createpdf.py
  def renderTemplate(tname, **context):
    context['to_str']=to_str
    context['escape']=escape
-Index: rst2pdf/pdfbuilder.py
-===================================================================
---- rst2pdf/pdfbuilder.py	(revision 2441)
-+++ rst2pdf/pdfbuilder.py	(working copy)
+--- rst2pdf/pdfbuilder.py
++++ rst2pdf/pdfbuilder.py
 @@ -27,6 +27,7 @@
  from rst2pdf import pygments_code_block_directive, oddeven_directive
  from pygments.lexers import get_lexer_by_name, guess_lexer

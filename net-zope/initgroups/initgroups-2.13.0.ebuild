@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/initgroups/initgroups-2.13.0.ebuild,v 1.4 2011/01/13 22:32:42 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils
 
@@ -19,7 +17,7 @@ KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 DEPEND="app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
 
 DOCS="CHANGES.txt README.txt"

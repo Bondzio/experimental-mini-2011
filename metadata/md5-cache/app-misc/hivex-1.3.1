@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile config configure install prepare test unpack
-DEPEND=virtual/libiconv virtual/libintl dev-libs/libxml2:2 ocaml? ( dev-lang/ocaml[ocamlopt] dev-ml/findlib[ocamlopt] ) readline? ( sys-libs/readline ) perl? ( dev-perl/IO-stringy ) dev-lang/perl perl? ( test? ( dev-perl/Pod-Coverage dev-perl/Test-Pod-Coverage ) ) ruby? ( dev-ruby/rake ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230
+DEPEND=virtual/libiconv virtual/libintl dev-libs/libxml2:2 ocaml? ( dev-lang/ocaml[ocamlopt] dev-ml/findlib[ocamlopt] ) readline? ( sys-libs/readline ) perl? ( dev-perl/IO-stringy ) dev-lang/perl perl? ( test? ( dev-perl/Pod-Coverage dev-perl/Test-Pod-Coverage ) ) ruby? ( dev-ruby/rake ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230 >=app-shells/bash-4
 DESCRIPTION=Library for reading and writing Windows Registry hive binary files.
 EAPI=3
 HOMEPAGE=http://libguestfs.org
 IUSE=ocaml readline perl python test static-libs ruby
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
-RDEPEND=virtual/libiconv virtual/libintl dev-libs/libxml2:2 ocaml? ( dev-lang/ocaml[ocamlopt] dev-ml/findlib[ocamlopt] ) readline? ( sys-libs/readline ) perl? ( dev-perl/IO-stringy ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230
+RDEPEND=virtual/libiconv virtual/libintl dev-libs/libxml2:2 ocaml? ( dev-lang/ocaml[ocamlopt] dev-ml/findlib[ocamlopt] ) readline? ( sys-libs/readline ) perl? ( dev-perl/IO-stringy ) dev-lang/perl[-build] >=app-admin/eselect-python-20091230 >=app-shells/bash-4
 SLOT=0
 SRC_URI=http://libguestfs.org/download/hivex/hivex-1.3.1.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	6db26fbac14aa2fac6409d63741db3aa	base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-app	20b0a51a72b6d2c8ac53ccab1605737f	perl-module	01501a30505074cd0012cabbf5d99447	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	6db26fbac14aa2fac6409d63741db3aa	base	c5a9e7363f0d7758a71fb08d735c7308	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-app	20b0a51a72b6d2c8ac53ccab1605737f	perl-module	d4141c106a05d2a700d500676082a9f9	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=19dc2f18c16ce42c910077aae9df22cf

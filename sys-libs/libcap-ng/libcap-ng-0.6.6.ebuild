@@ -1,11 +1,13 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/libcap-ng/libcap-ng-0.6.6.ebuild,v 1.1 2011/11/10 22:39:14 mrness Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_DEPEND="python? ( <<>> )"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
-inherit eutils autotools flag-o-matic python
+inherit autotools flag-o-matic python
 
 DESCRIPTION="POSIX 1003.1e capabilities"
 HOMEPAGE="http://people.redhat.com/sgrubb/libcap-ng/"
@@ -16,8 +18,7 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE="python"
 
-RDEPEND="sys-apps/attr
-	python? ( dev-lang/python )"
+RDEPEND="sys-apps/attr"
 DEPEND="${RDEPEND}
 	sys-kernel/linux-headers
 	python? ( dev-lang/swig )"
@@ -29,8 +30,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	# Disable byte-compilation of Python modules.
-	echo "#!/bin/sh" > py-compile
+	python_clean_py-compile_files
 
 	# Python bindings are built/tested/installed manually.
 	sed -e "/^SUBDIRS/s/ python//" -i bindings/Makefile.am

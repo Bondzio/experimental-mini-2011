@@ -1,18 +1,19 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/xapian-bindings/xapian-bindings-1.2.8.ebuild,v 1.2 2011/12/17 18:51:08 blueness Exp $
 
-EAPI="3"
-PYTHON_DEPEND="python? 2"
-PYTHON_USE_WITH="threads"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_DEPEND="python? ( <<[threads]>> )"
+PYTHON_MULTIPLE_ABIS="1"
+# Support for Python 3 is incomplete. 'import xapian' fails with TypeError.
+# http://trac.xapian.org/ticket/346
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 
 PHP_EXT_NAME="xapian"
 PHP_EXT_INI="yes"
 PHP_EXT_OPTIONAL_USE="php"
 
-inherit java-pkg-opt-2 mono php-ext-source-r2 python autotools
+inherit autotools java-pkg-opt-2 mono php-ext-source-r2 python
 
 DESCRIPTION="SWIG and JNI bindings for Xapian"
 HOMEPAGE="http://www.xapian.org/"
@@ -23,15 +24,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="java lua mono perl php python ruby tcl"
 
-COMMONDEPEND="=dev-libs/xapian-${PV}*
+RDEPEND="=dev-libs/xapian-${PV}*
 	lua? ( >=dev-lang/lua-5.1 )
-	mono? ( >=dev-lang/mono-1.0.8 )
+	mono? ( dev-lang/mono )
 	perl? ( dev-lang/perl )
 	ruby? ( dev-lang/ruby )
 	tcl? ( >=dev-lang/tcl-8.1 )"
-DEPEND="${COMMONDEPEND}
+DEPEND="${RDEPEND}
 	java? ( >=virtual/jdk-1.3 )"
-RDEPEND="${COMMONDEPEND}
+RDEPEND+="
 	java? ( >=virtual/jre-1.3 )"
 
 pkg_setup() {
@@ -43,10 +44,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	if use lua; then
-		epatch "${FILESDIR}"/fix-LUA_LIB-envvar.patch
-		eautoreconf
-	fi
+	epatch "${FILESDIR}/fix-LUA_LIB-envvar.patch"
+	eautoreconf
 
 	java-pkg-opt-2_src_prepare
 	if use java; then
@@ -65,16 +64,18 @@ src_prepare() {
 
 src_configure() {
 	if use java; then
-		CXXFLAGS="${CXXFLAGS} $(java-pkg_get-jni-cflags)"
-	fi
-
-	if use perl; then
-		export PERL_ARCH="$(perl -MConfig -e 'print $Config{installvendorarch}')"
-		export PERL_LIB="$(perl -MConfig -e 'print $Config{installvendorlib}')"
+		CXXFLAGS+="${CXXFLAGS:+ }$(java-pkg_get-jni-cflags)"
 	fi
 
 	if use lua; then
+		local LUA_LIB
 		export LUA_LIB="$(pkg-config --variable=INSTALL_CMOD lua)"
+	fi
+
+	if use perl; then
+		local PERL_ARCH PERL_LIB
+		export PERL_ARCH="$(perl -MConfig -e 'print $Config{installvendorarch}')"
+		export PERL_LIB="$(perl -MConfig -e 'print $Config{installvendorlib}')"
 	fi
 
 	econf \
@@ -88,7 +89,7 @@ src_configure() {
 		$(use_with tcl)
 
 	# Python bindings are built/tested/installed manually.
-	sed -e "/SUBDIRS =/s/ python//" -i Makefile || die "sed Makefile"
+	sed -e "/SUBDIRS =/s/ python//" -i Makefile || die "sed failed"
 }
 
 src_compile() {
@@ -127,15 +128,19 @@ src_test() {
 }
 
 src_install () {
-	emake DESTDIR="${D}" install || die "emake install failed"
+	emake DESTDIR="${D}" install
 
 	if use java; then
 		java-pkg_dojar java/built/xapian_jni.jar
-		# TODO: make the build system not install this...
-		java-pkg_doso "${D}/${S}/java/built/libxapian_jni.so"
-		rm "${D}/${S}/java/built/libxapian_jni.so"
-		rmdir -p "${D}/${S}/java/built"
-		rmdir -p "${D}/${S}/java/native"
+		# TODO: Make the build system not install this file.
+		java-pkg_doso "${ED}/${S}/java/built/libxapian_jni.so"
+		rm "${ED}/${S}/java/built/libxapian_jni.so"
+		rmdir -p "${ED}/${S}/java/built"
+		rmdir -p "${ED}/${S}/java/native"
+	fi
+
+	if use php; then
+		php-ext-source-r2_createinifiles
 	fi
 
 	if use python; then
@@ -152,16 +157,12 @@ src_install () {
 		python_execute_function -s --source-dir python installation
 	fi
 
-	if use php; then
-		php-ext-source-r2_createinifiles
+	# This directory is created in some combinations of USE flags.
+	if [[ -d "${ED}usr/share/doc/xapian-bindings" ]]; then
+		mv "${ED}usr/share/doc/xapian-bindings" "${ED}usr/share/doc/${PF}" || die "mv failed"
 	fi
 
-	# For some USE combinations this directory is not created
-	if [[ -d "${D}/usr/share/doc/xapian-bindings" ]]; then
-		mv "${D}/usr/share/doc/xapian-bindings" "${D}/usr/share/doc/${PF}"
-	fi
-
-	dodoc AUTHORS HACKING NEWS TODO README || die "dodoc failed"
+	dodoc AUTHORS HACKING NEWS TODO README
 }
 
 pkg_postinst() {

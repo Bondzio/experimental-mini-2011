@@ -1,11 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-app-publisher/zope-app-publisher-3.10.2.ebuild,v 1.1 2010/09/17 15:07:22 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -21,25 +19,26 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-browsermenu
-	net-zope/zope-browserpage
-	net-zope/zope-browserresource
-	net-zope/zope-component
-	net-zope/zope-configuration
-	net-zope/zope-componentvocabulary
-	net-zope/zope-datetime
-	net-zope/zope-i18nmessageid
-	net-zope/zope-interface
-	net-zope/zope-location
-	net-zope/zope-ptresource
-	>=net-zope/zope-publisher-3.12
-	net-zope/zope-schema
-	net-zope/zope-security"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope,zope.app])
+	$(python_abi_depend net-zope/zope-browsermenu)
+	$(python_abi_depend net-zope/zope-browserpage)
+	$(python_abi_depend net-zope/zope-browserresource)
+	$(python_abi_depend net-zope/zope-component)
+	$(python_abi_depend net-zope/zope-configuration)
+	$(python_abi_depend net-zope/zope-componentvocabulary)
+	$(python_abi_depend net-zope/zope-datetime)
+	$(python_abi_depend net-zope/zope-i18nmessageid)
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-location)
+	$(python_abi_depend net-zope/zope-ptresource)
+	$(python_abi_depend ">=net-zope/zope-publisher-3.12")
+	$(python_abi_depend net-zope/zope-schema)
+	$(python_abi_depend net-zope/zope-security)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN//-//}"
+PYTHON_MODULES="${PN//-//}"

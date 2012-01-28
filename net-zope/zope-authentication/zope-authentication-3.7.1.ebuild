@@ -1,10 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-authentication/zope-authentication-3.7.1.ebuild,v 1.2 2010/10/30 18:54:03 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -20,17 +19,17 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-browser
-	net-zope/zope-component
-	net-zope/zope-interface
-	net-zope/zope-schema
-	net-zope/zope-security"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
+	$(python_abi_depend net-zope/zope-browser)
+	$(python_abi_depend net-zope/zope-component)
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-schema)
+	$(python_abi_depend net-zope/zope-security)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN/-//}"
+PYTHON_MODULES="${PN/-//}"

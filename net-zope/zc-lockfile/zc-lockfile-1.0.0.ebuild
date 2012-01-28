@@ -1,10 +1,11 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zc-lockfile/zc-lockfile-1.0.0.ebuild,v 1.6 2010/12/18 20:11:19 arfrever Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
-# DISTUTILS_SRC_TEST="nosetests"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+# Future versions of net-zope/zope-testing will support Python 3.
+PYTHON_TESTS_RESTRICTED_ABIS="3.*"
+DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
 
@@ -20,24 +21,15 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE="test"
 
-DEPEND="dev-python/setuptools
-	test? ( dev-python/nose net-zope/zope-testing )"
-RDEPEND=""
+RDEPEND="$(python_abi_depend net-zope/namespaces-zc[zc])"
+DEPEND="${RDEPEND}
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend -e "3.*" net-zope/zope-testing) )"
 
 S="${WORKDIR}"/${MY_P}
 
-PYTHON_MODNAME="${PN/-//}"
 DOCS="doc.txt src/zc/lockfile/CHANGES.txt src/zc/lockfile/README.txt"
-
-src_test() {
-	testing() {
-		# Future versions of net-zope/zope-testing will support Python 3.
-		[[ "${PYTHON_ABI}" == 3.* ]] && return
-
-		PYTHONPATH="build-${PYTHON_ABI}/lib" nosetests
-	}
-	python_execute_function testing
-}
+PYTHON_MODULES="${PN/-//}"
 
 src_install() {
 	distutils_src_install

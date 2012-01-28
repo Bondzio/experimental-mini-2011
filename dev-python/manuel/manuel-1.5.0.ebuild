@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/manuel/manuel-1.5.0.ebuild,v 1.1 2011/03/09 21:51:31 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -19,8 +17,8 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE="test"
 
-DEPEND="dev-python/setuptools
-	test? ( net-zope/zope-testing )"
+DEPEND="$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend net-zope/zope-testing) )"
 RDEPEND=""
 
 DOCS="CHANGES.txt"

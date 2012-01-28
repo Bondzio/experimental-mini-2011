@@ -1,11 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/mailhost/mailhost-2.13.1.ebuild,v 1.2 2011/01/14 10:07:20 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.6"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -21,20 +19,21 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/accesscontrol
-	net-zope/acquisition
-	net-zope/datetime
-	net-zope/documenttemplate
-	net-zope/persistence
-	>=net-zope/zope-2.12
-	net-zope/zope-deferredimport
-	net-zope/zope-interface
-	net-zope/zope-sendmail"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[Products])
+	$(python_abi_depend net-zope/accesscontrol)
+	$(python_abi_depend net-zope/acquisition)
+	$(python_abi_depend net-zope/datetime)
+	$(python_abi_depend net-zope/documenttemplate)
+	$(python_abi_depend net-zope/persistence)
+	$(python_abi_depend net-zope/zope)
+	$(python_abi_depend net-zope/zope-deferredimport)
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-sendmail)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${MY_PN/.//}"
+PYTHON_MODULES="${MY_PN/.//}"

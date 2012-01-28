@@ -1,11 +1,5 @@
- scipy/spatial/qhull.c  |    4 ++--
- scipy/spatial/setup.py |   14 +++++++-------
- 2 files changed, 9 insertions(+), 9 deletions(-)
-
-diff --git a/scipy/spatial/qhull.c b/scipy/spatial/qhull.c
-index 91e22b3..e433ae9 100644
---- a/scipy/spatial/qhull.c
-+++ b/scipy/spatial/qhull.c
+--- scipy/spatial/qhull.c
++++ scipy/spatial/qhull.c
 @@ -202,8 +202,8 @@
  #include "numpy/arrayobject.h"
  #include "numpy/ufuncobject.h"
@@ -17,10 +11,8 @@ index 91e22b3..e433ae9 100644
  #include "qhull_blas.h"
  
  
-diff --git a/scipy/spatial/setup.py b/scipy/spatial/setup.py
-index 7401d55..254c23d 100755
---- a/scipy/spatial/setup.py
-+++ b/scipy/spatial/setup.py
+--- scipy/spatial/setup.py
++++ scipy/spatial/setup.py
 @@ -16,13 +16,13 @@ def configuration(parent_package = '', top_path = None):
                   'random.c', 'rboxlib.c', 'stat.c', 'user.c', 'usermem.c',
                   'userprintf.c']

@@ -1,9 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zdaemon/zdaemon-2.0.4.ebuild,v 1.5 2010/10/30 18:16:11 arfrever Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
@@ -16,16 +16,17 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zconfig"
+RDEPEND="$(python_abi_depend net-zope/zconfig)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
 
 DOCS="CHANGES.txt README.txt"
 
 src_install() {
 	distutils_src_install
 
-	# Don't install tests.
-	rm -fr "${D}"usr/$(get_libdir)/python*/site-packages/zdaemon/tests
+	delete_tests() {
+		rm -fr "${ED}$(python_get_sitedir)/zdaemon/tests"
+	}
+	python_execute_function -q delete_tests
 }

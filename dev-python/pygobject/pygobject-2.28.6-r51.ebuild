@@ -1,17 +1,14 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pygobject/pygobject-2.28.6-r51.ebuild,v 1.8 2012/01/18 20:29:23 maekke Exp $
 
-EAPI="3"
+EAPI="4-python"
 GCONF_DEBUG="no"
 GNOME_TARBALL_SUFFIX="xz"
 GNOME2_LA_PUNT="yes"
-SUPPORT_PYTHON_ABIS="1"
-# pygobject is partially incompatible with Python 3.
-# PYTHON_DEPEND="2:2.6 3:3.1"
-# RESTRICT_PYTHON_ABIS="2.4 2.5 3.0 *-jython"
-PYTHON_DEPEND="2:2.6"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.* *-jython *-pypy-*"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 *-jython *-pypy-*"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 
 # XXX: Is the alternatives stuff needed anymore?
 inherit alternatives autotools gnome2 python virtualx
@@ -21,7 +18,7 @@ HOMEPAGE="http://www.pygtk.org/"
 
 LICENSE="LGPL-2.1"
 SLOT="2"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE="doc examples +introspection libffi test"
 # FIXME: tests require introspection support, but we can't enable introspection,
 # or we get file collisions with slot 3 :/
@@ -45,6 +42,8 @@ RDEPEND="${COMMON_DEPEND}
 PDEPEND="introspection? ( dev-python/pygobject:3 )"
 
 pkg_setup() {
+	python_pkg_setup
+
 	DOCS="AUTHORS ChangeLog* NEWS README"
 	# --disable-introspection and --disable-cairo because we use pygobject:3
 	# for introspection support
@@ -69,8 +68,10 @@ src_prepare() {
 	# Disable tests that fail
 	epatch "${FILESDIR}/${PN}-2.28.3-disable-failing-tests.patch"
 
-	# disable pyc compiling
-	echo '#!/bin/sh' > py-compile
+	epatch "${FILESDIR}/${P}-python-3.patch"
+	epatch "${FILESDIR}/${P}-python-3-codegen.patch"
+
+	python_clean_py-compile_files
 
 	eautoreconf
 	gnome2_src_prepare
@@ -86,35 +87,38 @@ src_compile() {
 	python_execute_function -d -s
 }
 
-# FIXME: With python multiple ABI support, tests return 1 even when they pass
 src_test() {
 	unset DBUS_SESSION_BUS_ADDRESS
 
 	testing() {
-		XDG_CACHE_HOME="${T}/$(PYTHON --ABI)"
+		XDG_CACHE_HOME="${T}/${PYTHON_ABI}"
 		Xemake check PYTHON=$(PYTHON -a)
 	}
 	python_execute_function -s testing
 }
 
 src_install() {
-	[[ -z ${ED} ]] && local ED="${D}"
 	installation() {
-		gnome2_src_install
-		mv "${ED}$(python_get_sitedir)/pygtk.py" "${ED}$(python_get_sitedir)/pygtk.py-2.0"
-		mv "${ED}$(python_get_sitedir)/pygtk.pth" "${ED}$(python_get_sitedir)/pygtk.pth-2.0"
+		GNOME2_DESTDIR="${T}/images/${PYTHON_ABI}/" gnome2_src_install
+		mv "${T}/images/${PYTHON_ABI}${EPREFIX}$(python_get_sitedir)/pygtk.py"{,-2.0}
+		mv "${T}/images/${PYTHON_ABI}${EPREFIX}$(python_get_sitedir)/pygtk.pth"{,-2.0}
+
+		if [[ "${PYTHON_ABI}" == 3.* ]]; then
+			rm -f "${T}/images/${PYTHON_ABI}${EPREFIX}/usr/$(get_libdir)/pkgconfig/pygobject-2.0.pc"
+		fi
 	}
 	python_execute_function -s installation
+	python_merge_intermediate_installation_images "${T}/images"
 
 	python_clean_installation_image
 
-	sed "s:/usr/bin/python:/usr/bin/python2:" \
-		-i "${ED}"/usr/bin/pygobject-codegen-2.0 \
-		|| die "Fix usage of python interpreter"
+	if [[ -f "${ED}usr/bin/pygobject-codegen-2.0" ]]; then
+		sed -e "s:/usr/bin/python:&2:" -i "${ED}usr/bin/pygobject-codegen-2.0" || die "Fixing of calls to Python interpreter failed"
+	fi
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}
-		doins -r examples || die "doins failed"
+		doins -r examples
 	fi
 }
 

@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/apsw/apsw-3.7.9.1.ebuild,v 1.1 2011/12/14 04:07:08 radhermit Exp $
 
-EAPI="4"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 
 inherit distutils eutils versionator
 
@@ -37,18 +37,18 @@ src_compile() {
 }
 
 src_test() {
-	echo "$(PYTHON -f)" setup.py build_test_extension
-	"$(PYTHON -f)" setup.py build_test_extension || die "Building of test loadable extension failed"
+	python_execute "$(PYTHON -f)" setup.py build_test_extension || die "Building of test loadable extension failed"
 
 	testing() {
-		PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" tests.py -v
+		python_execute PYTHONPATH="$(ls -d build-${PYTHON_ABI}/lib.*)" "$(PYTHON)" tests.py -v
 	}
 	python_execute_function testing
 }
 
 src_install() {
 	distutils_src_install
-	if use doc ; then
+
+	if use doc; then
 		dohtml -r doc/*
 	fi
 }

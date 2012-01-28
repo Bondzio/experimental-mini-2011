@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/m2crypto/m2crypto-0.21.1.ebuild,v 1.10 2011/09/06 18:30:48 mattst88 Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
@@ -18,19 +17,19 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="doc examples"
 
 RDEPEND=">=dev-libs/openssl-0.9.8"
 DEPEND="${RDEPEND}
 	>=dev-lang/swig-1.3.28
-	dev-python/setuptools
+	$(python_abi_depend dev-python/setuptools)
 	doc? ( dev-python/epydoc )"
 
 S="${WORKDIR}/${MY_PN}-${PV}"
 
 DOCS="CHANGES"
-PYTHON_MODNAME="${MY_PN}"
+PYTHON_MODULES="${MY_PN}"
 
 src_compile() {
 	distutils_src_compile
@@ -47,13 +46,13 @@ src_install() {
 	distutils_src_install
 
 	if use doc; then
-		dohtml -r doc/* || die "Installation of documentation failed"
+		dohtml -r doc/*
 	fi
 
 	if use examples; then
 		pushd demo > /dev/null
 		insinto /usr/share/doc/${PF}/examples
-		doins -r * || die "Installation of examples failed"
+		doins -r *
 		popd > /dev/null
 	fi
 }

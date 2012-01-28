@@ -1,46 +1,44 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pydns/pydns-2.3.5-r1.ebuild,v 1.1 2011/11/10 23:23:01 sbriesen Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 
 inherit distutils
 
 DESCRIPTION="Python module for DNS (Domain Name Service)"
 HOMEPAGE="http://pydns.sourceforge.net/ http://pypi.python.org/pypi/pydns"
-SRC_URI="http://downloads.sourceforge.net/project/pydns/pydns/${P}/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/pydns/${P}.tar.gz"
 
 LICENSE="CNRI"
 SLOT="2"
 KEYWORDS="~amd64 ~x86"
 IUSE="examples"
 
-DEPEND="!dev-python/pydns:0
+RDEPEND="!dev-python/pydns:0
+	!dev-python/pydns:python-2"
+DEPEND="${RDEPEND}
 	virtual/libiconv"
-RDEPEND=""
 
 DOCS="CREDITS"
-PYTHON_MODNAME="DNS"
+PYTHON_MODULES="DNS"
 
 src_prepare() {
-	# Fix encodings (should be utf-8 but is latin1).
-	for i in "${PYTHON_MODNAME}"/{Lib,Type}.py; do
-		iconv -f ISO-8859-1 -t UTF-8 < "${i}" > "${i}~" && mv -f "${i}~" "${i}" || rm -f "${i}~"
+	# Fix encoding of comments.
+	local file
+	for file in DNS/{Lib,Type}.py; do
+		iconv -f ISO-8859-1 -t UTF-8 < "${file}" > "${file}~" && mv -f "${file}~" "${file}" > /dev/null
 	done
 
-	# Don't compile bytecode.
-	sed -i -e 's:^\(compile\|optimize\).*:\1 = 0:g' setup.cfg
-
 	# Fix Python shebangs in examples.
-	python_convert_shebangs -r 2 .
+	sed -i -e 's:#!/.*\(python\).*/*$:#!/usr/bin/\12:g' {tests,tools}/*.py
 
-	# cleanup docs
-	rm -f -- "README-guido.txt"
-	mv -f -- "README.txt" "README"
-	mv -f -- "CREDITS.txt" "CREDITS"
+	# Clean documentation.
+	mv CREDITS.txt CREDITS
+	mv README.txt README
+	rm -f README-guido.txt
 }
 
 src_install(){
@@ -49,6 +47,6 @@ src_install(){
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
 		docompress -x /usr/share/doc/${PF}/examples
-		doins tests/*.py tools/*.py
+		doins {tests,tools}/*.py
 	fi
 }

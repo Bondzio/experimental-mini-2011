@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=emacs? ( virtual/emacs ) test? ( app-arch/unzip dev-python/pygments ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[threads]
+DEPEND=emacs? ( virtual/emacs ) test? ( app-arch/unzip dev-python/pygments[python_abis_2.4?,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.4? ( dev-lang/python:2.4[threads] ) python_abis_2.5? ( dev-lang/python:2.5[threads] ) python_abis_2.6? ( dev-lang/python:2.6[threads] ) python_abis_2.7? ( dev-lang/python:2.7[threads] ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
 DESCRIPTION=Scalable distributed SCM
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://mercurial.selenic.com/
-IUSE=bugzilla emacs gpg test tk zsh-completion
+IUSE=bugzilla emacs gpg test tk zsh-completion python_abis_2.4 python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=GPL-2
-RDEPEND=bugzilla? ( dev-python/mysql-python ) gpg? ( app-crypt/gnupg ) tk? ( dev-lang/tk ) zsh-completion? ( app-shells/zsh ) >=app-admin/eselect-python-20091230 =dev-lang/python-2* =dev-lang/python-2*[threads]
+RDEPEND=bugzilla? ( dev-python/mysql-python[python_abis_2.4?,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.7?] ) gpg? ( app-crypt/gnupg ) tk? ( dev-lang/tk ) zsh-completion? ( app-shells/zsh ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.4? ( dev-lang/python:2.4[threads] ) python_abis_2.5? ( dev-lang/python:2.5[threads] ) python_abis_2.6? ( dev-lang/python:2.6[threads] ) python_abis_2.7? ( dev-lang/python:2.7[threads] ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
+REQUIRED_USE=|| ( python_abis_2.4 python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 )
 SLOT=0
 SRC_URI=http://mercurial.selenic.com/release/mercurial-2.0.2.tar.gz
-_eclasses_=bash-completion-r1	3480f8385cb9e31797e7b659e366e2d2	distutils	c8b0cab86443a130f3737ad1456d57d3	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9de9f5746d7a2e7953731737349b90e1
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	distutils	08b2655f86a40385d91b50c8ad2390ff	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=02228f76981fd593469d9cb16011d982

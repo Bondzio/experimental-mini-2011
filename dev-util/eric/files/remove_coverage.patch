@@ -1,7 +1,5 @@
-Index: eric4-4.4.0/eric/eric4.e4p
-===================================================================
---- eric4-4.4.0.orig/eric/eric4.e4p
-+++ eric4-4.4.0/eric/eric4.e4p
+--- eric/eric4.e4p
++++ eric/eric4.e4p
 @@ -614,12 +614,6 @@
      <Source>Helpviewer/HelpTopicDialog.py</Source>
      <Source>Helpviewer/HelpSearchWidget.py</Source>
@@ -78,10 +76,8 @@ Index: eric4-4.4.0/eric/eric4.e4p
 -</Project>
 \ No newline at end of file
 +</Project>
-Index: eric4-4.4.0/eric/DataViews/PyCoverageDialog.py
-===================================================================
---- eric4-4.4.0.orig/eric/DataViews/PyCoverageDialog.py
-+++ eric4-4.4.0/eric/DataViews/PyCoverageDialog.py
+--- eric/DataViews/PyCoverageDialog.py
++++ eric/DataViews/PyCoverageDialog.py
 @@ -19,7 +19,7 @@ from KdeQt.KQProgressDialog import KQPro
  from Ui_PyCoverageDialog import Ui_PyCoverageDialog
  
@@ -91,10 +87,8 @@ Index: eric4-4.4.0/eric/DataViews/PyCoverageDialog.py
  
  class PyCoverageDialog(QDialog, Ui_PyCoverageDialog):
      """
-Index: eric4-4.4.0/eric/PyUnit/UnittestDialog.py
-===================================================================
---- eric4-4.4.0.orig/eric/PyUnit/UnittestDialog.py
-+++ eric4-4.4.0/eric/PyUnit/UnittestDialog.py
+--- eric/PyUnit/UnittestDialog.py
++++ eric/PyUnit/UnittestDialog.py
 @@ -26,7 +26,7 @@ from E4Gui.E4Completers import E4FileCom
  from Ui_UnittestDialog import Ui_UnittestDialog
  from Ui_UnittestStacktraceDialog import Ui_UnittestStacktraceDialog
@@ -104,10 +98,8 @@ Index: eric4-4.4.0/eric/PyUnit/UnittestDialog.py
  
  import UI.PixmapCache
  
-Index: eric4-4.4.0/eric/QScintilla/Editor.py
-===================================================================
---- eric4-4.4.0.orig/eric/QScintilla/Editor.py
-+++ eric4-4.4.0/eric/QScintilla/Editor.py
+--- eric/QScintilla/Editor.py
++++ eric/QScintilla/Editor.py
 @@ -28,7 +28,7 @@ from SpellCheckingDialog import SpellChe
  
  from Debugger.EditBreakpointDialog import EditBreakpointDialog

@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/rst2pdf/rst2pdf-0.16-r1.ebuild,v 1.2 2011/12/14 09:38:42 floppym Exp $
 
-EAPI="4"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils eutils
 
@@ -18,17 +17,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="dev-python/docutils
-	dev-python/imaging
-	dev-python/pygments
-	>=dev-python/reportlab-2.4"
+DEPEND="$(python_abi_depend dev-python/docutils)
+	$(python_abi_depend dev-python/imaging)
+	$(python_abi_depend dev-python/pygments)
+	$(python_abi_depend ">=dev-python/reportlab-2.4")"
 RDEPEND="${DEPEND}"
 
 DOCS="Contributors.txt CHANGES.txt README.txt doc/*"
 
 src_prepare() {
 	distutils_src_prepare
-
 	epatch "${FILESDIR}/${P}_docutils-0.8.patch"
 }
 

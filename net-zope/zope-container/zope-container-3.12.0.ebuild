@@ -1,11 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zope-container/zope-container-3.12.0.ebuild,v 1.1 2010/12/19 17:05:05 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 
 inherit distutils
 
@@ -21,32 +19,33 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zodb
-	net-zope/zope-app-dependable
-	net-zope/zope-broken
-	net-zope/zope-component
-	net-zope/zope-dottedname
-	net-zope/zope-event
-	net-zope/zope-filerepresentation
-	net-zope/zope-i18nmessageid
-	net-zope/zope-interface
-	net-zope/zope-lifecycleevent
-	net-zope/zope-location
-	net-zope/zope-publisher
-	net-zope/zope-schema
-	net-zope/zope-security
-	net-zope/zope-size
-	net-zope/zope-traversing"
+RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
+	$(python_abi_depend net-zope/zodb)
+	$(python_abi_depend net-zope/zope-app-dependable)
+	$(python_abi_depend net-zope/zope-broken)
+	$(python_abi_depend net-zope/zope-component)
+	$(python_abi_depend net-zope/zope-dottedname)
+	$(python_abi_depend net-zope/zope-event)
+	$(python_abi_depend net-zope/zope-filerepresentation)
+	$(python_abi_depend net-zope/zope-i18nmessageid)
+	$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-lifecycleevent)
+	$(python_abi_depend net-zope/zope-location)
+	$(python_abi_depend net-zope/zope-publisher)
+	$(python_abi_depend net-zope/zope-schema)
+	$(python_abi_depend net-zope/zope-security)
+	$(python_abi_depend net-zope/zope-size)
+	$(python_abi_depend net-zope/zope-traversing)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${PN/-//}"
+PYTHON_MODULES="${PN/-//}"
 
 src_install() {
 	distutils_src_install

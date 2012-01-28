@@ -1,11 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-zope/zexceptions/zexceptions-2.13.0.ebuild,v 1.3 2010/11/29 02:13:54 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 3.* *-jython"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -22,22 +20,21 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-interface
-	net-zope/zope-publisher
-	net-zope/zope-security"
+RDEPEND="$(python_abi_depend net-zope/zope-interface)
+	$(python_abi_depend net-zope/zope-publisher)
+	$(python_abi_depend net-zope/zope-security)"
 DEPEND="${RDEPEND}
 	app-arch/unzip
-	dev-python/setuptools"
+	$(python_abi_depend dev-python/setuptools)"
 
 S="${WORKDIR}/${MY_P}"
 
 DOCS="CHANGES.txt README.txt"
-PYTHON_MODNAME="${MY_PN}"
+PYTHON_MODULES="${MY_PN}"
 
 src_install() {
 	distutils_src_install
 
-	# Don't install tests.
 	delete_tests() {
 		rm -fr "${ED}$(python_get_sitedir)/zExceptions/tests"
 	}

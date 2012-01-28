@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup
-DEPEND=python? ( !dev-python/pysyck ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+DEPEND=python? ( !dev-python/pysyck ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* )
 DESCRIPTION=Syck is an extension for reading and writing YAML swiftly in popular scripting languages.
 EAPI=3
 HOMEPAGE=http://whytheluckystiff.net/syck/
@@ -7,8 +7,8 @@ IUSE=php python
 KEYWORDS=amd64 ~arm ppc ppc64 x86 ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=BSD
 PDEPEND=php? ( dev-php/pecl-syck !=dev-libs/syck-0.55-r1 )
-RDEPEND=python? ( !dev-python/pysyck ) >=app-admin/eselect-python-20091230 python? ( =dev-lang/python-2* )
+RDEPEND=python? ( !dev-python/pysyck ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://rubyforge.org/frs/download.php/4492/syck-0.55.tar.gz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=253130f3388413ed7cc9184474cadc20

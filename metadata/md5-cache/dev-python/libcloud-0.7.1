@@ -1,13 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-3*[ssl] =dev-lang/python-2.7*[ssl] =dev-lang/python-2.6*[ssl] )
-DESCRIPTION=Unified Interface to the Cloud - python support libs
-EAPI=3
-HOMEPAGE=http://libcloud.apache.org/index.html
-IUSE=examples
+DEPEND=virtual/python-json[external,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?] >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6[ssl] ) python_abis_2.7? ( dev-lang/python:2.7[ssl] ) python_abis_3.1? ( dev-lang/python:3.1[ssl] ) python_abis_3.2? ( dev-lang/python:3.2[ssl] ) python_abis_3.3? ( dev-lang/python:3.3[ssl] ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7[ssl] )
+DESCRIPTION=A standard Python library that abstracts away differences among multiple cloud provider APIs
+EAPI=4-python
+HOMEPAGE=http://libcloud.apache.org/ http://pypi.python.org/pypi/apache-libcloud
+IUSE=examples python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0
-RDEPEND=>=app-admin/eselect-python-20091230 || ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-3*[ssl] =dev-lang/python-2.7*[ssl] =dev-lang/python-2.6*[ssl] )
+RDEPEND=virtual/python-json[external,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.7-pypy-1.7?] >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6[ssl] ) python_abis_2.7? ( dev-lang/python:2.7[ssl] ) python_abis_3.1? ( dev-lang/python:3.1[ssl] ) python_abis_3.2? ( dev-lang/python:3.2[ssl] ) python_abis_3.3? ( dev-lang/python:3.3[ssl] ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7[ssl] )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 )
 SLOT=0
 SRC_URI=mirror://apache/libcloud/apache-libcloud-0.7.1.tar.bz2
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=a35c3acb3f25ed55dd809235eb58798a
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=bfb30c5f502e02dd195950f26faf0727

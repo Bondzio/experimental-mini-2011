@@ -1,11 +1,9 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/martian/martian-0.14.ebuild,v 1.1 2010/11/07 18:22:27 arfrever Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -16,13 +14,13 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="net-zope/zope-interface"
+RDEPEND="$(python_abi_depend net-zope/zope-interface)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools
-	test? ( net-zope/zope-testing )"
+	$(python_abi_depend dev-python/setuptools)
+	test? ( $(python_abi_depend net-zope/zope-testing) )"
 
 DOCS="CHANGES.txt CREDITS.txt src/martian/README.txt"
 

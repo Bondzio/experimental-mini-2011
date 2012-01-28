@@ -1,11 +1,11 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/qscintilla-python/qscintilla-python-2.6.ebuild,v 1.1 2011/11/12 10:58:02 hwoarang Exp $
 
-EAPI="3"
+EAPI="4-python"
 PYTHON_EXPORT_PHASE_FUNCTIONS="1"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
 inherit eutils python toolchain-funcs
 
@@ -20,8 +20,8 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="debug"
 
-DEPEND=">=dev-python/sip-4.10
-	>=dev-python/PyQt4-4.7[X]
+DEPEND="$(python_abi_depend ">=dev-python/sip-4.10")
+	$(python_abi_depend ">=dev-python/PyQt4-4.7[X]")
 	~x11-libs/qscintilla-${PV}"
 RDEPEND="${DEPEND}"
 
@@ -40,8 +40,7 @@ src_configure() {
 			-p 4
 			--destdir="${EPREFIX}$(python_get_sitedir)/PyQt4"
 			$(use debug && echo --debug))
-		echo "${myconf[@]}"
-		"${myconf[@]}"
+		python_execute "${myconf[@]}"
 	}
 	python_execute_function -s configuration
 }

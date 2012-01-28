@@ -1,20 +1,18 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/libcloud/libcloud-0.7.1.ebuild,v 1.2 2011/12/30 18:17:03 mr_bones_ Exp $
 
-EAPI="3"
-
-PYTHON_DEPEND="2:2.6 3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45] *-jython"
-DISTUTILS_SRC_TEST="setup.py"
+EAPI="4-python"
+PYTHON_DEPEND="<<[ssl]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.4 2.5 *-jython"
 PYTHON_TESTS_RESTRICTED_ABIS="3.*"
-PYTHON_USE_WITH="ssl"
+DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
-DESCRIPTION="Unified Interface to the Cloud - python support libs"
-HOMEPAGE="http://libcloud.apache.org/index.html"
+DESCRIPTION="A standard Python library that abstracts away differences among multiple cloud provider APIs"
+HOMEPAGE="http://libcloud.apache.org/ http://pypi.python.org/pypi/apache-libcloud"
 SRC_URI="mirror://apache/${PN}/apache-${P}.tar.bz2"
 
 LICENSE="Apache-2.0"
@@ -22,20 +20,21 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="examples"
 
-RDEPEND=""
-DEPEND=""
+DEPEND="$(python_abi_depend virtual/python-json[external])"
+RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/apache-${P}"
 
-src_test() {
-	cp test/secrets.py-dist test/secrets.py || die
-	distutils_src_test
+src_prepare() {
+	distutils_src_prepare
+	cp test/secrets.py-dist test/secrets.py || die "cp failed"
 }
 
 src_install() {
 	distutils_src_install
-	if use examples ; then
-		docinto examples/
-		dodoc "${S}"/example_*.py || die
+
+	if use examples; then
+		docinto examples
+		dodoc example_*.py
 	fi
 }

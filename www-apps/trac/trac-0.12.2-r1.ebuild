@@ -1,76 +1,62 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-apps/trac/trac-0.12.2-r1.ebuild,v 1.1 2011/12/31 20:17:50 idl0r Exp $
 
-EAPI="2"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
-inherit distutils eutils webapp
+inherit distutils user webapp
 
-MY_PV=${PV/_beta/b}
-MY_P=Trac-${MY_PV}
-S=${WORKDIR}/${MY_P}
+MY_PV="${PV/_beta/b}"
+MY_P="Trac-${MY_PV}"
 
-DESCRIPTION="Trac is a minimalistic web-based project management, wiki and bug/issue tracking system."
-HOMEPAGE="http://trac.edgewall.com/"
-LICENSE="BSD"
+DESCRIPTION="Integrated SCM, wiki, issue tracker and project environment"
+HOMEPAGE="http://trac.edgewall.com/ http://pypi.python.org/pypi/Trac"
 SRC_URI="http://ftp.edgewall.com/pub/trac/${MY_P}.tar.gz"
 
+LICENSE="BSD"
+SLOT="0"
+KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="cgi fastcgi i18n mysql postgres +sqlite subversion"
 
-KEYWORDS="amd64 ppc ~ppc64 ~sparc x86 ~x86-fbsd"
-
-# doing so because tools, python packages... overlap
-SLOT="0"
-WEBAPP_MANUAL_SLOT="yes"
-
-RDEPEND="
-	dev-python/setuptools
-	dev-python/docutils
-	dev-python/genshi
-	dev-python/pygments
-	dev-python/pytz
-	i18n? ( >=dev-python/Babel-0.9.5 )
+DEPEND="$(python_abi_depend dev-python/docutils)
+	$(python_abi_depend dev-python/genshi)
+	$(python_abi_depend dev-python/pygments)
+	$(python_abi_depend dev-python/pytz)
+	$(python_abi_depend dev-python/setuptools)
 	cgi? ( virtual/httpd-cgi )
 	fastcgi? ( virtual/httpd-fastcgi )
-	mysql? ( dev-python/mysql-python )
-	postgres? ( >=dev-python/psycopg-2 )
-	sqlite? (
-		>=dev-db/sqlite-3.3.4
-		|| ( dev-lang/python:2.7[sqlite] dev-lang/python:2.6[sqlite] dev-lang/python:2.5[sqlite] >=dev-python/pysqlite-2.3.2 )
-	)
-	subversion? ( dev-vcs/subversion[python] )
-	!www-apps/trac-webadmin
-	"
-DEPEND="${RDEPEND}"
-RESTRICT_PYTHON_ABIS="3.*"
+	i18n? ( $(python_abi_depend ">=dev-python/Babel-0.9.5") )
+	mysql? ( $(python_abi_depend dev-python/mysql-python) )
+	postgres? ( $(python_abi_depend ">=dev-python/psycopg-2") )
+	sqlite? ( $(python_abi_depend virtual/python-sqlite[external]) )
+	subversion? ( $(python_abi_depend -e "2.4 *-pypy-*" dev-vcs/subversion[python]) )
+	!www-apps/trac-webadmin"
+RDEPEND="${DEPEND}"
+REQUIRED_USE="|| ( mysql postgres sqlite )"
+
+S="${WORKDIR}/${MY_P}"
+
+WEBAPP_MANUAL_SLOT="yes"
 
 pkg_setup() {
 	python_pkg_setup
 	webapp_pkg_setup
-
-	if ! use mysql && ! use postgres && ! use sqlite; then
-		eerror "You must select at least one database backend, by enabling"
-		eerror "at least one of the 'mysql', 'postgres' or 'sqlite' USE flags."
-		die "no database backend selected"
-	fi
 
 	enewgroup tracd
 	enewuser tracd -1 -1 -1 tracd
 }
 
 src_test() {
-
 	testing() {
-		PYTHONPATH=. "$(PYTHON)" trac/test.py
+		python_execute PYTHONPATH="." "$(PYTHON)" trac/test.py
 	}
 	python_execute_function testing
 
 	if use i18n; then
 		make check
 	fi
-
 }
 
 # the default src_compile just calls setup.py build
@@ -89,17 +75,17 @@ src_install() {
 	fowners tracd:tracd /var/lib/trac/egg-cache
 
 	# documentation
-	cp -r contrib "${D}"/usr/share/doc/${P}/
+	dodoc -r contrib
 
 	# tracd init script
 	newconfd "${FILESDIR}"/tracd.confd tracd
 	newinitd "${FILESDIR}"/tracd.initd tracd
 
 	if use cgi; then
-		cp cgi-bin/trac.cgi "${D}"/${MY_CGIBINDIR} || die
+		cp cgi-bin/trac.cgi "${ED}${MY_CGIBINDIR}" || die
 	fi
 	if use fastcgi; then
-		cp cgi-bin/trac.fcgi "${D}"/${MY_CGIBINDIR} || die
+		cp cgi-bin/trac.fcgi "${ED}${MY_CGIBINDIR}" || die
 	fi
 
 	for lang in en; do

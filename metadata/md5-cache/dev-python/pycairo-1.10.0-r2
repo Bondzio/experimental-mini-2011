@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-DEPEND=>=x11-libs/cairo-1.10.0[svg?] dev-util/pkgconfig test? ( dev-python/pytest ) >=app-admin/eselect-python-20091230 || ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEPEND=>=x11-libs/cairo-1.10.0[svg?] dev-util/pkgconfig test? ( dev-python/pytest[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
 DESCRIPTION=Python bindings for the cairo library
-EAPI=3
+EAPI=4-python
 HOMEPAGE=http://cairographics.org/pycairo/ http://pypi.python.org/pypi/pycairo
-IUSE=doc examples +svg test
-KEYWORDS=alpha amd64 arm hppa ia64 ~mips ~ppc ~ppc64 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
-LICENSE=LGPL-3 || ( LGPL-2.1 MPL-1.1 )
-RDEPEND=>=x11-libs/cairo-1.10.0[svg?] >=app-admin/eselect-python-20091230 || ( =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+IUSE=doc examples +svg test python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE=|| ( LGPL-2.1 MPL-1.1 ) LGPL-3
+RDEPEND=>=x11-libs/cairo-1.10.0[svg?] >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=http://cairographics.org/releases/py2cairo-1.10.0.tar.bz2 http://cairographics.org/releases/pycairo-1.10.0.tar.bz2
-_eclasses_=base	809ab15a673823938260f6b17661c3f1	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	6a06d354382c90eecb783e2536b5316f
-_md5_=45853c2c5177e88b6ca7c968f81dd316
+_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	c8d6895c0354f8a4d539c8b1456e2c54
+_md5_=c09cdf561f625393b154dc3a23c48a3c

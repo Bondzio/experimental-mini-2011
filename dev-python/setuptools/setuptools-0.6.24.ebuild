@@ -1,9 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/setuptools/setuptools-0.6.24.ebuild,v 1.1 2011/12/27 04:53:54 patrick Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils eutils
@@ -26,7 +27,7 @@ RDEPEND=""
 S="${WORKDIR}/${MY_P}"
 
 DOCS="README.txt docs/easy_install.txt docs/pkg_resources.txt docs/setuptools.txt"
-PYTHON_MODNAME="easy_install.py pkg_resources.py setuptools site.py"
+PYTHON_MODULES="easy_install.py pkg_resources.py setuptools site.py"
 
 src_prepare() {
 	distutils_src_prepare
@@ -45,8 +46,9 @@ src_test() {
 	distutils_src_test
 
 	python_disable_pyc
+
+	find -name "__pycache__" -print0 | xargs -0 rm -fr
 	find "(" -name "*.pyc" -o -name "*\$py.class" ")" -print0 | xargs -0 rm -f
-	find -name "__pycache__" -print0 | xargs -0 rmdir
 }
 
 src_install() {

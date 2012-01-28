@@ -1,12 +1,11 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/mercurial/mercurial-2.0.2.ebuild,v 1.1 2012/01/27 22:23:16 nelchael Exp $
 
-EAPI=3
-PYTHON_DEPEND="2"
-PYTHON_USE_WITH="threads"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_DEPEND="<<[{*-cpython}threads]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit bash-completion-r1 elisp-common eutils distutils
 
@@ -19,20 +18,22 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 IUSE="bugzilla emacs gpg test tk zsh-completion"
 
-RDEPEND="bugzilla? ( dev-python/mysql-python )
+RDEPEND="bugzilla? ( $(python_abi_depend dev-python/mysql-python) )
 	gpg? ( app-crypt/gnupg )
 	tk? ( dev-lang/tk )
 	zsh-completion? ( app-shells/zsh )"
 DEPEND="emacs? ( virtual/emacs )
-	test? ( app-arch/unzip
-		dev-python/pygments )"
+	test? (
+		app-arch/unzip
+		$(python_abi_depend dev-python/pygments)
+	)"
 
 PYTHON_CFLAGS=(
 	"2.* + -fno-strict-aliasing"
 	"* - -ftracer -ftree-vectorize"
 )
 
-PYTHON_MODNAME="${PN} hgext"
+PYTHON_MODULES="${PN} hgext"
 SITEFILE="70${PN}-gentoo.el"
 
 src_prepare() {
@@ -61,27 +62,27 @@ src_install() {
 
 	if use zsh-completion ; then
 		insinto /usr/share/zsh/site-functions
-		newins contrib/zsh_completion _hg || die
+		newins contrib/zsh_completion _hg
 	fi
 
 	rm -f doc/*.?.txt || die
-	dodoc CONTRIBUTORS PKG-INFO README doc/*.txt || die
+	dodoc CONTRIBUTORS README doc/*.txt
 	cp hgweb*.cgi "${ED}"/usr/share/doc/${PF}/ || die
 
-	dobin hgeditor || die
-	dobin contrib/hgk || die
-	dobin contrib/hg-ssh || die
+	dobin hgeditor
+	dobin contrib/hgk
+	dobin contrib/hg-ssh
 
 	rm -f contrib/hgk contrib/hg-ssh || die
 
 	rm -f contrib/bash_completion || die
 	cp -r contrib "${ED}"/usr/share/doc/${PF}/ || die
-	doman doc/*.? || die
+	doman doc/*.?
 
 	cat > "${T}/80mercurial" <<-EOF
 HG="${EPREFIX}/usr/bin/hg"
 EOF
-	doenvd "${T}/80mercurial" || die
+	doenvd "${T}/80mercurial"
 
 	if use emacs; then
 		elisp-install ${PN} contrib/mercurial.el* || die "elisp-install failed!"

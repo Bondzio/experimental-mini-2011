@@ -65,6 +65,3 @@ index 3521647..75aacff 100644
      def testMultipleInstances(self):
          class C(GObject.GObject):
              prop = GObject.property(type=str, default='default')
--- 
-1.7.8.1
-

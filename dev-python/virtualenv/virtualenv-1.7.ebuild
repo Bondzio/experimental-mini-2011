@@ -1,9 +1,9 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/virtualenv/virtualenv-1.7.ebuild,v 1.1 2011/11/30 16:14:55 djc Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -15,10 +15,34 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="MIT"
 KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-solaris"
 SLOT="0"
-IUSE=""
+IUSE="doc"
 
-DEPEND="dev-python/setuptools"
-RDEPEND="${DEPEND}"
+RDEPEND="$(python_abi_depend dev-python/setuptools)"
+DEPEND="${RDEPEND}
+	doc? ( dev-python/sphinx )
+	test? ( $(python_abi_depend dev-python/mock) )"
 
 DOCS="docs/index.txt docs/news.txt"
-PYTHON_MODNAME="virtualenv.py virtualenv_support"
+PYTHON_MODULES="virtualenv.py virtualenv_support"
+
+src_compile() {
+	distutils_src_compile
+
+	if use doc; then
+		einfo "Generation of documentation"
+		pushd docs > /dev/null
+		emake html
+		popd > /dev/null
+	fi
+}
+
+src_install() {
+	distutils_src_install
+
+	if use doc; then
+		pushd docs/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
+	fi
+}

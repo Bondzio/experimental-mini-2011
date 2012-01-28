@@ -1,13 +1,13 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/greenlet/greenlet-0.3.3.ebuild,v 1.1 2012/01/19 15:16:34 bicatali Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="*-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="*-jython"
 DISTUTILS_SRC_TEST="setup.py"
 
-inherit distutils eutils
+inherit distutils
 
 DESCRIPTION="Lightweight in-process concurrent programming"
 HOMEPAGE="http://pypi.python.org/pypi/greenlet"
@@ -16,12 +16,36 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.zip"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="doc"
 
-DEPEND="dev-python/setuptools
-	app-arch/unzip"
+DEPEND="app-arch/unzip
+	$(python_abi_depend dev-python/setuptools)
+	doc? ( $(python_abi_depend -e "2.4" dev-python/sphinx) )"
 RDEPEND=""
 
 PYTHON_CFLAGS=("2.* + -fno-strict-aliasing")
 
-DOCS="AUTHORS NEWS"
+DOCS="AUTHORS NEWS README.rst"
+
+src_compile() {
+	distutils_src_compile
+
+	if use doc; then
+		einfo "Generation of documentation"
+		[[ "$(python_get_version -f -l)" == "2.4" ]] && die "Generation of documentation using Python 2.4 not supported"
+		pushd doc > /dev/null
+		emake html
+		popd > /dev/null
+	fi
+}
+
+src_install() {
+	distutils_src_install
+
+	if use doc; then
+		pushd doc/_build/html > /dev/null
+		insinto /usr/share/doc/${PF}/html
+		doins -r [a-z]* _static
+		popd > /dev/null
+	fi
+}

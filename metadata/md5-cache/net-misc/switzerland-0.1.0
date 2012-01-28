@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=net-libs/libpcap >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+DEPEND=net-libs/libpcap >=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2*
 DESCRIPTION=Switzerland Network Testing Tool
 EAPI=3
 HOMEPAGE=http://www.eff.org/testyourisp/switzerland/
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-3
-RDEPEND=net-libs/libpcap >=app-admin/eselect-python-20091230 =dev-lang/python-2*
+RDEPEND=net-libs/libpcap >=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/switzerland/switzerland-0.1.0.tgz
-_eclasses_=distutils	c8b0cab86443a130f3737ad1456d57d3	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2e86e35a9cc85e62975042a99dfd97be

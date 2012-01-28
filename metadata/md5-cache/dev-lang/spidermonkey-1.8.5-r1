@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=>=dev-libs/nspr-4.7.0 app-arch/zip =dev-lang/python-2*[threads] dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) =sys-devel/autoconf-2.1* sys-devel/libtool >=app-admin/eselect-python-20091230
+DEPEND=>=dev-libs/nspr-4.7.0 app-arch/zip =dev-lang/python-2*[threads] dev-util/pkgconfig || ( =sys-devel/automake-1.11* ) =sys-devel/autoconf-2.1* sys-devel/libtool >=app-admin/eselect-python-20091230 >=app-shells/bash-4
 DESCRIPTION=Stand-alone JavaScript C library
 EAPI=3
 HOMEPAGE=http://www.mozilla.org/js/spidermonkey/
 IUSE=debug static-libs test
 KEYWORDS=~alpha ~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 LICENSE=NPL-1.1
-RDEPEND=>=dev-libs/nspr-4.7.0 >=app-admin/eselect-python-20091230
+RDEPEND=>=dev-libs/nspr-4.7.0 >=app-admin/eselect-python-20091230 >=app-shells/bash-4
 SLOT=0
 SRC_URI=https://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cf73fe2a491ad5310ed71ffc829b7464	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	eutils	d92f291efb4ef0595cb90e4b4e7e6b6c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	3551398d6ede2b572568832730cc2a45	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ad3c4d2121d1d3a68fdb24b7b1f19b0d
