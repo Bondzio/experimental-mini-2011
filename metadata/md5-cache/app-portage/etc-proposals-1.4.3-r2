@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( >=dev-python/PyQt4-4.1.1[X] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEPEND=gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( >=dev-python/PyQt4-4.1.1[X] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=a set of tools for updating gentoo config files
 EAPI=3
 HOMEPAGE=http://developer.berlios.de/projects/etc-proposals/
 IUSE=gtk qt4
 KEYWORDS=amd64 ppc ~sparc x86
 LICENSE=GPL-2
-RDEPEND=gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( >=dev-python/PyQt4-4.1.1[X] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RDEPEND=gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( >=dev-python/PyQt4-4.1.1[X] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=b5e8a9b55825c54d64ed63bbc2c5fcba

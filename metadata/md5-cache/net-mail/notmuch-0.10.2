@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) ruby? ( dev-lang/ruby:1.8 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) dev-util/pkgconfig test? ( app-misc/dtach sys-devel/gdb ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+DEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) ruby? ( dev-lang/ruby:1.8 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) dev-util/pkgconfig test? ( app-misc/dtach sys-devel/gdb ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 DESCRIPTION=The mail indexer
 EAPI=4
 HOMEPAGE=http://notmuchmail.org/
 IUSE=bash-completion crypt debug doc emacs python ruby test vim zsh-completion
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) ruby? ( dev-lang/ruby:1.8 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) crypt? ( app-crypt/gnupg ) zsh-completion? ( app-shells/zsh ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+RDEPEND=>=dev-libs/glib-2.14 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) ruby? ( dev-lang/ruby:1.8 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) crypt? ( app-crypt/gnupg ) zsh-completion? ( app-shells/zsh ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 REQUIRED_USE=test? ( crypt emacs )
 SLOT=0
 SRC_URI=http://notmuchmail.org//releases/notmuch-0.10.2.tar.gz
-_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	cade8afe0b445bfbfba1144527d6066b	distutils	08b2655f86a40385d91b50c8ad2390ff	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cc61a7c888abf6d8622105c6184881ed	autotools-utils	cade8afe0b445bfbfba1144527d6066b	distutils	08b2655f86a40385d91b50c8ad2390ff	elisp-common	3048b6bde509e1aa680e77d093d01409	eutils	87297b51c585746a3759c390fa2cf24f	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=165a4e3f8c317df96f43a45bfaf1503c

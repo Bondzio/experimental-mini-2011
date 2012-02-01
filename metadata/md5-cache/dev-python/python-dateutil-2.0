@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=sys-libs/timezone-data dev-python/setuptools[python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
+DEPEND=sys-libs/timezone-data dev-python/setuptools[python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
 DESCRIPTION=Extensions to the standard Python datetime module
 EAPI=4-python
 HOMEPAGE=http://labix.org/python-dateutil http://pypi.python.org/pypi/python-dateutil
 IUSE=examples python_abis_3.1 python_abis_3.2 python_abis_3.3
 KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
 LICENSE=BSD
-RDEPEND=sys-libs/timezone-data >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
+RDEPEND=sys-libs/timezone-data python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
 REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=python-3
 SRC_URI=http://labix.org/download/python-dateutil/python-dateutil-2.0.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=9ce7999f1a84b7cafa91139d010c8eb9

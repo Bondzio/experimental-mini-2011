@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=!dev-python/pyro:0 dev-python/setuptools[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?] doc? ( dev-python/sphinx ) test? ( dev-python/nose[coverage,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
+DEPEND=!dev-python/pyro:0 dev-python/setuptools[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?] doc? ( dev-python/sphinx ) test? ( dev-python/nose[coverage,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_2.6-jython?,python_abis_2.7-pypy-1.7?] ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
 DESCRIPTION=Advanced and powerful Distributed Object Technology system written entirely in Python
 EAPI=4-python
 HOMEPAGE=http://irmen.home.xs4all.nl/pyro/ http://pypi.python.org/pypi/Pyro4
 IUSE=doc examples test python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.6-jython python_abis_2.7-pypy-1.7
 KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
 LICENSE=MIT
-RDEPEND=!dev-python/pyro:0 >=app-admin/eselect-python-20091230 >=app-shells/bash-4 python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
+RDEPEND=!dev-python/pyro:0 python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.6-jython python_abis_2.7-pypy-1.7 )
 SLOT=4
 SRC_URI=mirror://pypi/P/Pyro4/Pyro4-4.11.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=e30c473bc03c6c96684206190cf7aa96

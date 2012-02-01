@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=python? ( >=dev-lang/python-2.4 ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4
+DEPEND=python? ( >=dev-lang/python-2.4 )
 DESCRIPTION=The ultimate disassembler library (X86-32, X86-64)
 EAPI=2
 HOMEPAGE=http://www.ragestorm.net/distorm/
 IUSE=+python
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=python? ( >=dev-lang/python-2.4 ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4
+RDEPEND=python? ( >=dev-lang/python-2.4 )
 SLOT=0
 SRC_URI=http://ragestorm.net/distorm/distorm64-pkg1.7.30.tar.bz2
-_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	87297b51c585746a3759c390fa2cf24f	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=346dbd6a817cda466307d6ccaed4db33

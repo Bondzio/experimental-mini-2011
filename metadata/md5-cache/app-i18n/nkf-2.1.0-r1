@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
-DEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* ) dev-lang/perl[-build]
+DEPEND=python? ( =dev-lang/python-2* ) dev-lang/perl[-build]
 DESCRIPTION=Network Kanji code conversion Filter with UTF-8/16 support
 EAPI=3
 HOMEPAGE=http://sourceforge.jp/projects/nkf/
 IUSE=perl python linguas_ja
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-macos
 LICENSE=as-is
-RDEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 python? ( =dev-lang/python-2* ) dev-lang/perl[-build]
+RDEPEND=python? ( =dev-lang/python-2* ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/nkf/44486/nkf-2.1.0.tar.gz python? ( http://city.plala.jp/moin/NkfPython?action=AttachFile&do=get&target=NKF_python20090602.tgz -> NKF_python20090602.tgz )
-_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=06302dd4034addd5989d7d2f902f3716

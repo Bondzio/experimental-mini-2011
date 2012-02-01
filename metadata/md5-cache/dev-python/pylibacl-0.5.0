@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare test
-DEPEND=sys-apps/acl dev-python/setuptools >=app-admin/eselect-python-20091230 >=app-shells/bash-4 dev-lang/python
+DEPEND=sys-apps/acl dev-python/setuptools dev-lang/python
 DESCRIPTION=POSIX ACLs (Access Control Lists) for Python
 EAPI=3
 HOMEPAGE=http://sourceforge.net/projects/pylibacl/ http://pypi.python.org/pypi/pylibacl
 KEYWORDS=amd64 arm ia64 ppc ppc64 sh sparc x86
 LICENSE=LGPL-2.1
-RDEPEND=sys-apps/acl >=app-admin/eselect-python-20091230 >=app-shells/bash-4 dev-lang/python
+RDEPEND=sys-apps/acl dev-lang/python
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/pylibacl/pylibacl-0.5.0.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=bc88a692a182baf7b346e996d4a57e08

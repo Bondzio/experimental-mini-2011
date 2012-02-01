@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
-DEPEND=doc? ( dev-python/epydoc ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=doc? ( dev-python/epydoc ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=A common interface to Gentoo package managers
 EAPI=4
 HOMEPAGE=https://github.com/mgorny/gentoopm/
@@ -7,8 +7,8 @@ IUSE=doc
 KEYWORDS=~amd64 ~x86 ~x86-fbsd
 LICENSE=BSD-2
 PDEPEND=app-admin/eselect-package-manager
-RDEPEND=|| ( >=sys-apps/portage-2.1.10.3 sys-apps/pkgcore >=sys-apps/paludis-0.64.2[python-bindings] ) >=app-admin/eselect-python-20091230 >=app-shells/bash-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=|| ( >=sys-apps/portage-2.1.10.3 sys-apps/pkgcore >=sys-apps/paludis-0.64.2[python-bindings] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://github/mgorny/gentoopm/gentoopm-0.2.5.tar.bz2
-_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	distutils	08b2655f86a40385d91b50c8ad2390ff	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=94b7e6b7d677e13db3beb63cb4ae97be

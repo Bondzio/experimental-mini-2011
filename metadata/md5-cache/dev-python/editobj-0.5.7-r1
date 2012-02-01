@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2* =dev-lang/python-2*[tk]
+DEPEND==dev-lang/python-2* =dev-lang/python-2*[tk]
 DESCRIPTION=EditObj can create a dialog box to edit ANY Python object.
 EAPI=3
 HOMEPAGE=http://home.gna.org/oomadness/en/editobj/index.html
 KEYWORDS=~amd64 ~ia64 ~ppc x86
 LICENSE=GPL-2
-RDEPEND=>=app-admin/eselect-python-20091230 >=app-shells/bash-4 =dev-lang/python-2* =dev-lang/python-2*[tk]
+RDEPEND==dev-lang/python-2* =dev-lang/python-2*[tk]
 SLOT=0
 SRC_URI=http://download.gna.org/songwrite/EditObj-0.5.7.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	d7501ae2898b3498e5b64f355e5db525	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=95ada96e48b5c2948c4039afafb5e9af
