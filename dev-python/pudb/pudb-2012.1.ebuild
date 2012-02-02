@@ -1,9 +1,10 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pudb/pudb-0.92.15.ebuild,v 1.2 2010/12/26 15:07:22 arfrever Exp $
 
-EAPI="2"
-SUPPORT_PYTHON_ABIS="1"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 
 inherit distutils
 
@@ -16,8 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86 ~x86-interix ~x86-linux"
 IUSE=""
 
-RDEPEND="dev-python/urwid
-	dev-python/pygments"
+RDEPEND="$(python_abi_depend dev-python/pygments)
+	$(python_abi_depend dev-python/urwid)"
 DEPEND="${RDEPEND}
-	dev-python/setuptools"
-RESTRICT_PYTHON_ABIS="3.*"
+	$(python_abi_depend dev-python/setuptools)"
