@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
+DESCRIPTION=authres - Authentication Results Header Module
+EAPI=4-python
+HOMEPAGE=https://launchpad.net/authentication-results-python http://pypi.python.org/pypi/authres
+IUSE=python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.6-jython python_abis_2.7-pypy-1.7
+KEYWORDS=~amd64 ~x86
+LICENSE=Apache-2.0
+RDEPEND=python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_2.6-jython? ( dev-java/jython:2.6 ) python_abis_2.7-pypy-1.7? ( dev-python/pypy:1.7 )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.6-jython python_abis_2.7-pypy-1.7 )
+SLOT=0
+SRC_URI=mirror://pypi/a/authres/authres-0.3.tar.gz
+_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=1848176a3a09299b9df79a9f0edfea69
