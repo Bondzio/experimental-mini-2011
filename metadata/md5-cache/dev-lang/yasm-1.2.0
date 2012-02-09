@@ -9,5 +9,5 @@ LICENSE=BSD-2 BSD || ( Artistic GPL-2 LGPL-2 )
 RDEPEND=nls? ( virtual/libintl ) python? ( =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=http://www.tortall.net/projects/yasm/releases/yasm-1.2.0.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=python	0ccb14eafb80a09d2670cdd94b8ad371
 _md5_=72455ff7d152e334e4098f0c0f320ac6

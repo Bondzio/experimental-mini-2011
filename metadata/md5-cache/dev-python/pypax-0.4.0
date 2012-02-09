@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~blueness/elfix/elfix-0.4.0.tar.gz
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
 _md5_=9bb61e1e6d3f8b4669d30f7476cdbf02

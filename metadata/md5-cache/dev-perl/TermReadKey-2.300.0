@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/J/JS/JSTOWE/TermReadKey-2.30.tar.gz
-_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	87297b51c585746a3759c390fa2cf24f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4bbadbcff5539e84c90ca9e32715df22

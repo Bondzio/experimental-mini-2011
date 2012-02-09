@@ -9,5 +9,5 @@ LICENSE=LPPL-1.2
 RDEPEND=dev-lang/perl dev-texlive/texlive-latexrecommended >=dev-texlive/texlive-latexextra-2008 virtual/latex-base
 SLOT=0
 SRC_URI=mirror://gentoo/glossaries-3.01.zip
-_eclasses_=base	c5a9e7363f0d7758a71fb08d735c7308	eutils	87297b51c585746a3759c390fa2cf24f	latex-package	e7bfe03b27224512702eac009812cc50	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	87297b51c585746a3759c390fa2cf24f	latex-package	e7bfe03b27224512702eac009812cc50	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e80b5d4e7d845954bb79c544ed635c52

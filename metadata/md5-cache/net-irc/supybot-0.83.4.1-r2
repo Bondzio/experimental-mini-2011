@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=twisted? ( >=dev-python/twisted-8.1.0[crypt] >=dev-python/twisted-names-8.1.0 ) !<net-irc/supybot-plugins-20060723-r1 sqlite? ( dev-python/pysqlite:0 ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/supybot/Supybot-0.83.4.1.tar.bz2
-_eclasses_=distutils	08b2655f86a40385d91b50c8ad2390ff	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	676855d23915919b03abe2c1b311036a	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
 _md5_=2dc097a4a4cae53d2f5ac3e138d8b1d9
