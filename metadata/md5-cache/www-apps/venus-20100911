@@ -1,13 +1,13 @@
 DEFINED_PHASES=install postinst postrm prepare prerm setup test
-DEPEND=test? ( =dev-lang/python-2*[berkdb] ) >=app-admin/webapp-config-1.50.15 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+DEPEND=test? ( =dev-lang/python-2*[berkdb] ) >=app-admin/webapp-config-1.50.15 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=A feed aggregator application
 EAPI=3
 HOMEPAGE=http://intertwingly.net/code/venus/
 IUSE=django genshi redland test vhosts
 KEYWORDS=~amd64 ~x86
 LICENSE=PSF-2.2
-RDEPEND=django? ( dev-python/django ) genshi? ( dev-python/genshi ) redland? ( dev-python/rdflib[redland] ) dev-python/chardet dev-python/httplib2 dev-python/utidylib >=app-admin/webapp-config-1.50.15 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* =dev-lang/python-2.4* )
+RDEPEND=django? ( dev-python/django ) genshi? ( dev-python/genshi ) redland? ( dev-python/rdflib[redland] ) dev-python/chardet dev-python/httplib2 dev-python/utidylib >=app-admin/webapp-config-1.50.15 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://gentoo/venus-20100911.tar.bz2
 _eclasses_=python	0ccb14eafb80a09d2670cdd94b8ad371	webapp	30d951d5c98c4f31c7999ab4ba4806d1
-_md5_=7ca70b7bb8333317256abc32d1c9ab22
+_md5_=e91d8722732ccfd7b3b16b1bdfc0756d
