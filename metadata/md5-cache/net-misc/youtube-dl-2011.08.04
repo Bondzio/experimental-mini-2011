@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://github.com/rg3/youtube-dl/tarball/2011.08.04 -> youtube-dl-2011.08.04.tar.gz
-_eclasses_=python	0ccb14eafb80a09d2670cdd94b8ad371
+_eclasses_=python	da481dd0a07fa335336c89494d9c339e
 _md5_=3b23ee12f947c8278d2a3c87e3e801bf

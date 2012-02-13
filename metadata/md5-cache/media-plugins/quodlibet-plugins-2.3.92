@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/quodlibet-2.3.92 =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=http://quodlibet.googlecode.com/files/quodlibet-plugins-2.3.92.tar.gz
-_eclasses_=python	0ccb14eafb80a09d2670cdd94b8ad371
+_eclasses_=python	da481dd0a07fa335336c89494d9c339e
 _md5_=d46929ee885d9e7ebd1164f415704c41

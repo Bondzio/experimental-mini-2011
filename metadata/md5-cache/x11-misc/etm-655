@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/wxpython:2.8 dev-python/python-dateutil ical? ( dev-python/icalendar ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://sourceforge/etmeventandtask/etm-655.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
 _md5_=ef68f8f12c6bd39afa66b570b7153531

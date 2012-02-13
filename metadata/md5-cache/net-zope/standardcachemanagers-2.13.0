@@ -10,5 +10,5 @@ RDEPEND=net-zope/namespaces-zope[Products,python_abis_2.6?,python_abis_2.7?] net
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://pypi/P/Products.StandardCacheManagers/Products.StandardCacheManagers-2.13.0.zip
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
-_md5_=8001675e4c6593d0d714b93dd6fff5ab
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_md5_=1226c3424df9a8807c0eaa4d502bfcba

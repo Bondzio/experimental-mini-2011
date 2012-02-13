@@ -10,5 +10,5 @@ RDEPEND=dev-python/numpy[python_abis_2.6?,python_abis_2.7?] dev-python/python-da
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://sourceforge/matplotlib/matplotlib-1.1.0.tar.gz doc? ( mirror://sourceforge/matplotlib/mpl_sampledata-1.1.0.tar.gz ) examples? ( mirror://sourceforge/matplotlib/mpl_sampledata-1.1.0.tar.gz )
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
-_md5_=5dd7327083911b75f89f83888a01b581
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_md5_=0acb71e3b4f72902368fb312c2b9e3b4

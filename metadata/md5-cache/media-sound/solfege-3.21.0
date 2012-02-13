@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-python/pygtk-2.12 gnome-base/librsvg alsa? ( dev-python/pyalsa ) !oss? ( media-sound/timidity++ ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 SLOT=0
 SRC_URI=mirror://sourceforge/solfege/solfege-3.21.0.tar.gz
-_eclasses_=python	0ccb14eafb80a09d2670cdd94b8ad371
+_eclasses_=python	da481dd0a07fa335336c89494d9c339e
 _md5_=47273a2b1e50953a4de2309f2c3311cc

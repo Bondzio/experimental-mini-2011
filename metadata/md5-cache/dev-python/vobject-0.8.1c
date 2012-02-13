@@ -8,5 +8,5 @@ LICENSE=Apache-1.1
 RDEPEND=dev-python/python-dateutil:python-2 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://vobject.skyhouseconsulting.com/vobject-0.8.1c.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
 _md5_=3601ba51dcbed2dffcc9a5aa9e28e5e4

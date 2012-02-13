@@ -10,5 +10,5 @@ RDEPEND=>=net-libs/zeromq-2.1.4 python_abis_2.5? ( dev-lang/python:2.5 ) python_
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=mirror://pypi/p/pyzmq/pyzmq-2.1.11.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0ccb14eafb80a09d2670cdd94b8ad371
-_md5_=668f6a1f39ac93056dc263fa9c4b606e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_md5_=b9c58862d4317a7861cb8dd2ddcbaa27
