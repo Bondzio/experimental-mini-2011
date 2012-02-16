@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND==dev-lang/python-2* =dev-lang/python-2*[sqlite]
+DESCRIPTION=Extensions to the engine such as Teamgeist, Relevancy Providers and Machine Learning Algorithms
+EAPI=4
+HOMEPAGE=https://launchpad.net/zeitgeist-extensions/
+IUSE=fts geolocation memprofile sqldebug tracker
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-3
+RDEPEND=fts? ( dev-libs/xapian-bindings[python] dev-python/dbus-python dev-python/pygobject dev-python/pyxdg ) geolocation? ( dev-python/dbus-python dev-python/python-geoclue ) memprofile? ( dev-python/dbus-python ) sqldebug? ( dev-python/python-sqlparse ) tracker? ( app-misc/tracker dev-python/pygobject dev-python/dbus-python ) =dev-lang/python-2* =dev-lang/python-2*[sqlite]
+SLOT=0
+SRC_URI=http://launchpad.net/zeitgeist-extensions/trunk/fts-0.0.13/+download/zeitgeist-extensions-0.0.13.tar.gz
+_eclasses_=python	da481dd0a07fa335336c89494d9c339e
+_md5_=5d73f096c3ddea0ec48fa1a961cb59c6
