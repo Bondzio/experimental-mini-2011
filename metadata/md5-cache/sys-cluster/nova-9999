@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup unpack
+DEPEND=dev-python/setuptools dev-python/lockfile dev-python/netaddr dev-python/eventlet dev-python/python-gflags dev-python/nosexcover dev-python/sqlalchemy-migrate dev-python/pylint dev-python/mox dev-python/pep8 dev-python/cheetah dev-python/carrot dev-python/lxml dev-python/python-daemon dev-python/wsgiref dev-python/sphinx dev-python/suds dev-python/paramiko dev-python/feedparser dev-vcs/git =dev-lang/python-2*
+DESCRIPTION=Nova is a cloud computing fabric controller (the main part of an IaaS system). It is written in Python.
+EAPI=4-python
+HOMEPAGE=https://launchpad.net/nova
+IUSE=controller
+KEYWORDS=*
+LICENSE=Apache-2.0
+RDEPEND=dev-python/setuptools dev-python/lockfile dev-python/netaddr dev-python/eventlet dev-python/python-gflags dev-python/nosexcover dev-python/sqlalchemy-migrate dev-python/pylint dev-python/mox dev-python/pep8 dev-python/cheetah dev-python/carrot dev-python/lxml dev-python/python-daemon dev-python/wsgiref dev-python/sphinx dev-python/suds dev-python/paramiko dev-python/feedparser dev-python/m2crypto dev-python/python-novaclient dev-python/nova-adminclient dev-python/boto dev-python/prettytable dev-python/mysql-python sys-cluster/glance controller? ( net-misc/rabbitmq-server ) =dev-lang/python-2*
+SLOT=0
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	6bb20ec18cca375571bcbe67bcf2e1d7	python	da481dd0a07fa335336c89494d9c339e
+_md5_=748b54b9fc4f7a0a8d9337e1da8b68f0
