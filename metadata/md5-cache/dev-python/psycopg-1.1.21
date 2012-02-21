@@ -9,4 +9,4 @@ RDEPEND=>=dev-python/egenix-mx-base-2.0.3 dev-db/postgresql-base =dev-lang/pytho
 SLOT=0
 SRC_URI=http://initd.org/pub/software/psycopg/psycopg-1.1.21.tar.gz
 _eclasses_=python	da481dd0a07fa335336c89494d9c339e
-_md5_=3e46b044f9d858bbc21676890b49a827
+_md5_=88c320569a4217c2d88092b0e27e19de

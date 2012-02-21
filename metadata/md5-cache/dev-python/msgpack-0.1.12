@@ -10,4 +10,4 @@ RDEPEND=|| ( =dev-lang/python-3* =dev-lang/python-2.7* =dev-lang/python-2.6* =de
 SLOT=0
 SRC_URI=mirror://pypi/m/msgpack-python/msgpack-python-0.1.12.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
-_md5_=1b96e7a36f8aaccf8b97e8f43bec47e7
+_md5_=91dfb78be63e33535c43715ae876dd66

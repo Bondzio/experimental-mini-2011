@@ -1,6 +1,5 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI=4-python
 
@@ -18,6 +17,6 @@ SLOT="0"
 KEYWORDS="*"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
-RDEPEND="dev-python/boto ${DEPEND}"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
+RDEPEND="$(python_abi_depend dev-python/boto) ${DEPEND}"
 

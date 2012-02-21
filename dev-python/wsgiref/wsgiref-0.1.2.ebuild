@@ -20,7 +20,7 @@ SLOT="0"
 KEYWORDS="*"
 IUSE=""
 
-DEPEND="dev-python/setuptools 
+DEPEND="$(python_abi_depend dev-python/setuptools) 
 	    app-arch/unzip"
 RDEPEND="${DEPEND}"
 

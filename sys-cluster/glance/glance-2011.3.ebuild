@@ -4,8 +4,8 @@
 
 EAPI=4-python
 
-PYTHON_RESTRICTED_ABIS="3.*"
-PYTHON_DEPEND="<<2>>"
+PYTHON_MULTIPLE_ABIS=1
+PYTHON_RESTRICTED_ABIS="2.[45] 3.* *-jython"
 
 inherit distutils
 
@@ -20,15 +20,8 @@ SLOT="0"
 KEYWORDS="*"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
-RDEPEND="${DEPEND}
-		 dev-python/webob
-		 dev-python/httplib2
-		 dev-python/routes
-		 dev-python/paste
-		 dev-python/pastedeploy
-		 dev-python/pyxattr
-		 dev-python/kombu"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
+RDEPEND="${DEPEND} $(python_abi_depend dev-python/webob dev-python/httplib2 dev-python/routes dev-python/paste dev-python/pastedeploy dev-python/pyxattr dev-python/kombu)"
 
 src_install() {
 	distutils_src_install

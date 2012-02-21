@@ -446,6 +446,7 @@ app-emulation/qemu-kvm:rbd - Enable rados block device backend support, see http
 app-emulation/qemu-kvm:sdl - Enable the SDL-based console
 app-emulation/qemu-kvm:spice - Enable Spice protocol support via app-emulation/spice
 app-emulation/qemu-kvm:ssl - Enable TLS support for the VNC console server
+app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
 app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu-kvm:vde - Enable VDE-based networking
 app-emulation/qemu-kvm:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
@@ -1434,17 +1435,17 @@ dev-php/pecl-memcached:igbinary - Enable support for the igbinary serializer
 dev-php/smarty-docs:html - Install the documentation in HTML format
 dev-php/smarty-docs:pdf - Install the documentation in PDF format
 dev-python/PyFoam:extras - Enable optional dependencies
-dev-python/PyQt4:X - Build the QtGui and QtDesigner modules
-dev-python/PyQt4:assistant - Build the QtHelp and QtAssistant modules
-dev-python/PyQt4:declarative - Build the QtDeclarative module
-dev-python/PyQt4:kde - Select media-sound/phonon as Phonon variant needed for KDE
-dev-python/PyQt4:multimedia - Build the QtMultimedia module
-dev-python/PyQt4:opengl - Build the QtOpenGL module
-dev-python/PyQt4:phonon - Build the phonon module
-dev-python/PyQt4:sql - Build the QtSql module
-dev-python/PyQt4:svg - Build the QtSvg module
-dev-python/PyQt4:webkit - Build the QtWebKit module
-dev-python/PyQt4:xmlpatterns - Build the QtXmlPatterns module
+dev-python/PyQt4:X - Build QtGui, QtDesigner and QtScriptTools modules
+dev-python/PyQt4:assistant - Build QtHelp and QtAssistant modules
+dev-python/PyQt4:declarative - Build QtDeclarative module
+dev-python/PyQt4:kde - Select media-sound/phonon as phonon variant, needed for KDE4
+dev-python/PyQt4:multimedia - Build QtMultimedia module
+dev-python/PyQt4:opengl - Build QtOpenGL module
+dev-python/PyQt4:phonon - Build phonon module
+dev-python/PyQt4:sql - Build QtSql module
+dev-python/PyQt4:svg - Build QtSvg module
+dev-python/PyQt4:webkit - Build QtWebKit module
+dev-python/PyQt4:xmlpatterns - Build QtXmlPatterns module
 dev-python/amqplib:extras - Install extra tools to generate initial Python mod from an AMQP XML file
 dev-python/anyvc:bazaar - Add support for Bazaar
 dev-python/anyvc:git - Add support for Git
@@ -2435,6 +2436,7 @@ media-libs/evas:psd - Support PSD image loader
 media-libs/evas:tga - Support tga image loader
 media-libs/faad2:digitalradio - Digital Radio Mondiale (warning: disables other decoders)
 media-libs/ffmpegsource:postproc - Enables image post-processing via libpostproc (part of FFmpeg).
+media-libs/flickcurl:oauth - Enable experimental OAuth support
 media-libs/flickcurl:raptor - Use media-libs/raptor for proper RDF serializing
 media-libs/freeglut:mpx - Enable support for multi-pointer-X. One pointer for each pointer device.
 media-libs/freetype:auto-hinter - Use the unpatented auto-hinter instead of the (recommended) TrueType bytecode interpreter
@@ -2979,7 +2981,6 @@ media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3
 media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:ass - Enables media-libs/libass based subtitle renderer.
-media-video/ffmpeg:avconv - Build and install avconv, an alternative command line tool to ffmpeg from media-video/libav.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/celt
@@ -3723,7 +3724,6 @@ net-irc/rbot:translator - Add dependency over dev-ruby/mechanize, which is neede
 net-irc/srvx:bahamut - Choose bahamut protocol over p10 protocol
 net-irc/supybot:twisted - Allows supybot to use dev-python/twisted as driver
 net-irc/unrealircd:extban-stacking - Enable extended channel bans (such as +b ~c: and +b ~n:) to contain other extended bans instead of just hostmasks.
-net-irc/unrealircd:hub - Enable hub support
 net-irc/unrealircd:operoverride - Enable OperOverride extension
 net-irc/unrealircd:operoverride-verify - Enable requiring opers to invite themselves to +s/+p channels
 net-irc/unrealircd:prefixaq - Enable chanadmin and chanowner prefixes
@@ -3949,7 +3949,6 @@ net-misc/asterisk:srtp - Enable support for encrypted voice transmission (secure
 net-misc/asterisk-core-sounds:alaw - Install the sounds files for the alaw codec.
 net-misc/asterisk-core-sounds:g722 - Install the sounds files for the g722 codec.
 net-misc/asterisk-core-sounds:g729 - Install the sounds files for the g729 codec.
-net-misc/asterisk-core-sounds:gsm - Install the sounds files for the +gsm codec.
 net-misc/asterisk-core-sounds:siren14 - Install the sounds files for the siren14 codec.
 net-misc/asterisk-core-sounds:siren7 - Install the sounds files for the siren7 codec.
 net-misc/asterisk-core-sounds:sln16 - Install the sounds files for the sln16 codec.
@@ -4101,6 +4100,7 @@ net-misc/quagga:readline - Enable support for sys-libs/readline to provide the Q
 net-misc/quagga:tcp-zebra - Enable TCP zserv interface on port 2600 for Zebra/protocol-daemon communication. Unix domain sockets are chosen otherwise.
 net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite driver
 net-misc/remmina:freerdp - Add support for the net-misc/freerdp application
+net-misc/remmina:gtk3 - Build against x11-libs/gtk+:3
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
 net-misc/remmina:telepathy - Enable telepathy support
 net-misc/remmina:unique - Enable single instance support using dev-libs/libunique
@@ -4353,7 +4353,7 @@ net-wireless/kismet:ruby - Build extras which are written in ruby, example plugi
 net-wireless/kismet:speech - Audio support using app-accessibility/flite
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
-net-wireless/spectools:debug - Build the raw output client for spectools. This is only needed for developing spectools.
+net-wireless/spectools:debug - Build the raw output client for spectools.
 net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
 net-wireless/spectools:ncurses - Build the ncurses based client for spectools
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support

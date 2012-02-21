@@ -1,10 +1,10 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-
+# foo
 EAPI=4-python
 
-PYTHON_DEPEND="<<2>>"
-PYTHON_RESTRICTED_ABIS="3.*"
+PYTHON_RESTRICTED_ABIS="2.[45] 3.* *-jython *-pypy-*"
+PYTHON_MULTIPLE_ABIS="1"
 
 inherit git-2 distutils
 
@@ -17,34 +17,8 @@ SLOT="0"
 KEYWORDS="*"
 IUSE="controller"
 
-DEPEND="dev-python/setuptools
-        dev-python/lockfile
-		dev-python/netaddr
-		dev-python/eventlet
-		dev-python/python-gflags
-		dev-python/nosexcover
-		dev-python/sqlalchemy-migrate
-		dev-python/pylint
-		dev-python/mox
-		dev-python/pep8
-		dev-python/cheetah
-		dev-python/carrot
-		dev-python/lxml
-		dev-python/python-daemon
-		dev-python/wsgiref
-		dev-python/sphinx
-		dev-python/suds
-		dev-python/paramiko
-		dev-python/feedparser"
-RDEPEND="${DEPEND}
-		 dev-python/m2crypto
-		 dev-python/python-novaclient
-		 dev-python/nova-adminclient
-		 dev-python/boto
-		 dev-python/prettytable
-		 dev-python/mysql-python
-		 sys-cluster/glance
-		 controller? ( net-misc/rabbitmq-server )"
+DEPEND="$(python_abi_depend dev-python/setuptools dev-python/lockfile dev-python/netaddr dev-python/eventlet dev-python/python-gflags dev-python/nosexcover dev-python/sqlalchemy-migrate dev-python/pylint dev-python/mox dev-python/pep8 dev-python/cheetah dev-python/carrot dev-python/lxml dev-python/python-daemon dev-python/wsgiref dev-python/sphinx dev-python/suds dev-python/paramiko dev-python/feedparser)"
+RDEPEND="${DEPEND} $(python_abi_depend dev-python/m2crypto dev-python/python-novaclient dev-python/nova-adminclient dev-python/boto dev-python/prettytable dev-python/mysql-python sys-cluster/glance ) controller? ( net-misc/rabbitmq-server )"
 
 src_install() {
 	distutils_src_install

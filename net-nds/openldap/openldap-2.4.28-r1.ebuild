@@ -1,9 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-nds/openldap/openldap-2.4.28-r1.ebuild,v 1.3 2012/02/12 21:39:37 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-nds/openldap/openldap-2.4.28-r1.ebuild,v 1.7 2012/02/21 16:41:52 ago Exp $
 
 EAPI="3"
-WANT_AUTOMAKE=1.9
+
 inherit db-use eutils flag-o-matic multilib ssl-cert versionator toolchain-funcs autotools
 
 BIS_PN=rfc2307bis.schema
@@ -13,11 +13,11 @@ BIS_P="${BIS_PN}-${BIS_PV}"
 DESCRIPTION="LDAP suite of application and development tools"
 HOMEPAGE="http://www.OpenLDAP.org/"
 SRC_URI="mirror://openldap/openldap-release/${P}.tgz
-		 http://simonraven.kisikew.org/src/ldap/${BIS_PN} -> ${BIS_P}"
+		 http://simon.kisikew.org/src/ldap/${BIS_PN} -> ${BIS_P}"
 
 LICENSE="OPENLDAP"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-solaris"
 
 IUSE_DAEMON="crypt icu samba slp tcpd experimental minimal"
 IUSE_BACKEND="+berkdb"
@@ -253,6 +253,9 @@ src_prepare() {
 	# bug #294350
 	epatch "${FILESDIR}"/${PN}-2.4.6-evolution-ntlm.patch
 
+	# unbreak /bin/sh -> dash
+	epatch "${FILESDIR}"/${PN}-2.4.28-fix-dash.patch
+
 	cd "${S}"/build
 	einfo "Making sure upstream build strip does not do stripping too early"
 	sed -i.orig \
@@ -265,7 +268,7 @@ src_prepare() {
 		"${S}"/tests/scripts/* || die "sed failed"
 
 	cd "${S}"
-	WANT_AUTOMAKE=none eautoreconf
+	AT_NOEAUTOMAKE=yes eautoreconf
 }
 
 build_contrib_module() {

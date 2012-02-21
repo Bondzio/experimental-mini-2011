@@ -18,6 +18,6 @@ SLOT="0"
 KEYWORDS="*"
 IUSE=""
 
-DEPEND="dev-python/setuptools"
-RDEPEND="dev-python/anyjson >=dev-python/amqplib-0.6"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
+RDEPEND="$(python_abi_depend dev-python/anyjson ">=dev-python/amqplib-0.6")"
 

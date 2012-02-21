@@ -4,7 +4,7 @@
 EAPI=4-python
 
 PYTHON_MULTIPLE_ABIS="1"
-PYTHON_RESTRICTED_ABIS="3.*"
+PYTHON_RESTRICTED_ABIS="3.* *-jython *-pypy-*"
 DISTUTILS_SRC_TEST="nosetests"
 
 inherit distutils
@@ -18,9 +18,9 @@ SLOT="0"
 KEYWORDS="*"
 IUSE="doc examples test"
 
-DEPEND="doc? ( dev-python/sphinx )
-        test? ( dev-python/greenlet )"
-RDEPEND="${DEPEND} dev-python/greenlet"
+DEPEND="doc? ( $(python_abi_depend dev-python/sphinx) )
+        test? ( $(python_abi_depend dev-python/greenlet) )"
+RDEPEND="${DEPEND} $(python_abi_depend dev-python/greenlet)"
 
 src_compile() {
 	distutils_src_compile

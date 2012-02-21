@@ -17,7 +17,5 @@ SLOT="0"
 KEYWORDS="*"
 IUSE=""
 
-DEPEND="dev-python/setuptools
-		dev-python/nose
-		dev-python/coverage"
+DEPEND="$(python_abi_depend dev-python/setuptools dev-python/nose dev-python/coverage)"
 RDEPEND="${DEPEND}"
