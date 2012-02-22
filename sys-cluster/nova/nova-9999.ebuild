@@ -1,6 +1,6 @@
 # Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# foo
+
 EAPI=4-python
 
 PYTHON_RESTRICTED_ABIS="2.[45] 3.* *-jython *-pypy-*"
@@ -31,4 +31,13 @@ src_install() {
 
 	diropts -m 0750
 	dodir /var/run/nova /var/log/nova /var/lock/nova
+
+	# documentation
+	# api-paste config and others:
+	docinto etc
+	dodoc ${S}/etc/nova/*
+	# restructuredtext docs:
+	docinto rst
+	dodoc -r ${S}/doc/source/*
+
 }
