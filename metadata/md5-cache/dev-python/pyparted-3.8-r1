@@ -10,4 +10,4 @@ RDEPEND=dev-python/decorator >=sys-block/parted-3 sys-libs/ncurses =dev-lang/pyt
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/p/y/pyparted/pyparted-3.8.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
-_md5_=c309dcf489eb9136f88e9f0e189105eb
+_md5_=5e50b7795831aacfb39adbaa96096493

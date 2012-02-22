@@ -9,4 +9,4 @@ RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/p/processing/processing-0.52.zip
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
-_md5_=a842ef7fe8a1be920708b92957bd2e6a
+_md5_=92bd1676e0f7f4bbcec72bab0010f9d3
