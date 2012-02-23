@@ -11,4 +11,4 @@ REQUIRED_USE=test? ( crypt emacs )
 SLOT=0
 SRC_URI=http://notmuchmail.org/releases/notmuch-0.11.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	elisp-common	aa9676ce708f8aacf54ff9df8015963b	python	da481dd0a07fa335336c89494d9c339e
-_md5_=4c033126f20a0868beb3bb21e11a4dcf
+_md5_=a63840d9f7b461b8f206513d53526518

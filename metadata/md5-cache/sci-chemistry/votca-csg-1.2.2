@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND==sci-libs/votca-tools-1.2.2[system-boost=] gromacs? ( sci-chemistry/gromacs ) dev-lang/perl app-shells/bash doc? ( app-doc/doxygen[-nodot] ) >=app-text/txt2tags-2.5 dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND==sci-libs/votca-tools-1.2.2[system-boost=] gromacs? ( sci-chemistry/gromacs ) dev-lang/perl app-shells/bash doc? ( || ( <app-doc/doxygen-1.7.6.1[-nodot] >=app-doc/doxygen-1.7.6.1[dot] ) ) >=app-text/txt2tags-2.5 dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Votca coarse-graining engine
 EAPI=4
 HOMEPAGE=http://www.votca.org
@@ -12,4 +12,4 @@ RESTRICT=primaryuri
 SLOT=0
 SRC_URI=http://votca.googlecode.com/files/votca-csg-1.2.2.tar.gz doc? ( http://votca.googlecode.com/files/votca-csg-manual-1.2.2.pdf ) examples? ( http://votca.googlecode.com/files/votca-csg-tutorials-1.2.2.tar.gz )
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2517b7a28448fbe67c6b3bc73ca53519
+_md5_=eef3b881e0fb9afb980d91404932e707
