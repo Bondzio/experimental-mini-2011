@@ -9,4 +9,4 @@ RDEPEND==dev-lang/python-2*
 SLOT=4
 SRC_URI=http://pyropus.ca/software/getmail/old-versions/getmail-4.24.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
-_md5_=2e5b19cd513d6fdf084d0208975f507a
+_md5_=8e918f34d270e16903e627ece3b801d2
