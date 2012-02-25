@@ -9,5 +9,5 @@ RDEPEND=dev-lang/python
 RESTRICT=test
 SLOT=0
 SRC_URI=http://psutil.googlecode.com/files/psutil-0.4.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
 _md5_=68a0aa97108f70617af94d63ae57e5bb

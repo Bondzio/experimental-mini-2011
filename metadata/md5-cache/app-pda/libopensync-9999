@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare test unpack
-DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.12:2 dev-libs/libxml2 dev-libs/libxslt >=dev-util/pkgconfig-0.9.0 doc? ( app-doc/doxygen media-gfx/graphviz ) python? ( >=dev-lang/swig-1.3.17 ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/subversion net-misc/rsync python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.12:2 dev-libs/libxml2 dev-libs/libxslt >=dev-util/pkgconfig-0.9.0 doc? ( app-doc/doxygen media-gfx/graphviz ) python? ( >=dev-lang/swig-1.3.17 ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=OpenSync synchronisation framework library
 EAPI=3
 HOMEPAGE=http://www.opensync.org/
 IUSE=debug doc python
 KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd
 LICENSE=LGPL-2.1
-RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.12:2 dev-libs/libxml2 dev-libs/libxslt python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.12:2 dev-libs/libxml2 dev-libs/libxslt
 RESTRICT=test
 SLOT=0
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	da481dd0a07fa335336c89494d9c339e	subversion	6945b2a4f19da5ca5867bb745cb01a35	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e3a5133b935d05f7b98544c636d6834e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	bd31a910fcf7757bdb34af6ea39f8ae0	flag-o-matic	a2e1c4641a8aed225d4ddb0f74f382de	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	cb2844e25e38800105564c14a716c805	subversion	6945b2a4f19da5ca5867bb745cb01a35	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e83732376a446846ad8ea73b8d9becff

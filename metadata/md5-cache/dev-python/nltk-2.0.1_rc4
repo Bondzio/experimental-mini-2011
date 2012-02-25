@@ -10,5 +10,5 @@ RDEPEND=dev-python/numpy[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] dev
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://pypi/n/nltk/nltk-2.0.1rc4.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
 _md5_=59724c05f0e5c6e6a13319dd596c9112

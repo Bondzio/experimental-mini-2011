@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/dbus-glib-0.70 >=sys-apps/dbus-1.4 python_abis_2.6? ( dev-lan
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.0.0.tar.gz
-_eclasses_=python	da481dd0a07fa335336c89494d9c339e
+_eclasses_=python	cb2844e25e38800105564c14a716c805
 _md5_=0c48b2c72a34e8dca4e73beb37dc45d7

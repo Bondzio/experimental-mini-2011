@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-vcs/bzr-1.18 >=dev-python/python-fastimport-0.9 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://launchpad.net/bzr-fastimport/trunk/0.11.0/+download/bzr-fastimport-0.11.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	da481dd0a07fa335336c89494d9c339e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
 _md5_=8c9a85f5f6bebea4b94293673fce09a6
