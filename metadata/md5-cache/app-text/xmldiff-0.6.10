@@ -9,4 +9,4 @@ RDEPEND=dev-python/pyxml =dev-lang/python-2* =dev-lang/python-2*
 SLOT=0
 SRC_URI=ftp://ftp.logilab.fr/pub/xmldiff/xmldiff-0.6.10.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=199fc334d2fb86753ff8fa48ae4bb781
+_md5_=f56cf724e7c0d1d3a775abf97ee85c02
