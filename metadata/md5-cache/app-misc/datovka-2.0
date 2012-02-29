@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/pygtk:2 dev-python/pyopenssl dev-python/reportlab dev-python/sqlalchemy media-fonts/dejavu >=net-libs/dslib-1.7 =dev-lang/python-2*
+DESCRIPTION=GUI to access Czech eGov "Datove schranky"
+EAPI=4
+HOMEPAGE=http://labs.nic.cz/page/969/datovka/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-python/pygtk:2 dev-python/pyopenssl dev-python/reportlab dev-python/sqlalchemy media-fonts/dejavu >=net-libs/dslib-1.7 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://www.nic.cz/public_media/datove_schranky/releases/datovka-2.0/src/datovka-2.0.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=10d1bc283d7759d7e255bd9f8e3804eb
