@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=lua? ( dev-lang/lua )
 SLOT=0
 SRC_URI=http://taskwarrior.org/download/task-2.0.0.beta4.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	80d5ff61404a8ac834527cfb70ab2fae	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	bd3e3c88ad13150d70c42729dc4eb9d0	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6f703ece8ac41c8a41e8d88d4454e1dc
