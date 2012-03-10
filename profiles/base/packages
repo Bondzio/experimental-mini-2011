@@ -34,6 +34,7 @@
 *app-shells/bash
 *dev-lang/perl
 *dev-lang/python
+*dev-vcs/mercurial
 *net-dns/openresolv
 *net-misc/iputils
 *net-misc/rsync
