@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND==dev-lang/python-2*
+DESCRIPTION=Converts a Microsoft RTF file to structured XML
+EAPI=3
+HOMEPAGE=http://rtf2xml.sourceforge.net/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND==dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://sourceforge/rtf2xml/rtf2xml-1.33.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=b4834a14a7a37e50b46ac68485eed83e
