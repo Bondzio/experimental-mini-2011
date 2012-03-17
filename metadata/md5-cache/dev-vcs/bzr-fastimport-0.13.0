@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND==dev-lang/python-2*
+DESCRIPTION=Plugin providing fast loading of revision control data into Bazaar
+EAPI=4
+HOMEPAGE=https://launchpad.net/bzr-fastimport http://wiki.bazaar.canonical.com/BzrFastImport
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-vcs/bzr-1.18 >=dev-python/python-fastimport-0.9 =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://launchpad.net/bzr-fastimport/trunk/0.13.0/+download/bzr-fastimport-0.13.0.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=593f4f43d570e15abb2e2c1496504ba6
