@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
 DEPEND=>=dev-perl/Class-Autouse-1 >=dev-perl/Test-ClassAPI-1.02 >=dev-perl/File-Copy-Recursive-0.28 >=dev-perl/File-Remove-0.21 >=virtual/perl-File-Spec-0.85 >=virtual/perl-File-Temp-0.14 >=dev-perl/File-Remove-0.21 >=dev-perl/File-Slurp-9999.04 >=dev-perl/prefork-0.02 dev-lang/perl
 DESCRIPTION=Implements a flat filesystem
 HOMEPAGE=http://search.cpan.org/~adamk/
-KEYWORDS=alpha amd64 hppa ia64 ~mips ppc sparc x86
+KEYWORDS=alpha amd64 hppa ~mips ppc x86
 LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=>=dev-perl/Class-Autouse-1 >=dev-perl/Test-ClassAPI-1.02 >=dev-perl/File-Copy-Recursive-0.28 >=dev-perl/File-Remove-0.21 >=virtual/perl-File-Spec-0.85 >=virtual/perl-File-Temp-0.14 >=dev-perl/File-Remove-0.21 >=dev-perl/File-Slurp-9999.04 >=dev-perl/prefork-0.02 dev-lang/perl
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/File-Flat-1.00.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4739020c9b20ad487984b48390e4a0a2
+_md5_=e22cccfce8f8cfafb7af84fe4bf48dd4

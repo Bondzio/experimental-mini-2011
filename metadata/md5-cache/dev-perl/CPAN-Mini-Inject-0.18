@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
 DEPEND=dev-perl/libwww-perl virtual/perl-IO-Compress dev-perl/HTTP-Server-Simple >=dev-perl/CPAN-Mini-0.32 dev-perl/CPAN-Checksums dev-lang/perl
 DESCRIPTION=Inject modules into a CPAN::Mini mirror.
 HOMEPAGE=http://search.cpan.org/~ssoriche/CPAN-Mini-Inject-0.18/
-KEYWORDS=ia64 sparc x86
+KEYWORDS=x86
 LICENSE=Artistic
 RDEPEND=dev-perl/libwww-perl virtual/perl-IO-Compress dev-perl/HTTP-Server-Simple >=dev-perl/CPAN-Mini-0.32 dev-perl/CPAN-Checksums dev-lang/perl
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/S/SS/SSORICHE/CPAN-Mini-Inject-0.18.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ba24d79270ea0022703f16b5de80051c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d4141c106a05d2a700d500676082a9f9	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7213bb438805b4ec66cf49ee2ac5414f
+_md5_=0009ba5ea51a69de351cf3492a264d7a
