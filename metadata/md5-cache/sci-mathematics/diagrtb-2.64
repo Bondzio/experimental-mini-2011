@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=>=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Calculation of some eigenvectors of a large real, symmetrical, matrix
+EAPI=4
+HOMEPAGE=http://ecole.modelisation.free.fr/modes.html
+IUSE=examples
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=as-is
+SLOT=0
+SRC_URI=http://ecole.modelisation.free.fr/rtb2011.tar.gz -> diagrtb-2.64.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	958bfc21321d16fe83e1df5e3e654469	eutils	ba24d79270ea0022703f16b5de80051c	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=8a03e2f6a02ec9aafad294fcb770d83f
