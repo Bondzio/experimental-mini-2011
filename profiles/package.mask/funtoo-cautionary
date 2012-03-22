@@ -1,5 +1,8 @@
-# Oleg Vinichenko (10 March 2012)
-# _pre pythons fixed by adding threads use into stage1.spec
+# Jean-Francis Roy (20 Mar 2012)
+# udev-182 removed some feature that is now taken care of in consolekit.
+# Masking the latest version of consolekit as it depends on >=udev-182.
+# See b.g.o. 408713
+>=sys-auth/consolekit-0.4.5-r3
 
 # Daniel Robbins (05 Mar 2012)
 # Mask _pre python ebuilds as they require mercurial which breaks metro (could be worked around but is less than ideal anyway)
