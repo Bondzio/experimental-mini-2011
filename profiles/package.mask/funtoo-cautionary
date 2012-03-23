@@ -4,12 +4,6 @@
 # See b.g.o. 408713
 >=sys-auth/consolekit-0.4.5-r3
 
-# Daniel Robbins (05 Mar 2012)
-# Mask _pre python ebuilds as they require mercurial which breaks metro (could be worked around but is less than ideal anyway)
-# People can unmask 'em if they need them.
-#=dev-lang/python-2.7.3_pre*
-#=dev-lang/python-3.2.3_pre*
-
 # Oleg Vinichenko (19 Jan 2012)
 # udev-177 is not ready for daily usage
 # for adventurous ones!
