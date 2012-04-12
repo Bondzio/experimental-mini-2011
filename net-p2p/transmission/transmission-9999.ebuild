@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.4 2012/03/06 09:28:09 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.5 2012/04/12 12:14:19 ssuominen Exp $
 
 EAPI=4
 LANGS="en es kk lt pt_BR ru"
@@ -72,16 +72,14 @@ src_prepare() {
 		./update-version-h.sh
 	fi
 
-	epatch "${FILESDIR}"/${PN}-2.50-build-with-natpmp1.patch #376647
-
 	sed -i -e '/CFLAGS/s:-ggdb3::' configure.ac
 	use ayatana || sed -i -e '/^LIBAPPINDICATOR_MINIMUM/s:=.*:=9999:' configure.ac
 
 	# http://trac.transmissionbt.com/ticket/4324
 	sed -i -e 's|noinst\(_PROGRAMS = $(TESTS)\)|check\1|' lib${PN}/Makefile.am || die
 
-	eautoreconf
 	intltoolize --copy --force --automake || die
+	eautoreconf
 
 	if use qt4; then
 		cat <<-EOF > "${T}"/${PN}-magnet.protocol
@@ -117,7 +115,7 @@ src_configure() {
 }
 
 src_compile() {
-	default
+	emake
 
 	if use qt4; then
 		pushd qt >/dev/null

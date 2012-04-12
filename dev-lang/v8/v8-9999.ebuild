@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/v8-9999.ebuild,v 1.26 2012/04/04 01:01:10 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/v8-9999.ebuild,v 1.27 2012/04/12 12:36:21 phajdan.jr Exp $
 
 EAPI="4"
 
@@ -30,7 +30,6 @@ src_unpack() {
 
 src_compile() {
 	tc-export AR CC CXX RANLIB
-	export LINK="${CXX}"
 
 	# Use target arch detection logic from bug #354601.
 	case ${CHOST} in
@@ -66,7 +65,16 @@ src_compile() {
 }
 
 src_test() {
+	local arg testjobs
+	for arg in ${MAKEOPTS}; do
+		case ${arg} in
+			-j*) testjobs=${arg#-j} ;;
+			--jobs=*) testjobs=${arg#--jobs=} ;;
+		esac
+	done
+
 	tools/test-wrapper-gypbuild.py \
+		-j${testjobs:-1} \
 		--arch-and-mode=${mytarget} \
 		--no-presubmit \
 		--progress=dots || die
@@ -79,13 +87,13 @@ src_install() {
 	dobin out/${mytarget}/d8 || die
 
 	if [[ ${CHOST} == *-darwin* ]] ; then
-		install_name_tool \
-			-id "${EPREFIX}"/usr/$(get_libdir)/libv8$(get_libname).${soname_version} \
-			out/${mytarget}/lib.target/libv8$(get_libname).${soname_version} || die
+		# buildsystem is too horrific to get this built correctly
+		mv out/${mytarget}/lib.target/libv8.so.${soname_version} \
+			out/${mytarget}/lib.target/libv8$(get_libname ${soname_version}) || die
 	fi
 
-	dolib out/${mytarget}/lib.target/libv8$(get_libname).${soname_version} || die
-	dosym libv8$(get_libname).${soname_version} /usr/$(get_libdir)/libv8$(get_libname) || die
+	dolib out/${mytarget}/lib.target/libv8$(get_libname ${soname_version}) || die
+	dosym libv8$(get_libname ${soname_version}) /usr/$(get_libdir)/libv8$(get_libname) || die
 
 	dodoc AUTHORS ChangeLog || die
 }
