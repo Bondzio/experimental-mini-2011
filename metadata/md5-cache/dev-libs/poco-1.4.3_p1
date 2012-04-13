@@ -4,10 +4,10 @@ DESCRIPTION=C++ class libraries that simplify and accelerate the development of 
 EAPI=2
 HOMEPAGE=http://pocoproject.org/
 IUSE=doc examples iodbc mysql odbc sqlite ssl test
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~arm ~x86
 LICENSE=Boost-1.0
 RDEPEND=>=dev-libs/libpcre-8.13 dev-libs/expat sys-libs/zlib mysql? ( virtual/mysql ) odbc? ( iodbc? ( dev-db/libiodbc ) !iodbc? ( dev-db/unixODBC ) ) ssl? ( dev-libs/openssl ) sqlite? ( dev-db/sqlite:3 )
 SLOT=0
 SRC_URI=mirror://sourceforge/poco/poco-1.4.3p1-all.tar.bz2 doc? ( mirror://sourceforge/poco/poco-1.4.3-all-doc.zip )
 _eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=ac601e491f8f691223dcde4846d373dc
+_md5_=5d9d4e24e898c85131c7c4752e3e7965

@@ -1976,6 +1976,7 @@ gnome-extra/gnome-games:sudoku - Install the game Sudoku which uses dev-python/p
 gnome-extra/gnome-media:twolame - Allow encoding MPEG Audio Layer 2 (MP2) files using twolame
 gnome-extra/gnome-power-manager:applet - Build battery monitor applet
 gnome-extra/gnome-screensaver:systemd - Support sys-apps/systemd's logind
+gnome-extra/gnome-system-monitor:systemd - Display sys-apps/systemd metadata, e.g. unit names, for running processes
 gnome-extra/gnome-utils:bonobo - Enable applets (gdict one) still not ported to DBUS, requiring deprecated bonobo support in gnome-panel.
 gnome-extra/gucharmap:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/libgda:canvas - Enable support for x11-libs/goocanvas
@@ -5362,21 +5363,6 @@ www-servers/nginx:aio - Enables file AIO support
 www-servers/nginx:http - Enable HTTP core support
 www-servers/nginx:http-cache - Enable HTTP cache support
 www-servers/nginx:libatomic - Use libatomic instead of builtin atomic operations
-www-servers/nginx:nginx_modules_http_addition - This module adds contents of other locations before and after the current location's content.
-www-servers/nginx:nginx_modules_http_dav - This module adds the HTTP and WebDAV methods PUT, DELETE, MKCOL, COPY and MOVE.
-www-servers/nginx:nginx_modules_http_flv - This module provides the ability to seek within FLV (Flash) files using time-based offsets.
-www-servers/nginx:nginx_modules_http_gzip_static - Enables support for gzipping static content on disk
-www-servers/nginx:nginx_modules_http_mp4 - This module adds pseudo-streaming support for H.264/AAC in MP4 containers.
-www-servers/nginx:nginx_modules_http_random_index - Pick a random directory index from a directory.
-www-servers/nginx:nginx_modules_http_realip - This module allows to change the client's IP address to value from request header (e. g. X-Real-IP or X-Forwarded-For).
-www-servers/nginx:nginx_modules_http_slowfs_cache - This module adds the ability to cache static files
-www-servers/nginx:nginx_modules_http_stub_status - This module provides the ability to get some status from nginx
-www-servers/nginx:nginx_modules_http_sub - Enable support for search and replace text in the nginx response
-www-servers/nginx:nginx_modules_http_upload - Enable support for handling file uploads using multipart/form-data encoding
-www-servers/nginx:nginx_modules_http_upload_progress - This module adds the ability to track POST upload progress via JSON API
-www-servers/nginx:nginx_modules_mail_imap - Enables IMAP proxy support
-www-servers/nginx:nginx_modules_mail_pop3 - Enables POP3 proxy support
-www-servers/nginx:nginx_modules_mail_smtp - Enables SMTP proxy support
 www-servers/nginx:pcre-jit - Enable JIT for pcre
 www-servers/ocsigen:ocamlduce - Enables ocamlduce XML typechecking for generated web pages
 www-servers/pound:dynscaler - Enable dynamic rescaling of back-end priorities
