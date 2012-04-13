@@ -4,10 +4,10 @@ DESCRIPTION=D-Bus bindings for glib
 EAPI=4
 HOMEPAGE=http://dbus.freedesktop.org/
 IUSE=debug doc static-libs test
-KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
 LICENSE=|| ( GPL-2 AFL-2.1 )
 RDEPEND=>=sys-apps/dbus-1.4.1 >=dev-libs/glib-2.26 >=dev-libs/expat-1.95.8
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.98.tar.gz
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
-_md5_=8369f185ecff7118cb0e97e6e730eb95
+_md5_=bbc324f05f0835e42284d45d4ba0471f

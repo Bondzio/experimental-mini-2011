@@ -4673,6 +4673,7 @@ sci-mathematics/agda:stdlib - Install the standard library.
 sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
 sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
 sci-mathematics/freemat:volpack - Add volume rendering via media-libs/volpack
+sci-mathematics/freemat:vtk - Add 3D capabilities via sci-libs/vtk
 sci-mathematics/fricas:clisp - Add support for GNU CLISP (dev-lisp/clisp)
 sci-mathematics/fricas:clozurecl - Add support for Clozure Common Lisp (dev-lisp/closurecl)
 sci-mathematics/fricas:cmucl - Add support for CMU Common Lisp (dev-lisp/cmucl)
