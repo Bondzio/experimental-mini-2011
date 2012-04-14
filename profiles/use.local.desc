@@ -3964,9 +3964,11 @@ net-libs/telepathy-glib:vala - Enable bindings for dev-lang/vala
 net-libs/telepathy-qt:farsight - Enable support for farsight connection manager
 net-libs/telepathy-qt:glib - Enable support for various telepathy/glib related packages
 net-libs/webkit-gtk:coverage - Enable code coverage support
+net-libs/webkit-gtk:geoloc - Enable geolocation support through app-misc/geoclue
 net-libs/webkit-gtk:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/webkit-gtk:jit - Enable JIT javascript compiler (disabling it will cause performance penalty)
 net-libs/webkit-gtk:webgl - Build support for the WebGL HTML API using virtual/opengl
+net-libs/webkit-gtk:webkit2 - Enable WebKit2 API that splits web content rendering and application UI into separate processes
 net-libs/wt:extjs - Build Wt Ext library with JavaScript-only widgets (http://extjs.com/)
 net-libs/wt:fcgi - Compile in FCGI connector
 net-libs/wt:graphicsmagick - Enable GraphicsMagick, for supporting painting to raster images (PNG, GIF, ...) (WRasterImage)
@@ -4167,10 +4169,12 @@ net-misc/networkmanager:connection-sharing - Use net-dns/dnsmasq and net-firewal
 net-misc/networkmanager:dhclient - Use dhclient from net-misc/dhcp for getting ip
 net-misc/networkmanager:dhcpcd - Use net-misc/dhcpcd for getting ip
 net-misc/networkmanager:introspection - Use dev-libs/gobject-introspection for introspection
+net-misc/networkmanager:modemmanager - Enable support for mobile broadband devices using net-misc/modemmanager
 net-misc/networkmanager:nss - Use dev-libs/nss for cryptography
 net-misc/networkmanager:ppp - Enable support for mobile broadband and PPPoE connections using net-dialup/ppp
 net-misc/networkmanager:resolvconf - Use net-dns/openresolv for managing DNS information
 net-misc/networkmanager:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
+net-misc/networkmanager:wext - Enable support for the deprecated Wext (Wireless Extensions) API; not needed for modern kernels
 net-misc/networkmanager:wimax - Enable support for WiMAX connections using net-wireless/wimax
 net-misc/ntp:openntpd - Allow ntp to be installed alongside openntpd
 net-misc/ntp:parse-clocks - Add support for PARSE clocks
@@ -5273,6 +5277,7 @@ www-client/elinks:finger - Enable support for the finger protocol
 www-client/elinks:gopher - Enable support for the gopher protocol
 www-client/elinks:mouse - Make elinks to grab all mouse events
 www-client/epiphany:introspection - Use dev-libs/gobject-introspection for introspection
+www-client/epiphany:jit - Allow using net-libs/webkit-gtk that has the JIT javascript compiler enabled
 www-client/epiphany:nss - Import passwords from older gecko based www-client/epiphany keyring.
 www-client/firefox:bindist - Disable official Firefox branding (icons, name) which are not binary-redistributable according to upstream.
 www-client/firefox:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
@@ -5584,8 +5589,9 @@ x11-misc/x11vnc:system-libvncserver - Build x11vnc against the system libvncserv
 x11-misc/x11vnc:tk - Support the simple tcl/tk -gui option
 x11-misc/xlockmore:xlockrc - Enables xlockrc for people without PAM
 x11-misc/xmobar:mail - Support the mail plugin. Pulls dependency dev-haskell/hinotify.
+x11-misc/xmobar:mpd - MPD status reporting via dev-haskell/libmpd.
+x11-misc/xmobar:timezone - Enables localized date support.
 x11-misc/xscreensaver:new-login - Enable New Login button using gdmflexiserver (gnome-base/gdm) or kdmctl (kde-base/kdm)
-x11-misc/zim:screenshot - Enable screenshot support (using media-gfx/scrot)
 x11-plugins/bfm:gkrellm - Enable building of app-admin/gkrellm module
 x11-plugins/compiz-plugins-extra:gconf - Install GConf schemas for the plugins, needed when using the GConf-based configuration backend in x11-wm/compiz.
 x11-plugins/compiz-plugins-main:gconf - Install GConf schemas for the plugins, needed when using the GConf-based configuration backend in x11-wm/compiz.
