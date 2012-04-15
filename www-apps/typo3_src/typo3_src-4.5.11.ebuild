@@ -14,7 +14,7 @@ LICENSE="GPL-2"
 KEYWORDS="amd64 ~hppa ~ppc ~ppc64 ~sparc x86"
 IUSE="mysql"
 
-RDEPEND="~www-apps/typo3_dummy-${PV}
+RDEPEND="=www-apps/typo3_dummy-${PV}
 	|| ( >=dev-lang/php-5.3[truetype,zlib,mysql] >=dev-lang/php-5.3[truetype,zlib,mysqli] )
 	|| ( media-gfx/graphicsmagick[zlib,truetype,tiff,png,jpeg] <=media-gfx/imagemagick-4.2.9[zlib,truetype,tiff,png,jpeg] )"
 

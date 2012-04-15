@@ -6,9 +6,9 @@ HOMEPAGE=http://typo3.org/
 IUSE=vhosts
 KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-PDEPEND=~www-apps/typo3_src-4.7.0_beta2
+PDEPEND==www-apps/typo3_src-4.7.0_beta2
 RDEPEND=>=app-admin/webapp-config-1.50.15
 SLOT=4.7.0_beta2
 SRC_URI=mirror://sourceforge/typo3/dummy-4.7.0beta2.tar.gz
 _eclasses_=webapp	30d951d5c98c4f31c7999ab4ba4806d1
-_md5_=6a21ce60dcad9f5b86dd46a140279eeb
+_md5_=150b3f1e7dc6b8cd61d64814b711b2bf

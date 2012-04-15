@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
 IUSE=""
 
-PDEPEND="~www-apps/typo3_src-${PV}"
+PDEPEND="=www-apps/typo3_src-${PV}"
 
 S=${WORKDIR}/${MY_PN}-4.7.0beta3
 
