@@ -1,31 +1,47 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/midori/midori-9999.ebuild,v 1.39 2011/11/28 23:41:30 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/midori/midori-9999.ebuild,v 1.41 2012/04/15 15:04:40 ssuominen Exp $
 
 EAPI=4
-inherit eutils fdo-mime gnome2-utils python waf-utils git-2
+
+unset _live_inherits
+
+if [[ ${PV} == *9999* ]]; then
+	EGIT_REPO_URI="git://git.xfce.org/apps/${PN}"
+	_live_inherits=git-2
+else
+	KEYWORDS="~amd64 ~arm ~ppc ~x86 ~x86-fbsd"
+	SRC_URI="mirror://xfce/src/apps/${PN}/${PV%.*}/${P}.tar.bz2"
+fi
+
+inherit eutils fdo-mime gnome2-utils python waf-utils ${_live_inherits}
 
 PV_vala_version=0.14
 
 DESCRIPTION="A lightweight web browser based on WebKitGTK+"
 HOMEPAGE="http://www.twotoasts.de/index.php?/pages/midori_summary.html"
-EGIT_REPO_URI="git://git.xfce.org/apps/${PN}"
 
 LICENSE="LGPL-2.1 MIT"
 SLOT="0"
-KEYWORDS=""
-IUSE="doc gnome libnotify nls +unique"
+IUSE="+deprecated doc gnome libnotify nls +unique"
 
 RDEPEND="dev-db/sqlite:3
 	>=dev-libs/glib-2.22
 	dev-libs/libxml2
 	net-libs/libsoup:2.4
-	net-libs/webkit-gtk:3
-	x11-libs/gtk+:3
 	x11-libs/libXScrnSaver
+	deprecated? (
+		net-libs/webkit-gtk:2
+		x11-libs/gtk+:2
+		unique? ( dev-libs/libunique:1 )
+		)
+	!deprecated? (
+		net-libs/webkit-gtk:3
+		x11-libs/gtk+:3
+		unique? ( dev-libs/libunique:3 )
+		)
 	gnome? ( net-libs/libsoup-gnome:2.4 )
-	libnotify? ( x11-libs/libnotify )
-	unique? ( dev-libs/libunique:3 )"
+	libnotify? ( >=x11-libs/libnotify-0.7 )"
 DEPEND="${RDEPEND}
 	|| ( dev-lang/python:2.7 dev-lang/python:2.6 )
 	dev-lang/vala:${PV_vala_version}
@@ -42,6 +58,14 @@ pkg_setup() {
 	HTML_DOCS=( data/faq.html data/faq.css )
 }
 
+src_unpack() {
+	if [[ ${PV} == *9999* ]]; then
+		git-2_src_unpack
+	else
+		default
+	fi
+}
+
 src_configure() {
 	strip-linguas -i po
 
@@ -53,7 +77,8 @@ src_configure() {
 		 $(use_enable libnotify) \
 		--enable-addons \
 		$(use_enable nls) \
-		--enable-gtk3
+		$(use_enable !deprecated gtk3) \
+		--disable-granite
 }
 
 pkg_preinst() {

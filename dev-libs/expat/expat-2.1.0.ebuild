@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/expat/expat-2.1.0.ebuild,v 1.1 2012/03/28 11:42:42 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/expat/expat-2.1.0.ebuild,v 1.4 2012/04/15 12:54:43 aballier Exp $
 
 EAPI=4
 inherit eutils libtool toolchain-funcs
@@ -11,7 +11,7 @@ SRC_URI="mirror://sourceforge/expat/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~sparc-fbsd ~x86-fbsd"
 IUSE="elibc_FreeBSD examples static-libs unicode"
 
 src_prepare() {
@@ -80,7 +80,7 @@ src_install() {
 
 	rm -f "${ED}"usr/lib*/libexpat{,u,w}.la
 
-	# libgeom in /lib and ifconfig in /sbin require it on FreeBSD since we
-	# stripped the libbsdxml copy starting from freebsd-lib-8.2-r1
-	use elibc_FreeBSD && gen_usr_ldscript -a expat{,u,w}
+	# libgeom in /lib and ifconfig in /sbin require libexpat on FreeBSD since
+	# we stripped the libbsdxml copy starting from freebsd-lib-8.2-r1
+	use elibc_FreeBSD && gen_usr_ldscript -a expat
 }

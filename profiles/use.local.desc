@@ -5307,6 +5307,7 @@ www-client/luakit:helpers - Optional tools used by luakit
 www-client/luakit:luajit - Use the lua just-in-time compiler dev-lang/luajit instead of dev-lang/lua, which should make luakit faster.
 www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
 www-client/lynx:ssl - Enable HTTPS support.
+www-client/midori:deprecated - Enable GTK+-2 instead of GTK+-3 because of external plugins like adobe-flash
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
 www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME version 2 desktop integration
 www-client/opera:gtk3 - Set runtime dependencies to support GTK+/GNOME version 3 desktop integration
