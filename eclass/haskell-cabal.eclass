@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/haskell-cabal.eclass,v 1.29 2012/04/09 18:08:45 slyfox Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/haskell-cabal.eclass,v 1.31 2012/04/14 20:22:23 slyfox Exp $
 
 # @ECLASS: haskell-cabal.eclass
 # @MAINTAINER:
@@ -158,6 +158,13 @@ cabal-bootstrap() {
 		die "No Setup.lhs or Setup.hs found"
 	fi
 
+	if [[ -z "${CABAL_BOOTSTRAP}" && -z "${CABAL_FROM_GHC}" ]] && ! ghc-sanecabal "${CABAL_MIN_VERSION}"; then
+		eerror "The package dev-haskell/cabal is not correctly installed for"
+		eerror "the currently active version of ghc ($(ghc-version)). Please"
+		eerror "run haskell-updater or re-build dev-haskell/cabal."
+		die "cabal is not correctly installed"
+	fi
+
 	# We build the setup program using the latest version of
 	# cabal that we have installed
 	cabalpackage=Cabal-$(cabal-version)
@@ -172,9 +179,12 @@ cabal-bootstrap() {
 		$(ghc-getghc) "$@"
 	}
 	if $(ghc-supports-shared-libraries); then
-		# some custom build systems might use external libraries,
-		# for which we don't have shared libs, so keep static fallback
-		make_setup -dynamic "$@" || make_setup "$@" || die "compiling ${setupmodule} failed"
+		# # some custom build systems might use external libraries,
+		# # for which we don't have shared libs, so keep static fallback
+		# Disabled '-dynamic' as ghc does not embed RPATH to used extra-libraries:
+		# bug #411789, http://hackage.haskell.org/trac/ghc/ticket/5743#comment:3
+		# make_setup -dynamic "$@" ||
+		make_setup "$@" || die "compiling ${setupmodule} failed"
 	else
 		make_setup "$@" || die "compiling ${setupmodule} failed"
 	fi
@@ -341,12 +351,6 @@ cabal-is-dummy-lib() {
 # exported function: check if cabal is correctly installed for
 # the currently active ghc (we cannot guarantee this with portage)
 haskell-cabal_pkg_setup() {
-	if [[ -z "${CABAL_BOOTSTRAP}" && -z "${CABAL_FROM_GHC}" ]] && ! ghc-sanecabal "${CABAL_MIN_VERSION}"; then
-		eerror "The package dev-haskell/cabal is not correctly installed for"
-		eerror "the currently active version of ghc ($(ghc-version)). Please"
-		eerror "run haskell-updater or re-build dev-haskell/cabal."
-		die "cabal is not correctly installed"
-	fi
 	if [[ -z "${CABAL_HAS_BINARIES}" ]] && [[ -z "${CABAL_HAS_LIBRARIES}" ]]; then
 		eqawarn "QA Notice: Neither bin nor lib are in CABAL_FEATURES."
 	fi
