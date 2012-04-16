@@ -3687,6 +3687,7 @@ net-im/qutim:irc - Enable IRC protocol support
 net-im/qutim:kinetic - Enable Growl-like kinetic popups plugin
 net-im/qutim:mrim - Enable mail.ru protocol support
 net-im/qutim:multimedia - Add sound support via x11-libs/qt-multimedia
+net-im/qutim:otr - Enable plugin for encrypted conversations (Off-The-Record messaging)
 net-im/qutim:phonon - Add sound support via media-libs/phonon or x11-libs/qt-phonon
 net-im/qutim:purple - Enable libpurple-based protocol support
 net-im/qutim:qml - Enable QtQuick-based chat plugin

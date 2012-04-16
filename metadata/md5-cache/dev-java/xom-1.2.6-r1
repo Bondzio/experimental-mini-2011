@@ -4,11 +4,11 @@ DESCRIPTION=A new XML object model.
 EAPI=4
 HOMEPAGE=http://cafeconleche.org/XOM/index.html
 IUSE=elibc_FreeBSD doc examples source elibc_FreeBSD
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
 LICENSE=LGPL-2
 RDEPEND=>=virtual/jre-1.4 dev-java/xerces:2 dev-java/xml-commons-external:1.3 examples? ( java-virtuals/servlet-api:2.4 ) >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://cafeconleche.org/XOM/xom-1.2.6.tar.gz http://dist.codehaus.org/jaxen/distributions/jaxen-1.1.3-src.tar.gz
-_eclasses_=eutils	6891f6f484e3b44a0a15e1b0c0fc9a14	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=7778ce55104200afbce140e7130478a3
+_eclasses_=eutils	74379b03cd9f51efd43d1bb8d290bddc	java-ant-2	c637c20d93ef0d49a5efcf5feaa776cd	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=e07f4201c7273e0f05c34e3b3fb0918e

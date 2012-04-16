@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare prerm
+DEPEND=>=x11-libs/gtk+-2:2 net-misc/curl app-emulation/emul-linux-x86-xlibs app-emulation/emul-linux-x86-gtklibs >=sys-apps/util-linux-2.13 dev-util/pkgconfig
+DESCRIPTION=Netscape Plugin Wrapper - Load 32bit plugins on 64bit browser
+EAPI=2
+HOMEPAGE=http://nspluginwrapper.org/
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2:2 net-misc/curl app-emulation/emul-linux-x86-xlibs app-emulation/emul-linux-x86-gtklibs >=sys-apps/util-linux-2.13
+SLOT=0
+SRC_URI=http://web.mit.edu/davidben/Public/nspluginwrapper/nspluginwrapper-1.4.4.tar.gz
+_eclasses_=eutils	74379b03cd9f51efd43d1bb8d290bddc	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=7eb889a941f19c521b1f21d1e68ab2b6
