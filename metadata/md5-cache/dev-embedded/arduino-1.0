@@ -10,5 +10,5 @@ RDEPEND=dev-embedded/avrdude sys-devel/crossdev
 RESTRICT=strip binchecks
 SLOT=0
 SRC_URI=x86? ( http://arduino.googlecode.com/files/arduino-1.0-linux.tgz ) amd64? ( http://arduino.googlecode.com/files/arduino-1.0-linux64.tgz )
-_eclasses_=eutils	74379b03cd9f51efd43d1bb8d290bddc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e4407d8218665b5b6bedd6675ce9378a

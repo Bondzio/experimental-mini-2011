@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install postinst
+DEPEND=!<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
+DESCRIPTION=Daemon for Advanced Configuration and Power Interface
+EAPI=4
+HOMEPAGE=http://tedfelix.com/linux/acpid-netlink.html
+KEYWORDS=~amd64 ~ia64 -ppc ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://tedfelix.com/linux/acpid-2.0.16.tar.xz
+_eclasses_=systemd	70a153740015c3457222dbdd8e07c1f7
+_md5_=18f12138e0cf118fab90eaf276e1bd75

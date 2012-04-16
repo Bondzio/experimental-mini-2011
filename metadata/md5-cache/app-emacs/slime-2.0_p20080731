@@ -8,5 +8,5 @@ LICENSE=GPL-2 xref.lisp
 RDEPEND=virtual/commonlisp dev-lisp/asdf >=virtual/emacs-21
 SLOT=0
 SRC_URI=mirror://gentoo/slime-2.0_p20080731.tar.bz2 mirror://gentoo/slime-2.0_p20080731-patches.tar.bz2
-_eclasses_=common-lisp	c0762703d46ef354d2354f7d73b80008	common-lisp-common	c21036f656628e2ed1f9a89c330ce8bf	elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	74379b03cd9f51efd43d1bb8d290bddc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=common-lisp	c0762703d46ef354d2354f7d73b80008	common-lisp-common	c21036f656628e2ed1f9a89c330ce8bf	elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	4e234f0a75d16eabe69191b391892d7b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=56a86e4ea76dd03b24bf333337a62db0

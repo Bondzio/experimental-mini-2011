@@ -9,5 +9,5 @@ LICENSE=|| ( Artistic GPL-2 )
 RDEPEND==www-servers/apache-2* dev-lang/perl[-build] >=app-admin/webapp-config-1.50.15
 SLOT=0
 SRC_URI=http://apachegallery.dk/download/Apache-Gallery-1.0RC3.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	74379b03cd9f51efd43d1bb8d290bddc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	a471783c63e68987a2b20eb46f9edf68	eutils	4e234f0a75d16eabe69191b391892d7b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
 _md5_=955e65121c4396708c5d4a554f3b54c5

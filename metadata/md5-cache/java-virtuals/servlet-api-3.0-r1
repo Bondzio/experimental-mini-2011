@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd
 LICENSE=as-is
 RDEPEND=|| ( dev-java/tomcat-servlet-api:3.0 dev-java/resin-servlet-api:3.0 ) >=dev-java/java-config-2.1.6
 SLOT=3.0
-_eclasses_=eutils	74379b03cd9f51efd43d1bb8d290bddc	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	java-virtuals-2	99b1a71af8f8c9fcbab6fe6bc4684a76	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	java-virtuals-2	99b1a71af8f8c9fcbab6fe6bc4684a76	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=028b43e9fb2f7abfe78a4a10a9cf5fad
