@@ -3408,6 +3408,7 @@ net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into hu
 net-analyzer/zabbix:agent - Enable zabbix agent (for to-be-monitored machines)
 net-analyzer/zabbix:frontend - Enable zabbix web frontend
 net-analyzer/zabbix:iodbc - Use iodbc rather than unixodbc for ODBC functions
+net-analyzer/zabbix:java - Enable Zabbix Java JMX Management Gateway
 net-analyzer/zabbix:odbc - Enable Database Monitor and use UnixODBC Library by default
 net-analyzer/zabbix:openipmi - Enable openipmi things
 net-analyzer/zabbix:proxy - Enable proxy support
@@ -4073,11 +4074,10 @@ net-misc/asterisk-moh-opsound:sln16 - Install the sounds files for the sln16 cod
 net-misc/asterisk-moh-opsound:ulaw - Install the sounds files for the ulaw codec.
 net-misc/asterisk-moh-opsound:wav - Install the sounds files for the wav codec.
 net-misc/cfengine:html - Install HTML documentation
-net-misc/cfengine:mysql - Use dev-db/mysql as database backend, default would be Berkeley DB (sys-libs/db)
-net-misc/cfengine:postgres - Use dev-db/postgresql-server as database backend, default would be Berkeley DB (sys-libs/db)
-net-misc/cfengine:qdbm - Use dev-db/qdbm as database backend, default would be Berkeley DB (sys-libs/db)
+net-misc/cfengine:libvirt - Enable support for virtual machine management through app-emulation/libvirt
+net-misc/cfengine:qdbm - Use dev-db/qdbm as database backend
 net-misc/cfengine:tests - Install test files
-net-misc/cfengine:tokyocabinet - Use dev-db/tokyocabinet as database backend, default would be Berkeley DB (sys-libs/db)
+net-misc/cfengine:tokyocabinet - Use dev-db/tokyocabinet as database backend
 net-misc/cgminer:adl - Enable support for controlling fans and overclocking on AMD cards with AMD Display Library
 net-misc/cgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
 net-misc/cgminer:cpumining - Enable support for mining with CPUs

@@ -1,14 +1,14 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gstreamer/ruby-gstreamer-1.0.3.ebuild,v 1.1 2011/11/10 07:46:13 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gstreamer/ruby-gstreamer-1.0.3.ebuild,v 1.3 2012/04/16 20:02:15 ago Exp $
 
 EAPI="2"
-USE_RUBY="ruby18 ruby19"
+USE_RUBY="ruby18"
 
 inherit ruby-ng-gnome2
 
 DESCRIPTION="Ruby GStreamer bindings"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE=""
 
 RDEPEND="${RDEPEND}
