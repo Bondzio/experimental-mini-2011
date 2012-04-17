@@ -10,4 +10,4 @@ RDEPEND=>=media-libs/xine-lib-1.1.20 x11-libs/gtk+:2 >=dev-libs/glib-2 >=dev-lan
 SLOT=0
 SRC_URI=mirror://sourceforge/xine/gxine-0.5.907.tar.xz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	4e234f0a75d16eabe69191b391892d7b	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	6695ecf00333c6acf870a802d3ceb9fd	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=69169723491387643da53c533ec8340c
+_md5_=8e54c262c3eea933656f646f59281c78

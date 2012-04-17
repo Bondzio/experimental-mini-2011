@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/conkeror/conkeror-1.0_pre20120223.ebuild,v 1.1 2012/03/24 17:41:47 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/conkeror/conkeror-1.0_pre20120223.ebuild,v 1.3 2012/04/17 13:04:54 ulm Exp $
 
 EAPI=4
 
@@ -20,9 +20,7 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 IUSE=""
 
 DEPEND=""
-RDEPEND="|| ( >=net-libs/xulrunner-1.9.1
-		>=www-client/firefox-5.0
-		>=www-client/firefox-bin-5.0 )"
+RDEPEND="|| ( >=www-client/firefox-5.0 >=www-client/firefox-bin-5.0 )"
 
 S="${WORKDIR}/${PN}"
 

@@ -8,6 +8,6 @@ KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=>=net-libs/libsoup-2.32:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.4.0:2 x11-libs/gtk+:2 ) gtk3? ( >=net-libs/webkit-gtk-1.4.0:3 x11-libs/gtk+:3 )
 SLOT=0
-SRC_URI=https://bitbucket.org/portix/dwb/downloads/dwb-2012.02.01.tar.gz
+SRC_URI=mirror://bitbucket/portix/dwb/downloads/dwb-2012.02.01.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=cb7a81062f826e30ad79e99701c775c3
+_md5_=99765d8cab53c5ea3f0ba42814ce7aa2

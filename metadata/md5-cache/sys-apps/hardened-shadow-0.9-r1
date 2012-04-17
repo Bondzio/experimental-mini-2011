@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare setup test
+DEPEND=sys-libs/pam !sys-apps/shadow
+DESCRIPTION=Hardened implementation of user account utilities
+EAPI=4
+HOMEPAGE=http://code.google.com/p/hardened-shadow/
+KEYWORDS=~x86
+LICENSE=BSD
+RDEPEND=sys-libs/pam !sys-apps/shadow >=sys-auth/pambase-20120417
+SLOT=0
+SRC_URI=http://hardened-shadow.googlecode.com/files/hardened-shadow-0.9.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	4e234f0a75d16eabe69191b391892d7b	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=9d9762e27ac0a671ac682d2e86e76415

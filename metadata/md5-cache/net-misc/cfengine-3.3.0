@@ -4,11 +4,11 @@ DESCRIPTION=An automated suite of programs for configuring and maintaining Unix-
 EAPI=4
 HOMEPAGE=http://www.cfengine.org/
 IUSE=examples html libvirt mysql postgres +qdbm selinux tests tokyocabinet vim-syntax
-KEYWORDS=~amd64 ~arm ~s390 ~sparc ~x86
+KEYWORDS=~amd64 ~arm ~ppc ~s390 ~sparc ~x86
 LICENSE=GPL-3
 PDEPEND=vim-syntax? ( app-vim/cfengine-syntax )
 RDEPEND=>=sys-libs/db-4 mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) selinux? ( sys-libs/libselinux ) tokyocabinet? ( dev-db/tokyocabinet ) qdbm? ( dev-db/qdbm ) libvirt? ( app-emulation/libvirt ) >=dev-libs/openssl-0.9.7 dev-libs/libpcre
 REQUIRED_USE=qdbm? ( !tokyocabinet ) tokyocabinet? ( !qdbm ) !tokyocabinet? ( qdbm ) !qdbm? ( tokyocabinet )
 SLOT=3
 SRC_URI=http://cfengine.com/source-code/download?file=cfengine-3.3.0.tar.gz -> cfengine-3.3.0.tar.gz
-_md5_=b389da2263f461c279b6707dbb772a14
+_md5_=172ab235f6caac8e1c82d46801bc51e5

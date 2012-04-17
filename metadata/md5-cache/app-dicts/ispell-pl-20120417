@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=app-text/ispell
+DESCRIPTION=Polish dictionary for ispell
+EAPI=4
+HOMEPAGE=http://www.sjp.pl/slownik/en/
+KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~sparc ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://sjp.pl/slownik/ort/sjp-ispell-pl-20120417-src.tar.bz2
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=193cd59650ab12b083476e5bf1ba45d5

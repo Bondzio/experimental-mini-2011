@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.45 2012/04/06 10:57:26 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.48 2012/04/17 11:26:30 scarabeus Exp $
 
 EAPI=4
 
@@ -211,12 +211,13 @@ REQUIRED_USE="
 
 S="${WORKDIR}/${PN}-core-${PV}"
 
+CHECKREQS_MEMORY="512M"
+CHECKREQS_DISK_BUILD="6G"
+
 pkg_pretend() {
 	local pgslot
 
 	if [[ ${MERGE_TYPE} != binary ]]; then
-		CHECKREQS_MEMORY="512M"
-		CHECKREQS_DISK_BUILD="6G"
 		check-reqs_pkg_pretend
 
 		if [[ $(gcc-major-version) -lt 4 ]]; then
@@ -243,7 +244,7 @@ pkg_setup() {
 	python_set_active_version 2
 	python_pkg_setup
 
-	[[ ${MERGE_TYPE} != binary ]] && check-reqs_pkg_pretend
+	[[ ${MERGE_TYPE} != binary ]] && check-reqs_pkg_setup
 }
 
 src_unpack() {
@@ -300,6 +301,7 @@ src_prepare() {
 	fi
 
 	base_src_prepare
+	AT_M4DIR="m4"
 	eautoreconf
 	# hack in the autogen.sh
 	touch autogen.lastrun
@@ -351,7 +353,6 @@ src_configure() {
 
 	if use branding; then
 		internal_libs+="
-			--with-about-bitmap="${WORKDIR}/branding-about.png"
 			--with-intro-bitmap="${WORKDIR}/branding-intro.png"
 		"
 	fi
@@ -467,7 +468,8 @@ src_compile() {
 }
 
 src_test() {
-	make check || die
+	make unitcheck || die
+	make slowcheck || die
 }
 
 src_install() {

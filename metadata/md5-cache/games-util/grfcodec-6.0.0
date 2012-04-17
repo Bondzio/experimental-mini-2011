@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=!games-util/nforenum dev-lang/perl dev-libs/boost media-libs/libpng
+DESCRIPTION=A suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
+EAPI=4
+HOMEPAGE=http://dev.openttdcoop.org/projects/grfcodec
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~x86
+LICENSE=GPL-2
+SLOT=0
+SRC_URI=http://binaries.openttd.org/extra/grfcodec/6.0.0/grfcodec-6.0.0-source.tar.xz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=bd714184d3d597a9257dee0b2960de55

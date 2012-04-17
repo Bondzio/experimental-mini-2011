@@ -7,6 +7,6 @@ KEYWORDS=amd64 x86
 LICENSE=MIT
 RDEPEND=dev-python/dbus-python dev-python/notify-python dev-python/pygobject:2 sys-fs/udisks:0 =dev-lang/python-2*
 SLOT=0
-SRC_URI=http://bitbucket.org/byronclark/udiskie/downloads/udiskie-0.3.10.tar.gz
+SRC_URI=mirror://bitbucket/byronclark/udiskie/downloads/udiskie-0.3.10.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=380ec586da82f7e0f51806d035e9c6d9
+_md5_=05c3aab03c187e3bc04fe8cbe9c7ecd0
