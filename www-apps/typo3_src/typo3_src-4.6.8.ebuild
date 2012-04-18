@@ -1,4 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 2011-2012 Funtoo Linux
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
