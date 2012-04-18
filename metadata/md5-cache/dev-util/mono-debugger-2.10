@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install prepare unpack
 DEPEND=!!=dev-lang/mono-2.2 sys-devel/binutils dev-libs/glib:2 !dev-lang/mercury =dev-lang/mono-2.10* >=dev-util/pkgconfig-0.23 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Debugger for .NET managed and unmanaged applications
-EAPI=2
+EAPI=4
 HOMEPAGE=http://www.mono-project.com/
 KEYWORDS=-* amd64 x86
 LICENSE=GPL-2 MIT
@@ -10,4 +10,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://download.mono-project.com/sources/mono-debugger/mono-debugger-2.10.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	4e234f0a75d16eabe69191b391892d7b	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	go-mono	d36399c188780048f15ea62d048a1d49	libtool	5f623f5a211fb1b2d84d88ee49959a54	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=f1e424fa2ab854dcdc5644b245e15802
+_md5_=73f4fa41818326fed410a7497731b670

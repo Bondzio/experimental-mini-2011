@@ -1349,6 +1349,10 @@ dev-libs/libsqlora8:orathreads - Use Oracle threads
 dev-libs/libtomcrypt:libtommath - Use the portable math library (dev-libs/libtommath)
 dev-libs/libtomcrypt:tomsfastmath - Use the optimized math library (dev-libs/tomsfastmath)
 dev-libs/libunique:introspection - Use dev-libs/gobject-introspection for introspection
+dev-libs/libverto:glib - Support event loops using dev-libs/glib
+dev-libs/libverto:libev - Support event loops using dev-libs/libev
+dev-libs/libverto:libevent - Support event loops using dev-libs/libevent
+dev-libs/libverto:tevent - Support event loops using sys-libs/tevent
 dev-libs/link-grammar:aspell - Adds support for app-text/aspell spell checker
 dev-libs/link-grammar:hunspell - Adds support for app-text/hunspell spell checker
 dev-libs/log4cxx:smtp - Offer SMTP support via net-libs/libesmtp
@@ -2565,7 +2569,9 @@ media-libs/sdif:ftruncate - Enables usage of ftruncate v. truncate
 media-libs/sdl-image:webp - support loading WEBP images
 media-libs/sdl-mixer:fluidsynth - Use media-sound/fluidsynth for MIDI support
 media-libs/sdl-mixer:midi - basic support for MIDI files
+media-libs/sdl-mixer:mod - basic support for MOD files
 media-libs/sdl-mixer:playtools - Install playwave and playmus tools (useful for testing)
+media-libs/sdl-mixer:smpeg - Use media-libs/smpeg for MP3 support
 media-libs/sdl-mixer:wav - support WAVE files
 media-libs/sdl-sound:physfs - Enable physfs support
 media-libs/sge:image - enable sdl-image support
@@ -2998,8 +3004,8 @@ media-video/aravis:gstreamer - Build the GStreamer plugin for aravis, but not th
 media-video/arista:faac - Use external faac library for AAC encoding
 media-video/arista:nautilus - Add an entry in the Nautilus context menu to transcode media files for a specified device.
 media-video/avidemux:aften - Enable A/52 (AC-3) audio encoder support
-media-video/avidemux:amr - Enable Adaptive Multi-Rate format support through media-libs/opencore-amr
-media-video/avidemux:vpx - Enable vp8 codec support using media-libs/libvpx
+media-video/avidemux:amr - Enable Adaptive Multi-Rate format support via media-libs/opencore-amr
+media-video/avidemux:vpx - Enable VP8 codec support via media-libs/libvpx
 media-video/bombono-dvd:gnome - Use GVFS for desktop integration
 media-video/chaplin:transcode - Enable DVD ripping and transcoding
 media-video/cheese:introspection - Use dev-libs/gobject-introspection for introspection
@@ -4997,6 +5003,7 @@ sys-cluster/resource-agents:libnet - Force use of net-libs/libnet
 sys-cluster/slurm:maui - Enable maui scheduler support
 sys-cluster/slurm:munge - Enable authentication via munge
 sys-cluster/slurm:torque - Enable perl scripts that emulates pbs (qstat, qsub etc.)
+sys-cluster/slurm:ypbind - Enable ypbind based auth
 sys-cluster/torque:cpusets - Enable pbs_mom to utilize linux cpusets if available
 sys-cluster/torque:drmaa - Enable the Distributed Resource Management Application API
 sys-cluster/torque:munge - Enable authentication via munge
@@ -5136,22 +5143,13 @@ sys-fs/udisks:introspection - Use dev-libs/gobject-introspection for introspecti
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
 sys-fs/zfs:dracut - Install dracut module
 sys-fs/zfs:test-suite - Install regression test suite
-sys-infiniband/openib:dapl - Automatically generated description for dapl
-sys-infiniband/openib:diags - Automatically generated description for diags
-sys-infiniband/openib:ehca - Automatically generated description for ehca
-sys-infiniband/openib:ipath - Automatically generated description for ipath
-sys-infiniband/openib:mlx4 - Automatically generated description for mlx4
-sys-infiniband/openib:mthca - Automatically generated description for mthca
-sys-infiniband/openib:nes - Automatically generated description for nes
-sys-infiniband/openib:opensm - Automatically generated description for opensm
-sys-infiniband/openib:srp - Add support for srp targets
-sys-infiniband/openib-files:ehca - Automatically generated description for ehca
-sys-infiniband/openib-files:ipath - Automatically generated description for ipath
-sys-infiniband/openib-files:iser - Automatically generated description for iser
-sys-infiniband/openib-files:mlx4 - Automatically generated description for mlx4
-sys-infiniband/openib-files:rds - Automatically generated description for rds
-sys-infiniband/openib-files:srp - Automatically generated description for srp
-sys-infiniband/openib-files:vnic - Automatically generated description for vnic
+sys-infiniband/ofed:dapl - Add support for DAPL abstraction layer
+sys-infiniband/ofed:diags - Add dignostic tools for infiniband
+sys-infiniband/ofed:opensm - Add OpenSM - Subnet manager for infiniband
+sys-infiniband/ofed:perftest - Add perftest utils
+sys-infiniband/ofed:rds - Tools to manage rds sockets
+sys-infiniband/ofed:sdp - Add SDP tools
+sys-infiniband/ofed:srp - Suport for userspace part for srp initiator
 sys-kernel/ck-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/dracut:debug - Module installing additional tools like strace, file editor, ssh and more
 sys-kernel/dracut:device-mapper - Set of helper modules providing support for device mapper. You need to enable this only if emerge says so.
@@ -5377,6 +5375,7 @@ www-servers/nginx:http - Enable HTTP core support
 www-servers/nginx:http-cache - Enable HTTP cache support
 www-servers/nginx:libatomic - Use libatomic instead of builtin atomic operations
 www-servers/nginx:pcre-jit - Enable JIT for pcre
+www-servers/nginx:ssl - Enable HTTPS module for http. Enable SSL/TLS support for POP3/IMAP/SMTP for mail.
 www-servers/ocsigen:ocamlduce - Enables ocamlduce XML typechecking for generated web pages
 www-servers/pound:dynscaler - Enable dynamic rescaling of back-end priorities
 www-servers/pshs:magic - Enable automatic detection of Content-Type using libmagic (sys-apps/file)
@@ -5585,6 +5584,7 @@ x11-misc/rss-glx:quesoglc - Enable support for OpenGL Character Renderer
 x11-misc/shutter:drawing - Enables drawing tool
 x11-misc/shutter:webphoto - Enables screenshots of websites
 x11-misc/slim:consolekit - Enable native consolekit support
+x11-misc/stalonetray:graceful-exit - use non-portable hack to exit gracefuly on signal
 x11-misc/tint2:battery - Enable battery status plugin
 x11-misc/tint2:examples - Install tint2rc examples
 x11-misc/tint2:tint2conf - Build/Install tint2conf as well
