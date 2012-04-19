@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=x11-libs/qt-core:4 x11-libs/qt-dbus:4 farsight? ( net-libs/telepathy-farsight ) farstream? ( >=net-libs/telepathy-farstream-0.2.2 >=net-libs/telepathy-glib-0.17.5 ) !net-libs/telepathy-qt4 dev-util/pkgconfig farsight? ( >=net-libs/telepathy-glib-0.17.5 ) test? ( dev-libs/dbus-glib dev-libs/glib dev-python/dbus-python x11-libs/qt-test:4 ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Qt4 bindings for the Telepathy D-Bus protocol
+EAPI=4
+HOMEPAGE=http://telepathy.freedesktop.org/
+IUSE=debug farsight farstream test
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=x11-libs/qt-core:4 x11-libs/qt-dbus:4 farsight? ( net-libs/telepathy-farsight ) farstream? ( >=net-libs/telepathy-farstream-0.2.2 >=net-libs/telepathy-glib-0.17.5 ) !net-libs/telepathy-qt4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+REQUIRED_USE=farsight? ( !farstream )
+SLOT=0
+SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-qt/telepathy-qt-0.9.1.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	4e234f0a75d16eabe69191b391892d7b	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f89085c6f2a5a99098ba169e84166363

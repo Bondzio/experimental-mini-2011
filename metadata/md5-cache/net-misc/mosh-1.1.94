@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install prepare unpack
-DEPEND=dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh client? ( dev-lang/perl dev-perl/IO-Tty ) utempter? ( sys-libs/libutempter ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-libs/protobuf dev-libs/skalibs sys-libs/ncurses:5 virtual/ssh client? ( dev-lang/perl dev-perl/IO-Tty ) utempter? ( sys-libs/libutempter ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Mobile shell that supports roaming and intelligent local echo
 EAPI=4
 HOMEPAGE=http://mosh.mit.edu
 IUSE=+client examples +server +utempter
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh client? ( dev-lang/perl dev-perl/IO-Tty ) utempter? ( sys-libs/libutempter )
+RDEPEND=dev-libs/protobuf dev-libs/skalibs sys-libs/ncurses:5 virtual/ssh client? ( dev-lang/perl dev-perl/IO-Tty ) utempter? ( sys-libs/libutempter )
 REQUIRED_USE=|| ( client server ) examples? ( client )
 SLOT=0
 SRC_URI=mirror://gentoo/mosh-1.1.94.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	4e234f0a75d16eabe69191b391892d7b	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ecd1253551dd8a56902fe99255f02e37
+_md5_=565d66a6c5104faedbcdb13a74e64c56
