@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install setup
+DEPEND=fortran? ( virtual/fortran )
+DESCRIPTION=Quad-double and double-double float arithmetics
+EAPI=4
+HOMEPAGE=http://crd.lbl.gov/~dhbailey/mpdist/
+IUSE=doc fortran static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=fortran? ( virtual/fortran )
+SLOT=0
+SRC_URI=http://crd.lbl.gov/~dhbailey/mpdist/qd-2.3.13.tar.gz
+_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=586dcce06532d64546a34029dcc0afe5

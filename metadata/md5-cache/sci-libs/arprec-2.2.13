@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install setup
+DEPEND=fortran? ( virtual/fortran ) qd? ( sci-libs/qd[fortran=] )
+DESCRIPTION=Arbitrary precision float arithmetics and functions
+EAPI=4
+HOMEPAGE=http://crd.lbl.gov/~dhbailey/mpdist/
+IUSE=doc fortran qd static-libs
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=fortran? ( virtual/fortran ) qd? ( sci-libs/qd[fortran=] )
+SLOT=0
+SRC_URI=http://crd.lbl.gov/~dhbailey/mpdist/arprec-2.2.13.tar.gz
+_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=227bd7ada1808989c1af0aaa7f97e854

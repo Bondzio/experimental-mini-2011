@@ -4664,6 +4664,8 @@ sci-libs/mkl:int64 - Installs the 64 bits integer libraries
 sci-libs/mkl:serial - Installs the serial (as non-threaded) libraries
 sci-libs/mpir:cpudetection - Enables runtime cpudetection (useful for bindist, compatability on other CPUs)
 sci-libs/netcdf:dap - Support for remote data access with the built-in OPeNDAP client
+sci-libs/netcdf:hdf - dd support for the Hierarchical Data Format v. 4sci-libs/hdf
+sci-libs/netcdf:tools - Build the utilities nccopy, ncgen and ncdump
 sci-libs/nlopt:octave - Add plugin for sci-mathematics/octave
 sci-libs/opencascade:gl2ps - Use gl2ps PostScript printing library
 sci-libs/plplot:ada - Add bindings for the ADA programming language
@@ -5125,7 +5127,7 @@ sys-fs/owfs:server - Enable building the OWFS server (owserver)
 sys-fs/quota:netlink - Compile daemon receiving quota messages via netlink
 sys-fs/quota:rpc - Enable quota interaction via RPC
 sys-fs/s3ql:contrib - Install additional contributed scripts
-sys-fs/squashfs-tools:xz - Enable support for XZ compression using app-arch/xz-utils
+sys-fs/squashfs-tools:xz - Enable support for XZ ("LZMA2") compression using app-arch/xz-utils
 sys-fs/udev:acl - apply ACLs for users with local forground sessions
 sys-fs/udev:action_modeswitch - switch Mobile Action cables into serial mode
 sys-fs/udev:devfs-compat - Install rules for devfs compatible device names
@@ -5143,8 +5145,11 @@ sys-fs/udisks:introspection - Use dev-libs/gobject-introspection for introspecti
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
 sys-fs/zfs:dracut - Install dracut module
 sys-fs/zfs:test-suite - Install regression test suite
+sys-infiniband/ofed:compat-dapl - Add support for DAPL v1.2 abstraction layer
 sys-infiniband/ofed:dapl - Add support for DAPL abstraction layer
 sys-infiniband/ofed:diags - Add dignostic tools for infiniband
+sys-infiniband/ofed:ibacm - Add support for userspace pre-connection services
+sys-infiniband/ofed:mstflint - Tools to burn Mellanox firmware
 sys-infiniband/ofed:opensm - Add OpenSM - Subnet manager for infiniband
 sys-infiniband/ofed:perftest - Add perftest utils
 sys-infiniband/ofed:rds - Tools to manage rds sockets

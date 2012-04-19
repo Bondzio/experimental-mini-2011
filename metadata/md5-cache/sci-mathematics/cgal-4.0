@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-libs/boost dev-libs/mpfr sys-libs/zlib x11-libs/libX11 virtual/opengl gmp? ( dev-libs/gmp[cxx=] ) lapack? ( virtual/lapack ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-opengl:4 ) mpfi? ( sci-libs/mpfi ) app-arch/xz-utils dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=C++ library for geometric algorithms and data structures
+EAPI=4
+HOMEPAGE=http://www.cgal.org/
+IUSE=+cxx doc examples +gmp lapack mpfi qt4
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3 GPL-3
+RDEPEND=dev-libs/boost dev-libs/mpfr sys-libs/zlib x11-libs/libX11 virtual/opengl gmp? ( dev-libs/gmp[cxx=] ) lapack? ( virtual/lapack ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-opengl:4 ) mpfi? ( sci-libs/mpfi )
+SLOT=0
+SRC_URI=http://gforge.inria.fr/frs/download.php/30385/CGAL-4.0.tar.xz doc? ( http://gforge.inria.fr/frs/download.php/30389/CGAL-4.0-doc_html.tar.xz )
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	4e234f0a75d16eabe69191b391892d7b	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=40da543614b32aa4e1037975ac9e617f
