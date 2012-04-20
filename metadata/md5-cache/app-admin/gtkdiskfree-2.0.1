@@ -1,13 +1,12 @@
 DEFINED_PHASES=configure
-DEPEND=gtk2? ( x11-libs/gtk+:2 ) !gtk2? ( x11-libs/gtk+:3 ) dev-util/pkgconfig nls? ( sys-devel/gettext )
+DEPEND=x11-libs/gtk+:3 dev-util/pkgconfig nls? ( sys-devel/gettext )
 DESCRIPTION=Graphical tool to show free disk space
 EAPI=4
 HOMEPAGE=https://gitorious.org/gtkdiskfree
-IUSE=gtk2 nls
+IUSE=nls
 KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=gtk2? ( x11-libs/gtk+:2 ) !gtk2? ( x11-libs/gtk+:3 )
+RDEPEND=x11-libs/gtk+:3
 SLOT=0
 SRC_URI=mirror://gentoo/gtkdiskfree-2.0.1.tar.gz
-_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=61ce30e7f63f7157b96341c3567764c0
+_md5_=8a7bac4166588908045e9d36a59e9ac3

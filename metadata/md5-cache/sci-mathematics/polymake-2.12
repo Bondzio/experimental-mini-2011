@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare
+DEPEND=dev-libs/gmp dev-libs/boost dev-libs/libxml2:2 dev-perl/XML-LibXML dev-libs/libxslt dev-perl/XML-LibXSLT dev-perl/XML-Writer dev-perl/Term-ReadLine-Gnu
+DESCRIPTION=research tool for polyhedral geometry and combinatorics
+EAPI=2
+HOMEPAGE=http://polymake.org
+IUSE=libpolymake
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=dev-libs/gmp dev-libs/boost dev-libs/libxml2:2 dev-perl/XML-LibXML dev-libs/libxslt dev-perl/XML-LibXSLT dev-perl/XML-Writer dev-perl/Term-ReadLine-Gnu
+SLOT=0
+SRC_URI=http://polymake.org/lib/exe/fetch.php/download/polymake-2.12-rc3.tar.bz2
+_eclasses_=eutils	4e234f0a75d16eabe69191b391892d7b	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=0eee1c55322e14de4c6dba734bf01fbc
