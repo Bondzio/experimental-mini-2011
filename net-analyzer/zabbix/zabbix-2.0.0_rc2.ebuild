@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zabbix/zabbix-2.0.0_rc2.ebuild,v 1.2 2012/04/16 20:52:41 mattm Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/zabbix/zabbix-2.0.0_rc2.ebuild,v 1.3 2012/04/19 18:24:15 mattm Exp $
 
 EAPI="2"
 
@@ -39,8 +39,8 @@ COMMON_DEPEND="snmp? ( net-analyzer/net-snmp )
 	)"
 
 RDEPEND="${COMMON_DEPEND}
-	proxy? ( net-analyzer/fping )
-	server? ( net-analyzer/fping
+	proxy? ( <=net-analyzer/fping-2.9 )
+	server? ( <=net-analyzer/fping-2.9
 		app-admin/webapp-config )
 	java?	(
 		>=virtual/jre-1.4
@@ -181,6 +181,8 @@ pkg_postinst() {
 	elog "will need further tuning with bumps/revisions as bugs are closed."
 	elog
 	elog "The java use flag is new to 2.0."
+	elog
+	elog "Zabbix is incompatible with fping 3.0 - (Zabbix bug #ZBX-4894)."
 	elog
 
 	# repeat fowners/fperms functionality from src_install()

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-lang/ghc-6.6 dev-haskell/parsec:0 dev-haskell/regex-compat dev-lang/ghc
 SLOT=0
 SRC_URI=http://www.informatik.uni-freiburg.de/~thiemann/haskell/WASH/WashNGo-2.12.tgz
-_eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	4e234f0a75d16eabe69191b391892d7b	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	22ad39f236908e0140b9f66001dc2ddb	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	4e234f0a75d16eabe69191b391892d7b	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=fdf99fae56b1a3a198bbf2baf8e8a83d

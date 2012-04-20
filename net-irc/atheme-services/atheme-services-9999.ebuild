@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/atheme-services/atheme-services-9999.ebuild,v 1.1 2012/02/21 00:11:34 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/atheme-services/atheme-services-9999.ebuild,v 1.2 2012/04/20 02:41:42 jdhore Exp $
 
 EAPI=4
 
-inherit git-2 user flag-o-matic perl-module
+inherit git-2 user eutils flag-o-matic perl-module
 
 MY_P=${P/_/-}
 
@@ -60,9 +60,6 @@ src_prepare() {
 	# because it only contains a git submodule
 	# and removing it MAY break everything.
 	#rm -rf libmowgli-2 || die
-
-	# Get useful information into build.log
-	sed -i -e '/^\.SILENT:$/d' buildsys.mk.in || die
 }
 
 src_configure() {
@@ -84,6 +81,10 @@ src_configure() {
 		$(use_enable ssl)
 }
 
+src_compile() {
+	emake V=1
+}
+
 src_install() {
 	emake DESTDIR="${D}" install
 
@@ -103,6 +104,8 @@ src_install() {
 	fperms 750 /etc/${PN} /var/{lib,log,run}/atheme
 
 	newinitd "${FILESDIR}"/${PN}.initd ${PN}
+
+	mv "${ED}"/usr/bin/{,atheme-}dbverify || die
 
 	# contributed scripts and such:
 	insinto /usr/share/doc/${PF}/contrib

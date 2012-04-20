@@ -1,4 +1,4 @@
-DEFINED_PHASES=configure install unpack
+DEFINED_PHASES=configure unpack
 DEPEND=ssl? ( dev-libs/openssl ) dev-vcs/git
 DESCRIPTION=Useful set of performance and usability-oriented extensions to C
 EAPI=4
@@ -8,4 +8,4 @@ LICENSE=BSD-2
 RDEPEND=ssl? ( dev-libs/openssl )
 SLOT=2
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=34dde00c15e60e31c770361e11406fcb
+_md5_=b206f17518211dafa4b1040a6f50998e
