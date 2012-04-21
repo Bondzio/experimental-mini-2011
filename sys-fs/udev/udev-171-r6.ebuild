@@ -94,14 +94,9 @@ src_unpack() {
 }
 
 use_extras() { use extras && echo "--enable-${2:-$1}" || use_enable "$@" ; }
-src_compile() {
-	filter-flags -fprefetch-loop-arrays
-
+src_configure() {
 	# sys-fs/lvm2 may require static libs - generate them just to be on the safe
 	# side. shared libs get generated too.
-
-	echo $(use_extras introspection)
-
 	econf \
 		--prefix=/usr \
 		--sysconfdir=/etc \
@@ -118,6 +113,10 @@ src_compile() {
 		$(use_extras gudev) \
 		$(use_enable extras) \
 		$(use_with selinux)
+}
+
+src_compile() {
+	filter-flags -fprefetch-loop-arrays
 
 	emake || die "compiling udev failed"
 }
