@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=xfce-base/xfce4-panel-4.8 >=xfce-base/libxfcegui4-4.8 sys-apps/pciutils[zlib] virtual/libusb:0 dev-util/intltool dev-util/pkgconfig >=sys-apps/sed-4 dev-util/intltool >=dev-util/xfce4-dev-tools-4.9.1 || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
-DESCRIPTION=Panel plugin for monitoring cellular modems - GPRS/UMTS(3G)/HSDPA(3.5G)
+DEPEND=sys-apps/pciutils[zlib] virtual/libusb:0 >=xfce-base/libxfcegui4-4.8 >=xfce-base/xfce4-panel-4.8 dev-util/intltool dev-util/pkgconfig >=sys-apps/sed-4 dev-util/intltool >=dev-util/xfce4-dev-tools-4.9.1 || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A panel plug-in with monitoring support for GPRS/UMTS(3G)/HSDPA(3.5G) modems
 EAPI=4
 HOMEPAGE=http://goodies.xfce.org/projects/panel-plugins/xfce4-cellmodem-plugin
 IUSE=debug
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=xfce-base/xfce4-panel-4.8 >=xfce-base/libxfcegui4-4.8 sys-apps/pciutils[zlib] virtual/libusb:0
+RDEPEND=sys-apps/pciutils[zlib] virtual/libusb:0 >=xfce-base/libxfcegui4-4.8 >=xfce-base/xfce4-panel-4.8
 SLOT=0
 SRC_URI=mirror://xfce/src/panel-plugins/xfce4-cellmodem-plugin/0.0/xfce4-cellmodem-plugin-0.0.5.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	dc10e9bc14d4a47bcd638b058f68a628	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	xfconf	71f221eb949e06646b95347566d982df
-_md5_=b6f3f5c4bc333ad207a01e1bf0d9de97
+_md5_=c7252aa8fe92efffddaf4ee7b9c665ea

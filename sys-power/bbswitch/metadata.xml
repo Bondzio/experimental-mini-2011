@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer>
-    <email>mva@mva.name</email>
-    <description>
-      If you have any issues with Bumblebee on Gentoo, please contact me.
-    </description>
-    <name>Vadim A. Misbakh-Soloviev</name>
-    <email>thezogg@gmail.com</email>
-    <description>
-     Maintained for Funtoo by Michael K. All credit goes to mva.
-    </description>
-    <name>Michael Ketslah</name>
-  </maintainer>
-  <longdescription>
+<maintainer>
+	<email>pacho@gentoo.org</email>
+	<name>Pacho Ramos</name>
+</maintainer>
+<maintainer>
+	<email>mva@mva.name</email>
+	<name>Vadim A. Misbakh-Soloviev</name>
+</maintainer>
+<maintainer>
+	<email>rei4dan@gmail.com</email>
+	<name>My Th</name>
+</maintainer>
+<longdescription>
     Kernel module which automatically detects the required ACPI calls for two
     kinds of Optimus laptops for safe disabling/enabling the discrete graphics card.
-  </longdescription>
-  <use>
-  </use>
+</longdescription>
 </pkgmetadata>

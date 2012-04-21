@@ -1,19 +1,18 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/bumblebee/bumblebee-3.0-r1.ebuild,v 1.2 2012/04/21 15:22:48 pacho Exp $
 
 EAPI="4"
 
-inherit autotools git-2 multilib
+inherit multilib user
 
 DESCRIPTION="Service providing elegant and stable means of managing Optimus graphics chipsets"
 HOMEPAGE="https://github.com/Bumblebee-Project/Bumblebee"
-EGIT_REPO_URI="https://github.com/Bumblebee-Project/${PN/bu/Bu}.git"
-SRC_URI=""
+SRC_URI="https://github.com/downloads/Bumblebee-Project/${PN/bu/Bu}/${P/bu/Bu}.tar.gz"
 
 SLOT="0"
 LICENSE="GPL-3"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 
 IUSE="+bbswitch video_cards_nouveau video_cards_nvidia"
 
@@ -30,15 +29,9 @@ DEPEND=">=sys-devel/autoconf-2.68
 	dev-libs/libbsd
 	sys-apps/help2man"
 
-src_prepare() {
-	default
-	eautoreconf
-}
+REQUIRED_USE="|| ( video_cards_nouveau video_cards_nvidia )"
 
 src_configure() {
-	use video_cards_nvidia || use video_cards_nouveau \
-		|| die "You should enable at least one of supported VIDEO_CARDS!"
-
 	if use video_cards_nvidia ; then
 		# Get paths to GL libs for all ABIs
 		local nvlib=""
@@ -57,15 +50,14 @@ src_configure() {
 }
 
 src_install() {
-	use video_cards_nvidia && newconfd "${FILESDIR}"/bumblebee.nvidia-confd bumblebee
-	use video_cards_nouveau && newconfd "${FILESDIR}"/bumblebee.nouveau-confd bumblebee
+	newconfd "${FILESDIR}"/bumblebee.nouveau-confd bumblebee # The same conf.d file can be used for nvidia also
 	newinitd "${FILESDIR}"/bumblebee.initd bumblebee
 	default
 }
 
 pkg_preinst() {
-	! use video_cards_nvidia && rm "${D}"/etc/bumblebee/xorg.conf.nvidia
-	! use video_cards_nouveau && rm "${D}"/etc/bumblebee/xorg.conf.nouveau
+	! use video_cards_nvidia && rm "${ED}"/etc/bumblebee/xorg.conf.nvidia
+	! use video_cards_nouveau && rm "${ED}"/etc/bumblebee/xorg.conf.nouveau
 
 	enewgroup bumblebee
 }
