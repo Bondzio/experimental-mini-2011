@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-headers/linux-headers-2.6.39.ebuild,v 1.2 2011/08/29 05:09:44 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-headers/linux-headers-3.3.ebuild,v 1.2 2012/04/02 06:03:07 vapier Exp $
 
 EAPI="3"
 
@@ -9,13 +9,14 @@ H_SUPPORTEDARCH="alpha amd64 arm bfin cris hppa m68k mips ia64 ppc ppc64 s390 sh
 inherit kernel-2
 detect_version
 
-PATCH_VER="1"
+PATCH_VER="2"
 SRC_URI="mirror://gentoo/gentoo-headers-base-${PV}.tar.xz"
 [[ -n ${PATCH_VER} ]] && SRC_URI="${SRC_URI} mirror://gentoo/gentoo-headers-${PV}-${PATCH_VER}.tar.xz"
 
-KEYWORDS="*"
+KEYWORDS="~*"
 
-DEPEND="app-arch/xz-utils"
+DEPEND="app-arch/xz-utils
+	dev-lang/perl"
 RDEPEND=""
 
 S=${WORKDIR}/gentoo-headers-base-${PV}
@@ -25,6 +26,7 @@ src_unpack() {
 }
 
 src_prepare() {
+	has x32 $(get_all_abis) || EPATCH_EXCLUDE+=" 90_all_x32-3.3.patch"
 	[[ -n ${PATCH_VER} ]] && EPATCH_SUFFIX="patch" epatch "${WORKDIR}"/${PV}
 }
 
