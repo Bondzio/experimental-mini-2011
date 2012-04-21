@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=>=dev-lang/perl-5.8.0 dev-perl/Net-DNS virtual/perl-MIME-Base64 dev-perl/MailTools dev-perl/IPC-Shareable dev-perl/Socket6 dev-perl/Danga-Socket dev-perl/ParaDNS ipv6? ( dev-perl/IO-Socket-INET6 ) syslog? ( virtual/perl-Sys-Syslog ) virtual/inetd dev-lang/perl[-build]
 SLOT=0
 SRC_URI=http://smtpd.develooper.com/files/qpsmtpd-0.82.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	4e234f0a75d16eabe69191b391892d7b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-app	20b0a51a72b6d2c8ac53ccab1605737f	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-app	20b0a51a72b6d2c8ac53ccab1605737f	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8f89d7451d26823d90b5c790537c5c8b

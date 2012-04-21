@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/numpy dev-python/python-dateutil doc? ( dev-python/ipython dev-python/rpy dev-python/sphinx sci-libs/scikits_statsmodels ) dev-lang/python test? ( dev-python/nose )
+DESCRIPTION=Powerful data structures for data analysis and statistics
+EAPI=4
+HOMEPAGE=http://pandas.sourceforge.net/
+IUSE=doc examples excel R test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-python/numpy dev-python/python-dateutil dev-python/matplotlib dev-python/pytables dev-python/pytz sci-libs/scikits_statsmodels sci-libs/scipy excel? ( dev-python/openpyxl dev-python/xlrd dev-python/xlwt ) R? ( dev-python/rpy ) dev-lang/python
+SLOT=0
+SRC_URI=mirror://pypi/p/pandas/pandas-0.7.3.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_md5_=b4dec63404c1686695f318f14c4f7501

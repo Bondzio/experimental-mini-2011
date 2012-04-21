@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/scrapy/scrapy-0.14.2.ebuild,v 1.3 2012/04/20 03:48:58 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/scrapy/scrapy-0.14.2.ebuild,v 1.5 2012/04/20 18:48:09 floppym Exp $
 
 EAPI="4"
 
@@ -26,7 +26,8 @@ IUSE="boto doc examples ibl test ssl"
 RESTRICT="test"
 
 DEPEND="dev-python/setuptools
-	doc? ( dev-python/sphinx )"
+	doc? ( dev-python/sphinx )
+	test? ( dev-python/django )"
 RDEPEND="dev-libs/libxml2[python]
 	boto? ( dev-python/boto )
 	dev-python/imaging
@@ -39,8 +40,7 @@ RDEPEND="dev-libs/libxml2[python]
 	dev-python/twisted-conch
 	dev-python/twisted-mail
 	dev-python/twisted-web
-	dev-python/w3lib
-	test? ( dev-python/django )"
+	dev-python/w3lib"
 
 S="${WORKDIR}/${MY_P}"
 

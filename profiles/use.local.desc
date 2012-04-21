@@ -1525,6 +1525,8 @@ dev-python/matplotlib:traits - Pull dev-python/traits for the experimental entho
 dev-python/mpmath:matplotlib - Add support for dev-python/matplotlib
 dev-python/nose:coverage - Utilize dev-python/coverage
 dev-python/numexpr:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl.
+dev-python/pandas:R - Enable support for R via dev-python/rpy
+dev-python/pandas:excel - Pull a few Python packages Microsoft Excel i/o
 dev-python/paste:flup - enable support for flup (and therefore for various wgsi servers and middleware)
 dev-python/paste:openid - enable OpenID support
 dev-python/psycopg:mxdatetime - Enable support for MX DateTime and use it instead of Python's built-in datetime module
@@ -4395,6 +4397,7 @@ net-print/cups:java - Add support for the Java interpeter in the web server CGIs
 net-print/cups:perl - Add support for the Perl interpeter in the web server CGIs.
 net-print/cups:php - Add support for the PHP interpeter in the web server CGIs.
 net-print/cups:python - Add support for the Python interpeter in the web server CGIs.
+net-print/cups:systemd - Add support for systemd socket activation.
 net-print/fax4cups:capisuite-fax - Install net-dialup/capisuite backend
 net-print/fax4cups:efax - Install net-misc/efax backend
 net-print/fax4cups:hylafax - Install net-misc/hylafax backend
@@ -5608,7 +5611,8 @@ x11-misc/xlockmore:xlockrc - Enables xlockrc for people without PAM
 x11-misc/xmobar:mail - Support the mail plugin. Pulls dependency dev-haskell/hinotify.
 x11-misc/xmobar:mpd - MPD status reporting via dev-haskell/libmpd.
 x11-misc/xmobar:timezone - Enables localized date support.
-x11-misc/xscreensaver:new-login - Enable New Login button using gdmflexiserver (gnome-base/gdm) or kdmctl (kde-base/kdm)
+x11-misc/xscreensaver:gdm - Use gdmflexiserver from gnome-base/gdm instead of x11-misc/lightdm
+x11-misc/xscreensaver:new-login - Enable user switching support using gdmflexiserver (x11-misc/lightdm) or kdmctl (kde-base/kdm)
 x11-plugins/bfm:gkrellm - Enable building of app-admin/gkrellm module
 x11-plugins/compiz-plugins-extra:gconf - Install GConf schemas for the plugins, needed when using the GConf-based configuration backend in x11-wm/compiz.
 x11-plugins/compiz-plugins-main:gconf - Install GConf schemas for the plugins, needed when using the GConf-based configuration backend in x11-wm/compiz.
@@ -5721,3 +5725,4 @@ xfce-extra/xfce4-playercontrol-plugin:audacious - Enable Audacious support
 xfce-extra/xfce4-playercontrol-plugin:mpd - Enable Music Player Daemon support
 xfce-extra/xfce4-soundmenu-plugin:glyr - Enable music metadata searchengine support using media-libs/glyr
 xfce-extra/xfce4-soundmenu-plugin:lastfm - Enable last.fm support using media-libs/libclastfm
+xfce-extra/xfswitch-plugin:gdm - Use gdmflexiserver from gnome-base/gdm instead of x11-misc/lightdm
