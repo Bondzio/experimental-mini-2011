@@ -111,7 +111,7 @@ src_compile() {
 		--with-rootlibdir=/$(get_libdir) \
 		--libexecdir="${udev_libexec_dir}" \
 		--enable-logging \
-		--enable-hwdb \
+		$(use_extras hwdb) \
 		--with-pci-ids-path="${EPREFIX}/usr/share/misc/pci.ids" \
 		--with-usb-ids-path="${EPREFIX}/usr/share/misc/usb.ids" \
 		$(use_extras introspection) \
