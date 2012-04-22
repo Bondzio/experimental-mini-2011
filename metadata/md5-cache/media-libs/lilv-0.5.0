@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=media-libs/lv2core-6 >=dev-libs/serd-0.5 >=dev-libs/sord-0.5 doc? ( app-doc/doxygen ) dev-util/pkgconfig
+DEPEND=|| ( media-libs/lv2 >=media-libs/lv2core-6 ) >=dev-libs/serd-0.5 >=dev-libs/sord-0.5 doc? ( app-doc/doxygen ) dev-util/pkgconfig
 DESCRIPTION=Library to make the use of LV2 plugins as simple as possible for applications
 EAPI=4
 HOMEPAGE=http://drobilla.net/software/lilv/
 IUSE=doc test
 KEYWORDS=~amd64 ~x86
 LICENSE=ISC
-RDEPEND=>=media-libs/lv2core-6 >=dev-libs/serd-0.5 >=dev-libs/sord-0.5
+RDEPEND=|| ( media-libs/lv2 >=media-libs/lv2core-6 ) >=dev-libs/serd-0.5 >=dev-libs/sord-0.5
 SLOT=0
 SRC_URI=http://download.drobilla.net/lilv-0.5.0.tar.bz2
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	28662b30682d1e96104039d3f5748ea6
-_md5_=6a80d885a39b442097c6320e45e0bf64
+_md5_=db279913e29f7bfd2cda985656a8921a

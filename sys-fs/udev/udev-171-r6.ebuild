@@ -18,14 +18,13 @@ fi
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="*"
-IUSE="selinux extras +hwdb +gudev introspection"
+IUSE="acl selinux extras +hwdb +gudev introspection"
 MIN_KERNEL="2.6.32"
 
 COMMON_DEPEND="selinux? ( sys-libs/libselinux )
-		sys-apps/acl
+		acl? ( sys-apps/acl )
 		virtual/libusb:0
-		extras? ( dev-libs/gobject-introspection
-				  dev-libs/glib:2 )
+		extras? ( sys-apps/acl dev-libs/gobject-introspection dev-libs/glib:2 )
 		gudev? ( dev-libs/glib:2 )
 	    introspection? ( dev-libs/gobject-introspection )
 		hwdb? ( 
@@ -110,6 +109,7 @@ src_configure() {
 		--with-pci-ids-path="${EPREFIX}/usr/share/misc/pci.ids" \
 		--with-usb-ids-path="${EPREFIX}/usr/share/misc/usb.ids" \
 		$(use_extras introspection) \
+		$(use_extras acl udev_acl) \
 		$(use_extras gudev) \
 		$(use_enable extras) \
 		$(use_with selinux)

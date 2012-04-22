@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-vcs/git
+DESCRIPTION=A command line utility for viewing youtube-videos in Mplayer
+EAPI=4
+HOMEPAGE=http://trizen.googlecode.com
+LICENSE=GPL-3
+RDEPEND=dev-lang/perl dev-perl/URI dev-perl/XML-Fast virtual/perl-Scalar-List-Utils
+SLOT=0
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_md5_=c638735eb927ae6933b0a944a4ff3da8

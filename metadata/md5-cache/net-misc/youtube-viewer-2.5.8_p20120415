@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DESCRIPTION=A command line utility for viewing youtube-videos in Mplayer
+EAPI=4
+HOMEPAGE=http://trizen.googlecode.com
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-lang/perl dev-perl/URI dev-perl/XML-Fast virtual/perl-Scalar-List-Utils
+SLOT=0
+SRC_URI=mirror://github/hasufell/tinkerbox/youtube-viewer-2.5.8_p20120415.xz http://dev.gentoo.org/~floppym/distfiles/youtube-viewer-2.5.8_p20120415.xz
+_md5_=29a4530b9a6ff330f5e0a69cdeae4c20

@@ -4,10 +4,10 @@ DESCRIPTION=Video editor designed for simple cutting, filtering and encoding tas
 EAPI=4
 HOMEPAGE=http://fixounet.free.fr/avidemux
 IUSE=aac aften alsa amr gtk jack +mp3 nls opengl oss pulseaudio qt4 sdl +truetype vorbis vpx +x264 +xv +xvid linguas_bg linguas_ca linguas_cs linguas_de linguas_el linguas_es linguas_fr linguas_it linguas_ja linguas_pt_BR linguas_ru linguas_sr linguas_sr@latin linguas_tr linguas_zh_TW
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=dev-libs/libxml2 sys-libs/zlib aac? ( media-libs/faac media-libs/faad2 ) aften? ( media-libs/aften[cxx] ) alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) gtk? ( x11-libs/gtk+:2 ) jack? ( media-libs/libsamplerate media-sound/jack-audio-connection-kit ) mp3? ( media-sound/lame ) pulseaudio? ( media-sound/pulseaudio ) qt4? ( >=x11-libs/qt-gui-4.6:4 opengl? ( virtual/opengl >=x11-libs/qt-opengl-4.6:4 ) ) sdl? ( media-libs/libsdl ) truetype? ( media-libs/freetype:2 media-libs/fontconfig ) vorbis? ( media-libs/libvorbis ) vpx? ( media-libs/libvpx ) x264? ( media-libs/x264 ) xv? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXv ) xvid? ( media-libs/xvid )
 SLOT=2
 SRC_URI=mirror://sourceforge/avidemux/avidemux_2.5.6.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4d9321785d453860d7fe2539a6f33824
+_md5_=44105c91756c7dbbdd79256215b5a44c
