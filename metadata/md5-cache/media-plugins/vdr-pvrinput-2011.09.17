@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile config configure install postinst postrm prepare setup unpack
+DEPEND=>=media-video/vdr-1.6.0 >=media-tv/gentoo-vdr-scripts-0.4.2 virtual/linuxtv-dvb-headers
+DESCRIPTION=VDR Plugin: Use a PVR* card as input device
+EAPI=4
+HOMEPAGE=http://projects.vdr-developer.org/projects/show/plg-pvrinput
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=>=media-video/vdr-1.6.0 >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
+SLOT=0
+SRC_URI=http://projects.vdr-developer.org/git/vdr-plugin-pvrinput.git/snapshot/vdr-plugin-pvrinput-3ee6b964382f38715f4a4fe57bd4760044f9a58a.tar.gz -> vdr-pvrinput-2011.09.17.tgz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	d3dce4787922de74701451ca8213af50	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=4a88b6593cdca1300f026d4a6745f430

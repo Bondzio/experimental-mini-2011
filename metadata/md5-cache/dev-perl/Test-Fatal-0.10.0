@@ -4,10 +4,10 @@ DESCRIPTION=Incredibly simple helpers for testing code with exceptions
 EAPI=4
 HOMEPAGE=http://search.cpan.org/dist/Test-Fatal/
 IUSE=test
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~ppc-macos ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~ppc-macos ~x86-solaris
 LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/Try-Tiny-0.70.0 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/R/RJ/RJBS/Test-Fatal-0.010.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=afe8f8d3c53840124cd24acb62e107c3
+_md5_=f9d5672d44489d330f134be7402e645d

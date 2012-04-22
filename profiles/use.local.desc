@@ -168,6 +168,7 @@ app-admin/sagan:libdnet - Add support for dev-libs/libdnet
 app-admin/sagan:lognorm - Add support for log/rules normalizations via dev-libs/liblognorm
 app-admin/sagan:pcap - Add support for network packet capture via net-libs/libpcap
 app-admin/sagan:smtp - Build witch SMTP (E-Mail) support
+app-admin/sagan:snort - Add support to interact with Snort IDE using net-analyzer/snortsam'
 app-admin/sagan-rules:lognorm - Install normalize rules support with dev-libs/liblognorm
 app-admin/sshguard:ipfilter - Enable ipfilter firewall support (only for *bsd)
 app-admin/sudo:offensive - Let sudo print insults when the user types the wrong password.
@@ -5150,6 +5151,7 @@ sys-fs/udev:rule_generator - enable persistent network and optical device rule g
 sys-fs/udisks:introspection - Use dev-libs/gobject-introspection for introspection
 sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
 sys-fs/zfs:dracut - Install dracut module
+sys-fs/zfs:rootfs - Install zfs-shutdown script to support exporting a pool containing rootfs
 sys-fs/zfs:test-suite - Install regression test suite
 sys-infiniband/ofed:compat-dapl - Add support for DAPL v1.2 abstraction layer
 sys-infiniband/ofed:dapl - Add support for DAPL abstraction layer

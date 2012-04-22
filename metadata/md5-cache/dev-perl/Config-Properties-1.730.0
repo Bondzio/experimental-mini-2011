@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=test? ( virtual/perl-File-Temp virtual/perl-Test-Simple ) dev-lang/perl[-build]
+DESCRIPTION=Configuration using Java style properties
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Config-Properties/
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/S/SA/SALVA/Config-Properties-1.73.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=3ba9b784d4ac6d6748157fe5a09dd10d

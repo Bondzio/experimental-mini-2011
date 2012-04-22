@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=~net-misc/leechcraft-core-0.5.65 x11-libs/qscintilla >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils
+DESCRIPTION=Popishu, the text editor with IDE features for LeechCraft.
+EAPI=4
+HOMEPAGE=http://leechcraft.org/
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=~net-misc/leechcraft-core-0.5.65 x11-libs/qscintilla
+SLOT=0
+SRC_URI=mirror://sourceforge/leechcraft/leechcraft-0.5.65.tar.xz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=8ef6f647536bfdfda5bb1b09de1219b5
