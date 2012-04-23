@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/texmaker/texmaker-3.3.2.ebuild,v 1.1 2012/03/06 16:16:54 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/texmaker/texmaker-3.3.2.ebuild,v 1.2 2012/04/23 12:31:47 jlec Exp $
 
 EAPI="3"
 
@@ -47,7 +47,10 @@ RDEPEND="${COMMON_DEPEND}
 DEPEND="${COMMON_DEPEND}
 	dev-util/pkgconfig"
 
-PATCHES=( "${FILESDIR}/${P}-hunspell.patch" )
+PATCHES=(
+	"${FILESDIR}/${P}-hunspell.patch"
+	"${FILESDIR}/${P}-qt48.patch"
+	)
 
 src_prepare() {
 	qt4-r2_src_prepare
