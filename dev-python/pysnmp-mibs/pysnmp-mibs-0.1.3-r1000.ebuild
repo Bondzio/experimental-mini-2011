@@ -8,8 +8,8 @@ PYTHON_RESTRICTED_ABIS="*-jython *-pypy-*"
 
 inherit distutils
 
-DESCRIPTION="PySNMP applications"
-HOMEPAGE="http://pysnmp.sourceforge.net/ http://pypi.python.org/pypi/pysnmp-apps"
+DESCRIPTION="A collection of IETF & IANA MIBs pre-compiled for PySNMP"
+HOMEPAGE="http://pysnmp.sourceforge.net/ http://pypi.python.org/pypi/pysnmp-mibs"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="BSD"
@@ -17,10 +17,9 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-RDEPEND="$(python_abi_depend dev-python/pyasn1)
-	$(python_abi_depend ">=dev-python/pysnmp-4.2.1")"
+RDEPEND="$(python_abi_depend ">=dev-python/pysnmp-4.2.2")"
 DEPEND="${RDEPEND}
 	$(python_abi_depend dev-python/setuptools)"
 
 DOCS="CHANGES README"
-PYTHON_MODULES="pysnmp_apps"
+PYTHON_MODULES="pysnmp_mibs"
