@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=app-crypt/shash virtual/cdrtools ccache? ( dev-util/ccache ) ia64? ( sys-fs/dosfstools ) kernel_linux? ( app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 ) =dev-lang/python-2*
 SLOT=0
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=585b6d038a37f954da87440fe85cef55
+_md5_=057b18380ce3abfbf053c5be7693c393
