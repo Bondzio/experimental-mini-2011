@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/glib:2 dev-libs/icu test? ( dev-util/dbus-test-runner ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=Provide objects allowing to create Model-View-Controller type programs across DBus
+EAPI=4
+HOMEPAGE=https://launchpad.net/dee/
+IUSE=doc debug examples +icu static-libs test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-libs/glib:2 dev-libs/icu
+SLOT=0
+SRC_URI=https://launchpad.net/dee/1.0/1.0.10/+download/dee-1.0.10.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=4cde589e56518eca94bcdecf479e97e4

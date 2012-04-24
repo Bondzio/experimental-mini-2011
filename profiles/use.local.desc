@@ -295,7 +295,6 @@ app-doc/tldp-howto:html - Install the docs in multipage HTML format (default)
 app-doc/tldp-howto:htmlsingle - Install the docs in single page HTML format
 app-doc/tldp-howto:pdf - Install the docs in pdf format
 app-doc/tldp-howto:text - Install the docs in plain text format
-app-editors/cssed:plugins - Install plugin development files
 app-editors/emacs:athena - Enable the MIT Athena widget set (x11-libs/libXaw)
 app-editors/emacs:gconf - Use gnome-base/gconf to read the system font name
 app-editors/emacs:gzip-el - Compress bundled Emacs Lisp source
@@ -930,8 +929,6 @@ dev-cpp/glog:gflags - Use gflags module for flag parsing
 dev-cpp/gtkmm:wayland - Enable dev-libs/wayland backend
 dev-cpp/pficommon:fcgi - Build FCGI feature
 dev-cpp/pficommon:mprpc - Build MessagePack RPC feature
-dev-cpp/sptk:aspell - Enable support for app-text/aspell
-dev-cpp/sptk:excel - Enable Excel support
 dev-cpp/xsd:ace - Enable support for serializing to/from an ACE CDR stream
 dev-db/drizzle:curl - Enable the HTTP authentication plugin (using net-misc/curl). This is needed for the tests to apply properly.
 dev-db/drizzle:doc - Build the API documentation for the package, using app-doc/doxygen. Warning, this might take over an hour on slower machines.
@@ -945,11 +942,6 @@ dev-db/firebird:superserver - Install SuperServer
 dev-db/firebird:xinetd - Install ClassicServer
 dev-db/haildb:debug - Enable extra debug codepaths and assertions. If disabled, both the debug code and assertions are removed from the resulting binaries. Optimisations are untouched.
 dev-db/haildb:zlib - Add support for compressed tables through sys-libs/zlib.
-dev-db/ingres:client - Disable dbms component
-dev-db/ingres:das - Enable das support
-dev-db/ingres:demodb - Install demo DB
-dev-db/ingres:net - Enable net support
-dev-db/ingres:nodbms - Disable dbms component
 dev-db/maatkit:udf - Build the MySQL UDFs shipped with maatkit, requires non-minimal MySQL
 dev-db/mariadb:big-tables - Make tables contain up to 1.844E+19 rows
 dev-db/mariadb:cluster - Add support for NDB clustering (deprecated)
@@ -1347,8 +1339,6 @@ dev-libs/libprelude:swig - Enable rebuild of swig bindings
 dev-libs/libpreludedb:swig - Enable rebuild of swig bindings
 dev-libs/librra:recurrence - Enable recurrence support (EXPERIMENTAL)
 dev-libs/libsqlora8:orathreads - Use Oracle threads
-dev-libs/libtomcrypt:libtommath - Use the portable math library (dev-libs/libtommath)
-dev-libs/libtomcrypt:tomsfastmath - Use the optimized math library (dev-libs/tomsfastmath)
 dev-libs/libunique:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libverto:glib - Support event loops using dev-libs/glib
 dev-libs/libverto:libev - Support event loops using dev-libs/libev
@@ -1582,6 +1572,8 @@ dev-python/translate-toolkit:ical - Support conversion between po and ical files
 dev-python/translate-toolkit:ini - Support conversion between po and ini files
 dev-python/translate-toolkit:subtitles - Support conversion between po and sub files
 dev-python/twisted:serial - include serial port support
+dev-python/ws4py:client - Install client modules
+dev-python/ws4py:server - Install server modules
 dev-python/wxpython:doc - Install HTML wxWidgets docs and wxpython API reference.
 dev-python/wxpython:examples - Install interactive demo module browser and sample applets.
 dev-python/zsi:twisted - add support for dev-python/twisted
@@ -1734,7 +1726,6 @@ dev-util/qt-creator:perforce - Add support for Perforce version control system (
 dev-util/qt-creator:qml - Build QML support and many other QML-related tools (recommended)
 dev-util/qt-creator:qtscript - Enable QtScript editor plugin
 dev-util/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
-dev-util/radare:gui - Enable the graphical user interface of radare (broken)
 dev-util/schroot:btrfs - Enable support for chroots using btrfs snapshots.
 dev-util/schroot:dchroot - Enables the building of a wrapper named "dchroot", replacing sys-apps/dchroot.
 dev-util/schroot:lvm - Enable support for chroots using LVM snapshots.
@@ -3513,10 +3504,6 @@ net-fs/cifs-utils:caps - libcap support
 net-fs/cifs-utils:caps-ng - libcap-ng support
 net-fs/cifs-utils:creds - cifs credentials support
 net-fs/cifs-utils:upcall - Create cifs.idmap binary; idmap support
-net-fs/coda:client - Build and install the client components of coda filesystem. At least one of client or server should be enabled.
-net-fs/coda:coda_layout - Use legacy filesystem layout instead of FHS compliant one. Note: /coda symlink is installed unconditionally when FHS layout is used. Therefore the /coda namespace is preserved with either layout.
-net-fs/coda:coda_symlinks - Install legacy symlinks when FHS layout has been selected (-coda_layout). You should only need this if you use local scripts or 3rd party apps relying on precise layout. Note: /coda symlink is installed unconditionally, so the namespace is preserved in any case.
-net-fs/coda:server - Build and install the server components of coda filesystem. Note: at least one of client/server flags must be enabled.
 net-fs/netatalk:appletalk - Build support for Apple's AppleTalk (DDP) protocol and its utilities (atalkd, timelord, papd).
 net-fs/netatalk:cups - Add support for net-print/cups printers in papd. This flag is only considered if appletalk USE flag is enabled, and is otherwise ignored.
 net-fs/netatalk:quota - Add support for user quota on various filesystems.
@@ -5309,12 +5296,6 @@ www-client/firefox:pgo - Add support for profile-guided optimization using gcc-4
 www-client/firefox:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 www-client/firefox:webm - Use system media-libs/libvpx for HTML5 WebM video support.
 www-client/google-chrome:plugins - Add system plugins path to launcher
-www-client/icecat:crashreporter - Enable crashreporter for mozilla upstream, debugging symbols are not required for reporting crashes.
-www-client/icecat:custom-optimization - Fine-tune custom compiler optimizations
-www-client/icecat:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
-www-client/icecat:pgo - Add support for profile-guided optimization using gcc-4.5, for faster binaries. This option will double the compile time.
-www-client/icecat:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
-www-client/icecat:webm - Use system libvpx media-libs/libvpx
 www-client/leechcraft-poshuku:cleanweb - Build CleanWeb for ad blocking compatible with Firefox's AdBlock+.
 www-client/leechcraft-poshuku:fatape - Build FatApe, GreaseMonkey userscripts support layer.
 www-client/leechcraft-poshuku:filescheme - Build FileScheme for accessing local URLs.

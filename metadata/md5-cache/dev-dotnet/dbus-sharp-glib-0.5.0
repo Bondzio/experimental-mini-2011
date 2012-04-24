@@ -7,6 +7,6 @@ KEYWORDS=amd64 ppc x86
 LICENSE=MIT
 RDEPEND=dev-lang/mono >=dev-dotnet/dbus-sharp-0.7
 SLOT=0
-SRC_URI=https://github.com/downloads/mono/dbus-sharp/dbus-sharp-glib-0.5.0.tar.gz
+SRC_URI=mirror://github/mono/dbus-sharp/dbus-sharp-glib-0.5.0.tar.gz
 _eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=db8c345ef8412108d044206e9203d078
+_md5_=6acf10a95235c2e462592d6e68f8b3ca

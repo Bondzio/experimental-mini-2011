@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=A major mode for GNU Emacs for editing Actionscript 3 files
+EAPI=4
+HOMEPAGE=https://github.com/austinhaas/actionscript-mode
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/emacs-21
+SLOT=0
+SRC_URI=https://github.com/austinhaas/actionscript-mode/tarball/aa7e63d566a815152e7e652010becd46a406abb2 -> actionscript-mode-7.2.2_p20120405.tar.gz
+_eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	aa9676ce708f8aacf54ff9df8015963b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1dc3eb314fbebe3b704b3157d8ad8981
