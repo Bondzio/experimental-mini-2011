@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-mail/notmuch/notmuch-0.12.ebuild,v 1.4 2012/04/23 20:25:30 aidecoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-mail/notmuch/notmuch-0.12.ebuild,v 1.7 2012/04/24 17:04:03 ago Exp $
 
 EAPI=4
 
@@ -10,13 +10,13 @@ RESTRICT_PYTHON_ABIS="2.[45] 3.1"
 
 inherit elisp-common pax-utils distutils
 
-DESCRIPTION="The mail indexer"
+DESCRIPTION="Thread-based e-mail indexer, supporting quick search and tagging"
 HOMEPAGE="http://notmuchmail.org/"
 SRC_URI="${HOMEPAGE%/}/releases/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 REQUIRED_USE="test? ( crypt emacs python )"
 IUSE="bash-completion crypt debug doc emacs nmbug python test vim
 	zsh-completion"
@@ -99,7 +99,7 @@ src_compile() {
 src_test() {
 	pax-mark -m notmuch
 	LD_LIBRARY_PATH="${MY_LD_LIBRARY_PATH}" default
-	pax-mark -z -e notmuch
+	pax-mark -ze notmuch
 }
 
 src_install() {
