@@ -170,6 +170,10 @@ app-admin/sagan:pcap - Add support for network packet capture via net-libs/libpc
 app-admin/sagan:smtp - Build witch SMTP (E-Mail) support
 app-admin/sagan:snort - Add support to interact with Snort IDE using net-analyzer/snortsam'
 app-admin/sagan-rules:lognorm - Install normalize rules support with dev-libs/liblognorm
+app-admin/salt:jinja - Add support to use dev-python/jinja to parse Salt states.
+app-admin/salt:libvirt - Support managing virtual machines with app-emulation/libvirt.
+app-admin/salt:mongodb - Support returning data to a mongodb server.
+app-admin/salt:redis - Support returning data to a redis database.
 app-admin/sshguard:ipfilter - Enable ipfilter firewall support (only for *bsd)
 app-admin/sudo:offensive - Let sudo print insults when the user types the wrong password.
 app-admin/syslog-ng:json - Enable support for JSON template formatting via dev-libs/json-glib
@@ -4656,6 +4660,7 @@ sci-libs/lis:fma - Use the Fused Multiply Add instruction set (x86 arches)
 sci-libs/lis:quad - Enable quadruple precision operations
 sci-libs/lis:saamg - Build the Smoothed Aggregation Algebraic MultiGrid preconditioner
 sci-libs/mathgl:octave - Add bindings for sci-mathematics/octave
+sci-libs/matio:sparse - Extend formats for sparse matrix (not matlab)
 sci-libs/metis:int64 - Build the 64 bits integer library (metis >=5 only)
 sci-libs/mkl:fortran95 - Installs the BLAS/LAPACK FORTRAN95 static libraries
 sci-libs/mkl:int64 - Installs the 64 bits integer libraries
@@ -5340,7 +5345,8 @@ www-misc/vdradmin-am:vdr - Support for media-video/vdr. Disable this if the VDR 
 www-misc/xxv:themes - Enable more themes via x11-themes/xxv-skins
 www-plugins/adobe-flash:32bit - For amd64-multilib, installs the 32-bit plugin
 www-plugins/adobe-flash:64bit - For amd64-multilib, installs the native 64-bit plugin
-www-plugins/adobe-flash:kde - Enables a KCM plugin for configuring flash player preferences (32-bit KDE4 only)
+www-plugins/adobe-flash:kde - Enables a KCM plugin for configuring flash player preferences
+www-plugins/adobe-flash:sse2check - This flag, enabled by default, will check for sse2 support on your cpu and die if not found. If you are remote-building this package, you can disable this flag but you have been warned
 www-plugins/adobe-flash:vdpau - Enables VDPAU support to offload video processing (32-bit flash player only)
 www-plugins/gnash:agg - Rendering based on the Anti-Grain Geometry Rendering Engine library
 www-plugins/gnash:cygnal - Enable building of the cygnal server

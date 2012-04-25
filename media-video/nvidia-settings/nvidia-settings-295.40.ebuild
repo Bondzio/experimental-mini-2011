@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-295.40.ebuild,v 1.4 2012/04/24 13:45:49 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-295.40.ebuild,v 1.6 2012/04/25 04:27:06 idl0r Exp $
 
 EAPI=4
 
@@ -26,7 +26,7 @@ COMMON_DEPEND="x11-libs/libX11
 	x11-libs/libXrandr
 	dev-libs/glib:2"
 
-RDEPEND="x11-drivers/nvidia-drivers
+RDEPEND="=x11-drivers/nvidia-drivers-2*
 	${COMMON_DEPEND}"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
@@ -52,21 +52,18 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" PREFIX=/usr install
 
-	# Install libXNVCtrl and headers
 	insinto /usr/$(get_libdir)
 	doins src/libXNVCtrl/libXNVCtrl.a
 
 	insinto /usr/include/NVCtrl
 	doins src/libXNVCtrl/*.h
 
-	# Install icon and .desktop entry
 #	doicon doc/${PN}.png # Installed through nvidia-drivers
 	make_desktop_entry ${PN} "NVIDIA X Server Settings" ${PN} Application
 
 	# bug 412569 - Installed through nvidia-drivers
 	rm -rf "${D}"/usr/share/man
 
-	# Now install documentation
 	dodoc doc/*.txt
 
 	if use examples; then

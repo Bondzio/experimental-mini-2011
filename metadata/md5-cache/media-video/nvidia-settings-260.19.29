@@ -5,8 +5,8 @@ EAPI=2
 HOMEPAGE=http://www.nvidia.com/
 KEYWORDS=-* amd64 x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=x11-libs/gtk+:2 x11-base/xorg-server x11-libs/libXt x11-libs/pango[X] x11-drivers/nvidia-drivers
+RDEPEND=x11-libs/gtk+:2 x11-base/xorg-server x11-libs/libXt x11-libs/pango[X] =x11-drivers/nvidia-drivers-2*
 SLOT=0
 SRC_URI=ftp://download.nvidia.com/XFree86/nvidia-settings/nvidia-settings-260.19.29.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=55bc4276bdbea3f50ebbbc264ba8bbee
+_md5_=89602ac687a0ab2b252934b87215e82f
