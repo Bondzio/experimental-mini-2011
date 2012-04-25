@@ -1,12 +1,13 @@
-DEFINED_PHASES=configure install unpack
-DEPEND=app-arch/unzip
+DEFINED_PHASES=configure install preinst prepare setup unpack
+DEPEND=app-arch/unzip java? ( >=virtual/jdk-1.5 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 DESCRIPTION=Proj.4 cartographic projection software with updated NAD27 grids
 EAPI=4
 HOMEPAGE=http://trac.osgeo.org/proj/
-IUSE=static-libs
+IUSE=java static-libs elibc_FreeBSD java
 KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=MIT
+RDEPEND=java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=0
 SRC_URI=ftp://ftp.remotesensing.org/pub/proj/proj-4.8.0.tar.gz http://download.osgeo.org/proj/proj-datumgrid-1.5.zip
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e669828d1babfc5347dc733845f514b0
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=3aa8ae1fe935cae4352b0c73d8293e13

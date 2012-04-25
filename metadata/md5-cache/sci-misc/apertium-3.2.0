@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile configure prepare
-DEPEND=virtual/libiconv dev-libs/libxslt dev-libs/libpcre[cxx] >=sci-misc/lttoolbox-3.2 dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/libxslt dev-libs/libpcre[cxx] >=sci-misc/lttoolbox-3.2 virtual/libiconv dev-util/pkgconfig
 DESCRIPTION=Shallow-transfer machine Translation engine and toolbox
 EAPI=4
 HOMEPAGE=http://apertium.sourceforge.net/
 IUSE=static-libs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=virtual/libiconv dev-libs/libxslt dev-libs/libpcre[cxx] >=sci-misc/lttoolbox-3.2
+RDEPEND=dev-libs/libxslt dev-libs/libpcre[cxx] >=sci-misc/lttoolbox-3.2 virtual/libiconv
 SLOT=0
 SRC_URI=mirror://sourceforge/apertium/apertium-3.2.0.tar.gz
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0598c815f86582f2625aa1b316a88d55
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=da9a54cd523c188dbcd4358a2185a17e

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/pango/pango-1.29.4.ebuild,v 1.11 2012/04/01 18:15:40 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/pango/pango-1.29.4.ebuild,v 1.14 2012/04/25 10:11:21 lxnay Exp $
 
 EAPI="4"
 GCONF_DEBUG="yes"
@@ -77,7 +77,17 @@ pkg_postinst() {
 	multilib_enabled && PANGO_CONFDIR+="/${CHOST}"
 
 	mkdir -p "${PANGO_CONFDIR}"
-	pango-querymodules \
+	local pango_conf="${PANGO_CONFDIR}/pango.modules"
+	local tmp_file=$(mktemp -t tmp.XXXXXXXXXXgdk_pixbuf_ebuild)
+
+	# be atomic!
+	if pango-querymodules \
 		"${EROOT}"usr/$(get_libdir)/pango/1.6.0/modules/*.so \
-		> "${PANGO_CONFDIR}"/pango.modules || die
+			> "${tmp_file}"; then
+		cat "${tmp_file}" > "${pango_conf}" || {
+			rm "${tmp_file}"; die; }
+	else
+		ewarn "Cannot update pango.modules, file generation failed"
+	fi
+	rm "${tmp_file}"
 }
