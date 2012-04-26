@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare test
-DEPEND=>=dev-lang/parrot-4.1.0[unicode] >=dev-lang/nqp-2012.04 dev-lang/perl
+DEPEND=>=dev-lang/parrot-4.3.0[unicode] >=dev-lang/nqp-2012.04 dev-lang/perl
 DESCRIPTION=A Perl 6 implementation built on the Parrot virtual machine
 EAPI=3
 HOMEPAGE=http://rakudo.org/
 IUSE=doc
 KEYWORDS=~amd64 ~x86
 LICENSE=Artistic-2
-RDEPEND=>=dev-lang/parrot-4.1.0[unicode] >=dev-lang/nqp-2012.04
+RDEPEND=>=dev-lang/parrot-4.3.0[unicode] >=dev-lang/nqp-2012.04
 SLOT=0
 SRC_URI=mirror://github/rakudo/rakudo/rakudo-2012.04.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2c5b61e67a5dcd447f444e80381c1558
+_md5_=cc452908c04a30f734eaa8828fb16c42

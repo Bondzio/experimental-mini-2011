@@ -1,0 +1,136 @@
+# Copyright 1999-2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.55 2012/04/26 16:58:50 aballier Exp $
+
+# Mask useflags that require deps with missing keywords.
+# Anyone is allowed and _very welcome_ to add masks there.
+# We will pick them up and keyword as time permits and prefer having a sane
+# deptree with missing features than a broken one.
+# 
+# Syntax is: # mising dep(s)
+#            mask
+# Keep it simple, we do not really care about the date or who masked it, we want
+# to be easily able to determine what we need to keyword.
+
+# net-dns/hesiod
+sys-freebsd/freebsd-lib hesiod
+
+# net-analyzer/bsnmp
+sys-freebsd/freebsd-sbin atm
+
+# virtual/fam
+dev-libs/glib fam
+# dev-libs/libxslt
+# dev-util/gdbus-codegen
+# dev-util/gtk-doc
+# app-text/docbook-xml-dtd
+dev-libs/glib doc
+# sys-devel/gdb
+# dev-util/gdbus-codegen
+# sys-apps/dbus
+dev-libs/glib test
+# dev-util/gdbus-codegen
+dev-libs/glib utils
+
+# app-crypt/p11-kit
+net-libs/gnutls pkcs11
+
+# app-misc/datefudge
+net-libs/gnutls test
+
+# dev-util/gtk-doc
+net-libs/gnutls doc
+
+# net-libs/axTLS
+net-misc/curl curl_ssl_axtls
+
+# dev-libs/nss
+net-misc/curl curl_ssl_nss
+
+# net-dns/libidn
+net-misc/wget idn
+net-misc/curl idn
+
+# net-dns/c-ares
+net-misc/curl ares
+
+# net-libs/libssh2
+net-misc/curl ssh
+
+# net-nds/openldap
+net-misc/curl ldap
+
+# sys-auth/pam_ssh
+sys-auth/pambase pam_ssh
+
+# gnome-base/gnome-keyring
+sys-auth/pambase gnome-keyring
+
+# sys-auth/pam_mktemp
+sys-auth/pambase mktemp
+
+# sys-auth/pam_krb5
+sys-auth/pambase pam_krb5
+
+# dev-python/docutils
+app-admin/eselect doc
+
+# app-text/xmlto app-text/docbook-xml-dtd-4.4
+sys-apps/portage doc
+# dev-python/epydoc
+sys-apps/portage epydoc
+
+# dev-libs/icu
+dev-libs/libxml2 icu
+
+# dev-vcs/git
+sys-devel/gettext git
+
+# virtual/jre virtual/jdk
+sys-devel/gettext java
+
+# app-emacs/po-mode
+sys-devel/gettext emacs
+
+# virtual/emacs
+dev-scheme/guile emacs
+dev-util/cscope emacs
+
+# dev-libs/cloog-ppl dev-libs/ppl
+sys-devel/gcc graphite
+
+# dev-lang/tk
+dev-lang/ruby tk
+
+# dev-lang/tk dev-tcltk/blt
+dev-lang/python tk
+# dev-db/sqlite:3
+dev-lang/python sqlite
+# dev-python/sphinx dev-python/python-docs:SLOT
+dev-lang/python doc
+
+# app-emacs/autoconf-mode
+sys-devel/autoconf emacs
+
+# x11-libs/libX11
+# x11-libs/libXt
+# x11-libs/libXmu
+# x11-libs/libXaw
+# x11-libs/libSM
+# x11-libs/libICE
+sys-apps/groff X
+
+# x11-libs/libXt
+# x11-libs/libX11
+# x11-libs/libSM
+# x11-proto/xproto
+app-editors/vim X
+
+# dev-libs/libnl:1.1
+net-libs/libpcap libnl
+
+# net-libs/libtirpc
+sys-apps/xinetd rpc
+
+# app-doc/doxygen
+dev-libs/libnatspec doc

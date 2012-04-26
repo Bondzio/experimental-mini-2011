@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=sci-libs/proj sys-libs/zlib dev-libs/expat
-DESCRIPTION=OGDI - Open Geographical Datastore Interface, a GIS support library
-HOMEPAGE=http://ogdi.sourceforge.net
+DEPEND=<sci-libs/proj-4.8.0 sys-libs/zlib dev-libs/expat
+DESCRIPTION=Open Geographical Datastore Interface, a GIS support library
+HOMEPAGE=http://ogdi.sourceforge.net/
 KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
 LICENSE=GPL-2
-RDEPEND=sci-libs/proj sys-libs/zlib dev-libs/expat
+RDEPEND=<sci-libs/proj-4.8.0 sys-libs/zlib dev-libs/expat
 SLOT=0
 SRC_URI=mirror://sourceforge/ogdi/ogdi-3.1.5.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=de161d3aa835a102a084732df5d78553
+_md5_=505c982ee48d780c70a6edf93cdca1ae

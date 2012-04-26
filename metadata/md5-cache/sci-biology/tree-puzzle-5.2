@@ -1,6 +1,7 @@
-DEFINED_PHASES=compile install setup
+DEFINED_PHASES=install prepare setup
 DEPEND=mpi? ( sys-cluster/lam-mpi )
-DESCRIPTION=Maximum likelihood analysis for nucleotide, amino acid, and two-state data.
+DESCRIPTION=Maximum likelihood analysis for nucleotide, amino acid, and two-state data
+EAPI=4
 HOMEPAGE=http://www.tree-puzzle.de
 IUSE=mpi
 KEYWORDS=~amd64 ~ppc x86 ~amd64-linux ~x86-linux ~ppc-macos
@@ -9,4 +10,4 @@ RDEPEND=mpi? ( sys-cluster/lam-mpi )
 SLOT=0
 SRC_URI=http://www.tree-puzzle.de/tree-puzzle-5.2.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=5813de0620430e5fdfc28366d2f461bc
+_md5_=3fa82ca357ef8f1fbed267fba9ea9de3
