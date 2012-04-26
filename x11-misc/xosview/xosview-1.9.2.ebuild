@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/xosview/xosview-1.9.2.ebuild,v 1.3 2012/02/06 16:18:59 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xosview/xosview-1.9.2.ebuild,v 1.4 2012/04/25 17:59:21 jer Exp $
 
 EAPI=4
 
@@ -46,7 +46,7 @@ src_install() {
 }
 
 pkg_postinst() {
-    if ! use suid ; then
+	if ! use suid ; then
 		ewarn "If you want to use serial meters ${PN} needs to be executed as root."
 		ewarn "Please see ${EPREFIX}/usr/share/doc/${PF}/README.linux for details."
 	fi

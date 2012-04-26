@@ -10,4 +10,4 @@ RDEPEND=!!sci-libs/beagle >dev-lang/mono-2.4 >=app-shells/bash-3.2 app-arch/zip 
 SLOT=0
 SRC_URI=mirror://gnome/sources/beagle/0.3/beagle-0.3.9.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	5f623f5a211fb1b2d84d88ee49959a54	mono	203a4295c06155d318bdff9c6b2d5e1c	mozextension	3555597bb9fa8d695bf69f250bf59a1a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=105e6c094b5adb72e8c3f5dfc9359f21
+_md5_=958997814c433c95c055f4afc74a5fdd
