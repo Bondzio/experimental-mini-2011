@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-doc/doxygen/doxygen-1.8.0.ebuild,v 1.1 2012/02/29 09:12:35 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-doc/doxygen/doxygen-1.8.0.ebuild,v 1.3 2012/04/26 21:34:20 aballier Exp $
 
 EAPI=4
 
@@ -13,9 +13,8 @@ SRC_URI="ftp://ftp.stack.nl/pub/users/dimitri/${P}.src.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
-	~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris"
-IUSE="debug doc dot qt4 latex elibc_FreeBSD"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris"
+IUSE="debug doc dot qt4 latex elibc_FreeBSD userland_GNU"
 
 #missing SerbianCyrilic, JapaneseEn, KoreanEn, Chinesetraditional
 
@@ -142,6 +141,10 @@ src_configure() {
 	use ppc64 && my_conf="${my_conf} --english-only" #263641
 
 	use qt4 && my_conf="${my_conf} --with-doxywizard"
+
+	# On non GNU userland (e.g. BSD), configure script picks up make and bails
+	# out because it is not GNU make, so we force the right value.
+	use userland_GNU || my_conf="${my_conf} --make ${MAKE} --install install"
 
 	export LINK="${QMAKE_LINK}"
 	export LINK_SHLIB="${QMAKE_CXX}"

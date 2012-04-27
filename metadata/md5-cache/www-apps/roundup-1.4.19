@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.
 SLOT=0
 SRC_URI=mirror://pypi/r/roundup/roundup-1.4.19.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=eb12ed5c42ec3d25335f77ee768c7560
+_md5_=2d303c543c5ff39e61673866cc486762
