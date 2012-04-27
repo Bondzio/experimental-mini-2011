@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm prepare
+DEPEND=app-arch/unzip || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+DESCRIPTION=Provide python code looking for bugs, refactoring and other useful things
+EAPI=4
+HOMEPAGE=http://www.vim.org/scripts/script.php?script_id=3770 https://github.com/klen/python-mode
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=dev-python/astng dev-python/pep8 dev-python/pyflakes dev-python/pylint dev-python/rope dev-python/ropemode || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 )
+SLOT=0
+SRC_URI=http://www.vim.org/scripts/download_script.php?src_id=17788 -> python-mode-0.6.3.zip
+_eclasses_=vim-doc	1c18baeec98cec3287524cbf2fee2bd2	vim-plugin	af7939f5d748a2ceeff320440e8905b1
+_md5_=8609912539f4c4d218892f82830e15c4

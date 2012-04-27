@@ -1,4 +1,5 @@
 DEFINED_PHASES=install
+DEPEND=app-arch/unzip
 DESCRIPTION=API to access display driver functionality for ATI graphics cards
 EAPI=4
 HOMEPAGE=http://developer.amd.com/sdks/adlsdk/
@@ -9,4 +10,4 @@ RDEPEND=x11-drivers/ati-drivers
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://download2-developer.amd.com/amd/GPU/zip/ADL_SDK_3.0.zip
-_md5_=6bffbf535a019584d9316cf2c83f516f
+_md5_=09ab351b668307a2948519bbb69b82f8

@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile install postinst postrm setup
 DEPEND==dev-lang/python-2*
 DESCRIPTION=Versatile replacement for vmstat, iostat and ifstat
-EAPI=3
+EAPI=4
 HOMEPAGE=http://dag.wieers.com/home-made/dstat/
 IUSE=wifi
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux
@@ -10,4 +10,4 @@ RDEPEND=wifi? ( net-wireless/python-wifi ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dag.wieers.com/home-made/dstat/dstat-0.7.2.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b8fd9f9716fadf03fa2440fd5c104572
+_md5_=98c4801a7c5643f82a92ec0f0fcc4faf

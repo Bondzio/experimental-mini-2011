@@ -1506,6 +1506,10 @@ dev-python/dap:server - Enable OpenDAP server support
 dev-python/django-extensions:graphviz - Create a diagram of your database entity relationships using dev-python/pygraphviz.
 dev-python/django-extensions:s3 - Upload your media files to S3.
 dev-python/django-extensions:vcard - Export your users email addresses to the vcard format.
+dev-python/django-tastypie:bip - An optional serialiser dev-python/biplist
+dev-python/django-tastypie:digest - Library to aid in implementing HTTP Digest Authentication
+dev-python/django-tastypie:lxml - An optional serialiser dev-python/lxml
+dev-python/django-tastypie:yaml - An optional serialiser dev-python/yaml
 dev-python/docutils:glep - Install support for GLEPs
 dev-python/icalendar:doc - Generate examples and other extra documentation
 dev-python/ipython:matplotlib - Add support for dev-python/matplotlib
@@ -4078,6 +4082,15 @@ net-misc/asterisk-moh-opsound:siren7 - Install the sounds files for the siren7 c
 net-misc/asterisk-moh-opsound:sln16 - Install the sounds files for the sln16 codec.
 net-misc/asterisk-moh-opsound:ulaw - Install the sounds files for the ulaw codec.
 net-misc/asterisk-moh-opsound:wav - Install the sounds files for the wav codec.
+net-misc/bfgminer:adl - Enable support for controlling fans and overclocking on AMD cards with AMD Display Library
+net-misc/bfgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
+net-misc/bfgminer:cpumining - Enable support for mining with CPUs
+net-misc/bfgminer:icarus - Enable support for mining with Icarus FPGAs
+net-misc/bfgminer:opencl - Enable support for mining with OpenCL-capable devices (GPUs)
+net-misc/bfgminer:padlock - Enable support for mining with VIA Padlock CPUs
+net-misc/bfgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
+net-misc/bfgminer:sse4 - Enable support for CPU SSE4 mining algorithm
+net-misc/bfgminer:ztex - Enable support for mining with Ztex FPGAs
 net-misc/cfengine:html - Install HTML documentation
 net-misc/cfengine:libvirt - Enable support for virtual machine management through app-emulation/libvirt
 net-misc/cfengine:qdbm - Use dev-db/qdbm as database backend
@@ -4091,6 +4104,7 @@ net-misc/cgminer:opencl - Enable support for mining with OpenCL-capable devices 
 net-misc/cgminer:padlock - Enable support for mining with VIA Padlock CPUs
 net-misc/cgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
 net-misc/cgminer:sse4 - Enable support for CPU SSE4 mining algorithm
+net-misc/cgminer:ztex - Enable support for mining with Ztex FPGAs
 net-misc/connman:ethernet - Enable ethernet support.
 net-misc/connman:google - Enable Google Public DNS support.
 net-misc/connman:ntpd - Use net-misc/ntp for nptd plugin.
@@ -4340,6 +4354,7 @@ net-p2p/bitcoin-qt:qrcode - Enable generation of QR Codes for receiving payments
 net-p2p/bitcoin-qt:upnp - Enable Universal Plug and Play
 net-p2p/bitcoind:bip16 - Enable backported support for relaying and mining new BIP16 pay-to-script-hash transactions
 net-p2p/bitcoind:eligius - Enable using lower fees accepted by Eligius
+net-p2p/bitcoind:logrotate - Use app-admin/logrotate for rotating logs
 net-p2p/bitcoind:upnp - Enable Universal Plug and Play
 net-p2p/dbhub:switch_user - Enable support for switching user
 net-p2p/deluge:setproctitle - Install dependencies needed for beautifying the process name
