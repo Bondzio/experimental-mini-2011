@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.114 2012/04/26 22:41:48 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.123 2012/04/28 04:07:47 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -15,29 +15,18 @@
 # net-dns/hesiod
 sys-freebsd/freebsd-lib hesiod
 
-# dev-util/gdbus-codegen
-# dev-util/gtk-doc
-dev-libs/glib doc
 # sys-devel/gdb
-# dev-util/gdbus-codegen
-# sys-apps/dbus
 dev-libs/glib test
-# dev-util/gdbus-codegen
-dev-libs/glib utils
 
 # app-misc/datefudge
 net-libs/gnutls test
-
-# dev-util/gtk-doc
-net-libs/gnutls doc
-x11-libs/cairo doc
-dev-libs/gobject-introspection doc
 
 # net-libs/axTLS
 net-misc/curl curl_ssl_axtls
 
 # net-nds/openldap
 net-misc/curl ldap
+net-misc/dhcp ldap
 
 # sys-auth/pam_ssh
 sys-auth/pambase pam_ssh
@@ -51,6 +40,7 @@ sys-auth/pambase pam_krb5
 # dev-libs/icu
 dev-libs/libxml2 icu
 dev-db/sqlite icu
+dev-libs/boost icu
 
 # dev-vcs/git
 sys-devel/gettext git
@@ -66,6 +56,7 @@ dev-scheme/guile emacs
 dev-util/cscope emacs
 net-dns/libidn emacs
 dev-util/cmake emacs
+dev-util/gtk-doc emacs
 
 # dev-lang/mono
 net-dns/libidn mono
@@ -118,25 +109,17 @@ x11-libs/cairo qt4
 # x11-base/xorg-server[xvfb]
 # x11-apps/xhost
 dev-util/cmake test
+sys-apps/dbus test
 
-# x11-libs/pango
-media-gfx/graphviz cairo
-
-# x11-libs/pango
 # x11-libs/gtk+:2
 media-gfx/graphviz gtk
+app-text/ghostscript-gpl gtk
 
 # media-libs/lasi
 media-gfx/graphviz lasi
 
 # net-print/cups
 app-text/ghostscript-gpl cups
-
-# x11-libs/gtk+:2
-app-text/ghostscript-gpl gtk
-
-# sys-apps/dbus
-app-text/ghostscript-gpl dbus
 
 # virtual/opengl
 # media-libs/freeglut
@@ -147,3 +130,9 @@ x11-libs/cairo opengl
 
 # app-text/texlive[extra]
 app-doc/doxygen latex
+
+# dev-util/source-highlight
+dev-util/gtk-doc highlight
+
+# sys-cluster/openmpi
+dev-libs/boost mpi

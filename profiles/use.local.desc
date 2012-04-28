@@ -5046,7 +5046,6 @@ sys-devel/gcc:graphite - Add support for the framework for loop optimizations ba
 sys-devel/gcc:gtk - Useful only when building GCJ, this enables Abstract Window Toolkit (AWT) peer support on top of GTK+
 sys-devel/gcc:ip28 - Enable building a compiler capable of building a kernel for SGI Indigo2 Impact R10000 (IP28)
 sys-devel/gcc:ip32r10k - Enable building a compiler capable of building an experimental kernel for SGI O2 w/ R1x000 CPUs (IP32)
-sys-devel/gcc:libffi - Build the portable foreign function interface library
 sys-devel/gcc:libssp - Build SSP support into a dedicated library rather than use the code in the C library (DO NOT ENABLE THIS IF YOU DON'T KNOW WHAT IT DOES)
 sys-devel/gcc:lto - Add support for link-time optimizations (unsupported, use at your own risk).
 sys-devel/gcc:mudflap - Add support for mudflap, a pointer use checking library

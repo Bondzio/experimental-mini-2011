@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/getxbook/getxbook-0.8.ebuild,v 1.1 2012/02/15 08:45:36 grozin Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/getxbook/getxbook-0.8.ebuild,v 1.2 2012/04/27 20:59:12 grozin Exp $
 EAPI=4
 inherit eutils toolchain-funcs
 
@@ -35,7 +35,7 @@ src_install() {
 	exeinto /usr/bin
 	use pdf  && doexe extras/mkpdf.sh
 	use djvu && doexe extras/mkdjvu.sh
-	if use tesseract; then
+	if use ocr; then
 		doexe extras/mkocrtxt.sh
 		use pdf  && doexe extras/mkocrpdf.sh
 		use djvu && doexe extras/mkocrdjvu.sh
