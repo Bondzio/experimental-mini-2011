@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13704 2012/04/27 20:01:41 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13707 2012/04/28 14:52:11 ssuominen Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,6 +31,14 @@
 
 #--- END OF EXAMPLES ---
 
+# Hans de Graaff <graaff@gentoo.org> (28 Apr 2012)
+# History of broken code, new releases use a test system
+# that does not work itself and has many new dependencies.
+# Current stable version blocks rubygems stabilization.
+# No reverse dependencies.
+# Masked for removal in 30 days.
+dev-ruby/facets
+
 # Robin H. Johnson <robbat2@gentoo.org> (09 Feb 2012)
 # Needs to be slotted better
 =dev-libs/yaz-4*
@@ -56,6 +64,8 @@ x11-apps/xsetpointer
 # Samuli Suominen <ssuominen@gentoo.org> (22 Apr 2012)
 # Masked for removal in 30 days for using the obsolete xulrunner
 # package wrt #412875 and #403415
+# Information from mailinglist:
+# Possible replacements include kchmviewer and fbreader
 app-text/chmsee
 
 # Torsten Veller <tove@gentoo.org> (21 Apr 2012)
