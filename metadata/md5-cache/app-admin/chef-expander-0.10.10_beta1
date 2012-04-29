@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=test? ( ruby_targets_ruby18? ( ~app-admin/chef-0.10.10_beta1[ruby_targets_ruby18] >=dev-ruby/amqp-0.6.7[ruby_targets_ruby18] <dev-ruby/amqp-0.7[ruby_targets_ruby18] >=dev-ruby/bunny-0.6.0[ruby_targets_ruby18] <dev-ruby/bunny-0.7[ruby_targets_ruby18] >=dev-ruby/em-http-request-0.2.11[ruby_targets_ruby18] <dev-ruby/em-http-request-0.3[ruby_targets_ruby18] >=dev-ruby/eventmachine-0.12.10[ruby_targets_ruby18] <dev-ruby/eventmachine-0.13[ruby_targets_ruby18] >=dev-ruby/fast_xs-0.7.3[ruby_targets_ruby18] <dev-ruby/fast_xs-0.8[ruby_targets_ruby18] >=dev-ruby/highline-1.6.1[ruby_targets_ruby18] <dev-ruby/highline-1.7[ruby_targets_ruby18] >=dev-ruby/mixlib-log-1.2.0[ruby_targets_ruby18] >=dev-ruby/uuidtools-2.1.1[ruby_targets_ruby18] <dev-ruby/uuidtools-2.2[ruby_targets_ruby18] >=dev-ruby/yajl-ruby-0.7.7[ruby_targets_ruby18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
+DESCRIPTION=Configuration management tool
+EAPI=4
+HOMEPAGE=http://wiki.opscode.com/display/chef
+IUSE=test elibc_FreeBSD ruby_targets_ruby18 test
+KEYWORDS=~amd64 ~x86
+LICENSE=Apache-2.0
+RDEPEND=ruby_targets_ruby18? ( ~app-admin/chef-0.10.10_beta1[ruby_targets_ruby18] >=dev-ruby/amqp-0.6.7[ruby_targets_ruby18] <dev-ruby/amqp-0.7[ruby_targets_ruby18] >=dev-ruby/bunny-0.6.0[ruby_targets_ruby18] <dev-ruby/bunny-0.7[ruby_targets_ruby18] >=dev-ruby/em-http-request-0.2.11[ruby_targets_ruby18] <dev-ruby/em-http-request-0.3[ruby_targets_ruby18] >=dev-ruby/eventmachine-0.12.10[ruby_targets_ruby18] <dev-ruby/eventmachine-0.13[ruby_targets_ruby18] >=dev-ruby/fast_xs-0.7.3[ruby_targets_ruby18] <dev-ruby/fast_xs-0.8[ruby_targets_ruby18] >=dev-ruby/highline-1.6.1[ruby_targets_ruby18] <dev-ruby/highline-1.7[ruby_targets_ruby18] >=dev-ruby/mixlib-log-1.2.0[ruby_targets_ruby18] >=dev-ruby/uuidtools-2.1.1[ruby_targets_ruby18] <dev-ruby/uuidtools-2.2[ruby_targets_ruby18] >=dev-ruby/yajl-ruby-0.7.7[ruby_targets_ruby18] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] )
+REQUIRED_USE=|| ( ruby_targets_ruby18 )
+SLOT=0
+SRC_URI=mirror://rubygems/chef-expander-0.10.10.beta.1.gem
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=c21361db5349719e8a8054644adabb5e

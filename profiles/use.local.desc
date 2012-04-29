@@ -1183,6 +1183,16 @@ dev-lang/idb:icc - Use dev-lang/icc to install idb (default)
 dev-lang/idb:ifc - Use dev-lang/ifc to install idb
 dev-lang/ifc:idb - Install the Intel Debugger
 dev-lang/ifc:mkl - Install the Intel Math Kernel Library
+dev-lang/io:clutter - Build add-on for media-libs/clutter
+dev-lang/io:editline - Build add-on for dev-libs/libedit
+dev-lang/io:google - Build the google search add-on
+dev-lang/io:gui - Build the Flux GUI add-on
+dev-lang/io:http - Build http client add-on
+dev-lang/io:image - Build add-on for images support (jpeg, png, tiff)
+dev-lang/io:libxml2 - Build add-on for dev-libs/libxml2
+dev-lang/io:md5sum - Build md5sum add-on
+dev-lang/io:sha1 - Build sha1 add-on
+dev-lang/io:twitter - Build twitter add-on
 dev-lang/logtalk:fop - Support for generating pdf documentation using fop
 dev-lang/logtalk:gnupl - Support GNU Prolog back-end compiler
 dev-lang/logtalk:qupl - Support Qu-Prolog back-end compiler
