@@ -1,13 +1,12 @@
-DEFINED_PHASES=compile install postinst postrm preinst prepare setup
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
 DEPEND=dev-libs/openssl kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=Open Source iSCSI target with professional features
-EAPI=2
 HOMEPAGE=http://iscsitarget.sourceforge.net/
 IUSE=kernel_linux
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=~amd64 ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=dev-libs/openssl kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/iscsitarget/iscsitarget-1.4.20.2.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=2b52392425a8b79d96a9851c7ce34e09
+_md5_=b3eaca0c63deb62e4efdd4f2d88f4ccf
