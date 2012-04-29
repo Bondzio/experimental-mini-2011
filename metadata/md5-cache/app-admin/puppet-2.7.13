@@ -4,11 +4,11 @@ DESCRIPTION=A system automation and configuration management software
 EAPI=4
 HOMEPAGE=http://puppetlabs.com/
 IUSE=augeas diff doc emacs ldap minimal rrdtool selinux shadow sqlite3 vim-syntax xemacs test elibc_FreeBSD ruby_targets_ruby18 test test
-KEYWORDS=amd64 hppa ppc ~sparc x86
+KEYWORDS=amd64 hppa ppc sparc x86
 LICENSE=Apache-2.0
 RDEPEND=ruby_targets_ruby18? ( >=dev-ruby/facter-1.5.6[ruby_targets_ruby18] augeas? ( dev-ruby/ruby-augeas[ruby_targets_ruby18] ) diff? ( dev-ruby/diff-lcs[ruby_targets_ruby18] ) doc? ( dev-ruby/rdoc[ruby_targets_ruby18] ) ldap? ( dev-ruby/ruby-ldap[ruby_targets_ruby18] ) shadow? ( dev-ruby/ruby-shadow[ruby_targets_ruby18] ) sqlite3? ( dev-ruby/sqlite3-ruby[ruby_targets_ruby18] ) virtual/ruby-ssl[ruby_targets_ruby18] ) emacs? ( virtual/emacs ) xemacs? ( app-editors/xemacs ) rrdtool? ( >=net-analyzer/rrdtool-1.2.23[ruby] ) selinux? ( sys-libs/libselinux[ruby] ) >=app-portage/eix-0.18.0 ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] )
 REQUIRED_USE=|| ( ruby_targets_ruby18 )
 SLOT=0
 SRC_URI=mirror://rubygems/puppet-2.7.13.gem
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	74d9118e657da5b1db0c36f5dea88e57	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	xemacs-elisp-common	cc4ad90c7f9b7aeb556489e4a5aa10ba
-_md5_=11e7ea1c8088b07631ae6561682ff53f
+_md5_=10e3ebd41caad8168f24a4be6a840265

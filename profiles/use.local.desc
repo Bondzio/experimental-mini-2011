@@ -5195,7 +5195,6 @@ sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provid
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
 sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/sparc-sources:ultra1 - If you have a SUN Ultra 1 with a HME interface
-sys-kernel/tuxonice-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vserver-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/xen-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.

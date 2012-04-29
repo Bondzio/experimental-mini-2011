@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=>=app-text/mupdf-0.8.165 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
+DEPEND==app-text/mupdf-0.9 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
 DESCRIPTION=a graphical PDF viewer which aims to superficially resemble less(1)
 EAPI=3
 HOMEPAGE=http://repo.or.cz/w/llpp.git
 IUSE=vanilla
 KEYWORDS=amd64 x86
 LICENSE=GPL-3
-RDEPEND=>=app-text/mupdf-0.8.165 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
+RDEPEND==app-text/mupdf-0.9 dev-ml/lablgl[glut] dev-lang/ocaml[ocamlopt] media-libs/jbig2dec media-libs/openjpeg x11-misc/xsel
 SLOT=0
 SRC_URI=mirror://gentoo/llpp-7.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=71b65df32cf6da38dfebc7dcc97eea93
+_md5_=ac9c046a68acdf4993be9d412d40da6d
