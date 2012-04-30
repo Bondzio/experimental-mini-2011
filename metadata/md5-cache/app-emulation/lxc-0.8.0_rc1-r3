@@ -10,4 +10,4 @@ RDEPEND=sys-libs/libcap !vanilla? ( sys-apps/util-linux app-misc/pax-utils >=sys
 SLOT=0
 SRC_URI=http://lxc.sourceforge.net/download/lxc/lxc-0.8.0-rc1.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=7f90e9a4b18c4320a42bbb0a7ea2b0d5
+_md5_=69dd945a07fec5ffcb081eda28188934
