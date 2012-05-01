@@ -11,4 +11,4 @@ REQUIRED_USE=aqua? ( !X )
 SLOT=24
 SRC_URI=mirror://gentoo/emacs-24.0.96.tar.gz mirror://gnu-alpha/emacs/pretest/emacs-24.0.96.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d1a5734d24c6ab4eea09e59939da96a6
+_md5_=89f25bae8987f916ab0ce643f459ac48
