@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst prepare setup
+DEPEND=dev-libs/openssl sys-libs/zlib >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc ) selinux? ( sec-policy/selinux-tor )
+DESCRIPTION=Anonymizing overlay network for TCP
+EAPI=4
+HOMEPAGE=http://www.torproject.org/
+IUSE=+bufferevents nat-pmp tor-hardening transparent-proxy threads upnp selinux web
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/openssl sys-libs/zlib >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc ) selinux? ( sec-policy/selinux-tor )
+SLOT=0
+SRC_URI=http://www.torproject.org/dist/tor-0.2.3.15-alpha.tar.gz
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=2478d03e5d42b1ed446c93728340b169
