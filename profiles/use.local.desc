@@ -1300,7 +1300,6 @@ dev-libs/folks:vala - Regenerate pre-generated C code from Vala source
 dev-libs/gdl:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
 dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via via the "http_proxy" environment variable and easy to customize.
-dev-libs/glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
@@ -1728,6 +1727,7 @@ dev-util/nvidia-cuda-toolkit:profiler - Installs the NVIDIA CUDA visual profiler
 dev-util/perf:demangle - Enable C++ symbol name demangling, using libbfd from sys-devel/binutils. When this flag is enabled, the package will have to be rebuilt after every version bump of binutils.
 dev-util/perf:doc - Build documentation and man pages. With this USE flag disabled, the --help parameter for perf and its sub-tools will not be available. This is optional because it depends on a few documentation handling tools that are not always welcome on user systems.
 dev-util/perf:perl - Add support for Perl as a scripting language for perf tools.
+dev-util/pkgconf:pkg-config - Install as a replacement for dev-util/pkgconfig
 dev-util/qdevelop:plugins - Build and install additional plugins
 dev-util/qt-creator:autotools - Enable autotools project manager plugin
 dev-util/qt-creator:bazaar - Add support for dev-vcs/bzr version control system
@@ -4273,6 +4273,7 @@ net-misc/sitecopy:rsh - This allows the use of rsh (remote shell) and rcp (remot
 net-misc/sitecopy:webdav - Enable WebDav (Web-based Distributed Authoring and Versioning) support. This system allows users to collaborate on websites using a web based interface. See the ebuild for an FAQ page. Enables neon as well to handle webdav support.
 net-misc/sks:optimize - Enables bytecode optimization
 net-misc/slimrat:X - Install also GUI client
+net-misc/sparkleshare:nautilus - Build the gnome-base/nautilus extension
 net-misc/spice-gtk:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 net-misc/spice-gtk:introspection - Use dev-libs/gobject-introspection for introspection
 net-misc/spice-gtk:policykit - Enable sys-auth/polkit support for the usbredir acl helper
@@ -5427,6 +5428,7 @@ x11-drivers/ati-drivers:opencl - Install OpenCL runtime libraries
 x11-drivers/ati-drivers:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 x11-drivers/ati-drivers:qt4 - Install qt4 dependent optional tools (e.g Catalyst Control Panel)
 x11-drivers/xf86-video-geode:ztv - Enable building the V4L2 ZTV driver
+x11-drivers/xf86-video-intel:glamor - Enable glamor GL-based acceleration
 x11-drivers/xf86-video-intel:sna - Enable SandyBridge's New Acceleration (useful on all chipsets, not just SandyBridge)
 x11-drivers/xf86-video-openchrome:viaregtool - Install registers dumper tool
 x11-drivers/xf86-video-qxl:xspice - Build the xspice driver
@@ -5440,6 +5442,7 @@ x11-libs/cairo:opengl - Use Mesa backend for acceleration
 x11-libs/cairo:openvg - Use OpenVG for backend acceleration
 x11-libs/fltk:games - Builds and installs some extra games
 x11-libs/gdk-pixbuf:introspection - Use dev-libs/gobject-introspection for introspection
+x11-libs/glamor:gles - Build glamor based on gles2
 x11-libs/goocanvas:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/gtk+:colord - Use x11-misc/colord for color management in printing
 x11-libs/gtk+:introspection - Use dev-libs/gobject-introspection for introspection

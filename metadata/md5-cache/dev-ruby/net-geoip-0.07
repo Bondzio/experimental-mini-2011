@@ -4,10 +4,10 @@ DESCRIPTION=Ruby bindings for the GeoIP library
 EAPI=2
 HOMEPAGE=http://www.maxmind.com/app/ruby
 IUSE=elibc_FreeBSD ruby_targets_ruby18
-KEYWORDS=amd64 ia64 ppc ppc64 x86
+KEYWORDS=amd64 ppc ppc64 x86
 LICENSE=BSD
 RDEPEND=>=dev-libs/geoip-1.2.1 ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
 SLOT=0
 SRC_URI=http://geolite.maxmind.com/download/geoip/api/ruby/net-geoip-0.07.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=6bcbe868532dc31fe9a59fba0c44a0d3
+_md5_=4151176398f3e500a729972ac53cf0f3

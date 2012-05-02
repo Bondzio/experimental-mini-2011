@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13713 2012/05/01 10:09:44 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13715 2012/05/02 03:53:47 flameeyes Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,12 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Diego Elio Pettenò <flameeyes@gentoo.org> (1 May 2012)
+#  on behalf of QA Team <qa@gentoo.org>
+#
+# API/ABI subtly broken; see bug #414317
+=dev-libs/libnl-3.2.8
 
 # Ulrich Müller <ulm@gentoo.org> (30 Apr 2012)
 # Breaks app-emacs/ecb, bug 414109.
@@ -291,7 +297,7 @@ dev-php/Horde_Yaml
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (24 Mar 2012)
 # Causes font corruption, bug #409593.
-=x11-libs/cairo-1.12.0
+=x11-libs/cairo-1.12*
 
 # Markos Chandras <hwoarang@gentoo.org> (24 Mar 2012)
 # Does not seem to work. No upstream
