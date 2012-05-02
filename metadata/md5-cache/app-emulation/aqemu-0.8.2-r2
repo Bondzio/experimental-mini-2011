@@ -4,10 +4,10 @@ DESCRIPTION=Graphical interface for QEMU and KVM emulators. Using Qt4.
 EAPI=4
 HOMEPAGE=http://sourceforge.net/projects/aqemu
 IUSE=kvm vnc
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=kvm? ( app-emulation/qemu-kvm ) !kvm? ( >=app-emulation/qemu-0.9.0 ) vnc? ( net-libs/libvncserver ) x11-libs/qt-gui:4 x11-libs/qt-test:4 x11-libs/qt-xmlpatterns:4
 SLOT=0
 SRC_URI=mirror://sourceforge/aqemu/aqemu-0.8.2.tar.bz2
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2d4a19b318062e9a7ad2d8a1aedd4df0
+_md5_=734e2f216d997f075a39aa4d9dbed08b

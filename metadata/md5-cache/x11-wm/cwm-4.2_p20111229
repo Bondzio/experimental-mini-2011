@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=x11-libs/libXft x11-libs/libXinerama x11-libs/libXrandr dev-util/pkgconfig sys-devel/bison
+DESCRIPTION=OpenBSD fork of calmwm, a clean and lightweight window manager
+EAPI=4
+HOMEPAGE=http://www.openbsd.org/cgi-bin/cvsweb/xenocara/app/cwm/ http://github.com/chneukirchen/cwm
+KEYWORDS=~amd64 ~arm ~sparc ~x86
+LICENSE=ISC
+RDEPEND=x11-libs/libXft x11-libs/libXinerama x11-libs/libXrandr
+SLOT=0
+SRC_URI=mirror://gentoo/cwm-4.2_p20111229.tar.bz2
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b973e20215ebf795cdf816bda7a0e942

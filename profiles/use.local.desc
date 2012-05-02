@@ -4204,7 +4204,7 @@ net-misc/networkmanager:nss - Use dev-libs/nss for cryptography
 net-misc/networkmanager:ppp - Enable support for mobile broadband and PPPoE connections using net-dialup/ppp
 net-misc/networkmanager:resolvconf - Use net-dns/openresolv for managing DNS information
 net-misc/networkmanager:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
-net-misc/networkmanager:wext - Enable support for the deprecated Wext (Wireless Extensions) API; not needed for modern kernels
+net-misc/networkmanager:wext - Enable support for the deprecated Wext (Wireless Extensions) API; needed for some older drivers (e.g. ipw2200, ndiswrapper)
 net-misc/networkmanager:wimax - Enable support for WiMAX connections using net-wireless/wimax
 net-misc/ntp:openntpd - Allow ntp to be installed alongside openntpd
 net-misc/ntp:parse-clocks - Add support for PARSE clocks
