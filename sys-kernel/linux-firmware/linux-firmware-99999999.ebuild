@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-firmware/linux-firmware-99999999.ebuild,v 1.15 2012/02/29 17:37:07 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-firmware/linux-firmware-99999999.ebuild,v 1.16 2012/05/03 15:57:31 chithanh Exp $
 
 EAPI=4
 inherit savedconfig
@@ -10,7 +10,7 @@ if [[ ${PV} == 99999999* ]]; then
 	SRC_URI=""
 	EGIT_REPO_URI="git://git.kernel.org/pub/scm/linux/kernel/git/firmware/${PN}.git"
 else
-	SRC_URI="mirror://gentoo/${P}.tar.gz"
+	SRC_URI="mirror://gentoo/${P}.tar.xz"
 fi
 
 DESCRIPTION="Linux firmware files"

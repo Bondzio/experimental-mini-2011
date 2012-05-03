@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install prepare setup unpack
-DEPEND=>=dev-util/pkgconfig-0.19 dev-libs/glib:2 >=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.1.15:2 >=x11-libs/gtk+-2.14:2 ) gtk3? ( net-libs/webkit-gtk:3 x11-libs/gtk+:3 ) dev-vcs/git
+DEPEND=virtual/pkgconfig dev-libs/glib:2 >=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.1.15:2 >=x11-libs/gtk+-2.14:2 ) gtk3? ( net-libs/webkit-gtk:3 x11-libs/gtk+:3 ) dev-vcs/git
 DESCRIPTION=Web interface tools which adhere to the unix philosophy.
 EAPI=4
 HOMEPAGE=http://www.uzbl.org
@@ -9,4 +9,4 @@ RDEPEND=dev-libs/glib:2 >=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24:2.4 !gtk3? 
 REQUIRED_USE=tabbed? ( browser )
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=c17830835f108a26c5cf7401b922f6aa
+_md5_=5c95107111a955d0ec67c83a25b02334

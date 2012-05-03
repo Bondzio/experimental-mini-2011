@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=virtual/cdrtools encode? ( >=media-sound/lame-3.90 ) gcdmaster? ( dev-libs/libsigc++:2 >=dev-cpp/gtkmm-2.4:2.4 >=dev-cpp/libgnomeuimm-2.6:2.6 media-libs/libao ) mad? ( media-libs/libmad media-libs/libao ) vorbis? ( media-libs/libvorbis media-libs/libao ) !app-cdr/cue2toc dev-util/pkgconfig pccts? ( >=dev-util/pccts-1.33.24-r1 )
+DEPEND=virtual/cdrtools encode? ( >=media-sound/lame-3.90 ) gcdmaster? ( dev-libs/libsigc++:2 >=dev-cpp/gtkmm-2.4:2.4 >=dev-cpp/libgnomeuimm-2.6:2.6 media-libs/libao ) mad? ( media-libs/libmad media-libs/libao ) vorbis? ( media-libs/libvorbis media-libs/libao ) !app-cdr/cue2toc virtual/pkgconfig pccts? ( >=dev-util/pccts-1.33.24-r1 )
 DESCRIPTION=Burn CDs in disk-at-once mode -- with optional GUI frontend
 EAPI=2
 HOMEPAGE=http://cdrdao.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=virtual/cdrtools encode? ( >=media-sound/lame-3.90 ) gcdmaster? ( dev-li
 SLOT=0
 SRC_URI=mirror://sourceforge/cdrdao/cdrdao-1.2.3.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=86811c530360b43de507ccb0590063ff
+_md5_=7789a328ca2a23f01190ace8421d422a

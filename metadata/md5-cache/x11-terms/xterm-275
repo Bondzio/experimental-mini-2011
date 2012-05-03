@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install setup
-DEPEND=sys-libs/libutempter >=sys-libs/ncurses-5.6-r2 x11-apps/xmessage x11-libs/libX11 x11-libs/libXaw x11-libs/libXft x11-libs/libxkbfile x11-libs/libXmu x11-libs/libXrender x11-libs/libXt unicode? ( x11-apps/luit ) Xaw3d? ( x11-libs/libXaw3d ) dev-util/pkgconfig x11-proto/kbproto x11-proto/xproto
+DEPEND=sys-libs/libutempter >=sys-libs/ncurses-5.6-r2 x11-apps/xmessage x11-libs/libX11 x11-libs/libXaw x11-libs/libXft x11-libs/libxkbfile x11-libs/libXmu x11-libs/libXrender x11-libs/libXt unicode? ( x11-apps/luit ) Xaw3d? ( x11-libs/libXaw3d ) virtual/pkgconfig x11-proto/kbproto x11-proto/xproto
 DESCRIPTION=Terminal Emulator for X Windows
 EAPI=4
 HOMEPAGE=http://dickey.his.com/xterm/
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/libutempter >=sys-libs/ncurses-5.6-r2 x11-apps/xmessage x11-lib
 SLOT=0
 SRC_URI=ftp://invisible-island.net/xterm/xterm-275.tgz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=38c07c927ea03e1a69bb0fc078630f0b
+_md5_=01a00120bf4f1d81738c6bc1e3d55f4e

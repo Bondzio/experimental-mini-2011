@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=>=net-libs/libsoup-2.32:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.4.0:2 x11-libs/gtk+:2 ) gtk3? ( >=net-libs/webkit-gtk-1.4.0:3 x11-libs/gtk+:3 ) dev-util/pkgconfig
+DEPEND=>=net-libs/libsoup-2.32:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.4.0:2 x11-libs/gtk+:2 ) gtk3? ( >=net-libs/webkit-gtk-1.4.0:3 x11-libs/gtk+:3 ) virtual/pkgconfig
 DESCRIPTION=Dynamic web browser based on WebKit and GTK+
 EAPI=4
 HOMEPAGE=http://portix.bitbucket.org/dwb/
@@ -10,4 +10,4 @@ RDEPEND=>=net-libs/libsoup-2.32:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.4.0:2 x11-l
 SLOT=0
 SRC_URI=mirror://bitbucket/portix/dwb/downloads/dwb-2012.02.01.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=99765d8cab53c5ea3f0ba42814ce7aa2
+_md5_=bbe29cbf0779e62c4806b897c02833ce

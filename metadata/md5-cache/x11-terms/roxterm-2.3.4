@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup
-DEPEND=dev-libs/dbus-glib >=dev-libs/glib-2.16 x11-libs/gtk+:3 x11-libs/libICE x11-libs/libSM x11-libs/vte:2.90 dev-libs/libxslt dev-util/pkgconfig dev-python/lockfile || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) nls? ( app-text/po4a sys-devel/gettext ) >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=dev-libs/dbus-glib >=dev-libs/glib-2.16 x11-libs/gtk+:3 x11-libs/libICE x11-libs/libSM x11-libs/vte:2.90 dev-libs/libxslt virtual/pkgconfig dev-python/lockfile || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) nls? ( app-text/po4a sys-devel/gettext ) >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=A terminal emulator designed to integrate with the ROX environment
 EAPI=4
 HOMEPAGE=http://roxterm.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/dbus-glib >=dev-libs/glib-2.16 x11-libs/gtk+:3 x11-libs/libICE 
 SLOT=0
 SRC_URI=mirror://sourceforge/roxterm/roxterm-2.3.4.tar.bz2
 _eclasses_=gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	python	cb2844e25e38800105564c14a716c805
-_md5_=b6c98ad744ea75f799efb88a03c1aac8
+_md5_=cbfd81cdf9f0983dce568fcaaa934ea8

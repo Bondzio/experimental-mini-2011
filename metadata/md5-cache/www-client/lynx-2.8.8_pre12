@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=sys-libs/ncurses[unicode?] sys-libs/zlib nls? ( virtual/libintl ) ssl? ( !gnutls? ( >=dev-libs/openssl-0.9.8 ) gnutls? ( >=net-libs/gnutls-2.6.4 ) ) bzip2? ( app-arch/bzip2 ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext ) >=dev-util/pkgconfig-0.23
+DEPEND=sys-libs/ncurses[unicode?] sys-libs/zlib nls? ( virtual/libintl ) ssl? ( !gnutls? ( >=dev-libs/openssl-0.9.8 ) gnutls? ( >=net-libs/gnutls-2.6.4 ) ) bzip2? ( app-arch/bzip2 ) idn? ( net-dns/libidn ) nls? ( sys-devel/gettext ) virtual/pkgconfig
 DESCRIPTION=An excellent console-based web browser with ssl support
 EAPI=4
 HOMEPAGE=http://lynx.isc.org/
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/ncurses[unicode?] sys-libs/zlib nls? ( virtual/libintl ) ssl? (
 SLOT=0
 SRC_URI=http://lynx.isc.org/current/lynx2.8.8dev.12.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=d2298b7a52898c9b6682ba2ada885579
+_md5_=8319b208e52c541986b7074c035df31e
