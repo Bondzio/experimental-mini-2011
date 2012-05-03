@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=sys-libs/readline crypt? ( dev-libs/libgcrypt dev-libs/libgpg-error ) curl? ( net-misc/curl ) emacs? ( app-emacs/org-mode virtual/emacs ) mdb? ( app-office/mdbtools dev-libs/glib:2 ) nls? ( virtual/libintl ) dev-util/pkgconfig nls? ( sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=sys-libs/readline crypt? ( dev-libs/libgcrypt dev-libs/libgpg-error ) curl? ( net-misc/curl ) emacs? ( app-emacs/org-mode virtual/emacs ) mdb? ( app-office/mdbtools dev-libs/glib:2 ) nls? ( virtual/libintl ) virtual/pkgconfig nls? ( sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Tools and libraries to access human-editable, plain text databases
 EAPI=4
 HOMEPAGE=http://www.gnu.org/software/recutils/
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/readline crypt? ( dev-libs/libgcrypt dev-libs/libgpg-error ) cu
 SLOT=0
 SRC_URI=mirror://gnu/recutils/recutils-1.5.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4a94ce3b9117878c123c869b3e5ccdb4
+_md5_=574adcab83085065770f32ffa0249419

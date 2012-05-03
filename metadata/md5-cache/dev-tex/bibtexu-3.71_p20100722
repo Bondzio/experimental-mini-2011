@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=dev-libs/kpathsea >=dev-libs/icu-4.4 dev-util/pkgconfig
+DEPEND=dev-libs/kpathsea >=dev-libs/icu-4.4 virtual/pkgconfig
 DESCRIPTION=8-bit Implementation of BibTeX 0.99 with a Very Large Capacity
 EAPI=3
 HOMEPAGE=http://tug.org/texlive/
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/kpathsea >=dev-libs/icu-4.4
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-20100722-source.tar.xz
-_md5_=05c94b5c34e254d18e260f6f2ed14c0d
+_md5_=2ac0bde15af436d4e820089436473cf4

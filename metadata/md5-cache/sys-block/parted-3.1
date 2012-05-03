@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare test
-DEPEND=>=sys-fs/e2fsprogs-1.27 >=sys-libs/ncurses-5.2 nls? ( >=sys-devel/gettext-0.12.1-r2 ) readline? ( >=sys-libs/readline-5.2 ) selinux? ( sys-libs/libselinux ) device-mapper? ( || ( >=sys-fs/lvm2-2.02.45 sys-fs/device-mapper ) ) dev-util/pkgconfig test? ( >=dev-libs/check-0.9.3 ) =sys-devel/automake-1.11* >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=sys-fs/e2fsprogs-1.27 >=sys-libs/ncurses-5.2 nls? ( >=sys-devel/gettext-0.12.1-r2 ) readline? ( >=sys-libs/readline-5.2 ) selinux? ( sys-libs/libselinux ) device-mapper? ( || ( >=sys-fs/lvm2-2.02.45 sys-fs/device-mapper ) ) virtual/pkgconfig test? ( >=dev-libs/check-0.9.3 ) =sys-devel/automake-1.11* >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Create, destroy, resize, check, copy partitions and file systems
 EAPI=3
 HOMEPAGE=http://www.gnu.org/software/parted
@@ -10,4 +10,4 @@ RDEPEND=>=sys-fs/e2fsprogs-1.27 >=sys-libs/ncurses-5.2 nls? ( >=sys-devel/gettex
 SLOT=0
 SRC_URI=mirror://gnu/parted/parted-3.1.tar.xz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ec243b465f6a0eb5c2875f2ca017eddb
+_md5_=b6d494eb616f31cb74c8804c0cb0502e

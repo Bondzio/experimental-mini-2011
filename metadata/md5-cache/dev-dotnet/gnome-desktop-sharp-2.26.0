@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=sys-devel/libtool =dev-dotnet/gtk-sharp-2.12* =dev-dotnet/gnome-sharp-2.24* gnome-base/gnome-desktop:2 =dev-dotnet/gtk-sharp-gapi-2.12* >=gnome-base/gnome-desktop-2.26:2 >=dev-lang/mono-2.0.1 >=sys-apps/sed-4 >=dev-util/pkgconfig-0.23 >=app-shells/bash-3.1
+DEPEND=sys-devel/libtool =dev-dotnet/gtk-sharp-2.12* =dev-dotnet/gnome-sharp-2.24* gnome-base/gnome-desktop:2 =dev-dotnet/gtk-sharp-gapi-2.12* >=gnome-base/gnome-desktop-2.26:2 >=dev-lang/mono-2.0.1 >=sys-apps/sed-4 virtual/pkgconfig >=app-shells/bash-3.1
 DESCRIPTION=GtkSharp's gnome-desktop module of the gnome-desktop-sharp tarball
 EAPI=2
 HOMEPAGE=http://www.mono-project.com/GtkSharp
@@ -10,5 +10,5 @@ RDEPEND==dev-dotnet/gtk-sharp-2.12* =dev-dotnet/gnome-sharp-2.24* gnome-base/gno
 RESTRICT=test
 SLOT=2
 SRC_URI=mirror://gnome/sources/gnome-desktop-sharp/2.26/gnome-desktop-sharp-2.26.0.tar.bz2
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	gtk-sharp-module	c71d301a086ec84c35553175ee61c960	libtool	5f623f5a211fb1b2d84d88ee49959a54	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	gtk-sharp-module	bbb83ea169a55c8a8e977fc9e7f35d94	libtool	5f623f5a211fb1b2d84d88ee49959a54	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=23bfb7fb98b560a0dc04dff17fb5f409

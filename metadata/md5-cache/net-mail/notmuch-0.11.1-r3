@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND=>=dev-libs/glib-2.22 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) dev-util/pkgconfig test? ( app-misc/dtach sys-devel/gdb ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+DEPEND=>=dev-libs/glib-2.22 dev-libs/gmime:2.4 dev-libs/xapian doc? ( python? ( dev-python/sphinx ) ) sys-libs/talloc debug? ( dev-util/valgrind ) emacs? ( >=virtual/emacs-23 ) x86? ( >=dev-libs/xapian-1.2.7-r2 ) vim? ( || ( >=app-editors/vim-7.0 >=app-editors/gvim-7.0 ) ) virtual/pkgconfig test? ( app-misc/dtach sys-devel/gdb ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 DESCRIPTION=Thread-based e-mail indexer, supporting quick search and tagging
 EAPI=4
 HOMEPAGE=http://notmuchmail.org/
@@ -11,4 +11,4 @@ REQUIRED_USE=test? ( crypt emacs python )
 SLOT=0
 SRC_URI=http://notmuchmail.org/releases/notmuch-0.11.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=249c4f8497ff13c6351b8bc25ef406c9
+_md5_=e759d12948877590e84b7dcab41153fa

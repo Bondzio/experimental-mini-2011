@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/toolchain-binutils.eclass,v 1.112 2012/04/26 02:14:55 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/toolchain-binutils.eclass,v 1.114 2012/05/03 02:32:23 vapier Exp $
 #
 # Maintainer: Toolchain Ninjas <toolchain@gentoo.org>
 #
@@ -67,7 +67,7 @@ case ${BTYPE} in
 	snap) SRC_URI="ftp://gcc.gnu.org/pub/binutils/snapshots/binutils-${BVER}.tar.bz2" ;;
 	hjlu)
 		SRC_URI="mirror://kernel/linux/devel/binutils/binutils-${BVER}.tar."
-		version_is_at_least 2.21 && SRC_URI+="xz" || SRC_URI+="bz2" ;;
+		version_is_at_least 2.21.51.0.5 && SRC_URI+="xz" || SRC_URI+="bz2" ;;
 	rel) SRC_URI="mirror://gnu/binutils/binutils-${BVER}.tar.bz2" ;;
 esac
 add_src_uri() {
@@ -90,7 +90,7 @@ if version_is_at_least 2.18 ; then
 else
 	LICENSE="|| ( GPL-2 LGPL-2 )"
 fi
-IUSE="nls multitarget multislot static-libs test vanilla"
+IUSE="cxx nls multitarget multislot static-libs test vanilla"
 if version_is_at_least 2.19 ; then
 	IUSE+=" zlib"
 fi
@@ -227,16 +227,18 @@ toolchain-binutils_src_compile() {
 	set --
 
 	# enable gold if available (installed as ld.gold)
-	if grep -q 'enable-gold=default' "${S}"/configure ; then
-		set -- "$@" --enable-gold
-	# old ways - remove when 2.21 is stable
-	elif grep -q 'enable-gold=both/ld' "${S}"/configure ; then
-		set -- "$@" --enable-gold=both/ld
-	elif grep -q 'enable-gold=both/bfd' "${S}"/configure ; then
-		set -- "$@" --enable-gold=both/bfd
-	fi
-	if grep -q -e '--enable-plugins' "${S}"/ld/configure ; then
-		set -- "$@" --enable-plugins
+	if use cxx ; then
+		if grep -q 'enable-gold=default' "${S}"/configure ; then
+			set -- "$@" --enable-gold
+		# old ways - remove when 2.21 is stable
+		elif grep -q 'enable-gold=both/ld' "${S}"/configure ; then
+			set -- "$@" --enable-gold=both/ld
+		elif grep -q 'enable-gold=both/bfd' "${S}"/configure ; then
+			set -- "$@" --enable-gold=both/bfd
+		fi
+		if grep -q -e '--enable-plugins' "${S}"/ld/configure ; then
+			set -- "$@" --enable-plugins
+		fi
 	fi
 
 	use nls \

@@ -9,4 +9,4 @@ RDEPEND=!<sys-fs/udev-182 >=sys-fs/udev-182 sys-apps/openrc
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gentoo/udev-init-scripts-10.tar.bz2
-_md5_=58ec19260af67fa00d6d489eee7fc9b6
+_md5_=f8f15a73a028ca31412ef72fce30b970

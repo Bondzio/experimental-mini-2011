@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare prerm setup test
-DEPEND=>=dev-lang/ghc-6.8 >=dev-haskell/hashed-storage-0.4.13[profile?] =dev-haskell/haskeline-0.6*[profile?] =dev-haskell/html-1.0*[profile?] =dev-haskell/mmap-0.4*[profile?] <dev-haskell/mtl-1.2[profile?] >=dev-haskell/network-2.2[profile?] >=dev-haskell/parsec-2.0[profile?] <dev-haskell/regex-compat-0.94[profile?] =dev-haskell/terminfo-0.3*[profile?] =dev-haskell/utf8-string-0.3*[profile?] <dev-haskell/zlib-0.6.0.0[profile?] net-misc/curl >=dev-haskell/cabal-1.6 dev-util/pkgconfig doc? ( virtual/latex-base dev-tex/latex2html ) test? ( dev-haskell/test-framework[profile?] dev-haskell/test-framework-hunit[profile?] dev-haskell/test-framework-quickcheck2[profile?] ) doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
+DEPEND=>=dev-lang/ghc-6.8 >=dev-haskell/hashed-storage-0.4.13[profile?] =dev-haskell/haskeline-0.6*[profile?] =dev-haskell/html-1.0*[profile?] =dev-haskell/mmap-0.4*[profile?] <dev-haskell/mtl-1.2[profile?] >=dev-haskell/network-2.2[profile?] >=dev-haskell/parsec-2.0[profile?] <dev-haskell/regex-compat-0.94[profile?] =dev-haskell/terminfo-0.3*[profile?] =dev-haskell/utf8-string-0.3*[profile?] <dev-haskell/zlib-0.6.0.0[profile?] net-misc/curl >=dev-haskell/cabal-1.6 virtual/pkgconfig doc? ( virtual/latex-base dev-tex/latex2html ) test? ( dev-haskell/test-framework[profile?] dev-haskell/test-framework-hunit[profile?] dev-haskell/test-framework-quickcheck2[profile?] ) doc? ( dev-haskell/haddock ) hscolour? ( dev-haskell/hscolour ) >=dev-haskell/cabal-1.1.4
 DESCRIPTION=a distributed, interactive, smart revision control system
 EAPI=3
 HOMEPAGE=http://darcs.net/
@@ -10,4 +10,4 @@ RDEPEND=>=dev-lang/ghc-6.8 >=dev-haskell/hashed-storage-0.4.13[profile?] =dev-ha
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/darcs/2.4.4/darcs-2.4.4.tar.gz
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	74d9118e657da5b1db0c36f5dea88e57	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=36d23c11292cc588aa4609f027ce70aa
+_md5_=af34196b539c5c1aa1d3f26b26dcbf9d

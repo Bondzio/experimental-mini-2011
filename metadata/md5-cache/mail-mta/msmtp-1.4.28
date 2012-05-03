@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup
-DEPEND=gnome-keyring? ( dev-python/gnome-keyring-python gnome-base/libgnome-keyring ) idn? ( net-dns/libidn ) nls? ( virtual/libintl ) sasl? ( virtual/gsasl ) ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) doc? ( virtual/texi2dvi ) nls? ( sys-devel/gettext ) dev-util/pkgconfig
+DEPEND=gnome-keyring? ( dev-python/gnome-keyring-python gnome-base/libgnome-keyring ) idn? ( net-dns/libidn ) nls? ( virtual/libintl ) sasl? ( virtual/gsasl ) ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) doc? ( virtual/texi2dvi ) nls? ( sys-devel/gettext ) virtual/pkgconfig
 DESCRIPTION=An SMTP client and SMTP plugin for mail user agents such as Mutt
 EAPI=4
 HOMEPAGE=http://msmtp.sourceforge.net/
@@ -11,4 +11,4 @@ REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://sourceforge/msmtp/msmtp-1.4.28.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=99a7115a10ad780273a0fe432ab42e56
+_md5_=1c29d1a4b94c32f1e68a7b776c08350e

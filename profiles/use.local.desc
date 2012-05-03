@@ -3513,6 +3513,8 @@ net-firewall/nufw:nfqueue - Use NFQUEUE instead of QUEUE
 net-firewall/nufw:pam_nuauth - Add support for pam nufw from PAM
 net-firewall/nufw:plaintext - Add support for authentication with plaintext files
 net-firewall/pftop:altq - Enable altq(4) support — alternate queuing of network packets.
+net-firewall/pglinux:cron - Install cron script
+net-firewall/pglinux:logrotate - Install logrotate.d file
 net-fs/autofs:hesiod - Install hesiod module
 net-fs/autofs:ldap - Install LDAP module
 net-fs/autofs:sasl - Enable SASL support in the LDAP module
@@ -4192,6 +4194,7 @@ net-misc/mico:findbug - Adds patch to help finding bug#343827
 net-misc/mosh:client - Build network client
 net-misc/mosh:examples - Include example scripts
 net-misc/mosh:server - Build network server
+net-misc/mosh:skalibs - Provide skalibs (esp. for old kernels)
 net-misc/mosh:utempter - Include libutempter support
 net-misc/mulk:checksum - Enable checksum verification for Metalink from dev-libs/openssl
 net-misc/mulk:metalink - Enable support for media-libs/libmetalink
