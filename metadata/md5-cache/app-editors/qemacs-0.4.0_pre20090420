@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare
-DEPEND=!app-editors/qe X? ( x11-libs/libX11 x11-libs/libXext xv? ( x11-libs/libXv ) ) png? ( >=media-libs/libpng-1.2 ) app-text/texi2html
+DEPEND=!app-editors/qe X? ( x11-libs/libX11 x11-libs/libXext xv? ( x11-libs/libXv ) ) png? ( >=media-libs/libpng-1.2 ) <app-text/texi2html-5
 DESCRIPTION=QEmacs is a very small but powerful UNIX editor
 EAPI=2
 HOMEPAGE=http://savannah.nongnu.org/projects/qemacs
@@ -11,4 +11,4 @@ RESTRICT=strip test
 SLOT=0
 SRC_URI=mirror://gentoo/qemacs-0.4.0_pre20090420.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7ed5f1f54822718e72a11709f3017b97
+_md5_=a513c420f9c800c8a22e557130b1dc2d

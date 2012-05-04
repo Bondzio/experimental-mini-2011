@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup unpack
-DEPEND=media-libs/plotutils opengl? ( virtual/opengl ) gd? ( media-libs/gd[png,jpeg] ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=media-libs/plotutils opengl? ( virtual/opengl ) gd? ( media-libs/gd[png,jpeg] ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A program for scientific visualization and statistical analyis
 EAPI=3
 HOMEPAGE=http://www.itl.nist.gov/div898/software/dataplot/
@@ -10,4 +10,4 @@ RDEPEND=virtual/fortran media-libs/plotutils opengl? ( virtual/opengl ) gd? ( me
 SLOT=0
 SRC_URI=ftp://ftp.nist.gov/pub/dataplot/unix/dpsrc_2009_08_21.tar.gz ftp://ftp.nist.gov/pub/dataplot/unix/dplib.2009_07_15.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=529ab3f58912acfb861ca32b46c1b76d
+_md5_=9c75367cbada910e37d84812c60ef46f

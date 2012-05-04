@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare setup
-DEPEND=dev-python/pygtk:2 x11-libs/gtk+:2 >=dev-util/intltool-0.40.1 dev-util/pkgconfig >=sys-devel/gettext-0.17-r1 =dev-lang/python-2* =dev-lang/python-2*[sqlite,xml]
+DEPEND=dev-python/pygtk:2 x11-libs/gtk+:2 >=dev-util/intltool-0.40.1 virtual/pkgconfig >=sys-devel/gettext-0.17-r1 =dev-lang/python-2* =dev-lang/python-2*[sqlite,xml]
 DESCRIPTION=Jabber client written in PyGTK
 EAPI=4
 HOMEPAGE=http://www.gajim.org/
@@ -11,4 +11,4 @@ REQUIRED_USE=libnotify? ( dbus ) avahi? ( dbus )
 SLOT=0
 SRC_URI=http://www.gajim.org/downloads/0.14/gajim-0.14.4.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=b4f87c5d6089573f8d9b6da496ef86fd
+_md5_=bd1c4b2eb21220e26bc89090b62dc5d9

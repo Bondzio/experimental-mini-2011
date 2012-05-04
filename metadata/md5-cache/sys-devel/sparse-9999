@@ -1,5 +1,5 @@
 DEFINED_PHASES=install prepare unpack
-DEPEND=gtk? ( x11-libs/gtk+:2 ) xml? ( dev-libs/libxml2 ) gtk? ( dev-util/pkgconfig ) xml? ( dev-util/pkgconfig ) dev-vcs/git
+DEPEND=gtk? ( x11-libs/gtk+:2 ) xml? ( dev-libs/libxml2 ) gtk? ( virtual/pkgconfig ) xml? ( virtual/pkgconfig ) dev-vcs/git
 DESCRIPTION=C semantic parser
 EAPI=2
 HOMEPAGE=http://sparse.wiki.kernel.org/index.php/Main_Page
@@ -8,4 +8,4 @@ LICENSE=OSL-1.1
 RDEPEND=gtk? ( x11-libs/gtk+:2 ) xml? ( dev-libs/libxml2 )
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=6fba2946f81702eaab5ad98894ebd500
+_md5_=b996193f16de80d6ef1bb02ba2c9c3f4

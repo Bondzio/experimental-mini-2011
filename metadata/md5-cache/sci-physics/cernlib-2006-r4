@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install prepare setup test
-DEPEND=>=x11-libs/openmotif-2.3:0 virtual/fortran virtual/lapack dev-lang/cfortran x11-misc/imake x11-misc/makedepend dev-util/pkgconfig
+DEPEND=>=x11-libs/openmotif-2.3:0 virtual/fortran virtual/lapack dev-lang/cfortran x11-misc/imake x11-misc/makedepend virtual/pkgconfig
 DESCRIPTION=CERN program library for High Energy Physics
 EAPI=4
 HOMEPAGE=http://wwwasd.web.cern.ch/wwwasd/cernlib
@@ -9,4 +9,4 @@ RDEPEND=>=x11-libs/openmotif-2.3:0 virtual/fortran virtual/lapack dev-lang/cfort
 SLOT=0
 SRC_URI=mirror://debian/pool/main/c/cernlib/cernlib_20061220+dfsg3.orig.tar.gz mirror://debian/pool/main/c/cernlib/cernlib_20061220+dfsg3-1.debian.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1c0303aacc500d94619a75a91b10194a
+_md5_=61b87ef8784788df080564f29472534a

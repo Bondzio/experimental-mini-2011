@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=sys-process/at dev-lang/perl[-build]
+DESCRIPTION=OS independent interface to the Unix 'at' command
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Schedule-At/
+KEYWORDS=~amd64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=sys-process/at dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/J/JO/JOSERODR/Schedule-At-1.15.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e145dd50792c9a3f5ec75f2dd2f0ab83

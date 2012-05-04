@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare
-DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 x11-libs/pango sys-libs/zlib judy? ( dev-libs/judy ) tcl? ( dev-lang/tcl dev-lang/tk ) lzma? ( app-arch/xz-utils ) dev-util/pkgconfig dev-util/gperf
+DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 x11-libs/pango sys-libs/zlib judy? ( dev-libs/judy ) tcl? ( dev-lang/tcl dev-lang/tk ) lzma? ( app-arch/xz-utils ) virtual/pkgconfig dev-util/gperf
 DESCRIPTION=A wave viewer for LXT, LXT2, VZT, GHW and standard Verilog VCD/EVCD files
 EAPI=4
 HOMEPAGE=http://gtkwave.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/glib:2 x11-libs/gtk+:2 x11-libs/pango sys-libs/zlib judy? ( dev
 SLOT=0
 SRC_URI=mirror://sourceforge/gtkwave/gtkwave-3.3.31.tar.gz
 _eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa
-_md5_=72aa05f27299b179fc3a72f8dbe9e279
+_md5_=46603dff2d298a6f9ebcc80455212cc4

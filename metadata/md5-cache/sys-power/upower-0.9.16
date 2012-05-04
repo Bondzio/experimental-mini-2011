@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.22 sys-apps/dbus >=sys-auth/polkit-0.104-r1 introspection? ( dev-libs/gobject-introspection ) kernel_linux? ( || ( >=sys-fs/udev-171-r5[gudev] <sys-fs/udev-171[extras] ) virtual/libusb:1 ios? ( >=app-pda/libimobiledevice-1 >=app-pda/libplist-1 ) ) dev-libs/libxslt app-text/docbook-xsl-stylesheets dev-util/intltool dev-util/pkgconfig doc? ( dev-util/gtk-doc app-text/docbook-xml-dtd:4.1.2 ) !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
+DEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.22 sys-apps/dbus >=sys-auth/polkit-0.104-r1 introspection? ( dev-libs/gobject-introspection ) kernel_linux? ( || ( >=sys-fs/udev-171-r5[gudev] <sys-fs/udev-171[extras] ) virtual/libusb:1 ios? ( >=app-pda/libimobiledevice-1 >=app-pda/libplist-1 ) ) dev-libs/libxslt app-text/docbook-xsl-stylesheets dev-util/intltool virtual/pkgconfig doc? ( dev-util/gtk-doc app-text/docbook-xml-dtd:4.1.2 ) !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=D-Bus abstraction for enumerating power devices and querying history and statistics
 EAPI=4
 HOMEPAGE=http://upower.freedesktop.org/
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.22 sys-apps/dbus >=sys-auth/
 SLOT=0
 SRC_URI=http://upower.freedesktop.org/releases/upower-0.9.16.tar.xz
 _eclasses_=systemd	70a153740015c3457222dbdd8e07c1f7
-_md5_=f2c9af201d974b46d45b5ed3fe3f2da5
+_md5_=0277f45b882dcbd1b9e2e559a57bf3f9

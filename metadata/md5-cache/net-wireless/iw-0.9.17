@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=dev-libs/libnl:1.1 dev-util/pkgconfig
+DEPEND=dev-libs/libnl:1.1 virtual/pkgconfig
 DESCRIPTION=nl80211-based configuration utility for wireless devices using the mac80211 kernel stack
 EAPI=1
 HOMEPAGE=http://wireless.kernel.org/en/users/Documentation/iw
@@ -9,4 +9,4 @@ RDEPEND=dev-libs/libnl:1.1
 SLOT=0
 SRC_URI=http://wireless.kernel.org/download/iw/iw-0.9.17.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=fdce6429caa0065fdd22170e05681c3f
+_md5_=11e9d3022d28fb6d43c4c584d117a0ac

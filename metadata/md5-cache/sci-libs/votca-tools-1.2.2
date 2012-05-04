@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=fftw? ( sci-libs/fftw:3.0 ) dev-libs/expat gsl? ( sci-libs/gsl ) system-boost? ( dev-libs/boost ) sqlite? ( dev-db/sqlite:3 ) doc? ( || ( <app-doc/doxygen-1.7.6.1[-nodot] >=app-doc/doxygen-1.7.6.1[dot] ) ) >=app-text/txt2tags-2.5 dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=fftw? ( sci-libs/fftw:3.0 ) dev-libs/expat gsl? ( sci-libs/gsl ) system-boost? ( dev-libs/boost ) sqlite? ( dev-db/sqlite:3 ) doc? ( || ( <app-doc/doxygen-1.7.6.1[-nodot] >=app-doc/doxygen-1.7.6.1[dot] ) ) >=app-text/txt2tags-2.5 virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Votca tools library
 EAPI=3
 HOMEPAGE=http://www.votca.org
@@ -11,4 +11,4 @@ RESTRICT=primaryuri
 SLOT=0
 SRC_URI=system-boost? ( http://votca.googlecode.com/files/votca-tools-1.2.2_pristine.tar.gz ) !system-boost? ( http://votca.googlecode.com/files/votca-tools-1.2.2.tar.gz )
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6a9522452b2e4a3698ca35f49f08e73e
+_md5_=5e774d49eb405e8698810ab3ba921bc3

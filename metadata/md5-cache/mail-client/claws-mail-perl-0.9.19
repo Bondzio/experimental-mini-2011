@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst
-DEPEND=>=mail-client/claws-mail-3.8.0 dev-lang/perl dev-util/pkgconfig
+DEPEND=>=mail-client/claws-mail-3.8.0 dev-lang/perl virtual/pkgconfig
 DESCRIPTION=Plugin to use perl to write filtering rules
 HOMEPAGE=http://www.claws-mail.org
 KEYWORDS=amd64 ~ppc ppc64 x86
@@ -7,4 +7,4 @@ LICENSE=GPL-3
 RDEPEND=>=mail-client/claws-mail-3.8.0 dev-lang/perl
 SLOT=0
 SRC_URI=http://www.claws-mail.org/downloads/plugins/perl_plugin-0.9.19.tar.gz
-_md5_=23c1fb31ad63b0581596a4acde0ecccc
+_md5_=51b65b976325dbccd05a7af2999b1dd5

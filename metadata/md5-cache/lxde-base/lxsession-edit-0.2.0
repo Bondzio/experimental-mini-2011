@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 sys-devel/gettext dev-util/intltool dev-util/pkgconfig
+DEPEND=dev-libs/glib:2 x11-libs/gtk+:2 sys-devel/gettext dev-util/intltool virtual/pkgconfig
 DESCRIPTION=LXDE session autostart editor
 EAPI=4
 HOMEPAGE=http://lxde.sourceforge.net/
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/glib:2 x11-libs/gtk+:2 lxde-base/lxde-common lxde-base/lxsession
 SLOT=0
 SRC_URI=mirror://sourceforge/lxde/lxsession-edit-0.2.0.tar.gz
-_md5_=7455063080b9df62aabd207a32a0ec55
+_md5_=b4bba57c8e4972f874f441c1b4bc285e

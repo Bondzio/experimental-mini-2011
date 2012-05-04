@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
-DEPEND=x11-libs/libX11 x11-libs/libXext x11-proto/fontcacheproto || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool x86-interix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) ppc-aix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) x86-winnt? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.15.0 >=media-fonts/font-util-1.2.0 ) virtual/pkgconfig
+DEPEND=x11-libs/libX11 x11-libs/libXext x11-proto/fontcacheproto || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool x86-interix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.17 >=media-fonts/font-util-1.2.0 ) ppc-aix? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.17 >=media-fonts/font-util-1.2.0 ) x86-winnt? ( >=sys-devel/libtool-2.2.6a sys-devel/m4 >=x11-misc/util-macros-1.17 >=media-fonts/font-util-1.2.0 ) virtual/pkgconfig
 DESCRIPTION=X.Org Xfontcache library
 EAPI=4
 HOMEPAGE=http://xorg.freedesktop.org/
@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=x11-libs/libX11 x11-libs/libXext x11-proto/fontcacheproto
 SLOT=0
 SRC_URI=http://xorg.freedesktop.org/releases/individual/lib/libXfontcache-1.0.5.tar.bz2
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	xorg-2	0a8414bc7a2de6bf9f41450258d9767c
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	xorg-2	5fab4f55e8a83e3f2d5f3ab0a18c93ea
 _md5_=37cbc4e4589edb6ce5aa90e696b165c0

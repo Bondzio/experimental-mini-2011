@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=dev-libs/glib:2 >=dev-libs/popt-1.15
+DEPEND=>=dev-libs/glib-2.28 >=dev-libs/popt-1.16 !dev-util/pkgconf[pkg-config] !dev-util/pkg-config-lite !dev-util/pkgconfig-openbsd[pkg-config]
 DESCRIPTION=Package config system that manages compile/link flags
 EAPI=4
 HOMEPAGE=http://pkgconfig.freedesktop.org/wiki/
 IUSE=elibc_FreeBSD hardened
 KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=GPL-2
-RDEPEND=dev-libs/glib:2 >=dev-libs/popt-1.15
+RDEPEND=>=dev-libs/glib-2.28 >=dev-libs/popt-1.16 !dev-util/pkgconf[pkg-config] !dev-util/pkg-config-lite !dev-util/pkgconfig-openbsd[pkg-config]
 SLOT=0
 SRC_URI=http://pkgconfig.freedesktop.org/releases/pkg-config-0.26.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=632f870eb0a87a3f2bf588ff79d560c9
+_md5_=baa09b708cb8b6211b9aedd538d2f335

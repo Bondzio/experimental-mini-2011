@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=app-arch/bzip2 >=dev-libs/openssl-0.9.8 sys-devel/gettext sys-libs/zlib virtual/libiconv idn? ( net-dns/libidn ) lua? ( >=dev-lang/lua-5.1 ) pcre? ( >=dev-libs/libpcre-4.2 ) upnp? ( net-libs/miniupnpc ) gtk? ( x11-libs/pango >=x11-libs/gtk+-2.10:2 >=dev-libs/glib-2.10:2 >=gnome-base/libglade-2.4:2.0 x11-themes/hicolor-icon-theme gnome? ( gnome-base/libgnome ) libnotify? ( >=x11-libs/libnotify-0.4.1 ) ) qt4? ( >=x11-libs/qt-gui-4.4.0:4[dbus?] javascript? ( x11-libs/qt-script x11-libs/qtscriptgenerator ) spell? ( app-text/aspell ) sqlite? ( x11-libs/qt-sql:4[sqlite] ) ) >=dev-libs/boost-1.34.1 dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=app-arch/bzip2 >=dev-libs/openssl-0.9.8 sys-devel/gettext sys-libs/zlib virtual/libiconv idn? ( net-dns/libidn ) lua? ( >=dev-lang/lua-5.1 ) pcre? ( >=dev-libs/libpcre-4.2 ) upnp? ( net-libs/miniupnpc ) gtk? ( x11-libs/pango >=x11-libs/gtk+-2.10:2 >=dev-libs/glib-2.10:2 >=gnome-base/libglade-2.4:2.0 x11-themes/hicolor-icon-theme gnome? ( gnome-base/libgnome ) libnotify? ( >=x11-libs/libnotify-0.4.1 ) ) qt4? ( >=x11-libs/qt-gui-4.4.0:4[dbus?] javascript? ( x11-libs/qt-script x11-libs/qtscriptgenerator ) spell? ( app-text/aspell ) sqlite? ( x11-libs/qt-sql:4[sqlite] ) ) >=dev-libs/boost-1.34.1 virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Qt4 based client for DirectConnect and ADC protocols, based on DC++ library
 EAPI=4
 HOMEPAGE=http://eiskaltdc.googlecode.com/
@@ -11,4 +11,4 @@ REQUIRED_USE=emoticons? ( || ( gtk qt4 ) ) dbus? ( qt4 ) gnome? ( gtk ) javascri
 SLOT=0
 SRC_URI=http://eiskaltdc.googlecode.com/files/eiskaltdcpp-2.2.3.tar.xz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7c8ceed372487582ec6279ff493e880e
+_md5_=d8e334f75612eb68a3519986b8a1f57a

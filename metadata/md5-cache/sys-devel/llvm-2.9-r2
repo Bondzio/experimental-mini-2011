@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup
-DEPEND=dev-lang/perl >=sys-devel/make-3.79 >=sys-devel/flex-2.5.4 >=sys-devel/bison-1.875d || ( >=sys-devel/gcc-3.0 >=sys-devel/gcc-apple-4.2.1 ) || ( >=sys-devel/binutils-2.18 >=sys-devel/binutils-apple-3.2.3 ) libffi? ( dev-util/pkgconfig virtual/libffi ) ocaml? ( dev-lang/ocaml ) udis86? ( amd64? ( dev-libs/udis86[pic] ) !amd64? ( dev-libs/udis86 ) )
+DEPEND=dev-lang/perl >=sys-devel/make-3.79 >=sys-devel/flex-2.5.4 >=sys-devel/bison-1.875d || ( >=sys-devel/gcc-3.0 >=sys-devel/gcc-apple-4.2.1 ) || ( >=sys-devel/binutils-2.18 >=sys-devel/binutils-apple-3.2.3 ) libffi? ( virtual/pkgconfig virtual/libffi ) ocaml? ( dev-lang/ocaml ) udis86? ( amd64? ( dev-libs/udis86[pic] ) !amd64? ( dev-libs/udis86 ) )
 DESCRIPTION=Low Level Virtual Machine
 EAPI=3
 HOMEPAGE=http://llvm.org/
@@ -10,4 +10,4 @@ RDEPEND=dev-lang/perl libffi? ( virtual/libffi ) vim-syntax? ( || ( app-editors/
 SLOT=0
 SRC_URI=http://llvm.org/releases/2.9/llvm-2.9.tgz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=956bb236f44f6fbe97dd515429d844fd
+_md5_=135c03a5c72bb52863b6463f5d251b36

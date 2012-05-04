@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=virtual/libusb:1 zlib? ( sys-libs/zlib ) dev-util/pkgconfig python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
+DEPEND=virtual/libusb:1 zlib? ( sys-libs/zlib ) virtual/pkgconfig python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 DESCRIPTION=USB enumeration utilities
 EAPI=3
 HOMEPAGE=http://linux-usb.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=virtual/libusb:1 zlib? ( sys-libs/zlib ) python? ( || ( =dev-lang/python
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/usb/usbutils/usbutils-004.tar.gz
 _eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=31e3ff2143570f0c8bfde7c99db958bb
+_md5_=2c51ca3fda8d13b31007c541329cacc5

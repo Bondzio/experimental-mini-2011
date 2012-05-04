@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst setup
-DEPEND=usb? ( virtual/libusb:1 ) dev-util/pkgconfig
+DEPEND=usb? ( virtual/libusb:1 ) virtual/pkgconfig
 DESCRIPTION=PC/SC Architecture smartcard middleware library
 EAPI=3
 HOMEPAGE=http://pcsclite.alioth.debian.org/
@@ -10,4 +10,4 @@ RDEPEND=usb? ( virtual/libusb:1 ) !<app-crypt/ccid-1.4.1-r1 kernel_linux? ( sys-
 SLOT=0
 SRC_URI=http://alioth.debian.org/download.php/3479/pcsc-lite-1.6.6.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d18ae45bfaf5c3277f631712a7d5e085
+_md5_=e023b3fcc40a603cb56e4e7f4d174ae4

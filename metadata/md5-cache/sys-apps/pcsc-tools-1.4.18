@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=sys-apps/pcsc-lite-1.4.14 dev-util/pkgconfig
+DEPEND=>=sys-apps/pcsc-lite-1.4.14 virtual/pkgconfig
 DESCRIPTION=PC/SC Architecture smartcard tools
 EAPI=4
 HOMEPAGE=http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
@@ -10,4 +10,4 @@ RDEPEND=>=sys-apps/pcsc-lite-1.4.14 dev-perl/pcsc-perl gtk? ( dev-perl/gtk2-perl
 SLOT=0
 SRC_URI=http://ludovic.rousseau.free.fr/softwares/pcsc-tools/pcsc-tools-1.4.18.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2a9d91941440b0dab34cb42e603909fe
+_md5_=9fe4404b86399483b70f44ea57d8d959
