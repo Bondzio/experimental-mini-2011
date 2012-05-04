@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=dev-libs/glib:2 sys-libs/slang gnome-base/libgtop dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-libs/glib:2 sys-libs/slang gnome-base/libgtop virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Colored text-based system performance monitor
 EAPI=2
 HOMEPAGE=http://slmon.sourceforge.net
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/glib:2 sys-libs/slang gnome-base/libgtop
 SLOT=0
 SRC_URI=mirror://sourceforge/slmon/slmon-0.5.13.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1d54d538a70ba02eaf5ff3120c79ffdf
+_md5_=54d6384a510b889fd44b4572b67cf17f

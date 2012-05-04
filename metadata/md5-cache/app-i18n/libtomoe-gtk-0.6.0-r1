@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=app-i18n/tomoe-0.6.0 >=dev-python/pygtk-2 >=dev-python/pygobject-2:2 gucharmap? ( >=gnome-extra/gucharmap-1.4.0 ) dev-util/pkgconfig sys-devel/gettext doc? ( >=dev-util/gtk-doc-1.4 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=app-i18n/tomoe-0.6.0 >=dev-python/pygtk-2 >=dev-python/pygobject-2:2 gucharmap? ( >=gnome-extra/gucharmap-1.4.0 ) virtual/pkgconfig sys-devel/gettext doc? ( >=dev-util/gtk-doc-1.4 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Tomoe GTK+ interface widget library
 EAPI=2
 HOMEPAGE=http://tomoe.sourceforge.jp/
@@ -10,4 +10,4 @@ RDEPEND=>=app-i18n/tomoe-0.6.0 >=dev-python/pygtk-2 >=dev-python/pygobject-2:2 g
 SLOT=0
 SRC_URI=mirror://sourceforge/tomoe/tomoe-gtk-0.6.0.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=857403a0f3f651bd0a541382d72d4d7f
+_md5_=87d4188988c2234da7245793a9c7dcda

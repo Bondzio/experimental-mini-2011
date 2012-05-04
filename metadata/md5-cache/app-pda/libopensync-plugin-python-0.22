@@ -1,5 +1,5 @@
 DEFINED_PHASES=install setup
-DEPEND=~app-pda/libopensync-0.22 dev-libs/glib:2 >=dev-util/pkgconfig-0.9.0 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DEPEND=~app-pda/libopensync-0.22 dev-libs/glib:2 virtual/pkgconfig || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 DESCRIPTION=OpenSync Python Module
 EAPI=3
 HOMEPAGE=http://www.opensync.org/
@@ -9,4 +9,4 @@ RDEPEND=~app-pda/libopensync-0.22 dev-libs/glib:2 || ( =dev-lang/python-2.7* =de
 SLOT=0
 SRC_URI=http://www.opensync.org/download/releases/0.22/libopensync-plugin-python-0.22.tar.bz2
 _eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=e6758547b36bcffb764a0f9ac381e4d6
+_md5_=8e6f928094971bcd2df8510cdaa45c17

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm
-DEPEND=>=app-i18n/libhangul-0.0.12 >=x11-libs/gtk+-2.2:2 virtual/libintl dev-util/pkgconfig sys-devel/gettext
+DEPEND=>=app-i18n/libhangul-0.0.12 >=x11-libs/gtk+-2.2:2 virtual/libintl virtual/pkgconfig sys-devel/gettext
 DESCRIPTION=Gtk+-2.0 Hangul Input Modules
 EAPI=3
 HOMEPAGE=http://kldp.net/projects/imhangul/
@@ -9,4 +9,4 @@ RDEPEND=>=app-i18n/libhangul-0.0.12 >=x11-libs/gtk+-2.2:2 virtual/libintl
 SLOT=0
 SRC_URI=http://kldp.net/frs/download.php/5856/imhangul-0.9.16.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=eaf694ecf4d53fc8299231ecaed528cf
+_md5_=98282ba0cda5682b5e603276fa76ae8a

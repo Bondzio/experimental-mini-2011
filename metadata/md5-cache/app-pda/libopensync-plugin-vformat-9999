@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install preinst prepare test unpack
-DEPEND=~app-pda/libopensync-9999 dev-libs/glib:2 dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/subversion net-misc/rsync
+DEPEND=~app-pda/libopensync-9999 dev-libs/glib:2 virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=OpenSync VFormat Plugin
 EAPI=3
 HOMEPAGE=http://www.opensync.org
@@ -9,4 +9,4 @@ RDEPEND=~app-pda/libopensync-9999 dev-libs/glib:2
 RESTRICT=test
 SLOT=0
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	subversion	b1dabda0045f060f19070d67a57c1a21	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7e536880dc3b226644e98a89b8015be3
+_md5_=c0b75b61b9a37e38252271b4a771519c

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=app-text/enchant-1.1.6 x11-libs/gtk+:3 >=x11-libs/pango-1.8.0 dev-util/pkgconfig >=dev-util/intltool-0.35.0 doc? ( >=dev-util/gtk-doc-1.17 app-text/docbook-xml-dtd:4.2 )
+DEPEND=>=app-text/enchant-1.1.6 x11-libs/gtk+:3 >=x11-libs/pango-1.8.0 virtual/pkgconfig >=dev-util/intltool-0.35.0 doc? ( >=dev-util/gtk-doc-1.17 app-text/docbook-xml-dtd:4.2 )
 DESCRIPTION=Spell checking widget for GTK
 EAPI=4
 HOMEPAGE=http://gtkspell.sourceforge.net/
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=app-text/enchant-1.1.6 x11-libs/gtk+:3 >=x11-libs/pango-1.8.0
 SLOT=3
 SRC_URI=mirror://gentoo/gtkspell-3.0.0_pre20110814.tar.bz2
-_md5_=9cdd80d9e46e561eee2aeab2fa0069ec
+_md5_=633638ecfdd67aad228bd5d82bee690c

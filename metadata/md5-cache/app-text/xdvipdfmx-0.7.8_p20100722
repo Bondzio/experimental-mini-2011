@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=!<app-text/texlive-core-2010 dev-libs/kpathsea sys-libs/zlib media-libs/freetype:2 media-libs/fontconfig >=media-libs/libpng-1.2.43-r2:0 app-text/libpaper dev-util/pkgconfig
+DEPEND=!<app-text/texlive-core-2010 dev-libs/kpathsea sys-libs/zlib media-libs/freetype:2 media-libs/fontconfig >=media-libs/libpng-1.2.43-r2:0 app-text/libpaper virtual/pkgconfig
 DESCRIPTION=Extended dvipdfmx for use with XeTeX and other unicode TeXs.
 EAPI=3
 HOMEPAGE=http://scripts.sil.org/svn-view/xdvipdfmx/ http://tug.org/texlive/
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=!<app-text/texlive-core-2010 dev-libs/kpathsea sys-libs/zlib media-libs/freetype:2 media-libs/fontconfig >=media-libs/libpng-1.2.43-r2:0 app-text/libpaper
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-20100722-source.tar.xz
-_md5_=80e470776c4a688da523c0d6af1c2ebd
+_md5_=756f0270e23bf62da1d5f20c922065ef

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
-DEPEND==media-libs/gst-plugins-base-0.10* >=dev-perl/GStreamer-0.06 >=dev-perl/glib-perl-1.180 >=dev-perl/extutils-depends-0.205 >=dev-perl/extutils-pkgconfig-1.07 dev-util/pkgconfig
+DEPEND==media-libs/gst-plugins-base-0.10* >=dev-perl/GStreamer-0.06 >=dev-perl/glib-perl-1.180 >=dev-perl/extutils-depends-0.205 >=dev-perl/extutils-pkgconfig-1.07 virtual/pkgconfig
 DESCRIPTION=Perl interface to the GStreamer Interfaces library
 HOMEPAGE=http://search.cpan.org/~tsch
 KEYWORDS=amd64 ~sparc ~x86
@@ -8,4 +8,4 @@ RDEPEND==media-libs/gst-plugins-base-0.10* >=dev-perl/GStreamer-0.06 >=dev-perl/
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/T/TS/TSCH/GStreamer-Interfaces-0.04.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f58e44f17e5d710ba445453906fa7cc9
+_md5_=30cb38dfc7edafcd23935ee18d7d19f5

@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=>=app-i18n/ibus-table-1.2.0.20100111 dev-util/pkgconfig
+DEPEND=>=app-i18n/ibus-table-1.2.0.20100111 virtual/pkgconfig
 DESCRIPTION=The yinma tables for IBus-Table
 HOMEPAGE=http://code.google.com/p/ibus/
 KEYWORDS=~amd64 ~x86
@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=>=app-i18n/ibus-table-1.2.0.20100111
 SLOT=0
 SRC_URI=http://ibus.googlecode.com/files/ibus-table-yinma-1.2.0.20100305.tar.gz
-_md5_=5948fba66bd66476fb938202eea0bfd8
+_md5_=f3901ac45e52b5806c25ea6f045dba8c

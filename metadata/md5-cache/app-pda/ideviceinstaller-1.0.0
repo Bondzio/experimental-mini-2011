@@ -1,5 +1,5 @@
 DEFINED_PHASES=prepare
-DEPEND=>=app-pda/libimobiledevice-1.0.0 >=app-pda/libplist-0.15 >=dev-libs/libzip-0.8 dev-util/pkgconfig
+DEPEND=>=app-pda/libimobiledevice-1.0.0 >=app-pda/libplist-0.15 >=dev-libs/libzip-0.8 virtual/pkgconfig
 DESCRIPTION=A tool to interact with the installation_proxy of an Apple's iDevice
 EAPI=4
 HOMEPAGE=http://www.libimobiledevice.org/
@@ -9,4 +9,4 @@ RDEPEND=>=app-pda/libimobiledevice-1.0.0 >=app-pda/libplist-0.15 >=dev-libs/libz
 SLOT=0
 SRC_URI=http://www.libimobiledevice.org/downloads/ideviceinstaller-1.0.0.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b314b15406aaa7c65c69d1e6a4a1a851
+_md5_=b59a08abb58b3420313e3c881d0b7b1c

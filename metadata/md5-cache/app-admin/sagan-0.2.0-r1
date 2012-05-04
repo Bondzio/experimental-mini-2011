@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test
-DEPEND=dev-util/pkgconfig
+DEPEND=virtual/pkgconfig
 DESCRIPTION=Sagan is a multi-threaded, real time system and event log monitoring system
 EAPI=4
 HOMEPAGE=http://sagan.softwink.com/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/libpcre app-admin/sagan-rules[lognorm?] smtp? ( net-libs/libesm
 SLOT=0
 SRC_URI=http://sagan.softwink.com/download/sagan-0.2.0.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1070111001d1ff16211791aa89fb4b3f
+_md5_=582b3db40de8c9039c8cbafa2c8d46ad

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure prepare
-DEPEND=dev-lang/mono dev-util/pkgconfig
+DEPEND=dev-lang/mono virtual/pkgconfig
 DESCRIPTION=Taglib# 2.0 - Managed tag reader/writer
 EAPI=4
 HOMEPAGE=http://download.banshee.fm/taglib-sharp/
@@ -9,4 +9,4 @@ RDEPEND=dev-lang/mono
 SLOT=0
 SRC_URI=http://download.banshee-project.org/taglib-sharp/2.0.4.0/taglib-sharp-2.0.4.0.tar.bz2
 _eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=0d41749435acbdf0f70711efa4dd59a8
+_md5_=6176330f8b71e15232aeb63e89b3732d

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst prepare setup
-DEPEND=static? ( sys-libs/ncurses ) !static? ( gtk? ( x11-libs/gtk+:2 ) ncurses? ( sys-libs/ncurses ) qt4? ( >=x11-libs/qt-gui-4.4.1 ) !gtk? ( !qt4? ( !ncurses? ( sys-libs/ncurses ) ) ) ) caps? ( sys-libs/libcap ) !static? ( gtk? ( dev-util/pkgconfig ) qt4? ( dev-util/pkgconfig ) )
+DEPEND=static? ( sys-libs/ncurses ) !static? ( gtk? ( x11-libs/gtk+:2 ) ncurses? ( sys-libs/ncurses ) qt4? ( >=x11-libs/qt-gui-4.4.1 ) !gtk? ( !qt4? ( !ncurses? ( sys-libs/ncurses ) ) ) ) caps? ( sys-libs/libcap ) !static? ( gtk? ( virtual/pkgconfig ) qt4? ( virtual/pkgconfig ) )
 DESCRIPTION=Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
 EAPI=3
 HOMEPAGE=http://gnupg.org/aegypten2/index.html
@@ -10,4 +10,4 @@ RDEPEND=static? ( sys-libs/ncurses ) !static? ( gtk? ( x11-libs/gtk+:2 ) ncurses
 SLOT=0
 SRC_URI=mirror://gnupg/pinentry/pinentry-0.8.0.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=759e5771865d7c07fe5cde2576d348aa
+_md5_=b56ed5290d0e95061813a8deddfdeb22

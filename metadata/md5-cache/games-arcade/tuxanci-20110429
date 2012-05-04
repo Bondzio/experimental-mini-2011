@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
-DEPEND=!dedicated? ( >=media-libs/fontconfig-2.7.0 media-libs/libsdl[X,opengl?] media-libs/sdl-ttf[X] >=media-libs/sdl-image-1.2.10[png] sound? ( >=media-libs/sdl-mixer-1.2.11[vorbis] ) ) physfs? ( dev-games/physfs[zip] ) !physfs? ( >=dev-libs/libzip-0.9 ) dev-util/pkgconfig nls? ( sys-devel/gettext ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=!dedicated? ( >=media-libs/fontconfig-2.7.0 media-libs/libsdl[X,opengl?] media-libs/sdl-ttf[X] >=media-libs/sdl-image-1.2.10[png] sound? ( >=media-libs/sdl-mixer-1.2.11[vorbis] ) ) physfs? ( dev-games/physfs[zip] ) !physfs? ( >=dev-libs/libzip-0.9 ) virtual/pkgconfig nls? ( sys-devel/gettext ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Tuxanci is first tux shooter inspired by game Bulanci.
 EAPI=3
 HOMEPAGE=http://www.tuxanci.org/
@@ -10,4 +10,4 @@ RDEPEND=!dedicated? ( >=media-libs/fontconfig-2.7.0 media-libs/libsdl[X,opengl?]
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~scarabeus/tuxanci-20110429.tar.xz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6b12e919d5ae7b317acd27352ca4d679
+_md5_=fc3232ce2d9ef526ed6d8dc7512e6447

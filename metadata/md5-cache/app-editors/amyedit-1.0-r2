@@ -1,5 +1,5 @@
 DEFINED_PHASES=install prepare
-DEPEND=>=dev-cpp/gtkmm-2.6:2.4 >=dev-cpp/glibmm-2.14:2 >=dev-libs/libsigc++-2.2 x11-libs/gtksourceview:2.0 dev-cpp/gtksourceviewmm:2.0 app-text/aspell dev-util/intltool dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-cpp/gtkmm-2.6:2.4 >=dev-cpp/glibmm-2.14:2 >=dev-libs/libsigc++-2.2 x11-libs/gtksourceview:2.0 dev-cpp/gtksourceviewmm:2.0 app-text/aspell dev-util/intltool virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=AmyEdit is a LaTeX editor
 EAPI=3
 HOMEPAGE=http://amyedit.sf.net
@@ -9,4 +9,4 @@ RDEPEND=>=dev-cpp/gtkmm-2.6:2.4 >=dev-cpp/glibmm-2.14:2 >=dev-libs/libsigc++-2.2
 SLOT=0
 SRC_URI=mirror://sourceforge/amyedit/amyedit-1.0.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=87934132e09e07350186b17fc139e0c1
+_md5_=2b6c5f06078aa18b77b43180840e5161

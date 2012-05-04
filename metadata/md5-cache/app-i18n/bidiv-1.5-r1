@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=dev-util/pkgconfig
+DEPEND=virtual/pkgconfig
 DESCRIPTION=A BiDirectional Text Viewer
 HOMEPAGE=http://www.ivrix.org.il
 KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86
@@ -8,4 +8,4 @@ RDEPEND=dev-libs/fribidi
 SLOT=0
 SRC_URI=http://ftp.ivrix.org.il/pub/ivrix/src/cmdline/bidiv-1.5.tgz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2ae209d8af37532af25ec6ca25284308
+_md5_=07c51c9b6b23a327e6f45205cdcc0b7d

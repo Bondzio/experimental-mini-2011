@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=>=dev-lang/mono-1.1.10 doc? ( >=virtual/monodoc-1.1.8 ) >=dev-dotnet/gtk-sharp-2.0 >=media-libs/libnjb-2.2.4 dev-util/pkgconfig
+DEPEND=>=dev-lang/mono-1.1.10 doc? ( >=virtual/monodoc-1.1.8 ) >=dev-dotnet/gtk-sharp-2.0 >=media-libs/libnjb-2.2.4 virtual/pkgconfig
 DESCRIPTION=njb-sharp provides C# bindings for libnjb, to provide NJB Digital Audio Player (DAP) support to Mono applications.
 HOMEPAGE=http://www.banshee-project.org/Subprojects/Njb-sharp
 IUSE=doc
@@ -9,4 +9,4 @@ RDEPEND=>=dev-lang/mono-1.1.10 doc? ( >=virtual/monodoc-1.1.8 ) >=dev-dotnet/gtk
 SLOT=0
 SRC_URI=http://banshee-project.org/files/njb-sharp/njb-sharp-0.3.0.tar.gz
 _eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=a49f69745287656223482cb92f50b7ff
+_md5_=d42698156f7593c965bb597f216e260a

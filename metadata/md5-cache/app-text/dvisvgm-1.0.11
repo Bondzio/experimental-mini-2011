@@ -1,5 +1,5 @@
 DEFINED_PHASES=-
-DEPEND=virtual/tex-base app-text/ghostscript-gpl >=media-gfx/potrace-1.10-r1 media-libs/freetype:2 sys-libs/zlib dev-util/pkgconfig test? ( dev-cpp/gtest )
+DEPEND=virtual/tex-base app-text/ghostscript-gpl >=media-gfx/potrace-1.10-r1 media-libs/freetype:2 sys-libs/zlib virtual/pkgconfig test? ( dev-cpp/gtest )
 DESCRIPTION=Converts DVI files to SVG
 EAPI=4
 HOMEPAGE=http://dvisvgm.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=virtual/tex-base app-text/ghostscript-gpl >=media-gfx/potrace-1.10-r1 me
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/dvisvgm/dvisvgm-1.0.11.tar.gz
-_md5_=eff6d7f90ba1cd1e1f9bbf073e33a198
+_md5_=64ae9ea65392b65f9dde6ad842302387

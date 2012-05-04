@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/subtitleeditor/subtitleeditor-0.40.0.ebuild,v 1.3 2012/04/29 16:04:22 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/subtitleeditor/subtitleeditor-0.40.0.ebuild,v 1.5 2012/05/04 00:50:42 tetromino Exp $
 
 EAPI="4"
 
@@ -33,9 +33,14 @@ RDEPEND="
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.40
-	dev-util/pkgconfig"
+	virtual/pkgconfig"
 
 DOCS="AUTHORS ChangeLog NEWS README TODO"
+
+src_prepare() {
+	# bug #413843, https://gna.org/bugs/index.php?19709
+	epatch "${FILESDIR}/${P}-glib-2.31.patch"
+}
 
 src_configure() {
 	export GST_REGISTRY="${T}/home/registry.cache.xml"

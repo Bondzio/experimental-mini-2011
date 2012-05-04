@@ -1,5 +1,5 @@
 DEFINED_PHASES=-
-DEPEND=sys-fs/udev dev-util/pkgconfig
+DEPEND=sys-fs/udev virtual/pkgconfig
 DESCRIPTION=A repository of data files describing media player capabilities
 EAPI=4
 HOMEPAGE=http://cgit.freedesktop.org/media-player-info/
@@ -9,4 +9,4 @@ RDEPEND=sys-fs/udev
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=http://www.freedesktop.org/software/media-player-info/media-player-info-16.tar.gz
-_md5_=b0719a58cd9ea008a0bd2a0193b2894d
+_md5_=c7feb1223321d7f3d3bc37b46afaac9a

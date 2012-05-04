@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
-DEPEND==x11-libs/gtk+-1* x11-libs/libXxf86vm sdl? ( media-libs/libsdl ) dev-util/pkgconfig x86? ( dev-lang/nasm ) x11-proto/xf86dgaproto x11-proto/xf86vidmodeproto
+DEPEND==x11-libs/gtk+-1* x11-libs/libXxf86vm sdl? ( media-libs/libsdl ) virtual/pkgconfig x86? ( dev-lang/nasm ) x11-proto/xf86dgaproto x11-proto/xf86vidmodeproto
 DESCRIPTION=P.E.Op.S Software GPU plugin
 HOMEPAGE=http://sourceforge.net/projects/peops/
 IUSE=sdl
@@ -9,4 +9,4 @@ RDEPEND==x11-libs/gtk+-1* x11-libs/libXxf86vm sdl? ( media-libs/libsdl )
 SLOT=0
 SRC_URI=mirror://sourceforge/peops/PeopsSoftGpu117.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2853c581b897890567fb9a57275c40a2
+_md5_=9b69ec4ed6fbf07450ccef3cd7b5ba0f

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=x11-libs/libXtst >=app-i18n/ibus-1.1 >=dev-libs/libchewing-0.3.2 x11-libs/gtk+:2 dev-util/gob:2 dev-util/cmake-fedora dev-util/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=x11-libs/libXtst >=app-i18n/ibus-1.1 >=dev-libs/libchewing-0.3.2 x11-libs/gtk+:2 dev-util/gob:2 dev-util/cmake-fedora virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=The Chewing IMEngine for IBus Framework
 EAPI=3
 HOMEPAGE=http://code.google.com/p/ibus/
@@ -10,4 +10,4 @@ RDEPEND=x11-libs/libXtst >=app-i18n/ibus-1.1 >=dev-libs/libchewing-0.3.2 x11-lib
 SLOT=0
 SRC_URI=http://ibus.googlecode.com/files/ibus-chewing-1.3.10-Source.tar.gz https://fedorahosted.org/releases/c/m/cmake-fedora/cmake-fedora-modules-only-latest.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1ddcb7f222ec04edd530803249f80c5b
+_md5_=c46d6b53cf3065375b5cb37049ee65e7
