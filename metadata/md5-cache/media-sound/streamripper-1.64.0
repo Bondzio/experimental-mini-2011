@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=media-libs/libmad media-libs/faad2 >=dev-libs/glib-2.16 vorbis? ( media-libs/libvorbis ) dev-util/pkgconfig
+DEPEND=media-libs/libmad media-libs/faad2 >=dev-libs/glib-2.16 vorbis? ( media-libs/libvorbis ) virtual/pkgconfig
 DESCRIPTION=Extracts and records individual MP3 file tracks from shoutcast streams
 HOMEPAGE=http://streamripper.sourceforge.net
 IUSE=vorbis
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libmad media-libs/faad2 >=dev-libs/glib-2.16 vorbis? ( media-libs/libvorbis )
 SLOT=0
 SRC_URI=mirror://sourceforge/streamripper/streamripper-1.64.0.tar.gz
-_md5_=08e0e1b790139d188b93215da9615baf
+_md5_=237d1673935bd2aa6a6fe78eeef402dc

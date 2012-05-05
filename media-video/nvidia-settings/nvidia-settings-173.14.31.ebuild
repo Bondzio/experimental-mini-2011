@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-173.14.31.ebuild,v 1.1 2012/04/25 04:27:06 idl0r Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-173.14.31.ebuild,v 1.3 2012/05/05 14:37:26 idl0r Exp $
 
 EAPI=4
 
@@ -28,10 +28,10 @@ COMMON_DEPEND="x11-libs/libX11
 	x11-libs/libXrandr
 	dev-libs/glib:2"
 
-RDEPEND="=x11-drivers/nvidia-drivers-173.14*
+RDEPEND="=x11-drivers/nvidia-drivers-173.14*[-gtk]
 	${COMMON_DEPEND}"
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	x11-proto/xproto"
 
 S="${WORKDIR}/${MY_P}"

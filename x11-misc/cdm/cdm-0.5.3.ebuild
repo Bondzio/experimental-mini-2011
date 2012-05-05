@@ -1,18 +1,20 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/cdm/cdm-0.5.3.ebuild,v 1.2 2012/05/05 11:45:41 gienah Exp $
 
-EAPI="3"
+EAPI="4"
+
+inherit base pam eutils
 
 DESCRIPTION="The Console Display Manager"
-GITHUB_USER="golodhrim"
-GITHUB_TAG="funtoo-${PV}"
-HOMEPAGE="http://cdm.ghost1227.com/X11 https://github.com/${GITHUB_USER}/${PN}"
-SRC_URI="https://github.com/${GITHUB_USER}/${PN}/tarball/${GITHUB_TAG} -> ${P}.tar.gz"
+HOMEPAGE="https://wiki.archlinux.org/index.php/CDM"
+SRC_URI="http://dev.gentoo.org/~gienah/snapshots/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="consolekit"
+IUSE="pam consolekit"
+REQUIRED_USE="consolekit? ( pam )"
 
 DEPEND="app-shells/bash"
 
@@ -20,35 +22,54 @@ RDEPEND="${DEPEND}
 	dev-util/dialog
 	x11-apps/xdpyinfo
 	x11-apps/xinit
-	consolekit? ( sys-auth/consolekit )"
+	consolekit? ( sys-auth/consolekit
+		sys-apps/dbus )
+	pam? ( virtual/pam )"
+
+PATCHES=("${FILESDIR}/${PN}-0.5.3-invalid-MIT-cookie.patch")
 
 src_prepare() {
-	cd "${WORKDIR}"/${GITHUB_USER}-${PN}-*
-	S="$(pwd)"
-
-	if ! use consolekit
-	then
-		sed -i -e "/^consolekit=/s|yes|no|" src/cdmrc || die "sed failed"
+	base_src_prepare
+	if ! use consolekit; then
+		sed -e 's@consolekit=yes@consolekit=no@' \
+			-i "${S}/src/cdmrc" || die "Could not turn off consolekit in cdmrc"
 	fi
 }
 
 src_install() {
-	exeinto /usr/bin
-	doexe src/cdm
+	if use pam ; then
+		pamd_mimic system-local-login cdm auth account session
+	fi
 
-	insinto /etc/X11/${PN}
-	doins src/cdmrc src/xinitrc
+	insinto /usr/bin/
+	insopts -m0755
+	dobin src/${PN}
+
+	insinto /etc
+	insopts -Dm644
+	doins src/cdmrc
 
 	insinto /usr/share/${PN}
-	doins src/zzz-cdm-profile.sh
+	insopts -m644
+	doins src/xinitrc*
 
+	insinto /etc/profile.d/
+	insopts -Dm755
+	doins src/zzz-${PN}-profile.sh
+
+	# Install themes
 	insinto /usr/share/${PN}/themes
 	doins src/themes/*
-
+	# Copy documentation manually
 	dodoc CHANGELOG
 }
 
 pkg_postinst() {
-	ewarn "If you want cdm to be started automatically after login then"
-	ewarn "move /usr/share/cdm/zzz-cdm-profile.sh to /etc/profile.d/."
+	einfo "In order to use CDM you must first edit your /etc/cdmrc"
+	einfo "At least these should be edited before you start using CDM:"
+	einfo "wmbinlist=(awesome openbox-session startkde startxfce4 gnome-session)"
+	einfo "wmdisplist=(Awesome Openbox KDE Xfce Gnome)"
+	einfo "Add whatever WM/DE you have."
+	einfo "Then just login with your username"
+	ewarn "Remove xdm from default runlevel"
 }

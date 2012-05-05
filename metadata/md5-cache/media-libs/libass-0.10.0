@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv >=dev-libs/fribidi-0.19.0 harfbuzz? ( media-libs/harfbuzz ) enca? ( app-i18n/enca ) dev-util/pkgconfig
+DEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv >=dev-libs/fribidi-0.19.0 harfbuzz? ( media-libs/harfbuzz ) enca? ( app-i18n/enca ) virtual/pkgconfig
 DESCRIPTION=Library for SSA/ASS subtitles rendering
 EAPI=4
 HOMEPAGE=http://code.google.com/p/libass/
@@ -9,4 +9,4 @@ LICENSE=ISC
 RDEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv >=dev-libs/fribidi-0.19.0 harfbuzz? ( media-libs/harfbuzz ) enca? ( app-i18n/enca )
 SLOT=0
 SRC_URI=http://libass.googlecode.com/files/libass-0.10.0.tar.xz
-_md5_=28255772ff70f36fc1bd30606ce6e42f
+_md5_=b1f90f167812221c769f69051bc362e9

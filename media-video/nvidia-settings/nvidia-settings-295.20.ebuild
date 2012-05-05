@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-295.20.ebuild,v 1.8 2012/05/02 17:20:07 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/nvidia-settings-295.20.ebuild,v 1.10 2012/05/05 14:37:26 idl0r Exp $
 
 EAPI=4
 
@@ -27,9 +27,10 @@ COMMON_DEPEND="x11-libs/libX11
 	dev-libs/glib:2"
 
 RDEPEND="=x11-drivers/nvidia-drivers-2*
+	|| ( >=x11-drivers/nvidia-drivers-295.33 <x11-drivers/nvidia-drivers-295.33[-gtk] )
 	${COMMON_DEPEND}"
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	x11-proto/xproto"
 
 src_prepare() {

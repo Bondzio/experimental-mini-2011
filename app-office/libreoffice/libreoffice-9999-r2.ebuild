@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.61 2012/05/04 23:06:58 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.66 2012/05/05 16:12:02 scarabeus Exp $
 
 EAPI=4
 
@@ -37,7 +37,8 @@ SRC_URI="branding? ( http://dev.gentooexperimental.org/~scarabeus/${BRANDING} )"
 
 # Split modules following git/tarballs
 # Core MUST be first!
-MODULES="core binfilter"
+# Help is used for the image generator
+MODULES="core binfilter help"
 # Only release has the tarballs
 if [[ ${PV} != *9999* ]]; then
 	for i in ${DEV_URI}; do
@@ -58,12 +59,13 @@ unset DEV_URI
 # These are bundles that can't be removed for now due to huge patchsets.
 # If you want them gone, patches are welcome.
 ADDONS_SRC+=" ${ADDONS_URI}/ea91f2fb4212a21d708aced277e6e85a-vigra1.4.0.tar.gz"
-ADDONS_SRC+=" xmlsec? ( ${ADDONS_URI}/1f24ab1d39f4a51faf22244c94a6203f-xmlsec1-1.2.14.tar.gz )"
+ADDONS_SRC+=" xmlsec? ( ${ADDONS_URI}/1f24ab1d39f4a51faf22244c94a6203f-xmlsec1-1.2.14.tar.gz )" # modifies source code
 ADDONS_SRC+=" java? ( ${ADDONS_URI}/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip )"
-ADDONS_SRC+=" java? ( ${ADDONS_URI}/798b2ffdc8bcfe7bca2cf92b62caf685-rhino1_5R5.zip )"
-ADDONS_SRC+=" java? ( ${ADDONS_URI}/35c94d2df8893241173de1d16b6034c0-swingExSrc.zip )"
 ADDONS_SRC+=" java? ( ${ADDONS_URI}/ada24d37d8d638b3d8a9985e80bc2978-source-9.0.0.7-bj.zip )"
-ADDONS_SRC+=" odk? ( http://download.go-oo.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll )"
+ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/798b2ffdc8bcfe7bca2cf92b62caf685-rhino1_5R5.zip )"
+ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/35c94d2df8893241173de1d16b6034c0-swingExSrc.zip )"
+ADDONS_SRC+=" libreoffice_extensions_wiki-publisher? ( ${ADDONS_URI}/a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip )" # no release for 8 years, should we package it?
+ADDONS_SRC+=" odk? ( http://download.go-oo.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll )" # not packageable
 SRC_URI+=" ${ADDONS_SRC}"
 
 unset ADDONS_URI
@@ -74,14 +76,12 @@ IUSE="binfilter +branding +cups dbus eds gnome +graphite gstreamer +gtk gtk3
 jemalloc kde mysql +nsplugin odk opengl postgres svg test +vba +webdav
 +xmlsec"
 
-LO_EXTS="nlpsolver pdfimport presenter-console presenter-minimizer scripting-beanshell scripting-javascript"
+LO_EXTS="nlpsolver pdfimport presenter-console presenter-minimizer scripting-beanshell scripting-javascript wiki-publisher"
 # Unneeded extension (just can be separate package:
 # google-docs ; barcode ; diagram ; hunart ; numbertext ; oooblogger ; typo ;
-# validator ; watch-window ;
+# validator ; watch-window ; ct2n (requres two patches from lo tree -> repack)
 # Extensions that need extra work:
 # report-builder: missing java packages
-# ct2n: not checked
-# wiki-publisher: missing java packages
 for lo_xt in ${LO_EXTS}; do
 	IUSE+=" libreoffice_extensions_${lo_xt}"
 done
@@ -149,8 +149,13 @@ COMMON_DEPEND="
 	)
 	jemalloc? ( dev-libs/jemalloc )
 	libreoffice_extensions_pdfimport? ( >=app-text/poppler-0.16[xpdf-headers,cxx] )
-	libreoffice_extensions_scripting-beanshell? (
-		>=dev-java/bsh-2.0_beta4
+	libreoffice_extensions_scripting-beanshell? ( >=dev-java/bsh-2.0_beta4 )
+	libreoffice_extensions_wiki-publisher? (
+		dev-java/commons-codec:0
+		dev-java/commons-httpclient:3
+		dev-java/commons-lang:2.1
+		dev-java/commons-logging:0
+		dev-java/tomcat-servlet-api:3.0
 	)
 	mysql? ( >=dev-db/mysql-connector-c++-1.1.0 )
 	opengl? ( virtual/opengl )
@@ -225,6 +230,7 @@ REQUIRED_USE="
 	libreoffice_extensions_nlpsolver? ( java )
 	libreoffice_extensions_scripting-beanshell? ( java )
 	libreoffice_extensions_scripting-javascript? ( java )
+	libreoffice_extensions_wiki-publisher? ( java )
 "
 
 S="${WORKDIR}/${PN}-core-${PV}"
@@ -368,8 +374,21 @@ src_configure() {
 			--with-jdk-home=$(java-config --jdk-home 2>/dev/null)
 			--with-java-target-version=$(java-pkg_get-target)
 			--with-jvm-path="${EPREFIX}/usr/$(get_libdir)/"
-			--with-beanshell-jar=$(java-pkg_getjar bsh bsh.jar)
 		"
+
+		use libreoffice_extensions_scripting-beanshell && \
+			java_opts+=" --with-beanshell-jar=$(java-pkg_getjar bsh bsh.jar)"
+
+		if use libreoffice_extensions_wiki-publisher; then
+			java_opts+="
+				--with-commons-codec-jar=$(java-pkg_getjar commons-codec commons-codec.jar)
+				--with-commons-httpclient-jar=$(java-pkg_getjar commons-httpclient-3 commons-httpclient.jar)
+				--with-commons-lang-jar=$(java-pkg_getjar commons-lang-2.1 commons-lang.jar)
+				--with-commons-logging-jar=$(java-pkg_getjar commons-logging commons-logging.jar)
+				--with-servlet-api-jar=$(java-pkg_getjar tomcat-servlet-api-3.0 servlet-api.jar)
+			"
+		fi
+
 		if use test; then
 			java_opts+=" --with-junit=$(java-pkg_getjar junit-4 junit.jar)"
 		else
@@ -486,6 +505,22 @@ src_configure() {
 }
 
 src_compile() {
+	# hack for offlinehelp, this needs fixing upstream at some point
+	# it is broken because we send --without-help
+	# https://bugs.freedesktop.org/show_bug.cgi?id=46506
+	(
+		source "${S}/config_host.mk" 2&> /dev/null
+
+		local path="${SOLARVER}/${INPATH}/res/img"
+		mkdir -p "${path}" || die
+
+		echo "perl \"${S}/helpcontent2/helpers/create_ilst.pl\" -dir=icon-themes/galaxy/res/helpimg > \"${path}/helpimg.ilst\""
+		perl "${S}/helpcontent2/helpers/create_ilst.pl" \
+			-dir=icon-themes/galaxy/res/helpimg \
+			> "${path}/helpimg.ilst"
+		[[ -s "${path}/helpimg.ilst" ]] || ewarn "The help images list is empty, something is fishy, report a bug."
+	)
+
 	# this is not a proper make script
 	make build || die
 }
@@ -517,7 +552,7 @@ src_install() {
 	# It is broken because we send --without-help
 	# https://bugs.freedesktop.org/show_bug.cgi?id=46506
 	insinto /usr/$(get_libdir)/libreoffice/help
-	doins xmlhelp/util/main_transform.xsl
+	doins xmlhelp/util/*.xsl
 }
 
 pkg_preinst() {

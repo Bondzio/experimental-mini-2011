@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-cpp/gtkmm-2.16:2.4 dev-cpp/libglademm:2.4 >=dev-libs/libsigc++-2.2:2 >=x11-libs/gtk+-2.16:2 >=media-sound/pulseaudio-0.9.16[glib] >=media-libs/libcanberra-0.16[gtk] || ( x11-themes/tango-icon-theme x11-themes/gnome-icon-theme ) nls? ( sys-devel/gettext dev-util/intltool ) dev-util/pkgconfig
+DEPEND=>=dev-cpp/gtkmm-2.16:2.4 dev-cpp/libglademm:2.4 >=dev-libs/libsigc++-2.2:2 >=x11-libs/gtk+-2.16:2 >=media-sound/pulseaudio-0.9.16[glib] >=media-libs/libcanberra-0.16[gtk] || ( x11-themes/tango-icon-theme x11-themes/gnome-icon-theme ) nls? ( sys-devel/gettext dev-util/intltool ) virtual/pkgconfig
 DESCRIPTION=Pulseaudio Volume Control, GTK based mixer for Pulseaudio
 EAPI=2
 HOMEPAGE=http://0pointer.de/lennart/projects/pavucontrol/
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=dev-cpp/gtkmm-2.16:2.4 dev-cpp/libglademm:2.4 >=dev-libs/libsigc++-2.2:2 >=x11-libs/gtk+-2.16:2 >=media-sound/pulseaudio-0.9.16[glib] >=media-libs/libcanberra-0.16[gtk] || ( x11-themes/tango-icon-theme x11-themes/gnome-icon-theme )
 SLOT=0
 SRC_URI=http://0pointer.de/lennart/projects/pavucontrol/pavucontrol-0.9.10.tar.gz
-_md5_=dfc10e927bb9bd01a582b406944db20d
+_md5_=b7f025e539f6bf14863670a9519f60d9

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure prepare
-DEPEND=>=media-libs/libsndfile-1.0 >=x11-libs/gtk+-2.4.0:2 >=dev-libs/glib-2.2.0:2 alsa? ( media-libs/alsa-lib ) libsamplerate? ( media-libs/libsamplerate ) speex? ( media-libs/speex ) vorbis? ( media-libs/libogg media-libs/libvorbis ) mp3? ( media-libs/libmad ) ladspa? ( media-libs/ladspa-sdk ) dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=media-libs/libsndfile-1.0 >=x11-libs/gtk+-2.4.0:2 >=dev-libs/glib-2.2.0:2 alsa? ( media-libs/alsa-lib ) libsamplerate? ( media-libs/libsamplerate ) speex? ( media-libs/speex ) vorbis? ( media-libs/libogg media-libs/libvorbis ) mp3? ( media-libs/libmad ) ladspa? ( media-libs/ladspa-sdk ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Audio editor and live playback tool
 EAPI=4
 HOMEPAGE=http://www.metadecks.org/software/sweep/
@@ -10,4 +10,4 @@ RDEPEND=>=media-libs/libsndfile-1.0 >=x11-libs/gtk+-2.4.0:2 >=dev-libs/glib-2.2.
 SLOT=0
 SRC_URI=mirror://sourceforge/sweep/sweep-0.9.3.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=3708e3feb9fb0a97acc3db65f6fe5a1b
+_md5_=32a7bcc6f2857949857437b596f692f3

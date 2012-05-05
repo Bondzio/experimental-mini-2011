@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.3 sys-libs/ncurses lirc? ( app-misc/lirc ) dev-util/pkgconfig
+DEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.3 sys-libs/ncurses lirc? ( app-misc/lirc ) virtual/pkgconfig
 DESCRIPTION=A ncurses client for the Music Player Daemon (MPD)
 EAPI=2
 HOMEPAGE=http://mpd.wikia.com/wiki/Client:Ncmpc
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.3 sys-libs/ncurses li
 SLOT=0
 SRC_URI=http://downloads.sourceforge.net/musicpd/ncmpc-0.18.tar.bz2
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=3b3e24803f95b05ae295cdf48a10d716
+_md5_=32e92250c167b8b3a70ab151b303cfd4

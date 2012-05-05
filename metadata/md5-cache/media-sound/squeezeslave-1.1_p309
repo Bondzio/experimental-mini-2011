@@ -1,5 +1,5 @@
 DEFINED_PHASES=install prepare
-DEPEND=media-libs/libmad media-libs/flac media-libs/libvorbis media-libs/libogg media-libs/portaudio[alsa?] aac? ( virtual/ffmpeg ) wma? ( virtual/ffmpeg ) display? ( app-misc/lirc ) app-arch/xz-utils dev-util/pkgconfig
+DEPEND=media-libs/libmad media-libs/flac media-libs/libvorbis media-libs/libogg media-libs/portaudio[alsa?] aac? ( virtual/ffmpeg ) wma? ( virtual/ffmpeg ) display? ( app-misc/lirc ) app-arch/xz-utils virtual/pkgconfig
 DESCRIPTION=A lightweight streaming audio player for squeezeboxserver
 EAPI=4
 HOMEPAGE=http://squeezeslave.googlecode.com
@@ -10,4 +10,4 @@ RDEPEND=media-libs/libmad media-libs/flac media-libs/libvorbis media-libs/libogg
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/squeezeslave-1.1_p309.tar.xz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7ef1f6e19b2089a2a8740b98cc7d5a79
+_md5_=7839ac46e14129b5e250b879c9dc12e6

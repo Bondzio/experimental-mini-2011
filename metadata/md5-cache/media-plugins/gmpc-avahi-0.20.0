@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 net-dns/avahi[dbus] dev-util/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
+DEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 net-dns/avahi[dbus] virtual/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
 DESCRIPTION=This plugin discovers avahi enabled mpd servers
 EAPI=3
 HOMEPAGE=http://gmpc.wikia.com/wiki/GMPC_PLUGIN_AVAHI
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 net-dns/avahi[dbus]
 SLOT=0
 SRC_URI=http://download.sarine.nl/Programs/gmpc/0.20.0/gmpc-avahi-0.20.0.tar.gz
-_md5_=352fc7ca1b985b3d72624d029d40994c
+_md5_=6b5c0ac4b85fe3d32618f0bd69e53801

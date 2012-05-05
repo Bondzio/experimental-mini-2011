@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-libs/libcdio-0.71[-minimal] !minimal? ( dev-libs/popt ) xml? ( >=dev-libs/libxml2-2.5.11 ) dev-util/pkgconfig
+DEPEND=>=dev-libs/libcdio-0.71[-minimal] !minimal? ( dev-libs/popt ) xml? ( >=dev-libs/libxml2-2.5.11 ) virtual/pkgconfig
 DESCRIPTION=GNU VCDimager
 EAPI=2
 HOMEPAGE=http://www.vcdimager.org/
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/libcdio-0.71[-minimal] !minimal? ( dev-libs/popt ) xml? ( >=d
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.vcdimager.org/pub/vcdimager/vcdimager-0.7/vcdimager-0.7.23.tar.gz
-_md5_=f01f11fd04097aac19194860bc27c974
+_md5_=422814e7ffe9769785c003166ff7d7b7

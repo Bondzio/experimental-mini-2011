@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=nls? ( virtual/libintl ) dev-util/pkgconfig doc? ( app-doc/doxygen ) nls? ( sys-devel/gettext )
+DEPEND=nls? ( virtual/libintl ) virtual/pkgconfig doc? ( app-doc/doxygen ) nls? ( sys-devel/gettext )
 DESCRIPTION=Library for parsing, editing, and saving EXIF data
 EAPI=4
 HOMEPAGE=http://libexif.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/libexif/libexif-0.6.20.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4e675cd6c4e2c68d614a22d9349a13ec
+_md5_=75edb65123ee9a9f40700747238010e1

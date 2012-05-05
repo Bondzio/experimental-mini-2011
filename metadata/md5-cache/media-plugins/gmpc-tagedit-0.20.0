@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=media-sound/gmpc-0.20.0 media-libs/taglib dev-libs/libxml2 dev-util/pkgconfig dev-util/gob nls? ( dev-util/intltool sys-devel/gettext )
+DEPEND=>=media-sound/gmpc-0.20.0 media-libs/taglib dev-libs/libxml2 virtual/pkgconfig dev-util/gob nls? ( dev-util/intltool sys-devel/gettext )
 DESCRIPTION=This plugin allows you to edit tags in your library
 EAPI=3
 HOMEPAGE=http://gmpc.wikia.com/wiki/GMPC_PLUGIN_TAGEDIT
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/gmpc-0.20.0 media-libs/taglib dev-libs/libxml2
 SLOT=0
 SRC_URI=mirror://sourceforge/musicpd/gmpc-tagedit-0.20.0.tar.gz
-_md5_=d01e772ce1441a5f4f42f7059201803b
+_md5_=273fb1dfcb1b9492d19587780dc9ba0d

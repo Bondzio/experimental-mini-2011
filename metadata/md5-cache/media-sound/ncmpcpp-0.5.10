@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst
-DEPEND=sys-libs/ncurses[unicode?] >=media-libs/libmpdclient-2.1 curl? ( net-misc/curl ) visualizer? ( fftw? ( sci-libs/fftw:3.0 ) ) iconv? ( virtual/libiconv ) taglib? ( media-libs/taglib ) dev-util/pkgconfig
+DEPEND=sys-libs/ncurses[unicode?] >=media-libs/libmpdclient-2.1 curl? ( net-misc/curl ) visualizer? ( fftw? ( sci-libs/fftw:3.0 ) ) iconv? ( virtual/libiconv ) taglib? ( media-libs/taglib ) virtual/pkgconfig
 DESCRIPTION=An ncurses mpd client, ncmpc clone with some new features, written in C++
 EAPI=4
 HOMEPAGE=http://unkart.ovh.org/ncmpcpp
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/ncurses[unicode?] >=media-libs/libmpdclient-2.1 curl? ( net-mis
 SLOT=0
 SRC_URI=http://unkart.ovh.org/ncmpcpp/ncmpcpp-0.5.10.tar.bz2
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2cca16c6050eeeab810f2d170e2b7598
+_md5_=96835d52706753cd0fad23f2b72a43fd

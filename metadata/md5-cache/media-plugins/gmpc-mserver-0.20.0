@@ -1,5 +1,5 @@
 DEFINED_PHASES=install
-DEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 media-libs/taglib net-libs/libmicrohttpd dev-util/pkgconfig
+DEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 media-libs/taglib net-libs/libmicrohttpd virtual/pkgconfig
 DESCRIPTION=This plugin allows you to play local files on a remote or local mpd server
 EAPI=4
 HOMEPAGE=http://gmpc.wikia.com/wiki/GMPC_PLUGIN_MSERVER
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/gmpc-0.20.0 dev-libs/libxml2 media-libs/taglib net-libs/libmicrohttpd
 SLOT=0
 SRC_URI=mirror://sourceforge/musicpd/gmpc-mserver-0.20.0.tar.gz
-_md5_=a3a38793f0a2e29d3db08d01fed3b888
+_md5_=3dd0cbf4c7af9ceefd3f201771a02d97

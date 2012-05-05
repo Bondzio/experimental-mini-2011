@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=app-text/libwpd:0.9 app-text/libwpg:0.2 media-libs/lcms:2 sys-libs/zlib dev-util/pkgconfig sys-devel/libtool doc? ( app-doc/doxygen ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
+DEPEND=app-text/libwpd:0.9 app-text/libwpg:0.2 media-libs/lcms:2 sys-libs/zlib virtual/pkgconfig sys-devel/libtool doc? ( app-doc/doxygen ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
 DESCRIPTION=Library parsing the Corel cdr documents
 EAPI=4
 HOMEPAGE=http://www.freedesktop.org/wiki/Software/libcdr
@@ -8,4 +8,4 @@ LICENSE=LGPL-2.1
 RDEPEND=app-text/libwpd:0.9 app-text/libwpg:0.2 media-libs/lcms:2 sys-libs/zlib
 SLOT=0
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f18f9ac70642bf2843e2277be8ace079
+_md5_=7d77cac235261155ff6a383c32d3d7cf

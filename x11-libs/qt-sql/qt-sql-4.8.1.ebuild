@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/qt-sql/qt-sql-4.8.1.ebuild,v 1.2 2012/04/29 11:55:49 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/qt-sql/qt-sql-4.8.1.ebuild,v 1.3 2012/05/05 15:36:11 pesa Exp $
 
 EAPI=4
 
-inherit qt4-build
+inherit multilib qt4-build
 
 DESCRIPTION="The SQL module for the Qt toolkit"
 SLOT="4"
@@ -45,12 +45,12 @@ pkg_setup() {
 
 src_configure() {
 	myconf+="
-		$(qt_use firebird sql-ibase plugin)
-		$(qt_use freetds sql-tds plugin)
-		$(qt_use mysql sql-mysql plugin) $(use mysql && echo "-I${EPREFIX}/usr/include/mysql -L${EPREFIX}/usr/$(get_libdir)/mysql")
-		$(qt_use odbc sql-odbc plugin) $(use odbc && echo "-I${EPREFIX}/usr/include/iodbc")
-		$(qt_use postgres sql-psql plugin) $(use postgres && echo "-I${EPREFIX}/usr/include/postgresql/pgsql")
-		$(qt_use sqlite sql-sqlite plugin) $(use sqlite && echo -system-sqlite)
+		$(qt_use firebird sql-ibase  plugin)
+		$(qt_use freetds  sql-tds    plugin)
+		$(qt_use mysql    sql-mysql  plugin) $(use mysql && echo "-I${EPREFIX}/usr/include/mysql -L${EPREFIX}/usr/$(get_libdir)/mysql")
+		$(qt_use odbc     sql-odbc   plugin) $(use odbc && echo "-I${EPREFIX}/usr/include/iodbc")
+		$(qt_use postgres sql-psql   plugin) $(use postgres && echo "-I${EPREFIX}/usr/include/postgresql/pgsql")
+		$(qt_use sqlite   sql-sqlite plugin) $(use sqlite && echo -system-sqlite)
 		-no-sql-db2
 		-no-sql-oci
 		-no-sql-sqlite2

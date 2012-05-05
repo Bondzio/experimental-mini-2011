@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure
-DEPEND=>=dev-libs/popt-1.14 >=media-libs/libexif-0.6.20 dev-util/pkgconfig
+DEPEND=>=dev-libs/popt-1.14 >=media-libs/libexif-0.6.20 virtual/pkgconfig
 DESCRIPTION=Small CLI util to show EXIF infos hidden in JPEG files
 EAPI=4
 HOMEPAGE=http://libexif.sourceforge.net/
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/popt-1.14 >=media-libs/libexif-0.6.20
 SLOT=0
 SRC_URI=mirror://sourceforge/libexif/exif-0.6.20.tar.gz
-_md5_=6d2260f85e157a5ae884e3d7ed46f60b
+_md5_=9cadc2f266c87ce723373b2b71ff81bd

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=media-sound/gmpc-11.8.16 dev-libs/libxml2 x11-libs/libnotify dev-util/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
+DEPEND=>=media-sound/gmpc-11.8.16 dev-libs/libxml2 x11-libs/libnotify virtual/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
 DESCRIPTION=This plugin sends an announcement to the notification daemon on song change
 EAPI=4
 HOMEPAGE=http://gmpc.wikia.com/wiki/GMPC_PLUGIN_LIBNOTIFY
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/gmpc-11.8.16 dev-libs/libxml2 x11-libs/libnotify
 SLOT=0
 SRC_URI=mirror://sourceforge/musicpd/gmpc-libnotify-11.8.16.tar.gz
-_md5_=47e8756070995079920c11370823bfaf
+_md5_=d8bf150991dae2bd53d59a30b3014b62

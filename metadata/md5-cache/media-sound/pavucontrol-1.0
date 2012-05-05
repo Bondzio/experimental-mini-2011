@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure
-DEPEND=>=dev-cpp/gtkmm-3.0:3.0 >=dev-libs/libsigc++-2.2:2 >=media-libs/libcanberra-0.16[gtk3] >=media-sound/pulseaudio-0.9.16[glib] virtual/freedesktop-icon-theme dev-util/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
+DEPEND=>=dev-cpp/gtkmm-3.0:3.0 >=dev-libs/libsigc++-2.2:2 >=media-libs/libcanberra-0.16[gtk3] >=media-sound/pulseaudio-0.9.16[glib] virtual/freedesktop-icon-theme virtual/pkgconfig nls? ( dev-util/intltool sys-devel/gettext )
 DESCRIPTION=Pulseaudio Volume Control, GTK based mixer for Pulseaudio
 EAPI=4
 HOMEPAGE=http://freedesktop.org/software/pulseaudio/pavucontrol/
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=>=dev-cpp/gtkmm-3.0:3.0 >=dev-libs/libsigc++-2.2:2 >=media-libs/libcanberra-0.16[gtk3] >=media-sound/pulseaudio-0.9.16[glib] virtual/freedesktop-icon-theme
 SLOT=0
 SRC_URI=http://freedesktop.org/software/pulseaudio/pavucontrol/pavucontrol-1.0.tar.xz
-_md5_=331b2f20e6cea5b146aa2a7fdc771b9d
+_md5_=6adaba5bef05ce2f36f5edbd14bca436

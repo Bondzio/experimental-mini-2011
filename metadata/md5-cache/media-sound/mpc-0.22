@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=media-libs/libmpdclient-2.2 iconv? ( virtual/libiconv ) dev-util/pkgconfig
+DEPEND=>=media-libs/libmpdclient-2.2 iconv? ( virtual/libiconv ) virtual/pkgconfig
 DESCRIPTION=A commandline client for Music Player Daemon (media-sound/mpd)
 EAPI=4
 HOMEPAGE=http://www.musicpd.org
@@ -10,4 +10,4 @@ RDEPEND=>=media-libs/libmpdclient-2.2 iconv? ( virtual/libiconv )
 SLOT=0
 SRC_URI=mirror://sourceforge/musicpd/mpc-0.22.tar.bz2
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
-_md5_=8aa82ab0f561b8c164f7195f863b7d3a
+_md5_=836a66d47d906e31db7b50feb47ba571

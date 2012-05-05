@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install setup
-DEPEND=virtual/ffmpeg >=media-libs/libvorbis-1.1 >=media-libs/libogg-1.1 >=media-libs/libtheora-1.1[encode] kate? ( >=media-libs/libkate-0.3.7 ) dev-util/pkgconfig >=dev-util/scons-1
+DEPEND=virtual/ffmpeg >=media-libs/libvorbis-1.1 >=media-libs/libogg-1.1 >=media-libs/libtheora-1.1[encode] kate? ( >=media-libs/libkate-0.3.7 ) virtual/pkgconfig >=dev-util/scons-1
 DESCRIPTION=A simple converter to create Ogg Theora files.
 EAPI=2
 HOMEPAGE=http://www.v2v.cc/~j/ffmpeg2theora/
@@ -9,4 +9,4 @@ LICENSE=GPL-3
 RDEPEND=virtual/ffmpeg >=media-libs/libvorbis-1.1 >=media-libs/libogg-1.1 >=media-libs/libtheora-1.1[encode] kate? ( >=media-libs/libkate-0.3.7 )
 SLOT=0
 SRC_URI=http://www.v2v.cc/~j/ffmpeg2theora/downloads/ffmpeg2theora-0.28.tar.bz2
-_md5_=8671dce978259e583c4d46daa7d2202b
+_md5_=03b42408bdb243fb605333b977df9bc5

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst prepare setup
-DEPEND=jack? ( media-sound/jack-audio-connection-kit ) alsa? ( >=media-libs/alsa-lib-0.9 ) media-libs/libsndfile media-libs/freeglut virtual/opengl virtual/glu x11-libs/gtk+:2 truetype? ( media-libs/ftgl media-fonts/corefonts ) app-admin/eselect-audicle sys-devel/bison sys-devel/flex dev-util/pkgconfig
+DEPEND=jack? ( media-sound/jack-audio-connection-kit ) alsa? ( >=media-libs/alsa-lib-0.9 ) media-libs/libsndfile media-libs/freeglut virtual/opengl virtual/glu x11-libs/gtk+:2 truetype? ( media-libs/ftgl media-fonts/corefonts ) app-admin/eselect-audicle sys-devel/bison sys-devel/flex virtual/pkgconfig
 DESCRIPTION=A Context-sensitive, On-the-fly Audio Programming Environ/mentality
 EAPI=2
 HOMEPAGE=http://audicle.cs.princeton.edu/
@@ -10,4 +10,4 @@ RDEPEND=jack? ( media-sound/jack-audio-connection-kit ) alsa? ( >=media-libs/als
 SLOT=0
 SRC_URI=http://audicle.cs.princeton.edu/release/files/audicle-1.0.0.6.tgz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=3b7afec6886f4aa0b4e74675b6361b57
+_md5_=7c8e5847f33cdd36f0254e246d791387

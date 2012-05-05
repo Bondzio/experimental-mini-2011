@@ -1,5 +1,5 @@
 DEFINED_PHASES=prepare
-DEPEND=dev-libs/fribidi dev-libs/libxml2 >=media-libs/freetype-2 media-libs/libdvdread media-libs/libpng graphicsmagick? ( media-gfx/graphicsmagick ) !graphicsmagick? ( >=media-gfx/imagemagick-5.5.7.14 ) dev-util/pkgconfig
+DEPEND=dev-libs/fribidi dev-libs/libxml2 >=media-libs/freetype-2 media-libs/libdvdread media-libs/libpng graphicsmagick? ( media-gfx/graphicsmagick ) !graphicsmagick? ( >=media-gfx/imagemagick-5.5.7.14 ) virtual/pkgconfig
 DESCRIPTION=Tools for generating DVD files to be played on standalone DVD players
 EAPI=4
 HOMEPAGE=http://dvdauthor.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/fribidi dev-libs/libxml2 >=media-libs/freetype-2 media-libs/lib
 SLOT=0
 SRC_URI=mirror://sourceforge/dvdauthor/dvdauthor-0.7.0.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=bf887a58885164ad39d8973404481043
+_md5_=d8f8356d6ef517dbe735c3008efa1f2a

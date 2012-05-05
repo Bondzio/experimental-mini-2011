@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv enca? ( app-i18n/enca ) dev-util/pkgconfig
+DEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv enca? ( app-i18n/enca ) virtual/pkgconfig
 DESCRIPTION=Library for SSA/ASS subtitles rendering
 EAPI=4
 HOMEPAGE=http://code.google.com/p/libass/
@@ -9,4 +9,4 @@ LICENSE=ISC
 RDEPEND=fontconfig? ( >=media-libs/fontconfig-2.4.2 ) >=media-libs/freetype-2.2.1:2 virtual/libiconv enca? ( app-i18n/enca )
 SLOT=0
 SRC_URI=http://libass.googlecode.com/files/libass-0.9.12.tar.xz
-_md5_=5826ed1d0923035565f8e5c60fcb321d
+_md5_=fa3b417d51c689b7fe36b670f34a1bf2

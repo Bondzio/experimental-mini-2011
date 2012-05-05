@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure prepare
-DEPEND=>=dev-libs/glib-2.10:2 virtual/ffmpeg >=media-libs/libsdl-1.2.10 >=media-libs/libpng-1.4 media-libs/libv4l >=media-libs/portaudio-19_pre sys-fs/udev >=x11-libs/gtk+-2.14:2 pulseaudio? ( >=media-sound/pulseaudio-0.9.15 ) dev-util/pkgconfig sys-devel/gettext || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/glib-2.10:2 virtual/ffmpeg >=media-libs/libsdl-1.2.10 >=media-libs/libpng-1.4 media-libs/libv4l >=media-libs/portaudio-19_pre sys-fs/udev >=x11-libs/gtk+-2.14:2 pulseaudio? ( >=media-sound/pulseaudio-0.9.15 ) virtual/pkgconfig sys-devel/gettext || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GTK+ UVC Viewer
 EAPI=4
 HOMEPAGE=http://guvcview.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.10:2 virtual/ffmpeg >=media-libs/libsdl-1.2.10 >=media
 SLOT=0
 SRC_URI=mirror://berlios/guvcview/guvcview-src-1.5.0.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=cf7d7dae9ae50f9bccf9e8f62964575e
+_md5_=12cb01f366a09842980e2710083391a4

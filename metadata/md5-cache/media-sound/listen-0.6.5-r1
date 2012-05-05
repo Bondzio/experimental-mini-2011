@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/dbus-python dev-python/gst-python:0.10 >=dev-python/pygtk-2.8:2 dev-python/pyinotify || ( dev-python/python-xlib dev-python/egg-python ) dev-python/pywebkitgtk dev-python/pyxdg media-libs/libgpod[python] media-libs/mutagen media-plugins/gst-plugins-meta:0.10 x11-libs/libnotify cdda? ( dev-python/python-musicbrainz ) gnome? ( dev-python/gnome-vfs-python ) app-text/docbook2X dev-util/intltool dev-util/pkgconfig sys-devel/gettext !media-radio/ax25-apps || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=dev-python/dbus-python dev-python/gst-python:0.10 >=dev-python/pygtk-2.8:2 dev-python/pyinotify || ( dev-python/python-xlib dev-python/egg-python ) dev-python/pywebkitgtk dev-python/pyxdg media-libs/libgpod[python] media-libs/mutagen media-plugins/gst-plugins-meta:0.10 x11-libs/libnotify cdda? ( dev-python/python-musicbrainz ) gnome? ( dev-python/gnome-vfs-python ) app-text/docbook2X dev-util/intltool virtual/pkgconfig sys-devel/gettext !media-radio/ax25-apps || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=A music management and playback for GTK+ based desktops
 EAPI=3
 HOMEPAGE=http://www.listen-project.org/
@@ -10,4 +10,4 @@ RDEPEND=dev-python/dbus-python dev-python/gst-python:0.10 >=dev-python/pygtk-2.8
 SLOT=0
 SRC_URI=http://download.listen-project.org/0.6/listen-0.6.5.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=dcc713d0a2cf614ae4a0823c1984324e
+_md5_=1a328f036c20bcc6d790cfbf007647fc

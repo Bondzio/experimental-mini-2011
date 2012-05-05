@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=dev-libs/glib-2.16:2 dev-util/pkgconfig
+DEPEND=>=dev-libs/glib-2.16:2 virtual/pkgconfig
 DESCRIPTION=A library handling connections to a MPD server
 EAPI=3
 HOMEPAGE=http://gmpc.wikia.com/wiki/Libmpd
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.16:2
 SLOT=0
 SRC_URI=http://download.sarine.nl/Programs/gmpc/0.20.0/libmpd-0.20.0.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=80c24d3fb1e54d9b8e30b607e8ee4c7f
+_md5_=6d6b67579aca605a7be01aeaeb9d92bb

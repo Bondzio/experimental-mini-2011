@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=sys-libs/zlib dev-util/pkgconfig app-arch/unzip
+DEPEND=sys-libs/zlib virtual/pkgconfig app-arch/unzip
 DESCRIPTION=optimize APNG images
 EAPI=3
 HOMEPAGE=http://sourceforge.net/projects/apng/
@@ -9,4 +9,4 @@ RDEPEND=sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/apng/APNG_Optimizer/1.0/apngopt-1.0-src.zip
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=fa54145a954ec38aa5dfec5cf99b084a
+_md5_=ad384d2b3a3a124f8eb26f9848759770

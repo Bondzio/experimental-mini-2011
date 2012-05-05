@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=x11-libs/gtk+:2 media-sound/pulseaudio sndfile? ( media-libs/libsndfile ) dev-util/pkgconfig nls? ( sys-devel/gettext )
+DEPEND=x11-libs/gtk+:2 media-sound/pulseaudio sndfile? ( media-libs/libsndfile ) virtual/pkgconfig nls? ( sys-devel/gettext )
 DESCRIPTION=a metronome application supporting different meters and speeds ranging
 EAPI=4
 HOMEPAGE=http://www.antcom.de/gtick
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://www.antcom.de/gtick/download/gtick-0.5.0.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=670161c34918bc344343e5003addc927
+_md5_=4fdd76a312710e82586969cc21df11a4

@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-backup/deja-dup/deja-dup-22.1.ebuild,v 1.2 2012/05/03 02:06:09 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-backup/deja-dup/deja-dup-22.1.ebuild,v 1.4 2012/05/05 15:24:06 jlec Exp $
 
 EAPI=4
 
 GNOME2_LA_PUNT="yes"
 
-inherit autotools eutils gnome2
+inherit eutils gnome2
 
 DESCRIPTION="Simple backup tool using duplicity back-end"
 HOMEPAGE="https://launchpad.net/deja-dup/"
@@ -49,13 +49,6 @@ pkg_setup() {
 		--disable-static"
 	export VALAC=$(type -p valac-0.14)
 }
-
-#src_prepare() {
-#	epatch \
-#		"${FILESDIR}"/${PN}-21.2-linguas.patch
-#	eautoreconf
-#	gnome2_src_prepare
-#}
 
 src_install() {
 	gnome2_src_install
