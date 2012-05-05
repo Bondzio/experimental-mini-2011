@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.
 SLOT=0
 SRC_URI=http://pyglet.googlecode.com/files/pyglet-1.1.4.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
-_md5_=4f5904eb400bf43e7dc6d7eabf159236
+_md5_=10abc92632e3fc0fa63b616dac5c9019
