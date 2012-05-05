@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=cdio? ( >=dev-libs/libcdio-0.83 ) dev-util/pkgconfig
+DEPEND=cdio? ( >=dev-libs/libcdio-0.83 ) virtual/pkgconfig
 DESCRIPTION=Libburn is an open-source library for reading, mastering and writing optical discs.
 EAPI=4
 HOMEPAGE=http://libburnia-project.org
@@ -9,4 +9,4 @@ LICENSE=GPL-2
 RDEPEND=cdio? ( >=dev-libs/libcdio-0.83 )
 SLOT=0
 SRC_URI=http://files.libburnia-project.org/releases/libburn-1.2.0.tar.gz
-_md5_=0bf243912102ef6b6d242026c641a859
+_md5_=4c0f0d2787f585e8928a192abbd378c9

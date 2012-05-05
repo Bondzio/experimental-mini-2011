@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst preinst
-DEPEND=>=sys-devel/autoconf-2.68 sys-devel/automake sys-devel/gcc dev-util/pkgconfig dev-libs/glib:2 x11-libs/libX11 dev-libs/libbsd sys-apps/help2man
+DEPEND=>=sys-devel/autoconf-2.68 sys-devel/automake sys-devel/gcc virtual/pkgconfig dev-libs/glib:2 x11-libs/libX11 dev-libs/libbsd sys-apps/help2man
 DESCRIPTION=Service providing elegant and stable means of managing Optimus graphics chipsets
 EAPI=4
 HOMEPAGE=https://github.com/Bumblebee-Project/Bumblebee
@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( video_cards_nouveau video_cards_nvidia )
 SLOT=0
 SRC_URI=mirror://github/Bumblebee-Project/Bumblebee/Bumblebee-3.0.tar.gz
 _eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=2ab6d9501e04c2aba4d90afe0861d61f
+_md5_=f2b0ab190ba3b756dba970f97df6d6f6

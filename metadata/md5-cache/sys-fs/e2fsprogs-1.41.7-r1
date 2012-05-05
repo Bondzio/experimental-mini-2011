@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install preinst setup unpack
-DEPEND=~sys-libs/e2fsprogs-libs-1.41.7 nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) dev-util/pkgconfig sys-apps/texinfo
+DEPEND=~sys-libs/e2fsprogs-libs-1.41.7 nls? ( virtual/libintl ) nls? ( sys-devel/gettext ) virtual/pkgconfig sys-apps/texinfo
 DESCRIPTION=Standard EXT2/EXT3/EXT4 filesystem utilities
 HOMEPAGE=http://e2fsprogs.sourceforge.net/
 IUSE=nls elibc_FreeBSD
@@ -9,4 +9,4 @@ RDEPEND=~sys-libs/e2fsprogs-libs-1.41.7 nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/e2fsprogs/e2fsprogs-1.41.7.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=5f525c6c56d261d87acb44d4070abfce
+_md5_=dfda4a297d4fb5ad28f9f402160f33aa

@@ -1,5 +1,5 @@
 DEFINED_PHASES=install unpack
-DEPEND=>=media-libs/freetype-2.1 X? ( x11-libs/libXaw x11-libs/libICE ) >=sys-apps/sed-4 dev-util/pkgconfig || ( >=sys-devel/automake-1.11.1 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=media-libs/freetype-2.1 X? ( x11-libs/libXaw x11-libs/libICE ) >=sys-apps/sed-4 virtual/pkgconfig || ( >=sys-devel/automake-1.11.1 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Library for handling OpenType fonts (OTF)
 HOMEPAGE=http://www.m17n.org/libotf/
 IUSE=X
@@ -9,4 +9,4 @@ RDEPEND=>=media-libs/freetype-2.1 X? ( x11-libs/libXaw x11-libs/libICE )
 SLOT=0
 SRC_URI=http://www.m17n.org/libotf/libotf-0.9.12.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=83c588d013f84f5274327b00f561eb59
+_md5_=eb778e1f06eb846baa1f587bf34f4073

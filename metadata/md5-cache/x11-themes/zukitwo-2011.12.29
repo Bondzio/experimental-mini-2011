@@ -5,7 +5,7 @@ EAPI=4
 HOMEPAGE=http://gnome-look.org/content/show.php/Zukitwo?content=140562
 KEYWORDS=amd64 x86
 LICENSE=GPL-3
-RDEPEND=media-fonts/ubuntu-font-family >=x11-libs/gtk+-2.10:2 >=x11-libs/gtk+-3.2:3 >=x11-themes/gtk-engines-murrine-0.98.1.1 >=x11-themes/gtk-engines-unico-1.0.1
+RDEPEND=media-fonts/ubuntu-font-family >=x11-libs/gtk+-2.10:2 >=x11-libs/gtk+-3.2:3 >=x11-themes/gtk-engines-murrine-0.98.1.1 >=x11-themes/gtk-engines-unico-1.0.1 !x11-themes/zukitwo-shell
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~tetromino/distfiles/zukitwo/zukitwo-2011.12.29.tar.xz
-_md5_=acb29d5a0fcf5c3e46dcbbec6b10d7cb
+_md5_=9799623e8a3d621d75c015599d101708

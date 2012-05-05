@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare
-DEPEND=>=dev-libs/glib-2.12 emacs? ( virtual/emacs ) dev-util/pkgconfig
+DEPEND=>=dev-libs/glib-2.12 emacs? ( virtual/emacs ) virtual/pkgconfig
 DESCRIPTION=Command line utilities to work with desktop menu entries
 EAPI=4
 HOMEPAGE=http://freedesktop.org/wiki/Software/desktop-file-utils
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.12 emacs? ( virtual/emacs )
 SLOT=0
 SRC_URI=http://www.freedesktop.org/software/desktop-file-utils/releases/desktop-file-utils-0.19.tar.xz
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862
-_md5_=04ef6496fc181809edfc35865fef2f61
+_md5_=534982062609f3acc2b69967bb3295db

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test
-DEPEND=>=sys-apps/dbus-1.4.16 >=dev-libs/glib-2.26 >=dev-libs/expat-2 dev-util/pkgconfig doc? ( dev-util/gtk-doc )
+DEPEND=>=sys-apps/dbus-1.4.16 >=dev-libs/glib-2.26 >=dev-libs/expat-2 virtual/pkgconfig doc? ( dev-util/gtk-doc )
 DESCRIPTION=D-Bus bindings for glib
 EAPI=4
 HOMEPAGE=http://dbus.freedesktop.org/
@@ -10,4 +10,4 @@ RDEPEND=>=sys-apps/dbus-1.4.16 >=dev-libs/glib-2.26 >=dev-libs/expat-2
 SLOT=0
 SRC_URI=http://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.98.tar.gz
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=624e0fd6bb75a1fe1d392bb2c1fc92ef
+_md5_=4a5af1832a8ea3742013066a1f6e81b7

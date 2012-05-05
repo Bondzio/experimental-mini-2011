@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-themes/zukitwo/zukitwo-2011.12.29.ebuild,v 1.3 2012/04/29 16:24:17 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/zukitwo/zukitwo-2011.12.29.ebuild,v 1.4 2012/05/05 01:33:17 tetromino Exp $
 
 EAPI="4"
 
@@ -18,7 +18,8 @@ RDEPEND="media-fonts/ubuntu-font-family
 	>=x11-libs/gtk+-2.10:2
 	>=x11-libs/gtk+-3.2:3
 	>=x11-themes/gtk-engines-murrine-0.98.1.1
-	>=x11-themes/gtk-engines-unico-1.0.1"
+	>=x11-themes/gtk-engines-unico-1.0.1
+	!x11-themes/zukitwo-shell"
 DEPEND="app-arch/xz-utils"
 
 # INSTALL file contains useful information for the end user

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=>=gnome-base/gnome-panel-2.8 =gnome-base/libgnome-2* =gnome-base/libgnomeui-2* dev-util/pkgconfig test? ( ruby_targets_ruby18? ( >=dev-ruby/ruby-gnome2-0.19.4[ruby_targets_ruby18] >=dev-ruby/ruby-glib2-0.19.4[ruby_targets_ruby18] >=dev-ruby/ruby-gtk2-0.19.4[ruby_targets_ruby18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
+DEPEND=>=gnome-base/gnome-panel-2.8 =gnome-base/libgnome-2* =gnome-base/libgnomeui-2* virtual/pkgconfig test? ( ruby_targets_ruby18? ( >=dev-ruby/ruby-gnome2-0.19.4[ruby_targets_ruby18] >=dev-ruby/ruby-glib2-0.19.4[ruby_targets_ruby18] >=dev-ruby/ruby-gtk2-0.19.4[ruby_targets_ruby18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
 DESCRIPTION=Ruby Panel-applet bindings
 EAPI=2
 HOMEPAGE=http://ruby-gnome2.sourceforge.jp/
@@ -10,4 +10,4 @@ RDEPEND=|| ( gnome-base/gnome-panel[bonobo] <gnome-base/gnome-panel-2.32 ) =gnom
 SLOT=0
 SRC_URI=mirror://sourceforge/ruby-gnome2/ruby-gnome2-all-0.19.4.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	ruby-ng-gnome2	58c37d4bdc70210cb005bfe500988da6	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=0a8568f8090274ef84d9ea31d642981a
+_md5_=a5208ceb43a02ef5f6b1375f206b42dc

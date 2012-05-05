@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm preinst unpack
-DEPEND=>=dev-libs/glib-2 dev-util/pkgconfig sys-devel/flex >=sys-apps/sed-4
+DEPEND=>=dev-libs/glib-2 virtual/pkgconfig sys-devel/flex >=sys-apps/sed-4
 DESCRIPTION=Preprocessor for making GTK+ objects with inline C code
 HOMEPAGE=http://www.5z.com/jirka/gob.html
 IUSE=debug
@@ -9,4 +9,4 @@ RDEPEND=>=dev-libs/glib-2
 SLOT=2
 SRC_URI=mirror://gnome/sources/gob2/2.0/gob2-2.0.15.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	5d4a25502fe0b03044583a0c2335e823	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=74cf2a8dae836341aa77ca9a7c424b52
+_md5_=a50a419369e9519e97b90cb2ce9dcebb

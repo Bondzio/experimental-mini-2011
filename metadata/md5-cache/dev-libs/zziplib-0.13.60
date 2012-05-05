@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare test
-DEPEND=sys-libs/zlib sdl? ( >=media-libs/libsdl-1.2.6 ) >=dev-lang/python-2.4 dev-util/pkgconfig test? ( app-arch/zip )
+DEPEND=sys-libs/zlib sdl? ( >=media-libs/libsdl-1.2.6 ) >=dev-lang/python-2.4 virtual/pkgconfig test? ( app-arch/zip )
 DESCRIPTION=Lightweight library used to easily extract data from files archived in a single zip file
 EAPI=2
 HOMEPAGE=http://zziplib.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=sys-libs/zlib sdl? ( >=media-libs/libsdl-1.2.6 )
 SLOT=0
 SRC_URI=mirror://sourceforge/zziplib/zziplib-0.13.60.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=13df5d04a58da5ddf4d03f665ad57654
+_md5_=41729ba81323c1b3a0ea7ed78c34692b

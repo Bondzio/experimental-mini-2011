@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=dev-libs/glib:2 ssl? ( dev-libs/openssl ) dev-util/pkgconfig
+DEPEND=dev-libs/glib:2 ssl? ( dev-libs/openssl ) virtual/pkgconfig
 DESCRIPTION=RFC3261 compliant SIP User-Agent library
 EAPI=4
 HOMEPAGE=http://sofia-sip.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=dev-libs/glib:2 ssl? ( dev-libs/openssl )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/sofia-sip/sofia-sip-1.12.11.tar.gz
-_md5_=2757e38891e1e944d8f0ab663b063445
+_md5_=d1a8f263ce63d0da7e52964c4e15e8c0

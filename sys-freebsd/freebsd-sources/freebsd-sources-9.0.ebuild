@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-sources/freebsd-sources-9.0.ebuild,v 1.2 2012/04/26 13:17:10 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-sources/freebsd-sources-9.0.ebuild,v 1.6 2012/05/04 18:12:40 aballier Exp $
 
 inherit bsdmk freebsd flag-o-matic
 
@@ -33,9 +33,12 @@ src_unpack() {
 		-e 's:^VERSION=.*:VERSION="${TYPE} ${BRANCH} ${REVISION}":' \
 		"${S}/conf/newvers.sh"
 
+	# workaround a kernel panic for amd64-fbsd, bug #408019
+	use amd64-fbsd && epatch "${FILESDIR}/${PN}-9.0-disable-optimizations.patch"
+
 	# __FreeBSD_cc_version comes from FreeBSD's gcc.
-	# on 8.2-RELEASE it's 800001.
-	sed -e "s:-D_KERNEL:-D_KERNEL -D__FreeBSD_cc_version=800001:g" \
+	# on 9.0-RELEASE it's 900001.
+	sed -e "s:-D_KERNEL:-D_KERNEL -D__FreeBSD_cc_version=900001:g" \
 		-i "${S}/conf/kern.pre.mk" \
 		-i "${S}/conf/kmod.mk" || die "Couldn't set __FreeBSD_cc_version"
 
@@ -56,14 +59,6 @@ src_unpack() {
 	# vop_whiteout to tmpfs, so it can be used as an overlay
 	# unionfs filesystem over the cd9660 readonly filesystem.
 	epatch "${FILESDIR}/${PN}-7.0-tmpfs_whiteout_stub.patch"
-
-	# See http://sourceware.org/bugzilla/show_bug.cgi?id=5391
-	# ld doesn't provide symbols constructed as the __start_set_(s) ones
-	# are on FreeBSD modules.
-	# This patch adds code to generate a list of these and adds them
-	# as undefined references to ld's commandline to get them.
-	# Without this kernel modules will not load.
-	#epatch "${FILESDIR}/${PN}-7.1-binutils_link.patch"
 }
 
 src_compile() {

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install setup
-DEPEND=dev-scheme/guile =dev-libs/glib-2* virtual/libffi dev-scheme/guile-lib dev-util/pkgconfig dev-util/indent
+DEPEND=dev-scheme/guile =dev-libs/glib-2* virtual/libffi dev-scheme/guile-lib virtual/pkgconfig dev-util/indent
 DESCRIPTION=A tool for exporting C libraries into Scheme
 HOMEPAGE=http://www.nongnu.org/g-wrap/
 KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
@@ -8,4 +8,4 @@ RDEPEND=dev-scheme/guile =dev-libs/glib-2* virtual/libffi dev-scheme/guile-lib
 SLOT=0
 SRC_URI=http://download.savannah.gnu.org/releases/g-wrap/g-wrap-1.9.13.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ebc3cd726305c80903c7e04356e9dead
+_md5_=c59e1a4381d8691e1e72481c2f732281

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=sys-fs/udev-143 dev-util/pkgconfig
+DEPEND=>=sys-fs/udev-143 virtual/pkgconfig
 DESCRIPTION=Lean and small library for ATA S.M.A.R.T. hard disks
 EAPI=4
 HOMEPAGE=http://0pointer.de/blog/projects/being-smart.html
@@ -9,4 +9,4 @@ LICENSE=LGPL-2.1
 RDEPEND=>=sys-fs/udev-143
 SLOT=0
 SRC_URI=http://0pointer.de/public/libatasmart-0.18.tar.gz
-_md5_=bf7ffe8f495a42f904a5fbc027a9a99d
+_md5_=f4dc43067be08639617153ac7d342bd7

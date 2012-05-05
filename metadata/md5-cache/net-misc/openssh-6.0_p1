@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst preinst prepare setup test
-DEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/libselinux-1.28 ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( net-nds/openldap ) libedit? ( dev-libs/libedit ) >=dev-libs/openssl-0.9.6d >=sys-libs/zlib-1.2.3 tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) X? ( x11-apps/xauth ) userland_GNU? ( virtual/shadow ) dev-util/pkgconfig virtual/os-headers sys-devel/autoconf || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
+DEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/libselinux-1.28 ) skey? ( >=sys-auth/skey-1.1.5-r1 ) ldap? ( net-nds/openldap ) libedit? ( dev-libs/libedit ) >=dev-libs/openssl-0.9.6d >=sys-libs/zlib-1.2.3 tcpd? ( >=sys-apps/tcp-wrappers-7.6 ) X? ( x11-apps/xauth ) userland_GNU? ( virtual/shadow ) virtual/pkgconfig virtual/os-headers sys-devel/autoconf || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=Port of OpenBSD's free SSH release
 EAPI=2
 HOMEPAGE=http://www.openssh.org/
@@ -10,4 +10,4 @@ RDEPEND=pam? ( virtual/pam ) kerberos? ( virtual/krb5 ) selinux? ( >=sys-libs/li
 SLOT=0
 SRC_URI=mirror://openbsd/OpenSSH/portable/openssh-6.0p1.tar.gz hpn? ( http://www.psc.edu/networking/projects/hpn-ssh/openssh-6.0p1-hpn13v12.diff.gz mirror://gentoo/openssh-6.0p1-hpn13v12.diff.gz ) ldap? ( mirror://gentoo/openssh-lpk-6.0p1-0.3.14.patch.gz ) X509? ( http://roumenpetrov.info/openssh/x509-7.1/openssh-6.0p1+x509-7.1.diff.gz )
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=cf9933df64b860b1affb07a8fcc64d4f
+_md5_=ac04106ab2e5cd5cda1e84586b9734d0

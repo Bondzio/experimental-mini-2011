@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-libs/openssl-0.9.7 gnutls? ( >=net-libs/gnutls-1.4.4 ) nss? ( dev-libs/nss ) dev-util/pkgconfig doc? ( >=app-doc/doxygen-1.4.7 )
+DEPEND=>=dev-libs/openssl-0.9.7 gnutls? ( >=net-libs/gnutls-1.4.4 ) nss? ( dev-libs/nss ) virtual/pkgconfig doc? ( >=app-doc/doxygen-1.4.7 )
 DESCRIPTION=PKCS#11 helper library
 EAPI=4
 HOMEPAGE=http://www.opensc-project.org/opensc/wiki/pkcs11-helper
@@ -9,4 +9,4 @@ LICENSE=|| ( BSD GPL-2 )
 RDEPEND=>=dev-libs/openssl-0.9.7 gnutls? ( >=net-libs/gnutls-1.4.4 ) nss? ( dev-libs/nss )
 SLOT=0
 SRC_URI=http://www.opensc-project.org/files/pkcs11-helper/pkcs11-helper-1.09.tar.bz2
-_md5_=f4ee50974bc2703fd20b48f0f6f28ab6
+_md5_=51c330f9b1343307d29fab325bb81a0b

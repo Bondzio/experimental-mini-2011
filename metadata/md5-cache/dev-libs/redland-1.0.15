@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare test
-DEPEND=>=sys-devel/libtool-2.2.6b mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-3* ) berkdb? ( sys-libs/db ) xml? ( dev-libs/libxml2 ) !xml? ( dev-libs/expat ) ssl? ( dev-libs/openssl ) || ( >=media-libs/raptor-2.0.7:2 <media-libs/raptor-2.0.7:2[xml?] ) >=dev-libs/rasqal-0.9.26 postgres? ( dev-db/postgresql-base ) iodbc? ( dev-db/libiodbc ) odbc? ( dev-db/unixODBC ) dev-util/pkgconfig
+DEPEND=>=sys-devel/libtool-2.2.6b mysql? ( virtual/mysql ) sqlite? ( =dev-db/sqlite-3* ) berkdb? ( sys-libs/db ) xml? ( dev-libs/libxml2 ) !xml? ( dev-libs/expat ) ssl? ( dev-libs/openssl ) || ( >=media-libs/raptor-2.0.7:2 <media-libs/raptor-2.0.7:2[xml?] ) >=dev-libs/rasqal-0.9.26 postgres? ( dev-db/postgresql-base ) iodbc? ( dev-db/libiodbc ) odbc? ( dev-db/unixODBC ) virtual/pkgconfig
 DESCRIPTION=High-level interface for the Resource Description Framework
 EAPI=4
 HOMEPAGE=http://librdf.org/
@@ -10,4 +10,4 @@ RDEPEND=>=sys-devel/libtool-2.2.6b mysql? ( virtual/mysql ) sqlite? ( =dev-db/sq
 SLOT=0
 SRC_URI=http://download.librdf.org/source/redland-1.0.15.tar.gz
 _eclasses_=libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
-_md5_=2e3e65dec84911d16953fb56a66d40e4
+_md5_=a68046aac95e548b3cadb17c917016b8

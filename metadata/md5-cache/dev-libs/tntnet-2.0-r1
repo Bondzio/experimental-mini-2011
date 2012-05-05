@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=dev-libs/cxxtools-2.0 sys-libs/zlib[minizip] ssl? ( gnutls? ( >=net-libs/gnutls-1.2.0 dev-libs/libgcrypt ) !gnutls? ( dev-libs/openssl ) ) dev-util/pkgconfig examples? ( app-arch/zip ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/cxxtools-2.0 sys-libs/zlib[minizip] ssl? ( gnutls? ( >=net-libs/gnutls-1.2.0 dev-libs/libgcrypt ) !gnutls? ( dev-libs/openssl ) ) virtual/pkgconfig examples? ( app-arch/zip ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Modular, multithreaded webapplicationserver extensible with C++
 EAPI=3
 HOMEPAGE=http://www.tntnet.org/index.hms
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/cxxtools-2.0 sys-libs/zlib[minizip] ssl? ( gnutls? ( >=net-li
 SLOT=0
 SRC_URI=http://www.tntnet.org/download/tntnet-2.0.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	5f623f5a211fb1b2d84d88ee49959a54	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f2e36e94011472c2a3da8bf2c946f608
+_md5_=d2bc3489bbe780a54d29d96849741cec

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-libs/libburn-1.0.0 >=dev-libs/libisofs-1.0.0 acl? ( virtual/acl ) readline? ( sys-libs/readline ) xattr? ( sys-apps/attr ) zlib? ( sys-libs/zlib ) dev-util/pkgconfig
+DEPEND=>=dev-libs/libburn-1.0.0 >=dev-libs/libisofs-1.0.0 acl? ( virtual/acl ) readline? ( sys-libs/readline ) xattr? ( sys-apps/attr ) zlib? ( sys-libs/zlib ) virtual/pkgconfig
 DESCRIPTION=Enables creation and expansion of ISO-9660 filesystems on all CD/DVD media supported by libburn
 EAPI=2
 HOMEPAGE=http://libburnia-project.org/
@@ -9,4 +9,4 @@ LICENSE=GPL-2 GPL-3
 RDEPEND=>=dev-libs/libburn-1.0.0 >=dev-libs/libisofs-1.0.0 acl? ( virtual/acl ) readline? ( sys-libs/readline ) xattr? ( sys-apps/attr ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=http://files.libburnia-project.org/releases/libisoburn-1.0.0.pl00.tar.gz
-_md5_=874ba27bf0b78f1743525bbd790b01bc
+_md5_=daa9829716a7934536d1f49a390bcc7b

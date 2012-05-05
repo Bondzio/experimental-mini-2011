@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install setup test
-DEPEND=>=media-libs/gstreamer-0.10.26 >=media-libs/gst-plugins-base-0.10.26 >=dev-libs/glib-2.16:2 >=net-libs/libnice-0.1.0[gstreamer] python? ( >=dev-python/pygobject-2.16:2 >=dev-python/gst-python-0.10.10 ) upnp? ( net-libs/gupnp-igd ) test? ( media-plugins/gst-plugins-vorbis media-plugins/gst-plugins-speex ) dev-util/pkgconfig =dev-lang/python-2*
+DEPEND=>=media-libs/gstreamer-0.10.26 >=media-libs/gst-plugins-base-0.10.26 >=dev-libs/glib-2.16:2 >=net-libs/libnice-0.1.0[gstreamer] python? ( >=dev-python/pygobject-2.16:2 >=dev-python/gst-python-0.10.10 ) upnp? ( net-libs/gupnp-igd ) test? ( media-plugins/gst-plugins-vorbis media-plugins/gst-plugins-speex ) virtual/pkgconfig =dev-lang/python-2*
 DESCRIPTION=Farsight2 is an audio/video conferencing framework specifically designed for Instant Messengers.
 EAPI=3
 HOMEPAGE=http://farsight.freedesktop.org/
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://farsight.freedesktop.org/releases/farsight2/farsight2-0.0.26.tar.gz
 _eclasses_=python	cb2844e25e38800105564c14a716c805
-_md5_=90cccfedec72dcabd3b11baca5a70da5
+_md5_=4c8eb780c9b7c7bfc997dcb7751fb632

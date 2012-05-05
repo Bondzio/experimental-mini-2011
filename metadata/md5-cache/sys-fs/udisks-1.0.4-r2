@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup test
-DEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.20 >=dev-libs/libatasmart-0.18 >=sys-auth/polkit-0.104-r1 >=sys-apps/dbus-1.4.20 >=sys-apps/sg3_utils-1.27.20090411 >=sys-block/parted-3 || ( >=sys-fs/udev-171-r5[gudev] <sys-fs/udev-171[extras] ) >=sys-fs/lvm2-2.02.66 app-text/docbook-xsl-stylesheets dev-libs/libxslt dev-util/intltool dev-util/pkgconfig
+DEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.20 >=dev-libs/libatasmart-0.18 >=sys-auth/polkit-0.104-r1 >=sys-apps/dbus-1.4.20 >=sys-apps/sg3_utils-1.27.20090411 >=sys-block/parted-3 || ( >=sys-fs/udev-171-r5[gudev] <sys-fs/udev-171[extras] ) >=sys-fs/lvm2-2.02.66 app-text/docbook-xsl-stylesheets dev-libs/libxslt dev-util/intltool virtual/pkgconfig
 DESCRIPTION=Daemon providing interfaces to work with storage devices
 EAPI=4
 HOMEPAGE=http://www.freedesktop.org/wiki/Software/udisks
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.20 >=dev-libs/libatasmart-0.
 SLOT=0
 SRC_URI=http://hal.freedesktop.org/releases/udisks-1.0.4.tar.gz
 _eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	74d9118e657da5b1db0c36f5dea88e57	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=b77ab59d19159dce253b8d8dfe03df21
+_md5_=0e222baa95afdb2099998c77f108e35b

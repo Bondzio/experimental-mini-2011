@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=net-libs/libgssglue dev-util/pkgconfig
+DEPEND=net-libs/libgssglue virtual/pkgconfig
 DESCRIPTION=implementation of rpcsec_gss (RFC 2203) for secure rpc communication
 EAPI=2
 HOMEPAGE=http://www.citi.umich.edu/projects/nfsv4/linux/
@@ -8,4 +8,4 @@ LICENSE=BSD
 RDEPEND=net-libs/libgssglue
 SLOT=0
 SRC_URI=http://www.citi.umich.edu/projects/nfsv4/linux/librpcsecgss/librpcsecgss-0.19.tar.gz
-_md5_=897dc0e70474ac99a3090199135ddf2d
+_md5_=384e7f2dfe22796b4f4e87f277cf7185
