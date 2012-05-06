@@ -4,10 +4,10 @@ DESCRIPTION=Snownews, a text-mode RSS/RDF newsreader
 EAPI=3
 HOMEPAGE=http://snownews.kcore.de/
 IUSE=unicode
-KEYWORDS=amd64 ~ppc ~sparc x86 ~amd64-linux ~x86-linux ~x86-macos
+KEYWORDS=amd64 ppc ~sparc x86 ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/libxml2-2.5.6 >=sys-libs/ncurses-5.3 dev-libs/openssl dev-perl/XML-LibXML dev-perl/libwww-perl
 SLOT=0
 SRC_URI=http://home.kcore.de/~kiza/software/snownews/download/snownews-1.5.12.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=06a584b2f8f119eb1640aff632ebdd0a
+_md5_=dc1cfbbf64496f7bf9b49a4f9452c5f1

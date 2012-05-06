@@ -1,14 +1,13 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.16 2012/05/04 08:31:43 nelchael Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-distutils-ng.eclass,v 1.19 2012/05/06 03:20:45 floppym Exp $
 
 # @ECLASS: python-distutils-ng
 # @MAINTAINER:
 # Python herd <python@gentoo.org>
 # @AUTHOR:
 # Author: Krzysztof Pawlik <nelchael@gentoo.org>
-# @BLURB: An eclass for installing Python packages using distutils with proper
-# support for multiple Python slots.
+# @BLURB: Install Python packages using distutils.
 # @DESCRIPTION:
 # The Python eclass is designed to allow an easier installation of Python
 # packages and their incorporation into the Gentoo Linux system.
@@ -28,6 +27,7 @@
 #    directory (so it will not contain any implementation-specific files)
 
 # @ECLASS-VARIABLE: PYTHON_COMPAT
+# @DEFAULT_UNSET
 # @DESCRIPTION:
 # This variable contains a space separated list of implementations (see above) a
 # package is compatible to. It must be set before the `inherit' call. The
@@ -42,11 +42,13 @@ if [[ -z "${PYTHON_COMPAT}" ]]; then
 fi
 
 # @ECLASS-VARIABLE: PYTHON_OPTIONAL
+# @DEFAULT_UNSET
 # @DESCRIPTION:
 # Set the value to "yes" to make the dependency on a Python interpreter
 # optional.
 
 # @ECLASS-VARIABLE: PYTHON_DISABLE_COMPILATION
+# @DEFAULT_UNSET
 # @DESCRIPTION:
 # Set the value to "yes" to skip compilation and/or optimization of Python
 # modules.
@@ -181,7 +183,7 @@ _python-distutils-ng_default_distutils_install() {
 
 	unset PYTHONDONTWRITEBYTECODE
 	[[ -n "${PYTHON_DISABLE_COMPILATION}" ]] && compile_flags="--no-compile"
-	"${PYTHON}" setup.py install ${compile_flags} --root="${D%/}/" || die
+	"${PYTHON}" setup.py install ${compile_flags} --root="${D}" || die
 }
 
 # @FUNCTION: python-distutils-ng_redoscript
@@ -193,7 +195,7 @@ _python-distutils-ng_default_distutils_install() {
 python-distutils-ng_redoscript() {
 	local sbn="$(basename "${1}")"
 	mkdir -p "${T}/_${sbn}/" || die "failed to create directory"
-	mv "${D}/${1}" "${T}/_${sbn}/${sbn}" || die "failed to move file"
+	mv "${D}${1}" "${T}/_${sbn}/${sbn}" || die "failed to move file"
 	python-distutils-ng_doscript "${T}/_${sbn}/${sbn}" "${2}"
 }
 

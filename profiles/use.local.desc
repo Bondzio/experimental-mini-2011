@@ -4499,6 +4499,7 @@ net-wireless/gnuradio:dot - create dot graphs in documentation
 net-wireless/gnuradio:fcd - enable Funcube Dongle source block
 net-wireless/gnuradio:grc - enable GNU Radio Companion graphical tool to design signal processing flow graphs
 net-wireless/gnuradio:utils - install scripts to enable viewing and analysis of files produced by flow graphs
+net-wireless/gnuradio:wavelet - enable wavelet signal processing blocks
 net-wireless/hostapd:debug - Enables debugging
 net-wireless/hostapd:logwatch - Install support files for sys-app/logwatch
 net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-lang/php dev-vcs/git
+DESCRIPTION=A rake/make clone for PHP 5.3
+EAPI=2
+HOMEPAGE=https://github.com/jaz303/phake
+IUSE=bash-completion
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86
+LICENSE=MIT
+RDEPEND=dev-lang/php
+SLOT=0
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_md5_=13fd781bbd8eaf9719745692903b2b9f
