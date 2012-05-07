@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-physics/espresso/espresso-3.1.0.ebuild,v 1.3 2012/04/08 11:11:55 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-physics/espresso/espresso-3.1.0.ebuild,v 1.5 2012/05/06 23:08:00 ottxor Exp $
 
 EAPI=4
 
@@ -19,7 +19,7 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-macos"
 IUSE="X doc examples fftw mpi packages test -tk"
 REQUIRED_USE="tk? ( X )"
 
@@ -29,6 +29,7 @@ RDEPEND="
 	dev-lang/tcl
 	fftw? ( sci-libs/fftw:3.0 )
 	mpi? ( virtual/mpi )
+	packages? ( dev-tcltk/tcllib )
 	tk? ( >=dev-lang/tk-8.4.18-r1 )
 	X? ( x11-libs/libX11 )"
 
@@ -36,6 +37,7 @@ DEPEND="${RDEPEND}
 	dev-lang/python
 	doc? (
 		|| ( <app-doc/doxygen-1.7.6.1[-nodot] >=app-doc/doxygen-1.7.6.1[dot] )
+		dev-texlive/texlive-latexextra
 		virtual/latex-base )"
 
 DOCS=( AUTHORS NEWS README ChangeLog )
@@ -44,6 +46,11 @@ src_prepare() {
 	autotools-utils_src_prepare
 	eautoreconf
 	restore_config myconfig.h
+	rm -f src/myconfig-final.h
+	if [[ ${CHOST} == *-darwin* ]]; then
+		#tclline uses stty, which has different exit code on Darwin
+		sed -i '/source.*tclline/s/^/#/' "scripts/init.tcl" || die
+	fi
 }
 
 src_configure() {

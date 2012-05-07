@@ -899,7 +899,6 @@ app-text/texlive:games - Add typesetting support for games (chess, etc.) (dev-te
 app-text/texlive:graphics - Add support for several graphics packages (pgf, tikz,...)
 app-text/texlive:humanities - Add LaTeX support for the humanities (dev-texlive/texlive-humanities)
 app-text/texlive:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
-app-text/texlive:latex3 - Add support for LaTeX3 (dev-texlive/texlive-latex3)
 app-text/texlive:luatex - Add extra support for luatex
 app-text/texlive:music - Add support for music typesetting (dev-texlive/texlive-music)
 app-text/texlive:omega - Add omega packages (dev-texlive/texlive-omega)
