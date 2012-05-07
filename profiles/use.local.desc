@@ -641,6 +641,7 @@ app-misc/graphlcd-base:g15 - Add support for app-misc/g15daemon driver (e.g. Log
 app-misc/lcd-stuff:mpd - Add support for display of mpd controlled music (media-libs/libmpd)
 app-misc/lcd4linux:mpd - Add support for display of mpd controlled music (media-libs/libmpd)
 app-misc/lcdproc:ftdi - Enable support for FTDI connections in some selected LCD_DEVICES (currently hd44780)
+app-misc/lcdproc:hid - Enable HID support using libhid
 app-misc/lcdproc:irman - Enable support for IRMan (media-libs/libirman)
 app-misc/lcdproc:nfs - Adds support for NFS file system
 app-misc/lcdproc:seamless-hbars - Try to avoid gaps in horizontal bars
@@ -688,11 +689,13 @@ app-misc/tasque:rememberthemilk - Allows you to use http://www.rememberthemilk.c
 app-misc/tomboy:galago - Add support for the galago desktop presence framework (dev-dotnet/galago-sharp)
 app-misc/towitoko:moneyplex - Makes libtowitoko work for the moneyplex home banking software
 app-misc/tracker:applet - Build tracker monitor applet
+app-misc/tracker:cue - Enable cue sheet parsing
 app-misc/tracker:firefox-bookmarks - Install bookmark data miner plugin for www-client/firefox and www-client/firefox-bin
 app-misc/tracker:flickr - Build flickr data miner
 app-misc/tracker:gsf - Enable gnome-extra/libgsf based data extractor and for ODT.
 app-misc/tracker:introspection - Use dev-libs/gobject-introspection for introspection
 app-misc/tracker:iptc - Enable extraction of IPTC data from pictures
+app-misc/tracker:iso - Enable extraction of metadata from ISO disk images
 app-misc/tracker:laptop - Make tracker power management aware
 app-misc/tracker:nautilus - Enable tracker to integrate with gnome-base/nautilus by providing entries in its context menu
 app-misc/tracker:playlist - Add support for playlists

@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/libwbxml/libwbxml-0.10.9.ebuild,v 1.4 2011/12/21 08:46:07 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libwbxml/libwbxml-0.10.9.ebuild,v 1.5 2012/05/07 09:41:36 s4t4n Exp $
 
 EAPI=4
 
