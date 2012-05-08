@@ -10,4 +10,4 @@ RDEPEND=gtk? ( =dev-cpp/gtkmm-2* ) dev-util/pkgconfig
 SLOT=0
 SRC_URI=mirror://sourceforge/paco/paco-2.0.9.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=988e793e55e9accd143aec10f750a2ba
+_md5_=e3451ecbc06f3a895595693d6458ae14
