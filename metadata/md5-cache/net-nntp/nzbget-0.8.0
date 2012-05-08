@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst preinst prepare
+DEPEND=dev-libs/libxml2 ncurses? ( sys-libs/ncurses ) parcheck? ( app-arch/libpar2 dev-libs/libsigc++:2 ) ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A command-line based binary newsgrapper supporting .nzb files
+EAPI=4
+HOMEPAGE=http://nzbget.sourceforge.net/
+IUSE=debug gnutls ncurses parcheck ssl
+KEYWORDS=~alpha ~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 ncurses? ( sys-libs/ncurses ) parcheck? ( app-arch/libpar2 dev-libs/libsigc++:2 ) ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/nzbget/nzbget-0.8.0.tar.gz
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=95fdc02e0d2e38715758d2f0568ff15d

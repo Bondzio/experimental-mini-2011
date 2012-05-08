@@ -1717,7 +1717,6 @@ dev-util/kdevplatform:reviewboard - Enable reviewboard support
 dev-util/metro:ccache - Enable support for ccache
 dev-util/metro:git - Enable support for git snapshots
 dev-util/metro:threads - Enable support for pbzip2 tarball packing/unpacking
-dev-util/mono-tools:webkit - Use net-libs/webkit-gtk for rendering.
 dev-util/monodevelop:git - Enable Git version control support
 dev-util/nemiver:memoryview - Enable the optional hexadecimal memory inspection with app-editors/ghex.
 dev-util/nsis:config-log - Enable the logging facility (useful in debugging installers)
@@ -1977,7 +1976,6 @@ gnome-base/nautilus:tracker - Add support for app-misc/tracker search
 gnome-extra/avant-window-navigator:gconf - Enable GConf as configuration backend
 gnome-extra/avant-window-navigator:vala - Enable installation of dev-lang/vala binding
 gnome-extra/avant-window-navigator-extras:gconf - Enable GConf as configuration backend
-gnome-extra/avant-window-navigator-extras:webkit - Enable support for net-libs/webkit-gtk
 gnome-extra/evolution-data-server:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization
 gnome-extra/evolution-data-server:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-extra/evolution-data-server:vala - Build dev-lang/vala bindings
@@ -2045,7 +2043,6 @@ gnome-extra/zeitgeist-extensions:memprofile - Memory profiling extension
 gnome-extra/zeitgeist-extensions:sqldebug - debug zeitgeists sql statements
 gnome-extra/zeitgeist-extensions:tracker - Notify Tracker on events
 gnome-extra/zenity:compat - Installs gdialog for compatibility with older shell scripts which uses dev-lang/perl
-gnome-extra/zenity:webkit - Enable HTML rendering using net-libs/webkit-gtk
 gnustep-apps/cdplayer:preferences - Use gnustep-apps/preferences for preferences setting
 gnustep-apps/cdplayer:systempreferences - Use gnustep-apps/systempreferences for preferences setting
 gnustep-apps/gnumail:emoticon - Enable extra Emoticon Bundle to see smiley's in e-mail messages
@@ -2195,7 +2192,6 @@ mail-client/alpine:topal - Enable support for net-mail/topal
 mail-client/balsa:crypt - Adds support for GnuPG encryption
 mail-client/balsa:gtkspell - Use gtkspell for dictionary support
 mail-client/balsa:rubrica - Adds support for app-office/rubrica addressbook
-mail-client/balsa:webkit - Enable webkit based html renderer
 mail-client/claws-mail:bogofilter - Build mail-filter/bogofilter plugin
 mail-client/claws-mail:dillo - Enables support for inline HTTP email viewing with a plugin (which depends on the www-client/dillo browser)
 mail-client/claws-mail:smime - Build plugin for S/MIME support
@@ -2392,7 +2388,6 @@ media-gfx/freewrl:libeai - Build EAI C library
 media-gfx/freewrl:osc - Allows for OSC-based control and communication between multiple freewrl instances
 media-gfx/gimp:gs - Enable Ghostscript support (app-text/ghostscript-gpl)
 media-gfx/gimp:smp - Enable support for multiprocessors
-media-gfx/gimp:webkit - Enable the webkit rendering engine
 media-gfx/gmic:graphicsmagick - Enable support for many common image file formats using the GraphicsMagick++ library
 media-gfx/gmic:opencv - Enable support for webcams using the OpenCV library
 media-gfx/graphicsmagick:fpx - Enable FlashPix support with media-libs/libfpx
@@ -5493,13 +5488,12 @@ x11-libs/mx:glade - Build the dev-util/glade catalog files
 x11-libs/mx:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/pango:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/qt-assistant:c++0x - Build Qt using the C++11 standard
-x11-libs/qt-assistant:compat - Build the extra compatibility package required by a few packages. More information at http://labs.qt.nokia.com/2010/06/22/qt-assistant-compat-version-available-as-extra-source-package/
+x11-libs/qt-assistant:compat - Build the extra compatibility layer required by a few packages, see http://labs.qt.nokia.com/2010/06/22/qt-assistant-compat-version-available-as-extra-source-package/
 x11-libs/qt-assistant:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-assistant:glib - Enable dev-libs/glib eventloop support
 x11-libs/qt-assistant:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-assistant:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-assistant:trace - Build the qttracereplay utility which is required to play drawings recorded with the trace graphicssystem engine
-x11-libs/qt-assistant:webkit - Build the WebView QML element
 x11-libs/qt-bearer:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-bearer:connman - Enable ConnMan-based bearer plugin
 x11-libs/qt-bearer:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
@@ -5521,7 +5515,7 @@ x11-libs/qt-declarative:exceptions - Add support for exceptions - like catching 
 x11-libs/qt-declarative:private-headers - Install Qt declarative private headers required by Qt-creator QmlDesigner and QmlInspector plugins"
 x11-libs/qt-declarative:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-declarative:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
-x11-libs/qt-declarative:webkit - Build the WebView QML element
+x11-libs/qt-declarative:webkit - Build the WebView QML component
 x11-libs/qt-demo:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-demo:dbus - Build QtDBus examples and demos
 x11-libs/qt-demo:declarative - Build QtDeclarative examples and demos

@@ -1,8 +1,8 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-cdr/acetoneiso/acetoneiso-2.2.1.ebuild,v 1.6 2011/03/26 16:43:51 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/acetoneiso/acetoneiso-2.3.ebuild,v 1.1 2012/05/07 22:41:40 kensington Exp $
 
-EAPI=2
+EAPI=4
 MY_P=${PN}_${PV}
 
 inherit flag-o-matic qt4-r2
@@ -14,13 +14,14 @@ SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="kde"
 
-DEPEND="x11-libs/qt-gui:4
-	x11-libs/qt-core:4
+DEPEND="x11-libs/qt-core:4
+	x11-libs/qt-dbus:4
+	x11-libs/qt-gui:4
 	x11-libs/qt-webkit:4
-	x11-libs/qt-xmlpatterns:4
-	media-libs/phonon"
+	kde? ( media-libs/phonon )
+	!kde? ( || ( x11-libs/qt-phonon:4 media-libs/phonon ) )"
 RDEPEND="${DEPEND}
 	sys-fs/fuseiso"
 
@@ -31,9 +32,10 @@ DOCSDIR="${WORKDIR}/${MY_P}"
 
 src_prepare() {
 	sed -i -e 's:unrar-nonfree:unrar:g' sources/compress.h locale/*.ts || die
+	sed -i -e 's:include <Phonon/:include <:' sources/* || die "phonon sed failed"
 }
 
 src_configure() {
-	append-flags -I/usr/include/KDE
+	append-flags -I/usr/include/KDE/Phonon
 	qt4-r2_src_configure
 }
