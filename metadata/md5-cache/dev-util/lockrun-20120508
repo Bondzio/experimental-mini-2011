@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Lockrun - runs cronjobs with overrun protection
+EAPI=4
+HOMEPAGE=http://www.unixwiz.net/tools/lockrun.html
+KEYWORDS=~amd64 ~hppa ~x86
+LICENSE=public-domain
+SLOT=0
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_md5_=035c8929b553f8dc70dd65f310c7bece

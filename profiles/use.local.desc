@@ -786,6 +786,7 @@ app-office/lyx:rcs - Add support for revision control via dev-vcs/rcs
 app-office/lyx:rtf - Add support for RTF import/export packages
 app-office/lyx:xetex - Add support for XeTeX typesetting
 app-office/rabbit:gs - Ghostscript support (app-text/ghostscript-gpl)
+app-office/rabbit:markdown - Markdown support (dev-ruby/kramdown)
 app-office/rabbit:tgif - tgif support (media-gfx/tgif)
 app-office/scribus:linguas_cs_CZ - Language support for cs_CZ
 app-office/scribus:linguas_da_DK - Language support for da_DK
@@ -1521,6 +1522,7 @@ dev-python/django-extensions:vcard - Export your users email addresses to the vc
 dev-python/django-tastypie:bip - An optional serialiser dev-python/biplist
 dev-python/django-tastypie:digest - Library to aid in implementing HTTP Digest Authentication
 dev-python/django-tastypie:lxml - An optional serialiser dev-python/lxml
+dev-python/django-tastypie:oauth - Adds OAuth authentication support
 dev-python/django-tastypie:yaml - An optional serialiser dev-python/yaml
 dev-python/docutils:glep - Install support for GLEPs
 dev-python/icalendar:doc - Generate examples and other extra documentation
