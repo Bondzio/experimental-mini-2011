@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/argus/argus-3.0.6.ebuild,v 1.1 2012/04/17 16:18:02 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/argus/argus-3.0.6.ebuild,v 1.3 2012/05/09 15:32:35 jer Exp $
 
 EAPI="4"
 
@@ -13,15 +13,20 @@ SRC_URI="http://qosient.com/argus/dev/${P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
-IUSE="debug tcpd"
+IUSE="debug sasl tcpd"
 
-#	sasl? ( >=dev-libs/cyrus-sasl-2.1.22 )
-RDEPEND="net-libs/libpcap
-	tcpd? ( >=sys-apps/tcp-wrappers-7.6 )"
+RDEPEND="
+	net-libs/libpcap
+	sys-libs/zlib
+	sasl? ( dev-libs/cyrus-sasl )
+	tcpd? ( >=sys-apps/tcp-wrappers-7.6 )
+"
 
-DEPEND="${RDEPEND}
+DEPEND="
+	${RDEPEND}
 	>=sys-devel/bison-1.28
-	>=sys-devel/flex-2.4.6"
+	>=sys-devel/flex-2.4.6
+"
 
 src_prepare() {
 	sed -e 's:/etc/argus.conf:/etc/argus/argus.conf:' \
@@ -42,7 +47,7 @@ src_prepare() {
 
 src_configure() {
 	use debug && touch .debug # enable debugging
-	econf $(use_with tcpd wrappers)
+	econf $(use_with tcpd wrappers) $(use_with sasl)
 }
 
 src_compile() {

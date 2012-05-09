@@ -4,10 +4,10 @@ DESCRIPTION=Google C++ Testing Framework
 EAPI=4
 HOMEPAGE=http://code.google.com/p/googletest/
 IUSE=examples threads static-libs
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~ppc-macos
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~ppc-macos
 LICENSE=BSD
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://googletest.googlecode.com/files/gtest-1.6.0.zip
 _eclasses_=python	e03920f970092173a9b2b8a53024992b
-_md5_=1d1732e86a9ecb5808c451447392e60a
+_md5_=43b2b0b431164eac27b013f163cdc514

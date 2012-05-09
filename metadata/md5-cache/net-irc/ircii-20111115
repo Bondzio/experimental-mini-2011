@@ -10,4 +10,4 @@ RDEPEND=sys-libs/ncurses virtual/libiconv !!net-irc/irc-client
 SLOT=0
 SRC_URI=ftp://ircii.warped.com/pub/ircII/ircii-20111115.tar.bz2 ftp://ircii.warped.com/pub/ircII/old/ircii-20111115.tar.bz2
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=824df4be52a3afcd1abfbb96fa98eab0
+_md5_=6dd9b404bb097d6ccc89c99a6dad5714

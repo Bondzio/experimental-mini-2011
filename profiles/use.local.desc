@@ -921,6 +921,7 @@ app-text/webgen:exif - Enable EXIF information in image galleries
 app-text/webgen:highlight - Enable syntax highlighting for certain plugins
 app-text/webgen:markdown - Markdown support
 app-text/webgen:thumbnail - Thumbnail creation support using rmagick
+app-text/wgetpaste:lodgeit-default - Set one of lodgeit-like (ex http://paste.pocoo.org) services as default
 app-text/wklej:vim - Install the vim plugin allowing to paste through ':Wklej'.
 app-text/wpd2odt:gsf - Add support for structured files using gnome-extra/libgsf
 app-text/wpd2odt:visio - Add support for visio format using media-libs/libvisio
@@ -3339,6 +3340,7 @@ net-analyzer/2ping:md5 - Enable md5 hash check.
 net-analyzer/2ping:server - Install the server init scripts.
 net-analyzer/2ping:sha - Enable sha1 or sha256 check.
 net-analyzer/aimsniff:http - Install the WAS (Web AIM Sniff) frontend
+net-analyzer/argus-clients:ft - Enable support for flow packets through net-analyzer/flow-tools
 net-analyzer/barnyard:sguil - Enable sguil (The Analyst Console for Network Security Monitoring) support
 net-analyzer/barnyard2:aruba - Enable Aruba support
 net-analyzer/barnyard2:gre - Enable GRE support

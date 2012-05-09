@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.143 2012/05/09 02:09:50 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.165 2012/05/09 17:12:45 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -11,10 +11,6 @@
 #            mask
 # Keep it simple, we do not really care about the date or who masked it, we want
 # to be easily able to determine what we need to keyword.
-
-# net-dns/hesiod
-sys-freebsd/freebsd-lib hesiod
-app-editors/emacs hesiod
 
 # sys-devel/gdb
 dev-libs/glib test
@@ -29,26 +25,17 @@ net-misc/curl curl_ssl_axtls
 net-misc/curl ldap
 net-misc/dhcp ldap
 gnome-base/gconf ldap
-
-# gnome-base/gnome-keyring
-sys-auth/pambase gnome-keyring
+app-crypt/gnupg ldap
 
 # sys-auth/pam_krb5
 sys-auth/pambase pam_krb5
-
-# dev-libs/icu
-dev-libs/libxml2 icu
-dev-db/sqlite icu
-dev-libs/boost icu
-
-# dev-vcs/git
-sys-devel/gettext git
 
 # virtual/jre virtual/jdk
 sys-devel/gettext java
 
 # dev-lang/mono
 net-dns/libidn mono
+media-libs/libcaca mono
 
 # =dev-lang/python-2*[tk]
 dev-python/epydoc X
@@ -61,21 +48,6 @@ net-libs/libpcap libnl
 
 # net-libs/libtirpc
 sys-apps/xinetd rpc
-
-# app-text/passivetex
-# dev-tex/xmltex
-app-text/xmlto latex
-
-# app-text/docbook-sgml-utils[jadetex]
-media-libs/fontconfig doc
-
-# virtual/latex-base
-# dev-texlive/texlive-latexextra
-dev-python/epydoc latex
-
-# virtual/latex-base
-# app-text/dvipng
-dev-python/sphinx latex
 
 # media-gfx/graphviz
 app-text/asciidoc graphviz
@@ -90,12 +62,20 @@ dev-util/cmake qt4
 app-text/poppler qt4
 app-doc/doxygen qt4
 x11-libs/cairo qt4
+app-crypt/pinentry qt4
+
+# app-office/lyx
+dev-tex/latex-beamer lyx
 
 # x11-base/xorg-server[xvfb]
 # x11-apps/xhost
 dev-util/cmake test
 sys-apps/dbus test
 x11-libs/gtk+ test
+gnome-base/gnome-keyring test
+
+# gnome-base/gnome-keyring test
+gnome-base/libgnome-keyring test
 
 # dev-python/pygtk:2
 dev-python/twisted gtk
@@ -109,16 +89,26 @@ x11-libs/gtk+ cups
 
 # virtual/opengl
 # media-libs/freeglut
+# media-libs/ftgl
+media-libs/libcaca opengl
+
+# virtual/opengl
+# media-libs/freeglut
 media-libs/jasper opengl
 
 # virtual/opengl
 x11-libs/cairo opengl
+
+# virtual/opengl
+# virtual/glu
+media-libs/libsdl opengl
 
 # app-text/texlive[extra]
 app-doc/doxygen latex
 
 # dev-tex/latex2html
 dev-python/pyopenssl doc
+dev-tex/chktex doc
 
 # dev-util/source-highlight
 dev-util/gtk-doc highlight
@@ -132,3 +122,19 @@ x11-libs/gtk+ colord
 # sys-auth/polkit
 sys-auth/consolekit policykit
 gnome-base/gconf policykit
+
+# media-sound/pulseaudio
+media-libs/libsdl pulseaudio
+
+# media-libs/nas
+media-libs/libsdl nas
+
+# dev-vcs/subversion[-dso,perl]
+dev-vcs/git subversion
+
+# >=dev-python/pygtk-2.8
+# dev-python/pygtksourceview:2
+dev-vcs/git gtk
+
+# virtual/mysql
+sci-mathematics/glpk mysql
