@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm unpack
+DEPEND=virtual/ooo
+DESCRIPTION=LaTeX Equation Editor for LibreOffice
+EAPI=4
+HOMEPAGE=http://roland65.free.fr/texmaths/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=app-text/dvisvgm virtual/tex-base virtual/ooo
+SLOT=0
+SRC_URI=mirror://sourceforge/texmaths/TexMaths-0.34.oxt
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	office-ext	b36761227904399e182b7c510e1d2c16	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b66d02e47b6772071baaf53a9a0e08f7

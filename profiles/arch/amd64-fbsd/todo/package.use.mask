@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.125 2012/05/06 00:34:00 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.143 2012/05/09 02:09:50 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -14,6 +14,7 @@
 
 # net-dns/hesiod
 sys-freebsd/freebsd-lib hesiod
+app-editors/emacs hesiod
 
 # sys-devel/gdb
 dev-libs/glib test
@@ -27,6 +28,7 @@ net-misc/curl curl_ssl_axtls
 # net-nds/openldap
 net-misc/curl ldap
 net-misc/dhcp ldap
+gnome-base/gconf ldap
 
 # gnome-base/gnome-keyring
 sys-auth/pambase gnome-keyring
@@ -45,17 +47,6 @@ sys-devel/gettext git
 # virtual/jre virtual/jdk
 sys-devel/gettext java
 
-# app-emacs/po-mode
-sys-devel/gettext emacs
-
-# virtual/emacs
-dev-scheme/guile emacs
-dev-util/cscope emacs
-net-dns/libidn emacs
-dev-util/cmake emacs
-dev-util/gtk-doc emacs
-dev-util/desktop-file-utils emacs
-
 # dev-lang/mono
 net-dns/libidn mono
 
@@ -64,11 +55,6 @@ dev-python/epydoc X
 
 # dev-tcltk/blt
 dev-lang/python tk
-# dev-python/sphinx dev-python/python-docs:SLOT
-dev-lang/python doc
-
-# app-emacs/autoconf-mode
-sys-devel/autoconf emacs
 
 # dev-libs/libnl:1.1
 net-libs/libpcap libnl
@@ -87,6 +73,10 @@ media-libs/fontconfig doc
 # dev-texlive/texlive-latexextra
 dev-python/epydoc latex
 
+# virtual/latex-base
+# app-text/dvipng
+dev-python/sphinx latex
+
 # media-gfx/graphviz
 app-text/asciidoc graphviz
 app-doc/doxygen dot
@@ -94,9 +84,6 @@ dev-util/cppunit doc
 
 # sci-mathematics/glpk
 dev-libs/ppl lpsol
-
-# media-gfx/fontforge
-media-fonts/dejavu fontforge
 
 # x11-libs/qt-gui
 dev-util/cmake qt4
@@ -108,16 +95,17 @@ x11-libs/cairo qt4
 # x11-apps/xhost
 dev-util/cmake test
 sys-apps/dbus test
+x11-libs/gtk+ test
 
-# x11-libs/gtk+:2
-media-gfx/graphviz gtk
-app-text/ghostscript-gpl gtk
+# dev-python/pygtk:2
+dev-python/twisted gtk
 
 # media-libs/lasi
 media-gfx/graphviz lasi
 
 # net-print/cups
 app-text/ghostscript-gpl cups
+x11-libs/gtk+ cups
 
 # virtual/opengl
 # media-libs/freeglut
@@ -129,8 +117,18 @@ x11-libs/cairo opengl
 # app-text/texlive[extra]
 app-doc/doxygen latex
 
+# dev-tex/latex2html
+dev-python/pyopenssl doc
+
 # dev-util/source-highlight
 dev-util/gtk-doc highlight
 
 # sys-cluster/openmpi
 dev-libs/boost mpi
+
+# x11-misc/colord
+x11-libs/gtk+ colord
+
+# sys-auth/polkit
+sys-auth/consolekit policykit
+gnome-base/gconf policykit

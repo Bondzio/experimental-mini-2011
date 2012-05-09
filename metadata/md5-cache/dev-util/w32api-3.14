@@ -8,4 +8,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://sourceforge/mingw/w32api-3.14-mingw32-src.tar.gz
 _eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=25792d6d4e99b3cee3c39c6fe6d7adc9
+_md5_=f724a6fe71364f8638e39751406a811b
