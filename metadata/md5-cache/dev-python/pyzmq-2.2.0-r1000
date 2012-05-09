@@ -10,5 +10,5 @@ RDEPEND=>=net-libs/zeromq-2.2.0 tornado? ( ( python_abis_2.6? ( www-servers/torn
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=mirror://pypi/p/pyzmq/pyzmq-2.2.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
 _md5_=e9e64416c3fe95e2444af36e17317dd4

@@ -9,5 +9,5 @@ RDEPEND=dev-python/matplotlib dev-python/numpy =dev-lang/python-2*
 RESTRICT=test
 SLOT=0
 SRC_URI=http://scipy-cluster.googlecode.com/files/hcluster-0.2.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
 _md5_=6270ea639f0f3592bc5902a1a29ad455

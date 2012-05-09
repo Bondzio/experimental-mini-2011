@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-3 GPL-2 ) openssl
 RDEPEND=x11-libs/qt-gui:4[debug?] tor? ( net-misc/tor )
 SLOT=0
 SRC_URI=https://www.torproject.org/dist/vidalia/vidalia-0.2.17.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	bed618f914bb60a0f4356ae256b111b3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8419686fa948f83a4b412c1eb39ec7a2

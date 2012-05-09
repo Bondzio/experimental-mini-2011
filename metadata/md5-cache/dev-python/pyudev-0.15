@@ -10,5 +10,5 @@ RDEPEND=>=sys-fs/udev-151 pygobject? ( ( python_abis_2.6? ( dev-python/pygobject
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=mirror://pypi/p/pyudev/pyudev-0.15.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=32e40db382da38ea274d9d688da0de69

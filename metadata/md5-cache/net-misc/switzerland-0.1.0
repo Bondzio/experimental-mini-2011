@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=net-libs/libpcap =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/switzerland/switzerland-0.1.0.tgz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	cb2844e25e38800105564c14a716c805	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
 _md5_=2e86e35a9cc85e62975042a99dfd97be

@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=>=dev-python/py-1.4.0 dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/p/pycmd/pycmd-1.0.zip
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
 _md5_=7b67a578e596b0c1ec68791a89741b4d

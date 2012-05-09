@@ -10,5 +10,5 @@ RDEPEND=dev-python/pyasn1[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=mirror://pypi/p/pysnmp-apps/pysnmp-apps-0.3.2.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	cb2844e25e38800105564c14a716c805
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
 _md5_=31652bc1472f0b1bb72eb3693e9be4b7
