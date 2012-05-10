@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2 public-domain freedist
 RDEPEND=cdb? ( dev-db/cdb ) !app-i18n/skk-jisyo-extra !app-i18n/skk-jisyo-cdb
 SLOT=0
-_eclasses_=cvs	a8cc8178ae788d422bd500b4481cb5cc	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cvs	a8cc8178ae788d422bd500b4481cb5cc	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1fe9497dcc004dfce0f91306de10b43c

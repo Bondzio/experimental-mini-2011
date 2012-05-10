@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=caps? ( sys-libs/libcap )
 SLOT=0
 SRC_URI=mirror://gentoo/pax-utils-0.3.0.tar.xz http://dev.gentoo.org/~solar/pax/pax-utils-0.3.0.tar.xz http://dev.gentoo.org/~vapier/dist/pax-utils-0.3.0.tar.xz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	unpacker	d3e0e5abd38b96db37f13329ff2e3094
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	unpacker	d3e0e5abd38b96db37f13329ff2e3094
 _md5_=8861ecc4efe31741180a69de59e8bf2d

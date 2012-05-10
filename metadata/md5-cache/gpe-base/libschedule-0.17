@@ -8,5 +8,5 @@ LICENSE=LGPL-2
 RDEPEND=gpe-base/libgpewidget >=dev-libs/glib-2.6.3
 SLOT=0
 SRC_URI=http://gpe.linuxtogo.org/download/source/libschedule-0.17.tar.bz2
-_eclasses_=gpe	dc397204e130de43bfcf156546e8d9d4	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=gpe	dc397204e130de43bfcf156546e8d9d4	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=18ac59e4d6d56cee4bd247860712f79c

@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=app-arch/cpio
 SLOT=0
 SRC_URI=mirror://gentoo/rpm2targz-9.0.0.4g.tar.lzma
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=deb064084362a12ff6fa1a7688eb15b8

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm unpack
+DEPEND=virtual/ooo virtual/ooo
+DESCRIPTION=Extension for converting text to numbers
+EAPI=4
+HOMEPAGE=http://extensions.libreoffice.org/extension-center/ct2n-convert-text-to-number-and-dates
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-3
+RDEPEND=virtual/ooo virtual/ooo
+SLOT=0
+SRC_URI=http://extensions.libreoffice.org/extension-center/ct2n-convert-text-to-number-and-dates/releases/1.4.0/converttexttonumber-1.4.0.oxt
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	office-ext	a62488d3ec90f9a7dc044db1ca5470ac	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=74c586ccb6c9029ac0b6b1c4072bd856

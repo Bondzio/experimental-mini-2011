@@ -8,5 +8,5 @@ LICENSE=as-is GPL-2
 RDEPEND=sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/png-mng/pngcheck-2.3.0.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=a7a3dec4c0925c556c0ac64bf294d71a

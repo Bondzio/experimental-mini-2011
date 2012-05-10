@@ -8,5 +8,5 @@ LICENSE=Apache-1.1
 RDEPEND=virtual/mysql sys-libs/zlib !www-apache/mod-auth-mysql =www-servers/apache-2.2*
 SLOT=0
 SRC_URI=mirror://sourceforge/modauthmysql/mod_auth_mysql-3.0.0.tar.gz
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5ca94f870e9cb6aee7dc5f3a0c69a431

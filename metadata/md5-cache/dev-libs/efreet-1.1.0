@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-libs/ecore-1.0.0_beta >=dev-libs/eet-1.4.0_beta >=dev-libs/eina-1.0.0_beta x11-misc/xdg-utils nls? ( sys-devel/gettext )
 SLOT=0
 SRC_URI=http://download.enlightenment.org/releases/efreet-1.1.0.tar.bz2
-_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=7ca1ff8d9bf4a9bb9d6188941cf08b71

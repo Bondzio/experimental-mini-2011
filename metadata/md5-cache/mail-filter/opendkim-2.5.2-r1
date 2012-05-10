@@ -10,5 +10,5 @@ RDEPEND=|| ( mail-filter/libmilter mail-mta/sendmail ) ssl? ( >=dev-libs/openssl
 REQUIRED_USE=sasl? ( ldap )
 SLOT=0
 SRC_URI=mirror://sourceforge/opendkim/opendkim-2.5.2.tar.gz
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4c4ca72f05fe71500f62c898108c4c9f

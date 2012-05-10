@@ -7,5 +7,5 @@ KEYWORDS=x86 ~amd64
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=mirror://sourceforge/parapin/parapin-1.0.0.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=afc0a49af9d24095d20c15914e90300a

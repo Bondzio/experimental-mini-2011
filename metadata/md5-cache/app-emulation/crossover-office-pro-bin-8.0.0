@@ -9,4 +9,4 @@ RESTRICT=fetch strip
 SLOT=0
 SRC_URI=install-crossover-pro-8.0.0.sh
 _eclasses_=unpacker	d3e0e5abd38b96db37f13329ff2e3094
-_md5_=76b5dfa6ce677b5dd05122587ebc3d5d
+_md5_=0064c0cb63783e9e416613af4e91a196

@@ -8,5 +8,5 @@ LICENSE=PHP-3.01
 RDEPEND=dev-php/PEAR-Auth dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Auth_HTTP-2.1.6.tgz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=0698d339bfaf13936fcc10c9f76cd5c0

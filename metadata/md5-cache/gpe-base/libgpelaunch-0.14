@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=gpe-base/libgpewidget-0.102
 SLOT=0
 SRC_URI=http://gpe.linuxtogo.org/download/source/libgpelaunch-0.14.tar.bz2
-_eclasses_=gpe	dc397204e130de43bfcf156546e8d9d4	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=gpe	dc397204e130de43bfcf156546e8d9d4	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=6f2cf0dd54e2194c8b61f8c2b15ab48a

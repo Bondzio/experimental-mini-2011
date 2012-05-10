@@ -7,5 +7,5 @@ LICENSE=freedist
 RDEPEND=app-arch/unzip
 SLOT=0
 SRC_URI=http://hp.vector.co.jp/authors/VA000501/qkcc100.zip
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=75441099e0d85e1869d4243e5c282133

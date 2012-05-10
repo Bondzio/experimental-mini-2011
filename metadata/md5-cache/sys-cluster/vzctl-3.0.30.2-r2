@@ -10,5 +10,5 @@ PDEPEND=bash-completion? ( app-shells/bash-completion )
 RDEPEND=net-firewall/iptables sys-apps/ed sys-apps/iproute2 sys-fs/vzquota >=sys-apps/openrc-0.6.5-r1 bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=https://github.com/funtoo/vzctl/tarball/vzctl-3.0.30.2-funtoo -> vzctl-3.0.30.2-funtoo.tar.gz
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	bash-completion	003731da0df19d26955927bd534f3058	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	6526ac6fc9aedf391efb91fcd75ace68	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	bash-completion	003731da0df19d26955927bd534f3058	eutils	74d9118e657da5b1db0c36f5dea88e57	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=cd2d4a6d07bf1acc049a5d55e88efd78
