@@ -1,9 +1,0 @@
-DEFINED_PHASES=install
-DESCRIPTION=A Cross platform Makefile tool
-HOMEPAGE=http://www.trolltech.com/products/download/freebies/tmake.html
-KEYWORDS=~amd64 ppc x86
-LICENSE=as-is
-RDEPEND=dev-lang/perl
-SLOT=0
-SRC_URI=ftp://ftp.trolltech.com/freebies/tmake/tmake-1.8.tar.gz
-_md5_=d2b02896cb58b578c6d53719621659a7
