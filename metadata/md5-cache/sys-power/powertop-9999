@@ -7,5 +7,5 @@ IUSE=unicode
 LICENSE=GPL-2
 RDEPEND=dev-libs/libnl sys-apps/pciutils sys-devel/gettext sys-libs/ncurses[unicode?] sys-libs/zlib x11-apps/xset
 SLOT=0
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=54205b7dccee009a0d7ba35f7ab4a244

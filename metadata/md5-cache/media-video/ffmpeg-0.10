@@ -10,5 +10,5 @@ RDEPEND=alsa? ( media-libs/alsa-lib ) amr? ( media-libs/opencore-amr ) ass? ( me
 REQUIRED_USE=bindist? ( encode? ( !faac !aacplus ) !openssl ) libv4l? ( v4l ) test? ( encode zlib )
 SLOT=0
 SRC_URI=http://ffmpeg.org/releases/ffmpeg-0.10.tar.bz2
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e787114a08bb44c4ead1c9632820330e

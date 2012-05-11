@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=elibc_glibc? ( >=sys-libs/glibc-2.3 || ( <sys-libs/glibc-2.6[nptl] >=sys-libs/glibc-2.6 ) ) asdf? ( >=dev-lisp/gentoo-init-0.1 )
 SLOT=0
 SRC_URI=mirror://sourceforge/sbcl/sbcl-1.0.55-source.tar.bz2 x86? ( mirror://sourceforge/sbcl/sbcl-1.0.37-x86-linux-binary.tar.bz2 ) amd64? ( mirror://sourceforge/sbcl/sbcl-1.0.37-x86-64-linux-binary.tar.bz2 ) ppc? ( mirror://sourceforge/sbcl/sbcl-1.0.28-powerpc-linux-binary.tar.bz2 ) sparc? ( mirror://sourceforge/sbcl/sbcl-1.0.28-sparc-linux-binary.tar.bz2 ) alpha? ( mirror://sourceforge/sbcl/sbcl-1.0.28-alpha-linux-binary.tar.bz2 ) mips? ( !cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.23-mips-linux-binary.tar.bz2 ) ) mips? ( cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.28-mipsel-linux-binary.tar.bz2 ) )
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a1ead0e672f38c5644b53b4bda8843a1

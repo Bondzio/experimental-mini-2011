@@ -3,10 +3,10 @@ DEPEND=>=virtual/jdk-1.4 >=sys-apps/sed-4.1.4 app-arch/unzip >=dev-java/java-con
 DESCRIPTION=JIF is an IDE for the creation of text adventures based on Graham Nelson's Inform standard.
 HOMEPAGE=http://www.slade.altervista.org/JIF/
 IUSE=elibc_FreeBSD
-KEYWORDS=x86
+KEYWORDS=~amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=virtual/jre-1.4 >=dev-lang/inform-6.21.4 >=games-engines/gargoyle-20051002 >=dev-java/java-config-2.1.9-r1
+RDEPEND=>=virtual/jre-1.4 >=dev-lang/inform-6.21.4 >=games-engines/gargoyle-2010.1 >=dev-java/java-config-2.1.9-r1
 SLOT=0
 SRC_URI=http://www.slade.altervista.org/downloads/JIF31_src_RC1.zip
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=1d4403207c1faf23ba869591111804a3
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=dacba14bcf788ace0cf2b03cf13c6b01

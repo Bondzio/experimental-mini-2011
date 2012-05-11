@@ -10,5 +10,5 @@ RDEPEND=>=media-libs/babl-0.1.10[introspection?] >=dev-libs/glib-2.28:2 >=x11-li
 RESTRICT=test
 SLOT=0
 SRC_URI=ftp://ftp.gimp.org/pub/gegl/0.2/gegl-0.2.0.tar.bz2
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	74d9118e657da5b1db0c36f5dea88e57	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2b549e0444773bc77249e672262cf37e

@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13740 2012/05/11 00:18:46 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13743 2012/05/11 09:43:21 pacho Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,7 +31,26 @@
 
 #--- END OF EXAMPLES ---
 
-# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (11 Mar 2012)
+# Pacho Ramos <pacho@gentoo.org> (11 May 2012)
+# No GPL releases for a long time, bundles external classes (#162788)
+# Use app-benchmarks/bootchart2 instead. Removal in a month.
+app-benchmarks/bootchart
+
+# Pacho Ramos <pacho@gentoo.org> (11 May 2012)
+# Fails to build, bug #280920 and is unmaintained for a long time.
+# Removal in a month.
+dev-embedded/parapin-driver
+
+# Pacho Ramos <pacho@gentoo.org> (11 May 2012)
+# Unmaintained since 2005, see bug #281502 for reference. Removal
+# in a month.
+dev-perl/adocman
+
+# Pacho Ramos <pacho@gentoo.org> (11 May 2012)
+# Old and only for kernel-2.4, bug #287125. Removal in a month.
+media-tv/linuxtv-dvb
+
+# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (11 May 2012)
 # Nouveau API break, mask until situation becomes palatable for users
 >=x11-drivers/xf86-video-nouveau-0.0.16_pre20120508
 >=x11-libs/libdrm-2.4.34
@@ -208,28 +227,11 @@ media-sound/squeezeboxserver
 # Mask v8 versions used for www-client/chromium dev channel releases.
 >=dev-lang/v8-3.10
 
-# Eray Aslan <eras@gentoo.org> (10 Apr 2012)
-# Dead upstream. Use mail-filter/opendkim instead.
-# Removal in 30 days - bug 411429
-mail-filter/dkim-milter
-
-# Eray Aslan <eras@gentoo.org> (10 Apr 2012)
-# Dead standard.  Dead upstream.
-# Use mail-filter/opendkim instead.
-# Removal in 30 days - bug 411427
-mail-filter/dk-milter
-
 # Ulrich Mueller <ulm@gentoo.org> (09 Apr 2012)
 # Christian Faulhammer <fauli@gentoo.org>
 # Emacs live ebuilds. Use at your own risk.
 ~app-editors/emacs-vcs-24.0.9999
 ~app-editors/emacs-vcs-24.1.9999
-
-# Christian Ruppert <idl0r@gentoo.org> (09 Apr 2012)
-# Masked for removal in 30 days.
-# It doesn't work with recent portage version and the author has no time to fix
-# it anytime soon. bug 404973.
-app-portage/portato
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (05 Apr 2012)
 # Mask ksecrets. It was included in the kde-4.8 releases by mistake, and

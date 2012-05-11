@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RDEPEND=perl? ( >=dev-perl/ExtUtils-XSBuilder-0.23 virtual/perl-version >=www-apache/mod_perl-2 ) =www-servers/apache-2*
 SLOT=2
 SRC_URI=mirror://apache/httpd/libapreq/libapreq2-2.13.tar.gz
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1bddafb6924f16a4cb3e54edcd0978fe

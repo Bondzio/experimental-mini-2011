@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/pygtk dev-python/numpy >=dev-python/pycairo-1.4 >=dev-lang/python-2.4 <dev-lang/python-3 dev-libs/protobuf[python]
 SLOT=0
 SRC_URI=http://download.gna.org/mypaint/mypaint-1.0.0.tar.bz2
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0e5db674aef25293b6abf7d7a11594d4

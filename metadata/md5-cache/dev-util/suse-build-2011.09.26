@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/perl-Digest-MD5 virtual/perl-Getopt-Long dev-perl/XML-Parser dev-perl/TimeDate app-shells/bash app-arch/rpm
 SLOT=0
 SRC_URI=https://api.opensuse.org/public/source/openSUSE:12.1/build/build-2011.09.26.tar.gz
-_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	obs-download	80540c2df608f1b78d1669c866770416	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	obs-download	80540c2df608f1b78d1669c866770416	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bfc55e36bb4e34f229c2fc09ffc99ceb

@@ -8,5 +8,5 @@ LICENSE=|| ( GPL-2 BSD-2 )
 RDEPEND=sys-infiniband/libibverbs:1.5.4.1 !sys-infiniband/openib-userspace !sys-infiniband/rds-tools:0
 SLOT=1.5.4.1
 SRC_URI=http://www.openfabrics.org/downloads/OFED/ofed-1.5.4/OFED-1.5.4.1.tgz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	openib	63df656b6258406efcb864854abaaa28	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	openib	63df656b6258406efcb864854abaaa28	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6f7900121d16463643687ceb6b342aef
