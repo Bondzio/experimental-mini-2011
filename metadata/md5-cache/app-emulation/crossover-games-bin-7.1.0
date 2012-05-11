@@ -1,0 +1,12 @@
+DEFINED_PHASES=install nofetch postinst unpack
+DESCRIPTION=simplified/streamlined version of wine geared towards games
+HOMEPAGE=http://www.codeweavers.com/products/cxgames/
+IUSE=nas
+KEYWORDS=-* amd64 x86
+LICENSE=CROSSOVER
+RDEPEND=sys-libs/glibc x11-libs/libXrandr x11-libs/libXi x11-libs/libXmu x11-libs/libXxf86dga x11-libs/libXxf86vm dev-util/desktop-file-utils nas? ( media-libs/nas ) amd64? ( app-emulation/emul-linux-x86-xlibs )
+RESTRICT=fetch strip
+SLOT=0
+SRC_URI=install-crossover-games-demo-7.1.0.sh
+_eclasses_=eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b6c15cb627cd5675b3ee7995bb9b9589
