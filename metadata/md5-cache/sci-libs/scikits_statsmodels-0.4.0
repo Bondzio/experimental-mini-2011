@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/pandas sci-libs/scipy dev-python/setuptools doc? ( dev-python/sphinx ) test? ( dev-python/nose ) dev-lang/python test? ( dev-python/nose ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=>=dev-python/cython-0.15.1 dev-python/pandas sci-libs/scipy dev-python/setuptools doc? ( dev-python/sphinx >=dev-python/ipython-0.12 ) test? ( dev-python/nose ) dev-lang/python test? ( dev-python/nose ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Statistical computations and models for use with SciPy
 EAPI=4
 HOMEPAGE=http://statsmodels.sourceforge.net/
@@ -10,4 +10,4 @@ RDEPEND=dev-python/pandas sci-libs/scikits sci-libs/scipy examples? ( dev-python
 SLOT=0
 SRC_URI=mirror://pypi/s/statsmodels/statsmodels-0.4.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=7d4dc9d1fd2bbd410ceb11456aa9f095
+_md5_=1f14ec2460d373d98399d5dbdc8cec37
