@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=|| ( dev-lang/python:2.7 dev-lang/python:2.6 ) app-text/docbook-xml-dtd:4.2 python? ( =dev-lang/python-2* )
+DEPEND=|| ( dev-lang/python:2.7 dev-lang/python:2.6 ) app-text/docbook-xml-dtd:4.2 dev-lang/python !dev-lang/python[-threads] python? ( =dev-lang/python-2* )
 DESCRIPTION=A simple database API
 EAPI=3
 HOMEPAGE=http://tdb.samba.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://samba.org/ftp/tdb/tdb-1.2.9.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	28662b30682d1e96104039d3f5748ea6
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	74d9118e657da5b1db0c36f5dea88e57	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	waf-utils	79ce86930ef9fb4cb3c5214f1da47770
 _md5_=8765934624f58b885948bae37659a6f6
