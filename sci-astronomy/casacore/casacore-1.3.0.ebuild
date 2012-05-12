@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-astronomy/casacore/casacore-1.3.0.ebuild,v 1.2 2012/05/04 06:46:12 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-astronomy/casacore/casacore-1.3.0.ebuild,v 1.3 2012/05/11 21:51:50 bicatali Exp $
 
 EAPI=4
 
@@ -47,6 +47,6 @@ src_compile() {
 }
 
 src_install(){
-	cmake-utils_src_compile
+	cmake-utils_src_install
 	use doc && dohtml -r doc/html
 }

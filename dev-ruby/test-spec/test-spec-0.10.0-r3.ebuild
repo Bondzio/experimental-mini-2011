@@ -1,11 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/test-spec/test-spec-0.10.0-r3.ebuild,v 1.3 2012/05/01 18:24:05 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/test-spec/test-spec-0.10.0-r3.ebuild,v 1.4 2012/05/12 04:12:27 flameeyes Exp $
 
 EAPI="2"
 
 # ruby19 → incompatible with test-unit so fails badly
-USE_RUBY="ruby18 ree18 ruby19 jruby"
+USE_RUBY="ruby18 ree18 jruby"
 
 RUBY_FAKEGEM_EXTRADOC="README SPECS ROADMAP TODO"
 RUBY_FAKEGEM_DOCDIR="doc"
@@ -22,12 +22,6 @@ IUSE=""
 
 ruby_add_rdepend virtual/ruby-test-unit
 ruby_add_bdepend test dev-ruby/mocha
-
-# On Ruby 1.9, the tests only work with test-unit-2, but generally
-# speaking, test-spec should work fine with test-unit-1.2.3, and
-# indeed some testsuites only work with that.
-USE_RUBY=ruby19 \
-	ruby_add_bdepend "ruby_targets_ruby19 test" '>=dev-ruby/test-unit-2.0.6'
 
 all_ruby_prepare() {
 	epatch "${FILESDIR}"/${P}-jruby.patch

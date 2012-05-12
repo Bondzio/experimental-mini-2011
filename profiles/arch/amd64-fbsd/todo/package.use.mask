@@ -1,11 +1,13 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.184 2012/05/11 13:20:08 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.194 2012/05/12 04:08:59 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
 # We will pick them up and keyword as time permits and prefer having a sane
 # deptree with missing features than a broken one.
+# Do *NOT* add a ChangeLog entry when modifying this file: it is intended as
+# temporary and cvs log is more than enough for getting its history.
 # 
 # Syntax is: # mising dep(s)
 #            mask
@@ -20,6 +22,8 @@ net-misc/curl ldap
 net-misc/dhcp ldap
 gnome-base/gconf ldap
 app-crypt/gnupg ldap
+dev-libs/apr-util ldap
+net-print/cups ldap
 
 # sys-auth/pam_krb5
 sys-auth/pambase pam_krb5
@@ -38,12 +42,6 @@ net-libs/libpcap libnl
 # net-libs/libtirpc
 sys-apps/xinetd rpc
 
-# media-gfx/graphviz
-app-text/asciidoc graphviz
-app-doc/doxygen dot
-dev-util/cppunit doc
-media-gfx/imagemagick graphviz
-
 # media-gfx/ufraw
 media-gfx/imagemagick raw
 
@@ -54,29 +52,32 @@ app-doc/doxygen qt4
 x11-libs/cairo qt4
 app-crypt/pinentry qt4
 
+# x11-libs/qt-gui
+# x11-libs/qt-core
+# x11-libs/qt-dbus
+# >=kde-base/kdelibs-4
+dev-vcs/subversion kde
+
+# dev-libs/cyrus-sasl
+dev-vcs/subversion sasl
+
+# www-servers/apache[apache2_modules_dav]
+dev-vcs/subversion apache2
+
 # app-office/lyx
 dev-tex/latex-beamer lyx
-
-# x11-base/xorg-server[xvfb]
-# x11-apps/xhost
-dev-util/cmake test
-sys-apps/dbus test
-x11-libs/gtk+ test
-gnome-base/gnome-keyring test
-dev-libs/glib test
-
-# gnome-base/gnome-keyring test
-gnome-base/libgnome-keyring test
 
 # dev-python/pygtk:2
 dev-python/twisted gtk
 
+# net-libs/libproxy
+net-libs/neon libproxy
+
+# dev-libs/pakchois
+net-libs/neon pkcs11
+
 # media-libs/lasi
 media-gfx/graphviz lasi
-
-# net-print/cups
-app-text/ghostscript-gpl cups
-x11-libs/gtk+ cups
 
 # app-text/texlive[extra]
 app-doc/doxygen latex
@@ -104,15 +105,22 @@ media-libs/libsdl pulseaudio
 # media-libs/nas
 media-libs/libsdl nas
 
-# dev-vcs/subversion[-dso,perl]
-dev-vcs/git subversion
-
 # >=dev-python/pygtk-2.8
 # dev-python/pygtksourceview:2
 dev-vcs/git gtk
 
+# net-dns/avahi
+net-print/cups avahi
+
 # virtual/mysql
 sci-mathematics/glpk mysql
+dev-libs/apr-util mysql
+
+# dev-db/postgresql-base
+dev-libs/apr-util postgres
+
+# dev-db/freetds
+dev-libs/apr-util freetds
 
 # app-emulation/wine
 media-libs/mesa d3d
