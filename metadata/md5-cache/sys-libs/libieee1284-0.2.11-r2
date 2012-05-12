@@ -10,4 +10,4 @@ RDEPEND=python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/libieee1284/libieee1284-0.2.11.tar.bz2
 _eclasses_=python	e03920f970092173a9b2b8a53024992b
-_md5_=dfc56c1f08d836362a4985111bb0693f
+_md5_=963bd3af892a24666ec64fa285997c81

@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13743 2012/05/11 09:43:21 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13746 2012/05/12 15:25:05 jer Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -72,10 +72,6 @@ media-tv/linuxtv-dvb
 # Masked for removal in 30 days.
 =www-client/firefox-3.6*
 
-# Markos Chandras <hwoarang@gentoo.org> (07 May 2012)
-# Mask ebuild for testing
-=lxde-base/lxpanel-0.5.8-r3
-
 # Samuli Suominen <ssuominen@gentoo.org> (07 May 2012)
 # Dead upstream. Removal in 30 days. Bugs 339811,
 # 372009 and 414837. Use app-misc/tracker or any other
@@ -119,16 +115,11 @@ net-im/emesene:0
 # Masked for removal in 30 days.
 media-sound/qsampler
 
-# Diego Elio Pettenò <flameeyes@gentoo.org> (01 May 2012)
-#  on behalf of QA Team <qa@gentoo.org>
-#
-# API/ABI subtly broken; see bug #414317
-=dev-libs/libnl-3.2.8
-
 # Hans de Graaff <graaff@gentoo.org> (29 Apr 2012)
-# Mask new cucumber components until the whole set it ready.
+# Mask new cucumber components until the whole set is ready.
 # Fixes bug 413909
 dev-ruby/gherkin:2.9
+dev-ruby/gherkin:2.10
 
 # Kacper Kowalik <xarthisius@gentoo.org> (28 Apr 2012)
 # No longer maintained upstream, superseeded by
