@@ -6,8 +6,8 @@ HOMEPAGE=http://www.gnupg.org/
 IUSE=bzip2 curl idea ldap nls readline selinux smartcard static usb zlib linguas_ru
 KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=GPL-2
-RDEPEND=!static? ( ldap? ( net-nds/openldap ) bzip2? ( app-arch/bzip2 ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl ) virtual/mta readline? ( sys-libs/readline ) smartcard? ( =virtual/libusb-0* ) usb? ( =virtual/libusb-0* ) ) selinux? ( sec-policy/selinux-gnupg ) nls? ( virtual/libintl )
+RDEPEND=!static? ( ldap? ( net-nds/openldap ) bzip2? ( app-arch/bzip2 ) zlib? ( sys-libs/zlib ) curl? ( net-misc/curl ) virtual/mta readline? ( sys-libs/readline ) smartcard? ( =virtual/libusb-0* ) usb? ( =virtual/libusb-0* ) ) selinux? ( sec-policy/selinux-gpg ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://gnupg/gnupg/gnupg-1.4.11.tar.bz2 idea? ( mirror://gentoo/idea.c.gz )
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ed7808e1ed3344f534c9df1f168e462a
+_md5_=1d393e72fd4f2a85173d1c06e6f0d0a9

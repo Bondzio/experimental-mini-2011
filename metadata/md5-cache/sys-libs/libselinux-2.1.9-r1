@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=sys-libs/libsepol-2.1.4 ruby? ( dev-lang/ruby ) ruby? ( dev-lang/swig ) python? ( dev-lang/swig ) python? ( dev-lang/python )
+DESCRIPTION=SELinux userland library
+EAPI=4
+HOMEPAGE=http://userspace.selinuxproject.org
+IUSE=python ruby
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+RDEPEND=>=sys-libs/libsepol-2.1.4 ruby? ( dev-lang/ruby ) python? ( dev-lang/python )
+SLOT=0
+SRC_URI=http://userspace.selinuxproject.org/releases/20120216/libselinux-2.1.9.tar.gz
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5feefee6fbda672f47341b4b4390604e

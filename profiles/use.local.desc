@@ -514,7 +514,6 @@ app-emulation/wine:samba - Add support for NTLM auth. see http://wiki.winehq.org
 app-emulation/wine:udisks - Support dynamic storage devices using sys-fs/udisks
 app-emulation/wine:win32 - Build a 32bit version of Wine (won't run Win64 binaries)
 app-emulation/wine:win64 - Build a 64bit version of Wine (won't run Win32 binaries)
-app-emulation/xen:acm - Enable the ACM/sHype XSM module from IBM
 app-emulation/xen:flask - Enable the Flask XSM module from NSA
 app-emulation/xen:pae - Enable support for PAE kernels (usually x86-32 with >4GB memory)
 app-emulation/xen:xsm - Enable the Xen Security Modules (XSM)
@@ -1249,6 +1248,7 @@ dev-lang/ruby-enterprise:readline - Use the sys-libs/readline library to provide
 dev-lang/ruby-enterprise:rubytests - Install ruby tests that can only be run after ruby is installed
 dev-lang/scala:binary - Install from (Gentoo-compiled) binary instead of building from sources. Set this when you run out of memory during build.
 dev-lang/spidermonkey:threadsafe - Build a threadsafe version of spidermonkey
+dev-lang/swi-prolog:archive - Use libarchive for extension packs
 dev-lang/swig:ccache - build ccache-swig(a fast compiler cache)
 dev-lang/v8cgi:apache - Support for apache
 dev-lang/v8cgi:fcgi - Support for FastCGI
@@ -1484,7 +1484,7 @@ dev-python/PyFoam:extras - Enable optional dependencies
 dev-python/PyQt4:X - Build QtGui, QtDesigner and QtScriptTools modules
 dev-python/PyQt4:assistant - Build QtHelp and QtAssistant modules
 dev-python/PyQt4:declarative - Build QtDeclarative module
-dev-python/PyQt4:kde - Select media-sound/phonon as phonon variant, needed for KDE4
+dev-python/PyQt4:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 dev-python/PyQt4:multimedia - Build QtMultimedia module
 dev-python/PyQt4:opengl - Build QtOpenGL module
 dev-python/PyQt4:phonon - Build phonon module
@@ -1555,7 +1555,7 @@ dev-python/pypy:stackless - Enable running with stackless features
 dev-python/pyside:X - Build QtGui, QtDesigner, QtTest and QtUiTools modules
 dev-python/pyside:declarative - Build QtDeclarative module
 dev-python/pyside:help - Build QtHelp module
-dev-python/pyside:kde - Select media-sound/phonon as phonon variant, needed for KDE4
+dev-python/pyside:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 dev-python/pyside:multimedia - Build QtMultimedia module
 dev-python/pyside:opengl - Build QtOpenGL module
 dev-python/pyside:phonon - Build phonon module
@@ -4834,9 +4834,6 @@ sci-visualization/veusz:fits - Add FITS format via dev-python/pyfits
 sec-policy/selinux-base:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
 sec-policy/selinux-base:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
 sec-policy/selinux-base:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
-sec-policy/selinux-base-policy:open_perms - Enable the open permissions for file object classes (SELinux policy capability).
-sec-policy/selinux-base-policy:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
-sec-policy/selinux-base-policy:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
 sys-apps/accountsservice:introspection - Use dev-libs/gobject-introspection for introspection
 sys-apps/acl:nfs - add support for NFS acls
 sys-apps/baselayout-prefix:prefix-chaining - install in a chained Prefix environment
@@ -5549,7 +5546,7 @@ x11-libs/qt-gui:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-gui:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-gui:raster - Use the alternative raster graphicssystem as default rendering engine
 x11-libs/qt-gui:trace - Build the new 'trace' graphicsssytem engine which allows to record all drawing operations into a trace buffer. Later it can be replayed with the qttracereplay utility
-x11-libs/qt-meta:kde - Select media-libs/phonon as Phonon variant, needed for KDE4
+x11-libs/qt-meta:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 x11-libs/qt-meta:openvg - Build the Qt OpenVG module
 x11-libs/qt-meta:qt3support - Enable the Qt3Support library for Qt4
 x11-libs/qt-mobility:bearer - Build the QtBearer module
@@ -5590,7 +5587,7 @@ x11-libs/qt-phonon:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-phonon:qt3support - Enable the Qt3Support libraries for Qt4. Note that this does not mean you can compile pure Qt3 programs with Qt4.
 x11-libs/qt-qt3support:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-qt3support:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
-x11-libs/qt-qt3support:kde - Select media-sound/phonon as phonon variant needed for kde
+x11-libs/qt-qt3support:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 x11-libs/qt-qt3support:phonon - Enable phonon configuration dialog in qtconfig
 x11-libs/qt-qt3support:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-script:c++0x - Build Qt using the C++11 standard
@@ -5612,7 +5609,7 @@ x11-libs/qt-webkit:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-webkit:exceptions - Add support for exceptions - like catching them inside the event loop (recommended by Nokia)
 x11-libs/qt-webkit:gstreamer - Enable HTML5 audio/video support via media-libs/gstreamer
 x11-libs/qt-webkit:jit - Enable JavaScriptCore just-in-time compiler for faster JavaScript execution
-x11-libs/qt-webkit:kde - Select media-sound/phonon as phonon variant needed for kde
+x11-libs/qt-webkit:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
 x11-libs/qt-webkit:qpa - Build a window system agnostic implementation of Qt
 x11-libs/qt-xmlpatterns:c++0x - Build Qt using the C++11 standard
 x11-libs/qt-xmlpatterns:qpa - Build a window system agnostic implementation of Qt

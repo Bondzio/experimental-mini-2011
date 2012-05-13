@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=tcpd? ( sys-apps/tcp-wrappers ) selinux? ( sec-policy/selinux-tftpd ) readline? ( sys-libs/readline ) pcre? ( dev-libs/libpcre )
+DEPEND=tcpd? ( sys-apps/tcp-wrappers ) selinux? ( sec-policy/selinux-tftp ) readline? ( sys-libs/readline ) pcre? ( dev-libs/libpcre )
 DESCRIPTION=Advanced TFTP implementation client/server
 HOMEPAGE=ftp://ftp.mamalinux.com/pub/atftp/
 IUSE=selinux tcpd readline pcre
 KEYWORDS=amd64 ~arm ~ppc ~ppc64 ~s390 ~sparc x86
 LICENSE=GPL-2
-RDEPEND=tcpd? ( sys-apps/tcp-wrappers ) selinux? ( sec-policy/selinux-tftpd ) readline? ( sys-libs/readline ) pcre? ( dev-libs/libpcre ) !net-ftp/netkit-tftp !net-ftp/tftp-hpa
+RDEPEND=tcpd? ( sys-apps/tcp-wrappers ) selinux? ( sec-policy/selinux-tftp ) readline? ( sys-libs/readline ) pcre? ( dev-libs/libpcre ) !net-ftp/netkit-tftp !net-ftp/tftp-hpa
 SLOT=0
 SRC_URI=ftp://ftp.mamalinux.com/pub/atftp/atftp-0.7.tar.gz mirror://debian/pool/main/a/atftp/atftp_0.7-11.diff.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e2f7b8fc1a488723abcbd4af8f40b860
+_md5_=614e814d270199a0a7a98fad65f63aea
