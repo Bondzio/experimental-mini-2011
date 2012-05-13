@@ -10,6 +10,6 @@ RDEPEND=truetype? ( >=media-libs/freetype-2.0.0 media-fonts/corefonts ) perl? ( 
 REQUIRED_USE=elibc_glibc? ( threads )
 RESTRICT=test
 SLOT=0
-SRC_URI=mirror://sourceforge/wine/wine-1.3.32.tar.bz2 gecko? ( mirror://sourceforge/wine/wine_gecko-1.3-x86.msi win64? ( mirror://sourceforge/wine/wine_gecko-1.3-x86_64.msi ) )
+SRC_URI=mirror://sourceforge/wine/Source/wine-1.3.32.tar.bz2 gecko? ( mirror://sourceforge/wine/wine_gecko-1.3-x86.msi win64? ( mirror://sourceforge/wine/wine_gecko-1.3-x86_64.msi ) )
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=352187eb408ae51d05789b731f251051
+_md5_=ab62af84ff64ec7602865fa6ef0e2d20

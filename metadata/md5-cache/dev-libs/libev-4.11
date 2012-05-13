@@ -4,10 +4,10 @@ DESCRIPTION=A high-performance event loop/event model with lots of feature
 EAPI=3
 HOMEPAGE=http://software.schmorp.de/pkg/libev.html
 IUSE=elibc_glibc static-libs
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=|| ( BSD GPL-2 )
 RDEPEND=elibc_glibc? ( >=sys-libs/glibc-2.9_p20081201 )
 SLOT=0
 SRC_URI=http://dist.schmorp.de/libev/libev-4.11.tar.gz http://dist.schmorp.de/libev/Attic/libev-4.11.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=51fd965ac77e76727d0906209a4734ca
+_md5_=ff92b1c95e63c9623b329be2f614ff23

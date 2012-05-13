@@ -4,10 +4,10 @@ DESCRIPTION=A library to execute a function when a specific event occurs on a fi
 EAPI=2
 HOMEPAGE=http://monkey.org/~provos/libevent/
 IUSE=+ssl static-libs test
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=BSD
 RDEPEND=ssl? ( dev-libs/openssl ) !<=dev-libs/9libs-1.0
 SLOT=0
 SRC_URI=mirror://sourceforge/levent/files/libevent-2.0.19-stable.tar.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=dfe60cdac2c749d34ab26557e2eee65a
+_md5_=dc4e03c9f843e1c44dc62eafc91253d1
