@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.202 2012/05/12 18:30:26 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.207 2012/05/13 20:49:16 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -38,6 +38,10 @@ net-dns/libidn mono
 media-libs/libcaca mono
 dev-java/antlr mono
 
+# dev-lang/mono
+# >=dev-dotnet/gtk-sharp-2
+net-dns/avahi mono
+
 # net-misc/netkit-rsh
 x11-apps/xsm rsh
 
@@ -58,9 +62,6 @@ dev-vcs/subversion sasl
 
 # app-office/lyx
 dev-tex/latex-beamer lyx
-
-# dev-python/pygtk:2
-dev-python/twisted gtk
 
 # net-libs/libproxy
 net-libs/neon libproxy
@@ -98,12 +99,11 @@ media-libs/libsdl pulseaudio
 media-libs/libsdl nas
 x11-libs/qt-gui nas
 
-# >=dev-python/pygtk-2.8
 # dev-python/pygtksourceview:2
 dev-vcs/git gtk
 
-# net-dns/avahi
-net-print/cups avahi
+# net-misc/openntpd
+net-misc/ntp openntpd
 
 # virtual/mysql
 sci-mathematics/glpk mysql
@@ -159,6 +159,9 @@ x11-base/xorg-drivers input_devices_vmmouse
 # x11-drivers/xf86-input-void
 x11-base/xorg-drivers input_devices_void
 
+# x11-drivers/xf86-video-apm
+x11-base/xorg-drivers video_cards_apm
+
 # x11-drivers/xf86-video-ark
 x11-base/xorg-drivers video_cards_ark
 
@@ -212,6 +215,9 @@ x11-base/xorg-drivers video_cards_radeon
 
 # x11-drivers/xf86-video-s3
 x11-base/xorg-drivers video_cards_s3
+
+# x11-drivers/xf86-video-s3virge
+x11-base/xorg-drivers video_cards_s3virge
 
 # x11-drivers/xf86-video-savage
 x11-base/xorg-drivers video_cards_savage
