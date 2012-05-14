@@ -1,11 +1,12 @@
 DEFINED_PHASES=compile configure install postinst prepare unpack
-DEPEND=>=dev-libs/lzo-1.07 kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.6 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
+DEPEND=kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.7 ) lzo? ( >=dev-libs/lzo-1.07 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
 DESCRIPTION=OpenVPN is a robust and highly flexible tunneling application compatible with many OSes.
 EAPI=4
 HOMEPAGE=http://openvpn.net/
-IUSE=examples iproute2 minimal pam passwordsave selinux +ssl static pkcs11 userland_BSD
+IUSE=examples iproute2 minimal pam passwordsave selinux +ssl +lzo static pkcs11 userland_BSD
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/lzo-1.07 kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.6 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 )
+RDEPEND=kernel_linux? ( iproute2? ( sys-apps/iproute2[-minimal] ) !iproute2? ( sys-apps/net-tools ) ) !minimal? ( pam? ( virtual/pam ) ) selinux? ( sec-policy/selinux-openvpn ) ssl? ( >=dev-libs/openssl-0.9.7 ) lzo? ( >=dev-libs/lzo-1.07 ) pkcs11? ( >=dev-libs/pkcs11-helper-1.05 )
+REQUIRED_USE=static? ( minimal )
 SLOT=0
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=bd1caf20dabf87106b67ae462790c61e
+_md5_=daa3f2a09fb08020d6275f7a18f273f8

@@ -228,6 +228,8 @@ app-backup/spideroak-bin:pycurl-bundled - Use bundled pycurl
 app-backup/spideroak-bin:qt-bundled - Use bundled Qt4 libraries
 app-backup/spideroak-bin:system-libs - Use the system libraries rather than bundled
 app-backup/tsm:hsm - Installs Tivoli Storage Manager for Space Management
+app-backup/tsm:tsm_cit - IBM Tivoli Common Inventory Technology
+app-backup/tsm:tsm_hw - Difference snapshot support for NetApp and N-Series file servers
 app-benchmarks/bootchart:acct - Enable process accounting
 app-benchmarks/bootchart:java - Enable autorendering to svg via a java interface
 app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
@@ -3191,7 +3193,6 @@ media-video/mplayer2:dvdnav - Use forked libdvdnav, navigate menus in GUIs
 media-video/mplayer2:dxr3 - Enable DXR3/H+ video output
 media-video/mplayer2:enca - Enables support for charset discovery and conversion
 media-video/mplayer2:faad - Use external faad library for AAC decoding
-media-video/mplayer2:live - Enables live.com streaming media support
 media-video/mplayer2:md5sum - Enables md5sum video output
 media-video/mplayer2:mmxext - Enables mmx2 support
 media-video/mplayer2:mng - MNG input support
