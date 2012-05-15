@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-i18n/uim/uim-1.7.3.ebuild,v 1.3 2012/05/13 23:26:34 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/uim/uim-1.7.3.ebuild,v 1.5 2012/05/15 04:32:26 mr_bones_ Exp $
 
 EAPI="4"
 inherit autotools eutils multilib elisp-common flag-o-matic
@@ -11,7 +11,7 @@ SRC_URI="http://uim.googlecode.com/files/${P}.tar.bz2"
 
 LICENSE="BSD GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 ~hppa ~ppc ~ppc64 ~x86"
 IUSE="+anthy canna curl eb emacs libffi gnome gtk gtk3 kde libedit libnotify m17n-lib ncurses nls prime qt4 skk sqlite ssl static-libs test unicode X xft linguas_zh_CN linguas_zh_TW linguas_ja linguas_ko"
 
 RESTRICT="test"
@@ -134,7 +134,7 @@ src_prepare() {
 	epatch \
 		"${FILESDIR}"/${PN}-1.6.0-gentoo.patch \
 		"${FILESDIR}"/${PN}-1.5.4-zhTW.patch
-	
+
 	if has_version ">=dev-libs/glib-2.32"; then
 		epatch "${FILESDIR}"/${P}-glib-2.32.patch
 	fi

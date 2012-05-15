@@ -10,4 +10,4 @@ RDEPEND=virtual/jpeg sys-libs/zlib media-libs/freetype x11-libs/libSM x11-libs/l
 SLOT=0
 SRC_URI=mirror://sourceforge/tigervnc/tigervnc-1.1.0.tar.gz mirror://gentoo/tigervnc.png server? ( ftp://ftp.freedesktop.org/pub/xorg/individual/xserver/xorg-server-1.11.2.tar.bz2 mirror://gentoo/tigervnc-1.1.0_xorg-1.11.patch.bz2 )
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=dd317ff90e0615775a1919070138c959
+_md5_=aebc813cc918cf18e40f50f0cecccd58
