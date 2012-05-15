@@ -3077,7 +3077,6 @@ media-video/ffmpeg:mmxext - Enables mmx2 support
 media-video/ffmpeg:network - Enables network streaming support
 media-video/ffmpeg:openssl - Enables dev-libs/openssl support. Adds support for encrypted network protocols (TLS/HTTPS).
 media-video/ffmpeg:pic - Force shared libraries to be built as PIC (this is slower)
-media-video/ffmpeg:qt-faststart - Build and install qt-faststart application
 media-video/ffmpeg:rtmp - Enable Real Time Messaging Protocol using librtmp
 media-video/ffmpeg:schroedinger - Enable Dirac video support (an advanced royalty-free video compression format) via libschroedinger (high-speed implementation in C of the Dirac codec).
 media-video/ffmpeg:ssse3 - Faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
@@ -3097,20 +3096,15 @@ media-video/kino:gpac - Enable GPAC support when exporting to 3GPP format
 media-video/kmplayer:npp - Compile the npp backend that plays xembed style browser plugins.
 media-video/libav:3dnowext - Enable manually-optimised routines using the AMD 3DNow!Ex SIMD instruction set, present in modern AMD CPUs. (Check for 3dnowext in /proc/cpuinfo to know whether your CPU supports it).
 media-video/libav:aac - Use external vo-aacenc library for AAC encoding
-media-video/libav:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/libav:amr - Enable Adaptive Multi-Rate Audio support
-media-video/libav:ass - Enables media-libs/libass based subtitle renderer.
 media-video/libav:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
-media-video/libav:bluray - Enable playback of Blu-ray filesystems
 media-video/libav:cdio - Enable audio CD grabbing with dev-libs/libcdio.
-media-video/libav:celt - Adds Xiph CELT audio decoding support via media-libs/celt
 media-video/libav:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs).
 media-video/libav:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
 media-video/libav:faac - Use external faac library for AAC encoding
 media-video/libav:frei0r - Enable frei0r wrapping in libavfilter
 media-video/libav:gpl - Build all GPL licensed code. Without this flag set the package is build under LGPL license.
 media-video/libav:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
-media-video/libav:libv4l - Uses media-libs/libv4l for video4linux instead of direct calls. Adds support for more devices via the userspace library.
 media-video/libav:mmxext - Enable mmx2 support.
 media-video/libav:network - Enable network streaming support.
 media-video/libav:openssl - Prefer dev-libs/openssl over net-libs/gnutls to provide SSL/TLS support (notice: the resulting binaries are unredistributable).
@@ -3660,8 +3654,10 @@ net-im/ekg2:sqlite3 - Support logging messages into SQLite3 database. If 'sqlite
 net-im/ekg2:ssl - Enable the complete SSL/TLS support through OpenSSL. This also enables the 'sim' plugin which relies on OpenSSL.
 net-im/emesene:webcam - Enable support for webcam
 net-im/empathy:call - Enable Call channel support using net-libs/telepathy-farstream for audio/video calls
+net-im/empathy:geocode - Enable translation between addresses and geographic coordinates using sci-geosciences/geocode-glib and Yahoo! Place Finder
 net-im/empathy:geoloc - Enable geolocation support through app-misc/geoclue
 net-im/empathy:gnome-online-accounts - Enable using net-libs/gnome-online-accounts for authorization (e.g. for Google Talk)
+net-im/empathy:legacy-call - Enable the Empathy 3.2-like call UI
 net-im/empathy:map - Enable world map support through media-libs/libchamplain
 net-im/empathy:nautilus - Enable nautilus-sendto support
 net-im/empathy:sendto - Enable support for sending files to various devices using gnome-extra/nautilus-sendto
@@ -4655,6 +4651,7 @@ sci-electronics/pcb:png - PNG graphics export
 sci-electronics/pcb:tk - Build tcl/tk graphical QFP footprint generator
 sci-electronics/pcb:toporouter - Build toporouter
 sci-electronics/pcb:xrender - Translucent PCB display for Motif/Lesstif GUI
+sci-geosciences/geocode-glib:introspection - Use dev-libs/gobject-introspection for introspection
 sci-geosciences/gmt:gmtfull - Full resolution bathymetry database
 sci-geosciences/gmt:gmthigh - Add high resolution bathymetry database
 sci-geosciences/gmt:gmtsuppl - Supplement functions for GMT
@@ -5453,6 +5450,16 @@ www-servers/pshs:magic - Enable automatic detection of Content-Type using libmag
 www-servers/pshs:netlink - Use libnetlink (sys-apps/iproute2) to get network interface addresses
 www-servers/pshs:upnp - Enable port forwarding using UPnP via net-libs/miniupnpc
 www-servers/resin:admin - Enable Resin admin webapp
+www-servers/uwsgi:carbon - Enable support for sending statistics to a carbon server (see http://projects.unbit.it/uwsgi/wiki/Carbon).
+www-servers/uwsgi:erlang - Let the uWSGI server as as an Erlang C-Node and exchange messages and rpc with Erlang nodes. Together with the USE=python this enables erlang support in python (see the mappings table in http://projects.unbit.it/uwsgi/wiki/ErlangIntegration).
+www-servers/uwsgi:graylog2 - Enable logging to graylog2 (see http://graylog2.org/).
+www-servers/uwsgi:json - Support json as a configuration file format.
+www-servers/uwsgi:nagios - Add nagios-friendly logging output (see http://projects.unbit.it/uwsgi/wiki/Nagios).
+www-servers/uwsgi:rrdtool - Enable support for writing requests data in RRD files.
+www-servers/uwsgi:rsyslog - Support direct logging to a app-admin/rsyslog socket (without going through the syslog interface).
+www-servers/uwsgi:spooler - Build a plugin which gives a network spooler (see http://projects.unbit.it/uwsgi/wiki/Spooler).
+www-servers/uwsgi:yaml - Support yaml as a configuration file format.
+www-servers/uwsgi:zeromq - Enable logging and deployment via ZeroMQ.
 www-servers/varnish:tools - Build additional tools: varnishhist, varnishstat, varnishtop, varnishsizes
 x11-apps/ardesia:cwiid - cwiid support: collection of Linux tools written in C for interfacing to the Nintendo Wiimote.
 x11-apps/xdm:consolekit - Enable native sys-auth/consolekit support

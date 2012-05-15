@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/libav/libav-9999.ebuild,v 1.44 2012/05/14 18:29:13 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/libav/libav-9999.ebuild,v 1.47 2012/05/15 08:31:57 scarabeus Exp $
 
 EAPI=4
 
@@ -27,11 +27,11 @@ SLOT="0"
 [[ ${PV} == *9999 ]] || KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64
 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
 ~x64-solaris ~x86-solaris"
-IUSE="aac aacplus alsa ass amr bindist bluray +bzip2 cdio celt cpudetection
-	custom-cflags debug doc +encode faac fontconfig frei0r +gpl gsm
-	+hardcoded-tables ieee1394 jack jpeg2k libv4l modplug mp3 network openssl oss
-	pic pulseaudio rtmp schroedinger sdl speex ssl static-libs test theora threads
-	truetype v4l vaapi vdpau vorbis vpx X x264 xvid +zlib"
+IUSE="aac alsa amr bindist +bzip2 cdio cpudetection custom-cflags debug doc
+	+encode faac frei0r +gpl gsm +hardcoded-tables ieee1394 jack jpeg2k mp3
+	network openssl oss pic pulseaudio rtmp schroedinger sdl speex ssl
+	static-libs test theora threads tools truetype v4l vaapi vdpau vorbis vpx X
+	x264 xvid +zlib"
 
 # String for CPU features in the useflag[:configure_option] form
 # if :configure_option isn't set, it will use 'useflag' as configure option
@@ -40,23 +40,16 @@ for i in ${CPU_FEATURES} ; do
 	IUSE+=" ${i%:*}"
 done
 
-FFTOOLS="aviocat cws2fws graph2dot ismindex pktdumper qt-faststart trasher"
-for i in ${FFTOOLS} ; do
-	IUSE+=" +fftools_${i}"
-done
+TOOLS="aviocat graph2dot ismindex pktdumper qt-faststart trasher"
 
 RDEPEND="
 	!media-video/ffmpeg
 	alsa? ( media-libs/alsa-lib )
 	amr? ( media-libs/opencore-amr )
-	ass? ( media-libs/libass )
-	bluray? ( media-libs/libbluray )
 	bzip2? ( app-arch/bzip2 )
 	cdio? ( dev-libs/libcdio )
-	celt? ( >=media-libs/celt-0.11.1 )
 	encode? (
 		aac? ( media-libs/vo-aacenc )
-		aacplus? ( media-libs/libaacplus )
 		amr? ( media-libs/vo-amrwbenc )
 		faac? ( media-libs/faac )
 		mp3? ( >=media-sound/lame-3.98.3 )
@@ -68,7 +61,6 @@ RDEPEND="
 		x264? ( >=media-libs/x264-0.0.20111017 )
 		xvid? ( >=media-libs/xvid-1.1.0 )
 	)
-	fontconfig? ( media-libs/fontconfig )
 	frei0r? ( media-plugins/frei0r-plugins )
 	gsm? ( >=media-sound/gsm-1.0.12-r1 )
 	ieee1394? (
@@ -77,8 +69,6 @@ RDEPEND="
 	)
 	jack? ( media-sound/jack-audio-connection-kit )
 	jpeg2k? ( >=media-libs/openjpeg-1.3-r2 )
-	libv4l? ( media-libs/libv4l )
-	modplug? ( media-libs/libmodplug )
 	pulseaudio? ( media-sound/pulseaudio )
 	rtmp? ( >=media-video/rtmpdump-2.2f )
 	ssl? (
@@ -103,14 +93,12 @@ RDEPEND="
 DEPEND="${RDEPEND}
 	>=sys-devel/make-3.81
 	doc? ( app-text/texi2html )
-	fontconfig? ( virtual/pkgconfig )
 	ieee1394? ( virtual/pkgconfig )
-	libv4l? ( virtual/pkgconfig )
 	mmx? ( dev-lang/yasm )
 	rtmp? ( virtual/pkgconfig )
 	schroedinger? ( virtual/pkgconfig )
 	ssl? ( virtual/pkgconfig )
-	test? ( net-misc/wget )
+	test? ( sys-devel/bc )
 	truetype? ( virtual/pkgconfig )
 	v4l? ( sys-kernel/linux-headers )
 "
@@ -120,11 +108,14 @@ DEPEND="${RDEPEND}
 # faac and aac are concurent implementations
 # amr and aac require at least lgpl3
 # x264 requires gpl2
-REQUIRED_USE="bindist? ( !aacplus !faac !openssl )
+REQUIRED_USE="bindist? ( !faac !openssl )
 	rtmp? ( network )
 	amr? ( gpl ) aac? ( gpl ) x264? ( gpl ) X? ( gpl )
 	test? ( encode zlib )
 "
+
+# Test on live ebuild are not possible as they require trunk fate
+RESTRICT="test"
 
 src_prepare() {
 	# if we have snapshot then we need to hardcode the version
@@ -136,6 +127,8 @@ src_prepare() {
 src_configure() {
 	local myconf="${EXTRA_LIBAV_CONF}"
 	local uses i
+
+	use zlib && TOOLS+=" cws2fws"
 
 	myconf+="
 		$(use_enable gpl)
@@ -165,12 +158,11 @@ src_configure() {
 
 	# Encoders
 	if use encode; then
-		use aacplus && myconf+=" --enable-nonfree"
 		use faac && myconf+=" --enable-nonfree"
 		use mp3 && myconf+=" --enable-libmp3lame"
 		use amr && myconf+=" --enable-libvo-amrwbenc"
 		use aac && myconf+=" --enable-libvo-aacenc"
-		uses="aacplus faac theora vorbis x264 xvid"
+		uses="faac theora vorbis x264 xvid"
 		for i in ${uses}; do
 			use ${i} && myconf+=" --enable-lib${i}"
 		done
@@ -191,24 +183,20 @@ src_configure() {
 		use ${i} || myconf+=" --disable-indev=${i}"
 	done
 	use X && myconf+=" --enable-x11grab"
-	use libv4l && myconf+=" --enable-libv4l2"
 	# Outdevs
 	for i in alsa oss ; do
 		use ${i} || myconf+=" --disable-outdev=${i}"
 	done
 	# libavfilter options
-	use ass && myconf+=" --enable-libass"
+	use frei0r && myconf+=" --enable-frei0r"
 	use truetype &&  myconf+=" --enable-libfreetype"
-	for i in frei0r fontconfig ; do
-		use ${i} && myconf+=" --enable-${i}"
-	done
 
 	# Threads; we only support pthread for now but ffmpeg supports more
 	use threads && myconf+=" --enable-pthreads"
 
 	# Decoders
 	use amr && myconf+=" --enable-libopencore-amrwb --enable-libopencore-amrnb"
-	uses="bluray celt gsm modplug rtmp schroedinger speex vpx"
+	uses="gsm rtmp schroedinger speex vpx"
 	for i in ${uses}; do
 		use ${i} && myconf+=" --enable-lib${i}"
 	done
@@ -296,9 +284,13 @@ src_compile() {
 
 	emake
 
-	for i in ${FFTOOLS} ; do
-		use fftools_${i} && emake tools/${i}
-	done
+	if use tools; then
+		tc-export CC
+
+		for i in ${TOOLS}; do
+			emake tools/${i}
+		done
+	fi
 }
 
 src_install() {
@@ -310,9 +302,11 @@ src_install() {
 	dodoc doc/*.txt
 	use doc && dodoc doc/*.html
 
-	for i in ${FFTOOLS} ; do
-		use fftools_${i} && dobin tools/${i}
-	done
+	if use tools; then
+		for i in ${TOOLS}; do
+			dobin tools/${i}
+		done
+	fi
 
 	for i in $(usex sdl avplay "") $(usex network avserver "") avprobe; do
 		dosym  ${i} /usr/bin/${i/av/ff}

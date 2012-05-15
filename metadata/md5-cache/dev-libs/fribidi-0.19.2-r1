@@ -4,10 +4,10 @@ DESCRIPTION=A free implementation of the unicode bidirectional algorithm
 EAPI=4
 HOMEPAGE=http://fribidi.org/
 IUSE=static-libs
-KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.4:2
 SLOT=0
 SRC_URI=http://fribidi.org/download/fribidi-0.19.2.tar.gz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=25441c299dfba07707c8c2e95062d815
+_md5_=e93f471299b505000c90b10826d0c494
