@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.228 2012/05/16 02:02:25 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.235 2012/05/16 15:23:12 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -26,6 +26,10 @@ dev-libs/apr-util ldap
 net-print/cups ldap
 www-servers/apache ldap
 dev-db/postgresql-base ldap
+net-fs/samba ldap
+
+# sys-libs/ldb
+net-fs/samba ldb
 
 # dev-lang/php:5.3
 dev-libs/ossp-uuid php
@@ -105,11 +109,6 @@ media-libs/openal pulseaudio
 media-video/ffmpeg pulseaudio
 media-libs/libcanberra pulseaudio
 
-# >=net-fs/samba-3
-gnome-base/gnome-vfs samba
-net-libs/libsoup samba
-gnome-base/gvfs samba
-
 # >=sys-fs/udisks-1.90:2
 gnome-base/gvfs udisks
 
@@ -148,23 +147,22 @@ x11-libs/qt-sql mysql
 dev-libs/apr-util freetds
 x11-libs/qt-sql freetds
 
-# >=dev-util/glade-3.2:3
-x11-libs/gtksourceview glade
+# >=gnome-base/libgnomeui-2
+# >=gnome-base/libbonoboui-2
+dev-util/glade gnome
 
 # app-emulation/wine
 media-libs/mesa d3d
 
 # sys-fs/udev
 media-libs/mesa gbm
+x11-drivers/xf86-video-intel glamor
 
 # does not build
 x11-libs/libdrm libkms
 media-libs/mesa video_cards_vmware
 media-libs/mesa video_cards_r600
 media-libs/mesa video_cards_radeon
-
-# x11-drivers/nvidia-drivers
-x11-base/xorg-drivers video_cards_nvidia
 
 # x11-drivers/xf86-video-sis
 x11-base/xorg-drivers video_cards_sis

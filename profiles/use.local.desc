@@ -930,6 +930,7 @@ app-text/wpd2odt:visio - Add support for visio format using media-libs/libvisio
 app-text/wpd2odt:wpg - Add support for wpg format using app-text/libwpg
 app-text/wpd2odt:wps - Add support for wps format using app-text/libwps
 app-text/wv:tools - Install optional utilities considered deprecated in favor of using AbiWord.
+app-text/xdvik:Xaw - Use Xaw toolkit.
 app-text/xiphos:webkit - Use net-libs/webkit-gtk instead of gnome-extra/gtkhtml
 app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
 app-text/yagf:tesseract - Enable support for the app-text/tesseract OCR engine.
@@ -2486,7 +2487,6 @@ media-libs/evas:ppm - Support PPM image loader
 media-libs/evas:psd - Support PSD image loader
 media-libs/evas:tga - Support tga image loader
 media-libs/faad2:digitalradio - Digital Radio Mondiale (warning: disables other decoders)
-media-libs/ffmpegsource:postproc - Enables image post-processing via libpostproc (part of FFmpeg).
 media-libs/flickcurl:oauth - Enable experimental OAuth support
 media-libs/flickcurl:raptor - Use media-libs/raptor for proper RDF serializing
 media-libs/freeglut:mpx - Enable support for multi-pointer-X. One pointer for each pointer device.
@@ -3980,8 +3980,8 @@ net-libs/opal:vpb - Enable Voicetronics VPB card support
 net-libs/opal:vxml - Enable VXML support
 net-libs/opal:wav - Enable WAVFILE support
 net-libs/opal:x264-static - Install x264 plugin statically linked with x264
-net-libs/openh323:noaudio - Disable audio codecs
-net-libs/openh323:novideo - Disable video codecs
+net-libs/openh323:audio - Enable audio codecs
+net-libs/openh323:video - Enable video codecs
 net-libs/ortp:srtp - Add support for Secure RTP
 net-libs/pjsip:cli - Installs pjsua, a simple command-line SIP client
 net-libs/pjsip:epoll - epoll system call support
