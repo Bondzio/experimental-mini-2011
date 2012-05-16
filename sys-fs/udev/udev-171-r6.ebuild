@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/sys-fs/udev/udev-132.ebuild,v 1.1 2008/11/14 16:49:03 zzam Exp $
 
-EAPI="4"
+EAPI="1"
 
 inherit eutils flag-o-matic multilib toolchain-funcs linux-info
 DESCRIPTION="Linux dynamic and persistent device naming support (aka userspace devfs)"
@@ -17,7 +17,7 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="*"
+KEYWORDS="~*"
 IUSE="acl selinux extras +hwdb +gudev introspection"
 MIN_KERNEL="2.6.32"
 
@@ -27,14 +27,7 @@ COMMON_DEPEND="selinux? ( sys-libs/libselinux )
 		extras? ( sys-apps/acl dev-libs/gobject-introspection dev-libs/glib:2 )
 		gudev? ( dev-libs/glib:2 )
 	    introspection? ( dev-libs/gobject-introspection )
-		hwdb? ( 
-			>=sys-apps/usbutils-0.82
-			|| (
-				( sys-apps/hwids >=sys-apps/pciutils-3.1.9-r2 )
-				<sys-apps/pciutils-3.1.9-r1[-zlib]
-				)
-			)
-		"
+		hwdb? ( sys-apps/hwids )"
 DEPEND="${COMMON_DEPEND} dev-util/gperf >=sys-kernel/linux-headers-2.6.34"
 RDEPEND="${COMMON_DEPEND} !sys-apps/coldplug !<sys-fs/lvm2-2.02.45 !sys-fs/device-mapper >=sys-apps/baselayout-2.1.6"
 PROVIDE="virtual/dev-manager"
@@ -93,9 +86,14 @@ src_unpack() {
 }
 
 use_extras() { use extras && echo "--enable-${2:-$1}" || use_enable "$@" ; }
-src_configure() {
+src_compile() {
+	filter-flags -fprefetch-loop-arrays
+
 	# sys-fs/lvm2 may require static libs - generate them just to be on the safe
 	# side. shared libs get generated too.
+
+	echo $(use_extras introspection)
+
 	econf \
 		--prefix=/usr \
 		--sysconfdir=/etc \
@@ -105,7 +103,7 @@ src_configure() {
 		--with-rootlibdir=/$(get_libdir) \
 		--libexecdir="${udev_libexec_dir}" \
 		--enable-logging \
-		$(use_extras hwdb) \
+		--enable-hwdb \
 		--with-pci-ids-path="${EPREFIX}/usr/share/misc/pci.ids" \
 		--with-usb-ids-path="${EPREFIX}/usr/share/misc/usb.ids" \
 		$(use_extras introspection) \
