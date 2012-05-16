@@ -1180,6 +1180,7 @@ dev-lang/gforth:force-reg - Enable a possibly unstable GCC flag for possibly lar
 dev-lang/ghc:binary - Install the binary version directly, rather than using it to build the source version.
 dev-lang/ghc:ghcbootstrap - Internal: Bootstrap GHC from an existing GHC installation.
 dev-lang/ghc:llvm - Enable llvm code geenrator for ghc (-fllvm)
+dev-lang/go:pax_kernel - enable running under a kernel with PaX enabled
 dev-lang/icc:eclipse - Install the dev-util/eclipse-sdk plugins
 dev-lang/icc:idb - Install the Intel Debugger
 dev-lang/icc:ipp - Install the Intel Integrated Primitive
@@ -3374,6 +3375,7 @@ net-analyzer/echoping:tos - enable support for TOS (TYpe Of Service).
 net-analyzer/flowgrind:pcap - Enable packet capturing support using net-libs/libpcap
 net-analyzer/fprobe:messages - enable console messages
 net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
+net-analyzer/icinga:eventhandler - Adds support for running custom scripts whenever a host or service state change occurs
 net-analyzer/icinga:idoutils - Adds DB support
 net-analyzer/icinga:lighttpd - Adds Lighttpd support
 net-analyzer/icinga:plugins - Adds support for nagios plugins
@@ -3745,7 +3747,6 @@ net-im/qutim:telepathy - Enable telepathy-based protocol support
 net-im/qutim:vkontakte - Enable vkontakte protocol support
 net-im/qutim:webkit - Enable Adium-like WebView plugin
 net-im/qutim:xscreensaver - Use X screensaver protocol extension to monitor idle/active status based on mouse/keyboard events
-net-im/qutim:yandexnarod - Enable yandex.narod plugin
 net-im/skype:pax_kernel - Triggers a paxmarking of the binary
 net-im/skype:qt-static - Installs binaries statically linked to Qt
 net-im/telepathy-connection-managers:irc - Enable Internet Relay Chat (IRC) support.
@@ -4936,6 +4937,7 @@ sys-apps/pyrenamer:music - Enable support for renaming music
 sys-apps/qingy:opensslcrypt - Encrypt communications between qingy and its GUI using dev-libs/openssl
 sys-apps/razercfg:pm-utils - Installs the pm-utils hooks for suspend/resume and requires sys-power/pm-utils
 sys-apps/razercfg:qt4 - Installs a qt UI. Requires dev-python/pygtk
+sys-apps/rsbac-admin:rklogd - Enabled deprecated RSBAC kernel logger
 sys-apps/s390-tools:fuse - build cmsfs-fuse to read files stored on a z/VM CMS disk
 sys-apps/s390-tools:zfcpdump - build the kernel disk dumping utility
 sys-apps/shadow:audit - Enable support for sys-process/audit

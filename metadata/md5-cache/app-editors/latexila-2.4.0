@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
-DEPEND=app-text/gtkspell >=dev-libs/glib-2.30:2 dev-libs/libgee:0 dev-libs/libunique:1 >=x11-libs/gtk+-2.16:2 >=x11-libs/gtksourceview-2.10:2.0 x11-libs/gdk-pixbuf:2 x11-libs/libX11 x11-libs/pango gnome? ( gnome-base/gsettings-desktop-schemas ) vala? ( >=dev-lang/vala-0.16.0:0.16 ) dev-util/itstool virtual/pkgconfig sys-devel/gettext >=dev-util/cmake-2.6.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils >=sys-apps/sed-4
+DEPEND=app-text/gtkspell:2 >=dev-libs/glib-2.30:2 dev-libs/libgee:0 dev-libs/libunique:1 >=x11-libs/gtk+-2.16:2 >=x11-libs/gtksourceview-2.10:2.0 x11-libs/gdk-pixbuf:2 x11-libs/libX11 x11-libs/pango gnome? ( gnome-base/gsettings-desktop-schemas ) vala? ( >=dev-lang/vala-0.16.0:0.16 ) dev-util/itstool virtual/pkgconfig sys-devel/gettext >=dev-util/cmake-2.6.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils >=sys-apps/sed-4
 DESCRIPTION=Integrated LaTeX environment for GNOME
 EAPI=4
 HOMEPAGE=http://projects.gnome.org/latexila/
 IUSE=gnome +latexmk rubber vala
 KEYWORDS=amd64 x86
 LICENSE=GPL-3
-RDEPEND=app-text/gtkspell >=dev-libs/glib-2.30:2 dev-libs/libgee:0 dev-libs/libunique:1 >=x11-libs/gtk+-2.16:2 >=x11-libs/gtksourceview-2.10:2.0 x11-libs/gdk-pixbuf:2 x11-libs/libX11 x11-libs/pango gnome? ( gnome-base/gsettings-desktop-schemas ) vala? ( >=dev-lang/vala-0.16.0:0.16 ) virtual/latex-base x11-themes/hicolor-icon-theme latexmk? ( dev-tex/latexmk ) rubber? ( dev-tex/rubber )
+RDEPEND=app-text/gtkspell:2 >=dev-libs/glib-2.30:2 dev-libs/libgee:0 dev-libs/libunique:1 >=x11-libs/gtk+-2.16:2 >=x11-libs/gtksourceview-2.10:2.0 x11-libs/gdk-pixbuf:2 x11-libs/libX11 x11-libs/pango gnome? ( gnome-base/gsettings-desktop-schemas ) vala? ( >=dev-lang/vala-0.16.0:0.16 ) virtual/latex-base x11-themes/hicolor-icon-theme latexmk? ( dev-tex/latexmk ) rubber? ( dev-tex/rubber )
 SLOT=0
 SRC_URI=mirror://gnome/sources/latexila/2.4/latexila-2.4.0.tar.xz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=00bde057a0fad7af3fb0b48dc80cf384
+_md5_=e757c5ddd0af31918ecfc26a4a6cffa7

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.211 2012/05/15 14:41:46 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.228 2012/05/16 02:02:25 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -71,6 +71,7 @@ dev-tex/latex-beamer lyx
 
 # net-libs/libproxy
 net-libs/neon libproxy
+net-libs/glib-networking libproxy
 
 # dev-libs/pakchois
 net-libs/neon pkcs11
@@ -102,6 +103,24 @@ gnome-base/gconf policykit
 media-libs/libsdl pulseaudio
 media-libs/openal pulseaudio
 media-video/ffmpeg pulseaudio
+media-libs/libcanberra pulseaudio
+
+# >=net-fs/samba-3
+gnome-base/gnome-vfs samba
+net-libs/libsoup samba
+gnome-base/gvfs samba
+
+# >=sys-fs/udisks-1.90:2
+gnome-base/gvfs udisks
+
+# >=app-pda/libimobiledevice-1.1.0
+gnome-base/gvfs ios
+
+# >=sys-fs/fuse-2.8.0
+gnome-base/gvfs fuse
+
+# >=gnome-base/libgdu-3.0.2
+gnome-base/gvfs gdu
 
 # >=x11-libs/libva-0.32
 media-video/ffmpeg vaapi
@@ -117,9 +136,6 @@ media-video/ffmpeg frei0r
 media-libs/libsdl nas
 x11-libs/qt-gui nas
 
-# dev-python/pygtksourceview:2
-dev-vcs/git gtk
-
 # net-misc/openntpd
 net-misc/ntp openntpd
 
@@ -131,6 +147,9 @@ x11-libs/qt-sql mysql
 # dev-db/freetds
 dev-libs/apr-util freetds
 x11-libs/qt-sql freetds
+
+# >=dev-util/glade-3.2:3
+x11-libs/gtksourceview glade
 
 # app-emulation/wine
 media-libs/mesa d3d
@@ -144,104 +163,8 @@ media-libs/mesa video_cards_vmware
 media-libs/mesa video_cards_r600
 media-libs/mesa video_cards_radeon
 
-# x11-drivers/xf86-input-acecad
-x11-base/xorg-drivers input_devices_acecad
-
-# x11-drivers/xf86-input-elographics
-x11-base/xorg-drivers input_devices_elographics
-
-# x11-drivers/xf86-input-fpit
-x11-base/xorg-drivers input_devices_fpit
-
-# x11-drivers/xf86-input-hyperpen
-x11-base/xorg-drivers input_devices_hyperpen
-
-# x11-drivers/xf86-input-joystick
-x11-base/xorg-drivers input_devices_joystick
-
-# x11-drivers/xf86-input-keyboard
-x11-base/xorg-drivers input_devices_keyboard
-
-# x11-drivers/xf86-input-mouse
-x11-base/xorg-drivers input_devices_mouse
-
-# x11-drivers/xf86-input-mutouch
-x11-base/xorg-drivers input_devices_mutouch
-
-# x11-drivers/xf86-input-penmount
-x11-base/xorg-drivers input_devices_penmount
-
-# x11-drivers/xf86-input-vmmouse
-x11-base/xorg-drivers input_devices_vmmouse
-
-# x11-drivers/xf86-input-void
-x11-base/xorg-drivers input_devices_void
-
-# x11-drivers/xf86-video-apm
-x11-base/xorg-drivers video_cards_apm
-
-# x11-drivers/xf86-video-ark
-x11-base/xorg-drivers video_cards_ark
-
-# x11-drivers/xf86-video-ast
-x11-base/xorg-drivers video_cards_ast
-
-# x11-drivers/xf86-video-cirrus
-x11-base/xorg-drivers video_cards_cirrus
-
-# x11-drivers/xf86-video-dummy
-x11-base/xorg-drivers video_cards_dummy
-
-# x11-drivers/xf86-video-fbdev
-x11-base/xorg-drivers video_cards_fbdev
-
-# x11-drivers/xf86-video-glint
-x11-base/xorg-drivers video_cards_glint
-
-# x11-drivers/xf86-video-i128
-x11-base/xorg-drivers video_cards_i128
-
-# x11-drivers/xf86-video-i740
-x11-base/xorg-drivers video_cards_i740
-
-# x11-drivers/xf86-video-intel
-x11-base/xorg-drivers video_cards_intel
-
-# x11-drivers/xf86-video-mach64
-x11-base/xorg-drivers video_cards_mach64
-
-# x11-drivers/xf86-video-mga
-x11-base/xorg-drivers video_cards_mga
-
-# x11-drivers/xf86-video-modesetting
-x11-base/xorg-drivers video_cards_modesetting
-
-# x11-drivers/xf86-video-neomagic
-x11-base/xorg-drivers video_cards_neomagic
-
-# x11-drivers/xf86-video-nv
-x11-base/xorg-drivers video_cards_nv
-
 # x11-drivers/nvidia-drivers
 x11-base/xorg-drivers video_cards_nvidia
-
-# x11-drivers/xf86-video-r128
-x11-base/xorg-drivers video_cards_r128
-
-# x11-drivers/xf86-video-ati
-x11-base/xorg-drivers video_cards_radeon
-
-# x11-drivers/xf86-video-s3
-x11-base/xorg-drivers video_cards_s3
-
-# x11-drivers/xf86-video-s3virge
-x11-base/xorg-drivers video_cards_s3virge
-
-# x11-drivers/xf86-video-savage
-x11-base/xorg-drivers video_cards_savage
-
-# x11-drivers/xf86-video-siliconmotion
-x11-base/xorg-drivers video_cards_siliconmotion
 
 # x11-drivers/xf86-video-sis
 x11-base/xorg-drivers video_cards_sis
@@ -249,14 +172,6 @@ x11-base/xorg-drivers video_cards_sis
 # x11-drivers/xf86-video-tdfx
 x11-base/xorg-drivers video_cards_tdfx
 
-# x11-drivers/xf86-video-tga
-x11-base/xorg-drivers video_cards_tga
-
-# x11-drivers/xf86-video-trident
-x11-base/xorg-drivers video_cards_trident
-
-# x11-drivers/xf86-video-vesa
-x11-base/xorg-drivers video_cards_vesa
-
 # x11-drivers/xf86-video-vmware
+# x11-libs/libdrm[libkms,video_cards_vmware]
 x11-base/xorg-drivers video_cards_vmware
