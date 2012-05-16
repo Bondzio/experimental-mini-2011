@@ -111,10 +111,6 @@ src_compile() {
 		$(use_extras gudev) \
 		$(use_enable extras) \
 		$(use_with selinux)
-}
-
-src_compile() {
-	filter-flags -fprefetch-loop-arrays
 
 	emake || die "compiling udev failed"
 }
