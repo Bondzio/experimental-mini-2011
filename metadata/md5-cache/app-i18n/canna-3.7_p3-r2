@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prerm setup unpack
-DEPEND=>=sys-apps/sed-4 x11-misc/gccmakedep x11-misc/imake doc? ( >=dev-texlive/texlive-langcjk-2010 )
+DEPEND=>=sys-apps/sed-4 x11-misc/gccmakedep x11-misc/imake doc? ( app-text/ghostscript-gpl >=dev-texlive/texlive-langcjk-2010 dev-texlive/texlive-fontsextra dev-texlive/texlive-genericrecommended dev-texlive/texlive-latexrecommended )
 DESCRIPTION=A client-server based Kana-Kanji conversion system
 HOMEPAGE=http://canna.sourceforge.jp/
 IUSE=doc
@@ -8,4 +8,4 @@ LICENSE=MIT
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/canna/9565/Canna37p3.tar.bz2
 _eclasses_=cannadic	7dd312fbd51b24014a0a39f0a3532d66	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0be3e78812c70792c0938955e88b971f
+_md5_=e2aaed87860e5bf1fb6deebe2412a8af

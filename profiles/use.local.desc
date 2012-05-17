@@ -4063,9 +4063,10 @@ net-mail/mairix:gnus - Add support for the marks propagation feature in app-emac
 net-mail/mu:gui - Build and install the experimental gui 'mug'.
 net-mail/notmuch:crypt - Support decryption and verification of PGP/MIME messages and in Emacs UI - encryption
 net-mail/notmuch:doc - Install API documentation for enabled bindings
-net-mail/notmuch:emacs - Install Notmuch client for Emacs (main client)
-net-mail/notmuch:nmbug - Install Experimental Tag Sharing / Pseudo-Bug-Tracking for Notmuch (http://notmuchmail.org/nmbug/)
-net-mail/notmuch:vim - Install Notmuch client for Vim (experimental)
+net-mail/notmuch:emacs - Install Emacs UI (the main one)
+net-mail/notmuch:mutt - Install helper script for Mutt
+net-mail/notmuch:nmbug - Install experimental tag sharing / pseudo-bug-tracking script for Notmuch (see http://notmuchmail.org/nmbug/)
+net-mail/notmuch:vim - Install Vim UI (experimental)
 net-mail/qmailadmin:maildrop - Filter spam using maildrop
 net-mail/qpopper:apop - Enables the pop.auth file in /etc/pop.auth
 net-mail/qpopper:drac - Enables DRAC support
