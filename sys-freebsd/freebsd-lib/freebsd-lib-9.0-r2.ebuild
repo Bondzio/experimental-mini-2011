@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-lib/freebsd-lib-9.0-r2.ebuild,v 1.1 2012/05/16 16:12:07 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-lib/freebsd-lib-9.0-r2.ebuild,v 1.7 2012/05/17 16:58:27 aballier Exp $
 
 EAPI=2
 
@@ -196,6 +196,14 @@ src_prepare() {
 	fi
 }
 
+get_csudir() {
+	if [ -d "${WORKDIR}/lib/csu/$1-elf" ]; then
+		echo "lib/csu/$1-elf"
+	else
+		echo "lib/csu/$1"
+	fi
+}
+
 src_compile() {
 	# Does not work with GNU sed
 	# Force BSD's sed on BSD.
@@ -221,21 +229,16 @@ src_compile() {
 		local machine
 		machine=$(tc-arch-kernel ${CTARGET})
 
-		local csudir
-		if [ -d "${S}/csu/${machine}-elf" ]; then
-			csudir="${S}/csu/${machine}-elf"
-		else
-			csudir="${S}/csu/${machine}"
-		fi
+		local csudir="$(get_csudir ${machine})"
 		export RAW_LDFLAGS=$(raw-ldflags)
-		cd "${csudir}"
+		cd "${WORKDIR}/${csudir}" || die "Missing ${csudir}."
 		$(freebsd_get_bmake) ${mymakeopts} || die "make csu failed"
 
 		append-flags "-isystem /usr/${CTARGET}/usr/include"
 		append-flags "-isystem ${WORKDIR}/lib/libutil"
 		append-flags "-isystem ${WORKDIR}/lib/msun/${machine/i386/i387}"
-		append-flags "-B ${csudir}"
-		append-ldflags "-B ${csudir}"
+		append-flags "-B ${WORKDIR}/${csudir}"
+		append-ldflags "-B ${WORKDIR}/${csudir}"
 
 		# First compile libssp_nonshared.a and add it's path to LDFLAGS.
 		cd "${WORKDIR}/gnu/lib/libssp/libssp_nonshared/" || die "missing libssp."
@@ -249,10 +252,10 @@ src_compile() {
 		append-ldflags "-L${WORKDIR}/lib/libc"
 		export RAW_LDFLAGS=$(raw-ldflags)
 		LDADD="-lssp_nonshared" $(freebsd_get_bmake) ${mymakeopts} || die "make libc failed"
-		cd "${WORKDIR}/gnu/lib/libssp/" || die "missing libssp."
-		$(freebsd_get_bmake) ${mymakeopts} || die "make libssp failed"
-		cd "${WORKDIR}/lib/libthr/" || die "missing libthr"
-		$(freebsd_get_bmake) ${mymakeopts} || die "make libthr failed"
+		for i in gnu/lib/libssp lib/libthr lib/libutil ; do
+			cd "${WORKDIR}/${i}" || die "missing ${i}."
+			$(freebsd_get_bmake) ${mymakeopts} || die "make ${i} failed"
+		done
 	else
 		# Forces to use the local copy of headers as they might be outdated in
 		# the system
@@ -286,44 +289,21 @@ src_install() {
 	local mylibdir=$(get_libdir)
 
 	if [ "${CTARGET}" != "${CHOST}" ]; then
-		local csudir
-		if [ -d "${S}/csu/$(tc-arch-kernel ${CTARGET})-elf" ]; then
-			csudir="${S}/csu/$(tc-arch-kernel ${CTARGET})-elf"
-		else
-			csudir="${S}/csu/$(tc-arch-kernel ${CTARGET})"
-		fi
-		cd "${csudir}"
-		$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install \
-			FILESDIR="/usr/${CTARGET}/usr/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install csu failed"
-
-		cd "${S}/libc"
-		$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install NO_MAN= \
-			SHLIBDIR="/usr/${CTARGET}/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install libc failed"
-
-		cd "${S}/msun"
-		$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install NO_MAN= \
-			INCLUDEDIR="/usr/${CTARGET}/usr/include" \
-			SHLIBDIR="/usr/${CTARGET}/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install msun failed"
-
-		cd "${WORKDIR}/gnu/lib/libssp/"
-		$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install NO_MAN= \
-			INCLUDEDIR="/usr/${CTARGET}/usr/include" \
-			SHLIBDIR="/usr/${CTARGET}/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install ssp failed"
-
-		cd "${WORKDIR}/lib/libthr/"
-		$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install NO_MAN= \
-			INCLUDEDIR="/usr/${CTARGET}/usr/include" \
-			SHLIBDIR="/usr/${CTARGET}/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install libthr failed"
+		for i in "$(get_csudir $(tc-arch-kernel ${CTARGET}))" lib/libc lib/msun gnu/lib/libssp lib/libthr lib/libutil ; do
+			cd "${WORKDIR}/${i}/" || die "missing ${i}."
+			$(freebsd_get_bmake) ${mymakeopts} DESTDIR="${D}" install NO_MAN= \
+				INCLUDEDIR="/usr/${CTARGET}/usr/include" \
+				FILESDIR="/usr/${CTARGET}/usr/lib" \
+				SHLIBDIR="/usr/${CTARGET}/usr/lib" LIBDIR="/usr/${CTARGET}/usr/lib" || die "Install ${i} failed"
+		done
 
 		dosym "usr/include" "/usr/${CTARGET}/sys-include"
 	else
 		# Set SHLIBDIR and LIBDIR for multilib
-		cd "${WORKDIR}/gnu/lib/libssp"
-		SHLIBDIR="/usr/${mylibdir}" LIBDIR="/usr/${mylibdir}" mkinstall || die "Install ssp failed."
-		cd "${S}"
-		SHLIBDIR="/usr/${mylibdir}" LIBDIR="/usr/${mylibdir}" mkinstall || die "Install failed"
-		cd "${WORKDIR}/gnu/lib/libregex"
-		SHLIBDIR="/usr/${mylibdir}" LIBDIR="/usr/${mylibdir}" mkinstall || die "Install libregex failed"
+		for i in gnu/lib/libssp lib gnu/lib/libregex ; do
+			cd "${WORKDIR}/${i}/" || die "Missing ${i}."
+			SHLIBDIR="/usr/${mylibdir}" LIBDIR="/usr/${mylibdir}" mkinstall || die "Install ${i} failed."
+		done
 	fi
 
 	# Don't install the rest of the configuration files if crosscompiling
@@ -333,16 +313,6 @@ src_install() {
 		export CHOST=${CTARGET}
 		return 0
 	fi
-
-	# Symlink libbsdxml to libexpat as we use expat in favor of the renaming done
-	# on FreeBSD.
-	dosym libexpat.so /usr/${mylibdir}/libbsdxml.so
-	dosym libexpat.a /usr/${mylibdir}/libbsdxml.a
-
-	# install libstand files
-	dodir /usr/include/libstand
-	insinto /usr/include/libstand
-	doins "${S}"/libstand/*.h
 
 	cd "${WORKDIR}/etc/"
 	insinto /etc
@@ -354,7 +324,7 @@ src_install() {
 
 	# Generate ldscripts for core libraries that will go in /
 	gen_usr_ldscript -a alias cam geom ipsec jail kiconv \
-		kvm md procstat sbuf thr ufs util
+		kvm m md procstat sbuf thr ufs util
 
 	# Generate libc.so ldscript for inclusion of libssp_nonshared.a when linking
 	# this is done to avoid having to touch gcc spec file as it is currently
@@ -379,14 +349,6 @@ src_install() {
 ${output_format}
 GROUP ( /${mylibdir}/libc.so.7 /usr/${mylibdir}/libssp_nonshared.a )
 END_LDSCRIPT
-
-	dodir /etc/sandbox.d
-	cat - > "${D}"/etc/sandbox.d/00freebsd <<EOF
-# /dev/crypto is used mostly by OpenSSL on *BSD platforms
-# leave it available as packages might use OpenSSL commands
-# during compile or install phase.
-SANDBOX_PREDICT="/dev/crypto"
-EOF
 
 	# Install a libusb.pc for better compat with Linux's libusb
 	if use usb ; then

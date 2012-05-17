@@ -1,14 +1,13 @@
 DEFINED_PHASES=compile configure install postinst prepare
-DEPEND=sys-devel/flex virtual/yacc >=media-libs/t1lib-5.0.2 x11-libs/libXmu x11-libs/libXp x11-libs/libXpm motif? ( >=x11-libs/openmotif-2.3:0 ) neXt? ( x11-libs/neXtaw ) Xaw3d? ( x11-libs/libXaw3d ) Xaw? ( x11-libs/libXaw ) dev-libs/kpathsea
+DEPEND=sys-devel/flex virtual/yacc >=media-libs/t1lib-5.0.2 x11-libs/libXmu x11-libs/libXp x11-libs/libXpm motif? ( >=x11-libs/openmotif-2.3:0 ) !motif? ( neXt? ( x11-libs/neXtaw ) !neXt? ( Xaw3d? ( x11-libs/libXaw3d ) !Xaw3d? ( x11-libs/libXaw ) ) ) dev-libs/kpathsea
 DESCRIPTION=DVI previewer for X Window System
 EAPI=4
 HOMEPAGE=http://xdvi.sourceforge.net/
-IUSE=motif neXt +Xaw Xaw3d emacs
+IUSE=motif neXt Xaw3d emacs
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=GPL-2
-RDEPEND=>=media-libs/t1lib-5.0.2 x11-libs/libXmu x11-libs/libXp x11-libs/libXpm motif? ( >=x11-libs/openmotif-2.3:0 ) neXt? ( x11-libs/neXtaw ) Xaw3d? ( x11-libs/libXaw3d ) Xaw? ( x11-libs/libXaw ) dev-libs/kpathsea virtual/latex-base !<app-text/texlive-2007
-REQUIRED_USE=^^ ( motif neXt Xaw Xaw3d )
+RDEPEND=>=media-libs/t1lib-5.0.2 x11-libs/libXmu x11-libs/libXp x11-libs/libXpm motif? ( >=x11-libs/openmotif-2.3:0 ) !motif? ( neXt? ( x11-libs/neXtaw ) !neXt? ( Xaw3d? ( x11-libs/libXaw3d ) !Xaw3d? ( x11-libs/libXaw ) ) ) dev-libs/kpathsea virtual/latex-base !<app-text/texlive-2007
 SLOT=0
 SRC_URI=mirror://sourceforge/xdvi/xdvik-22.85.tar.gz
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=880ee67bef16410adec2eb862ed7c6cb
+_md5_=002b138ee11ba388b89936b8a8c3c0e5

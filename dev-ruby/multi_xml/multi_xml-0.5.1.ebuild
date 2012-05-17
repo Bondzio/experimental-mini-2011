@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/multi_xml/multi_xml-0.4.0.ebuild,v 1.2 2011/09/29 12:13:53 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/multi_xml/multi_xml-0.5.1.ebuild,v 1.1 2012/05/17 15:37:43 graaff Exp $
 
 EAPI=4
 
-# jruby is no longer supported by upstream starting with 0.3.0
-USE_RUBY="ruby18 ree18"
+USE_RUBY="ruby18 ree18 ruby19 jruby"
 
 RUBY_FAKEGEM_TASK_DOC="doc:yard"
 RUBY_FAKEGEM_DOCDIR="doc"
@@ -28,6 +27,11 @@ ruby_add_bdepend "test? ( >=dev-ruby/rspec-2.5:2 )"
 
 all_ruby_prepare() {
 	rm Gemfile || die
-	sed -i -e '/[Bb]undler/d' Rakefile spec/helper.rb || die
-	sed -i -e '/[Ss]imple[Cc]ov/d' spec/helper.rb || die
+
+	# Remove possible incompatible rspec options.
+	rm .rspec || die
+}
+
+each_ruby_test() {
+	CI=true ${RUBY} -S rspec spec || die
 }

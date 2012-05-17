@@ -930,7 +930,6 @@ app-text/wpd2odt:visio - Add support for visio format using media-libs/libvisio
 app-text/wpd2odt:wpg - Add support for wpg format using app-text/libwpg
 app-text/wpd2odt:wps - Add support for wps format using app-text/libwps
 app-text/wv:tools - Install optional utilities considered deprecated in favor of using AbiWord.
-app-text/xdvik:Xaw - Use Xaw toolkit.
 app-text/xiphos:webkit - Use net-libs/webkit-gtk instead of gnome-extra/gtkhtml
 app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
 app-text/yagf:tesseract - Enable support for the app-text/tesseract OCR engine.
@@ -3556,6 +3555,7 @@ net-fs/netatalk:cups - Add support for net-print/cups printers in papd. This fla
 net-fs/netatalk:quota - Add support for user quota on various filesystems.
 net-fs/netatalk:ssl - Use dev-libs/openssl to provide DHX User Access Modules. These are not used with most recent versions of OS X and can be kept disabled without risks.
 net-fs/netatalk:xfs - Enable support for XFS Quota
+net-fs/nfs-utils:nfsdcld - Enable nfsdcld NFSv4 clientid tracking daemon
 net-fs/nfs-utils:nfsidmap - Enable support for newer nfsidmap helper
 net-fs/nfs-utils:nfsv3 - Enable support for NFSv3
 net-fs/nfs-utils:nfsv4 - Enable support for NFSv4

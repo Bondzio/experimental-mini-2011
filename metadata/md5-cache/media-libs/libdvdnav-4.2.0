@@ -3,10 +3,10 @@ DEPEND=>=media-libs/libdvdread-4.2.0 virtual/pkgconfig || ( >=sys-devel/automake
 DESCRIPTION=Library for DVD navigation tools
 EAPI=4
 HOMEPAGE=http://dvdnav.mplayerhq.hu/
-KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
 LICENSE=GPL-2
 RDEPEND=>=media-libs/libdvdread-4.2.0
 SLOT=0
 SRC_URI=http://dvdnav.mplayerhq.hu/releases/libdvdnav-4.2.0.tar.bz2
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=205008359074750075bb312a6b5d7f14
+_md5_=5efa368f8e5c4c10fc14a7107d0778d0

@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=!media-libs/mesa[motif] x11-libs/libX11 x11-libs/libXt x11-libs/openmotif virtual/opengl virtual/pkgconfig
+DESCRIPTION=Mesa GLw library
+EAPI=4
+HOMEPAGE=http://mesa3d.sourceforge.net/
+IUSE=+motif static-libs
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=MIT
+RDEPEND=!media-libs/mesa[motif] x11-libs/libX11 x11-libs/libXt x11-libs/openmotif virtual/opengl
+SLOT=0
+SRC_URI=ftp://ftp.freedesktop.org/pub/mesa/glw/glw-1.0.0.tar.bz2
+_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e74315dcf9cec39ef9abba0f8c82d973
