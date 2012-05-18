@@ -886,6 +886,7 @@ app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an own
 app-text/podofo:boost - Add support for boost
 app-text/poppler:exceptions - Enable exceptions throwing.
 app-text/poppler:introspection - Enable GObject introspection.
+app-text/poppler:lcms1 - Prefer liblcms1 implementation over liblcms2.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
 app-text/poppler:xpdf-headers - 
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
@@ -2201,6 +2202,7 @@ kde-misc/synaptiks:upower - Handle mouse devices correctly across suspend and re
 kde-misc/tellico:addressbook - Add support for kdepim addressbook (kabc)
 lxde-base/lxdm:consolekit - Enables support for authorization using consolekit
 lxde-base/lxdm:gtk3 - Use GTK+3 instead of 2
+mail-client/alot:doc - Install user manual and API documentation
 mail-client/alpine:chappa - enhance alpine by applying Eduardo Chappa's patches
 mail-client/alpine:onlyalpine - installs only the alpine binary, so it does not collied with app-editors/pico and/or mail-client/pine
 mail-client/alpine:passfile - Adds support for caching passwords into a file between sessions

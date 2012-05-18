@@ -4,10 +4,10 @@ DESCRIPTION=GTK+ Front-End for libxine
 EAPI=4
 HOMEPAGE=http://xine.sourceforge.net/
 IUSE=gnome-screensaver linguas_cs linguas_de lirc nls nsplugin udev +xcb xinerama
-KEYWORDS=amd64 ~ppc ~ppc64 x86
+KEYWORDS=amd64 ppc ppc64 x86
 LICENSE=GPL-2
 RDEPEND=>=media-libs/xine-lib-1.1.20 x11-libs/gtk+:2 >=dev-libs/glib-2 >=dev-lang/spidermonkey-1.8.2.15 x11-libs/libX11 x11-libs/libXext x11-libs/libXrender gnome-screensaver? ( >=dev-libs/dbus-glib-0.90 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) nsplugin? ( dev-libs/nspr x11-libs/libXaw x11-libs/libXt ) udev? ( || ( >=sys-fs/udev-171-r1[gudev] <sys-fs/udev-171-r1[extras] ) ) xcb? ( x11-libs/libxcb ) xinerama? ( x11-libs/libXinerama ) gnome-screensaver? ( gnome-extra/gnome-screensaver )
 SLOT=0
 SRC_URI=mirror://sourceforge/xine/gxine-0.5.907.tar.xz
 _eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	nsplugins	c42fe69d78ae059f56a2d43658fc0480	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a70d2880ca2ca77ad0f28fee78cf150a
+_md5_=6e7b000179cbf4b814ebaea70fd3d6e4
