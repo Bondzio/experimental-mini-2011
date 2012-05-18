@@ -11,4 +11,4 @@ REQUIRED_USE=pam? ( !skey ) skey? ( !pam )
 SLOT=0
 SRC_URI=http://www.sudo.ws/sudo/dist/sudo-1.8.5p1.tar.gz ftp://ftp.sudo.ws/pub/sudo/sudo-1.8.5p1.tar.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=da4aa76f70307f573c23f3182c9a7295
+_md5_=77a7e0286992dddd775a57e0a212027a

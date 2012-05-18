@@ -886,7 +886,7 @@ app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an own
 app-text/podofo:boost - Add support for boost
 app-text/poppler:exceptions - Enable exceptions throwing.
 app-text/poppler:introspection - Enable GObject introspection.
-app-text/poppler:lcms1 - Prefer liblcms1 implementation over liblcms2.
+app-text/poppler:lcms1 - Prefer liblcms1 (deprecated) implementation over liblcms2.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
 app-text/poppler:xpdf-headers - 
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
@@ -4089,6 +4089,7 @@ net-misc/apt-cacher-ng:fuse - Install the sys-fs/fuse based acngfs, to use a use
 net-misc/aria2:ares - Enables support for asynchronous DNS using the c-ares library
 net-misc/aria2:bittorrent - Enables support for the bittorrent protocol
 net-misc/aria2:metalink - Enables support for metalink
+net-misc/aria2:nettle - Use dev-libs/nettle and dev-libs/gmp for bittorrent/metalink crypto instead of dev-libs/libgcrypt when using net-libs/gnutls for SSL or without SSL support at all.
 net-misc/aria2:scripts - Install additional scripts which use aria2's xmlrpc functionality
 net-misc/asterisk:ais - Support clustering using the Application Interface Specification framework
 net-misc/asterisk:dahdi - Support Digium compatible hardware (formerly known as Zaptel).
@@ -4443,6 +4444,7 @@ net-p2p/mldonkey:fasttrack - enable fasttrack support
 net-p2p/mldonkey:gnutella - enable gnutella and gnutella2 support
 net-p2p/mldonkey:guionly - enable client build only
 net-p2p/mldonkey:magic - enable use of libmagic
+net-p2p/ncdc:db-upgrade - Build db-upgrade utility
 net-p2p/rtorrent:color - Add custom color support for torrent list
 net-p2p/rtorrent:daemon - Uses app-misc/screen to daemonize this application
 net-p2p/transmission:lightweight - Optimize transmission for low-resource systems (smaller cache size, prefer unencrypted peer connections, etc.)

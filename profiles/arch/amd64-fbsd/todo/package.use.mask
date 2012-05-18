@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.240 2012/05/17 18:01:15 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.244 2012/05/18 16:48:21 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -27,6 +27,7 @@ net-print/cups ldap
 www-servers/apache ldap
 dev-db/postgresql-base ldap
 net-fs/samba ldap
+dev-db/virtuoso-server ldap
 
 # sys-libs/ldb
 net-fs/samba ldb
@@ -140,6 +141,7 @@ net-misc/ntp openntpd
 sci-mathematics/glpk mysql
 dev-libs/apr-util mysql
 x11-libs/qt-sql mysql
+dev-libs/redland mysql
 
 # dev-db/freetds
 dev-libs/apr-util freetds
@@ -183,6 +185,7 @@ media-plugins/gst-plugins-meta taglib
 
 # >=dev-cpp/clucene-0.9.21[-debug]
 app-misc/strigi clucene
+dev-libs/soprano clucene
 
 # >=media-libs/phonon-vlc-0.3.2
 media-libs/phonon vlc
@@ -194,6 +197,3 @@ kde-base/kdelibs policykit
 
 # >=kde-base/nepomuk-4.8.3:4[aqua=]
 kde-base/kdelibs semantic-desktop
-
-# app-text/enchant
-kde-base/kdelibs spell
