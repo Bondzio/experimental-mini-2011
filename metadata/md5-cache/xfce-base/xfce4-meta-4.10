@@ -3,8 +3,8 @@ DESCRIPTION=The Xfce Desktop Environment (meta package)
 EAPI=4
 HOMEPAGE=http://www.xfce.org/
 IUSE=minimal +svg
-KEYWORDS=~alpha ~amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux
+KEYWORDS=~alpha ~amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux
 LICENSE=as-is
 RDEPEND=>=x11-themes/gtk-engines-xfce-3:0 x11-themes/hicolor-icon-theme >=xfce-base/xfce4-appfinder-4.10 >=xfce-base/xfce4-panel-4.10 >=xfce-base/xfce4-session-4.10 >=xfce-base/xfce4-settings-4.10 >=xfce-base/xfdesktop-4.10 >=xfce-base/xfwm4-4.10 !minimal? ( media-fonts/dejavu virtual/freedesktop-icon-theme ) svg? ( gnome-base/librsvg )
 SLOT=0
-_md5_=c8b308efc63e4eac2f2b658a7e7a7f5f
+_md5_=7642e50fb5b3f48dc93948afa5a80df5
