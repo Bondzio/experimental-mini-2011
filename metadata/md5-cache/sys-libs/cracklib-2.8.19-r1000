@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=sys-libs/zlib python? ( dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] ) python? ( python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) )
+DESCRIPTION=Password Checking Library
+EAPI=4-python
+HOMEPAGE=http://sourceforge.net/projects/cracklib
+IUSE=nls python static-libs python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh sparc x86 ~x86-fbsd
+LICENSE=LGPL-2.1
+RDEPEND=sys-libs/zlib python? ( python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) )
+REQUIRED_USE=python? ( || ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/cracklib/cracklib-2.8.19.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_md5_=23c9b9e3eb1272bd988bb41de6f9ee77
