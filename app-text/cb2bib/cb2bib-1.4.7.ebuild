@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/cb2bib/cb2bib-1.4.7.ebuild,v 1.3 2012/04/10 08:15:06 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/cb2bib/cb2bib-1.4.7.ebuild,v 1.4 2012/05/18 23:27:10 pesa Exp $
 
 EAPI=4
 
@@ -49,7 +49,7 @@ src_install() {
 
 pkg_postinst() {
 	elog "For best functionality, emerge the following packages:"
-	elog "    app-text/poppler-utils  - for data import from PDF files"
+	elog "    app-text/poppler[utils] - for data import from PDF files"
 	elog "    app-text/dvipdfm        - for data import from DVI files"
 	elog "    app-text/bibutils       - for data import from ISI, endnote format"
 	elog "    media-fonts/jsmath      - for displaying mathematical notation"
