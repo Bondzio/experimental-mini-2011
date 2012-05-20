@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/git-9999.ebuild,v 1.30 2012/01/28 20:35:53 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/git/git-9999.ebuild,v 1.31 2012/05/20 04:25:24 robbat2 Exp $
 
 EAPI=4
 
@@ -40,13 +40,14 @@ fi
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+blksha1 +curl cgi doc emacs gtk iconv +perl +python ppcsha1 tk +threads +webdav xinetd cvs subversion test"
+IUSE="+blksha1 +curl cgi doc emacs gtk iconv +pcre +perl +python ppcsha1 tk +threads +webdav xinetd cvs subversion test"
 
 # Common to both DEPEND and RDEPEND
 CDEPEND="
 	!blksha1? ( dev-libs/openssl )
 	sys-libs/zlib
-	perl?   ( dev-lang/perl[-build] dev-libs/libpcre )
+	pcre?   ( dev-libs/libpcre )
+	perl?   ( dev-lang/perl[-build] )
 	tk?     ( dev-lang/tk )
 	curl?   (
 		net-misc/curl
@@ -149,8 +150,10 @@ exportmakeopts() {
 
 	use tk \
 		|| myopts="${myopts} NO_TCLTK=YesPlease"
+	use pcre \
+		&& myopts="${myopts} USE_LIBPCRE=yes"
 	use perl \
-		&& myopts="${myopts} INSTALLDIRS=vendor USE_LIBPCRE=yes" \
+		&& myopts="${myopts} INSTALLDIRS=vendor" \
 		|| myopts="${myopts} NO_PERL=YesPlease"
 	use python \
 		|| myopts="${myopts} NO_PYTHON=YesPlease"
@@ -231,7 +234,7 @@ src_prepare() {
 	#epatch "${FILESDIR}"/git-1.7.3.4-fix-perl-test-prereq.patch
 
 	# bug #350330 - automagic CVS when we don't want it is bad.
-	epatch "${FILESDIR}"/git-1.7.3.5-optional-cvs.patch
+	epatch "${FILESDIR}"/git-1.7.11-optional-cvs.patch
 
 	sed -i \
 		-e 's:^\(CFLAGS =\).*$:\1 $(OPTCFLAGS) -Wall:' \
@@ -378,8 +381,6 @@ src_install() {
 		dodoc "${S}"/contrib/gitview/gitview.txt
 	fi
 
-	dobin contrib/fast-import/git-p4
-	#dodoc contrib/fast-import/git-p4.txt # Moved upstream
 	newbin contrib/fast-import/import-tars.perl import-tars
 	newbin contrib/git-resurrect.sh git-resurrect
 

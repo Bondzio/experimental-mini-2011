@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test unpack
+DEPEND=virtual/fortran >=sci-physics/clhep-2.1.1 dawn? ( media-gfx/dawn ) gdml? ( dev-libs/xerces-c ) motif? ( x11-libs/openmotif:0 ) opengl? ( virtual/opengl ) openinventor? ( media-libs/openinventor ) raytracerx? ( x11-libs/libX11 x11-libs/libXmu ) qt4? ( x11-libs/qt-gui:4 opengl? ( x11-libs/qt-opengl:4 ) ) zlib? ( sys-libs/zlib ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Toolkit for simulation of passage of particles through matter
+EAPI=4
+HOMEPAGE=http://geant4.cern.ch/
+IUSE=+data dawn examples gdml geant3 granular motif opengl openinventor raytracerx qt4 static-libs test vrml zlib
+KEYWORDS=~amd64-linux ~x86-linux
+LICENSE=geant4
+RDEPEND=virtual/fortran >=sci-physics/clhep-2.1.1 dawn? ( media-gfx/dawn ) gdml? ( dev-libs/xerces-c ) motif? ( x11-libs/openmotif:0 ) opengl? ( virtual/opengl ) openinventor? ( media-libs/openinventor ) raytracerx? ( x11-libs/libX11 x11-libs/libXmu ) qt4? ( x11-libs/qt-gui:4 opengl? ( x11-libs/qt-opengl:4 ) ) zlib? ( sys-libs/zlib )
+SLOT=4
+SRC_URI=http://geant4.cern.ch/support/source/geant4.9.5.p01.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=2303765d0ea6fd696ef8a7f9a64c95ed

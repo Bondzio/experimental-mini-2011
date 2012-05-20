@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install prepare setup
+DEPEND=sci-physics/geant:4 dev-libs/boost[python]
+DESCRIPTION=Python binding for geant
+EAPI=4
+HOMEPAGE=http://geant4.cern.ch/
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=geant4
+RDEPEND=sci-physics/geant:4 dev-libs/boost[python]
+SLOT=0
+SRC_URI=http://geant4.cern.ch/support/source/geant4.9.5.p01.tar.gz
+_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=89a9f15b2916061f232a6575d018460a

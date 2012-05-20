@@ -1,11 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/Data-Stream-Bulk/Data-Stream-Bulk-0.100.0.ebuild,v 1.1 2012/02/13 14:46:49 tove Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Data-Stream-Bulk/Data-Stream-Bulk-0.100.0.ebuild,v 1.2 2012/05/20 04:27:45 robbat2 Exp $
 
 EAPI=4
 
 MODULE_AUTHOR=DOY
-MODULE_VERSION=0.10
+MODULE_VERSION=${PV:0:4}
 inherit perl-module
 
 DESCRIPTION="N at a time iteration API"
