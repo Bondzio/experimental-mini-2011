@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup
-DEPEND=ssl? ( !gnutls? ( dev-libs/openssl ) gnutls? ( net-libs/gnutls ) ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=ssl? ( !gnutls? ( dev-libs/openssl ) gnutls? ( net-libs/gnutls ) ) sys-devel/automake >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Extremely simple MTA to get mail off the system to a Mailhub
 EAPI=4
 HOMEPAGE=ftp://ftp.debian.org/debian/pool/main/s/ssmtp/
@@ -10,5 +10,5 @@ RDEPEND=ssl? ( !gnutls? ( dev-libs/openssl ) gnutls? ( net-libs/gnutls ) ) net-m
 REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/s/ssmtp/ssmtp_2.64.orig.tar.bz2 http://dev.gentoo.org/~flameeyes/ssmtp/ssmtp-2.64-patches-2.tar.bz2
-_eclasses_=autotools	addbdf6cce5024ac93ad2084ad5e1d2d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ce799ced6b73fbccd7be800e68c7877e

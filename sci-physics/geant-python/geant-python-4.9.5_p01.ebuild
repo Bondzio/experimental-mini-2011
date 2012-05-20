@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-physics/geant-python/geant-python-4.9.5_p01.ebuild,v 1.1 2012/05/20 03:11:24 heroxbd Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-physics/geant-python/geant-python-4.9.5_p01.ebuild,v 1.2 2012/05/20 16:48:17 heroxbd Exp $
 
 EAPI=4
 
@@ -15,9 +15,9 @@ KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 
 LICENSE="geant4"
 SLOT="0"
-IUSE=""
+IUSE="examples"
 
-RDEPEND="sci-physics/geant:4 \
+RDEPEND="=sci-physics/geant-${PV}* \
 	dev-libs/boost[python]"
 DEPEND="${RDEPEND}"
 
@@ -77,4 +77,7 @@ src_configure() {
 
 src_install() {
 	emake DESTDIR="${ED}" install
+	insinto /usr/share/doc/${PF}
+	dodoc 00README History AUTHORS
+	use examples && doins -r examples
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/autotools.eclass,v 1.130 2012/03/22 19:16:22 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/autotools.eclass,v 1.138 2012/05/20 13:01:22 vapier Exp $
 
 # @ECLASS: autotools.eclass
 # @MAINTAINER:
@@ -16,7 +16,7 @@
 if [[ ${___ECLASS_ONCE_AUTOTOOLS} != "recur -_+^+_- spank" ]] ; then
 ___ECLASS_ONCE_AUTOTOOLS="recur -_+^+_- spank"
 
-inherit eutils libtool
+inherit libtool
 
 # @ECLASS-VARIABLE: WANT_AUTOCONF
 # @DESCRIPTION:
@@ -49,9 +49,10 @@ _automake_atom="sys-devel/automake"
 _autoconf_atom="sys-devel/autoconf"
 if [[ -n ${WANT_AUTOMAKE} ]]; then
 	case ${WANT_AUTOMAKE} in
-		none)   _automake_atom="" ;; # some packages don't require automake at all
-		# if you change the "latest" version here, change also autotools_run_tool
-		# this MUST reflect the latest stable major version for each arch!
+		# Even if the package doesn't use automake, we still need to depend
+		# on it because we run aclocal to process m4 macros.  This matches
+		# the autoreconf tool, so this requirement is correct.  #401605
+		none) ;;
 		latest)
 			# Use SLOT deps if we can.  For EAPI=0, we get pretty close.
 			if [[ ${EAPI:-0} != 0 ]] ; then
@@ -143,11 +144,11 @@ unset _automake_atom _autoconf_atom
 # Should do a full autoreconf - normally what most people will be interested in.
 # Also should handle additional directories specified by AC_CONFIG_SUBDIRS.
 eautoreconf() {
-	local x auxdir g
+	local x g
 
 	if [[ -z ${AT_NO_RECURSIVE} ]]; then
 		# Take care of subdirs
-		for x in $(autotools_get_subdirs); do
+		for x in $(autotools_check_macro_val AC_CONFIG_SUBDIRS) ; do
 			if [[ -d ${x} ]] ; then
 				pushd "${x}" >/dev/null
 				AT_NOELIBTOOLIZE="yes" eautoreconf
@@ -156,17 +157,16 @@ eautoreconf() {
 		done
 	fi
 
-	auxdir=$(autotools_get_auxdir)
-
 	einfo "Running eautoreconf in '${PWD}' ..."
-	[[ -n ${auxdir} ]] && mkdir -p ${auxdir}
+
+	local m4dirs=$(autotools_check_macro_val AC_CONFIG_{AUX,MACRO}_DIR)
+	[[ -n ${m4dirs} ]] && mkdir -p ${m4dirs}
+
 	eaclocal
-	[[ ${CHOST} == *-darwin* ]] && g=g
-	if ${LIBTOOLIZE:-${g}libtoolize} -n --install >& /dev/null ; then
-		_elibtoolize --copy --force --install
-	else
-		_elibtoolize --copy --force
+	if grep -q '^AM_GNU_GETTEXT_VERSION' configure.?? ; then
+		eautopoint --force
 	fi
+	_elibtoolize --install --copy --force
 	eautoconf
 	eautoheader
 	[[ ${AT_NOEAUTOMAKE} != "yes" ]] && FROM_EAUTORECONF="yes" eautomake ${AM_OPTS}
@@ -222,19 +222,24 @@ eaclocal() {
 
 # @FUNCTION: _elibtoolize
 # @DESCRIPTION:
-# Runs libtoolize.  Note the '_' prefix .. to not collide with elibtoolize() from
-# libtool.eclass.
+# Runs libtoolize.  If --install is the first arg, automatically drop it if
+# the active libtool version doesn't support it.
+#
+# Note the '_' prefix .. to not collide with elibtoolize() from libtool.eclass.
 _elibtoolize() {
-	local opts g=
-
 	# Check if we should run libtoolize (AM_PROG_LIBTOOL is an older macro,
 	# check for both it and the current AC_PROG_LIBTOOL)
 	[[ -n $(autotools_check_macro AC_PROG_LIBTOOL AM_PROG_LIBTOOL LT_INIT) ]] || return 0
 
-	[[ -f GNUmakefile.am || -f Makefile.am ]] && opts="--automake"
+	local LIBTOOLIZE=${LIBTOOLIZE:-libtoolize}
+	type -P glibtoolize && LIBTOOLIZE=glibtoolize
 
-	[[ ${CHOST} == *-darwin* ]] && g=g
-	autotools_run_tool ${LIBTOOLIZE:-${g}libtoolize} "$@" ${opts}
+	[[ -f GNUmakefile.am || -f Makefile.am ]] && set -- "$@" --automake
+	if [[ $1 == "--install" ]] ; then
+		${LIBTOOLIZE} -n --install >& /dev/null || shift
+	fi
+
+	autotools_run_tool ${LIBTOOLIZE} "$@" ${opts}
 
 	# Need to rerun aclocal
 	eaclocal
@@ -278,11 +283,7 @@ eautomake() {
 	done
 
 	if [[ -z ${makefile_name} ]] ; then
-		# Really we should just use autotools_check_macro ...
-		local am_init_automake=$(sed -n '/AM_INIT_AUTOMAKE/{s:#.*::;s:\<dnl\>.*::;p}' configure.??)
-		if [[ ${am_init_automake} != *"AM_INIT_AUTOMAKE"* ]] ; then
-			return 0
-		fi
+		[[ -n $(autotools_check_macro AM_INIT_AUTOMAKE) ]] || return 0
 
 	elif [[ -z ${FROM_EAUTORECONF} && -f ${makefile_name%.am}.in ]]; then
 		local used_automake
@@ -334,7 +335,10 @@ config_rpath_update() {
 	done
 }
 
-# Internal function to run an autotools' tool
+# @FUNCTION: autotools_env_setup
+# @INTERNAL
+# @DESCRIPTION:
+# Process the WANT_AUTO{CONF,MAKE} flags.
 autotools_env_setup() {
 	# We do the "latest" → version switch here because it solves
 	# possible order problems, see bug #270010 as an example.
@@ -350,6 +354,13 @@ autotools_env_setup() {
 	fi
 	[[ ${WANT_AUTOCONF} == "latest" ]] && export WANT_AUTOCONF=2.5
 }
+
+# @FUNCTION: autotools_run_tool
+# @USAGE: [--at-no-fail] [--at-m4flags] <autotool> [tool-specific flags]
+# @INTERNAL
+# @DESCRIPTION:
+# Run the specified autotool helper, but do logging and error checking
+# around it in the process.
 autotools_run_tool() {
 	# Process our own internal flags first
 	local autofail=true m4flags=false
@@ -402,32 +413,55 @@ autotools_run_tool() {
 }
 
 # Internal function to check for support
+
+# Keep a list of all the macros we might use so that we only
+# have to run the trace code once.  Order doesn't matter.
+ALL_AUTOTOOLS_MACROS=(
+	AC_PROG_LIBTOOL AM_PROG_LIBTOOL LT_INIT
+	AC_CONFIG_HEADERS
+	AC_CONFIG_SUBDIRS
+	AC_CONFIG_AUX_DIR AC_CONFIG_MACRO_DIR
+	AM_INIT_AUTOMAKE
+)
 autotools_check_macro() {
 	[[ -f configure.ac || -f configure.in ]] || return 0
-	local macro
+
+	# We can run in multiple dirs, so we have to cache the trace
+	# data in $PWD rather than an env var.
+	local trace_file=".__autoconf_trace_data"
+	if [[ ! -e ${trace_file} ]] || [[ aclocal.m4 -nt ${trace_file} ]] ; then
+		WANT_AUTOCONF="2.5" autoconf \
+			$(autotools_m4dir_include) \
+			${ALL_AUTOTOOLS_MACROS[@]/#/--trace=} > ${trace_file} 2>/dev/null
+	fi
+
+	local macro args=()
 	for macro ; do
-		WANT_AUTOCONF="2.5" autoconf $(autotools_m4dir_include) --trace="${macro}" 2>/dev/null
+		has ${macro} ${ALL_AUTOTOOLS_MACROS[@]} || die "internal error: add ${macro} to ALL_AUTOTOOLS_MACROS"
+		args+=( -e ":${macro}:" )
 	done
-	return 0
+	grep "${args[@]}" ${trace_file}
 }
 
-# Internal function to look for a macro and extract its value
+# @FUNCTION: autotools_check_macro_val
+# @USAGE: <macro> [macros]
+# @INTERNAL
+# @DESCRIPTION:
+# Look for a macro and extract its value.
 autotools_check_macro_val() {
-	local macro=$1 scan_out
+	local macro scan_out
 
-	autotools_check_macro "${macro}" | \
-		gawk -v macro="${macro}" \
-			'($0 !~ /^[[:space:]]*(#|dnl)/) {
-				if (match($0, macro ":(.*)$", res))
-					print res[1]
-			}' | uniq
+	for macro ; do
+		autotools_check_macro "${macro}" | \
+			gawk -v macro="${macro}" \
+				'($0 !~ /^[[:space:]]*(#|dnl)/) {
+					if (match($0, macro ":(.*)$", res))
+						print res[1]
+				}' | uniq
+	done
 
 	return 0
 }
-
-# Internal function to get additional subdirs to configure
-autotools_get_subdirs() { autotools_check_macro_val AC_CONFIG_SUBDIRS ; }
-autotools_get_auxdir() { autotools_check_macro_val AC_CONFIG_AUX_DIR ; }
 
 _autotools_m4dir_include() {
 	local x include_opts
