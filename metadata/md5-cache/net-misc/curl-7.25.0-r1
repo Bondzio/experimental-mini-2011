@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=ldap? ( net-nds/openldap ) ssl? ( curl_ssl_axtls? ( net-libs/axTLS app-misc/ca-certificates ) curl_ssl_gnutls? ( || ( ( >=net-libs/gnutls-3[static-libs?] dev-libs/nettle ) ( =net-libs/gnutls-2.12*[nettle,static-libs?] dev-libs/nettle ) ( =net-libs/gnutls-2.12*[-nettle,static-libs?] dev-libs/libgcrypt[static-libs?] ) ( <net-libs/gnutls-2.12 dev-libs/libgcrypt[static-libs?] ) ) app-misc/ca-certificates ) curl_ssl_openssl? ( dev-libs/openssl[static-libs?] ) curl_ssl_nss? ( dev-libs/nss app-misc/ca-certificates ) curl_ssl_polarssl? ( net-libs/polarssl app-misc/ca-certificates ) ) idn? ( net-dns/libidn[static-libs?] ) ares? ( net-dns/c-ares ) kerberos? ( virtual/krb5 ) ssh? ( net-libs/libssh2[static-libs?] ) sys-libs/zlib sys-apps/ed test? ( sys-apps/diffutils dev-lang/perl ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A Client that groks URLs
+EAPI=4
+HOMEPAGE=http://curl.haxx.se/
+IUSE=ares idn ipv6 kerberos ldap ssh ssl static-libs test threads curl_ssl_axtls curl_ssl_cyassl curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl
+KEYWORDS=~*
+LICENSE=MIT
+RDEPEND=ldap? ( net-nds/openldap ) ssl? ( curl_ssl_axtls? ( net-libs/axTLS app-misc/ca-certificates ) curl_ssl_gnutls? ( || ( ( >=net-libs/gnutls-3[static-libs?] dev-libs/nettle ) ( =net-libs/gnutls-2.12*[nettle,static-libs?] dev-libs/nettle ) ( =net-libs/gnutls-2.12*[-nettle,static-libs?] dev-libs/libgcrypt[static-libs?] ) ( <net-libs/gnutls-2.12 dev-libs/libgcrypt[static-libs?] ) ) app-misc/ca-certificates ) curl_ssl_openssl? ( dev-libs/openssl[static-libs?] ) curl_ssl_nss? ( dev-libs/nss app-misc/ca-certificates ) curl_ssl_polarssl? ( net-libs/polarssl app-misc/ca-certificates ) ) idn? ( net-dns/libidn[static-libs?] ) ares? ( net-dns/c-ares ) kerberos? ( virtual/krb5 ) ssh? ( net-libs/libssh2[static-libs?] ) sys-libs/zlib
+REQUIRED_USE=threads? ( !ares ) ssl? ( ^^ ( curl_ssl_axtls curl_ssl_cyassl curl_ssl_gnutls curl_ssl_openssl curl_ssl_nss curl_ssl_polarssl ) )
+SLOT=0
+SRC_URI=http://curl.haxx.se/download/curl-7.25.0.tar.bz2
+_eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=e533f8a04a5200e918c3bf73d6893d52
