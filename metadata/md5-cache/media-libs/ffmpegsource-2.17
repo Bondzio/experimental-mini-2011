@@ -4,10 +4,10 @@ DESCRIPTION=An FFmpeg based source library for easy frame accurate access
 EAPI=4
 HOMEPAGE=https://code.google.com/p/ffmpegsource/
 IUSE=static-libs
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=MIT
 RDEPEND=sys-libs/zlib >=virtual/ffmpeg-0.9
 SLOT=0
 SRC_URI=https://ffmpegsource.googlecode.com/files/ffms-2.17-src.tar.bz2
 _eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	autotools-utils	748973db029ba52a1991320e1034bad9	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9c23ce0861c51ccf4e6feb0da022e373
+_md5_=bb238b13c11e71e9b83ca90b4481f261

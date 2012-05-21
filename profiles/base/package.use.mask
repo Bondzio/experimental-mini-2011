@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.350 2012/05/14 06:48:41 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.352 2012/05/21 05:25:39 ssuominen Exp $
 
 # This file requires >=portage-2.1.1
 # New entries go on top.
@@ -13,12 +13,6 @@
 # This entry can be removed by anyone after gnome-panel-3.* is stabilized
 # Mask to allow stabilization (bug #414983)
 =app-misc/gnote-0.8.2 applet
-
-# Samuli Suominen <ssuominen@gentoo.org> (07 May 2012)
-# This entry can be removed by anyone after =media-video/vlc-1.1*
-# has left the tree. Mask out deprecated xulrunner support.
-# Bug 407567.
-=media-video/vlc-1.1* nsplugin
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (02 May 2012)
 # Causes crashes and build failures, not needed by any package, bug #412177
@@ -66,10 +60,6 @@ app-arch/libzpaq jit
 # ffmpegsource which is pulled in is only ~arch and not ready to be
 # stabilised ( bug #410341 ). x264 needs to be stabilied for bug #401069
 <media-video/x264-encoder-0.0.20120327 ffmpegsource
-
-# Michael Sterrett <mr_bones_@gentoo.org> (30 Mar 2012)
-# Broken for awhile.  Unmask when dev-util/kdevelop-php-docs is keyworded properly
-dev-util/kdevelop-php doc
 
 # Arun Raghavan <ford_prefect@gentoo.org> (28 Mar 2012)
 # webrtc-audio-processing is only supported on x86/amd64. Possibly arm can be

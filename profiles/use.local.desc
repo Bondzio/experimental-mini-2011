@@ -4970,6 +4970,7 @@ sys-apps/v86d:x86emu - Use x86emu for Video BIOS calls
 sys-apps/watchdog:nfs - enable support for checking nfs mounts
 sys-apps/xinetd:rpc - support RPC services
 sys-auth/consolekit:policykit - Use the PolicyKit framework (sys-auth/polkit) to get authorization for suspend/shutdown.
+sys-auth/fingerprint-gui:upekbsapi - Add UPEK BSAPI drivers for identify functions on some readers
 sys-auth/munge:gcrypt - Use libgcrypt instead of openssl
 sys-auth/nss-mdns:search-domains - Honour search domains from /etc/resolv.conf (see bug #201948 for possible side effects)
 sys-auth/pam_mktemp:prevent-removal - If supported, set EXT2_APPEND_FL on /tmp/.private to prevent temporary directories from being removed
@@ -5586,7 +5587,8 @@ x11-libs/qt-gui:qt3support - Enable the Qt3Support libraries for Qt4. Note that 
 x11-libs/qt-gui:raster - Use the alternative raster graphicssystem as default rendering engine
 x11-libs/qt-gui:trace - Build the new 'trace' graphicsssytem engine which allows to record all drawing operations into a trace buffer. Later it can be replayed with the qttracereplay utility
 x11-libs/qt-meta:kde - Select media-libs/phonon as Phonon variant (needed for KDE)
-x11-libs/qt-meta:openvg - Build the Qt OpenVG module
+x11-libs/qt-meta:opengl - Enable the QtOpenGL module
+x11-libs/qt-meta:openvg - Enable the QtOpenVG module
 x11-libs/qt-meta:qt3support - Enable the Qt3Support library for Qt4
 x11-libs/qt-mobility:bearer - Build the QtBearer module
 x11-libs/qt-mobility:bluetooth - Enable Bluetooth support in QtConnectivity and QtSystemInfo modules
