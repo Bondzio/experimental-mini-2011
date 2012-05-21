@@ -3,9 +3,9 @@ DESCRIPTION=A FCGI spawner for lighttpd and cherokee and other webservers
 EAPI=4
 HOMEPAGE=http://redmine.lighttpd.net/projects/spawn-fcgi
 IUSE=ipv6
-KEYWORDS=~alpha amd64 arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86
+KEYWORDS=~alpha amd64 arm ~hppa ~ia64 ~ppc ~ppc64 ~sh ~sparc x86
 LICENSE=BSD
 RDEPEND=!<=www-servers/lighttpd-1.4.20 !<=www-servers/cherokee-0.98.1
 SLOT=0
 SRC_URI=http://www.lighttpd.net/download/spawn-fcgi-1.6.3.tar.bz2
-_md5_=00b821e5a0eda1a536ee3a7c502a2d63
+_md5_=2a361cbe6dbff323c438614f197068c4

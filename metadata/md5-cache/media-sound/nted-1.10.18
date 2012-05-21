@@ -1,13 +1,12 @@
-DEFINED_PHASES=configure install
-DEPEND=doc? ( gnome-extra/yelp app-text/xmlto ) x11-libs/cairo x11-libs/gtk+:2 media-libs/alsa-lib virtual/pkgconfig
-DESCRIPTION=WYSIWYG score editor for GTK+2
+DEFINED_PHASES=configure
+DEPEND=>=dev-libs/glib-2 media-libs/alsa-lib >=media-libs/freetype-2 x11-libs/cairo >=x11-libs/gdk-pixbuf-2 x11-libs/gtk+:2 x11-libs/libX11 x11-libs/pango virtual/pkgconfig doc? ( app-text/xmlto ) nls? ( sys-devel/gettext )
+DESCRIPTION=WYSIWYG score editor for GTK+
 EAPI=4
 HOMEPAGE=http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/nted.xhtml
-IUSE=doc nls
+IUSE=doc debug nls
 KEYWORDS=amd64 x86
-LICENSE=|| ( GPL-2 FDL-1.2 NTED_FONT )
-RDEPEND=doc? ( gnome-extra/yelp app-text/xmlto ) x11-libs/cairo x11-libs/gtk+:2 media-libs/alsa-lib
+LICENSE=GPL-2 FDL-1.2 NTED_FONT
+RDEPEND=>=dev-libs/glib-2 media-libs/alsa-lib >=media-libs/freetype-2 x11-libs/cairo >=x11-libs/gdk-pixbuf-2 x11-libs/gtk+:2 x11-libs/libX11 x11-libs/pango
 SLOT=0
 SRC_URI=http://vsr.informatik.tu-chemnitz.de/staff/jan/nted/sources/nted-1.10.18.tar.gz
-_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=004ae7b67f7b423e5b771aae7cd19487
+_md5_=10b5f60a3eee9dc2a109ef82bf62fb86

@@ -4,10 +4,10 @@ DESCRIPTION=Meanwhile (Sametime protocol) library
 EAPI=4
 HOMEPAGE=http://meanwhile.sourceforge.net/
 IUSE=doc debug
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc x86
 LICENSE=LGPL-2
 RDEPEND=>=dev-libs/glib-2:2
 SLOT=0
 SRC_URI=mirror://sourceforge/meanwhile/meanwhile-1.0.2.tar.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=faf2129740ff47eb88435502f3b0bfb1
+_md5_=9b955e79561c2817c573f726756e1099

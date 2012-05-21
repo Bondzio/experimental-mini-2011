@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl gnome-extra/yelp vorbis? ( media-sound/vorbis-tools ) virtual/pkgconfig nls? ( sys-devel/gettext )
+DEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl vorbis? ( media-sound/vorbis-tools ) virtual/pkgconfig nls? ( sys-devel/gettext )
 DESCRIPTION=GTK+ based Audio CD Player/Ripper
 EAPI=2
 HOMEPAGE=http://www.nostatic.org/grip/
 IUSE=nls vorbis
-KEYWORDS=~alpha amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl gnome-extra/yelp vorbis? ( media-sound/vorbis-tools )
+RDEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl vorbis? ( media-sound/vorbis-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/grip/grip-3.3.1.tar.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4627fb4fa9818b6f56bffc26adaa602b
+_md5_=b4a7e5b6b43594cb6b817571eb8baa35

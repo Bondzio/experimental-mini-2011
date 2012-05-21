@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=x11-libs/qt-svg:4 dev-cpp/muParser >=sci-libs/libcmatrix-3.9.0 virtual/blas media-libs/freetype emf? ( media-libs/libemf ) opengl? ( x11-libs/qt-opengl:4 )
+DEPEND=dev-cpp/muParser media-libs/freetype sci-libs/libcmatrix sci-libs/minuit virtual/blas x11-libs/qt-svg:4 emf? ( media-libs/libemf ) opengl? ( x11-libs/qt-opengl:4 )
 DESCRIPTION=Programm for visualisation and processing of experimental and simulated NMR spectra
-EAPI=3
-HOMEPAGE=http://sourceforge.net/projects/gsim
+EAPI=4
+HOMEPAGE=http://sourceforge.net/projects/gsim/
 IUSE=emf opengl
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
-RDEPEND=x11-libs/qt-svg:4 dev-cpp/muParser >=sci-libs/libcmatrix-3.9.0 virtual/blas media-libs/freetype emf? ( media-libs/libemf ) opengl? ( x11-libs/qt-opengl:4 )
+RDEPEND=dev-cpp/muParser media-libs/freetype sci-libs/libcmatrix sci-libs/minuit virtual/blas x11-libs/qt-svg:4 emf? ( media-libs/libemf ) opengl? ( x11-libs/qt-opengl:4 )
 SLOT=0
 SRC_URI=mirror://sourceforge/gsim/gsim-0.20.1.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=be69e808f9ed1b69d21586ac97ac3ef2
+_md5_=6f5f2f03cc424c273f885996f2ccd23d
