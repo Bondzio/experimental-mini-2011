@@ -887,7 +887,6 @@ app-text/pdftk:nodrm - Decrypt a document with the user_pw even if it has an own
 app-text/podofo:boost - Add support for boost
 app-text/poppler:exceptions - Enable exceptions throwing.
 app-text/poppler:introspection - Enable GObject introspection.
-app-text/poppler:lcms1 - Prefer liblcms1 (deprecated) implementation over liblcms2.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
 app-text/poppler:xpdf-headers - 
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
@@ -1903,6 +1902,7 @@ games-rpg/nwn:sou - Installs the Shadows of Undrentide expension pack
 games-rpg/nwn-data:hou - Install the Hordes of the Underdark expansion pack
 games-rpg/nwn-data:nowin - For those people who cant grab the 1.2 gigs of data files from a windows partition
 games-rpg/nwn-data:sou - Installs the Shadows of Undrentide expension pack
+games-rpg/sumwars:tools - Builds editor tools
 games-simulation/openttd:aplaymidi - Enables midi music in game, using aplaymidi as an external player
 games-simulation/openttd:dedicated - Build only the openttd server, and not the client.
 games-simulation/openttd:lzo - Enables LZO compression for savegames. This is only needed to load extremely old savegames. (versions before 0.2)
@@ -3890,11 +3890,13 @@ net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
 net-libs/cyassl:aes-ni - Enable Intel AES instruction support
 net-libs/cyassl:big - Choose big cache size (excludes small or huge)
+net-libs/cyassl:crl - Enable Certificate Revocation List
 net-libs/cyassl:cyassl-hardening - Add hardening flags to CFLAGS/LDFLAGS
 net-libs/cyassl:dtls - Enable datagram TLS
 net-libs/cyassl:hc128 - Enable HC-128 support
 net-libs/cyassl:httpd - Enable features for yaSSL web server
 net-libs/cyassl:huge - Choose big cache size (excludes small or big)
+net-libs/cyassl:ocsp - Enable Online Certificate Status Protocol
 net-libs/cyassl:psk - Enable Pre-Shared Key support
 net-libs/cyassl:ripemd - Enable RIPEMD-160 support
 net-libs/cyassl:sessioncerts - Store session certificates

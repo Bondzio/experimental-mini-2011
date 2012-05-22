@@ -10,5 +10,5 @@ RDEPEND=perl? ( dev-lang/perl ) python? ( dev-lang/python ) media-libs/freetype 
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/ming/ming-0.4.3.tar.bz2
-_eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	php-ext-source-r2	ace5f34d0993cef7d69c4da83748bf80	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	php-ext-source-r2	ace5f34d0993cef7d69c4da83748bf80	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5c652a67eaf09c0812a29fedf42ce35f

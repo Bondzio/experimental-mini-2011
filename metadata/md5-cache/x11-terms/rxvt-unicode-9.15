@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/ncurses-5.7-r6 afterimage? ( || ( media-libs/libafterimage x1
 REQUIRED_USE=vanilla? ( !alt-font-width !buffer-on-clear focused-urgency !secondary-wheel !wcwidth )
 SLOT=0
 SRC_URI=http://dist.schmorp.de/rxvt-unicode/Attic/rxvt-unicode-9.15.tar.bz2
-_eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
-_md5_=5245e2e543062526b2d430c367b8d3d6
+_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a9c290a98e2de3933a0d16dc06ee6846

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-295.49.ebuild,v 1.3 2012/05/16 15:22:33 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-295.49.ebuild,v 1.6 2012/05/21 23:03:14 cardoe Exp $
 
 EAPI="2"
 
@@ -21,7 +21,7 @@ SRC_URI="x86? ( http://us.download.nvidia.com/XFree86/Linux-x86/${PV}/${X86_NV_P
 LICENSE="NVIDIA"
 SLOT="0"
 KEYWORDS="-* ~amd64 ~x86 ~amd64-fbsd ~x86-fbsd"
-IUSE="acpi custom-cflags multilib kernel_FreeBSD kernel_linux +tools"
+IUSE="acpi multilib kernel_FreeBSD kernel_linux +tools"
 RESTRICT="strip"
 EMULTILIB_PKG="true"
 
@@ -34,7 +34,16 @@ DEPEND="${COMMON}
 	kernel_linux? ( virtual/linux-sources )"
 RDEPEND="${COMMON}
 	x11-libs/libXvMC
-	acpi? ( sys-power/acpid )"
+	acpi? ( sys-power/acpid )
+	tools? (
+		dev-libs/atk
+		dev-libs/glib
+		x11-libs/gdk-pixbuf
+		x11-libs/gtk+:2
+		x11-libs/libX11
+		x11-libs/libXext
+		x11-libs/pango
+	)"
 PDEPEND=">=x11-libs/libvdpau-0.3-r1"
 
 QA_TEXTRELS_x86="
@@ -296,15 +305,14 @@ src_prepare() {
 			-e '/CFLAGS="$CFLAGS/s:-I$SOURCES/arch/x86/include:& -I$OUTPUT/arch/x86/include/generated:' \
 			kernel/conftest.sh || die
 
-		# If you set this then it's your own fault when stuff breaks :)
-		use custom-cflags && sed -i "s:-O:${CFLAGS}:" "${NV_SRC}"/Makefile.*
-
 		# If greater than 2.6.5 use M= instead of SUBDIR=
 		convert_to_m "${NV_SRC}"/Makefile.kbuild
 	fi
 	cat <<- EOF > "${S}"/nvidia.icd
 		/usr/$(get_libdir)/libcuda.so
 	EOF
+
+	epatch_user
 }
 
 src_compile() {

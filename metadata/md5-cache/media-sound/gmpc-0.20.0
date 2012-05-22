@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.16:2 >=x11-libs/gtk+-2.12:2 x11-libs/libsexy >=gnome-base/libglade-2 >=media-libs/libmpd-0.19.2 net-libs/libsoup:2.4 dev-db/sqlite:3 xspf? ( >=media-libs/libxspf-1.2 )
 SLOT=0
 SRC_URI=http://download.sarine.nl/Programs/gmpc/0.20.0/gmpc-0.20.0.tar.gz
-_eclasses_=autotools	cd0cc4c1c24e50cd6d8dd1564ffa4291	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8a990f76eea86ccf9f41cf061305cfd4
