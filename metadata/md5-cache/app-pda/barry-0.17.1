@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare test
-DEPEND=dev-libs/glib:2 dev-libs/libusb:0 dev-libs/openssl sys-libs/zlib >=dev-cpp/libxmlpp-2.6 >=dev-libs/libtar-1.2.11-r2 boost? ( >=dev-libs/boost-1.33 ) gui? ( dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-cpp/libglademm:2.4 ) opensync? ( ~app-pda/libopensync-0.22 ) virtual/pkgconfig doc? ( >=app-doc/doxygen-1.5.6 ) nls? ( >=sys-devel/gettext-0.17 )
+DEPEND=dev-libs/glib:2 virtual/libusb:0 dev-libs/openssl sys-libs/zlib >=dev-cpp/libxmlpp-2.6 >=dev-libs/libtar-1.2.11-r2 boost? ( >=dev-libs/boost-1.33 ) gui? ( dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-cpp/libglademm:2.4 ) opensync? ( ~app-pda/libopensync-0.22 ) virtual/pkgconfig doc? ( >=app-doc/doxygen-1.5.6 ) nls? ( >=sys-devel/gettext-0.17 )
 DESCRIPTION=Sync, backup, program management, and charging for BlackBerry devices
 EAPI=4
 HOMEPAGE=http://www.netdirect.ca/software/packages/barry/
@@ -7,8 +7,8 @@ IUSE=boost doc gui opensync nls static-libs bash-completion
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 PDEPEND=bash-completion? ( app-shells/bash-completion )
-RDEPEND=dev-libs/glib:2 dev-libs/libusb:0 dev-libs/openssl sys-libs/zlib >=dev-cpp/libxmlpp-2.6 >=dev-libs/libtar-1.2.11-r2 boost? ( >=dev-libs/boost-1.33 ) gui? ( dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-cpp/libglademm:2.4 ) opensync? ( ~app-pda/libopensync-0.22 ) bash-completion? ( app-admin/eselect )
+RDEPEND=dev-libs/glib:2 virtual/libusb:0 dev-libs/openssl sys-libs/zlib >=dev-cpp/libxmlpp-2.6 >=dev-libs/libtar-1.2.11-r2 boost? ( >=dev-libs/boost-1.33 ) gui? ( dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-cpp/libglademm:2.4 ) opensync? ( ~app-pda/libopensync-0.22 ) bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=mirror://sourceforge/barry/barry-0.17.1.tar.bz2
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	autotools-utils	826905ee215d8eb64b3adcbe29d8d773	bash-completion	003731da0df19d26955927bd534f3058	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1f647abc54c3ea58e7194a758830893f
+_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	autotools-utils	681f2683d43562170fd2238e335b866c	bash-completion	003731da0df19d26955927bd534f3058	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=257353211a19f82c71fd1968e4a33e09

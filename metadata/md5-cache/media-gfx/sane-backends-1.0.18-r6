@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install setup unpack
-DEPEND=virtual/jpeg amd64? ( sys-libs/libieee1284 ) x86? ( sys-libs/libieee1284 ) usb? ( dev-libs/libusb:0 ) gphoto2? ( media-libs/libgphoto2 ) v4l? ( sys-kernel/linux-headers ) doc? ( virtual/latex-base dev-texlive/texlive-latexextra ) >=sys-apps/sed-4
+DEPEND=virtual/jpeg amd64? ( sys-libs/libieee1284 ) x86? ( sys-libs/libieee1284 ) usb? ( virtual/libusb:0 ) gphoto2? ( media-libs/libgphoto2 ) v4l? ( sys-kernel/linux-headers ) doc? ( virtual/latex-base dev-texlive/texlive-latexextra ) >=sys-apps/sed-4
 DESCRIPTION=Scanner Access Now Easy - Backends
 EAPI=1
 HOMEPAGE=http://www.sane-project.org/
 IUSE=usb gphoto2 ipv6 v4l doc
 KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
 LICENSE=GPL-2 public-domain
-RDEPEND=virtual/jpeg amd64? ( sys-libs/libieee1284 ) x86? ( sys-libs/libieee1284 ) usb? ( dev-libs/libusb:0 ) gphoto2? ( media-libs/libgphoto2 ) v4l? ( sys-kernel/linux-headers ) !<sys-fs/udev-114
+RDEPEND=virtual/jpeg amd64? ( sys-libs/libieee1284 ) x86? ( sys-libs/libieee1284 ) usb? ( virtual/libusb:0 ) gphoto2? ( media-libs/libgphoto2 ) v4l? ( sys-kernel/linux-headers ) !<sys-fs/udev-114
 SLOT=0
 SRC_URI=http://alioth.debian.org/download.php/1669/sane-backends-1.0.18.tar.gz ftp://ftp.sane-project.org/pub/sane/sane-backends-1.0.18/sane-backends-1.0.18.tar.gz ftp://ftp.sane-project.org/pub/sane/old-versions/sane-backends-1.0.18/sane-backends-1.0.18.tar.gz usb? ( mirror://gentoo/sane-1.0.18-brother-driver.diff.bz2 http://dev.gentoo.org/~phosphan/sane-1.0.18-brother-driver.diff.bz2 )
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c473bd0f8f5284f59a30bb9347aeadb0
+_md5_=7f9a1fc329f9fd4e223aab26d58ff844

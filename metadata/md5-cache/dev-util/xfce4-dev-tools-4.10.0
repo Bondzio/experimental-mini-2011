@@ -3,10 +3,10 @@ DEPEND=>=dev-libs/glib-2.24 virtual/pkgconfig >=sys-apps/sed-4
 DESCRIPTION=A set of scripts and m4/autoconf macros that ease build system maintenance
 EAPI=4
 HOMEPAGE=http://www.xfce.org/ http://foo-projects.org/~benny/projects/xfce4-dev-tools/
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ppc ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-solaris
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-solaris
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.24
 SLOT=0
 SRC_URI=mirror://xfce/src/xfce/xfce4-dev-tools/4.10/xfce4-dev-tools-4.10.0.tar.bz2
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	xfconf	71f221eb949e06646b95347566d982df
-_md5_=81b46ab3818536b798edbf3090337536
+_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	xfconf	706fbad47e8ea196d3c986b61c7669ce
+_md5_=b6baed97f31e86f75672a29973a3fb3f
