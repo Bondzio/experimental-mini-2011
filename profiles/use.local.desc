@@ -746,7 +746,6 @@ app-office/gnucash:chipcard - Enable support for chipcard reading and processing
 app-office/gnucash:hbci - Enable HBCI support, for connecting to some internet banks
 app-office/gnucash:quotes - Enable Online Stock Quote retrieval
 app-office/gnucash:webkit - Use net-libs/webkit-gtk for rendering rather than gnome-extra/gtkhtml
-app-office/gnumeric:gnome - Allow Gnumeric to use GNOME specific extensions.
 app-office/gnumeric:perl - Enable perl plugin loader.
 app-office/gnumeric:python - Enable python plugin loader.
 app-office/imposter:iksemel - Enable external dev-libs/iksemel parsing support
@@ -773,7 +772,6 @@ app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/pop
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP content adding via net-libs/neon
 app-office/libreoffice:xmlsec - Adds support for document signing using internal modified dev-libs/xmlsec and system dev-libs/nss
-app-office/libreoffice-bin:offlinehelp - Download and install help files locally instead of using the LibreOffice Wiki
 app-office/libreoffice-l10n:offlinehelp - Install help files locally instead of using the LibreOffice Wiki
 app-office/libreoffice-l10n:templates - Enable installation of Sun templates
 app-office/lyx:aspell - Add support for aspell spellchecking
