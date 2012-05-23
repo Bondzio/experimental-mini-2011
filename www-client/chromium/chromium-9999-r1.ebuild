@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.114 2012/05/21 14:09:22 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.115 2012/05/22 19:49:43 phajdan.jr Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.6"
@@ -45,6 +45,7 @@ RDEPEND="app-arch/bzip2
 	pulseaudio? ( media-sound/pulseaudio )
 	sys-fs/udev
 	sys-libs/zlib
+	virtual/libusb:1
 	x11-libs/gtk+:2
 	x11-libs/libXinerama
 	x11-libs/libXScrnSaver
@@ -52,7 +53,6 @@ RDEPEND="app-arch/bzip2
 	kerberos? ( virtual/krb5 )
 	selinux? ( sys-libs/libselinux )"
 DEPEND="${RDEPEND}
-	>=dev-lang/nacl-toolchain-newlib-0_p7311
 	dev-lang/perl
 	dev-lang/yasm
 	dev-python/ply
@@ -155,8 +155,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	ln -s /usr/$(get_libdir)/nacl-toolchain-newlib \
-		native_client/toolchain/linux_x86_newlib || die
+	#ln -s /usr/$(get_libdir)/nacl-toolchain-newlib \
+	#	native_client/toolchain/linux_x86_newlib || die
 
 	# zlib-1.2.5.1-r1 renames the OF macro in zconf.h, bug 383371.
 	sed -i '1i#define OF(x) x' \
@@ -185,7 +185,7 @@ src_prepare() {
 		\! -path 'third_party/libjingle/*' \
 		\! -path 'third_party/libphonenumber/*' \
 		\! -path 'third_party/libsrtp/*' \
-		\! -path 'third_party/libusb/*' \
+		\! -path 'third_party/libusb/libusb.h' \
 		\! -path 'third_party/libvpx/*' \
 		\! -path 'third_party/libxml/chromium/*' \
 		\! -path 'third_party/libyuv/*' \
@@ -242,6 +242,9 @@ src_configure() {
 	# drivers, bug #413637.
 	myconf+=" -Dlinux_use_tcmalloc=0"
 
+	# Disable Native Client until we figure out bug #417019.
+	myconf+=" -Ddisable_nacl=1"
+
 	# Make it possible to remove third_party/adobe.
 	echo > "${T}/flapper_version.h" || die
 	myconf+=" -Dflapper_version_h_file=${T}/flapper_version.h"
@@ -259,6 +262,7 @@ src_configure() {
 		-Duse_system_libevent=1
 		-Duse_system_libjpeg=1
 		-Duse_system_libpng=1
+		-Duse_system_libusb=1
 		-Duse_system_libwebp=1
 		-Duse_system_libxml=1
 		-Duse_system_speex=1
@@ -270,12 +274,12 @@ src_configure() {
 	# Optional dependencies.
 	# TODO: linux_link_kerberos, bug #381289.
 	myconf+="
-		$(gyp_use cups use_cups)
+		$(gyp_use cups)
 		$(gyp_use gnome use_gconf)
 		$(gyp_use gnome-keyring use_gnome_keyring)
 		$(gyp_use gnome-keyring linux_link_gnome_keyring)
-		$(gyp_use kerberos use_kerberos)
-		$(gyp_use pulseaudio use_pulseaudio)
+		$(gyp_use kerberos)
+		$(gyp_use pulseaudio)
 		$(gyp_use selinux selinux)"
 
 	if ! use selinux; then
@@ -395,10 +399,10 @@ src_install() {
 
 	doexe out/Release/chromedriver || die
 
-	doexe out/Release/nacl_helper{,_bootstrap} || die
-	insinto "${CHROMIUM_HOME}"
-	doins out/Release/nacl_irt_*.nexe || die
-	doins out/Release/libppGoogleNaClPluginChrome.so || die
+	#doexe out/Release/nacl_helper{,_bootstrap} || die
+	#insinto "${CHROMIUM_HOME}"
+	#doins out/Release/nacl_irt_*.nexe || die
+	#doins out/Release/libppGoogleNaClPluginChrome.so || die
 
 	newexe "${FILESDIR}"/chromium-launcher-r2.sh chromium-launcher.sh || die
 	if [[ "${CHROMIUM_SUFFIX}" != "" ]]; then

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs-vcs/emacs-vcs-24.1.9999.ebuild,v 1.4 2012/05/19 15:58:54 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs-vcs/emacs-vcs-24.1.9999.ebuild,v 1.6 2012/05/22 20:33:37 ulm Exp $
 
 EAPI=4
 
@@ -103,6 +103,8 @@ src_prepare() {
 		[[ ${FULL_VERSION} =~ ^${PV%.*}(\..*)?$ ]] \
 			|| die "Upstream version number changed to ${FULL_VERSION}"
 	fi
+
+	epatch_user
 
 	if ! use alsa; then
 		# ALSA is detected even if not requested by its USE flag.
@@ -271,8 +273,8 @@ src_install () {
 		# This is not meant to install all the source -- just the
 		# C source you might find via find-function
 		doins src/*.{c,h,m}
-		doins -r src/{m,s}
-		rm "${ED}"/usr/share/emacs/${FULL_VERSION}/src/{m,s}/README
+		doins -r src/s
+		rm "${ED}"/usr/share/emacs/${FULL_VERSION}/src/s/README
 		c=""
 	fi
 
