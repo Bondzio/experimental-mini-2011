@@ -10,4 +10,4 @@ RDEPEND=!kernel_linux? ( usb? ( virtual/libusb:1 ) ) kernel_linux? ( sys-fs/udev
 SLOT=0
 SRC_URI=http://alioth.debian.org/download.php/3533/pcsc-lite-1.7.2.tar.bz2
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c4f34cbb1f1f5d06febcee474585fe24
+_md5_=16c44ab651d6cb104d9c715fd73eeb50

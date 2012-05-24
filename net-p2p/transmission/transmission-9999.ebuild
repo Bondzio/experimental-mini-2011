@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.6 2012/05/04 06:33:34 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.7 2012/05/24 01:55:29 ssuominen Exp $
 
 EAPI=4
 LANGS="en es kk lt pt_BR ru"
@@ -21,21 +21,21 @@ DESCRIPTION="A Fast, Easy and Free BitTorrent client"
 HOMEPAGE="http://www.transmissionbt.com/"
 
 LICENSE="GPL-2 MIT"
-SLOT="0"
+SLOT=0
 IUSE="ayatana gtk lightweight qt4 xfs"
 
 RDEPEND="
 	>=dev-libs/libevent-2.0.10
 	dev-libs/openssl:0
 	net-libs/libnatpmp
-	>=net-libs/miniupnpc-1.6
+	>=net-libs/miniupnpc-1.6.20120509
 	>=net-misc/curl-7.16.3[ssl]
 	sys-libs/zlib
 	gtk? (
 		>=dev-libs/dbus-glib-0.98
 		>=dev-libs/glib-2.28
 		>=x11-libs/gtk+-3.2:3
-		ayatana? ( dev-libs/libappindicator:3 )
+		ayatana? ( >=dev-libs/libappindicator-0.4.90:3 )
 		)
 	qt4? (
 		x11-libs/qt-core:4
@@ -78,7 +78,13 @@ src_prepare() {
 	# http://trac.transmissionbt.com/ticket/4324
 	sed -i -e 's|noinst\(_PROGRAMS = $(TESTS)\)|check\1|' lib${PN}/Makefile.am || die
 
-	intltoolize --copy --force --automake || die
+	# http://bugs.gentoo.org/400929 ->
+	# http://trac.transmissionbt.com/ticket/4915 ->
+	# http://github.com/bittorrent/libutp/issues/35
+	if ! grep -qs include.*netinet.*in.h third-party/libutp/utp.h; then
+		epatch "${FILESDIR}"/${PN}-2.51-fbsd.patch
+	fi
+
 	eautoreconf
 
 	if use qt4; then

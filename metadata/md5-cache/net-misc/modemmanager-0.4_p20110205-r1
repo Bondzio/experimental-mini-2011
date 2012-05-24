@@ -1,4 +1,4 @@
-DEFINED_PHASES=configure install postinst
+DEFINED_PHASES=configure install postinst prepare
 DEPEND=>=dev-libs/glib-2.18 || ( >=sys-fs/udev-171[gudev] >=sys-fs/udev-145[extras] ) >=dev-libs/dbus-glib-0.86 net-dialup/ppp policykit? ( >=sys-auth/polkit-0.95 ) >=dev-util/intltool-0.35.0 sys-devel/gettext virtual/pkgconfig
 DESCRIPTION=Modem and mobile broadband management libraries
 EAPI=2
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.18 || ( >=sys-fs/udev-171[gudev] >=sys-fs/udev-145[ext
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~dagger/files/ModemManager-0.4_p20110205.tar.bz2
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=bc89872a070121a78cafb4ca46e8b87a
+_md5_=c3930879698fcc9f82d95121a06984bf

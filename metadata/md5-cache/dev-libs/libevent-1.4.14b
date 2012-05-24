@@ -7,5 +7,5 @@ LICENSE=BSD
 RDEPEND=!<=dev-libs/9libs-1.0
 SLOT=0
 SRC_URI=http://monkey.org/~provos/libevent-1.4.14b-stable.tar.gz
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=616b2f572ed5b028dc647d24f0778814

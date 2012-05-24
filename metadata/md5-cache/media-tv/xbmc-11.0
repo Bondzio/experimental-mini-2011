@@ -10,5 +10,5 @@ RDEPEND=virtual/opengl app-arch/bzip2 app-arch/unzip app-arch/zip app-i18n/enca 
 REQUIRED_USE=pvr? ( mysql )
 SLOT=0
 SRC_URI=http://mirrors.xbmc.org/releases/source/xbmc-11.0.tar.gz
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5463ca8131d86bf3530c9b53f255d5d8

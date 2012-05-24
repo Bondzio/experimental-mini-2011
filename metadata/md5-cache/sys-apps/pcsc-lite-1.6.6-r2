@@ -10,4 +10,4 @@ RDEPEND=usb? ( virtual/libusb:1 ) !<app-crypt/ccid-1.4.1-r1 kernel_linux? ( sys-
 SLOT=0
 SRC_URI=http://alioth.debian.org/download.php/3479/pcsc-lite-1.6.6.tar.bz2
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e023b3fcc40a603cb56e4e7f4d174ae4
+_md5_=76feeae75245d3939a744e17360b250d

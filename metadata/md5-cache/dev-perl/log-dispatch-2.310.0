@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Params-Validate dev-perl/Class-Load >=virtual/perl-ExtUtils-MakeMaker-6.31 dev-lang/perl[-build]
+DESCRIPTION=Dispatches messages to multiple Log::Dispatch::* objects
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Log-Dispatch/
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=Artistic-2
+RDEPEND=dev-perl/Params-Validate dev-perl/Class-Load dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/D/DR/DROLSKY/Log-Dispatch-2.31.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b1155d9aa8fcac0ebe6b2d9e5e7ba680

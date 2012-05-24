@@ -10,4 +10,4 @@ RDEPEND=caps? ( sys-libs/libcap ) gmp? ( dev-libs/gmp ) selinux? ( sys-libs/libs
 SLOT=0
 SRC_URI=mirror://gnu-alpha/coreutils/coreutils-8.17.tar.xz mirror://gnu/coreutils/coreutils-8.17.tar.xz mirror://gentoo/coreutils-8.17.tar.xz mirror://gentoo/coreutils-8.17-patches-1.tar.xz http://dev.gentoo.org/~vapier/dist/coreutils-8.17-patches-1.tar.xz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e506ede291e7baff5514591b753403f3
+_md5_=e05567e8c0ecac2498061dc77cdc52a9

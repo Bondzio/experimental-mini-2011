@@ -10,5 +10,5 @@ PDEPEND=dev-java/gjdoc dev-java/eclipse-ecj
 RDEPEND=dev-java/gnu-classpath:0.98 libffi? ( virtual/libffi ) amd64? ( virtual/libffi ) =dev-java/java-config-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/jamvm/jamvm-1.5.4.tar.gz
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=524b76530c4bfc9f17885ec643578f30

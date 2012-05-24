@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/openmotif-2.3:0 x11-libs/libXpm x11-apps/xfontsel dev-libs/libpcre net-misc/curl sys-libs/db sci-libs/shapelib !graphicsmagick? ( media-gfx/imagemagick[-hdri,-q32] ) graphicsmagick? ( media-gfx/graphicsmagick[-q32] ) geotiff? ( sci-libs/proj sci-libs/libgeotiff media-libs/tiff ) gdal? ( sci-libs/gdal ) festival? ( app-accessibility/festival )
 SLOT=0
 SRC_URI=mirror://sourceforge/xastir/xastir-2.0.0.tar.gz
-_eclasses_=autotools	e4e346f68308900c24bb302865e7d43d	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bc8717be8a46085d7571392416c11783

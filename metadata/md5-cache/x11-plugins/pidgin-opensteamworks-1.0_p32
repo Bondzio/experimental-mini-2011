@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare setup
+DEPEND=dev-libs/glib:2 dev-libs/json-glib net-im/pidgin app-arch/unzip virtual/pkgconfig
+DESCRIPTION=Steam protocol plugin for pidgin
+EAPI=4
+HOMEPAGE=http://code.google.com/p/pidgin-opensteamworks/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-libs/glib:2 dev-libs/json-glib net-im/pidgin
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~hasufell/distfiles/pidgin-opensteamworks-1.0_p32.tar.xz http://pidgin-opensteamworks.googlecode.com/files/icons.zip -> pidgin-opensteamworks-icons.zip
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_md5_=6ad1f28fcaeb8ccaeff84b44b098a5ef

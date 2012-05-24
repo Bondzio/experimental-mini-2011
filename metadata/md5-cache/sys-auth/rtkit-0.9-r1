@@ -9,4 +9,4 @@ RDEPEND=sys-apps/dbus sys-auth/polkit sys-libs/libcap
 SLOT=0
 SRC_URI=http://0pointer.de/public/rtkit-0.9.tar.gz
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6769c9c9393f106a3750646d07bec79a
+_md5_=352df69baa881285a9b621d5fdf36ca0
