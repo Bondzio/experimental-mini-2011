@@ -4,11 +4,11 @@ DESCRIPTION=Essential Gnome Libraries
 EAPI=4
 HOMEPAGE=http://library.gnome.org/devel/libgnome/stable/
 IUSE=branding doc debug
-KEYWORDS=~alpha amd64 arm ~ia64 ~mips ~ppc ppc64 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 arm ~ia64 ~mips ppc ppc64 ~sh ~sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
 LICENSE=LGPL-2
 PDEPEND=gnome-base/gvfs
 RDEPEND=>=gnome-base/gconf-2 >=dev-libs/glib-2.16:2 >=gnome-base/gnome-vfs-2.5.3 >=gnome-base/libbonobo-2.13 >=dev-libs/popt-1.7 media-libs/libcanberra
 SLOT=0
 SRC_URI=mirror://gnome/sources/libgnome/2.32/libgnome-2.32.1.tar.bz2 branding? ( mirror://gentoo/gentoo-gdm-theme-r3.tar.bz2 )
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=d6ff9b662006b41c7c8eeea55df733fd
+_md5_=5b84f8f7f20ac19f73bd35ee1cb8b0a3

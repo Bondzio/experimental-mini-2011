@@ -4,10 +4,10 @@ DESCRIPTION=Rendering engine for MathML documents
 EAPI=4
 HOMEPAGE=http://helm.cs.unibo.it/mml-widget/
 IUSE=gtk mathml svg t1lib
-KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ppc64 ~sparc x86
+KEYWORDS=~alpha amd64 hppa ~ia64 ppc ppc64 ~sparc x86
 LICENSE=LGPL-3
 RDEPEND=>=dev-libs/glib-2.2.1:2 >=dev-libs/popt-1.7 >=dev-libs/libxml2-2.6.7:2 gtk? ( >=x11-libs/gtk+-2.2.1:2 >=media-libs/t1lib-5:5 >=dev-libs/gmetadom-0.1.8 x11-libs/pango ) mathml? ( media-fonts/texcm-ttf ) t1lib? ( >=media-libs/t1lib-5:5 )
 SLOT=0
 SRC_URI=http://helm.cs.unibo.it/mml-widget/sources/gtkmathview-0.8.0.tar.gz
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=51d82ce99b7499a0bdbf8d93ca4b968f
+_md5_=6f776f37947756c50a5b2ebd6caa4f92

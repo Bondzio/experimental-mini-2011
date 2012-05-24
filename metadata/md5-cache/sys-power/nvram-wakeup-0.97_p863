@@ -9,4 +9,4 @@ RESTRICT=mirror
 SLOT=0
 SRC_URI=mirror://sourceforge/nvram-wakeup/nvram-wakeup-0.97.tar.bz2 http://nvram-wakeup.svn.sourceforge.net/viewvc/*checkout*/nvram-wakeup/trunk/nvram-wakeup/nvram-wakeup-mb.c?revision=863
 _eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c88369625fd9b63fe0f75075d42a9dbb
+_md5_=ba6050e636288c63072678f61ece4b98

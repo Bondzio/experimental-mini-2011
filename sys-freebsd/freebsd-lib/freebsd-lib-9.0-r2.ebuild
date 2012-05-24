@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-lib/freebsd-lib-9.0-r2.ebuild,v 1.24 2012/05/23 21:46:50 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-lib/freebsd-lib-9.0-r2.ebuild,v 1.26 2012/05/24 12:15:46 aballier Exp $
 
 EAPI=2
 
@@ -239,7 +239,7 @@ is_native_abi() {
 
 # Do we need to bootstrap the csu and libssp_nonshared?
 need_bootstrap() {
-	is_crosscompile || use build || !is_native_abi
+	is_crosscompile || use build || ! is_native_abi
 }
 
 # Get the subdirs we are building.
@@ -257,14 +257,17 @@ get_subdirs() {
 			ret="$(get_csudir $(tc-arch-kernel ${CTARGET})) ${ret}"
 		fi
 	elif use build ; then
-		# For the non-native ABIs we only build the csu parts.
+		# For the non-native ABIs we only build the csu parts and very core
+		# libraries for now.
+		ret="lib/libcompiler_rt gnu/lib/libssp/libssp_nonshared"
 		if [ "${EBUILD_PHASE}" = "install" ]; then
-			ret="$(get_csudir $(tc-arch-kernel ${CHOST}))"
+			ret="$(get_csudir $(tc-arch-kernel ${CHOST})) ${ret}"
 		fi
 	else
-		# Only build the csu parts for now.
+		# Only build the csu parts and core libraries for now.
+		ret="lib/libcompiler_rt gnu/lib/libssp/libssp_nonshared"
 		if [ "${EBUILD_PHASE}" = "install" ]; then
-			ret="$(get_csudir $(tc-arch-kernel ${CHOST}))"
+			ret="$(get_csudir $(tc-arch-kernel ${CHOST})) ${ret}"
 		fi
 		# Finally, with a non-native ABI without USE=build, we build everything
 		# too.
@@ -348,7 +351,7 @@ src_compile() {
 				einfo "Pre-installing includes in include_proper_${ABI}"
 				mkdir "${WORKDIR}/include_proper_${ABI}" || die
 				CTARGET="${CHOST}" install_includes "/include_proper_${ABI}"
-				CC="${CC} -isystem ${WORKDIR}/include_proper_${ABI}"
+				CC="${CC} -I${WORKDIR}/include_proper_${ABI}"
 			else
 				use build && append-flags "-isystem '${WORKDIR}/include_proper'" ;
 			fi
@@ -402,6 +405,7 @@ END_LDSCRIPT
 }
 
 do_install() {
+	export MAKEOBJDIRPREFIX="${WORKDIR}/${CHOST}"
 	for i in $(get_subdirs) ; do
 		einfo "Installing in ${i}..."
 		cd "${WORKDIR}/${i}/" || die "missing ${i}."
