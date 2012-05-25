@@ -1347,7 +1347,6 @@ dev-libs/libnl:utils - Install command line interface utils
 dev-libs/libowfat:diet - Compile against dev-libs/dietlibc
 dev-libs/libp11:doc - Generate and install API documentation for the package.
 dev-libs/libpcre:bzip2 - Add support for pcregrep command to search within bzip2-compressed files, through sys-libs/zlib.
-dev-libs/libpcre:jit - Enable Just-In-Time compilation of regexp bytecode to machine code, through the SLJIT compiler. This feature might conflict with security mitigation strategies such as NX/PaX as enabled by Gentoo Hardened.
 dev-libs/libpcre:pcre16 - Build 16 bit PCRE library.
 dev-libs/libpcre:readline - Add support for command line editing to pcretest, through sys-libs/readline.
 dev-libs/libpcre:recursion-limit - Limit match recursion to 8192; if disabled, the default limit is used, which is the same as the match limit.
@@ -1955,7 +1954,8 @@ gnome-base/gnome:extras - Install additional GNOME applications
 gnome-base/gnome:fallback - Install gnome-base/gnome-panel and x11-wm/metacity for the GNOME 3 fallback mode
 gnome-base/gnome-control-center:cheese - Add support for taking pictures for the user accounts panel using media-video/cheese
 gnome-base/gnome-control-center:colord - Support color management using x11-misc/colord
-gnome-base/gnome-control-center:socialweb - Add support for configuring social web service settings using net-libs/libsocialweb
+gnome-base/gnome-control-center:gnome-online-accounts - Enable configuration panel for net-libs/gnome-online-accounts accounts
+gnome-base/gnome-control-center:socialweb - Add support for desktop background images from Flickr using net-libs/libsocialweb
 gnome-base/gnome-control-center:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
 gnome-base/gnome-control-center:wacom - Enable support for Wacom tablets and drawing devices
 gnome-base/gnome-desktop:introspection - Use dev-libs/gobject-introspection for introspection

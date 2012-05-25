@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/portmidi/portmidi-217.ebuild,v 1.1 2012/02/27 04:14:00 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/portmidi/portmidi-217.ebuild,v 1.3 2012/05/25 14:03:19 ago Exp $
 
 EAPI="4"
 PYTHON_DEPEND="python? 2:2.6"
@@ -16,7 +16,7 @@ SRC_URI="mirror://sourceforge/portmedia/${PN}-src-${PV}.zip"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="debug doc java python static-libs test-programs"
 
 CDEPEND="media-libs/alsa-lib"
@@ -26,8 +26,13 @@ DEPEND="${CDEPEND}
 	app-arch/unzip
 	java? ( >=virtual/jdk-1.6 )
 	python? ( >=dev-python/cython-0.12.1 )
-	doc? ( app-doc/doxygen
-		virtual/latex-base )"
+	doc? (
+		app-doc/doxygen
+		dev-texlive/texlive-fontsrecommended
+		dev-texlive/texlive-latexextra
+		dev-tex/xcolor
+		virtual/latex-base
+	)"
 
 S=${WORKDIR}/${PN}
 

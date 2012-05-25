@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/proj/proj-4.8.0.ebuild,v 1.2 2012/04/25 16:47:26 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/proj/proj-4.8.0.ebuild,v 1.4 2012/05/25 07:38:16 scarabeus Exp $
 
 EAPI=4
 
@@ -9,11 +9,13 @@ inherit eutils java-pkg-opt-2 flag-o-matic
 DESCRIPTION="Proj.4 cartographic projection software with updated NAD27 grids"
 HOMEPAGE="http://trac.osgeo.org/proj/"
 SRC_URI="ftp://ftp.remotesensing.org/pub/proj/${P}.tar.gz
-	http://download.osgeo.org/proj/${PN}-datumgrid-1.5.zip"
+	http://download.osgeo.org/proj/${PN}-datumgrid-1.5.zip
+	http://trac.osgeo.org/proj/export/2190/tags/${PV}/proj/src/org_proj4_PJ.h -> ${P}-org_proj4_PJ.h
+"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
+KEYWORDS="~alpha amd64 ~hppa ~mips ppc ~ppc64 ~s390 ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="java static-libs"
 
 RDEPEND=""
@@ -24,6 +26,7 @@ src_unpack() {
 	unpack ${P}.tar.gz
 	cd "${S}"/nad || die
 	mv README README.NAD || die
+	cp "${DISTDIR}/${P}-org_proj4_PJ.h" "${S}/src/org_proj4_PJ.h" || die
 	unpack ${PN}-datumgrid-1.5.zip
 }
 
