@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare unpack
+DEPEND=virtual/jpeg >=media-libs/tiff-3.9.1 sci-libs/proj sys-libs/zlib doc? ( app-doc/doxygen )
+DESCRIPTION=Library for reading TIFF files with embedded tags for geographic (cartographic) information
+EAPI=4
+HOMEPAGE=http://geotiff.osgeo.org/
+IUSE=debug doc static-libs
+KEYWORDS=~alpha ~amd64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE=GPL-2
+RDEPEND=virtual/jpeg >=media-libs/tiff-3.9.1 sci-libs/proj sys-libs/zlib
+SLOT=0
+SRC_URI=http://download.osgeo.org/geotiff/libgeotiff/libgeotiff-1.4.0.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5c7d22611892bdd0dd6dfcde2c513fd7
