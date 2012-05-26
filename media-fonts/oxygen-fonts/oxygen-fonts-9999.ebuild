@@ -18,7 +18,7 @@ S="${WORKDIR}"
 DOCS="README"
 
 src_install() {
-	FONT_S=${S}/Monospace FONT_SUFFIX="ttf" font_src_install
-	FONT_S=${S}/Oxygen-Regular FONT_SUFFIX="ttf" font_src_install
-	FONT_S=${S}/Oxygen-Bold FONT_SUFFIX="ttf" font_src_install
+	FONT_S=${S}/version-0.2/Monospace FONT_SUFFIX="ttf" font_src_install
+	FONT_S=${S}/version-0.2/Oxygen-Regular FONT_SUFFIX="ttf" font_src_install
+	FONT_S=${S}/version-0.2/Oxygen-Bold FONT_SUFFIX="ttf" font_src_install
 }
