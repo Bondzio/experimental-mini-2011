@@ -109,11 +109,13 @@ app-admin/collectd:collectd_plugins_tcpconns - Build the tcpconns input plugin (
 app-admin/collectd:collectd_plugins_teamspeak2 - Build the teamspeak2 input plugin (collects traffic statistics from a teamspeak2 instance)
 app-admin/collectd:collectd_plugins_ted - Build the ted input plugin (connects to The Energy Detective and reads the current power over connected power lines)
 app-admin/collectd:collectd_plugins_thermal - Build the thermal input plugin (ACPI thermal zone information)
+app-admin/collectd:collectd_plugins_threshold - Build the threshold plugin
 app-admin/collectd:collectd_plugins_tokyotyrant - Build the tokyotyrant input plugin (number of records and file size from a running Tokyo Tyrant server)
 app-admin/collectd:collectd_plugins_unixsock - Build the unixsock output plugin (opens a UNIX domain socket and accepts connections)
 app-admin/collectd:collectd_plugins_uptime - Build the uptime input plugin (system uptime)
 app-admin/collectd:collectd_plugins_users - Build the users input plugin (number of users currently logged in)
 app-admin/collectd:collectd_plugins_uuid - Build the uuid plugin (tries hard to determine the UUID of the system it is running on)
+app-admin/collectd:collectd_plugins_v5upgrade - Build the v5upgrade plugin
 app-admin/collectd:collectd_plugins_varnish - Build the varnish input plugin
 app-admin/collectd:collectd_plugins_vmem - Build the vmem input plugin (information about the virtual memory subsystem)
 app-admin/collectd:collectd_plugins_vserver - Build the vserver input plugin (virtual servers running on a system)
@@ -1000,6 +1002,7 @@ dev-db/redis:jemalloc - Use dev-libs/jemalloc for allocations.
 dev-db/redis:tcmalloc - Use tcmalloc from dev-util/google-perftools for allocations.
 dev-db/spatialite:geos - Add the sci-libs/geos library for exact topological tests
 dev-db/spatialite:proj - Add the sci-libs/proj library for reprojection features
+dev-db/spatialite:xls - Add the dev-libs/freexl library for xls import support
 dev-db/sqlite:extensions - Enable support for dynamic loading of extensions
 dev-db/sqlite:fts3 - Full text search using the fts3 module
 dev-db/sqlite:secure-delete - Overwrite deleted information with zeros in addition to marking the space as available for reuse. This causes a performance penalty.
@@ -3830,7 +3833,6 @@ net-irc/kvirc:dcc_voice - Support voice connections over DCC protocol
 net-irc/kvirc:ipc - Support inter-process communication between KVIrc processes
 net-irc/kvirc:phonon - Support Phonon for audio output
 net-irc/kvirc:qt-dbus - Support Qt-DBus
-net-irc/kvirc:qt-webkit - Support Qt-WebKit
 net-irc/kvirc:transparency - Support pseudo-transparency
 net-irc/ngircd:ident - Enables support for net-libs/libident
 net-irc/psybnc:multinetwork - Adds support for multiple networks
@@ -4719,13 +4721,18 @@ sci-libs/fftw:paired-single - Adds support for pair-single optimizations of mips
 sci-libs/fftw:quad - Build quadruple precision lib
 sci-libs/fftw:zbus - Adds support for ZBus cycle-counter of mips
 sci-libs/flann:octave - Add bindings for sci-mathematics/octave
+sci-libs/gdal:armadillo - Use sci-libs/armadillo for faster TPS transform computation
 sci-libs/gdal:aux_xml - Enable Portable Auxilliary Metadata generation
 sci-libs/gdal:ecwj2k - Enable support for alternate jpeg2k library sci-libs/libecwj2
 sci-libs/gdal:fits - Enable support for NASA's sci-libs/cfitsio library
 sci-libs/gdal:geos - Add support for geometry engine (sci-libs/geos
 sci-libs/gdal:gml - Enable support for dev-libs/xerces-c C++ API
 sci-libs/gdal:hdf - Add support for the Hierarchical Data Format v. 4 (sci-libs/hdf)
+sci-libs/gdal:mdb - Enable support for Microsoft Access database
 sci-libs/gdal:ogdi - Enable support for the open geographic datastore interface (sci-libs/ogdi)
+sci-libs/gdal:opencl - Enable OpenCL support
+sci-libs/gdal:spatialite - Enable Spatial DBMS over sqlite dev-db/spatialite
+sci-libs/gdal:xls - Add the dev-libs/freexl library for xls import support
 sci-libs/getdata:fortran - Build fortran bindings
 sci-libs/getdata:python - Build python bindings
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version

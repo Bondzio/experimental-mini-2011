@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-video/vdr-1.6.0[ttxtsubs] >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
 SLOT=0
 SRC_URI=mirror://vdr-developerorg/96/vdr-ttxtsubs-0.1.0.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	66cb710a2aa184a5687fe1289d7973ab	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a
 _md5_=9eda86fa95aa00131435a00ab21af7a5
