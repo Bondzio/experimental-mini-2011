@@ -309,6 +309,7 @@ app-editors/emacs:gconf - Use gnome-base/gconf to read the system font name
 app-editors/emacs:gzip-el - Compress bundled Emacs Lisp source
 app-editors/emacs:hesiod - Enable support for net-dns/hesiod
 app-editors/emacs:leim - Add support for Emacs input methods
+app-editors/emacs:pax_kernel - Enable building under a PaX enabled kernel (sys-apps/paxctl)
 app-editors/emacs:sendmail - Build Emacs with MTA support
 app-editors/emacs:toolkit-scroll-bars - Use the selected toolkit's scrollbars in preference to Emacs' own scrollbars
 app-editors/emacs-vcs:athena - Enable the MIT Athena widget set (x11-libs/libXaw)
@@ -2753,9 +2754,6 @@ media-sound/amarok:embedded - Use libmysqld, MySQL embedded server library. Try 
 media-sound/amarok:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
 media-sound/amarok:mp3tunes - Enable mp3tunes integration
 media-sound/amarok:ofa - Use media-libs/libofa to compute MusicDNS acoustic fingerprints (used by MusicBrainz)
-media-sound/amarok:playdar - Build the playdar collection
-media-sound/amarok:player - Build the player
-media-sound/amarok:upnp - Support for upnp servers
 media-sound/amarok:utils - Build the utils - old media-sound/amarok-utils
 media-sound/aqualung:ifp - Enable support for iRiver iFP portable audio players
 media-sound/aqualung:lua - Enable support for programmable title formatting with dev-lang/lua
@@ -3888,10 +3886,10 @@ net-irc/znc:dns-threads - Use threads for DNS resolving
 net-irc/znc:extras - Enable some additional modules
 net-irc/znc:user-networks - Allow non-admin users to add networks
 net-libs/aqbanking:chipcard - Enable support for DDV/RSA-chipcards
-net-libs/axTLS:cgi-lua - Enables lua backed cgi for axhttpd server
-net-libs/axTLS:cgi-php - Enables php backed cgi for axhttpd server
-net-libs/axTLS:httpd - Enables axhttpd web server component
-net-libs/axTLS:static - Statically build axhttpd server
+net-libs/axtls:cgi-lua - Enables lua backed cgi for axhttpd server
+net-libs/axtls:cgi-php - Enables php backed cgi for axhttpd server
+net-libs/axtls:httpd - Enables axhttpd web server component
+net-libs/axtls:static - Statically build axhttpd server
 net-libs/c-client:doc - Install RFCs related to IMAP
 net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
