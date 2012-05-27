@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.18 2012/05/02 21:59:18 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-9999.ebuild,v 1.19 2012/05/27 17:06:42 dilfridge Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -20,11 +20,27 @@ inherit kde4-base
 
 DESCRIPTION="KDE Office Suite"
 HOMEPAGE="http://www.calligra.org/"
-[[ ${PV} == *9999 ]] || SRC_URI="mirror://kde/stable/${P}/${P}.tar.bz2"
+
+case ${PV} in
+	2.[456789].[789]?)
+		# beta or rc releases
+		SRC_URI="mirror://kde/unstable/${P}/${P}.tar.bz2" ;;
+	2.[456789].?)
+		# stable releases
+		SRC_URI="mirror://kde/stable/${P}/${P}.tar.bz2" ;;
+	2.[456789].9999)
+		# stable branch live ebuild 
+		SRC_URI="" ;;
+	9999)
+		# master branch live ebuild
+		SRC_URI="" ;;
+esac
 
 LICENSE="GPL-2"
 SLOT="4"
+
 [[ ${PV} == *9999 ]] || KEYWORDS="~amd64 ~x86"
+
 IUSE="attica +crypt +eigen +exif fftw +fontconfig freetds +gif glew +glib +gsf
 gsl +iconv +jpeg jpeg2k +kdcraw kdepim +lcms marble mysql +mso +okular openctl openexr
 +pdf postgres +semantic-desktop +ssl sybase test tiff +threads +truetype
@@ -136,8 +152,9 @@ src_configure() {
 
 	# default disablers
 	mycmakeargs+=(
-		"-DBUILD_mobile=OFF" # we dont suppor mobile gui, maybe arm could
-		"-DWITH_LCMS=OFF" # we use lcms:2
+		"-DBUILD_mobile=OFF"         # we dont support mobile gui, maybe arm could
+		"-DBUILD_active=OFF"         # we dont support active gui, maybe arm could
+		"-DWITH_LCMS=OFF"            # we use lcms:2
 		"-DCREATIVEONLY=OFF"
 		"-DWITH_TINY=OFF"
 		"-DWITH_CreateResources=OFF" # NOT PACKAGED: http://create.freedesktop.org/
