@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/xnoise/xnoise-9999.ebuild,v 1.7 2012/05/05 08:55:51 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/xnoise/xnoise-9999.ebuild,v 1.8 2012/05/26 20:44:00 angelos Exp $
 
 EAPI=4
 inherit fdo-mime gnome2-utils git-2
@@ -43,12 +43,12 @@ src_prepare() {
 src_configure() {
 	VALAC=$(type -p valac-0.16) \
 	econf \
-		--enable-soundmenu2 \
+		$(use_enable lyrics lyricwiki) \
 		$(use_enable lastfm) \
 		$(use_enable libnotify notifications) \
-		$(use_enable lyrics azlyrics) \
+		--enable-soundmenu2 \
 		$(use_enable lyrics chartlyrics) \
-		$(use_enable lyrics lyricwiki)
+		$(use_enable lyrics azlyrics)
 }
 
 src_install() {
