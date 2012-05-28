@@ -8,4 +8,4 @@ LICENSE=BSD-2
 RDEPEND=sys-apps/dbus >=net-misc/dhcpcd-5.0
 SLOT=0
 SRC_URI=http://roy.marples.name/downloads/dhcpcd/dhcpcd-dbus-0.6.0.tar.bz2
-_md5_=726a791e0b5696c18ae1530cb5219be5
+_md5_=3b32aaf868c2709f7d3fee2b0afbe55c

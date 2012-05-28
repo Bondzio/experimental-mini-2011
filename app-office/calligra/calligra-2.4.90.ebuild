@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.4.90.ebuild,v 1.1 2012/05/27 17:06:42 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calligra/calligra-2.4.90.ebuild,v 1.3 2012/05/28 00:12:22 mr_bones_ Exp $
 
 # note: files that need to be checked for dependencies etc:
 # CMakeLists.txt, kexi/CMakeLists.txt kexi/migration/CMakeLists.txt
@@ -29,7 +29,7 @@ case ${PV} in
 		# stable releases
 		SRC_URI="mirror://kde/stable/${P}/${P}.tar.bz2" ;;
 	2.[456789].9999)
-		# stable branch live ebuild 
+		# stable branch live ebuild
 		SRC_URI="" ;;
 	9999)
 		# master branch live ebuild
@@ -97,7 +97,7 @@ RDEPEND="
 	jpeg? ( virtual/jpeg )
 	jpeg2k? ( media-libs/openjpeg )
 	kdcraw? ( $(add_kdebase_dep libkdcraw) )
-	kdepim? ( $(add_kdebase_dep kdepimlibs) )
+	kdepim? ( $(add_kdebase_dep kdepimlibs 'semantic-desktop') )
 	lcms? ( media-libs/lcms:2 )
 	marble? ( $(add_kdebase_dep marble) )
 	mysql? ( virtual/mysql )

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install
-DEPEND=>=dev-libs/kpathsea-6.0.1_p20110627 media-libs/freetype:2 sys-libs/zlib !media-libs/freetype:1 !=dev-texlive/texlive-langcjk-2011*[source] dev-util/pkgconfig
+DEPEND=>=dev-libs/kpathsea-6.0.1_p20110627 media-libs/freetype:2 sys-libs/zlib !media-libs/freetype:1 !=dev-texlive/texlive-langcjk-2011*[source] virtual/pkgconfig
 DESCRIPTION=Freetype 2 based TrueType font to TeX's PK format converter
 EAPI=4
 HOMEPAGE=http://tug.org/texlive/
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/kpathsea-6.0.1_p20110627 media-libs/freetype:2 sys-libs/zlib !media-libs/freetype:1 !=dev-texlive/texlive-langcjk-2011*[source]
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-20120525-source.tar.xz
-_md5_=61633cc3ebf7b391db7f58ce80647916
+_md5_=12a03f8d7430fd691c4a546fe032cd26

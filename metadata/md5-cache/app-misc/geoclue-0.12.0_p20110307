@@ -4,11 +4,11 @@ DESCRIPTION=A geoinformation D-Bus service
 EAPI=4
 HOMEPAGE=http://freedesktop.org/wiki/Software/GeoClue
 IUSE=geonames gps gsmloc gtk hostip manual networkmanager nominatim plazes skyhook yahoo-geo
-KEYWORDS=amd64 ~arm x86 ~amd64-fbsd
+KEYWORDS=amd64 ~arm ~ppc ~ppc64 x86 ~amd64-fbsd
 LICENSE=LGPL-2
 RDEPEND=dev-libs/dbus-glib dev-libs/glib:2 dev-libs/libxml2 gnome-base/gconf skyhook? ( net-libs/libsoup ) sys-apps/dbus gtk? ( x11-libs/gtk+:2 ) gps? ( <=sci-geosciences/gpsd-2.95-r1 ) networkmanager? ( net-misc/networkmanager )
 REQUIRED_USE=skyhook? ( networkmanager )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~signals/geoclue-0.12.0_p20110307.tar.bz2
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e3827cdb22e797a6d88267af93d0d769
+_md5_=a092fb9b2f246a3376f76fa36b2b9576
