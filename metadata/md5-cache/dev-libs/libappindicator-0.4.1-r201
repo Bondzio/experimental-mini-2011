@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 LGPL-3
 RDEPEND=dev-libs/dbus-glib >=dev-libs/glib-2.26 dev-libs/libdbusmenu:0[gtk] >=dev-libs/libindicator-0.4:0 dev-python/pygobject:2 >=dev-python/pygtk-2.14:2 >=x11-libs/gtk+-2.18:2 introspection? ( >=dev-libs/gobject-introspection-0.10 ) =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=http://launchpad.net/libappindicator/0.4/0.4.1/+download/libappindicator-0.4.1.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3a9cf95fb67b981a20bd26f03fb0955a

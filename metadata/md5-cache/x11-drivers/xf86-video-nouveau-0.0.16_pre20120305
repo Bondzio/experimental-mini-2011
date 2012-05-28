@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=>=x11-libs/libdrm-2.4.24[video_cards_nouveau] <x11-libs/libdrm-2.4.34[video_cards_nouveau] x11-base/xorg-server[-minimal] x11-libs/libdrm x11-base/xorg-server[xorg] x11-libs/libpciaccess
 SLOT=0
 SRC_URI=mirror://gentoo/xf86-video-nouveau-0.0.16_pre20120305.tar.bz2
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	autotools-utils	681f2683d43562170fd2238e335b866c	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	xorg-2	1f3d4a23685b76726bd19b731cdf28e6
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	xorg-2	1f3d4a23685b76726bd19b731cdf28e6
 _md5_=1b9f25770e88381f425ffc1e11aff5ad

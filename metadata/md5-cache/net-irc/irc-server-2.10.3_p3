@@ -8,5 +8,5 @@ LICENSE=GPL-1
 RDEPEND=sys-libs/ncurses zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=ftp://ftp.irc.org/irc/server/irc2.10.3p3.tgz ftp://ftp.irc.org/irc/server/Old/irc2.10/irc2.10.3p3.tgz
-_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b5b8033ea9f6fd0085c6537bffe0792e

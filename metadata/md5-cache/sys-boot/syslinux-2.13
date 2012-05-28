@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=sys-fs/mtools dev-lang/nasm
+DEPEND=sys-fs/mtools dev-lang/nasm <sys-kernel/linux-headers-3.4
 DESCRIPTION=SysLinux, IsoLinux and PXELinux bootloader
 HOMEPAGE=http://syslinux.zytor.com/
 KEYWORDS=-* amd64 x86
@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=sys-fs/mtools
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/boot/syslinux/2.xx/syslinux-2.13.tar.bz2
-_md5_=69354f78f2bf4ed6da88b4c30bb15457
+_md5_=09d8640720b696c193cd8b7c13f1d958

@@ -1593,6 +1593,7 @@ dev-python/spyder:pylint - Add support for dev-python/pylint
 dev-python/spyder:rope - Add support for dev-python/rope
 dev-python/spyder:scipy - Add support for sci-libs/scipy
 dev-python/spyder:sphinx - Add support for dev-python/sphinx
+dev-python/starcluster:epydoc - Enable build of apidocs in html using epydoc
 dev-python/sympy:imaging - Add support for dev-python/imaging
 dev-python/sympy:ipython - Add support for dev-python/ipython
 dev-python/sympy:mathml - Add support for mathml
@@ -4237,6 +4238,7 @@ net-misc/memcached:slabs-reassign - Allow manual reassignment of memory slabs at
 net-misc/mico:findbug - Adds patch to help finding bug#343827
 net-misc/mosh:client - Build network client
 net-misc/mosh:examples - Include example scripts
+net-misc/mosh:mosh-hardening - Enable compiler and linker options to frustrate memory corruption exploits
 net-misc/mosh:server - Build network server
 net-misc/mosh:ufw - Install net-firewall/ufw rule set
 net-misc/mosh:utempter - Include libutempter support

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.50 2012/05/22 14:29:06 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/autotools-utils.eclass,v 1.53 2012/05/28 07:46:59 mgorny Exp $
 
 # @ECLASS: autotools-utils.eclass
 # @MAINTAINER:
@@ -111,14 +111,11 @@ esac
 # Note that dependencies are added for autoconf, automake and libtool only.
 # If your package needs one of the external tools listed above, you need to add
 # appropriate packages to DEPEND yourself.
-[[ ${AUTOTOOLS_AUTORECONF} ]] || _autotools_auto_dep=no
+[[ ${AUTOTOOLS_AUTORECONF} ]] || : ${AUTOTOOLS_AUTO_DEPEND:=no}
 
-AUTOTOOLS_AUTO_DEPEND=${_autotools_auto_dep} \
 inherit autotools eutils libtool
 
 EXPORT_FUNCTIONS src_prepare src_configure src_compile src_install src_test
-
-unset _autotools_auto_dep
 
 # @ECLASS-VARIABLE: AUTOTOOLS_BUILD_DIR
 # @DEFAULT_UNSET
@@ -262,15 +259,6 @@ remove_libtool_files() {
 			rm -f "${f}" || die
 		fi
 	done
-
-	# check for invalid eclass use
-	# this is the most commonly used function, so do it here
-	_check_build_dir
-	if [[ ! -d "${AUTOTOOLS_BUILD_DIR}" ]]; then
-		eqawarn "autotools-utils used but autotools-utils_src_configure was never called."
-		eqawarn "This is not supported and never was. Please report a bug against"
-		eqawarn "the offending ebuild. This will become a fatal error in a near future."
-	fi
 }
 
 # @FUNCTION: autotools-utils_autoreconf
@@ -340,9 +328,9 @@ autotools-utils_autoreconf() {
 	local x
 	for x in $(autotools_check_macro_val AC_CONFIG_SUBDIRS); do
 		if [[ -d ${x} ]] ; then
-			pushd "${x}" >/dev/null
+			pushd "${x}" >/dev/null || die
 			autotools-utils_autoreconf
-			popd >/dev/null
+			popd >/dev/null || die
 		fi
 	done
 }
@@ -418,9 +406,9 @@ autotools-utils_src_configure() {
 	econfargs+=("${myeconfargs[@]}")
 
 	mkdir -p "${AUTOTOOLS_BUILD_DIR}" || die "mkdir '${AUTOTOOLS_BUILD_DIR}' failed"
-	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null
+	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null || die
 	econf "${econfargs[@]}" "$@"
-	popd > /dev/null
+	popd > /dev/null || die
 }
 
 # @FUNCTION: autotools-utils_src_compile
@@ -430,9 +418,9 @@ autotools-utils_src_compile() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	_check_build_dir
-	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null
+	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null || die
 	emake "$@" || die 'emake failed'
-	popd > /dev/null
+	popd > /dev/null || die
 }
 
 # @FUNCTION: autotools-utils_src_install
@@ -447,9 +435,9 @@ autotools-utils_src_install() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	_check_build_dir
-	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null
+	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null || die
 	emake DESTDIR="${D}" "$@" install || die "emake install failed"
-	popd > /dev/null
+	popd > /dev/null || die
 
 	# Move docs installed by autotools (in EAPI < 4).
 	if [[ ${EAPI} == [23] ]] \
@@ -494,8 +482,8 @@ autotools-utils_src_test() {
 	debug-print-function ${FUNCNAME} "$@"
 
 	_check_build_dir
-	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null
+	pushd "${AUTOTOOLS_BUILD_DIR}" > /dev/null || die
 	# Run default src_test as defined in ebuild.sh
 	default_src_test
-	popd > /dev/null
+	popd > /dev/null || die
 }

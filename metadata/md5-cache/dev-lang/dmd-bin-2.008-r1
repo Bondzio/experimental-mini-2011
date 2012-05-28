@@ -8,5 +8,5 @@ RDEPEND=amd64? ( app-emulation/emul-linux-x86-compat ) x86? ( ~virtual/libstdc++
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=http://ftp.digitalmars.com/dmd.2.008.zip
-_eclasses_=eutils	39af24987a4a7a34dccf2ef9cc6af3f7	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2704248633b8c40b12b17f6e185af5f7

@@ -8,5 +8,5 @@ LICENSE=OracleDB
 RDEPEND=tcl? ( dev-lang/tcl ) java? ( >=virtual/jre-1.4 ) java? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=4.5
 SRC_URI=http://download.oracle.com/berkeley-db/db-4.5.20.tar.gz http://www.oracle.com/technology/products/berkeley-db/db/update/4.5.20/patch.4.5.20.1 http://www.oracle.com/technology/products/berkeley-db/db/update/4.5.20/patch.4.5.20.2
-_eclasses_=db	abaa00c1772e8b3338ec92e275c5fd35	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=db	abaa00c1772e8b3338ec92e275c5fd35	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ea3c71f20c3083bea1d301ba04a5fc1f

@@ -9,5 +9,5 @@ PDEPEND=dev-lisp/gentoo-init
 RDEPEND=doc? ( sys-apps/texinfo media-gfx/graphviz )
 SLOT=0
 SRC_URI=mirror://sourceforge/sbcl/sbcl-1.0.19-source.tar.bz2 x86? ( mirror://sourceforge/sbcl/sbcl-1.0.15-x86-linux-binary.tar.bz2 ) amd64? ( mirror://sourceforge/sbcl/sbcl-1.0.15-x86-64-linux-binary.tar.bz2 ) ppc? ( mirror://sourceforge/sbcl/sbcl-1.0-powerpc-linux-binary.tar.bz2 ) sparc? ( mirror://sourceforge/sbcl/sbcl-0.9.17-sparc-linux-binary.tar.bz2 ) alpha? ( mirror://sourceforge/sbcl/sbcl-0.9.12-alpha-linux-binary.tar.bz2 ) mips? ( !cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.17-mips-linux-binary.tar.bz2 ) ) mips? ( cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.17-mipsel-linux-binary.tar.bz2 ) )
-_eclasses_=common-lisp-common-3	115a3bd72956727d232b155808f05c2f	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=common-lisp-common-3	115a3bd72956727d232b155808f05c2f	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e553b60800a25dc162cfa33e216d7817

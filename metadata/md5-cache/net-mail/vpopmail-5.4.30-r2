@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/qmail maildrop? ( mail-filter/maildrop ) mysql? ( virtual/mysql ) spamassassin? ( mail-filter/spamassassin )
 SLOT=0
 SRC_URI=mirror://sourceforge/vpopmail/vpopmail-5.4.30.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	39af24987a4a7a34dccf2ef9cc6af3f7	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f3750cf3755a719c3811513a88d8851e
