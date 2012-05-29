@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.250 2012/05/26 17:23:34 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.271 2012/05/29 17:17:43 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -20,11 +20,11 @@ net-misc/curl curl_ssl_axtls
 # sys-libs/ldb
 net-fs/samba ldb
 
-# dev-lang/php:5.3
-dev-libs/ossp-uuid php
+# doesnt link
+dev-lang/php iconv
 
-# dev-lang/php
-media-libs/libvpx doc
+# =dev-db/sqlite-2*
+dev-lang/php sqlite
 
 # sys-auth/pam_krb5
 sys-auth/pambase pam_krb5
@@ -50,13 +50,6 @@ sys-apps/xinetd rpc
 # media-gfx/ufraw
 media-gfx/imagemagick raw
 
-# >=media-libs/portaudio-19_pre
-media-libs/openal portaudio
-
-# dev-libs/cyrus-sasl
-dev-vcs/subversion sasl
-net-nds/openldap sasl cxx
-
 # app-crypt/heimdal
 net-nds/openldap smbkrb5passwd
 
@@ -66,12 +59,10 @@ dev-tex/latex-beamer lyx
 # net-libs/libproxy
 net-libs/neon libproxy
 net-libs/glib-networking libproxy
+media-video/vlc libproxy
 
 # dev-libs/pakchois
 net-libs/neon pkcs11
-
-# media-libs/lasi
-media-gfx/graphviz lasi
 
 # app-text/texlive[extra]
 app-doc/doxygen latex
@@ -99,6 +90,10 @@ media-libs/openal pulseaudio
 media-video/ffmpeg pulseaudio
 media-libs/libcanberra pulseaudio
 media-libs/phonon pulseaudio
+media-video/vlc pulseaudio
+
+# >=media-plugins/gst-plugins-pulse-0.10
+media-plugins/gst-plugins-meta pulseaudio
 
 # >=sys-fs/udisks-1.90:2
 gnome-base/gvfs udisks
@@ -115,6 +110,7 @@ gnome-base/gvfs gdu
 # >=x11-libs/libva-0.32
 media-video/ffmpeg vaapi
 virtual/ffmpeg vaapi
+media-video/vlc vaapi
 
 # >=media-libs/xvid-1.1.0
 media-video/ffmpeg xvid
@@ -129,19 +125,23 @@ x11-libs/qt-gui nas
 # net-misc/openntpd
 net-misc/ntp openntpd
 
+# tries to link to libdl, https://bugs.gentoo.org/show_bug.cgi?id=417523
+net-libs/webkit-gtk webgl
+
 # virtual/mysql
 sci-mathematics/glpk mysql
 dev-libs/apr-util mysql
 x11-libs/qt-sql mysql
 dev-libs/redland mysql
+dev-libs/cyrus-sasl mysql
+dev-lang/php mysql mysqli
+
+# net-mail/courier-imap
+dev-libs/cyrus-sasl authdaemond
 
 # dev-db/freetds
 dev-libs/apr-util freetds
 x11-libs/qt-sql freetds
-
-# >=gnome-base/libgnomeui-2
-# >=gnome-base/libbonoboui-2
-dev-util/glade gnome
 
 # app-emulation/wine
 media-libs/mesa d3d
@@ -169,18 +169,15 @@ x11-base/xorg-drivers video_cards_vmware
 # >=media-plugins/gst-plugins-ffmpeg-0.10
 media-plugins/gst-plugins-meta ffmpeg
 
-# >=media-plugins/gst-plugins-pulse-0.10
-media-plugins/gst-plugins-meta pulseaudio
-
 # media-plugins/gst-plugins-taglib
 media-plugins/gst-plugins-meta taglib
+
+# >=media-libs/taglib-1.5
+media-video/vlc taglib
 
 # >=dev-cpp/clucene-0.9.21[-debug]
 app-misc/strigi clucene
 dev-libs/soprano clucene
-
-# >=media-libs/phonon-vlc-0.3.2
-media-libs/phonon vlc
 
 # >=sys-auth/polkit-qt-0.103.0
 # >=kde-misc/polkit-kde-kcmodules-0.98_pre20101127
@@ -195,3 +192,15 @@ app-misc/geoclue skyhook
 
 # >=sys-devel/binutils-2.22
 sys-devel/llvm gold
+
+# media-libs/liboggz
+media-libs/libkate wxwidgets
+
+# >=media-plugins/live-2011.12.23 (xlocale.h)
+media-video/vlc live
+
+# media-sound/fluidsynth
+media-video/vlc fluidsynth
+
+# media-libs/libshout
+media-video/vlc shout

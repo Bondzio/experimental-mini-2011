@@ -3,10 +3,10 @@ DEPEND==dev-lang/python-2*
 DESCRIPTION=A Peer To Peer network game engine
 EAPI=3
 HOMEPAGE=http://home.gna.org/oomadness/en/slune
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://download.gna.org/slune/Py2Play-0.1.10.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
-_md5_=983e661b9431e1df0cdad0fa2ea63597
+_md5_=861467385c9b38c823989944ba317ae1

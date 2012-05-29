@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/atk x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+ x11-libs/pango
+DESCRIPTION=An HP-42S Calculator Simulator
+EAPI=4
+HOMEPAGE=http://thomasokken.com/free42/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/atk x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+ x11-libs/pango
+SLOT=0
+SRC_URI=mirror://gentoo/free42-1.4.74.tgz
+_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_md5_=8ba20ea86ac8dbfc02f42fcd22b333e8

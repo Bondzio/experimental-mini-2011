@@ -3,9 +3,9 @@ DEPEND=>=sys-apps/sed-4
 DESCRIPTION=The Linux Audio Developer's Simple Plugin API
 EAPI=4
 HOMEPAGE=http://www.ladspa.org/
-KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd
+KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=http://www.ladspa.org/download/ladspa_sdk_1.13.tgz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=40d712788854f59fa111b459baa5facb
+_md5_=7449bd115c9bb895186a8da1656fe449

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/amsn/amsn-0.98.9.ebuild,v 1.4 2012/05/28 23:12:18 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/amsn/amsn-0.98.9.ebuild,v 1.6 2012/05/29 14:31:36 tester Exp $
 
 EAPI=4
 inherit autotools eutils fdo-mime gnome2-utils toolchain-funcs
@@ -13,7 +13,7 @@ HOMEPAGE="http://www.amsn-project.net"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 hppa ~ppc -sparc x86"
+KEYWORDS="amd64 hppa ~ppc -sparc x86"
 IUSE="debug"
 
 DEPEND=">=dev-lang/tcl-8.4
@@ -46,7 +46,8 @@ src_prepare() {
 	epatch \
 		"${FILESDIR}"/${PN}-0.98-noautoupdate.patch \
 		"${FILESDIR}"/${PN}-0.98.4-v4l2.patch \
-		"${FILESDIR}"/${PN}-0.98.4-amsnplus-ldflags.patch
+		"${FILESDIR}"/${PN}-0.98.4-amsnplus-ldflags.patch \
+		"${FILESDIR}"/${PN}-0.98.9-no-rebuild-on-install.patch
 
 	# only portage should strip files, bug 285682
 	sed -i -e "s/LDFLAGS += -s/LDFLAGS += /" Makefile.in || die "sed failed"

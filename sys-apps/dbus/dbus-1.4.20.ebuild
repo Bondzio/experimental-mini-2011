@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/dbus/dbus-1.4.20.ebuild,v 1.10 2012/05/24 04:21:00 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/dbus/dbus-1.4.20.ebuild,v 1.11 2012/05/29 15:21:15 ssuominen Exp $
 
 EAPI=4
 inherit autotools eutils multilib flag-o-matic python systemd virtualx user
@@ -58,7 +58,9 @@ src_prepare() {
 		-e '/"dispatch"/d' \
 		bus/test-main.c || die
 
-	epatch "${FILESDIR}"/${PN}-1.4.0-asneeded.patch
+	epatch \
+		"${FILESDIR}"/${PN}-1.4.0-asneeded.patch \
+		"${FILESDIR}"/${PN}-1.5.12-selinux-when-dropping-capabilities-only-include-AUDI.patch
 
 	# required for asneeded patch but also for bug 263909, cross-compile so
 	# don't remove eautoreconf

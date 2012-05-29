@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare setup test
+DEPEND=!sys-cluster/mpich !sys-cluster/lam-mpi !sys-cluster/mpich2 !sys-cluster/mpiexec >=sys-apps/hwloc-1.3 elibc_FreeBSD? ( dev-libs/libexecinfo ) openmpi_fabrics_dapl? ( sys-infiniband/dapl ) openmpi_fabrics_ofed? ( sys-infiniband/ofed ) openmpi_fabrics_knem? ( sys-cluster/knem ) openmpi_fabrics_open-mx? ( sys-cluster/open-mx ) openmpi_fabrics_psm? ( sys-infiniband/infinipath-psm ) openmpi_fabrics_sctp? ( net-misc/lksctp-tools ) openmpi_rm_pbs? ( sys-cluster/torque ) openmpi_rm_slurm? ( sys-cluster/slurm ) openmpi_ofed_features_rdmacm? ( sys-infiniband/librdmacm ) fortran? ( virtual/fortran ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools )
+DESCRIPTION=A high-performance message passing library (MPI)
+EAPI=4
+HOMEPAGE=http://www.open-mpi.org
+IUSE=+cxx elibc_FreeBSD fortran heterogeneous ipv6 mpi-threads romio threads vt openmpi_fabrics_dapl openmpi_fabrics_ofed openmpi_fabrics_knem openmpi_fabrics_open-mx openmpi_fabrics_psm openmpi_fabrics_sctp openmpi_rm_pbs openmpi_rm_slurm openmpi_ofed_features_control-hdr-padding openmpi_ofed_features_connectx-xrc openmpi_ofed_features_rdmacm openmpi_ofed_features_dynamic-sl openmpi_ofed_features_failover
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux
+LICENSE=BSD
+RDEPEND=!sys-cluster/mpich !sys-cluster/lam-mpi !sys-cluster/mpich2 !sys-cluster/mpiexec >=sys-apps/hwloc-1.3 elibc_FreeBSD? ( dev-libs/libexecinfo ) openmpi_fabrics_dapl? ( sys-infiniband/dapl ) openmpi_fabrics_ofed? ( sys-infiniband/ofed ) openmpi_fabrics_knem? ( sys-cluster/knem ) openmpi_fabrics_open-mx? ( sys-cluster/open-mx ) openmpi_fabrics_psm? ( sys-infiniband/infinipath-psm ) openmpi_fabrics_sctp? ( net-misc/lksctp-tools ) openmpi_rm_pbs? ( sys-cluster/torque ) openmpi_rm_slurm? ( sys-cluster/slurm ) openmpi_ofed_features_rdmacm? ( sys-infiniband/librdmacm ) fortran? ( virtual/fortran ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools )
+REQUIRED_USE=openmpi_rm_slurm? ( !openmpi_rm_pbs ) openmpi_rm_pbs? ( !openmpi_rm_slurm ) openmpi_fabrics_psm? ( openmpi_fabrics_ofed ) openmpi_ofed_features_control-hdr-padding? ( openmpi_fabrics_ofed ) openmpi_ofed_features_connectx-xrc? ( openmpi_fabrics_ofed ) openmpi_ofed_features_rdmacm? ( openmpi_fabrics_ofed ) openmpi_ofed_features_dynamic-sl? ( openmpi_fabrics_ofed ) openmpi_ofed_features_failover? ( openmpi_fabrics_ofed )
+SLOT=0
+SRC_URI=http://www.open-mpi.org/software/ompi/v1.6/downloads/openmpi-1.6.tar.bz2
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=6b579d8bb728eade35b29cecfba36d35
