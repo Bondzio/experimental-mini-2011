@@ -1,0 +1,11 @@
+DEFINED_PHASES=install prepare
+DEPEND=dev-libs/boost >=sys-devel/gcc-4.3.3 sci-biology/vaal || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=De novo assembly of whole-genome shotgun microreads
+EAPI=4
+HOMEPAGE=http://www.broadinstitute.org/science/programs/genome-biology/crd
+KEYWORDS=~amd64
+LICENSE=as-is
+SLOT=0
+SRC_URI=ftp://ftp.broadinstitute.org/pub/crd/ALLPATHS/Release-LG/latest_source_code/allpathslg-41839.tar.gz
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5514a6b29b3472043a7e79d36e8acf1a
