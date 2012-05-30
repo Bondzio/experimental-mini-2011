@@ -9,5 +9,5 @@ LICENSE=GPL-3 CCPL-Attribution-ShareAlike-3.0
 RDEPEND=>=dev-games/cegui-0.7.6-r1[ogre] !>=dev-games/cegui-0.8 >=dev-games/ogre-1.7.0[freeimage,opengl,-threads] !>=dev-games/ogre-1.9 dev-games/ois dev-games/physfs =dev-lang/lua-5.1* >=dev-libs/tinyxml-2.6.2-r2 media-libs/freealut media-libs/openal media-libs/libogg media-libs/libvorbis >=net-libs/enet-1.3.0 x11-libs/libXrandr tools? ( dev-libs/poco )
 SLOT=0
 SRC_URI=mirror://sourceforge/sumwars/sumwars-0.5.6-src.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	games	f75cdbfdf1760e514ca65e2f6c6a7c72	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	games	81964dcd902c8f9d7ea64cb18295a13b	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b95be5efae8bbff1745e20c3ca380c8f

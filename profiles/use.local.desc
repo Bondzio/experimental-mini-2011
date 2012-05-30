@@ -1523,6 +1523,7 @@ dev-python/anyvc:mercurial - Add support for Mercurial
 dev-python/atpy:fits - Enable support for reading and FITS with dev-python/pyfits.
 dev-python/atpy:votable - Enable support for reading and VOTABLE with dev-python/vo.
 dev-python/bpython:urwid - Backend based on dev-python/urwid
+dev-python/celery:sql - Adds SQL support
 dev-python/cgkit:3ds - Enable support for importing 3D Studio models
 dev-python/cvxopt:dsdp - Use interior point library sci-libs/dsdp
 dev-python/cvxopt:glpk - Use GNU Linear Programming Kit sci-mathematics/glpk
@@ -1865,6 +1866,13 @@ games-fps/darkplaces:lights - Install and setup the updated light maps
 games-fps/darkplaces:textures - Install and setup the updated textures
 games-fps/doom-data:doomsday - Add wrapper to run it within doomsday
 games-fps/doom3:roe - Adds support for the Resurrection of Evil expansion
+games-fps/doomsday:demo - Install launcher dor doom1.wad from games-fps/doom-data
+games-fps/doomsday:doom - Install launcher for jdoom game
+games-fps/doomsday:freedoom - Install launcher for doom1.wad from games-fps/freefoom
+games-fps/doomsday:heretic - Install launcher for jheretic game
+games-fps/doomsday:hexen - Install launcher for jhexen game
+games-fps/doomsday:resources - Enable support for games-fps/doomsday-resources in jdoom launcher
+games-fps/doomsday:snowberry - Install Snowberry doomsday front-end
 games-fps/duke3d:demo - Install the demo files
 games-fps/duke3d:pic - disable optimized assembly code that is not PIC friendly
 games-fps/ezquake-bin:security - install the security module needed for some servers

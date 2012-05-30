@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.274 2012/05/29 23:17:38 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.278 2012/05/30 13:26:38 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -19,6 +19,9 @@ net-misc/curl curl_ssl_axtls
 
 # sys-libs/ldb
 net-fs/samba ldb
+
+# sys-process/numactl
+sys-apps/hwloc numa
 
 # doesnt link
 dev-lang/php iconv
@@ -77,9 +80,6 @@ dev-tex/chktex doc
 # dev-util/source-highlight
 dev-util/gtk-doc highlight
 
-# sys-cluster/openmpi
-dev-libs/boost mpi
-
 # x11-misc/colord
 x11-libs/gtk+ colord
 
@@ -97,9 +97,6 @@ media-video/vlc pulseaudio
 
 # >=media-plugins/gst-plugins-pulse-0.10
 media-plugins/gst-plugins-meta pulseaudio
-
-# >=sys-fs/udisks-1.90:2
-gnome-base/gvfs udisks
 
 # >=app-pda/libimobiledevice-1.1.0
 gnome-base/gvfs ios
@@ -210,3 +207,30 @@ media-video/vlc fluidsynth
 
 # media-libs/libshout
 media-video/vlc shout
+
+# sys-cluster/knem
+sys-cluster/openmpi openmpi_fabrics_knem
+
+# sys-infiniband/dapl
+sys-cluster/openmpi openmpi_fabrics_dapl
+
+# sys-infiniband/ofed
+sys-cluster/openmpi openmpi_fabrics_ofed
+
+# sys-infiniband/infinipath-psm
+sys-cluster/openmpi openmpi_fabrics_psm
+
+# sys-infiniband/librdmacm
+sys-cluster/openmpi openmpi_ofed_features_rdmacm
+
+# sys-cluster/open-mx
+sys-cluster/openmpi openmpi_fabrics_open-mx
+
+# net-misc/lksctp-tools
+sys-cluster/openmpi openmpi_fabrics_sctp
+
+# sys-cluster/slurm
+sys-cluster/openmpi openmpi_rm_slurm
+
+# sys-cluster/torque
+sys-cluster/openmpi openmpi_rm_pbs

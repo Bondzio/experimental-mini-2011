@@ -9,5 +9,5 @@ LICENSE=LGPL-3
 RDEPEND=sys-libs/libcap !vanilla? ( sys-apps/util-linux app-misc/pax-utils >=sys-apps/openrc-0.9.9.1 )
 SLOT=0
 SRC_URI=http://lxc.sourceforge.net/download/lxc/lxc-0.8.0-rc1.tar.gz http://dev.gentoo.org/~flameeyes/lxc/lxc-0.8.0-rc1-backports-1.tar.xz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=79f06edcf3e37da06f934b670a68b37c

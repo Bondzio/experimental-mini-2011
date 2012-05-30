@@ -8,5 +8,5 @@ LICENSE=lsof
 RDEPEND=selinux? ( sys-libs/libselinux )
 SLOT=0
 SRC_URI=ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/lsof_4.84.tar.bz2 ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/lsof_4.84.tar.bz2 ftp://ftp.cerias.purdue.edu/pub/tools/unix/sysutils/lsof/lsof_4.84.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f0541fddbc5a08d752252d87dfd629bd

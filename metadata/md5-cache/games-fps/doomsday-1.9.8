@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=virtual/opengl virtual/glu media-libs/libsdl[joystick,audio] media-libs/sdl-mixer media-libs/libpng x11-libs/qt-opengl x11-libs/qt-gui net-misc/curl openal? ( media-libs/openal ) snowberry? ( =dev-lang/python-2* )
+DESCRIPTION=A modern gaming engine for Doom, Heretic, and Hexen
+EAPI=4
+HOMEPAGE=http://www.dengine.net/
+IUSE=openal snowberry +doom demo freedoom heretic hexen resources
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+PDEPEND=demo? ( games-fps/doom-data ) freedoom? ( games-fps/freedoom ) resources? ( games-fps/doomsday-resources )
+RDEPEND=virtual/opengl virtual/glu media-libs/libsdl[joystick,audio] media-libs/sdl-mixer media-libs/libpng x11-libs/qt-opengl x11-libs/qt-gui net-misc/curl openal? ( media-libs/openal ) snowberry? ( dev-python/wxpython ) snowberry? ( =dev-lang/python-2* )
+REQUIRED_USE=demo? ( doom ) freedoom? ( doom ) resources? ( doom )
+SLOT=0
+SRC_URI=mirror://sourceforge/deng/doomsday-1.9.8.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	a95b1bf9d854485ca6fdbb47df2975aa	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=bd5b0fce51c4e68ea333416c16433b47

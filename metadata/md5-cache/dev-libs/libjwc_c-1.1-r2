@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=sci-libs/ccp4-libs || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=additional c library for ccp4
+EAPI=4
+HOMEPAGE=http://www.ccp4.ac.uk/main.html
+IUSE=static-libs
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~x64-macos
+LICENSE=GPL-2
+RDEPEND=sci-libs/ccp4-libs
+SLOT=0
+SRC_URI=ftp://ftp.ccp4.ac.uk/jwc/libjwc_c-1.1.tar.gz
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=4ccfb16ec8854699004d7e44fe2490d2

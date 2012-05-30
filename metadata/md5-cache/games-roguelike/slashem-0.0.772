@@ -8,5 +8,5 @@ LICENSE=nethack
 RDEPEND=>=sys-libs/ncurses-5.2-r5 X? ( x11-libs/libXaw x11-libs/libXmu x11-libs/libXext x11-libs/libXt x11-libs/libXpm x11-libs/libX11 x11-libs/libSM x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp ) opengl? ( virtual/opengl media-libs/libsdl ) sdl? ( media-libs/libsdl )
 SLOT=0
 SRC_URI=mirror://sourceforge/slashem/se007e7f2.tar.gz http://www.juiblex.co.uk/nethack/config/conf12s.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	games	f75cdbfdf1760e514ca65e2f6c6a7c72	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c093542ccfdf0a86cc5fe7c0dc025b38
