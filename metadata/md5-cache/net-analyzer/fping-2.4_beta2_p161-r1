@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare
+DEPEND=|| ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=A utility to ping multiple hosts at once
+EAPI=2
+HOMEPAGE=http://fping.sourceforge.net/ http://packages.qa.debian.org/f/fping.html
+IUSE=ipv6
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE=fping
+SLOT=0
+SRC_URI=mirror://debian/pool/main/f/fping/fping_2.4b2-to-ipv6.orig.tar.gz mirror://debian/pool/main/f/fping/fping_2.4b2-to-ipv6-16.1.diff.gz
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=2ab91d1a89692af955e5faad2c95472d

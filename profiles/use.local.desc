@@ -1394,6 +1394,8 @@ dev-libs/soprano:clucene - Enable dev-cpp/clucene backend support.
 dev-libs/soprano:raptor - Enables support for media-libs/raptor RDF parser/serializer.
 dev-libs/soprano:redland - Enables support for the dev-libs/redland storage backend (really slow one).
 dev-libs/soprano:virtuoso - Enables support for dev-db/virtuoso storage backend.
+dev-libs/starpu:cuda - Enable NVIDIA CUDA toolkit support
+dev-libs/starpu:opencl - Enable OpenCL support
 dev-libs/tinyxml:stl - Compile with TIXML_USE_STL support
 dev-libs/tntnet:sdk - Enable tntnet SDK
 dev-libs/tntnet:server - Enable tntnet server daemon
@@ -4791,7 +4793,10 @@ sci-mathematics/Macaulay2:optimization - Accept upstream's choices for -O option
 sci-mathematics/agda:epic - Add support for the epic compiler.
 sci-mathematics/agda:stdlib - Install the standard library.
 sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
+sci-mathematics/cvc3:isabelle - Add integration support for the Isabelle/HOL theorem prover.
+sci-mathematics/cvc3:zchaff - Use the SAT solver zchaff whose copyright is owned by Princeton University and is more restrictive (see license).
 sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
+sci-mathematics/e:isabelle - Add integration support for the Isabelle/HOL theorem prover.
 sci-mathematics/freemat:volpack - Add volume rendering via media-libs/volpack
 sci-mathematics/freemat:vtk - Add 3D capabilities via sci-libs/vtk
 sci-mathematics/fricas:clisp - Add support for GNU CLISP (dev-lisp/clisp)
@@ -4816,7 +4821,10 @@ sci-mathematics/isabelle:Pure - Pure is the basis for all object-logics.
 sci-mathematics/isabelle:Sequents - Sequents (first-order, modal and linear logics)
 sci-mathematics/isabelle:ZF - ZF (Set Theory) offers a formulation of Zermelo-Fraenkel set theory on top of FOL.
 sci-mathematics/isabelle:graphbrowsing - Generate theory browsing information, including HTML documents that show a theory's definition, the theorems proved in its ML file and the relationship with its ancestors and descendants.
+sci-mathematics/isabelle:ledit - Use ledit for the isabelle tty line editor
+sci-mathematics/isabelle:pide - Build Isabelle/jEdit Prover IDE (PIDE).
 sci-mathematics/isabelle:proofgeneral - Add support for the app-emacs/proofgeneral proof assistant front end.
+sci-mathematics/isabelle:readline - Use readline (rlwrap) for the isabelle tty line editor
 sci-mathematics/maxima:clisp - Compile maxima with GNU CLISP (dev-lisp/clisp)
 sci-mathematics/maxima:clozurecl - Compile maxima with Clozure Common Lisp (dev-lisp/clozurecl)
 sci-mathematics/maxima:cmucl - Compile maxima with CMU Common Lisp (dev-lisp/cmucl)
@@ -4833,6 +4841,7 @@ sci-mathematics/octave:sparse - Add enhanced support for sparse matrix algebra
 sci-mathematics/pari:data - Add additional data (elldata, galdata, seadata, nftables)
 sci-mathematics/polymake:libpolymake - Build the polymake library to build applications using the C++ interface.
 sci-mathematics/singular:boost - Compile against external boost headers (dev-libs/boost)
+sci-mathematics/spass:isabelle - Add integration support for the Isabelle/HOL theorem prover.
 sci-mathematics/unuran:prng - Use sci-mathematics/prng library
 sci-mathematics/unuran:rngstreams - Use sci-mathematics/rngstreams library
 sci-mathematics/yacas:server - Build the network server version

@@ -4,11 +4,11 @@ DESCRIPTION=A line editor to be used with interactive commands.
 EAPI=2
 HOMEPAGE=http://pauillac.inria.fr/~ddr/ledit/
 IUSE=+ocamlopt
-KEYWORDS=amd64 ~ppc ~x86 ~x86-fbsd
+KEYWORDS=amd64 ppc ~x86 ~x86-fbsd
 LICENSE=BSD
 RDEPEND=>=dev-lang/ocaml-3.09[ocamlopt?] dev-ml/camlp5
 RESTRICT=installsources
 SLOT=0
 SRC_URI=http://pauillac.inria.fr/~ddr/ledit/distrib/src/ledit-2.03.tgz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ec72f7a1039b90d48cb4bfcc5ae458b1
+_md5_=e55435dd7a4322079dba0ca72b5cff36

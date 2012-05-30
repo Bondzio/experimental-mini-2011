@@ -4,10 +4,10 @@ DESCRIPTION=GTK+ based Audio CD Player/Ripper
 EAPI=2
 HOMEPAGE=http://www.nostatic.org/grip/
 IUSE=nls vorbis
-KEYWORDS=~alpha amd64 ~ia64 ~ppc ppc64 ~sparc x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl vorbis? ( media-sound/vorbis-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/grip/grip-3.3.1.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	90717f74af9d5b0f435a0e0be03145df	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8d59932edeb712dc77f020bebf8ebf99
+_md5_=7a482d4e393974d536ce144b12d92cda

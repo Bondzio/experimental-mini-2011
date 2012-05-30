@@ -3,9 +3,9 @@ DEPEND=>=dev-libs/kpathsea-6.0.1_p20110627 media-libs/freetype:2 sys-libs/zlib !
 DESCRIPTION=Freetype 2 based TrueType font to TeX's PK format converter
 EAPI=4
 HOMEPAGE=http://tug.org/texlive/
-KEYWORDS=~amd64 ~x86 ~x86-fbsd
+KEYWORDS=~amd64 ~x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/kpathsea-6.0.1_p20110627 media-libs/freetype:2 sys-libs/zlib !media-libs/freetype:1 !=dev-texlive/texlive-langcjk-2011*[source]
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-20120525-source.tar.xz
-_md5_=12a03f8d7430fd691c4a546fe032cd26
+_md5_=922dc4fb4277c15e12c794826eb355d2
