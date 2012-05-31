@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-arch/p7zip/p7zip-9.20.1-r1.ebuild,v 1.1 2012/04/23 10:50:24 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-arch/p7zip/p7zip-9.20.1-r1.ebuild,v 1.2 2012/05/30 19:46:18 jlec Exp $
 
 EAPI=4
 
 WX_GTK_VER="2.8"
 
-inherit eutils toolchain-funcs multilib wxwidgets
+inherit eutils multilib toolchain-funcs wxwidgets
 
 DESCRIPTION="Port of 7-Zip archiver for Unix"
 HOMEPAGE="http://p7zip.sourceforge.net/"

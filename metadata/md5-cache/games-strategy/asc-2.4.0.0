@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-arch/bzip2 virtual/jpeg media-libs/libsdl media-libs/libpng media-libs/sdl-image[gif,jpeg,png] media-libs/sdl-mixer[vorbis] media-libs/sdl-sound dev-libs/boost dev-games/physfs media-libs/libvorbis media-libs/xvid dev-libs/expat media-libs/freetype dev-lang/lua x11-libs/wxGTK:2.8[X] dev-libs/libsigc++:1.2
 SLOT=0
 SRC_URI=mirror://sourceforge/asc-hq/asc-2.4.0.0.tar.bz2 http://www.asc-hq.org/music/frontiers.ogg http://www.asc-hq.org/music/time_to_strike.ogg http://www.asc-hq.org/music/machine_wars.ogg
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=b4c38b68391ca25395ec7ceef656364e

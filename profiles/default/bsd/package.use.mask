@@ -1,13 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/package.use.mask,v 1.26 2012/05/30 13:26:05 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/package.use.mask,v 1.30 2012/05/31 02:26:26 aballier Exp $
 
 # Sebastian Pipping <sping@gentoo.org> (22 Feb 2011)
 # No dev-util/source-highlight or media-sound/lilypond here, yet (bug #356069, bug #344289)
 app-text/asciidoc test highlight
 
 app-misc/mc pam
-dev-util/catalyst cdr
 
 # See http://bugzilla.gnome.org/show_bug.cgi?id=370847 for why we disable pam
 gnome-extra/gnome-screensaver pam
@@ -15,8 +14,8 @@ gnome-extra/gnome-screensaver pam
 # Requires Linux-only packages
 app-accessibility/gok usb
 
-# iproute2 - linux only, pkcs11-helper required keywords
-net-misc/openvpn iproute2 pkcs11
+# iproute2 - linux only
+net-misc/openvpn iproute2
 
 app-admin/sshguard -ipfilter
 media-video/ffmpeg ieee1394
@@ -30,10 +29,6 @@ sys-apps/help2man nls
 net-im/pidgin networkmanager zephyr
 
 media-video/totem bluetooth
-
-# Gilles Dartiguelongue <eva@gentoo.org> (29 Oct 2007)
-mail-client/evolution pda
-gnome-base/gnome-applets apm
 
 # Mart Raudsepp <leio@gentoo.org> (02 Apr 2008)
 # media-plugins/gst-plugins-mythtv not keyworded
@@ -50,7 +45,7 @@ media-video/vlc dc1394 ieee1394 fbosd
 # Alexis Ballier <aballier@gentoo.org> (8 Aug 2008)
 # Depends on torque which is a linux only thing
 # lksctp-tools is linux only too
-sys-cluster/openmpi pbs sctp
+sys-cluster/openmpi openmpi_rm_pbs openmpi_fabrics_sctp
 
 # Alexis Ballier <aballier@gentoo.org> (25 Sep 2008)
 # elf -> dev-libs/elfutils is too tight to the gnu libc

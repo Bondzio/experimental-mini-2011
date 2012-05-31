@@ -1,19 +1,13 @@
 # Copyright 1999-2012 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License, v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/fbsd/use.mask,v 1.3 2012/04/02 10:32:11 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/fbsd/use.mask,v 1.6 2012/05/31 03:14:36 aballier Exp $
 
 # Espeak does not run on bsd
 espeak
 
-# Beagle needs these patches #176668, 176670.
-beagle
-
 # Someone who knows kerberos is needed to make sure that this works
 kerberos
 krb4
-
-# Apache defaults to Apache 1.x, mask it for the time
-apache
 
 # fftw requires sinl and cosl function, not present in FreeBSD
 fftw
@@ -29,20 +23,9 @@ fftw
 skey
 
 # To be tested
-meanwhile
-smartcard
-openct
-mzscheme
 snmp
-pyste
 pcsc-lite
-sametime
-sms
-mtp
-milter
-qdbm
 xemacs
-xosd
 
 # we don't have custom patched cdparanoia for fbsd anymore
 cdparanoia

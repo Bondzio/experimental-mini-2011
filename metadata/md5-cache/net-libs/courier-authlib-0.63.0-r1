@@ -3,11 +3,11 @@ DEPEND=gdbm? ( sys-libs/gdbm ) !gdbm? ( sys-libs/db ) >=dev-libs/openssl-0.9.6 l
 DESCRIPTION=Courier authentication library.
 HOMEPAGE=http://www.courier-mta.org/
 IUSE=berkdb crypt debug gdbm ldap mysql pam postgres vpopmail
-KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=GPL-3
 RDEPEND=gdbm? ( sys-libs/gdbm ) !gdbm? ( sys-libs/db )
 RESTRICT=userpriv !berkdb? ( test )
 SLOT=0
 SRC_URI=mirror://sourceforge/courier/courier-authlib-0.63.0.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=84a67a5a0cdef7100df96ea592ef6675
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=0cbf793e3f7b2905e646bc1353eb5bf2

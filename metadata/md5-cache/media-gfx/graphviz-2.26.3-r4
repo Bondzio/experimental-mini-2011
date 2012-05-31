@@ -4,11 +4,11 @@ DESCRIPTION=Open Source Graph Visualization Software
 EAPI=3
 HOMEPAGE=http://www.graphviz.org/
 IUSE=cairo doc examples gtk java lasi nls perl python ruby static-libs tcl elibc_FreeBSD
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
 LICENSE=CPL-1.0
 RDEPEND=>=dev-libs/expat-2.0.0 >=dev-libs/glib-2.11.1 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.28[fontconfig,jpeg,png,truetype] >=media-libs/libpng-1.4 virtual/jpeg virtual/libiconv cairo? ( x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10[svg] ) gtk? ( x11-libs/gtk+:2 x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10 ) lasi? ( media-libs/lasi ) ruby? ( dev-lang/ruby ) tcl? ( >=dev-lang/tcl-8.3 ) python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.graphviz.org/pub/graphviz/ARCHIVE/graphviz-2.26.3.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=507c302c78291742770844b5e35aa345
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=06f7f736096ae5a638b233238d69af3b

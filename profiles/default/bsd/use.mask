@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License, v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/use.mask,v 1.17 2012/05/29 15:20:11 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/default/bsd/use.mask,v 1.24 2012/05/31 02:52:01 aballier Exp $
 
 # Mart Raudsepp <leio@gentoo.org>
 # net-misc/networkmanager not keyworded
@@ -13,22 +13,18 @@ m17n-lib
 selinux
 nptl
 alsa
-aoss
 v4l
 libv4l
 fbcon
 directfb
-ev6
 gpm
 lirc
 multilib
 lm_sensors
-nodroproot
 caps
 vidix
 madwifi
 3dfx
-pmount
 nvidia
 xvmc
 xfs
@@ -42,21 +38,6 @@ dvb
 # Hardened doesn't work on Gentoo/*BSD for now
 hardened
 pax_kernel
-
-# termcap-compat doesn't work on BSD
-termcap-compat
-
-# useflags for php commercial software
-hyperwave-api
-interbase
-mnogosearch
-msql
-ovrimos
-sapdb
-
-# Java requires that new-style virtuals are prepared for kaffe
-java
-gcj
 
 # This requires a kernel module that's Linux specific right now
 ifp
@@ -88,15 +69,8 @@ video_cards_vmware
 video_cards_nvidia
 video_cards_nouveau
 
-# Apache's MPM-itk requires sys-libs/libcap
-mpm-itk
-
 # Linux only sane backends
 sane_backends_qcam
-
-# Few database backends unlikely to be tested anytime soon.
-mssql
-firebird
 
 # Diego E. Pettenò <flameeyes@gentoo.org> (19 oct 2010)
 # unmasking flags that only apply to FreeBSD

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.278 2012/05/30 13:26:38 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/amd64-fbsd/todo/package.use.mask,v 1.282 2012/05/31 02:16:50 aballier Exp $
 
 # Mask useflags that require deps with missing keywords.
 # Anyone is allowed and _very welcome_ to add masks there.
@@ -17,17 +17,11 @@
 # net-libs/axtls
 net-misc/curl curl_ssl_axtls
 
-# sys-libs/ldb
-net-fs/samba ldb
-
 # sys-process/numactl
 sys-apps/hwloc numa
 
 # doesnt link
 dev-lang/php iconv
-
-# =dev-db/sqlite-2*
-dev-lang/php sqlite
 
 # sys-auth/pam_krb5
 sys-auth/pambase pam_krb5
@@ -138,6 +132,7 @@ x11-libs/qt-sql mysql
 dev-libs/redland mysql
 dev-libs/cyrus-sasl mysql
 dev-lang/php mysql mysqli
+net-libs/courier-authlib mysql
 
 # net-mail/courier-imap
 dev-libs/cyrus-sasl authdaemond
@@ -226,11 +221,5 @@ sys-cluster/openmpi openmpi_ofed_features_rdmacm
 # sys-cluster/open-mx
 sys-cluster/openmpi openmpi_fabrics_open-mx
 
-# net-misc/lksctp-tools
-sys-cluster/openmpi openmpi_fabrics_sctp
-
 # sys-cluster/slurm
 sys-cluster/openmpi openmpi_rm_slurm
-
-# sys-cluster/torque
-sys-cluster/openmpi openmpi_rm_pbs

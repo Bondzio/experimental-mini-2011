@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile configure install postinst prepare test unpack
-DEPEND=doc? ( sys-apps/texinfo >=media-gfx/graphviz-2.26.0 )
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=doc? ( sys-apps/texinfo >=media-gfx/graphviz-2.26.0 ) pax_kernel? ( sys-apps/paxctl )
 DESCRIPTION=Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp.
 EAPI=3
 HOMEPAGE=http://sbcl.sourceforge.net/
-IUSE=+asdf ldb source +threads +unicode debug doc cobalt
+IUSE=+asdf ldb source +threads +unicode debug doc cobalt pax_kernel
 KEYWORDS=amd64 ppc ~sparc ~x86
 LICENSE=MIT
-RDEPEND=elibc_glibc? ( >=sys-libs/glibc-2.3 || ( <sys-libs/glibc-2.6[nptl] >=sys-libs/glibc-2.6 ) ) asdf? ( >=dev-lisp/gentoo-init-0.1 )
+RDEPEND=asdf? ( >=dev-lisp/gentoo-init-0.1 )
 SLOT=0
 SRC_URI=mirror://sourceforge/sbcl/sbcl-1.0.55-source.tar.bz2 x86? ( mirror://sourceforge/sbcl/sbcl-1.0.37-x86-linux-binary.tar.bz2 ) amd64? ( mirror://sourceforge/sbcl/sbcl-1.0.37-x86-64-linux-binary.tar.bz2 ) ppc? ( mirror://sourceforge/sbcl/sbcl-1.0.28-powerpc-linux-binary.tar.bz2 ) sparc? ( mirror://sourceforge/sbcl/sbcl-1.0.28-sparc-linux-binary.tar.bz2 ) alpha? ( mirror://sourceforge/sbcl/sbcl-1.0.28-alpha-linux-binary.tar.bz2 ) mips? ( !cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.23-mips-linux-binary.tar.bz2 ) ) mips? ( cobalt? ( mirror://sourceforge/sbcl/sbcl-1.0.28-mipsel-linux-binary.tar.bz2 ) )
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	b9f3e596e4ab478418d3e2322feeeca9	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c3c267000cd8b2dc65b729774e599aa8
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=f71c318f3fa3f5f0226350c11e3f9e08

@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( ruby_targets_ruby18 )
 SLOT=0
 SRC_URI=mirror://rubygems/puppet-2.7.13.gem
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	ruby-fakegem	6732f927427c6069df6c4f22271f2c75	ruby-ng	927a565459a62f2839d06e03cfbe1440	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	xemacs-elisp-common	75b52d66389a113a625dc01850455a9c
-_md5_=5164ca9f195ccbeb3a19df883a363a89
+_md5_=2fa8e4223260b27917bc6f8f660df535

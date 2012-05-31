@@ -281,9 +281,9 @@
     
  # Call main function.
 -print 'WAD Compiler by skyjake@users.sourceforge.net'
--print '$Date: 2012/05/30 16:25:36 $'
+-print '$Date$'
 +print('WAD Compiler by skyjake@users.sourceforge.net')
-+print('$Date: 2012/05/30 16:25:36 $')
++print('$Date$')
  
  # Check the args.
  if len(sys.argv) < 3:
