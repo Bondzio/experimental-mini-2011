@@ -776,7 +776,6 @@ app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX em
 app-office/libreoffice:webdav - Adds support for HTTP content adding via net-libs/neon
 app-office/libreoffice:xmlsec - Adds support for document signing using internal modified dev-libs/xmlsec and system dev-libs/nss
 app-office/libreoffice-l10n:offlinehelp - Install help files locally instead of using the LibreOffice Wiki
-app-office/libreoffice-l10n:templates - Enable installation of Sun templates
 app-office/lyx:aspell - Add support for aspell spellchecking
 app-office/lyx:dia - Add support for diagrams (app-office/dia)
 app-office/lyx:docbook - Add support for docbook export
@@ -2934,6 +2933,7 @@ media-sound/qtractor:dssi - Enable support for DSSI Soft Synth Interface
 media-sound/qtractor:rubberband - Enable support for in-place audio clip pitch-shifting through the rubberband library
 media-sound/qtractor:suil - Enable LV2 Plug-in UI instantiation support via media-libs/suil.
 media-sound/qtscrobbler:cli - Build commandline client
+media-sound/quark:gnome - Provides tray-icon and enables gconf support
 media-sound/rezound:16bittmp - Use 16bit temporary files (default 32bit float), useful for slower computers
 media-sound/rezound:soundtouch - compile with support for soundtouch
 media-sound/rhythmbox:clutter - Build the visualizer plugin which uses media-libs/clutter and x11-libs/mx
@@ -4806,6 +4806,8 @@ sci-mathematics/cvc3:isabelle - Add integration support for the Isabelle/HOL the
 sci-mathematics/cvc3:zchaff - Use the SAT solver zchaff whose copyright is owned by Princeton University and is more restrictive (see license).
 sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
 sci-mathematics/e:isabelle - Add integration support for the Isabelle/HOL theorem prover.
+sci-mathematics/form:devref - Build and install developers reference
+sci-mathematics/form:doxygen - Build and install API documentation
 sci-mathematics/freemat:volpack - Add volume rendering via media-libs/volpack
 sci-mathematics/freemat:vtk - Add 3D capabilities via sci-libs/vtk
 sci-mathematics/fricas:clisp - Add support for GNU CLISP (dev-lisp/clisp)
@@ -4996,7 +4998,6 @@ sys-apps/rsbac-admin:rklogd - Enabled deprecated RSBAC kernel logger
 sys-apps/s390-tools:fuse - build cmsfs-fuse to read files stored on a z/VM CMS disk
 sys-apps/s390-tools:zfcpdump - build the kernel disk dumping utility
 sys-apps/shadow:audit - Enable support for sys-process/audit
-sys-apps/shadow:tcb - Enable support for sys-auth/tcb
 sys-apps/smartmontools:minimal - Do not install the monitoring daemon and associated scripts.
 sys-apps/superiotool:pci - Support for PCI-attached "Super I/Os" (e.g. in VIA VT82686A/B).
 sys-apps/systemd:audit - Enable support for sys-process/audit

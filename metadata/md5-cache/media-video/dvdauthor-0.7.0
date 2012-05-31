@@ -4,10 +4,10 @@ DESCRIPTION=Tools for generating DVD files to be played on standalone DVD player
 EAPI=4
 HOMEPAGE=http://dvdauthor.sourceforge.net/
 IUSE=graphicsmagick
-KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~sparc x86
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/fribidi-0.19.2 dev-libs/libxml2 >=media-libs/freetype-2 media-libs/libdvdread media-libs/libpng graphicsmagick? ( media-gfx/graphicsmagick ) !graphicsmagick? ( >=media-gfx/imagemagick-5.5.7.14 )
 SLOT=0
 SRC_URI=mirror://sourceforge/dvdauthor/dvdauthor-0.7.0.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=21aa1ec74107739d54aed574dedb7f93
+_md5_=856e8a4c303681da267ef0f2c11c2178

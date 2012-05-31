@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst preinst unpack
-DEPEND=acl? ( sys-apps/acl ) audit? ( sys-process/audit ) cracklib? ( >=sys-libs/cracklib-2.7-r3 ) pam? ( virtual/pam ) skey? ( sys-auth/skey ) selinux? ( >=sys-libs/libselinux-1.28 sys-libs/libsemanage ) nls? ( virtual/libintl ) tcb? ( sys-auth/tcb ) xattr? ( sys-apps/attr ) nls? ( sys-devel/gettext )
+DEPEND=acl? ( sys-apps/acl ) audit? ( sys-process/audit ) cracklib? ( >=sys-libs/cracklib-2.7-r3 ) pam? ( virtual/pam ) skey? ( sys-auth/skey ) selinux? ( >=sys-libs/libselinux-1.28 sys-libs/libsemanage ) nls? ( virtual/libintl ) xattr? ( sys-apps/attr ) nls? ( sys-devel/gettext )
 DESCRIPTION=Utilities to deal with user accounts
 HOMEPAGE=http://shadow.pld.org.pl/ http://pkg-shadow.alioth.debian.org/
-IUSE=acl audit cracklib nls pam selinux skey tcb xattr
+IUSE=acl audit cracklib nls pam selinux skey xattr
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
 LICENSE=BSD GPL-2
-RDEPEND=acl? ( sys-apps/acl ) audit? ( sys-process/audit ) cracklib? ( >=sys-libs/cracklib-2.7-r3 ) pam? ( virtual/pam ) skey? ( sys-auth/skey ) selinux? ( >=sys-libs/libselinux-1.28 sys-libs/libsemanage ) nls? ( virtual/libintl ) tcb? ( sys-auth/tcb ) xattr? ( sys-apps/attr ) pam? ( >=sys-auth/pambase-20120417 )
+RDEPEND=acl? ( sys-apps/acl ) audit? ( sys-process/audit ) cracklib? ( >=sys-libs/cracklib-2.7-r3 ) pam? ( virtual/pam ) skey? ( sys-auth/skey ) selinux? ( >=sys-libs/libselinux-1.28 sys-libs/libsemanage ) nls? ( virtual/libintl ) xattr? ( sys-apps/attr ) pam? ( >=sys-auth/pambase-20120417 )
 SLOT=0
 SRC_URI=http://pkg-shadow.alioth.debian.org/releases/shadow-4.1.5.tar.bz2
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=49e54748fd9ee2555c1bae7bc9e29d0c
+_md5_=77491f49a65285445f2b413fa7f78693

@@ -2,12 +2,12 @@ DEFINED_PHASES=compile configure install postinst postrm preinst prepare unpack
 DEPEND=media-libs/xine-lib x11-libs/gtk+:2 >=gnome-base/gconf-2 gnome-base/gnome-vfs virtual/pkgconfig app-arch/xz-utils >=sys-apps/sed-4
 DESCRIPTION=Quark is the Anti-GUI Music Player with a cool Docklet!
 EAPI=4
-HOMEPAGE=http://quark.nerdnest.org/
+HOMEPAGE=http://hsgg.github.com/quark/
 IUSE=debug
 KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
 RDEPEND=media-libs/xine-lib x11-libs/gtk+:2 >=gnome-base/gconf-2 gnome-base/gnome-vfs
 SLOT=0
-SRC_URI=http://quark.nerdnest.org/quark-3.21.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=ca92d3cd658d8c020d302b10c2ccfe1f
+SRC_URI=http://hsgg.github.com/quark/quark-3.21.tar.gz
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=d2abaab50f9d6d67e08c88dd9f1253f3

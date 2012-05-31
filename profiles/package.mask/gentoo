@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13805 2012/05/30 13:47:31 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13811 2012/05/31 12:03:21 scarabeus Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -32,10 +32,6 @@
 #--- END OF EXAMPLES ---
 
 
-# Fabian Groffen <grobian@gentoo.org> (29 May 2012)
-# 4.80 release candidates, feedback welcome
-=mail-mta/exim-4.80_rc7
-
 # Andreas K. Hüttel <dilfridge@gentoo.org> (27 May 2012)
 # The successor of KOffice, Calligra, has now become stable
 # and we are removing KOffice soon from the portage tree.
@@ -53,11 +49,6 @@ app-office/kpresenter
 app-office/krita
 app-office/kspread
 app-office/kword
-
-# Andreas K. Hüttel <dilfridge@gentoo.org> (27 May 2012)
-# Mask unreleased, alpha, and beta
-~app-office/calligra-2.4.2
-~app-office/calligra-2.4.90
 
 # Markos Chandras <hwoarang@getnoo.org> (27 May 2012)
 # Mask alpha release
@@ -409,12 +400,6 @@ media-sound/squeezeboxserver
 # The python-3 slot is obsolete for this package.
 =dev-python/python-dateutil-2.0
 
-# Pawel Hajdan, Jr. <phajdan.jr@gentoo.org> (31 Mar 2012)
-# Masked for removal, use sys-apps/hardened-shadow instead.
-# Needs too much special patching to work in Gentoo,
-# bugs: #371167, #408647. Removal in 60 days (31 May 2012).
-sys-auth/tcb
-
 # Nirbheek Chauhan <nirbheek@gentoo.org> (25 Mar 2012)
 # This is now the GNOME 3.4 mask
 # Masked for testing, clutter-1.10, and bugs in some packages:
@@ -501,12 +486,6 @@ sys-auth/tcb
 # firefox with kde-4.8. Unmask at your own risk.
 kde-misc/kgtk
 
-# Pawel Hajdan, Jr. <phajdan.jr@gentoo.org> (11 Mar 2012)
-# Early upstream release, NOT ready for production use.
-# Testers and contributors are welcome, please visit the project page:
-# http://code.google.com/p/hardened-shadow/
-sys-apps/hardened-shadow
-
 # Tim Harder <radhermit@gentoo.org> (09 Mar 2012)
 # Masked for testing
 =mail-client/roundcube-0.8*
@@ -590,10 +569,6 @@ dev-util/febootstrap
 # Alexandre Rostovtsev <tetromino@gentoo.org> (07 Dec 2011)
 # spidermonkey-1.9.2.x was renamed to 1.8.2.x; mask 1.9.2.x for bug #393473.
 =dev-lang/spidermonkey-1.9.2*
-
-# Tim Harder <radhermit@gentoo.org> (29 Nov 2011)
-# Masked until gcc-4.6 is unmasked
->=media-video/mkvtoolnix-5.1.0
 
 # Christoph Junghans <ottxor@gentoo.org> (15 Nov 2011)
 # current version of google-talkplugin never clear what you get

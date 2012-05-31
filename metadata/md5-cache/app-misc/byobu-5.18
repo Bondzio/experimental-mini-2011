@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare setup
+DEPEND==dev-lang/python-2*
+DESCRIPTION=A set of profiles for the GNU Screen console window manager (app-misc/screen)
+EAPI=4
+HOMEPAGE=https://launchpad.net/byobu
+IUSE=screen
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=screen? ( app-misc/screen ) !screen? ( app-misc/tmux ) dev-libs/newt =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://launchpad.net/byobu/trunk/5.18/+download/byobu_5.18.orig.tar.gz
+_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_md5_=f76a660b4307c02169a92d5ec812f1c7
