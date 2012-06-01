@@ -9,4 +9,4 @@ RDEPEND=>=dev-lang/perl-5.8.0 dev-perl/Net-DNS virtual/perl-MIME-Base64 dev-perl
 SLOT=0
 SRC_URI=http://smtpd.develooper.com/files/qpsmtpd-0.81.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8f2156c23bd56b454734711d32fab589
+_md5_=c1174411856613f399b0c85c209f1f75

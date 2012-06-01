@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/leechcraft-azoth/leechcraft-azoth-9999.ebuild,v 1.11 2012/05/23 19:02:17 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/leechcraft-azoth/leechcraft-azoth-9999.ebuild,v 1.12 2012/06/01 05:12:50 maksbotan Exp $
 
 EAPI="4"
 
@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE="debug astrality +acetamide +adiumstyles +autoidler +autopaste +chathistory +crypt
 		+depester +embedmedia +herbicide +hili +isterique +juick +keeso +lastseen
-		+metacontacts +modnok +nativeemoticons +otroid +p100q +rosenthal
+		+metacontacts media +modnok +nativeemoticons +otroid +p100q +rosenthal
 		+standardstyles +xoox +xtazy +zheet"
 
 DEPEND="~net-misc/leechcraft-core-${PV}
@@ -21,6 +21,7 @@ DEPEND="~net-misc/leechcraft-core-${PV}
 		autoidler? ( x11-libs/libXScrnSaver )
 		astrality? ( net-libs/telepathy-qt )
 		otroid? ( net-libs/libotr )
+		media? ( x11-libs/qt-multimedia )
 		rosenthal? ( app-text/hunspell )
 		xoox? ( =net-libs/qxmpp-9999[extras] media-libs/speex )
 		xtazy? ( x11-libs/qt-dbus )
@@ -57,6 +58,7 @@ src_configure() {
 		$(cmake-utils_use_enable keeso AZOTH_KEESO)
 		$(cmake-utils_use_enable lastseen AZOTH_LASTSEEN)
 		$(cmake-utils_use_enable metacontacts AZOTH_LASTSEEN)
+		$(cmake-utils_use_enable media MEDIACALLS)
 		$(cmake-utils_use_enable modnok AZOTH_MODNOK)
 		$(cmake-utils_use_enable nativeemoticons AZOTH_NATIVEEMOTICONS)
 		$(cmake-utils_use_enable otroid AZOTH_OTROID)
