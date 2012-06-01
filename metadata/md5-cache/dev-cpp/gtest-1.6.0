@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup test
-DEPEND==dev-lang/python-2*
+DEPEND=app-arch/unzip =dev-lang/python-2*
 DESCRIPTION=Google C++ Testing Framework
 EAPI=4
 HOMEPAGE=http://code.google.com/p/googletest/
@@ -10,4 +10,4 @@ RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://googletest.googlecode.com/files/gtest-1.6.0.zip
 _eclasses_=python	e03920f970092173a9b2b8a53024992b
-_md5_=43b2b0b431164eac27b013f163cdc514
+_md5_=8a66b28eeb6f98c130ca9ceee949a887
