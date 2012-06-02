@@ -10,4 +10,4 @@ RDEPEND=dev-libs/boost[python] >=dev-cpp/glibmm-2.6:2 >=dev-cpp/gtkmm-2.6:2.4 de
 SLOT=0
 SRC_URI=mirror://sourceforge/k3d/k3d-source-0.7.11.0.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=738c3ffbe8782ebb1d029e9af4ffef1d
+_md5_=58aa4a6eeb64d1e44e376397304f90d3
