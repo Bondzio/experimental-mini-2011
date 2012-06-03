@@ -10,5 +10,5 @@ RDEPEND=gnome-keyring? ( dev-python/gnome-keyring-python gnome-base/libgnome-key
 REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://sourceforge/mpop/mpop-1.0.26.tar.bz2
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=49ef080d9e0f6648ebd2dd18ffbc1cbe

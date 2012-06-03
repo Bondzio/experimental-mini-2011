@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/p/pytrailer/pytrailer-0.5.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=885959018fd0a2e513db57d872045f88

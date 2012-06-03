@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-i18n/ibus-1.3 app-i18n/libskk nls? ( virtual/libintl ) app-i18n/skk-jisyo || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://github/ueno/ibus-skk/ibus-skk-1.4.0.tar.gz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=93a637a1f3be638c12823d7b3c75f9ab

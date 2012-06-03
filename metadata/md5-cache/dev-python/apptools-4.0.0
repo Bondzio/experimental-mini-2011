@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/configobj dev-python/numpy >=dev-python/traits-4.1.0 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/apptools-4.0.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=cb57b9812cd9787219a6865964947148

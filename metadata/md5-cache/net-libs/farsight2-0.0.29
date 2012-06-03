@@ -10,5 +10,5 @@ RDEPEND=>=media-libs/gstreamer-0.10.33 >=media-libs/gst-plugins-base-0.10.33 >=d
 RESTRICT=test
 SLOT=0
 SRC_URI=http://farsight.freedesktop.org/releases/farsight2/farsight2-0.0.29.tar.gz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=18aeef9a5a7d3420a19af13ffcb3ca0f

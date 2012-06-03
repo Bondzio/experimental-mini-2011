@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=sci-chemistry/ambertools || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/acpype-374.tar.xz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=9d4f2a861eb93e4995cbf0ba11a1454e

@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=http://kassiopeia.juls.savba.sk/~garabik/software/pydf/pydf_10.tar.gz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=52f609952cec376a29a2c93d389adbf8

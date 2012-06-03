@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/python[tk]
 SLOT=0
 SRC_URI=mirror://sourceforge/lilycomp/lilycomp.1.0.2.tar.gz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=dc263296c6dd36e9a566c82462d6bf9e

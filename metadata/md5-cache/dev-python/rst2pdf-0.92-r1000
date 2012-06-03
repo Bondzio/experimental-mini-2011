@@ -10,5 +10,5 @@ RDEPEND=dev-python/docutils[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,p
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.7 python_abis_2.7-pypy-1.8 )
 SLOT=0
 SRC_URI=http://rst2pdf.googlecode.com/files/rst2pdf-0.92.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=7ef1d6c20300643513ea64c038341d4e

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=app-portage/gentoolkit server? ( dev-python/lxml dev-libs/libgamin[python] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=ftp://ftp.mcs.anl.gov/pub/bcfg/bcfg2-1.2.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	e03920f970092173a9b2b8a53024992b
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=31756cd1bd9616e8d830d44dbc0170db

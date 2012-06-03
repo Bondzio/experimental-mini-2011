@@ -9,5 +9,5 @@ LICENSE=MagickWand
 RDEPEND=>=media-gfx/imagemagick-6.5.2.9 || ( =dev-php/magickwand-1.0.8-r1[php_targets_php5-3] ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
 SRC_URI=http://www.magickwand.org/download/php/MagickWandForPHP-1.0.8.tar.bz2
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-source-r2	ace5f34d0993cef7d69c4da83748bf80	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	php-ext-source-r2	5944cf34f20909fbb084a79dd9c08ad3	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f584be4f80ee63a3f2f5b9c5df04fc5b

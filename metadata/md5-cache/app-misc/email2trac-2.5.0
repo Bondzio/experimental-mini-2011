@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND==www-apps/trac-0.12* =dev-lang/python-2*
 SLOT=0
 SRC_URI=ftp://ftp.sara.nl/pub/outgoing/email2trac-2.5.0.tar.gz
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=2a5e3fd33f3ad7d1ea9aaaa5a158617c

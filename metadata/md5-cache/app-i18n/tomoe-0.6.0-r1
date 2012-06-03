@@ -4,11 +4,11 @@ DESCRIPTION=Japanese handwriting recognition engine
 EAPI=3
 HOMEPAGE=http://tomoe.sourceforge.jp/
 IUSE=doc hyperestraier mysql ruby python static-libs subversion
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.4 ruby? ( dev-ruby/ruby-glib2 ) hyperestraier? ( app-text/hyperestraier ) subversion? ( >=dev-libs/apr-1 dev-vcs/subversion ) mysql? ( dev-db/mysql ) python? ( dev-python/pygobject:2 dev-python/pygtk:2 ) python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/tomoe/tomoe-0.6.0.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=47ed58b2c4f041603c818809fce70ee0
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=8871aaa6ecb642e8895fca80ea02d8c7

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/lxml >=kde-base/konqueror-4.3.1 =dev-lang/python-2*
 SLOT=4
 SRC_URI=http://kde-apps.org/CONTENT/content-files/41456-youtube-servicemenu-1.10a.tar.bz2
-_eclasses_=python	e03920f970092173a9b2b8a53024992b
+_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
 _md5_=3050ab58233197b2b83987ea3c7c9692

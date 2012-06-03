@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=net-im/jabber-base >=dev-python/twisted-2.5.0 >=dev-python/twisted-words-0.5.0 >=dev-python/twisted-web-0.7.0 >=dev-python/imaging-1.1
 SLOT=0
 SRC_URI=http://msn-transport.jabberstudio.org/tarballs/pymsnt-0.11.3.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	e03920f970092173a9b2b8a53024992b	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1614d98c63e4561a4dde4128189b9c2f

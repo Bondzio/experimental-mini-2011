@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-arcade/opensonic/opensonic-0.1.4-r1.ebuild,v 1.3 2012/05/28 17:49:08 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/opensonic/opensonic-0.1.4-r1.ebuild,v 1.5 2012/06/02 15:53:37 hasufell Exp $
 
-EAPI=3
+EAPI=4
 
 inherit cmake-utils eutils games
 
@@ -58,7 +58,7 @@ src_install() {
 	local i
 	for i in $(ls "${D}${GAMES_DATADIR}/${PN}") ; do
 		dosym "${GAMES_DATADIR}/${PN}/${i}" \
-			"$(games_get_libdir)/${PN}/${i}" || die
+			"$(games_get_libdir)/${PN}/${i}"
 	done
 	prepgamesdirs
 }

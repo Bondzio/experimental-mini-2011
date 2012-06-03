@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
+DEPEND=>=dev-python/pyside-1.1.0-r1[X] >=dev-python/shiboken-1.1.0-r1 >=x11-libs/qt-core-4.7.0:4 >=x11-libs/qt-gui-4.7.0:4 test? ( virtual/pkgconfig ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-2.7* =dev-lang/python-2.6* ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DESCRIPTION=PySide development tools (lupdate, rcc, uic)
+EAPI=4
+HOMEPAGE=http://www.pyside.org/
+IUSE=test test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD GPL-2
+RDEPEND=>=dev-python/pyside-1.1.0-r1[X] >=dev-python/shiboken-1.1.0-r1 >=x11-libs/qt-core-4.7.0:4 >=x11-libs/qt-gui-4.7.0:4 || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=http://www.pyside.org/files/pyside-tools-0.2.14.tar.bz2
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_md5_=f025f40d099c1accb949640ff930ead0
