@@ -10,9 +10,8 @@ if [[ ${PV} == "9999" ]] ; then
 else
 	#inherit autotools vcs-snapshot
 	inherit eutils
-	#SRC_URI="https://github.com/nenolod/pkgconf/tarball/${P} -> ${P}.tar.gz"
 	SRC_URI="http://tortois.es/~nenolod/distfiles/${P}.tar.bz2"
-	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd"
+	KEYWORDS="*"
 fi
 
 DESCRIPTION="pkg-config compatible replacement with no dependencies other than ANSI C89"
@@ -20,7 +19,7 @@ HOMEPAGE="https://github.com/nenolod/pkgconf"
 
 LICENSE="BSD-1"
 SLOT="0"
-IUSE="pkg-config"
+IUSE="+pkg-config"
 
 DEPEND=""
 RDEPEND="${DEPEND}

@@ -1,13 +1,12 @@
 DEFINED_PHASES=configure prepare
-DEPEND=app-text/ghostscript-gpl app-text/poppler[jpeg?,lcms?] media-libs/freetype:2 net-print/cups jpeg? ( virtual/jpeg ) lcms? ( media-libs/lcms:2 ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) zlib? ( sys-libs/zlib ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=app-text/ghostscript-gpl app-text/poppler[jpeg?,lcms?] media-libs/freetype:2 >net-print/cups-1.5.9999 jpeg? ( virtual/jpeg ) lcms? ( media-libs/lcms:2 ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) zlib? ( sys-libs/zlib ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Cups PDF filters
 EAPI=4
 HOMEPAGE=http://www.linuxfoundation.org/collaborate/workgroups/openprinting/pdfasstandardprintjobformat
 IUSE=jpeg lcms png tiff zlib
-KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=app-text/ghostscript-gpl app-text/poppler[jpeg?,lcms?] media-libs/freetype:2 net-print/cups jpeg? ( virtual/jpeg ) lcms? ( media-libs/lcms:2 ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) zlib? ( sys-libs/zlib )
+RDEPEND=app-text/ghostscript-gpl app-text/poppler[jpeg?,lcms?] media-libs/freetype:2 >net-print/cups-1.5.9999 jpeg? ( virtual/jpeg ) lcms? ( media-libs/lcms:2 ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=http://www.openprinting.org/download/cups-filters/cups-filters-1.0.17.tar.gz
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4104322fda450690ea1c5afeab347345
+_md5_=705d15482a336df41550314ba03f812b

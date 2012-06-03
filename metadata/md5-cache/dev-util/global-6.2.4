@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm
+DEPEND=doc? ( app-text/texi2html sys-apps/texinfo )
+DESCRIPTION=GNU Global is a tag system to find the locations of a specified object in various sources.
+EAPI=4
+HOMEPAGE=http://www.gnu.org/software/global/global.html
+IUSE=doc emacs vim
+KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~x86-fbsd
+LICENSE=GPL-3
+RDEPEND=emacs? ( virtual/emacs ) vim? ( || ( app-editors/vim app-editors/gvim ) )
+SLOT=0
+SRC_URI=mirror://gnu/global/global-6.2.4.tar.gz
+_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862
+_md5_=00c77d51ab5e9d23609c2033223af465
