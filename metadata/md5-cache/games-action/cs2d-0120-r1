@@ -8,5 +8,5 @@ LICENSE=freedist
 RDEPEND=x86? ( media-libs/openal media-libs/freetype:2 x11-libs/libX11 x11-libs/libXxf86vm virtual/opengl ) amd64? ( app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-xlibs )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~maksbotan/cs2d/cs2d_0120_linux.zip http://dev.gentoo.org/~maksbotan/cs2d/cs2d_0120_win.zip http://dev.gentoo.org/~maksbotan/cs2d/cs2d.png
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0f3efeb72b27a7839beb5fd4f7dfba6d

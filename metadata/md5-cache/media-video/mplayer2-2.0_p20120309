@@ -10,5 +10,5 @@ RDEPEND=sys-libs/ncurses sys-libs/zlib !bindist? ( x86? ( win32codecs? ( media-l
 REQUIRED_USE=bindist? ( !win32codecs ) cdio? ( !cdparanoia ) cddb? ( || ( cdio cdparanoia ) network ) dvdnav? ( dvd ) radio? ( || ( dvb v4l ) ) dxr3? ( X ) ggi? ( X ) opengl? ( X ) vdpau? ( X ) xinerama? ( X ) xscreensaver? ( X ) xv? ( X )
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~scarabeus/mplayer2-2.0_p20120309.tar.xz !truetype? ( mirror://mplayer/releases/fonts/font-arial-iso-8859-1.tar.bz2 mirror://mplayer/releases/fonts/font-arial-iso-8859-2.tar.bz2 mirror://mplayer/releases/fonts/font-arial-cp1250.tar.bz2 )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=11f9a176f5808ca6759fa64e2fbcb877

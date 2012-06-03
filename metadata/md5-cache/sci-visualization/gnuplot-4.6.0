@@ -9,5 +9,5 @@ LICENSE=gnuplot GPL-2 bitmap? ( free-noncomm )
 RDEPEND=cairo? ( x11-libs/cairo x11-libs/pango ) emacs? ( virtual/emacs ) gd? ( media-libs/gd[png] ) ggi? ( media-libs/libggi ) latex? ( virtual/latex-base lua? ( dev-tex/pgf >=dev-texlive/texlive-latexrecommended-2008-r2 ) ) lua? ( dev-lang/lua ) plotutils? ( media-libs/plotutils ) qt4? ( >=x11-libs/qt-core-4.5 >=x11-libs/qt-gui-4.5 >=x11-libs/qt-svg-4.5 ) readline? ( sys-libs/readline ) svga? ( media-libs/svgalib ) wxwidgets? ( x11-libs/wxGTK:2.8[X] x11-libs/cairo x11-libs/pango x11-libs/gtk+:2 ) X? ( x11-libs/libXaw ) xemacs? ( app-editors/xemacs app-xemacs/xemacs-base )
 SLOT=0
 SRC_URI=mirror://sourceforge/gnuplot/gnuplot-4.6.0.tar.gz
-_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
-_md5_=815a77945199320258e3aeb99da54a70
+_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_md5_=698505735ac6078adc300aff55003fb5

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sys-libs/readline emacs? ( virtual/emacs ) fltk? ( x11-libs/fltk:1 ) gmp? ( dev-libs/gmp ) X? ( x11-libs/libX11 ) doc? ( X? ( x11-misc/xdg-utils ) )
 SLOT=0
 SRC_URI=http://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.3.4.tar.gz data? ( http://pari.math.u-bordeaux.fr/pub/pari/packages/elldata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/galdata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/seadata.tgz http://pari.math.u-bordeaux.fr/pub/pari/packages/nftables.tgz )
-_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a32a870dcd76f8de54e449b5dd8fe434

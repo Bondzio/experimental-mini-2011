@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=gnustep-base/gnustep-gui-0.13.0 >=gnustep-base/gnustep-make-2.0 virtual/gnustep-back debug? ( !<sys-devel/gdb-6.0 )
 SLOT=0
 SRC_URI=mirror://sourceforge/price/PRICE-1.0.0.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	gnustep-2	5c8ef29c1d72267699559746ef1c0096	gnustep-base	051434c4f97a07a016ebaf8bd662b345	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	gnustep-2	5c8ef29c1d72267699559746ef1c0096	gnustep-base	051434c4f97a07a016ebaf8bd662b345	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e95e9f8ee65bee029c1dd1bc429bbc7a

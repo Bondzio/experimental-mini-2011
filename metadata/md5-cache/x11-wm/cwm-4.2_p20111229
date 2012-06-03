@@ -8,5 +8,5 @@ LICENSE=ISC
 RDEPEND=x11-libs/libXft x11-libs/libXinerama x11-libs/libXrandr
 SLOT=0
 SRC_URI=mirror://gentoo/cwm-4.2_p20111229.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f95bd9c8565c9cdbe5baccb9e399b2ab

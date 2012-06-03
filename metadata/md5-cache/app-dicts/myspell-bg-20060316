@@ -6,5 +6,5 @@ KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://gentoo/myspell-bg_BG-20060316.zip mirror://gentoo/myspell-hyph_bg_BG-20060316.zip mirror://gentoo/myspell-thes_bg_BG-20060316.zip
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	myspell	3ca3d78257c4f18c8856f7ddd3600629	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	myspell	3ca3d78257c4f18c8856f7ddd3600629	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=bc4ef3e3bdf9dec9995628201d16abcc

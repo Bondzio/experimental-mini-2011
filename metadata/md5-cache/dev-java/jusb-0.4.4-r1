@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1
 SLOT=0
 SRC_URI=mirror://sourceforge/jusb/jusb-0.4.4-src.tgz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	java-pkg-2	6f723b44cff6b07377ca5c0848da887b	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=03301d7661e39c4860498a89c4734232

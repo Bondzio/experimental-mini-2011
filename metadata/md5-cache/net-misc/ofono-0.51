@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( virtual/libusb:1 )
 SLOT=0
 SRC_URI=mirror://kernel/linux/network/ofono/ofono-0.51.tar.bz2
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=6cd4efc5a1811ce8ba4a56cf64c30c3b

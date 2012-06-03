@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-libs/boost-1.41.0 >=dev-libs/openssl-1.0.0b >=dev-libs/protobuf-2.2.0 >=media-libs/libsndfile-1.0.20[-minimal] >=media-libs/speex-1.2_rc1 sys-apps/lsb-release x11-libs/qt-core:4[ssl] x11-libs/qt-gui:4 x11-libs/qt-opengl:4 x11-libs/qt-sql:4[sqlite] x11-libs/qt-svg:4 x11-libs/qt-xmlpatterns:4 x11-proto/inputproto alsa? ( media-libs/alsa-lib ) dbus? ( x11-libs/qt-dbus:4 ) g15? ( app-misc/g15daemon ) portaudio? ( media-libs/portaudio ) pulseaudio? ( media-sound/pulseaudio ) speech? ( app-accessibility/speech-dispatcher ) zeroconf? ( net-dns/avahi[mdnsresponder-compat] )
 SLOT=0
 SRC_URI=mirror://sourceforge/mumble/mumble-1.2.3.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=95aaddd8a269256f5b0137404d81ad13

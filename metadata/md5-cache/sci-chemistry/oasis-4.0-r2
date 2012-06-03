@@ -9,5 +9,5 @@ LICENSE=ccp4 oasis
 RDEPEND=sci-chemistry/ccp4-apps sci-chemistry/pymol sci-libs/mmdb sci-visualization/gnuplot !minimal? ( sci-chemistry/solve-resolve-bin sci-chemistry/arp-warp-bin )
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~jlec/distfiles/oasis4.0_Linux.zip
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1c241f4420af97cc6aaaec9a3c308cd2

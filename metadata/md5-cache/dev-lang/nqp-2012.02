@@ -9,5 +9,5 @@ LICENSE=Artistic-2
 RDEPEND=>=dev-lang/parrot-3.9.0[unicode]
 SLOT=0
 SRC_URI=http://github.com/perl6/nqp/tarball/2012.02 -> nqp-2012.02.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=46a2d705b0740707775a949f7a73e9e3

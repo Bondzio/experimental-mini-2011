@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/libisoburn dev-libs/lzo sys-boot/os-prober >=sys-libs/ncurses-5.2-r5 debug? ( sdl? ( media-libs/libsdl ) ) device-mapper? ( >=sys-fs/lvm2-2.02.45 ) truetype? ( media-libs/freetype >=media-fonts/unifont-5 )
 SLOT=0
 SRC_URI=mirror://gnu/grub/grub-1.99.tar.xz mirror://gentoo/grub-1.99.tar.xz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	mount-boot	410bdaef41d2c8674e24edfa9d521177	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	mount-boot	410bdaef41d2c8674e24edfa9d521177	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=dac3c91240caa5a02265cf5e25b44f6e

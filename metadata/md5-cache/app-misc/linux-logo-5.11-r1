@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=http://www.deater.net/weave/vmwprod/linux_logo/linux_logo-5.11.tar.gz
-_eclasses_=multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=b9ba36b61b167eb36b359557e27e6c73

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/libxml2:2 >=dev-libs/openssl-0.9.7i:0 >=sys-libs/zlib-1.2.5.1-r2:0[minizip] kerberos? ( app-crypt/mit-krb5 ) ldap? ( net-nds/openldap ) readline? ( sys-libs/readline:0 ) ~dev-db/virtuoso-odbc-6.1.4:0
 SLOT=0
 SRC_URI=mirror://sourceforge/virtuoso/virtuoso-opensource-6.1.4.tar.gz mirror://gentoo/VOS-genpatches-6.1.4.tar.bz2
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	virtuoso	fc975d1bd0d91cca3ae3109373019c59
+_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	virtuoso	fc975d1bd0d91cca3ae3109373019c59
 _md5_=83f3e3887909569582a7f928be3393d5

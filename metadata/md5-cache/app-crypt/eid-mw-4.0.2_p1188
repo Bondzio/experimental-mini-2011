@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=gtk? ( x11-libs/gtk+:2 ) >=sys-apps/pcsc-lite-1.2.9 xpi? ( || ( >=www-client/firefox-bin-3.6.24 >=www-client/firefox-3.6.20 ) ) !app-misc/beid-runtime
 SLOT=0
 SRC_URI=http://eid-mw.googlecode.com/files/eid-mw-4.0.2-1188.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	mozextension	3555597bb9fa8d695bf69f250bf59a1a	multilib	5f4ad6cf85e365e8f0c6050ddd21659e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	mozextension	3555597bb9fa8d695bf69f250bf59a1a	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9ac5451534bd6280bb1463629e2a902b
