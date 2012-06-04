@@ -8,7 +8,7 @@ inherit eutils games qt4-r2
 
 DESCRIPTION="Qt4 GUI frontend for NSRT"
 HOMEPAGE="http://snesemu.black-ship.net/index.php?page=tools"
-SRC_URI="http://7clams.org/flora/distfiles/${P}.tar.bz2"
+SRC_URI="http://7clams.org/flora/distfiles/nf-${PV}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -23,8 +23,8 @@ RDEPEND="games-util/nsrt-bin"
 
 MAKEOPTS+=" -j1"
 
-S="${WORKDIR}"/"${P}"/source
-LANGDIR="${GAMES_DATADIR}"/"${PN}"/lang
+S="${WORKDIR}"/"nf-${PV}"/source
+LANGDIR="${GAMES_DATADIR}"/"nf"/lang
 
 src_prepare() {
 	sed -i -e "s/-O1/-O1 -D_FORTIFY_SOURCE=0/" conf/Makefile || die
