@@ -3,10 +3,10 @@ DEPEND=x11-libs/gtk+:2 dev-libs/glib:2 net-libs/libnet:1.1 || ( >=sys-devel/auto
 DESCRIPTION=A simple GTK/command line TCP/IP packet generator
 EAPI=4
 HOMEPAGE=http://gspoof.sourceforge.net/
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 dev-libs/glib:2 net-libs/libnet:1.1
 SLOT=0
 SRC_URI=http://gspoof.sourceforge.net/src/gspoof-3.2.tar.gz
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c7d7acbfae042db9dfa8369c2d8f49ad
+_md5_=cab2b49c4016a260074a2c5bc6d4c6bd

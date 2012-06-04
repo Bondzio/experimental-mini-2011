@@ -8,4 +8,4 @@ RDEPEND=>=sys-apps/pciutils-2.1.9 >=sys-apps/usbutils-0.9 sys-apps/hotplug-base
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/kernel/hotplug/hotplug-2004_09_23.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=807117b12b8933d92254cdc27c889f51
+_md5_=773311304c71e6edd3c485d7299916a2

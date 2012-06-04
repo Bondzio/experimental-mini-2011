@@ -3,9 +3,9 @@ DEPEND=|| ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-dev
 DESCRIPTION=ETL is a multi-platform class and template library
 EAPI=4
 HOMEPAGE=http://synfig.org
-KEYWORDS=~amd64
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://sourceforge/synfig/ETL/0.04.15/ETL-0.04.15.tar.gz
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
-_md5_=3a1d056d6e6f4f388c97d80a9c3183f7
+_md5_=4c14a64f00e920f2707d8d73f40be81f
