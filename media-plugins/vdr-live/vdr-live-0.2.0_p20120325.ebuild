@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-live/vdr-live-0.2.0_p20120325.ebuild,v 1.1 2012/06/04 01:08:59 idl0r Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-live/vdr-live-0.2.0_p20120325.ebuild,v 1.3 2012/06/04 16:09:19 idl0r Exp $
 
 EAPI="4"
 
@@ -44,9 +44,9 @@ make_live_cert() {
 	echo
 
 	install -d "${ROOT}${keydir}"
-	install -m0400 "${base}.key" "${ROOT}${keydir}/live.key"
-	install -m0444 "${base}.crt" "${ROOT}${keydir}/live.crt"
-	chown vdr:vdr "${ROOT}"/etc/vdr/plugins/live/live.*
+	install -m0400 "${base}.key" "${ROOT}${keydir}/live-key.pem"
+	install -m0444 "${base}.crt" "${ROOT}${keydir}/live.pem"
+	chown vdr:vdr "${ROOT}"/etc/vdr/plugins/live/live{,-key}.pem
 }
 
 pkg_setup() {
@@ -91,7 +91,7 @@ pkg_postinst() {
 	elog "\tadmin:live"
 
 	if use ssl ; then
-		if path_exists -a "${ROOT}"/etc/vdr/plugins/live/live.key; then
+		if path_exists -a "${ROOT}"/etc/vdr/plugins/live/live.pem; then
 			einfo "found an existing SSL cert, to create a new SSL cert, run:"
 			einfo ""
 			einfo "emerge --config ${PN}"

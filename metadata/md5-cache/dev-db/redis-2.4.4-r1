@@ -10,4 +10,4 @@ REQUIRED_USE=tcmalloc? ( !jemalloc ) jemalloc? ( !tcmalloc )
 SLOT=0
 SRC_URI=http://redis.googlecode.com/files/redis-2.4.4.tar.gz
 _eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=639677c898ea5df8660a26b4052fe807
+_md5_=ee048b5ac365d6043a01b274bff29ec5
