@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( video_cards_nouveau video_cards_nvidia )
 SLOT=0
 SRC_URI=mirror://github/Bumblebee-Project/Bumblebee/bumblebee-3.0.tar.gz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ab3fa7f4164b0c0250e7b7798998ad8c
+_md5_=7984c9894cfefd4b62b3a419f086070b

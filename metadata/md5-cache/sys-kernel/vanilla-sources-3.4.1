@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup test unpack
+DEPEND=!build? ( sys-apps/sed >=sys-devel/binutils-2.11.90.0.31 )
+DESCRIPTION=Full sources for the Linux kernel
+EAPI=2
+HOMEPAGE=http://www.kernel.org
+IUSE=deblob symlink build
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2 freedist
+PDEPEND=!build? ( virtual/dev-manager )
+RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
+RESTRICT=binchecks strip
+SLOT=3.4.1
+SRC_URI=mirror://kernel/linux/kernel/v3.x/patch-3.4.1.bz2 mirror://kernel/linux/kernel/v3.x/linux-3.4.tar.bz2
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	kernel-2	4ad25895a12c475dde98376a2e743827	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=c38c94fe10c5428de923afaf59f91ee2
