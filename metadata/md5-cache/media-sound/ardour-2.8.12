@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/aubio media-libs/liblo lv2? ( >=media-libs/slv2-0.6.1 ) sci-libs/fftw:3.0 media-libs/freetype:2 >=dev-libs/glib-2.10.1:2 dev-cpp/glibmm:2 >=x11-libs/gtk+-2.8.1:2 >=dev-libs/libxml2-2.6:2 >=media-libs/libsndfile-1.0.18 >=media-libs/libsamplerate-0.1 >=media-libs/rubberband-1.6.0 >=media-libs/libsoundtouch-1.6.0 media-libs/flac media-libs/raptor:2 >=media-libs/liblrdf-0.4.0-r20 >=media-sound/jack-audio-connection-kit-0.120 >=gnome-base/libgnomecanvas-2 media-libs/vamp-plugin-sdk dev-libs/libxslt dev-libs/libsigc++:2 >=dev-cpp/gtkmm-2.16:2.4 >=dev-cpp/libgnomecanvasmm-2.26:2.6 media-libs/alsa-lib x11-libs/pango x11-libs/cairo media-libs/libart_lgpl virtual/libusb:0 curl? ( net-misc/curl )
 SLOT=0
 SRC_URI=mirror://gentoo/ardour-2.8.12.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=dd9d7fce816bed2458443b07514ff858

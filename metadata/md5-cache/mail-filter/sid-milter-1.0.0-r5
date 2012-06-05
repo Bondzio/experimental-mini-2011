@@ -10,4 +10,4 @@ RDEPEND=dev-libs/openssl >=sys-libs/db-3.2 || ( mail-filter/libmilter mail-mta/s
 SLOT=0
 SRC_URI=mirror://sourceforge/sid-milter/sid-milter-1.0.0.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=42c942b4bdba23b8d61a925e7fa71aca
+_md5_=f1276a026f3f10a3468bd1f257a198d3

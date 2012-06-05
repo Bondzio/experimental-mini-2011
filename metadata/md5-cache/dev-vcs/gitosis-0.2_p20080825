@@ -9,4 +9,4 @@ RDEPEND=>=dev-vcs/git-1.5.5.4 >=dev-python/setuptools-0.6_rc5 !dev-vcs/gitosis-g
 SLOT=0
 SRC_URI=mirror://gentoo/gitosis.git-20080825-73a032520493f6b4186185d4826d12edb5614135.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=23f640cc8b5bafa1435fe4ad291b0a59
+_md5_=af8e246be406b2d1b984a58aac28c119

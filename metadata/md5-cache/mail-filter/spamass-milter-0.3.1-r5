@@ -9,4 +9,4 @@ RDEPEND=|| ( mail-filter/libmilter mail-mta/sendmail ) >=mail-filter/spamassassi
 SLOT=0
 SRC_URI=http://savannah.nongnu.org/download/spamass-milt/spamass-milter-0.3.1.tar.bz2
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=108068e19faa338a50a96bab4758bd2c
+_md5_=eebdb8c0438e0c7c1f692c42554bd0a0

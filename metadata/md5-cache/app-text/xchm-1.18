@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/chmlib-0.36 x11-libs/wxGTK:2.8[X]
 SLOT=0
 SRC_URI=mirror://sourceforge/xchm/xchm-1.18.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=334afebb96bc6dc0ab49f9fc39beba26

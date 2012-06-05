@@ -8,4 +8,4 @@ RDEPEND=dev-lang/perl >=virtual/perl-MIME-Base64-2.12-r2 >=dev-perl/Mail-Audit-2
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/sample_e-mail-architecture.png.tar http://mailtools.anomy.net/dist/anomy-sanitizer-1.76.tar.gz http://dev.gentoo.org/~pacho/maintainer-needed/sample_e-mail-architektur.flw
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7f652a78150a94ef21ffbb409a956d23
+_md5_=996b01b55340b845bb372a550c175d39

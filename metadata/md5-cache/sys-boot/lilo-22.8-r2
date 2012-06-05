@@ -8,5 +8,5 @@ LICENSE=BSD GPL-2
 RDEPEND=device-mapper? ( || ( >=sys-fs/lvm2-2.02.45 >=sys-fs/device-mapper-1.02.12 ) )
 SLOT=0
 SRC_URI=http://home.san.rr.com/johninsd/pub/linux/lilo/lilo-22.8.src.tar.gz ftp://metalab.unc.edu/pub/Linux/system/boot/lilo/lilo-22.8.src.tar.gz ftp://metalab.unc.edu/pub/Linux/system/boot/lilo/obsolete/lilo-22.8.src.tar.gz mirror://gentoo/dolilo-0.5.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=22f55898b8de266cadda95e144d9be7d

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-0.9.12.ebuild,v 1.1 2012/06/04 07:59:24 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-0.9.12.ebuild,v 1.3 2012/06/04 19:46:14 cardoe Exp $
 
 EAPI=4
 
@@ -74,7 +74,7 @@ RDEPEND="sys-libs/readline
 	pcap? ( >=net-libs/libpcap-1.0.0 )
 	phyp? ( net-libs/libssh2 )
 	policykit? ( >=sys-auth/polkit-0.9 )
-	qemu? ( 
+	qemu? (
 		|| ( app-emulation/qemu-kvm >=app-emulation/qemu-0.10.0 )
 		dev-libs/yajl
 		sys-power/pm-utils
@@ -99,7 +99,7 @@ pkg_setup() {
 	python_pkg_setup
 
 	enewgroup qemu 77
-	enewuser qemu 77 -1 -1 qemu
+	enewuser qemu 77 -1 -1 qemu kvm
 }
 
 src_prepare() {

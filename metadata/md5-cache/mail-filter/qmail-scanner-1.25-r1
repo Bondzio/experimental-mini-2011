@@ -10,4 +10,4 @@ RESTRICT=userpriv
 SLOT=0
 SRC_URI=mirror://sourceforge/qmail-scanner/qmail-scanner-1.25.tgz http://toribio.apollinare.org/qmail-scanner/download/q-s-1.25st-20050406.patch.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=12f4cf876702bcb006a812510123964b
+_md5_=f8f68da3ad8a67683662b6d8474ac207

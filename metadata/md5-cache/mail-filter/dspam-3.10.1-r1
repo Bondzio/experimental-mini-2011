@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( hash mysql postgres sqlite ) static-libs? ( ^^ ( hash mysql po
 SLOT=0
 SRC_URI=mirror://sourceforge/dspam/dspam-3.10.1.tar.gz
 _eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=523cd9b6d4ca20ed9c4faee12dcc1538
+_md5_=b4fdbe0dbc690f4bb8097a93d0436f5e

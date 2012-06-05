@@ -10,5 +10,5 @@ RDEPEND=>=dev-lang/python-2.4 dev-libs/popt avahi? ( >=net-dns/avahi-0.6 ) gnome
 RESTRICT=test
 SLOT=0
 SRC_URI=http://distcc.googlecode.com/files/distcc-3.0.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	0be11571741a0d72603cb8cfc58bd3be	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=50ad0bd1e33bdfaf1a161965aae817a4
