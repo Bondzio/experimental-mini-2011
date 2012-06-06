@@ -9,5 +9,5 @@ RDEPEND=>=sys-libs/zlib-1.2.5.1-r2[minizip] a52? ( >=media-libs/a52dec-0.7.4-r3 
 REQUIRED_USE=aalib? ( X ) bidi? ( truetype ) cddb? ( cdda ) dvb? ( dvbpsi ) dxva2? ( avcodec ) egl? ( X ) avcodec? ( ffmpeg ) avformat? ( ffmpeg ) swscale? ( ffmpeg ) fontconfig? ( truetype ) gnutls? ( gcrypt ) libcaca? ( X ) libtar? ( skins ) libtiger? ( kate ) media-library? ( sqlite ) qt4? ( X ) sdl? ( X ) skins? ( truetype qt4 X ) switcher? ( avcodec ) vaapi? ( avcodec X ) vlm? ( encode ) xv? ( xcb )
 SLOT=0
 SRC_URI=mirror://gentoo/vlc-patches-108.tar.bz2
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6b106706cdb9e099e48d96b032d2f03b

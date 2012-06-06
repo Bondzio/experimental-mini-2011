@@ -4,11 +4,11 @@ DESCRIPTION=Main event loop abstraction library
 EAPI=4
 HOMEPAGE=https://fedorahosted.org/libverto/
 IUSE=glib +libev libevent tevent +threads static-libs
-KEYWORDS=~amd64 ~arm ~hppa ~x86 ~amd64-fbsd
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~x86 ~amd64-fbsd
 LICENSE=as-is
 RDEPEND=!=app-crypt/mit-krb5-1.10.1-r0 !=app-crypt/mit-krb5-1.10.1-r1 !=app-crypt/mit-krb5-1.10.1-r2 glib? ( >=dev-libs/glib-2.29 ) libev? ( >=dev-libs/libev-4.11 ) libevent? ( >=dev-libs/libevent-2.0 ) tevent? ( sys-libs/tevent )
 REQUIRED_USE=|| ( glib libev libevent tevent )
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/l/i/libverto/libverto-0.2.4.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
-_md5_=a5af9a051c61b620692ca00b51e6e04a
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_md5_=3984507f3f4e27c81325507f38bc48b2

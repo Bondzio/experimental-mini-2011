@@ -4,11 +4,12 @@ DESCRIPTION=Open Source Graph Visualization Software
 EAPI=4
 HOMEPAGE=http://www.graphviz.org/
 IUSE=+cairo devil doc examples gs gtk gts java lasi nls perl python qt4 ruby svg static-libs tcl X elibc_FreeBSD
+KEYWORDS=~amd64 ~mips ~ppc ~s390 ~sh ~x86 ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
 LICENSE=CPL-1.0
 RDEPEND=sys-libs/zlib >=dev-libs/expat-2 >=dev-libs/glib-2.11.1 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.34[fontconfig,jpeg,png,truetype] >=media-libs/libpng-1.2:0 virtual/jpeg virtual/libiconv X? ( x11-libs/libXaw x11-libs/libX11 x11-libs/libXmu x11-libs/libXpm x11-libs/libXt ) cairo? ( >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10[svg] ) devil? ( media-libs/devil[png,jpeg] ) gs? ( app-text/ghostscript-gpl ) gtk? ( x11-libs/gtk+:2 ) gts? ( sci-libs/gts ) lasi? ( media-libs/lasi ) qt4? ( x11-libs/qt-core:4 x11-libs/qt-gui:4 ) ruby? ( dev-lang/ruby ) svg? ( gnome-base/librsvg ) tcl? ( >=dev-lang/tcl-8.3 ) python? ( =dev-lang/python-2* )
 REQUIRED_USE=!cairo? ( !X !gtk !gs !lasi )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.graphviz.org/pub/graphviz/ARCHIVE/graphviz-2.28.0.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ebd58f36a675c9f7f4eb6f7c576c7baa
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=d60adfe9ef48356d230b1efb2f8b2e8d

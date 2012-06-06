@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-i18n/enca app-cdr/dvd+rw-tools dev-cpp/gtkmm:2.4 dev-cpp/libxmlpp:2.6 dev-libs/boost <dev-libs/glib-2.32.1 media-libs/libdvdread media-sound/twolame media-video/dvdauthor virtual/ffmpeg >=media-video/mjpegtools-1.8.0 x11-libs/gtk+:2
 SLOT=0
 SRC_URI=mirror://sourceforge/bombono/bombono-dvd-1.0.0.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bdaec5153109862afdf04d66d044aa3e

@@ -9,5 +9,5 @@ PDEPEND=ares? ( net-p2p/gift-ares ) fasttrack? ( net-p2p/gift-fasttrack ) gnutel
 RDEPEND=>=sys-libs/zlib-1.1.4 sys-apps/file imagemagick? ( >=media-gfx/imagemagick-5.5.7.15 ) vorbis? ( >=media-libs/libvorbis-1 )
 SLOT=0
 SRC_URI=mirror://sourceforge/gift/gift-0.11.8.1.tar.bz2
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8a151e439a21f3da506cca0798bf018c

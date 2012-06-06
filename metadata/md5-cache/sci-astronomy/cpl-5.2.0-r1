@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sci-libs/cfitsio-3.09 sci-astronomy/wcslib sci-libs/fftw:3.0 gasgano? ( sci-astronomy/gasgano ) gasgano? ( >=dev-java/java-config-2.1.9-r1 )
 SLOT=0
 SRC_URI=ftp://ftp.eso.org/pub/cpl/cpl-5.2.0.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=1e4bc74943ac8f990f79665c3a930954

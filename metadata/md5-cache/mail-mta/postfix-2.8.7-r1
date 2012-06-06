@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/db-3.2 >=dev-libs/libpcre-3.4 dev-lang/perl cdb? ( || ( >=dev
 REQUIRED_USE=ldap-bind? ( ldap sasl )
 SLOT=0
 SRC_URI=ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-2.8.7.tar.gz vda? ( http://vda.sourceforge.net/VDA/postfix-vda-v10-2.8.5.patch )
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6d3c457910bf527bebced44143d9ce54

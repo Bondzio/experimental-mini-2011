@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-apps/texinfo-4.7-r1 X? ( x11-libs/libX11 x11-libs/libXt x11-libs/libXmu x11-libs/libXaw x11-libs/libSM x11-libs/libICE )
 SLOT=0
 SRC_URI=mirror://gnu/groff/groff-1.21.tar.gz linguas_ja? ( mirror://gentoo/groff-1.21-japanese.patch.bz2 )
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b2c5def29327670ca4d65f382884ed28

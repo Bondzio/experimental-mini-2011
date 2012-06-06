@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/freetype media-libs/libpng >=media-libs/libsdl-1.2[video] media-libs/libvorbis media-libs/openal media-libs/sdl-mixer media-libs/sdl-ttf sys-libs/zlib =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/gemrb/gemrb-0.7.0.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b3fa17fa327da9bfd6448aebf79bc82c

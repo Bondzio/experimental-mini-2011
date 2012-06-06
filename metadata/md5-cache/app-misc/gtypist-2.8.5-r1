@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=>=sys-libs/ncurses-5.2 emacs? ( virtual/emacs ) xemacs? ( !emacs? ( app-editors/xemacs app-xemacs/fsf-compat ) )
 SLOT=0
 SRC_URI=mirror://gnu/gtypist/gtypist-2.8.5.tar.gz http://colemak.com/pub/learn/colemak.typ
-_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=d56ee3b796add1fba662072ae0b48b95

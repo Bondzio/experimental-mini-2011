@@ -6,5 +6,5 @@ KEYWORDS=~ppc-macos ~x64-macos ~x86-macos
 LICENSE=APSL-2 BSD
 SLOT=0
 SRC_URI=http://www.opensource.apple.com/tarballs/top/top-73.tar.gz http://www.opensource.apple.com/source/libutil/libutil-11/libutil.h?txt -> libutil-11-top-73.h
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=cb16a2d371d0ba0a31c5b8ecb863d22c

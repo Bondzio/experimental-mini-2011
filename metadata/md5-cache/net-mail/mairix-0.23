@@ -10,5 +10,5 @@ RDEPEND=zlib? ( sys-libs/zlib ) bzip2? ( app-arch/bzip2 )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/mairix/mairix-0.23.tar.gz gnus? ( mirror://gentoo/mairix-0.23-gnus-marks-propagation.patch.gz )
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4e6db5d867fb0171250eb35a4796fd15

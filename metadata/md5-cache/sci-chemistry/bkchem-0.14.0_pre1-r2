@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=cairo? ( dev-python/pycairo[svg] ) =dev-lang/python-2* =dev-lang/python-2*[tk]
 SLOT=0
 SRC_URI=http://bkchem.zirael.org/download/bkchem-0.14.0-pre1.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=563f2ea2b1b87121ed95d0b00654427f

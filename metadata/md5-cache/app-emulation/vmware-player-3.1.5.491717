@@ -11,5 +11,5 @@ RDEPEND=dev-cpp/cairomm dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-cpp/libgnomecanva
 RESTRICT=binchecks fetch strip
 SLOT=0
 SRC_URI=x86? ( VMware-Player-3.1.5-491717.i386.bundle ) amd64? ( VMware-Player-3.1.5-491717.x86_64.bundle )
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	vmware-bundle	23c070352c2722510704dae8063293e0
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	vmware-bundle	23c070352c2722510704dae8063293e0
 _md5_=fdfb2a3b3712bcb495d2990fdc0670e4

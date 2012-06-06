@@ -7,5 +7,5 @@ IUSE=jabber
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 )
 RDEPEND=dev-python/pygtk:2 dev-python/papyon dev-python/notify-python jabber? ( dev-python/xmpppy ) =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 SLOT=2
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	a95b1bf9d854485ca6fdbb47df2975aa	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ff5a46c2b596c2e0447de62f1ac90ded	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f10419569ffb608d11f5d098493a5152

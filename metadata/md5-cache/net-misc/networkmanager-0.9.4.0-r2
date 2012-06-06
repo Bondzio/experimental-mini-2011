@@ -10,5 +10,5 @@ RDEPEND=>=sys-apps/dbus-1.2 >=dev-libs/dbus-glib-0.75 || ( >=sys-fs/udev-171[gud
 REQUIRED_USE=modemmanager? ( ppp ) ^^ ( nss gnutls ) ^^ ( dhclient dhcpcd )
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager/0.9/NetworkManager-0.9.4.0.tar.xz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	gnome.org	8fef8f967214f56e08fa92d61163d891	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=c4ad59b4b881c514b8be0179cac4ebed

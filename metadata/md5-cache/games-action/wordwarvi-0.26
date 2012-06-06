@@ -9,5 +9,5 @@ LICENSE=GPL-2 CCPL-Attribution-2.0 CCPL-Attribution-ShareAlike-3.0
 RDEPEND=x11-libs/gtk+:2 vorbis? ( media-libs/libvorbis >=media-libs/portaudio-19_pre1 )
 SLOT=0
 SRC_URI=mirror://sourceforge/wordwarvi/wordwarvi-0.26.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=feae4b2b526f469cdb56a6ae81a3397d

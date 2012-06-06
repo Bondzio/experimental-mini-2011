@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=app-emacs/htmlize app-emacs/httpd >=virtual/emacs-22
 SLOT=0
 SRC_URI=http://www.mwolson.org/static/dist/emacs-wiki/emacs-wiki-2.72.tar.gz
-_eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9ff4571018966b32d002ff1eac013c51

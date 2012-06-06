@@ -6,4 +6,4 @@ LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=http://phil.ipal.org/freeware/vrb/vrb-0.3.0.tar.gz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
-_md5_=d7007b97468bcdca5bd98b9f582636ab
+_md5_=7fb4e55c602e80030e1cff512ce3950f

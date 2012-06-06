@@ -10,5 +10,5 @@ RDEPEND=sys-apps/util-linux sys-libs/readline || ( sys-fs/device-mapper >=sys-fs
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/evms/evms-2.5.5.tar.gz mirror://gentoo/evms-patches-2.5.5-4.tar.xz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=179a47d1bda96fcf4d1ab7302ea55cc3

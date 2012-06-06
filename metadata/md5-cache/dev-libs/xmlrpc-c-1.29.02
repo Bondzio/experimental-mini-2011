@@ -10,5 +10,5 @@ RDEPEND=tools? ( dev-perl/frontier-rpc sys-libs/readline ) curl? ( net-misc/curl
 REQUIRED_USE=test? ( static-libs abyss curl cxx )
 SLOT=0
 SRC_URI=mirror://gentoo/xmlrpc-c-1.29.02.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1d716b856f4c6fa84d73be9954c4c53b

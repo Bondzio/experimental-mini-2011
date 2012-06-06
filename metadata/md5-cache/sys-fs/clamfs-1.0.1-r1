@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/boost-1.33 sys-fs/fuse dev-cpp/commoncpp2 dev-libs/rlog dev-libs/poco app-antivirus/clamav
 SLOT=0
 SRC_URI=mirror://sourceforge/clamfs/clamfs-1.0.1.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=2809132f65dda411e95e8f3ad3ee5982

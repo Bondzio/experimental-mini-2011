@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND==dev-haskell/cairo-0.12* =dev-haskell/glib-0.12* dev-haskell/mtl =dev-haskell/pango-0.12* >=dev-lang/ghc-6.10.1 dev-libs/glib:2 x11-libs/gtk+:2 gio? ( =dev-haskell/gio-0.12* ) dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/gtk/0.12.0/gtk-0.12.0.tar.gz
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=3ee7bfc76e1a5a45fd72cac6cacce606

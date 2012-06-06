@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=x11-libs/gtk+:2 >=app-text/gtkspell-2:2 >=dev-perl/glib-perl-1.012 >=dev-perl/gtk2-perl-1.012 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/M/ML/MLEHMANN/Gtk2-Spell-1.03.tar.gz mirror://gentoo/gtk2-spell-1.03-caa0ef46.patch.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5aba6b63d60df4f94056b6c12cd2bed6

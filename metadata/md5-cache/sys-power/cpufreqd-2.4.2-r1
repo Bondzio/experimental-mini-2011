@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-power/cpufrequtils-002 sys-fs/sysfsutils lm_sensors? ( >sys-apps/lm_sensors-3 )
 SLOT=0
 SRC_URI=mirror://sourceforge/cpufreqd/cpufreqd-2.4.2.tar.bz2 nvidia? ( http://www.linuxhardware.org/nvclock/nvclock0.8b.tar.gz )
-_eclasses_=eutils	a95b1bf9d854485ca6fdbb47df2975aa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8c677044a1b0010784bf6d66ea22828a

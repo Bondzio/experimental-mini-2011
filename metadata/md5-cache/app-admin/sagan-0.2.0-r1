@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/libpcre app-admin/sagan-rules[lognorm?] smtp? ( net-libs/libesmtp ) pcap? ( net-libs/libpcap ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) prelude? ( dev-libs/libprelude ) lognorm? ( dev-libs/liblognorm ) libdnet? ( dev-libs/libdnet )
 SLOT=0
 SRC_URI=http://sagan.softwink.com/download/sagan-0.2.0.tar.gz
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	autotools-utils	7bd9188561818b742702e8b7b21fd8d3	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=191fc00da9d61602db6077eb2ce66c07

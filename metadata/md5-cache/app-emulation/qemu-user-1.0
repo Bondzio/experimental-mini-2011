@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RESTRICT=test
 SLOT=0
 SRC_URI=http://wiki.qemu.org/download/qemu-1.0.tar.gz http://dev.gentoo.org/~lu_zero/distfiles/qemu-1.0-patches.tar.xz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	a95b1bf9d854485ca6fdbb47df2975aa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=755016f00510c403d79ae0d1a50ef41b

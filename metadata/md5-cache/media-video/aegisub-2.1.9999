@@ -7,5 +7,5 @@ IUSE=alsa debug +ffmpeg lua nls openal oss portaudio pulseaudio spell
 LICENSE=GPL-2
 RDEPEND=x11-libs/wxGTK:2.8[X,opengl,debug?] virtual/opengl virtual/glu >=media-libs/libass-0.9.11[fontconfig] virtual/libiconv >=media-libs/fontconfig-2.4.2 media-libs/freetype:2 alsa? ( media-libs/alsa-lib ) portaudio? ( =media-libs/portaudio-19* ) pulseaudio? ( media-sound/pulseaudio ) openal? ( media-libs/openal ) lua? ( >=dev-lang/lua-5.1.1 ) spell? ( >=app-text/hunspell-1.2 ) ffmpeg? ( >=media-libs/ffmpegsource-2.17 )
 SLOT=0
-_eclasses_=autotools	9379e4c8f662d374e1ad511530869282	eutils	a95b1bf9d854485ca6fdbb47df2975aa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	subversion	b1dabda0045f060f19070d67a57c1a21	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	subversion	b1dabda0045f060f19070d67a57c1a21	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=17bdea989d22b698e404cc7ffa1df0c4
