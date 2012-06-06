@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-lang/ruby >=media-libs/libsdl-1.2.5 truetype? ( >=media-libs/sdl-ttf-2.0.6 ) image? ( >=media-libs/sdl-image-1.2.2 ) mixer? ( >=media-libs/sdl-mixer-1.2.4 ) mpeg? ( >=media-libs/smpeg-0.4.4-r1 ) sge? ( media-libs/sge )
 SLOT=0
 SRC_URI=mirror://rubyforge/rubysdl/rubysdl-2.0.1b.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=683fd1b3093982e5c5f7036a8353ec4d

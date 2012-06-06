@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=elibc_glibc? ( || ( net-libs/libtirpc <sys-libs/glibc-2.14 ) ) x11-libs/libXau x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXdmcp x11-libs/libXpm x11-libs/libXrandr x11-libs/libXtst >=media-libs/libpng-1.2.8 >=sys-libs/zlib-1.2.3 virtual/jpeg
 SLOT=0
 SRC_URI=http://web04.nomachine.com/download/3.5.0/sources/nx-X11-3.5.0-2.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxagent-3.5.0-5.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxproxy-3.5.0-1.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxauth-3.5.0-1.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxcompext-3.5.0-1.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxcompshad-3.5.0-2.tar.gz http://web04.nomachine.com/download/3.5.0/sources/nxcomp-3.5.0-2.tar.gz
-_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=d6b54d70faaf7d429e2ce8b6283a7814

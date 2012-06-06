@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/gobject-introspection dev-python/dbus-python dev-python/pygobject:3 gnome-base/gnome-desktop:2 x11-libs/gtk+:3[introspection] x11-libs/pango[introspection] ayatana? ( dev-libs/libappindicator:3[introspection] ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://launchpad.net/gtimelog/devel/0.7/+download/gtimelog-0.7.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=f094cbab0c59d450243ce4904d06d887

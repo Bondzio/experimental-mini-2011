@@ -8,5 +8,5 @@ LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=virtual/perl-DB_File-1.72 >=virtual/perl-File-Spec-0.8 >=virtual/perl-Storable-1 >=dev-perl/Digest-SHA1-2.01 dev-perl/Heap >=dev-perl/IO-String-1.02 dev-perl/TimeDate dev-perl/File-NFSLock dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/C/CL/CLEISHMAN/Cache-2.04.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=b571e701441de9d1bdd7295775d956b5

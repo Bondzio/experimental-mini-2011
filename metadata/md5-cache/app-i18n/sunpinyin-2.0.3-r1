@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1 CDDL
 RDEPEND=dev-db/sqlite:3
 SLOT=0
 SRC_URI=http://sunpinyin.googlecode.com/files/sunpinyin-2.0.3.tar.gz http://open-gram.googlecode.com/files/dict.utf8.tar.bz2 http://open-gram.googlecode.com/files/lm_sc.t3g.arpa.tar.bz2
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=100a333ecaa9060fad31bdd29f0107f5

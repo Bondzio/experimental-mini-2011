@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=dev-lang/perl sys-apps/grep sys-apps/miscfiles
 SLOT=0
 SRC_URI=http://mackers.com/projects/passook/passook.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=06958cabf8a40475bb6472cd52bf827c

@@ -9,5 +9,5 @@ LICENSE=|| ( spin-commercial spin-educational )
 RDEPEND=sys-devel/gcc sys-process/time tk? ( dev-lang/tk graphviz? ( media-gfx/graphviz ) )
 SLOT=0
 SRC_URI=http://spinroot.com/spin/Src/spin610.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=1a3ea5076acdf8a6feb8531ec884cb54

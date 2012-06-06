@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=!sys-apps/module-init-tools !sys-apps/kmod
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/kernel/modutils/v2.4/modutils-2.4.27.tar.bz2
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a009060edf2e4b0a130e51739e304c67

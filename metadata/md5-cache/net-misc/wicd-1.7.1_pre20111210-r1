@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/dbus-python X? ( gtk? ( dev-python/pygtk || ( x11-libs/gksu kde-base/kdesu ) ) ) || ( net-misc/dhcpcd net-misc/dhcp net-misc/pump ) net-wireless/wireless-tools net-wireless/wpa_supplicant || ( sys-apps/net-tools sys-apps/ethtool ) !gtk? ( dev-python/pygobject:2 ) ioctl? ( dev-python/python-iwscan dev-python/python-wpactrl ) libnotify? ( dev-python/notify-python ) ncurses? ( dev-python/urwid dev-python/pygobject:2 ) pm-utils? ( >=sys-power/pm-utils-1.1.1 ) =dev-lang/python-2* =dev-lang/python-2*[ncurses?,xml]
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~tomka/files/wicd-1.7.1_pre20111210.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2d3c6fd8a093725b4b3a69262a253152

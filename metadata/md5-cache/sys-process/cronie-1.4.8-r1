@@ -9,5 +9,5 @@ LICENSE=ISC BSD BSD-2
 RDEPEND=pam? ( virtual/pam ) anacron? ( !sys-process/anacron ) virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/bcron !sys-process/dcron !sys-process/fcron
 SLOT=0
 SRC_URI=https://fedorahosted.org/releases/c/r/cronie/cronie-1.4.8.tar.gz
-_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cron	7f2ced83f02bd3c752860bd108b62e2c	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=dfe1e3cc6f117ac2240b506c2777c488

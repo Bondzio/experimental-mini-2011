@@ -611,19 +611,6 @@ app-misc/anki:furigana - Enable support for furigana generation
 app-misc/anki:graph - Enable support for making graphs
 app-misc/anki:recording - Enable support for audio recording
 app-misc/anki:sound - Enable support for adding sound to cards
-app-misc/beagle:chm - Enables support for indexing of the MS CHM (Compressed HTML) file format using app-doc/chmlib.
-app-misc/beagle:debug - Enables debug XML dumps of all messages passed between the daemons and the UIs. WARNING, this option will fill up your Beagle Log directory very quickly.
-app-misc/beagle:doc - Builds programmer documentation for Beagle using app-doc/monodoc.
-app-misc/beagle:eds - Enables Beagle to index the Addressbook and Calendar from mail-client/evolution stored in gnome-extra/evolution-data-server. The information is accessed using dev-dotnet/evolution-sharp.
-app-misc/beagle:firefox - Compiles and installs the extension for either www-client/firefox or www-client/firefox-bin. This extension helps Beagle index the websites you visit.
-app-misc/beagle:galago - Allows Beagle to get status information from applications such as Pidgin to show in the search results.
-app-misc/beagle:google - Enables google (gmail etc.) indexing support.
-app-misc/beagle:gtk - Enables the GTK+ Beagle Search UI for showing search results. This is the default GUI for Beagle.
-app-misc/beagle:inotify - Enable inotify filesystem monitoring support
-app-misc/beagle:ole - Enables OLE (Object Linking and Editing) support via dev-dotnet/gsf-sharp, app-text/wv, and app-office/gnumeric(ssindex). These allow Beagle to index MS Powerpoint, Word, and Spreadsheet Documents.
-app-misc/beagle:pdf - Enables support for indexing of the PDF (Portable Document Format) file format using `pdfinfo` and `pdftotext` from app-text/poppler
-app-misc/beagle:thunderbird - Compiles and installs the extension for either mail-client/thunderbird or mail-client/thunderbird-bin. This extension helps Beagle index your mails.
-app-misc/beagle:xscreensaver - Allow Beagle to detect when the screensaver is switched on. This allows Beagle to use more resources and index faster when the computer is not in use.
 app-misc/byobu:screen - Use app-misc/screen as the default backend
 app-misc/ddccontrol:ddcpci - enable direct PCI memory access (the setuid ddcpci util)
 app-misc/digitemp:ds2490 - Build support for the ds2490 sensor

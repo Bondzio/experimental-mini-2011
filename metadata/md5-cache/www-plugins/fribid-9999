@@ -8,5 +8,5 @@ KEYWORDS=~x86 ~amd64 ~mips ~sparc
 LICENSE=MIT MPL GPL-2
 RDEPEND=>=dev-libs/openssl-0.9.8 >=dev-libs/libp11-0.2.7 >=x11-libs/gtk+-2.24 smartcard? ( >=sys-apps/pcsc-lite-1.6.1 ) dev? ( >=dev-libs/opensc-0.11.13 ) pkcs11? ( >=dev-libs/engine_pkcs11-0.1.8 )
 SLOT=0
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=1868ef1ed0b52dce2cab6a837707b948

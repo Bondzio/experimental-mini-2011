@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=>=dev-texlive/texlive-basic-2010 >=dev-texlive/texlive-fontsrecommended-2010 >=dev-texlive/texlive-latex-2010 >=app-text/texlive-core-2010
 SLOT=0
 SRC_URI=mirror://gentoo/texlive-module-xmlplay-2010.tar.xz mirror://gentoo/texlive-module-collection-htmlxml-2010.tar.xz doc? ( mirror://gentoo/texlive-module-xmlplay.doc-2010.tar.xz ) source? ( mirror://gentoo/texlive-module-xmlplay.source-2010.tar.xz )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	texlive-common	273a6e678b05051f2101ab6d8b19c894	texlive-module	6e3f142f2a28e0429462a48243108921	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	texlive-common	273a6e678b05051f2101ab6d8b19c894	texlive-module	6e3f142f2a28e0429462a48243108921	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0fe81a5db4936651fc2509bded475442

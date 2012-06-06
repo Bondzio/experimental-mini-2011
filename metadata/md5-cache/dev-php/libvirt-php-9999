@@ -7,5 +7,5 @@ IUSE=doc php_targets_php5-3
 LICENSE=PHP-3.01
 RDEPEND=app-emulation/libvirt dev-libs/libxml2 || ( =dev-php/libvirt-php-9999[php_targets_php5-3] ) php_targets_php5-3? ( dev-lang/php:5.3 )
 SLOT=0
-_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	php-ext-source-r2	5944cf34f20909fbb084a79dd9c08ad3	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	php-ext-source-r2	5944cf34f20909fbb084a79dd9c08ad3	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fe493fe0260a57d6fa5c0538268a97df

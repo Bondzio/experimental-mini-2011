@@ -4,12 +4,12 @@ DESCRIPTION=Audacious Player - Your music, your way, no exceptions
 EAPI=4
 HOMEPAGE=http://audacious-media-player.org/
 IUSE=chardet +gtk gtk3 nls session
-KEYWORDS=~alpha amd64 ~hppa ~ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux
+KEYWORDS=~alpha amd64 hppa ~ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 PDEPEND=>=media-plugins/audacious-plugins-3.2.2-r1
 RDEPEND=>=dev-libs/dbus-glib-0.60 >=dev-libs/glib-2.16 dev-libs/libxml2 >=x11-libs/cairo-1.2.6 >=x11-libs/pango-1.8.0 gtk? ( x11-libs/gtk+:2 ) gtk3? ( x11-libs/gtk+:3 ) session? ( x11-libs/libSM )
 REQUIRED_USE=^^ ( gtk gtk3 )
 SLOT=0
 SRC_URI=http://distfiles.audacious-media-player.org/audacious-3.2.2.tar.bz2 mirror://gentoo/gentoo_ice-xmms-0.2.tar.bz2
-_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=404b34711e877be8fad89e0ec8163048
+_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=18730b1ca38b8eaa080a2e4da040e91b

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-cpp/gtest-1.4.0
 SLOT=0
 SRC_URI=http://googlemock.googlecode.com/files/gmock-1.4.0.tar.bz2
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=72ce99d2cc2a6d68a46182bd31cc9f0c

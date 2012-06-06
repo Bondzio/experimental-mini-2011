@@ -4,10 +4,10 @@ DESCRIPTION=A validating XML parser written in a portable subset of C++.
 EAPI=2
 HOMEPAGE=http://xerces.apache.org/xerces-c/
 IUSE=curl doc iconv icu sse2 static-libs threads elibc_Darwin elibc_FreeBSD
-KEYWORDS=~alpha amd64 ~hppa ppc ppc64 ~sparc x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 hppa ppc ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=Apache-2.0
 RDEPEND=icu? ( >=dev-libs/icu-4.2 ) curl? ( net-misc/curl ) virtual/libiconv
 SLOT=0
 SRC_URI=mirror://apache/xerces/c/3/sources/xerces-c-3.1.1.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7712aab08ac1d82406fd152721e2272f
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=1528c6807ca58b597b855cd4841d3bc6

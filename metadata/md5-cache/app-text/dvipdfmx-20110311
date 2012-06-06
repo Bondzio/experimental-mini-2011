@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/libpaper >=media-libs/libpng-1.2:0 sys-libs/zlib dev-libs/kpathsea app-text/libpaper virtual/tex-base >=app-text/poppler-0.12.3-r3 app-text/poppler-data
 SLOT=0
 SRC_URI=http://project.ktug.or.kr/dvipdfmx/snapshot/latest/dvipdfmx-20110311.tar.gz
-_eclasses_=autotools	17221f432ba462238f81c5fd183a028e	eutils	ff5a46c2b596c2e0447de62f1ac90ded	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	texlive-common	273a6e678b05051f2101ab6d8b19c894	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	texlive-common	273a6e678b05051f2101ab6d8b19c894	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0b4be2f5376d3f702c76943714166502

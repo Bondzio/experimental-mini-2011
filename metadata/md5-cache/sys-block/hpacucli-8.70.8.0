@@ -9,5 +9,5 @@ RDEPEND=sys-apps/coreutils sys-process/procps x86? ( sys-libs/lib-compat ) amd64
 RESTRICT=strip
 SLOT=0
 SRC_URI=ftp://ftp.hp.com/pub/softlib2/software1/pubsw-linux/p414707558/v63381/hpacucli-8.70-8.0.noarch.rpm
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=726e4527e8f20c4ed40860703e08a285

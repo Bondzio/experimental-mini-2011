@@ -7,5 +7,5 @@ IUSE=doc
 LICENSE=GPL-2
 RDEPEND=!app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) sys-apps/file sys-libs/ncurses
 SLOT=0
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	subversion	b1dabda0045f060f19070d67a57c1a21	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	subversion	b1dabda0045f060f19070d67a57c1a21	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5d522729941dff770c3198a889fea9ae

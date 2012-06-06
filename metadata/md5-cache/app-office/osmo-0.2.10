@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/gtk+-2.12:2 >=dev-libs/libtar-1.2.11-r3 dev-libs/libxml2:2 dev-libs/libgringotts >=dev-libs/libical-0.33 app-text/gtkspell:2 gnome-extra/gtkhtml:2 >=x11-libs/libnotify-0.7
 SLOT=0
 SRC_URI=mirror://sourceforge/osmo-pim/osmo-0.2.10.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=109fc51f14d92020b833982398de398f

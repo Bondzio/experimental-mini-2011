@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure prepare
-DEPEND=>=dev-libs/glib-2 >=x11-libs/gtk+-2.16:2 x11-libs/libX11 alsa? ( media-libs/alsa-lib ) libnotify? ( >=x11-libs/libnotify-0.7 ) virtual/pkgconfig
+DEPEND=>=dev-libs/glib-2 media-libs/alsa-lib >=x11-libs/gtk+-2.16:2 x11-libs/libX11 libnotify? ( >=x11-libs/libnotify-0.7 ) virtual/pkgconfig
 DESCRIPTION=A lightweight volume control that sits in your systray
 EAPI=4
 HOMEPAGE=http://softwarebakery.com/maato/volumeicon.html
-IUSE=alsa libnotify
+IUSE=libnotify
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=>=dev-libs/glib-2 >=x11-libs/gtk+-2.16:2 x11-libs/libX11 alsa? ( media-libs/alsa-lib ) libnotify? ( >=x11-libs/libnotify-0.7 )
+RDEPEND=>=dev-libs/glib-2 media-libs/alsa-lib >=x11-libs/gtk+-2.16:2 x11-libs/libX11 libnotify? ( >=x11-libs/libnotify-0.7 )
 SLOT=0
 SRC_URI=http://softwarebakery.com/maato/files/volumeicon/volumeicon-0.4.6.tar.gz
-_eclasses_=eutils	ff5a46c2b596c2e0447de62f1ac90ded	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a6d1c93cb4d7e64ba2f920ec49a4b58d
+_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=c9d479b1cc69adb8d4986118910745ac
