@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-base/xorg-server x11-proto/xf86dgaproto x11-proto/randrproto x11-proto/xf86driproto x11-proto/xineramaproto x11-libs/libdrm-poulsbo x11-drivers/psb-kmod x11-libs/xpsb-glx
 SLOT=0
 SRC_URI=http://download1.rpmfusion.org/nonfree/fedora/updates/testing/11/SRPMS/xorg-x11-drv-psb-0.32.0-1.fc11.src.rpm
-_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=77a3e1a514c34b9fbb1f586f9ac12ffb

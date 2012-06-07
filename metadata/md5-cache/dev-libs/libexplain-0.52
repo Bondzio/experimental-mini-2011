@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=sys-kernel/linux-headers-2.6.35 sys-libs/libcap >=sys-libs/glibc-2.11
 SLOT=0
 SRC_URI=http://libexplain.sourceforge.net/libexplain-0.52.D001.tar.gz
-_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	autotools-utils	d4ce8e3b49c8b11780009aea5f82f99e	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	autotools-utils	d4ce8e3b49c8b11780009aea5f82f99e	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8afa029b847aeb91aae9a9d9248e1ea3

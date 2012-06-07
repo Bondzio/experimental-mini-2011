@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13829 2012/06/06 13:41:42 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13832 2012/06/07 00:49:44 ulm Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -35,7 +35,6 @@
 # Vulnerable and no longer used by anything in tree wrt #403415
 # Removal in 30 days
 <net-libs/xulrunner-10.0
-<gnome-extra/yelp-2.30.2-r200
 
 # Jory A. Pratt <anarchy@gentoo.org> (06 Jun 2012)
 # Upstream discontinued security support for 3.1 series.
@@ -104,6 +103,7 @@ net-im/silc-client
 # Andreas K. Hüttel <dilfridge@gentoo.org> (01 Jun 2012)
 # Mask unreleased, alpha, and beta
 ~app-office/calligra-2.4.90
+~app-office/calligra-l10n-2.4.90
 
 # Samuli Suominen <ssuominen@gentoo.org> (01 Jun 2012)
 # Fails to run with font issues wrt bug 418259
@@ -447,7 +447,6 @@ media-sound/squeezeboxserver
 # Ulrich Mueller <ulm@gentoo.org> (09 Apr 2012)
 # Christian Faulhammer <fauli@gentoo.org>
 # Emacs live ebuilds. Use at your own risk.
-~app-editors/emacs-vcs-24.0.9999
 ~app-editors/emacs-vcs-24.1.9999
 
 # Jeroen Roovers <jer@gentoo.org> (04 Apr 2012)

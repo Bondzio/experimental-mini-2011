@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=hesiod? ( net-dns/hesiod ) ssl? ( >=dev-libs/openssl-0.9.6 ) kerberos? ( virtual/krb5 >=dev-libs/openssl-0.9.6 ) nls? ( virtual/libintl ) elibc_FreeBSD? ( sys-libs/e2fsprogs-libs ) socks? ( net-proxy/dante ) tk? ( =dev-lang/python-2* ) tk? ( =dev-lang/python-2*[tk] )
 SLOT=0
 SRC_URI=mirror://berlios/fetchmail/fetchmail-6.3.21.tar.bz2
-_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f9bb97151af96d483d01882731756f23

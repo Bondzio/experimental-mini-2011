@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-libs/libevent-1.4 dev-lang/perl sasl? ( dev-libs/cyrus-sasl )
 SLOT=0
 SRC_URI=http://memcached.googlecode.com/files/memcached-1.4.8.tar.gz
-_eclasses_=autotools	5d6c2a1d5803305921f0024a45a29e70	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5c1d880f5583e67a9d6aaa561a5efa2b
