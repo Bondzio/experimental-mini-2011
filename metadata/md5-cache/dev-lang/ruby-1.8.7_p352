@@ -10,5 +10,5 @@ PDEPEND=xemacs? ( app-xemacs/ruby-modes )
 RDEPEND=berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) ssl? ( >=dev-libs/openssl-0.9.8m ) socks5? ( >=net-proxy/dante-1.1.13 ) tk? ( dev-lang/tk[threads=] ) ncurses? ( sys-libs/ncurses ) libedit? ( dev-libs/libedit ) !libedit? ( readline? ( sys-libs/readline ) ) sys-libs/zlib >=app-admin/eselect-ruby-20100603 !=dev-lang/ruby-cvs-1.8* !<dev-ruby/rdoc-2 !dev-ruby/rexml
 SLOT=1.8
 SRC_URI=mirror://ruby/1.8/ruby-1.8.7-p352.tar.bz2 http://dev.gentoo.org/~flameeyes/ruby-team/ruby-patches-1.8.7_p352.tar.bz2
-_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e18eb8756c5011f00e44e22f76ab68e8

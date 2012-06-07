@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!sys-fs/aufs !sys-fs/aufs3 kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/aufs2-2.1_p20111031.tar.xz
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ea48a36245b5e0665a8f1e176caa1910

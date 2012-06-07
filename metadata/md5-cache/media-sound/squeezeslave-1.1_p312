@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libmad media-libs/flac media-libs/libvorbis media-libs/libogg media-libs/portaudio[alsa?] aac? ( virtual/ffmpeg ) wma? ( virtual/ffmpeg ) display? ( app-misc/lirc )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/squeezeslave-1.1_p312.tar.xz
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e2fdab0e65da4d8a8f0ca960fabed345

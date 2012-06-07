@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=python? ( =dev-lang/python-2* ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/nkf/44486/nkf-2.1.0.tar.gz python? ( http://city.plala.jp/moin/NkfPython?action=AttachFile&do=get&target=NKF_python20090602.tgz -> NKF_python20090602.tgz )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	distutils	82a876811ffd4907daba6062958daa26	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=06302dd4034addd5989d7d2f902f3716

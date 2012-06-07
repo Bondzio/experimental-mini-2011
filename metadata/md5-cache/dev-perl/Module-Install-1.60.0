@@ -9,5 +9,5 @@ LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=virtual/perl-File-Spec-3.28 >=virtual/perl-Archive-Tar-1.44 >=virtual/perl-ExtUtils-MakeMaker-6.590.0 >=virtual/perl-ExtUtils-ParseXS-2.19 >=virtual/perl-Module-Build-0.33 >=virtual/perl-Module-CoreList-2.17 >=virtual/perl-Parse-CPAN-Meta-1.39 >=dev-perl/libwww-perl-5.812 >=dev-perl/File-Remove-1.42 >=dev-perl/JSON-2.14 >=dev-perl/Module-ScanDeps-0.89 >=dev-perl/PAR-Dist-0.29 >=dev-perl/YAML-Tiny-1.38 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AD/ADAMK/Module-Install-1.06.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8fee681a8169fdbb32923763216c4312

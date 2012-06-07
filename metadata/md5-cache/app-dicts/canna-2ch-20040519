@@ -7,5 +7,5 @@ KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=public-domain
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~naota/files/canna-2ch-20040519.tar.gz
-_eclasses_=cannadic	7dd312fbd51b24014a0a39f0a3532d66	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=cannadic	7dd312fbd51b24014a0a39f0a3532d66	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=096964429024c5e675706030d1dfc27b

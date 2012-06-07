@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/libnl:1.1 >=sys-kernel/linux-headers-2.6.34 net-wireless/wpa_supplicant[wimax] net-wireless/wimax-tools
 SLOT=0
 SRC_URI=http://www.linuxwimax.org/Download?action=AttachFile&do=get&target=wimax-1.5.2.tar.gz -> wimax-1.5.2.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ce5cc1452afda90c945acd9a5f3696ff	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6f32f0b8a3d1b8b77e21e30e01596a6f

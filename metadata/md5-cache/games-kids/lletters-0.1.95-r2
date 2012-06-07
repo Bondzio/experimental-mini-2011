@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/l/lletters/lletters_0.1.95+gtk2.orig.tar.gz mirror://debian/pool/main/l/lletters/lletters_0.1.95+gtk2-3.diff.gz mirror://sourceforge/lln/lletters-media-0.1.9a.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	ce5cc1452afda90c945acd9a5f3696ff	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c64e13b1cc219ac594e4985052aa4a89

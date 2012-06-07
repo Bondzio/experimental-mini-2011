@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=net-wireless/wireless-tools kernel_linux? ( sys-libs/libcap >=dev-libs/libnl-1.1 ) net-libs/libpcap pcre? ( dev-libs/libpcre ) suid? ( sys-libs/libcap ) ncurses? ( sys-libs/ncurses ) !arm? ( speech? ( app-accessibility/flite ) ) ruby? ( dev-lang/ruby ) plugin-btscan? ( || ( >=net-wireless/bluez-4.98-r2 =net-wireless/bluez-4.96 ) ) plugin-dot15d4? ( virtual/libusb:0 ) plugin-spectools? ( net-wireless/spectools )
 SLOT=0
 SRC_URI=http://www.kismetwireless.net/code/kismet-2011-03-R2.tar.gz
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=687b7760e61b1980d7b6c316108ae649

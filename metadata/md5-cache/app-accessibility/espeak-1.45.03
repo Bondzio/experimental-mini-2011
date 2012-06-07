@@ -10,5 +10,5 @@ RDEPEND=pulseaudio? ( media-sound/pulseaudio ) portaudio? ( >=media-libs/portaud
 REQUIRED_USE=portaudio? ( !pulseaudio ) pulseaudio? ( !portaudio )
 SLOT=0
 SRC_URI=mirror://sourceforge/espeak/espeak-1.45.03-source.zip
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a1c53e91206dddb53e8f7071a0585295

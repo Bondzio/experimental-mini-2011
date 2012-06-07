@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/libowfat-0.25[diet=] diet? ( dev-libs/dietlibc ) ssl? ( dev-l
 REQUIRED_USE=ssl? ( !diet )
 SLOT=0
 SRC_URI=http://dl.fefe.de/gatling-0.12.tar.bz2
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=a40de9f599f324d582cb97788634a978

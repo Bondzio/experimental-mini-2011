@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=sys-libs/ncurses virtual/libiconv !!net-irc/irc-client
 SLOT=0
 SRC_URI=ftp://ircii.warped.com/pub/ircII/ircii-20111115.tar.bz2 ftp://ircii.warped.com/pub/ircII/old/ircii-20111115.tar.bz2
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6dd9b404bb097d6ccc89c99a6dad5714

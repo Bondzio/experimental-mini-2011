@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/maloc[mpi=] virtual/blas sys-libs/readline virtual/fortran arpack? ( sci-libs/arpack ) tools? ( !sci-libs/gts !sci-chemistry/ccpn ) fetk? ( sci-libs/fetk sci-libs/amd sci-libs/umfpack sci-libs/superlu ) mpi? ( virtual/mpi ) python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/apbs/apbs-1.3-source.tar.gz
-_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ff29aeb4903cdedc4c8ca94be5edfd5b

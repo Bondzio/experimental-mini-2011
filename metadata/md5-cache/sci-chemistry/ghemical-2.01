@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/freeglut virtual/glu virtual/opengl x11-libs/gtk+:2 >=x11-libs/gtkglext-1.0.5 gnome-base/libglade:2.0 >=sci-libs/libghemical-2 openbabel? ( >=sci-chemistry/openbabel-2 ) threads? ( dev-libs/glib:2 ) x11-libs/libXmu
 SLOT=0
 SRC_URI=http://bioinformatics.org/ghemical/download/ghemical-2.01.tar.gz
-_eclasses_=eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=bf6f6803e408a82a4e4c4e1dda2e2cbf

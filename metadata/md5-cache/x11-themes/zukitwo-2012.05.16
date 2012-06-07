@@ -6,7 +6,7 @@ HOMEPAGE=http://gnome-look.org/content/show.php/Zukitwo?content=140562
 IUSE=gnome-shell
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=media-fonts/ubuntu-font-family >=x11-libs/gtk+-2.10:2 >=x11-libs/gtk+-3.4:3 >=x11-themes/gtk-engines-murrine-0.98.1.1 >=x11-themes/gtk-engines-unico-1.0.2 gnome-shell? ( x11-themes/zukitwo-shell )
+RDEPEND=>=x11-libs/gtk+-2.10:2 >=x11-libs/gtk+-3.4:3 >=x11-themes/gtk-engines-murrine-0.98.1.1 >=x11-themes/gtk-engines-unico-1.0.2 gnome-shell? ( x11-themes/zukitwo-shell )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~tetromino/distfiles/zukitwo/zukitwo-2012.05.16.tar.xz
-_md5_=0e1d68b5bc87a84d9d38f557728ab358
+_md5_=f6dba8d397eaf53c5d7e5477e4598d84

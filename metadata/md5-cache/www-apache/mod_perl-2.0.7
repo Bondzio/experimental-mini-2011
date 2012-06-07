@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
-DEPEND=>=dev-perl/Apache-Test-1.360 >=virtual/perl-CGI-3.08 dev-lang/perl www-servers/apache || ( www-servers/apache[-threads] dev-lang/perl[ithreads] ) =www-servers/apache-2* dev-lang/perl[-build]
+DEPEND=<www-servers/apache-2.4 >=dev-perl/Apache-Test-1.360 >=virtual/perl-CGI-3.08 dev-lang/perl www-servers/apache || ( www-servers/apache[-threads] dev-lang/perl[ithreads] ) =www-servers/apache-2* dev-lang/perl[-build]
 DESCRIPTION=An embedded Perl interpreter for Apache2
 EAPI=3
 HOMEPAGE=http://perl.apache.org/
@@ -7,8 +7,8 @@ IUSE=debug
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
 PDEPEND=>=dev-perl/Apache-Reload-0.11 >=dev-perl/Apache-SizeLimit-0.95
-RDEPEND=>=dev-perl/Apache-Test-1.360 >=virtual/perl-CGI-3.08 dev-lang/perl www-servers/apache || ( www-servers/apache[-threads] dev-lang/perl[ithreads] ) =www-servers/apache-2* dev-lang/perl[-build]
+RDEPEND=<www-servers/apache-2.4 >=dev-perl/Apache-Test-1.360 >=virtual/perl-CGI-3.08 dev-lang/perl www-servers/apache || ( www-servers/apache[-threads] dev-lang/perl[ithreads] ) =www-servers/apache-2* dev-lang/perl[-build]
 SLOT=1
 SRC_URI=mirror://apache/perl/mod_perl-2.0.7.tar.gz
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	ce5cc1452afda90c945acd9a5f3696ff	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=f500993779fb1d028502328b5eb6ccd0
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=b727f0ef5dbc655bdbf833c249651456

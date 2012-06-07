@@ -7,5 +7,5 @@ IUSE=qt4
 LICENSE=GPL-3
 RDEPEND=>=dev-python/mechanize-0.1.9 qt4? ( >=dev-python/PyQt4-4.3[X] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	ce5cc1452afda90c945acd9a5f3696ff	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e750d231c26f2ab3f4a0e0f8a6b7e47d

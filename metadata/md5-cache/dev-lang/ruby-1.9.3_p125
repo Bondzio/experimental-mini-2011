@@ -10,5 +10,5 @@ PDEPEND=rdoc? ( >=dev-ruby/rdoc-3.9.4[ruby_targets_ruby19] ) xemacs? ( app-xemac
 RDEPEND=berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) ssl? ( dev-libs/openssl ) socks5? ( >=net-proxy/dante-1.1.13 ) tk? ( dev-lang/tk[threads] ) ncurses? ( sys-libs/ncurses ) readline? ( sys-libs/readline ) yaml? ( dev-libs/libyaml ) virtual/libffi sys-libs/zlib >=app-admin/eselect-ruby-20100402 !<dev-ruby/rdoc-3.9.4 !<dev-ruby/rubygems-1.8.10-r1
 SLOT=1.9
 SRC_URI=mirror://ruby/1.9/ruby-1.9.3-p125.tar.bz2 http://dev.gentoo.org/~flameeyes/ruby-team/ruby-patches-1.9.3_p125.tar.bz2
-_eclasses_=autotools	b69497a3955046f6a8b03804bda75562	eutils	ce5cc1452afda90c945acd9a5f3696ff	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=edfaeae362babf0cfce1c6c5030d686e
