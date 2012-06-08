@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-lang/perl dev-perl/gtk2-perl virtual/perl-MIME-Base64 || ( net-misc/wget dev-perl/AnyEvent-HTTP ) || ( ( dev-perl/GStreamer dev-perl/GStreamer-Interfaces media-plugins/gst-plugins-meta ) ( || ( media-video/mplayer media-video/mplayer2 ) ) ( media-sound/alsa-utils media-sound/flac123 || ( media-sound/mpg123 media-sound/mpg321 ) media-sound/vorbis-tools ) )
 SLOT=0
 SRC_URI=https://github.com/squentin/gmusicbrowser/tarball/3293bcbf09dce933b991a98cd5bfc333477e42a8 -> gmusicbrowser-1.1.9.1_pre20120526.tar.gz
-_eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	vcs-snapshot	da01f8084931ab770fd9ddf7e537a262
+_eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	vcs-snapshot	a77c7612241fd02b80445516cb8dd976
 _md5_=fd14d8d07659d5dc2c5d459e8b783899

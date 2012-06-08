@@ -1,7 +1,7 @@
 DEFINED_PHASES=configure install prepare
 DEPEND=>=dev-lang/tcl-8.4.6 tk? ( >=dev-lang/tk-8.4.6 )
 DESCRIPTION=A set of extensions to TCL
-EAPI=3
+EAPI=4
 HOMEPAGE=http://tclx.sourceforge.net
 IUSE=tk threads
 KEYWORDS=~alpha ~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~x86-macos
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/tclx/tclx8.4.tar.bz2
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=22cbf03f29e4bdbb196ac6f02e2a68f1
+_md5_=59eb8e7e646125e01c4524f51c11aca6

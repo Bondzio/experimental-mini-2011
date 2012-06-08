@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup
-DEPEND=java? ( >=virtual/jdk-1.4 ) bluetooth? ( net-wireless/bluez ) gpm? ( >=sys-libs/gpm-1.20 ) iconv? ( virtual/libiconv ) icu? ( dev-libs/icu ) nls? ( virtual/libintl ) python? ( >=dev-python/pyrex-0.9.4.1 ) tcl? ( >=dev-lang/tcl-8.4.15 ) usb? ( virtual/libusb:0 ) X? ( x11-libs/libXaw ) ocaml? ( >=dev-ml/findlib-1.0.4-r1 ) java? ( >=dev-java/java-config-2.1.9-r1 ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=java? ( >=virtual/jdk-1.4 ) bluetooth? ( net-wireless/bluez ) gpm? ( >=sys-libs/gpm-1.20 ) iconv? ( virtual/libiconv ) icu? ( dev-libs/icu ) nls? ( virtual/libintl ) python? ( >=dev-python/pyrex-0.9.4.1 ) tcl? ( >=dev-lang/tcl-8.4.15 ) usb? ( virtual/libusb:0 ) X? ( x11-libs/libXaw ) ocaml? ( >=dev-ml/findlib-1.0.4-r1 ) java? ( >=dev-java/java-config-2.1.9-r1 ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Daemon that provides access to the Linux/Unix console for a blind person
 EAPI=4
 HOMEPAGE=http://mielke.cc/brltty/
@@ -10,5 +10,5 @@ RDEPEND=java? ( >=virtual/jre-1.4 ) bluetooth? ( net-wireless/bluez ) gpm? ( >=s
 REQUIRED_USE=doc? ( api ) java? ( api ) ocaml? ( api ) python? ( api ) tcl? ( api )
 SLOT=0
 SRC_URI=http://mielke.cc/brltty/releases/brltty-4.2.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	findlib	9cf6020ee5481f39f1aa566a323f9868	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	findlib	9cf6020ee5481f39f1aa566a323f9868	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0d9e2dc70d8fab04719c7f8098951268

@@ -1,4 +1,4 @@
-DEFINED_PHASES=configure install postinst preinst
+DEFINED_PHASES=configure install postinst preinst prepare
 DESCRIPTION=small and fast portage helper tools written in C
 EAPI=3
 HOMEPAGE=http://www.gentoo.org/
@@ -8,4 +8,4 @@ LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://gentoo/portage-utils-0.10.tar.xz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e01c673723e7e86dd364b70fde824c39
+_md5_=23f166029682f1c9d1eed681b4d2cb33

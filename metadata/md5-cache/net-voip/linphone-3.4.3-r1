@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare setup
-DEPEND=>=media-libs/mediastreamer-2.7.3[video?,ipv6?] >=net-libs/libeXosip-3.0.2 >=net-libs/libosip-3.0.0 >=net-libs/ortp-0.16.3 gtk? ( dev-libs/glib:2 >=gnome-base/libglade-2.4.0:2.0 >=x11-libs/gtk+-2.4.0:2 ) ncurses? ( sys-libs/readline sys-libs/ncurses ) virtual/pkgconfig doc? ( app-text/sgmltools-lite ) nls? ( dev-util/intltool sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=media-libs/mediastreamer-2.7.3[video?,ipv6?] >=net-libs/libeXosip-3.0.2 >=net-libs/libosip-3.0.0 >=net-libs/ortp-0.16.3 gtk? ( dev-libs/glib:2 >=gnome-base/libglade-2.4.0:2.0 >=x11-libs/gtk+-2.4.0:2 ) ncurses? ( sys-libs/readline sys-libs/ncurses ) virtual/pkgconfig doc? ( app-text/sgmltools-lite ) nls? ( dev-util/intltool sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Video softphone based on the SIP protocol
 EAPI=4
 HOMEPAGE=http://www.linphone.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/mediastreamer-2.7.3[video?,ipv6?] >=net-libs/libeXosip-3.0.2 >=net-libs/libosip-3.0.0 >=net-libs/ortp-0.16.3 gtk? ( dev-libs/glib:2 >=gnome-base/libglade-2.4.0:2.0 >=x11-libs/gtk+-2.4.0:2 ) ncurses? ( sys-libs/readline sys-libs/ncurses )
 SLOT=0
 SRC_URI=mirror://nongnu/linphone/3.4.x/sources/linphone-3.4.3.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=f202953c5624bbb91cd19231cc7a5591

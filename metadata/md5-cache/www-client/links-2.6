@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare
-DEPEND=>=sys-libs/ncurses-5.7-r7 bzip2? ( app-arch/bzip2 ) directfb? ( dev-libs/DirectFB ) fbcon? ( >=media-libs/libpng-1.2:0 ) gpm? ( sys-libs/gpm ) jpeg? ( virtual/jpeg ) livecd? ( >=media-libs/libpng-1.2:0 sys-libs/gpm virtual/jpeg ) lzma? ( app-arch/xz-utils ) ssl? ( dev-libs/openssl:0 ) svga? ( >=media-libs/libpng-1.2:0 >=media-libs/svgalib-1.4.3 ) tiff? ( media-libs/tiff:0 ) X? ( >=media-libs/libpng-1.2:0 x11-libs/libXext ) zlib? ( sys-libs/zlib ) virtual/pkgconfig fbcon? ( virtual/os-headers ) livecd? ( virtual/os-headers ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=sys-libs/ncurses-5.7-r7 bzip2? ( app-arch/bzip2 ) directfb? ( dev-libs/DirectFB ) fbcon? ( >=media-libs/libpng-1.2:0 ) gpm? ( sys-libs/gpm ) jpeg? ( virtual/jpeg ) livecd? ( >=media-libs/libpng-1.2:0 sys-libs/gpm virtual/jpeg ) lzma? ( app-arch/xz-utils ) ssl? ( dev-libs/openssl:0 ) svga? ( >=media-libs/libpng-1.2:0 >=media-libs/svgalib-1.4.3 ) tiff? ( media-libs/tiff:0 ) X? ( >=media-libs/libpng-1.2:0 x11-libs/libXext ) zlib? ( sys-libs/zlib ) virtual/pkgconfig fbcon? ( virtual/os-headers ) livecd? ( virtual/os-headers ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A fast and lightweight web browser running in both graphics and text mode
 EAPI=4
 HOMEPAGE=http://links.twibright.com/
@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/ncurses-5.7-r7 bzip2? ( app-arch/bzip2 ) directfb? ( dev-libs
 REQUIRED_USE=!livecd? ( fbcon? ( gpm ) ) svga? ( suid )
 SLOT=2
 SRC_URI=http://links.twibright.com/download/links-2.6.tar.bz2 mirror://debian/pool/main/l/links2/links2_2.5-1.debian.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=618927fc1f9c2d8ce48fdf1fcc90da40

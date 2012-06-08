@@ -1,5 +1,5 @@
 DEFINED_PHASES=install prepare setup
-DEPEND=!<sci-chemistry/ccp4-6.1.2 sci-libs/ccp4-libs virtual/fortran virtual/lapack virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=!<sci-chemistry/ccp4-6.1.2 sci-libs/ccp4-libs virtual/fortran virtual/lapack virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Scale together multiple observations of reflections
 EAPI=4
 HOMEPAGE=http://www.ccp4.ac.uk/dist/html/scala.html
@@ -8,5 +8,5 @@ LICENSE=ccp4
 RDEPEND=!<sci-chemistry/ccp4-6.1.2 sci-libs/ccp4-libs virtual/fortran virtual/lapack
 SLOT=0
 SRC_URI=ftp://ftp.mrc-lmb.cam.ac.uk/pub/pre/scala-3.3.20.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
 _md5_=c6b6cdc95673f4a4cc16c94dfda65310

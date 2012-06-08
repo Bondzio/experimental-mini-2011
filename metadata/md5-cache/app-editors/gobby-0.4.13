@@ -4,11 +4,11 @@ DESCRIPTION=GTK-based collaborative editor
 EAPI=4
 HOMEPAGE=http://gobby.0x539.de/
 IUSE=avahi gnome
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ppc ~x86
 LICENSE=GPL-2
 RDEPEND=dev-cpp/glibmm:2 dev-cpp/gtkmm:2.4 dev-libs/libsigc++:2 >=net-libs/obby-0.4.6[avahi?] dev-cpp/libxmlpp:2.6 x11-libs/gtksourceview:2.0 gnome? ( gnome-base/gnome-vfs )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://releases.0x539.de/gobby/gobby-0.4.13.tar.gz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1845c8b844f161ac427c4594e4f9b90c
+_md5_=2928a09fbe6fc00014f7fd5ce1ef2945

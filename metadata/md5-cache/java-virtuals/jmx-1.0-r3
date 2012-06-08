@@ -4,9 +4,9 @@ DESCRIPTION=Virtual for Java Management Extensions (JMX)
 EAPI=4
 HOMEPAGE=http://www.gentoo.org
 IUSE=elibc_FreeBSD
-KEYWORDS=amd64 ~ppc ppc64 x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=amd64 ppc ppc64 x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=GPL-2
 RDEPEND=|| ( virtual/jre:1.7 virtual/jre:1.6 virtual/jre:1.5 dev-java/sun-jmx:0 ) >=dev-java/java-config-2.1.8 >=dev-java/java-config-2.1.6
 SLOT=0
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	java-virtuals-2	99b1a71af8f8c9fcbab6fe6bc4684a76	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=d5d32a870951bdc0b26d653de7894bf1
+_md5_=7406837f09dfe0ed9a01b9c997352cbc

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst setup
-DEPEND=dlna? ( media-libs/libdlna ) imagemagick? ( media-gfx/imagemagick ) transcode? ( media-video/ffmpeg ) faad? ( media-libs/faad2 ) flac? ( media-libs/flac ) gnome? ( gnome-base/gnome-panel ) virtual/libiconv lame? ( media-sound/lame ) mad? ( media-libs/libmad ) muse? ( media-sound/musepack-tools ) notify? ( x11-libs/libnotify ) taglib? ( media-libs/taglib ) twolame? ( media-sound/twolame ) >=dev-db/sqlite-3.2 dev-libs/libpcre dev-libs/libxml2 || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dlna? ( media-libs/libdlna ) imagemagick? ( media-gfx/imagemagick ) transcode? ( media-video/ffmpeg ) faad? ( media-libs/faad2 ) flac? ( media-libs/flac ) gnome? ( gnome-base/gnome-panel ) virtual/libiconv lame? ( media-sound/lame ) mad? ( media-libs/libmad ) muse? ( media-sound/musepack-tools ) notify? ( x11-libs/libnotify ) taglib? ( media-libs/taglib ) twolame? ( media-sound/twolame ) >=dev-db/sqlite-3.2 dev-libs/libpcre dev-libs/libxml2 || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Free UPnP Entertainment Service
 EAPI=2
 HOMEPAGE=http://fuppes.ulrich-voelkel.de/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dlna? ( media-libs/libdlna ) imagemagick? ( media-gfx/imagemagick ) transcode? ( media-video/ffmpeg )
 SLOT=0
 SRC_URI=mirror://sourceforge/fuppes/fuppes-0.660.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=0f9736122a671fa84505d8ad9467c71f

@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install postinst postrm prepare setup
-DEPEND=>=dev-libs/expat-2.0.0 >=dev-libs/glib-2.11.1 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.28[fontconfig,jpeg,png,truetype] >=media-libs/libpng-1.4 virtual/jpeg virtual/libiconv cairo? ( x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10[svg] ) gtk? ( x11-libs/gtk+:2 x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10 ) lasi? ( media-libs/lasi ) ruby? ( dev-lang/ruby ) tcl? ( >=dev-lang/tcl-8.3 ) virtual/pkgconfig sys-devel/flex java? ( dev-lang/swig ) nls? ( >=sys-devel/gettext-0.14.5 ) perl? ( dev-lang/swig ) python? ( dev-lang/swig ) ruby? ( dev-lang/swig ) tcl? ( dev-lang/swig ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* )
+DEPEND=>=dev-libs/expat-2.0.0 >=dev-libs/glib-2.11.1 >=media-libs/fontconfig-2.3.95 >=media-libs/freetype-2.1.10 >=media-libs/gd-2.0.28[fontconfig,jpeg,png,truetype] >=media-libs/libpng-1.4 virtual/jpeg virtual/libiconv cairo? ( x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10[svg] ) gtk? ( x11-libs/gtk+:2 x11-libs/libXaw >=x11-libs/pango-1.12 >=x11-libs/cairo-1.1.10 ) lasi? ( media-libs/lasi ) ruby? ( dev-lang/ruby ) tcl? ( >=dev-lang/tcl-8.3 ) virtual/pkgconfig sys-devel/flex java? ( dev-lang/swig ) nls? ( >=sys-devel/gettext-0.14.5 ) perl? ( dev-lang/swig ) python? ( dev-lang/swig ) ruby? ( dev-lang/swig ) tcl? ( dev-lang/swig ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* )
 DESCRIPTION=Open Source Graph Visualization Software
 EAPI=3
 HOMEPAGE=http://www.graphviz.org/
@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/expat-2.0.0 >=dev-libs/glib-2.11.1 >=media-libs/fontconfig-2.
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.graphviz.org/pub/graphviz/ARCHIVE/graphviz-2.26.3.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2f9158871aacf59f1beba60556a58787

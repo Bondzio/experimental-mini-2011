@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
-DEPEND=>=dev-libs/libprelude-0.9.9 mysql? ( virtual/mysql ) perl? ( dev-lang/perl ) postgres? ( dev-db/postgresql-server ) sqlite? ( =dev-db/sqlite-3* ) doc? ( dev-util/gtk-doc ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* )
+DEPEND=>=dev-libs/libprelude-0.9.9 mysql? ( virtual/mysql ) perl? ( dev-lang/perl ) postgres? ( dev-db/postgresql-server ) sqlite? ( =dev-db/sqlite-3* ) doc? ( dev-util/gtk-doc ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( =dev-lang/python-2* )
 DESCRIPTION=Prelude-IDS framework for easy access to the Prelude database
 EAPI=3
 HOMEPAGE=http://www.prelude-technologies.com
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/libprelude-0.9.9 mysql? ( virtual/mysql ) perl? ( dev-lang/perl ) postgres? ( dev-db/postgresql-server ) sqlite? ( =dev-db/sqlite-3* ) python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.prelude-technologies.com/download/releases/libpreludedb/libpreludedb-1.0.0.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	d052a37317f5a9a95691b3a91a1edb4d	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	d052a37317f5a9a95691b3a91a1edb4d	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=19a56f5ce72ba9671107bd244c075662

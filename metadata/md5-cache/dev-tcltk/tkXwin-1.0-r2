@@ -10,4 +10,4 @@ RDEPEND=dev-lang/tk[threads?] x11-libs/libX11 x11-libs/libXext x11-proto/scrnsav
 SLOT=0
 SRC_URI=http://beepcore-tcl.sourceforge.net/tkXwin-1.0.tgz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=954df0e686ba21bc5ed73483d0f5c740
+_md5_=bed2a8695964a147c9d9ef00531e530f

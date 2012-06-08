@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
-DEPEND=Xaw3d? ( x11-libs/libXaw3d ) x11-libs/libXpm x11-libs/libXaw x11-libs/libSM x11-libs/libX11 x11-libs/libXt x11-libs/libXmu x11-libs/libXext x11-libs/libICE default-font? ( media-fonts/font-adobe-100dpi ) x11-proto/xproto || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=Xaw3d? ( x11-libs/libXaw3d ) x11-libs/libXpm x11-libs/libXaw x11-libs/libSM x11-libs/libX11 x11-libs/libXt x11-libs/libXmu x11-libs/libXext x11-libs/libICE default-font? ( media-fonts/font-adobe-100dpi ) x11-proto/xproto || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GUI for gnuchess and for internet chess servers
 EAPI=2
 HOMEPAGE=http://www.gnu.org/software/xboard/
@@ -10,5 +10,5 @@ RDEPEND=Xaw3d? ( x11-libs/libXaw3d ) x11-libs/libXpm x11-libs/libXaw x11-libs/li
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnu/xboard/xboard-4.5.3a.tar.gz mirror://gentoo/xboard.png
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6a38cf8b12b21d3acd9ed5630d4aa932

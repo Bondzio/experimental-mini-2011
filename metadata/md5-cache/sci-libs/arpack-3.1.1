@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=virtual/fortran virtual/blas virtual/lapack mpi? ( virtual/mpi[fortran] ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=virtual/fortran virtual/blas virtual/lapack mpi? ( virtual/mpi[fortran] ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Arnoldi package library to solve large scale eigenvalue problems
 EAPI=4
 HOMEPAGE=http://www.caam.rice.edu/software/ARPACK/
@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=virtual/fortran virtual/blas virtual/lapack mpi? ( virtual/mpi[fortran] )
 SLOT=0
 SRC_URI=http://forge.scilab.org/upload/arpack-ng/files/arpack-ng_3.1.1.tar.gz doc? ( http://www.caam.rice.edu/software/ARPACK/SRC/ug.ps.gz http://www.caam.rice.edu/software/ARPACK/DOCS/tutorial.ps.gz )
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	autotools-utils	d4ce8e3b49c8b11780009aea5f82f99e	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	autotools-utils	d4ce8e3b49c8b11780009aea5f82f99e	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=242e504bc504fd549e9af8533f4bf2c0

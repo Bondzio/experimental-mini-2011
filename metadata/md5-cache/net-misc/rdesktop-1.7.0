@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=dev-libs/openssl-0.9.6b x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-libs/libXdmcp alsa? ( media-libs/alsa-lib ) ao? ( >=media-libs/libao-0.8.6 ) libsamplerate? ( media-libs/libsamplerate ) pcsc-lite? ( >=sys-apps/pcsc-lite-1.6.6 ) virtual/pkgconfig x11-libs/libXt || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/openssl-0.9.6b x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-libs/libXdmcp alsa? ( media-libs/alsa-lib ) ao? ( >=media-libs/libao-0.8.6 ) libsamplerate? ( media-libs/libsamplerate ) pcsc-lite? ( >=sys-apps/pcsc-lite-1.6.6 ) virtual/pkgconfig x11-libs/libXt || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A Remote Desktop Protocol Client
 EAPI=2
 HOMEPAGE=http://rdesktop.sourceforge.net/
@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-libs/openssl-0.9.6b x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-libs/libXdmcp alsa? ( media-libs/alsa-lib ) ao? ( >=media-libs/libao-0.8.6 ) libsamplerate? ( media-libs/libsamplerate ) pcsc-lite? ( >=sys-apps/pcsc-lite-1.6.6 )
 SLOT=0
 SRC_URI=mirror://sourceforge/rdesktop/rdesktop-1.7.0.tar.gz
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=4c715c71a9045a89f7a6ae87b65e5f53

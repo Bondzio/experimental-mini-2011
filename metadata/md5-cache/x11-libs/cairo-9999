@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare unpack
-DEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 directfb? ( dev-libs/DirectFB ) glib? ( >=dev-libs/glib-2.28.6:2 ) opengl? ( virtual/opengl ) openvg? ( media-libs/mesa[openvg] ) qt4? ( >=x11-libs/qt-gui-4.8:4 ) svg? ( dev-libs/libxml2 ) X? ( >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libXft drm? ( >=sys-fs/udev-136 gallium? ( media-libs/mesa[gallium] ) ) ) xcb? ( x11-libs/libxcb x11-libs/xcb-util ) virtual/pkgconfig >=sys-devel/libtool-2 doc? ( >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 ) X? ( x11-proto/renderproto drm? ( x11-proto/xproto >=x11-proto/xextproto-7.1 ) ) || ( >=sys-devel/automake-1.11.1:1.11 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
+DEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 directfb? ( dev-libs/DirectFB ) glib? ( >=dev-libs/glib-2.28.6:2 ) opengl? ( virtual/opengl ) openvg? ( media-libs/mesa[openvg] ) qt4? ( >=x11-libs/qt-gui-4.8:4 ) svg? ( dev-libs/libxml2 ) X? ( >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libXft drm? ( >=sys-fs/udev-136 gallium? ( media-libs/mesa[gallium] ) ) ) xcb? ( x11-libs/libxcb x11-libs/xcb-util ) virtual/pkgconfig >=sys-devel/libtool-2 doc? ( >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 ) X? ( x11-proto/renderproto drm? ( x11-proto/xproto >=x11-proto/xextproto-7.1 ) ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
 DESCRIPTION=A vector graphics library with cross-device output support
 EAPI=4
 HOMEPAGE=http://cairographics.org/
@@ -10,5 +10,5 @@ RDEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs
 REQUIRED_USE=drm? ( X ) gallium? ( drm )
 RESTRICT=test
 SLOT=0
-_eclasses_=autotools	4e509fcd12ae437fba4665f2d04f0cf8	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ae42b3a0266f64436bb794e33544bf20
