@@ -1,9 +1,9 @@
 DEFINED_PHASES=install unpack
 DESCRIPTION=Manages Ruby on Rails symlinks
 HOMEPAGE=http://www.gentoo.org/
-KEYWORDS=amd64 ~ia64 ppc ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=amd64 ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=GPL-2
 RDEPEND=>=app-admin/eselect-1.2.0
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~flameeyes/ruby-team/eselect-rails-0.18.tar.bz2
-_md5_=0dc13a7876ff0eec1483c3a8194e07e4
+_md5_=630ca1cd9ff2b5aaa636324276db376d

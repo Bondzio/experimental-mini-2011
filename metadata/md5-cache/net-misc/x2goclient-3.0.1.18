@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=net-libs/libssh net-print/cups x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap )
+DEPEND=net-libs/libssh net-print/cups x11-libs/qt-core:4[ssl] x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap )
 DESCRIPTION=The X2Go Qt client
 EAPI=4
 HOMEPAGE=http://www.x2go.org
 IUSE=ldap
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=net-libs/libssh net-print/cups x11-libs/qt-core:4 x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap ) net-misc/nx
+RDEPEND=net-libs/libssh net-print/cups x11-libs/qt-core:4[ssl] x11-libs/qt-gui:4 x11-libs/qt-svg:4 ldap? ( net-nds/openldap ) net-misc/nx
 SLOT=0
 SRC_URI=http://code.x2go.org/releases/source/x2goclient/x2goclient_3.0.1.18.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=a0eb87167b9afc2eb1ea00fd082d1f90
+_md5_=94a0ec04f76a4b80b2477b62f81d44bf

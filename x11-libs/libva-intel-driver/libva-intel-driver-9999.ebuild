@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/libva-intel-driver/libva-intel-driver-9999.ebuild,v 1.2 2012/05/05 03:52:27 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libva-intel-driver/libva-intel-driver-9999.ebuild,v 1.3 2012/06/08 15:31:07 aballier Exp $
 
 EAPI="3"
 
@@ -33,7 +33,7 @@ else
 fi
 IUSE=""
 
-RDEPEND=">=x11-libs/libva-1.0.14
+RDEPEND=">=x11-libs/libva-1.1.0
 	!<x11-libs/libva-1.0.15[video_cards_intel]
 	>=x11-libs/libdrm-2.4.23[video_cards_intel]"
 

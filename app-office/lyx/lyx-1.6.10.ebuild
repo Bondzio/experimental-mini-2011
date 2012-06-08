@@ -1,12 +1,12 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/lyx/lyx-1.6.10.ebuild,v 1.10 2012/05/03 20:00:39 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/lyx/lyx-1.6.10.ebuild,v 1.12 2012/06/08 15:45:26 hasufell Exp $
 
 EAPI=2
 
 PYTHON_DEPEND="2"
 
-inherit qt4-r2 eutils flag-o-matic font python toolchain-funcs
+inherit gnome2-utils qt4-r2 eutils flag-o-matic font python toolchain-funcs
 
 MY_P="${P/_}"
 
@@ -124,8 +124,8 @@ src_install() {
 		doins "${T}"/hebrew.bind || die
 	fi
 
-	doicon ${PN} "$S/development/Win32/packaging/icons/lyx_32x32.png"
-	make_desktop_entry ${PN} "LyX" "/usr/share/pixmaps/lyx_32x32.png" "Office" "MimeType=application/x-lyx;"
+	newicon -s 32 "$S/development/Win32/packaging/icons/lyx_32x32.png" ${PN}.png
+	make_desktop_entry ${PN} "LyX" "${PN}" "Office" "MimeType=application/x-lyx;"
 
 	# fix for bug 91108
 	if use latex ; then
@@ -138,8 +138,13 @@ src_install() {
 	python_convert_shebangs -r 2 "${D}"/usr/share/${PN}
 }
 
+pkg_preinst() {
+	gnome2_icon_savelist
+}
+
 pkg_postinst() {
 	font_pkg_postinst
+	gnome2_icon_cache_update
 
 	# fix for bug 91108
 	if use latex ; then
@@ -159,6 +164,8 @@ pkg_postinst() {
 }
 
 pkg_postrm() {
+	gnome2_icon_cache_update
+
 	if use latex ; then
 		texhash
 	fi
