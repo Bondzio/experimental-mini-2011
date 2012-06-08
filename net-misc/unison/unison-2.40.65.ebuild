@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/unison/unison-2.40.65.ebuild,v 1.1 2012/06/06 16:36:31 heroxbd Exp $
 
 EAPI="2"
 
@@ -12,7 +12,7 @@ DESCRIPTION="Two-way cross-platform file synchronizer"
 HOMEPAGE="http://www.cis.upenn.edu/~bcpierce/unison/"
 LICENSE="GPL-2"
 SLOT="$(get_version_component_range 1-2 ${PV})"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris"
+KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris"
 
 # ocaml version so we are sure it has ocamlopt use flag
 DEPEND=">=dev-lang/ocaml-3.10.2[ocamlopt?]
@@ -52,9 +52,6 @@ src_compile() {
 	fi
 
 	use ocamlopt || myconf="$myconf NATIVE=false"
-
-	emake clean || die "error cleaning"
-	emake mkProjectInfo || die "error preparing"
 
 	# Discard cflags as it will try to pass them to ocamlc...
 	emake $myconf CFLAGS="" buildexecutable || die "error making unsion"
