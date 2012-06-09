@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=dev-lang/php[sockets] dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Net_DNS2-1.2.0.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=9cc47360e9cf07af474edaf7f3b1e2f0

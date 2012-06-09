@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=qt4? ( x11-libs/qt-gui:4 ) latex? ( app-text/texlive-core dev-texlive/texlive-genericrecommended dev-texlive/texlive-fontsrecommended dev-texlive/texlive-latexrecommended dev-texlive/texlive-fontsextra dev-texlive/texlive-latexextra ) dev-lang/python virtual/libiconv media-libs/libpng app-text/ghostscript-gpl !nodot? ( >=media-gfx/graphviz-2.6 media-libs/freetype )
 SLOT=0
 SRC_URI=http://ftp.stack.nl/pub/users/dimitri/doxygen-1.5.8.src.tar.gz http://dev.gentoo.org/~xarthisius/distfiles/doxywizard.png
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=79303dabaa3b9202d4db89e803fe3515

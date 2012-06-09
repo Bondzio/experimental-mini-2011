@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-3.0
 SLOT=0
 SRC_URI=http://llvm.org/releases/3.0/dragonegg-3.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=f16478bc48434144d68de5b5153681c3

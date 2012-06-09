@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND==www-servers/apache-2*
 SLOT=2
 SRC_URI=http://www.snert.com/Software/download/mod_loopback201.tgz
-_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=7da5d771d12eb9ffbfc2c0e708cf4b7e

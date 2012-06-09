@@ -9,5 +9,5 @@ RDEPEND=!minimal? ( || ( x11-themes/tango-icon-theme x11-themes/gnome-icon-theme
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=http://www.silvestre.com.ar/icons/Nou-090208.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0156218cfe880987707be1eec46ed6ca

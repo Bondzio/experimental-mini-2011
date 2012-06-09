@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND==dev-libs/glib-2* >=dev-libs/libxml2-2.4.23 >=dev-libs/popt-1.5
 SLOT=0
 SRC_URI=mirror://sourceforge/libots/ots-0.5.0.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2ff2882fda77e269be988089e6ebaaee

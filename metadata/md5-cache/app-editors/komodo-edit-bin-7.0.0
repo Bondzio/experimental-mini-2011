@@ -10,5 +10,5 @@ RDEPEND=virtual/jpeg virtual/libc
 RESTRICT=mirror
 SLOT=0
 SRC_URI=x86? ( http://downloads.activestate.com/Komodo/releases/7.0.0/Komodo-Edit-7.0.0-9615-linux-x86.tar.gz ) amd64? ( http://downloads.activestate.com/Komodo/releases/7.0.0/Komodo-Edit-7.0.0-9615-linux-x86_64.tar.gz )
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fc0ad1f949ec56070d6880618769f644

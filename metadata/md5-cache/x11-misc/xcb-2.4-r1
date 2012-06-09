@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=x11-libs/libX11 x11-libs/libXt x11-libs/libXaw x11-libs/libXext
 SLOT=0
 SRC_URI=http://oldhome.schmorp.de/marc/data/xcb-2.4.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=61af04b896f8c1d1c74239c374cffdc8

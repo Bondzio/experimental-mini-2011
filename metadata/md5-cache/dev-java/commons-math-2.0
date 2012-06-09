@@ -9,5 +9,5 @@ LICENSE=Apache-2.0
 RDEPEND=>=virtual/jre-1.5 >=dev-java/commons-discovery-0.2:0 >=dev-java/commons-logging-1.0.3:0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=2
 SRC_URI=mirror://apache/commons/math/source/commons-math-2.0-src.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b602b9d050cccc85c36193b7c06d5a54

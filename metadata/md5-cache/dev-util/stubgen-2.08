@@ -6,5 +6,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=BSD
 SLOT=0
 SRC_URI=http://www.radwin.org/michael/projects/stubgen/dist/stubgen-2.08.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=5e538d1a37e3f14ca07329e7e25ab9d4

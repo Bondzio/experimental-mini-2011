@@ -6,5 +6,5 @@ KEYWORDS=amd64 x86
 LICENSE=as-is
 SLOT=0
 SRC_URI=http://www.threewave.com/quake1/files/3wctf301.zip http://www.threewave.com/quake1/files/3wctfc40.zip http://www.threewave.com/quake1/files/ctfepc14.zip http://www.threewave.com/quake1/files/alst101c.zip http://www.threewave.com/quake1/files/alst110u.zip
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=44b61afa1cd866833740b76e2a71c7fc

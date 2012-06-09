@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=ssl? ( dev-libs/openssl ) !<=dev-libs/9libs-1.0
 SLOT=0
 SRC_URI=mirror://sourceforge/levent/files/libevent-2.0.17-stable.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=e9e76b015a17e4b7ae6eab4f61f919ec

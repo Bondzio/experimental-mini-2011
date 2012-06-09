@@ -6,5 +6,5 @@ KEYWORDS=~x86
 LICENSE=7plus
 SLOT=0
 SRC_URI=http://home.t-online.de/home/dg1bbq/7pl225sr.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=ed9353f9a0bfd0bc4dd52dcdc35d88a3

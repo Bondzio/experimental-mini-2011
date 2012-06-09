@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-2 BSD )
 RDEPEND=dbus? ( sys-apps/dbus ) kernel_linux? ( eap-sim? ( sys-apps/pcsc-lite ) madwifi? ( >net-wireless/madwifi-ng-tools-0.9.3 ) dev-libs/libnl:1.1 ) !kernel_linux? ( net-libs/libpcap ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-svg:4 ) readline? ( sys-libs/ncurses sys-libs/readline ) ssl? ( dev-libs/openssl ) !ssl? ( gnutls? ( net-libs/gnutls ) ) !ssl? ( !gnutls? ( dev-libs/libtommath ) ) selinux? ( sec-policy/selinux-networkmanager )
 SLOT=0
 SRC_URI=http://hostap.epitest.fi/releases/wpa_supplicant-0.7.3.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5b1c7e713bec6a4c8a8e5f6d3cc85142

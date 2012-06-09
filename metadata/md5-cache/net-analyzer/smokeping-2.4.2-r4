@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl virtual/perl-libnet >=net-analyzer/rrdtool-1.2[perl] >=net-analyzer/fping-2.4_beta2-r2 dev-perl/Config-Grammar dev-perl/Digest-HMAC dev-perl/libwww-perl dev-perl/CGI-Session >=dev-perl/SNMP_Session-1.13 >=dev-perl/Socket6-0.20 dev-perl/Net-DNS speedy? ( dev-perl/SpeedyCGI ) !apache2? ( virtual/httpd-cgi ) apache2? ( >=www-apache/mod_perl-2.0.1 ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=http://oss.oetiker.ch/smokeping/pub/smokeping-2.4.2.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=3539319976a826185162546696cc8653

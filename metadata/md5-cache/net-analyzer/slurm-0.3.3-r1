@@ -3,9 +3,9 @@ DEPEND=sys-libs/ncurses || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automa
 DESCRIPTION=Realtime network interface monitor based on FreeBSD's pppstatus
 EAPI=4
 HOMEPAGE=http://www.wormulon.net/projects/slurm
-KEYWORDS=amd64 ~ppc ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~sparc x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://www.wormulon.net/files/code/slurm/slurm-0.3.3.tar.gz
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ad3a67e97e9a79b43c1f0d56f1eff704
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=3f249f111979135e62aac766bf421096

@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=dev-lang/ruby dev-ruby/rubygems dev-ruby/msgpack gui? ( virtual/jre ) mysql? ( dev-ruby/mysql-ruby dev-ruby/activerecord[mysql] ) postgres? ( dev-ruby/ruby-postgres dev-ruby/activerecord[postgres] )
 SLOT=4.3
 SRC_URI=http://updates.metasploit.com/data/releases/framework-4.3.0.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=27bb0ec79fd186ffea3f2c2628b34ac0

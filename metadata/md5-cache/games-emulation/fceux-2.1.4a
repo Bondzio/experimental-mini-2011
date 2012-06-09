@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=lua? ( dev-lang/lua ) media-libs/libsdl[opengl?,video] opengl? ( virtual/opengl ) x11-libs/gtk+:2 sys-libs/zlib gnome-extra/zenity
 SLOT=0
 SRC_URI=mirror://sourceforge/fceultra/fceux-2.1.4a.src.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f1caacf2d964270a2b039d5fd00d64e8

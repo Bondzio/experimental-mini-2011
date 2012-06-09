@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=caps? ( sys-libs/libcap ) snmp? ( net-analyzer/net-snmp ) readline? ( sys-libs/readline pam? ( sys-libs/pam ) ) !elibc_glibc? ( dev-libs/libpcre ) sys-apps/openrc sys-apps/iproute2
 SLOT=0
 SRC_URI=http://www.quagga.net/download/quagga-0.99.20.tar.gz http://dev.gentoo.org/~flameeyes/quagga/quagga-0.99.20-backports-1.tar.bz2 bgpclassless? ( http://hasso.linux.ee/stuff/patches/quagga/ht-20040304-classless-bgp.patch )
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=8c7812546059cb75ba755952d60800cf

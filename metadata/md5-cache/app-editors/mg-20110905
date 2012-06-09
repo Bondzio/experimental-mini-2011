@@ -9,5 +9,5 @@ LICENSE=public-domain BSD
 RDEPEND=sys-libs/ncurses
 SLOT=0
 SRC_URI=http://homepage.boetes.org/software/mg/mg-20110905.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=f07d3cc33a55ee0d014ca6fbca20b87c

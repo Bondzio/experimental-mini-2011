@@ -6,5 +6,5 @@ KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=richardson
 SLOT=0
 SRC_URI=http://kinemage.biochem.duke.edu/downloads/software/suitename/suitename.0.3.070628.src.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=1dd7978839ab21c44aa407a9115a7aab

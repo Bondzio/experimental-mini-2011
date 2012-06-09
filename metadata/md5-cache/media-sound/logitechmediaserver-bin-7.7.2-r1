@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=!prefix? ( >=sys-apps/baselayout-2.0.0 ) !prefix? ( virtual/logger ) >=dev-lang/perl-5.8.8[ithreads] >=dev-perl/Data-UUID-1.202
 SLOT=0
 SRC_URI=http://downloads.slimdevices.com/LogitechMediaServer_v7.7.2/logitechmediaserver-7.7.2.tgz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=50a0f5026df8f57741e17cbd6d9d0dd1

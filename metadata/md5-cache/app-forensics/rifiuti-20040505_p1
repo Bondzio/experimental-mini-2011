@@ -5,5 +5,5 @@ KEYWORDS=~ppc x86
 LICENSE=as-is
 SLOT=0
 SRC_URI=mirror://sourceforge/odessa/rifiuti_20040505_1.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=3d1281273b9ee97cb5996832f1d1545c

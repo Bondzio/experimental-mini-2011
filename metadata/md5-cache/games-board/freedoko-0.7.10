@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=net? ( net-libs/gnet ) >=dev-cpp/gtkmm-2.4:2.4
 SLOT=0
 SRC_URI=mirror://sourceforge/free-doko/FreeDoko_0.7.10.src.zip doc? ( mirror://sourceforge/free-doko/FreeDoko_0.7.10.manual.zip ) backgrounds? ( mirror://sourceforge/free-doko/backgrounds.zip -> freedoko-backgrounds.zip ) kdecards? ( mirror://sourceforge/free-doko/kdecarddecks.zip ) xskatcards? ( mirror://sourceforge/free-doko/xskat.zip ) pysolcards? ( mirror://sourceforge/free-doko/pysol.zip ) gnomecards? ( mirror://sourceforge/free-doko/gnome-games.zip ) openclipartcards? ( mirror://sourceforge/free-doko/openclipart.zip ) !xskatcards? ( !kdecards? ( !gnomecards? ( !openclipartcards? ( !pysolcards? ( mirror://sourceforge/free-doko/xskat.zip ) ) ) ) )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	81964dcd902c8f9d7ea64cb18295a13b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9d75406f5f1ad5e4405764b897c0ac9b

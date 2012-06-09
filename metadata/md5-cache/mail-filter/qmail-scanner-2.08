@@ -10,5 +10,5 @@ RDEPEND=dev-lang/perl virtual/perl-Time-HiRes net-mail/tnef virtual/perl-DB_File
 RESTRICT=userpriv
 SLOT=0
 SRC_URI=mirror://sourceforge/qmail-scanner/2.08/qmail-scanner-2.08.tgz http://toribio.apollinare.org/qmail-scanner/download/q-s-2.08st-20091012.patch.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c0a84abebc26989a7f93225cc7f7c833

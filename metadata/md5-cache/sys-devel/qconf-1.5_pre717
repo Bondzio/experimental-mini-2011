@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/qt-core
 SLOT=0
 SRC_URI=http://delta.affinix.com/download/qconf-1.5_pre717.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=d64d623bd6f513c4d61e885aaf9aacb3
