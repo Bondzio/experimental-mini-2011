@@ -7,5 +7,5 @@ LICENSE=|| ( Artistic GPL-2 )
 RDEPEND=dev-lang/perl dev-perl/Clone dev-perl/Exception-Class dev-perl/TermReadKey dev-perl/TeX-Encode dev-perl/XML-Generator dev-perl/XML-DOM dev-perl/XML-Twig dev-perl/encoding-warnings perl-core/Switch sci-visualization/gnuplot virtual/perl-Encode virtual/perl-Time-HiRes !dev-perl/Lab-Instrument !dev-perl/Lab-Tools
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/A/AK/AKHUETTEL/Lab-Measurement-2.94.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	perl-module	d052a37317f5a9a95691b3a91a1edb4d	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6aa902c145e55377cd143a16c59422a4

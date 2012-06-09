@@ -7,6 +7,5 @@ IUSE=jpeg png static-libs tiff
 LICENSE=GPL-2
 RDEPEND=app-text/ghostscript-gpl app-text/poppler[jpeg?,lcms,tiff?] media-libs/fontconfig media-libs/freetype:2 media-libs/lcms:2 >net-print/cups-1.5.9999 sys-libs/zlib jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff )
 SLOT=0
-SRC_URI=dev.gentooexperimental.org/~scarabeus/build_fixes.patch
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bzr	ec4306b727be7630f6d5abaf08c8b818	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	f71b9936acc911ed1cc84557d3b5c2b3	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=75211e634dc5b82fbfbf67909bc22b15
+_md5_=7a0701b0b6de4c6afbcc4fbd661cf18b
