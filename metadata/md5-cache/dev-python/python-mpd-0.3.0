@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://pypi/p/python-mpd/python-mpd-0.3.0.tar.bz2
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
 _md5_=87ce6300786f90d459e3bc9971a19622

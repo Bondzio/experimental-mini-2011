@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.schwarzvogel.de/pkgs/pymetar-0.16.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
 _md5_=fbf99a5158b0930378e82da8ff1ee734

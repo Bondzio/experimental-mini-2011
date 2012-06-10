@@ -7,5 +7,5 @@ IUSE=doc test
 LICENSE=GPL-2
 RDEPEND=>=dev-python/docutils-0.8 >=dev-python/flask-0.7 >=dev-python/flask-babel-0.7 >=dev-python/flask-script-0.3 >=dev-python/frozen-flask-0.7 >=dev-python/jinja-2.5.2 >=dev-vcs/mercurial-1.6 dev-python/pyyaml dev-python/setuptools dev-python/pygments || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	mercurial	add64e64d758a9618d46a08a95f77483	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	mercurial	add64e64d758a9618d46a08a95f77483	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=622c1af5372f8703632944d7e6d1e048

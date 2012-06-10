@@ -8,5 +8,5 @@ LICENSE=|| ( BSD LGPL-2.1 GPL-2 )
 RDEPEND=>=app-text/mecab-0.991 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://mecab.googlecode.com/files/mecab-python-0.991.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
 _md5_=0b294a9aec8ade47bb645c3ea376619b

@@ -10,4 +10,4 @@ RDEPEND=dev-perl/File-Which !prefix? ( virtual/logger ) virtual/mysql >=dev-lang
 SLOT=0
 SRC_URI=http://downloads.slimdevices.com/SqueezeboxServer_v7.5.1/squeezeboxserver-7.5.1-noCPAN.tgz mirror://gentoo/SqueezeboxServer-EV-3.8.tar.gz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=4dd75419647661276e7a0a67a623dc85
+_md5_=3c8667f4323c75353f44026b72d22197

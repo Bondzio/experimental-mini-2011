@@ -10,5 +10,5 @@ RDEPEND=net-zope/namespaces-zope[Products,python_abis_2.6?,python_abis_2.7?] dev
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=http://www.issuetrackerproduct.com/Download/IssueTrackerProduct-0.13.0.tgz
-_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=python	d6f9ee981da60667109667134d766474
 _md5_=12ccca76f59ddf15bee4af90a237b6cc

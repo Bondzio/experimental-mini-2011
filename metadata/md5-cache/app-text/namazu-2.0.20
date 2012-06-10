@@ -3,10 +3,10 @@ DEPEND=>=dev-perl/File-MMagic-1.20 emacs? ( virtual/emacs ) linguas_ja? ( app-i1
 DESCRIPTION=Namazu is a full-text search engine
 HOMEPAGE=http://www.namazu.org/
 IUSE=emacs nls tk linguas_ja
-KEYWORDS=amd64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=>=dev-perl/File-MMagic-1.20 emacs? ( virtual/emacs ) linguas_ja? ( app-i18n/nkf || ( dev-perl/Text-Kakasi app-i18n/kakasi app-text/chasen app-text/mecab ) ) nls? ( virtual/libintl ) tk? ( dev-lang/tk www-client/lynx )
 SLOT=0
 SRC_URI=http://www.namazu.org/stable/namazu-2.0.20.tar.gz
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b5d387dd305b87885dd53aa368f58fff
+_md5_=0ec9f6a2928a5a86512dc72369a62685

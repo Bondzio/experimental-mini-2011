@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.6 >=x11-libs/libcompizconfig-0.8.4 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://releases.compiz.org/0.8.4/compizconfig-python-0.8.4.tar.bz2
-_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=python	d6f9ee981da60667109667134d766474
 _md5_=84b1a0b165daefa0178fb0e144a42b07

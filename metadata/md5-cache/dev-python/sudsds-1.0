@@ -9,5 +9,5 @@ LICENSE=LGPL-3
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.nic.cz/public_media/datove_schranky/releases/datovka-2.0/src/sudsds-1.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
 _md5_=3b7fcb4d92a5497d088cee5c19aec9ab

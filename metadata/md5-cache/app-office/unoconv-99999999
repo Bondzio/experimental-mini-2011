@@ -6,5 +6,5 @@ HOMEPAGE=http://dag.wieers.com/home-made/unoconv/
 LICENSE=GPL-2
 RDEPEND=!app-text/odt2txt virtual/ooo =dev-lang/python-2*
 SLOT=0
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=11105a09e5f8b55c2f3dd4cdcf1b40f2

@@ -10,4 +10,4 @@ RDEPEND=!prefix? ( >=sys-apps/baselayout-2.0.0 ) dev-perl/File-Which !prefix? ( 
 SLOT=0
 SRC_URI=http://downloads.slimdevices.com/SqueezeboxServer_v7.5.4/squeezeboxserver-7.5.4-noCPAN.tgz mirror://gentoo/SqueezeboxServer-EV-3.8.tar.gz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=99c08ca131bf1ddd334453ff53f65021
+_md5_=04644ec01c0a6c59aa1cbbc507f088d3

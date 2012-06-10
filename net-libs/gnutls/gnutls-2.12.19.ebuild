@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/gnutls/gnutls-2.12.19.ebuild,v 1.3 2012/05/28 08:02:05 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/gnutls/gnutls-2.12.19.ebuild,v 1.5 2012/06/10 05:24:41 radhermit Exp $
 
 EAPI=4
 
@@ -73,6 +73,7 @@ src_prepare() {
 
 	for dir in . lib libextra; do
 		pushd "${dir}" > /dev/null
+		sed -i -e '/^AM_INIT_AUTOMAKE/s/-Werror//' configure.ac || die
 		eautoreconf
 		popd > /dev/null
 	done

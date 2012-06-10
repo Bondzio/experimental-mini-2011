@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/openssl-1.0.0b >=dev-libs/protobuf-2.2.0 sys-apps/lsb-release
 SLOT=0
 SRC_URI=mirror://sourceforge/mumble/mumble-1.2.3.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=7a388dfcba37f463439f97bd81b618f1
+_md5_=59f6b01099f5b2876f9cb8002847dd85

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-portage/gentoolkit-0.3.0.5 >=sys-apps/portage-2.1.10.49 || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=http://www.mpagano.com/downloads/portpeek-2.0.24.tar.gz
-_eclasses_=python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=python	d6f9ee981da60667109667134d766474
 _md5_=4297b806de691078d6eccb717c2618a4

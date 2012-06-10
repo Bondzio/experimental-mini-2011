@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/glib-2.22 >=x11-libs/gtk+-2.22.0:2 >=gnome-base/libglade-2.6.
 RESTRICT=test
 SLOT=4.0
 SRC_URI=mirror://gnome/sources/java-gnome/4.0/java-gnome-4.0.19.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=509b54f406084110412c8c08c60adba1

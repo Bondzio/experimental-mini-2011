@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=|| ( GPL-2 GPL-3 )
 RDEPEND=app-portage/layman =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	python	d6f9ee981da60667109667134d766474
 _md5_=92d9de3e66969e180b33e25bacd4bc8a

@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install prepare unpack
+DEFINED_PHASES=compile configure install prepare setup unpack
 DEPEND=doc? ( app-doc/doxygen app-text/docbook-sgml-utils ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Cal3D is a skeletal based character animation library
 EAPI=2
@@ -9,4 +9,4 @@ LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=http://download.gna.org/cal3d/sources/cal3d-0.11.0.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=b3e046db4b320195d37f577f99a3ff42
+_md5_=5a762acdbbc86e5d63f6166f3fef5a2a

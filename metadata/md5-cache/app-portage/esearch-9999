@@ -7,5 +7,5 @@ IUSE=linguas_fr linguas_it
 LICENSE=GPL-2
 RDEPEND=sys-apps/portage dev-lang/python[readline] dev-lang/python dev-lang/python[readline]
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	f03f1574097baefd8a721fd06e4d55e7
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	d6f9ee981da60667109667134d766474
 _md5_=85371deb88df7e01c07fca3684fac6c6

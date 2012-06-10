@@ -1,12 +1,11 @@
-DEFINED_PHASES=install unpack
-DEPEND=app-text/asciidoc dev-vcs/git
-DESCRIPTION=Manual tiling window manager for X11 using Xlib and Glib
-EAPI=3
-HOMEPAGE=http://wwwcip.cs.fau.de/~re06huxa/herbstluftwm
-IUSE=doc zsh-completion bash-completion
-KEYWORDS=~amd64 ~x86
+DEFINED_PHASES=compile install prepare unpack
+DEPEND=>=dev-libs/glib-2.24:2 x11-libs/libX11 xinerama? ( x11-libs/libXinerama ) app-text/asciidoc virtual/pkgconfig dev-vcs/git
+DESCRIPTION=A manual tiling window manager for X
+EAPI=4
+HOMEPAGE=http://wwwcip.cs.fau.de/~re06huxa/herbstluftwm/
+IUSE=examples xinerama zsh-completion
 LICENSE=BSD-2
-RDEPEND=app-text/asciidoc x11-libs/libX11
+RDEPEND=>=dev-libs/glib-2.24:2 x11-libs/libX11 xinerama? ( x11-libs/libXinerama ) app-shells/bash zsh-completion? ( app-shells/zsh )
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=29ab116f8241e19888d84f01923dc0b3
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=a953b8200ffe90ac773b909df55c5836

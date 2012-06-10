@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/pygtk:2 ~sys-apps/entropy-1.0_rc90 sys-apps/file[python] sys-devel/gettext x11-libs/vte:0[python] x11-misc/xdg-utils =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sabayon/sys-apps/entropy-1.0_rc90.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	python	f03f1574097baefd8a721fd06e4d55e7	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5f0e76aa8c098ea38679487790bc499c

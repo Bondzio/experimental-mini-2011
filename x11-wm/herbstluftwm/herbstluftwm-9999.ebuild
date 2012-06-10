@@ -1,53 +1,57 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/herbstluftwm/herbstluftwm-9999.ebuild,v 1.3 2012/06/09 23:55:20 radhermit Exp $
 
-EAPI=3
+EAPI=4
 
-inherit git-2
+inherit eutils toolchain-funcs bash-completion-r1 git-2
 
-DESCRIPTION="Manual tiling window manager for X11 using Xlib and Glib"
-HOMEPAGE="http://wwwcip.cs.fau.de/~re06huxa/herbstluftwm"
 EGIT_REPO_URI="git://git.informatik.uni-erlangen.de/re06huxa/herbstluftwm"
-EGIT_PROJECT="herbstluftwm"
+
+DESCRIPTION="A manual tiling window manager for X"
+HOMEPAGE="http://wwwcip.cs.fau.de/~re06huxa/herbstluftwm/"
 SRC_URI=""
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE="doc zsh-completion bash-completion"
+KEYWORDS=""
+IUSE="examples xinerama zsh-completion"
 
-DEPEND="app-text/asciidoc"
-RDEPEND="${DEPEND}
-		x11-libs/libX11"
+CDEPEND=">=dev-libs/glib-2.24:2
+	x11-libs/libX11
+	xinerama? ( x11-libs/libXinerama )"
+RDEPEND="${CDEPEND}
+	app-shells/bash
+	zsh-completion? ( app-shells/zsh )"
+DEPEND="${CDEPEND}
+	app-text/asciidoc
+	virtual/pkgconfig"
 
-src_install() {
-	dobin ipc-client/herbstclient || die
-	doman doc/herbstclient.1 \
-		doc/herbstluftwm.1 || die
-
-	insinto /etc/xdg/${PN}
-	doins share/autostart \
-		share/panel.sh \
-		share/restartpanels.sh || die
-
-	insinto /usr/share/${PN}
-	doins -r scripts/ || die
-
-	if use zsh-completion; then
-		insinto /usr/share/zsh/site-functions/
-		doins share/_herbstclient || die
-	fi
-
-	if use bash-completion; then
-		insinto /etc/bash_completion.d/
-		doins share/herbstclient-completion || die
-	fi
-
-	if use doc; then
-		dodoc doc/herbstclient.html \
-			doc/herbstluftwm.html || die
-	fi
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-install.patch
 }
 
+src_compile() {
+	emake -j1 CC="$(tc-getCC)" LD="$(tc-getCC)" COLOR=0 VERBOSE= \
+		$(use xinerama || echo XINERAMAFLAGS= XINERAMALIBS= )
+}
 
+src_install() {
+	emake DESTDIR="${D}" PREFIX=/usr install
+	dodoc BUGS NEWS README
+
+	newbashcomp share/herbstclient-completion herbstclient
+
+	if use zsh-completion ; then
+		insinto /usr/share/zsh/site-functions
+		doins share/_herbstclient
+	fi
+
+	if use examples ; then
+		exeinto /usr/share/doc/${PF}/examples
+		doexe scripts/*.sh
+		docinto examples
+		dodoc scripts/README
+		docompress -x /usr/share/doc/${PF}/examples
+	fi
+}
