@@ -1,15 +1,26 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/bdelta/bdelta-9999.ebuild,v 1.1 2012/01/29 08:22:00 slyfox Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/bdelta/bdelta-9999.ebuild,v 1.2 2012/06/10 08:14:29 slyfox Exp $
 
-EAPI="4"
+EAPI=4
 
-inherit git-2 multilib toolchain-funcs
+if [[ ${PV} = *9999* ]]; then
+	EGIT_REPO_URI="git://github.com/jjwhitney/BDelta.git"
+	UNPACKER_ECLASS="git-2"
+	LIVE_EBUILD=yes
+else
+	UNPACKER_ECLASS="vcs-snapshot"
+fi
+
+inherit multilib toolchain-funcs ${UNPACKER_ECLASS}
+
+if [[ -z ${LIVE_EBUILD} ]]; then
+	KEYWORDS="~alpha ~amd64 ~ppc ~sparc ~x86 ~x86-linux"
+	SRC_URI="http://github.com/jjwhitney/BDelta/tarball/v${PV} -> ${P}.tar.gz"
+fi
 
 DESCRIPTION="Binary Delta - Efficient difference algorithm and format"
 HOMEPAGE="http://bdelta.org"
-SRC_URI=""
-EGIT_REPO_URI="git://github.com/jjwhitney/BDelta.git"
 
 SLOT="0"
 LICENSE="GPL-2"
@@ -27,5 +38,5 @@ src_install() {
 		DESTDIR="${D}" \
 		PREFIX="${EPREFIX}/usr" \
 		LIBDIR="${EPREFIX}/usr/$(get_libdir)"
-	dodoc README
+	dodoc README Format
 }

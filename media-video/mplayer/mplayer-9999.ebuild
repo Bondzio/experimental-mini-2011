@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.129 2012/05/05 08:58:52 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer/mplayer-9999.ebuild,v 1.130 2012/06/10 16:40:09 aballier Exp $
 
 EAPI=4
 
@@ -33,6 +33,10 @@ FONT_URI="
 "
 if [[ ${PV} == *9999* ]]; then
 	RELEASE_URI=""
+elif [ "${PV%_rc*}" = "${PV}" ]; then
+	MY_P="MPlayer-${PV}"
+	S="${WORKDIR}/${MY_P}"
+	RELEASE_URI="mirror://mplayer/releases/${MY_P}.tar.xz"
 else
 	RELEASE_URI="mirror://gentoo/${P}.tar.xz"
 fi
@@ -57,7 +61,7 @@ RDEPEND+="
 	sys-libs/ncurses
 	app-arch/bzip2
 	sys-libs/zlib
-	>media-video/ffmpeg-0.10.2
+	>=media-video/ffmpeg-0.10.3
 	!bindist? (
 		x86? (
 			win32codecs? ( media-libs/win32codecs )
@@ -237,9 +241,11 @@ src_prepare() {
 		subversion_wc_info
 		printf "${ESVN_WC_REVISION}" > $svf
 	fi
-	[ -f "$svf" ] || die "Missing ${svf}. Did you generate your snapshot with prepare_mplayer.sh?"
-	local sv=$(<$svf)
-	printf "SVN-r${sv} (Gentoo)" > VERSION
+	if [ ! -f VERSION ] ; then
+		[ -f "$svf" ] || die "Missing ${svf}. Did you generate your snapshot with prepare_mplayer.sh?"
+		local sv=$(<$svf)
+		printf "SVN-r${sv} (Gentoo)" > VERSION
+	fi
 
 	# fix path to bash executable in configure scripts
 	sed -i -e "1c\#!${EPREFIX}/bin/bash" configure version.sh || die

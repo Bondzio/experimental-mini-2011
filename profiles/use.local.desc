@@ -370,6 +370,7 @@ app-emacs/company-mode:ropemacs - Install backend for dev-python/ropemacs
 app-emacs/company-mode:semantic - Install backend for semantic (app-emacs/cedet)
 app-emacs/delicious:planner - Include support for app-emacs/planner
 app-emacs/emacs-common-gentoo:emacs22icons - Install Emacs 22 style icons
+app-emacs/emacs-common-gentoo:games - Support shared score files for games
 app-emacs/emhacks:jde - Enable support for Java Development Environment
 app-emacs/magit:contrib - Install user-contributed files
 app-emacs/org-mode:contrib - Install user-contributed files
@@ -563,11 +564,10 @@ app-forensics/rdd:rawio - Enables raw IO handling
 app-forensics/sleuthkit:aff - Enable extra aff formats
 app-forensics/sleuthkit:ewf - Enable libewf support
 app-i18n/anthy:canna-2ch - Enable support for app-dicts/canna-2ch
-app-i18n/fcitx:gir - Enable GObject Introspection
 app-i18n/fcitx:gtk3 - Use GTK+3 instead of 2
+app-i18n/fcitx:introspection - Enable GObject Introspection
 app-i18n/fcitx:opencc - Enable OpenCC for Chinese Transform
 app-i18n/fcitx:pango - Enable support for x11-libs/pango
-app-i18n/fcitx:qt - Enable Qt IM Module
 app-i18n/fcitx:snooper - Enable Key Snooper for gtk app
 app-i18n/fcitx:table - Enable Table IM
 app-i18n/fcitx-configtool:gtk3 - Use GTK+3 instead of 2
