@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/opengl >=media-libs/libsdl-1.2.6 >=dev-python/soya-0.9 >=dev-python/py2play-0.1.9 >=dev-python/pyopenal-0.1.3 >=dev-python/pyogg-1.1 >=dev-python/pyvorbis-1.1 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://download.gna.org/slune/Slune-1.0.15.tar.bz2
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=cefdb6677c1550d886a16bb821c39a9f

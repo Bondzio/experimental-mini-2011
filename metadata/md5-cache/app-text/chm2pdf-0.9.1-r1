@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/pychm app-text/htmldoc || ( >=dev-libs/chmlib-0.40-r1[examples] <dev-libs/chmlib-0.40-r1 ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://chm2pdf.googlecode.com/files/chm2pdf-0.9.1.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=5605c7b1d54a0f10b6766ca5a5a598b5

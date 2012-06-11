@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=dev-libs/openssl
+DESCRIPTION=Client to connect to a tunnel broker using the TSP protocol (freenet6 for example)
+EAPI=4
+HOMEPAGE=http://gogonet.gogo6.com/page/download-1
+IUSE=debug
+KEYWORDS=~amd64 ~hppa ~sparc ~x86
+LICENSE=MIT
+RDEPEND=dev-libs/openssl sys-apps/iproute2 >=sys-apps/net-tools-1.60_p20120127084908
+SLOT=0
+SRC_URI=http://gogo6.com/downloads/gogoc-1_2-RELEASE.tar.gz
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=17009066db7e97d12a1d5c903ddbb9a7

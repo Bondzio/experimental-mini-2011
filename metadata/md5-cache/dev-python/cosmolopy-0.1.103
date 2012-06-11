@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=sci-libs/scipy =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/C/CosmoloPy/CosmoloPy-0.1.103.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=c25deea66fb3f85479c084304068a10b

@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RDEPEND=dev-python/docutils dev-python/jinja dev-python/markdown dev-python/pygments dev-lang/python
 SLOT=0
 SRC_URI=https://github.com/adamzap/landslide/tarball/v1.0.0 -> landslide-1.0.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=c6df69a6a896d5df03d4b9cc7063936d

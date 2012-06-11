@@ -1,9 +1,11 @@
-# Copyright owners: Arfrever Frehtes Taifersar Arahesis
+# Copyright 1999-2010 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-zope/zc-buildout/zc-buildout-1.5.2.ebuild,v 1.1 2010/10/16 21:03:37 arfrever Exp $
 
-EAPI="4-python"
-PYTHON_MULTIPLE_ABIS="1"
-PYTHON_RESTRICTED_ABIS="3.*"
+EAPI="3"
+PYTHON_DEPEND="2"
+SUPPORT_PYTHON_ABIS="1"
+RESTRICT_PYTHON_ABIS="3.*"
 
 inherit distutils
 
@@ -16,21 +18,20 @@ SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="$(python_abi_depend net-zope/namespaces-zc[zc])
-	$(python_abi_depend dev-python/setuptools)"
+RDEPEND="dev-python/setuptools"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}"/${MY_P}
 
 DOCS="CHANGES.txt todo.txt"
-PYTHON_MODULES="${PN/-//}"
+PYTHON_MODNAME="${PN/-//}"
 
 src_install() {
 	distutils_src_install
 
-	# Delete README.txt installed in incorrect location.
-	rm -f "${ED}usr/README.txt"
+	# Remove README.txt installed in incorrect location.
+	rm -f "${D}usr/README.txt"
 }

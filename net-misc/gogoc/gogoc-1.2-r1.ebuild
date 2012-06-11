@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/gogoc/gogoc-1.2-r1.ebuild,v 1.11 2011/05/07 18:14:11 tomka Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/gogoc/gogoc-1.2-r1.ebuild,v 1.12 2012/06/11 13:18:12 voyageur Exp $
 
 EAPI=2
 
@@ -24,7 +24,8 @@ IUSE="debug"
 
 DEPEND="dev-libs/openssl"
 RDEPEND="${DEPEND}
-	sys-apps/iproute2"
+	sys-apps/iproute2
+	<sys-apps/net-tools-1.60_p20120127084908"
 
 S="${WORKDIR}/${MY_P}"
 

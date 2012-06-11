@@ -1,14 +1,12 @@
-DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=net-zope/namespaces-zope[zope,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] dev-python/setuptools[python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=dev-python/setuptools || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=2to3 fixers for Zope
-EAPI=4-python
+EAPI=3
 HOMEPAGE=http://pypi.python.org/pypi/zope.fixers
-IUSE=python_abis_3.1 python_abis_3.2 python_abis_3.3
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=ZPL
-RDEPEND=net-zope/namespaces-zope[zope,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?] python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 )
-REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 )
+RDEPEND=|| ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://pypi/z/zope.fixers/zope.fixers-1.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
-_md5_=89aaf6e9260180f3cf77eb845dea66ca
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=68a6ef41a462f689f7d8af3b4d5073d6

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=wifi? ( net-wireless/python-wifi ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://dag.wieers.com/home-made/dstat/dstat-0.7.2.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=98c4801a7c5643f82a92ec0f0fcc4faf

@@ -1,29 +1,25 @@
-# Copyright owners: Arfrever Frehtes Taifersar Arahesis
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/repoze-lru/repoze-lru-0.5.ebuild,v 1.3 2012/05/25 22:08:16 floppym Exp $
 
-EAPI="4-python"
-PYTHON_MULTIPLE_ABIS="1"
+EAPI=3
+
+PYTHON_DEPEND="*"
+SUPPORT_PYTHON_ABIS=1
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
-MY_PN="${PN/-/.}"
-MY_P="${MY_PN}-${PV}"
+MY_PN=${PN/-/.}
+MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="A tiny LRU cache implementation and decorator"
-HOMEPAGE="http://pypi.python.org/pypi/repoze.lru"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
+HOMEPAGE="http://www.repoze.org"
+SRC_URI="mirror://pypi/${P:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="repoze"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="$(python_abi_depend dev-python/namespaces-repoze[repoze])"
-DEPEND="${RDEPEND}
-	$(python_abi_depend dev-python/setuptools)"
-
-S="${WORKDIR}/${MY_P}"
-
-DOCS="CHANGES.txt README.txt"
-PYTHON_MODULES="${PN/-//}"
+S=${WORKDIR}/${MY_P}

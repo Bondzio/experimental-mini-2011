@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-base/xorg-server[-minimal] x11-libs/libXcomposite kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://download.virtualbox.org/virtualbox/4.1.12/VirtualBox-4.1.12.tar.bz2
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ddcbff85c81d8b78b9570b77cd213136

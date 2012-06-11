@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-wm/icewm dev-python/pygtk:2 x11-libs/gtk+:2 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/icesoundmanager/IceWMControlPanel-3.2.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b
 _md5_=55a9515a6386ca02be20ee632dbf7d05

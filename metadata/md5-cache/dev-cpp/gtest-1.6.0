@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://googletest.googlecode.com/files/gtest-1.6.0.zip
-_eclasses_=python	d6f9ee981da60667109667134d766474
+_eclasses_=python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=8a66b28eeb6f98c130ca9ceee949a887

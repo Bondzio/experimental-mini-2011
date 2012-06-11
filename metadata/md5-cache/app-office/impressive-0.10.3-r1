@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/pdftk dev-python/imaging dev-python/pygame dev-python/pyopengl x11-misc/xdg-utils x11-apps/xrandr || ( app-text/xpdf app-text/ghostscript-gpl ) || ( media-fonts/dejavu media-fonts/ttf-bitstream-vera media-fonts/corefonts ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/impressive/Impressive/0.10.3/Impressive-0.10.3.tar.gz
-_eclasses_=python	d6f9ee981da60667109667134d766474
+_eclasses_=python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=153f9c5137593b30a3de25fcd453e807

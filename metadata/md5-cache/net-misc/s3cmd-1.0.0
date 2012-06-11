@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://sourceforge/s3tools/s3cmd-1.0.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=a1aa6ad846b7bb8cbd5e57b7d5a88b9f

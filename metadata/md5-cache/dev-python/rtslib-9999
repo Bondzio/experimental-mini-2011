@@ -6,5 +6,5 @@ HOMEPAGE=http://linux-iscsi.org/
 LICENSE=AGPL-3
 RDEPEND=dev-python/configobj dev-python/ipaddr dev-python/netifaces =dev-lang/python-2* =dev-lang/python-2*
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	d6f9ee981da60667109667134d766474	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=476feb984c67d868fc2bbc7537833aaf

@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/wxpython:2.8 dev-python/docutils || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://sourceforge/notetaking/nts-74.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	d6f9ee981da60667109667134d766474
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=12f022120f3310130207f0d2d4bce422

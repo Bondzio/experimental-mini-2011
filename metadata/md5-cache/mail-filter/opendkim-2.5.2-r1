@@ -4,11 +4,11 @@ DESCRIPTION=A milter-based application to provide DKIM signing and verification
 EAPI=4
 HOMEPAGE=http://opendkim.org
 IUSE=asyncdns +berkdb ldap lua opendbx poll sasl +ssl static-libs unbound
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=Sendmail-Open-Source BSD
 RDEPEND=|| ( mail-filter/libmilter mail-mta/sendmail ) ssl? ( >=dev-libs/openssl-0.9.8 ) berkdb? ( >=sys-libs/db-3.2 ) opendbx? ( >=dev-db/opendbx-1.4.0 ) lua? ( dev-lang/lua ) ldap? ( net-nds/openldap ) sasl? ( dev-libs/cyrus-sasl ) unbound? ( >=net-dns/unbound-1.4.1 net-dns/dnssec-root )
 REQUIRED_USE=sasl? ( ldap )
 SLOT=0
 SRC_URI=mirror://sourceforge/opendkim/opendkim-2.5.2.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	e9ac199862f908195424dc48ca2de8f6	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=2c21149358eeca7d0730d97363bae9db
+_md5_=24a98f441eb00996adde58b2efe4f463
