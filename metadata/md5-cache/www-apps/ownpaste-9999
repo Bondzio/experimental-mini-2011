@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-python/setuptools >=dev-python/flask-0.8 >=dev-python/flask-script-0.3.3 >=dev-python/flask-sqlalchemy-0.15 >=dev-python/jinja-2.6 >=dev-python/werkzeug-0.8 dev-python/pygments dev-python/pytz doc? ( dev-python/sphinx ) !<sys-apps/portage-2.1.10.58 python_targets_python2_7? ( dev-lang/python:2.7 ) dev-vcs/mercurial
+DEPEND=dev-python/setuptools >=dev-python/flask-0.8 >=dev-python/flask-script-0.3.3 >=dev-python/flask-sqlalchemy-0.15 >=dev-python/jinja-2.6 >=dev-python/werkzeug-0.8 >=dev-python/sqlalchemy-migrate-0.7.2 dev-python/pygments dev-python/pytz doc? ( dev-python/sphinx ) !<sys-apps/portage-2.1.10.58 python_targets_python2_7? ( dev-lang/python:2.7 ) dev-vcs/mercurial
 DESCRIPTION=Private pastebin (server-side implementation)
 EAPI=4
 HOMEPAGE=http://ownpaste.rtfd.org/ http://pypi.python.org/pypi/ownpaste
 IUSE=doc python_targets_python2_7
 LICENSE=BSD
-RDEPEND=dev-python/setuptools >=dev-python/flask-0.8 >=dev-python/flask-script-0.3.3 >=dev-python/flask-sqlalchemy-0.15 >=dev-python/jinja-2.6 >=dev-python/werkzeug-0.8 dev-python/pygments dev-python/pytz python_targets_python2_7? ( dev-lang/python:2.7 )
+RDEPEND=dev-python/setuptools >=dev-python/flask-0.8 >=dev-python/flask-script-0.3.3 >=dev-python/flask-sqlalchemy-0.15 >=dev-python/jinja-2.6 >=dev-python/werkzeug-0.8 >=dev-python/sqlalchemy-migrate-0.7.2 dev-python/pygments dev-python/pytz python_targets_python2_7? ( dev-lang/python:2.7 )
 REQUIRED_USE=|| ( python_targets_python2_7 )
 SLOT=0
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	mercurial	add64e64d758a9618d46a08a95f77483	multilib	5782800349f728f725f9378105c6a2ab	python-distutils-ng	6786a3ab681bb2f21310183278f72e33	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=aead6fa4a05ac1fa1c24cd1870194bcd
+_md5_=ce296c91a10fd8bdf0a290642231324b

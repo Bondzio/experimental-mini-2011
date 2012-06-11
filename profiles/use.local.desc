@@ -152,6 +152,8 @@ app-admin/gkrellm:ssl - Enable SSL support for mail checking with dev-libs/opens
 app-admin/gnome-system-tools:nfs - Adds support for NFS shares
 app-admin/hddtemp:network-cron - Monthly cronjob to update hddtemp.db.
 app-admin/lcap:lids - If you have the Linux Intrusion Detection System
+app-admin/logrotate:acl - Installs acl support
+app-admin/logrotate:selinux - Installs Security Enhanced Linux support
 app-admin/mcollective:client - Install client utilities
 app-admin/packagekit-base:connman - Add support for net-misc/connman
 app-admin/packagekit-base:cron - Install cron script for auto-update
@@ -3538,6 +3540,7 @@ net-dns/avahi:introspection - Use dev-libs/gobject-introspection for introspecti
 net-dns/avahi:mdnsresponder-compat - Enable compat libraries for mDNSResponder
 net-dns/avahi:utils - Install the avahi gtk+ utils avahi-discover, bssh, and bvnc
 net-dns/bind:dlz - Enables dynamic loaded zones, 3rd party extension
+net-dns/bind:filter-aaaa - Enable filtering of AAAA records over IPv4
 net-dns/bind:gost - Enables gost OpenSSL engine support
 net-dns/bind:gssapi - Enable gssapi support
 net-dns/bind:pkcs11 - Enable PKCS#11 key support/tools for DNSSEC
@@ -4573,7 +4576,6 @@ net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)
 net-wireless/hostapd:wps - Add support for Wi-Fi Protected Setup
 net-wireless/kismet:client - Build the ncurses-based user interface
 net-wireless/kismet:ncurses - Build the ncurses-based user interface
-net-wireless/kismet:pcap - Enable packet capturing support using net-libs/libpcap
 net-wireless/kismet:pcre - Build with pcre support
 net-wireless/kismet:plugin-autowep - Build the autowep plugin
 net-wireless/kismet:plugin-btscan - Build the btscan plugin
@@ -4827,8 +4829,6 @@ sci-mathematics/fricas:sbcl - Add support for Steel Bank Common Lisp (dev-lisp/s
 sci-mathematics/geomview:avg - Enable experimental motion averaging technique
 sci-mathematics/geomview:netpbm - Add media-libs/netpbm support for external modules
 sci-mathematics/gretl:R - Enable support for dev-lang/R
-sci-mathematics/gretl:gtk3 - Use GTK+3 frontend instead of GTK+2
-sci-mathematics/gretl:sourceview - Enable support for x11-libs/gtksourceview
 sci-mathematics/isabelle:CCL - CCL (Classical Computational Logic)
 sci-mathematics/isabelle:CTT - CTT (Constructive Type Theory) is an extensional version of Martin-Löf's Type Theory.
 sci-mathematics/isabelle:Cube - Cube (The Lambda Cube)
