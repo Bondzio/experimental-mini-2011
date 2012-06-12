@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install nofetch postinst postrm prepare prerm setup
-DEPEND=jce? ( app-arch/unzip ) =dev-java/java-config-2*
+DEPEND=jce? ( app-arch/unzip ) =dev-java/java-config-2* || ( app-admin/eselect-java <dev-java/java-config-2.2 )
 DESCRIPTION=Oracle's Java SE Runtime Environment
 EAPI=4
 HOMEPAGE=http://www.oracle.com/technetwork/java/javase/
 IUSE=X alsa jce nsplugin
 KEYWORDS=~amd64 ~x86
 LICENSE=Oracle-BCLA-JavaSE
-RDEPEND=X? ( x11-libs/libXext x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/libX11 ) alsa? ( media-libs/alsa-lib ) !prefix? ( sys-libs/glibc ) =dev-java/java-config-2*
+RDEPEND=X? ( x11-libs/libXext x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/libX11 ) alsa? ( media-libs/alsa-lib ) !prefix? ( sys-libs/glibc ) =dev-java/java-config-2* || ( app-admin/eselect-java <dev-java/java-config-2.2 )
 RESTRICT=fetch strip
 SLOT=1.7
 SRC_URI=x86? ( jre-7u4-linux-i586.tar.gz ) amd64? ( jre-7u4-linux-x64.tar.gz ) jce? ( UnlimitedJCEPolicyJDK7.zip )
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	a34fe9a7d2a4f163b7f0c5af7d53ae33	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	8bd5987a3d6e57fc06abc08cce7a9788	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7cdf0a4932b1b19a6590f9e5a2f337e2

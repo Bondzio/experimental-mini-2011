@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/gr-osmosdr/gr-osmosdr-9999.ebuild,v 1.1 2012/04/21 12:11:28 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/gr-osmosdr/gr-osmosdr-9999.ebuild,v 1.4 2012/06/11 23:59:41 chithanh Exp $
 
 EAPI=4
 PYTHON_DEPEND="2"
@@ -20,7 +20,8 @@ IUSE=""
 RDEPEND="dev-libs/boost
 	net-wireless/gnuradio
 	net-wireless/rtl-sdr"
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND}
+	dev-python/cheetah"
 
 pkg_setup() {
 	python_set_active_version 2

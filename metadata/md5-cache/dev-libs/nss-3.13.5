@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=virtual/pkgconfig
+DEPEND=virtual/pkgconfig >=dev-libs/nspr-4.9.1
 DESCRIPTION=Mozilla's Network Security Services library that implements PKI support
 EAPI=3
 HOMEPAGE=http://www.mozilla.org/projects/security/pki/nss/
@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/nspr-4.9.1 >=dev-db/sqlite-3.5 sys-libs/zlib
 SLOT=0
 SRC_URI=ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_13_5_RTM/src/nss-3.13.5.tar.gz http://dev.gentoo.org/~anarchy/patches/nss-3.13.3-add_spi+cacerts_ca_certs.patch http://dev.gentoo.org/~anarchy/patches/nss-3.13.3_pem.support
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=be6c9f3c9c1baedc98260a9c1e33ddc9
+_md5_=2e833336f34284149939fb81849fd2df

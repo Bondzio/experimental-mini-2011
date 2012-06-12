@@ -9,4 +9,4 @@ RDEPEND=snmp? ( net-analyzer/net-snmp ) ldap? ( net-nds/openldap =dev-libs/cyrus
 SLOT=0
 SRC_URI=http://prdownloads.sourceforge.net/zabbix/zabbix-2.0.0.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	depend.php	df169a364e191b840b695604097e3c21	eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	java-pkg-opt-2	131dd2a697d663c0e33247611b9a1cd7	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4	webapp	30d951d5c98c4f31c7999ab4ba4806d1
-_md5_=40fe09cf0a6652ce897954c363e33fa8
+_md5_=af25097fec5693ce0a8070b695170d71

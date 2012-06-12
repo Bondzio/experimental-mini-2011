@@ -5322,6 +5322,7 @@ sys-libs/glibc:linuxthreads - Build linuxthreads support (only for kernels older
 sys-libs/gwenhywfar:fox - Use x11-libs/fox graphical toolkit
 sys-libs/libosinfo:introspection - Use dev-libs/gobject-introspection for introspection
 sys-libs/libosinfo:vala - Enable bindings for dev-lang/vala
+sys-libs/libseccomp:tools - enable debugging tools
 sys-libs/libunwind:debug-frame - Adds support for DWARF .debug_frame section: Use the information from this section if available
 sys-libs/ncurses:ada - Add bindings for the ADA programming language
 sys-libs/ncurses:trace - Enable test trace() support in ncurses calls
@@ -5493,6 +5494,7 @@ www-plugins/gnash:ssh - Enable using SSH for network authentication in libnet
 www-plugins/gnash:ssl - Enable directly using OpenSSL in libnet (not needed for nsplugin ssl support)
 www-plugins/gnash:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 www-plugins/google-talkplugin:system-libCg - Use system libCg instead of bundled one
+www-plugins/lightspark:gles - Replace default OpenGL renderer with GLESv2
 www-plugins/lightspark:rtmp - Enable Real Time Messaging Protocol using librtmp
 www-plugins/mozplugger:xembed - Build with xembed always enabled.
 www-servers/apache:static - Link in apache2 modules statically rather then plugins

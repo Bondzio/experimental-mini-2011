@@ -10,4 +10,4 @@ RDEPEND=idoutils? ( dev-db/libdbi-drivers[mysql?,postgres?] ) perl? ( dev-lang/p
 SLOT=0
 SRC_URI=mirror://sourceforge/icinga/icinga-1.7.0.tar.gz
 _eclasses_=depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=72bed69d16636cc291cb13b4e39d71d7
+_md5_=779ee7a7b85311033d9f9cbcfefbd002
