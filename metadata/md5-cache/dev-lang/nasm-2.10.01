@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install
+DEPEND=dev-lang/perl doc? ( app-text/ghostscript-gpl sys-apps/texinfo )
+DESCRIPTION=groovy little assembler
+EAPI=2
+HOMEPAGE=http://nasm.sourceforge.net/
+IUSE=doc
+KEYWORDS=-* ~amd64 ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-macos
+LICENSE=BSD-2
+SLOT=0
+SRC_URI=http://www.nasm.us/pub/nasm/releasebuilds/2.10.01/nasm-2.10.01.tar.bz2
+_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=552963d25b2d93c04e23e0f9a831c938

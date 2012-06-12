@@ -6,4 +6,4 @@ KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=richardson
 SLOT=0
 SRC_URI=mirror://gentoo/molprobity-3.17.tgz
-_md5_=4f75709be7b73e7454b2f5f98ed4c7d4
+_md5_=2c843ad70ddde3896cfb09d3c03738f5

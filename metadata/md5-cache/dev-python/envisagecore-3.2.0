@@ -2,7 +2,7 @@ DEFINED_PHASES=compile install postinst postrm prepare test
 DEPEND=>=dev-python/apptools-3.4.1 >=dev-python/enthoughtbase-3.1.0 dev-python/setuptools >=dev-python/traits-3.6.0 doc? ( dev-python/sphinx ) test? ( dev-python/coverage dev-python/nose media-fonts/font-cursor-misc media-fonts/font-misc-misc x11-apps/xhost ) =dev-lang/python-2* test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Enthought Tool Suite: Extensible application framework
 EAPI=3
-HOMEPAGE=http://code.enthought.com/projects/envisage/ http://pypi.python.org/pypi/EnvisageCore
+HOMEPAGE=http://code.enthought.com/projects/envisage/
 IUSE=doc examples test test
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
@@ -10,4 +10,4 @@ RDEPEND=>=dev-python/apptools-3.4.1 >=dev-python/enthoughtbase-3.1.0 dev-python/
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/EnvisageCore-3.2.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=de02bb2cf483899df7a94cc0269e1ab0
+_md5_=ea17ce088a3b9f723c3824bfbd04ea58
