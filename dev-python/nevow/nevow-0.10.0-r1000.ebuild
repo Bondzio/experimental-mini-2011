@@ -1,11 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/nevow/nevow-0.10.0.ebuild,v 1.12 2011/03/04 20:57:28 xarthisius Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="3.* *-jython"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.* *-jython"
 DISTUTILS_SRC_TEST="trial formless nevow"
 DISTUTILS_DISABLE_TEST_DEPENDENCY="1"
 
@@ -15,22 +14,22 @@ MY_PN="Nevow"
 MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="A web templating framework that provides LivePage, an automatic AJAX toolkit."
-HOMEPAGE="http://divmod.org/trac/wiki/DivmodNevow http://pypi.python.org/pypi/Nevow"
+HOMEPAGE="https://launchpad.net/nevow http://pypi.python.org/pypi/Nevow"
 SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="alpha amd64 ia64 ppc ppc64 sparc x86 ~x86-linux"
+KEYWORDS="~alpha amd64 ~ia64 ~ppc ~ppc64 sparc x86 ~x86-linux"
 IUSE="doc"
 
-DEPEND=">=dev-python/twisted-2.5
-	>=dev-python/twisted-web-8.1.0
-	net-zope/zope-interface"
+DEPEND="$(python_abi_depend dev-python/twisted)
+	$(python_abi_depend dev-python/twisted-web)
+	$(python_abi_depend net-zope/zope.interface)"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_P}"
 
-PYTHON_MODNAME="formless nevow"
+PYTHON_MODULES="formless nevow"
 TWISTED_PLUGINS="nevow.plugins"
 
 src_test() {
