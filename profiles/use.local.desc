@@ -1066,6 +1066,7 @@ dev-games/ogre:cg - NVIDIA toolkit plugin
 dev-games/ogre:devil - image loading support with DevIL
 dev-games/ogre:double-precision - more precise calculations at the expense of speed
 dev-games/ogre:freeimage - support images via freeimage
+dev-games/ogre:gles2 - build OpenGL ES 2.x RenderSystem
 dev-games/ogre:ois - pull in Object-oriented Input System library for samples
 dev-games/ogre:poco - when USE=threads, use poco for threading
 dev-games/ogre:tbb - when USE=threads, use tbb for threading
@@ -3743,7 +3744,7 @@ net-im/leechcraft-azoth:rosenthal - Build Rosenthal, the spellchecker plugin
 net-im/leechcraft-azoth:standardstyles - Build support for standard Azoth styles engine
 net-im/leechcraft-azoth:xoox - Build Xoox, gloox-based plugin for XMPP support
 net-im/leechcraft-azoth:xtazy - Build Xtazy for publishing currently playing tune
-net-im/leechcraft-azoth:zheet - uild Zheet, libmsn-based plugin for Windows Live Messenger support
+net-im/leechcraft-azoth:zheet - Build Zheet, libmsn-based plugin for Windows Live Messenger support
 net-im/mcabber:aspell - Adds support for app-text/aspell spell checker.
 net-im/mcabber:otr - Enable encrypted conversations using Off-The-Records messaging
 net-im/minbif:video - Add video support
@@ -4582,13 +4583,14 @@ net-wireless/kismet:plugin-btscan - Build the btscan plugin
 net-wireless/kismet:plugin-dot15d4 - Build the dot15d4 plugin
 net-wireless/kismet:plugin-ptw - Build the ptw plugin
 net-wireless/kismet:plugin-spectools - Build the spectools plugin. This uses net-wireless/spectools
+net-wireless/kismet:plugin-syslog - Build the syslog plugin.
 net-wireless/kismet:ruby - Build extras which are written in ruby, example plugins and the like.
 net-wireless/kismet:speech - Audio support using app-accessibility/flite
 net-wireless/kismet:suid - Install a setuid root helper binary with limited functionality; this allows running kismet as a normal user, significantly reducing security risks
 net-wireless/madwifi-ng:injection - Adds support for net-wireless/aircrack-ng aireplay-ng packet injection
 net-wireless/pyrit:cuda - Enable CUDA support via net-wireless/cpyrit-cuda
 net-wireless/pyrit:opencl - Enable OpenCL support via net-wireless/cpyrit-opencl
-net-wireless/spectools:debug - Build the raw output client for spectools.
+net-wireless/spectools:debug - Build the raw output client for spectools. (for developers)
 net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
 net-wireless/spectools:ncurses - Build the ncurses based client for spectools
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support

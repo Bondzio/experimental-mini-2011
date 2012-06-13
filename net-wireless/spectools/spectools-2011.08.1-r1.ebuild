@@ -1,10 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/spectools/spectools-2011.08.1-r1.ebuild,v 1.2 2012/06/11 13:11:23 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/spectools/spectools-2011.08.1-r1.ebuild,v 1.4 2012/06/13 03:10:50 zerochaos Exp $
 
 EAPI=4
-
-inherit toolchain-funcs eutils
 
 MY_PN=${PN}
 MY_PV=${PV/\./-}
@@ -12,11 +10,11 @@ MY_PV=${MY_PV/./-R}
 MY_P="${MY_PN}-${MY_PV}"
 S=${WORKDIR}/${MY_P}
 
-DESCRIPTION="IEEE 802.11 wireless LAN sniffer for MetaGeek Wi-Spy spectrum analyzer hardware"
+DESCRIPTION="Spectrum Analyzer for Meta-Geek Wi-Spy and GSG Ubertooth hardware"
 HOMEPAGE="http://www.kismetwireless.net/spectools/"
 
 if [[ ${PV} == "9999" ]] ; then
-	ESVN_REPO_URI="https://www.kismetwireless.net/code/svn/tools/spectools"
+	ESVN_REPO_URI="https://www.kismetwireless.net/code/svn/tools/${PN}"
 		inherit subversion
 		KEYWORDS=""
 else
@@ -31,7 +29,7 @@ IUSE="ncurses gtk"
 DEPEND="${RDEPEND}"
 RDEPEND="virtual/libusb:0
 	ncurses? ( sys-libs/ncurses )
-	gtk? ( =x11-libs/gtk+-2* )"
+	gtk? ( x11-libs/gtk+:2 )"
 # Upstream has still not migrated to the libusb-1 line.
 # Maemo: Add hildon and bbus
 
@@ -61,8 +59,8 @@ src_install() {
 	use ncurses && dobin spectool_curses
 	use gtk && dobin spectool_gtk
 
-	dodir /$(get_libdir)/udev/rules.d/
-	insinto /$(get_libdir)/udev/rules.d/
+	dodir /lib/udev/rules.d/
+	insinto /lib/udev/rules.d/
 	doins 99-wispy.rules
 	dodoc README
 
