@@ -580,6 +580,7 @@ app-i18n/ibus:introspection - Use dev-libs/gobject-introspection for introspecti
 app-i18n/ibus:vala - Enable support for dev-lang/vala
 app-i18n/ibus-m17n:gtk - Build the preference interfaces, based on x11-libs/gtk+ (GTK+ 2).
 app-i18n/ibus-mozc:ibus - Enable support for app-i18n/ibus
+app-i18n/ibus-mozc:renderer - Enable native candidate window.
 app-i18n/ibus-mozc:scim - Enable support for app-i18n/scim
 app-i18n/ibus-pinyin:boost - Compile against dev-libs/boost libraries
 app-i18n/ibus-pinyin:opencc - Enable support for app-i18n/opencc
@@ -2924,6 +2925,7 @@ media-sound/pulseaudio:realtime - Makes PulseAudio use RealtimeKit (sys-auth/rtk
 media-sound/pulseaudio:ssl - Use dev-libs/openssl to provide support for RAOP (AirPort) streaming.
 media-sound/pulseaudio:system-wide - Allow preparation and installation of the system-wide init script for PulseAudio. Since this support is only supported for embedded situations, do not enable without reading the upstream instructions at http://pulseaudio.org/wiki/WhatIsWrongWithSystemMode .
 media-sound/pulseaudio:webrtc-aec - Uses the webrtc.org AudioProcessing library for enhancing VoIP calls greatly in applications that support it by performing acoustic echo cancellation, analog gain control, noise suppression and other processing.
+media-sound/pulseaudio:xen - Builds a special paravirtualized module for running in a Xen guest.
 media-sound/qmmp:bs2b - Enable Bauer stereophonic-to-binaural headphone filter
 media-sound/qmmp:cover - Enable album cover support
 media-sound/qmmp:crossfade - Enable crossfade effect when switching tracks
@@ -4555,7 +4557,9 @@ net-voip/yate:h323 - Build H.323 Channel plugin
 net-voip/yate:ilbc - Build ILBC codec plugin
 net-voip/yate:sctp - Support for Stream Control Transmission Protocol
 net-voip/yate:spandsp - Enable support for the spandsp codec
+net-wireless/blueman:gconf - Enable the GConf configuration backend
 net-wireless/blueman:network - Add functionality to setup (host) PAN connections using either net-dns/dnsmasq or net-misc/dhcp
+net-wireless/blueman:sendto - Install the sendto-plugin for gnome-base/nautilus
 net-wireless/bluez:consolekit - Use sys-auth/pambase[consolekit] to determine access to bluetooth devices based on whether a user is logged in locally or remotely
 net-wireless/bluez:health - Compile with initial support for HDP
 net-wireless/bluez:maemo6 - Compile with maemo6 plugin
@@ -4900,6 +4904,7 @@ sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Gene
 sci-physics/root:clarens - Build the Clarens and PEAC plug-ins, to use in a GRID enabled analysis
 sci-physics/root:fits - Support for images and data from FITS files with sci-libs/cfitsio
 sci-physics/root:geant4 - Support for sci-physics/geant version 4
+sci-physics/root:htmldoc - Generate html documentation
 sci-physics/root:llvm - Build the new cling interactive interpreter based on sys-devel/llvm
 sci-physics/root:math - Build all math related libraries plugins, needs sci-libs/gsl
 sci-physics/root:pythia6 - Build the interface for sci-physics/pythia version 6.x
@@ -4997,7 +5002,7 @@ sys-apps/policycoreutils:sesandbox - Enable support for SELinux sandbox applicat
 sys-apps/portage:epydoc - Build html API documentation with epydoc.
 sys-apps/portage:ipc - Use inter-process communication between portage and running ebuilds.
 sys-apps/portage:less - Pull in sys-apps/less as default pager for etc-update.
-sys-apps/portage:pypy1_8 - Use pypy-c1.8 as Python interpreter.
+sys-apps/portage:pypy1_9 - Use pypy-c1.9 as Python interpreter.
 sys-apps/portage:python2 - Use python2 as Python interpreter.
 sys-apps/portage:python3 - Use python3 as Python interpreter.
 sys-apps/pyrenamer:music - Enable support for renaming music

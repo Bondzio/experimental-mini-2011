@@ -3,10 +3,10 @@ DEPEND=sci-biology/clustalw:1 sci-biology/ncbi-tools >=x11-libs/openmotif-2.3:0 
 DESCRIPTION=Graphical interface for the ClustalW multiple alignment program
 EAPI=1
 HOMEPAGE=http://www-igbmc.u-strasbg.fr/BioInfo/ClustalX/
-KEYWORDS=amd64 x86 ~sparc
+KEYWORDS=~sparc
 LICENSE=public-domain
 RDEPEND=sci-biology/clustalw:1 sci-biology/ncbi-tools >=x11-libs/openmotif-2.3:0 x11-libs/libXpm
 SLOT=0
 SRC_URI=ftp://ftp-igbmc.u-strasbg.fr/pub/ClustalX/clustalx1.83.sun.tar.gz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=ddc469244a2029e4a6ec3be44785a30a
+_md5_=a78668320be9424255dca0b13d43ea1f

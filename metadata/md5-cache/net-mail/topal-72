@@ -3,10 +3,10 @@ DEPEND=>=app-crypt/gnupg-2.0.7-r1 || ( net-mail/metamail app-misc/run-mailcap ) 
 DESCRIPTION=Topal is a 'glue' program that links GnuPG and Pine/Alpine.
 EAPI=2
 HOMEPAGE=http://homepage.ntlworld.com/phil.brooke/topal/
-KEYWORDS=amd64 ~ppc x86
+KEYWORDS=amd64 ppc x86
 LICENSE=GPL-3
 RDEPEND=>=app-crypt/gnupg-2.0.7-r1 || ( net-mail/metamail app-misc/run-mailcap ) || ( app-text/dos2unix app-text/hd2u ) sys-libs/ncurses sys-libs/readline
 SLOT=0
 SRC_URI=http://homepage.ntlworld.com/phil.brooke/topal/rel-72/topal-package-72.tgz
 _eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=90d6591776dfbb9d2f0bcfb98971592c
+_md5_=d7fb98f5faa0ff10f93b5718175b07c7
