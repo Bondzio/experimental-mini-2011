@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=readline? ( sys-libs/readline ) virtual/libusb:0
 SLOT=0
 SRC_URI=mirror://sourceforge/mspdebug/mspdebug-0.19.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=ca412f97c1759d8dcda4f18c6ce239d0

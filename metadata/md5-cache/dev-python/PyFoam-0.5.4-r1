@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sci-visualization/gnuplot || ( sci-libs/openfoam sci-libs/openfoam-bin ) extras? ( dev-python/matplotlib dev-python/numpy dev-python/ply dev-python/PyQt4 sci-libs/vtk ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://openfoamwiki.net/images/a/ae/PyFoam-0.5.4.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9a181598ea743b05e4d0d5f5e75e322a

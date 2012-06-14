@@ -6,5 +6,5 @@ KEYWORDS=amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
 LICENSE=richardson
 SLOT=0
 SRC_URI=http://kinemage.biochem.duke.edu/downloads/software/probe/probe.2.12.071128.src.zip
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=439beed5639648ad6682a1382bd2e3bf

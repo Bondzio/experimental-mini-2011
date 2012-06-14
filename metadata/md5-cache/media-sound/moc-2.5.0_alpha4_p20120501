@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-devel/libtool-2.2.6b >=sys-libs/db-4 sys-libs/ncurses[unicode?] aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) curl? ( net-misc/curl ) ffmpeg? ( virtual/ffmpeg ) flac? ( media-libs/flac ) jack? ( media-sound/jack-audio-connection-kit ) libsamplerate? ( media-libs/libsamplerate ) mad? ( media-libs/libmad sys-libs/zlib media-libs/libid3tag ) modplug? ( media-libs/libmodplug ) musepack? ( media-sound/musepack-tools media-libs/taglib ) sid? ( >=media-libs/libsidplay-2 ) sndfile? ( media-libs/libsndfile ) speex? ( media-libs/speex ) timidity? ( media-libs/libtimidity media-sound/timidity++ ) vorbis? ( media-libs/libogg media-libs/libvorbis ) wavpack? ( media-sound/wavpack )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/moc-2.5.0_alpha4_p20120501.tar.xz
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=2474d6715179b5059288119b1577c0fb

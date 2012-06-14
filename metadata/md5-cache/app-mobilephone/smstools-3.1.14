@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=sys-process/procps stats? ( >=dev-libs/mm-1.4.0 )
 SLOT=0
 SRC_URI=http://smstools3.kekekasvi.com/packages/smstools3-3.1.14.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=15f60a13eb34f0c4e9901449386c042d

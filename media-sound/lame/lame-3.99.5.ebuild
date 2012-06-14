@@ -1,13 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/lame/lame-3.99.5.ebuild,v 1.3 2012/05/15 13:45:24 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/lame/lame-3.99.5.ebuild,v 1.5 2012/06/14 05:13:42 radhermit Exp $
 
 EAPI=4
 inherit autotools eutils
 
 DESCRIPTION="LAME Ain't an MP3 Encoder"
 HOMEPAGE="http://lame.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
+	mirror://gentoo/${P}-automake-2.12.patch.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -23,7 +24,8 @@ DEPEND="${RDEPEND}
 src_prepare() {
 	epatch \
 		"${FILESDIR}"/${PN}-3.96-ccc.patch \
-		"${FILESDIR}"/${PN}-3.98-gtk-path.patch
+		"${FILESDIR}"/${PN}-3.98-gtk-path.patch \
+		"${WORKDIR}"/${P}-automake-2.12.patch
 
 	mkdir libmp3lame/i386/.libs || die #workaround parallel build with nasm
 

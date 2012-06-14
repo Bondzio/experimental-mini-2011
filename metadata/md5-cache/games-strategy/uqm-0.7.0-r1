@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libvorbis virtual/jpeg >=media-libs/libpng-1.4 media-libs/libsdl media-libs/sdl-image media-libs/libogg media-libs/libvorbis media-libs/libmikmod
 SLOT=0
 SRC_URI=mirror://sourceforge/sc2/uqm-0.7.0-source.tgz mirror://sourceforge/sc2/uqm-0.7.0-content.uqm music? ( mirror://sourceforge/sc2/uqm-0.7.0-3domusic.uqm ) voice? ( mirror://sourceforge/sc2/uqm-0.7.0-voice.uqm ) remix? ( mirror://sourceforge/sc2/uqm-remix-pack1.zip mirror://sourceforge/sc2/uqm-remix-pack2.zip mirror://sourceforge/sc2/uqm-remix-pack3.zip )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=6ab1e017ea2316cf24f38eafd9976ddb

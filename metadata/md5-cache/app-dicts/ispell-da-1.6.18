@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/ispell
 SLOT=0
 SRC_URI=http://da.speling.org/filer/ispell-da-1.6.18.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=877a55da11bfb595c7f4cee5c5dd90c0

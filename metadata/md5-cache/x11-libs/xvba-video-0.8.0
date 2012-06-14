@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=x11-libs/libva[opengl] x11-drivers/ati-drivers
 SLOT=0
 SRC_URI=amd64? ( http://www.splitted-desktop.com/~gbeauchesne/xvba-video/xvba-video-0.8.0.x86_64.tar.gz ) x86? ( http://www.splitted-desktop.com/~gbeauchesne/xvba-video/xvba-video-0.8.0.i686.tar.gz )
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=1e8184acac1986fe3b91f986b7e0e84c

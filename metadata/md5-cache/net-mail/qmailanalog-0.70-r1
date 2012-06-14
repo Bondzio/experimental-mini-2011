@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=sys-apps/groff
 SLOT=0
 SRC_URI=http://cr.yp.to/software/qmailanalog-0.70.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=2281204671555947986e0259c74e5e81

@@ -9,5 +9,5 @@ LICENSE=MIT ISC
 RDEPEND=>=dev-libs/boost-1.41.0 dev-libs/openssl[-bindist] logrotate? ( app-admin/logrotate ) upnp? ( net-libs/miniupnpc ) sys-libs/db:4.8[cxx]
 SLOT=0
 SRC_URI=http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/v0.5.6rc1 -> bitcoin-v0.5.6_rc1.tgz bip16? ( http://luke.dashjr.org/programs/bitcoin/files/bip16/0.5.0.5-Minimal-support-for-mining-BIP16-pay-to-script-hash-.patch.xz ) eligius? ( !bip16? ( http://luke.dashjr.org/programs/bitcoin/files/eligius_sendfee/0.5.0.6rc1-eligius_sendfee.patch.xz ) )
-_eclasses_=db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	e9ac199862f908195424dc48ca2de8f6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e37d80f52bf12cd13b3e98b2fc2ca715

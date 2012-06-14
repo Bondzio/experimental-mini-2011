@@ -10,5 +10,5 @@ RDEPEND=dev-python/pyasn1[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=mirror://pypi/p/python-ldap/python-ldap-2.4.10.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=8b9e6b904a054c079fcad9eb437ef885

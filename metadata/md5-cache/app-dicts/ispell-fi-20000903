@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/ispell
 SLOT=0
 SRC_URI=http://ispell-fi.sourceforge.net/finnish.dict.bz2 http://ispell-fi.sourceforge.net/finnish.medium.aff.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=6c422eb360bc674ccee497218375c351

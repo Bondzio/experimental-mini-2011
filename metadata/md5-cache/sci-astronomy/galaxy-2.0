@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=x11-libs/gtk+:2 x11-misc/xdg-utils
 SLOT=0
 SRC_URI=http://kornelix.squarespace.com/storage/downloads/galaxy-2.0.tar.gz
-_eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=e7c3192cac7f86fe3b9f0467ed17e434

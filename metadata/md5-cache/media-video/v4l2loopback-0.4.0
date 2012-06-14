@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=https://github.com/umlaeute/v4l2loopback/tarball/v0.4.0 -> v4l2loopback-0.4.0.tar.gz
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=162358293ea7c7e9767185ae57850f2e

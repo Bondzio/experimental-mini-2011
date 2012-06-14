@@ -9,5 +9,5 @@ LICENSE=GPL-2 CCPL-Attribution-NonCommercial-NoDerivs-2.0
 RDEPEND=virtual/opengl virtual/glu sci-libs/fftw:3.0 media-libs/libsdl[joystick,opengl,video] media-libs/sdl-mixer[vorbis] media-libs/sdl-image[jpeg,png] media-libs/sdl-net
 SLOT=0
 SRC_URI=mirror://sourceforge/dangerdeep/dangerdeep-0.3.0.tar.gz mirror://sourceforge/dangerdeep/dangerdeep-data-0.3.0.zip
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	e9ac199862f908195424dc48ca2de8f6	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=60e108abbec617336a65bff55d5ed4b5

@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=bzip2? ( app-arch/bzip2 ) lzma? ( app-arch/xz-utils ) python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/project/getdata/getdata/0.6.3/getdata-0.6.3.tar.bz2
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=54b191bd34bf9405d90e993c51e959b3

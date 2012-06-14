@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=net-libs/libpcap
 SLOT=0
 SRC_URI=http://lcamtuf.coredump.cx/p0f3/releases/p0f-3.05b.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	940fa431b6227157c9a420dadef4970b
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=07d57c96387733ee5e27a708be1db97c

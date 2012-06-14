@@ -10,5 +10,5 @@ RDEPEND=alsa? ( app-emulation/emul-linux-x86-soundlibs ) X? ( app-emulation/emul
 RESTRICT=fetch strip
 SLOT=1.6
 SRC_URI=jre-6u31-linux-i586.bin
-_eclasses_=eutils	e9ac199862f908195424dc48ca2de8f6	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	b2ea63076444c18b292e4ac8ee7170ba	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	940fa431b6227157c9a420dadef4970b	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	b2ea63076444c18b292e4ac8ee7170ba	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=439c7842b2a017343af177a834f47a1f
