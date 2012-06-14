@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile unpack
+DEPEND=!sys-fs/aufs !sys-fs/aufs2 !sys-fs/aufs3 dev-vcs/git
+DESCRIPTION=aufs-utils for aufs3.0
+EAPI=4
+HOMEPAGE=http://aufs.sourceforge.net
+IUSE=static
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL
+RDEPEND=!sys-fs/aufs !sys-fs/aufs2 !sys-fs/aufs3
+SLOT=0
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_md5_=02e8455113630dba96e523b20166bab6
