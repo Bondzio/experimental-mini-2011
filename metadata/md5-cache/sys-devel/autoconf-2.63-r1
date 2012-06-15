@@ -9,5 +9,5 @@ PDEPEND=emacs? ( app-emacs/autoconf-mode )
 RDEPEND=>=sys-apps/texinfo-4.3 >=sys-devel/m4-1.4.6 dev-lang/perl >=sys-devel/autoconf-wrapper-6
 SLOT=2.5
 SRC_URI=mirror://gnu/autoconf/autoconf-2.63.tar.gz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=22a0090dedf939f235dc77aa68e0a84c

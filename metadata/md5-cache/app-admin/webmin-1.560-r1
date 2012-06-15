@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=virtual/perl-Sys-Syslog virtual/perl-Time-HiRes virtual/perl-Time-Local dev-perl/Authen-Libwrap dev-perl/IO-Tty dev-perl/MD5 dev-perl/Net-SSLeay dev-perl/Authen-PAM dev-perl/Sys-Hostname-Long !minimal? ( mysql? ( dev-perl/DBD-mysql ) postgres? ( dev-perl/DBD-Pg ) ldap? ( dev-perl/perl-ldap ) dev-perl/XML-Generator dev-perl/XML-Parser )
 SLOT=0
 SRC_URI=minimal? ( mirror://sourceforge/webadmin/webmin-1.560-minimal.tar.gz ) !minimal? ( mirror://sourceforge/webadmin/webmin-1.560.tar.gz )
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=fbdd502ee46e2fb2380867bf87d86b5b

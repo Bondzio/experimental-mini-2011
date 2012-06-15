@@ -10,5 +10,5 @@ RDEPEND=virtual/fortran app-shells/tcsh
 RESTRICT=fetch
 SLOT=0
 SRC_URI=procheck-3.5.4.tar.gz procheck-3.5.4-README doc? ( procheck-3.5.4-manual.tar.gz )
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cb5c907fcd07ec196c62c50314e41cf7

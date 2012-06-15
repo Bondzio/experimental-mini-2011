@@ -10,5 +10,5 @@ RDEPEND=dev-haskell/ghc-paths[profile?] =dev-haskell/xhtml-3000.2*[profile?] >=d
 RESTRICT=test
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/haddock/2.10.0/haddock-2.10.0.tar.gz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	6054440acd4fac31e40a9595827325e0	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6a8fbdceacb4948f82d78a107ab42142

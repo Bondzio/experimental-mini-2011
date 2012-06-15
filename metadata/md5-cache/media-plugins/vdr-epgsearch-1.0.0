@@ -10,5 +10,5 @@ RDEPEND=>=media-video/vdr-1.3.45 pcre? ( dev-libs/libpcre ) tre? ( dev-libs/tre 
 REQUIRED_USE=pcre? ( !tre ) tre? ( !pcre )
 SLOT=0
 SRC_URI=http://winni.vdr-developer.org/epgsearch/downloads/vdr-epgsearch-1.0.0.tgz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a
 _md5_=0eabc7c2690acc49ebb9f38ec34d76dc

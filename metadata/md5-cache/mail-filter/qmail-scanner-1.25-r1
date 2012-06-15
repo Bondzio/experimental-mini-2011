@@ -9,5 +9,5 @@ RDEPEND=>=dev-lang/perl-5.6.1-r1 >=virtual/perl-Time-HiRes-01.20-r2 >=net-mail/t
 RESTRICT=userpriv
 SLOT=0
 SRC_URI=mirror://sourceforge/qmail-scanner/qmail-scanner-1.25.tgz http://toribio.apollinare.org/qmail-scanner/download/q-s-1.25st-20050406.patch.gz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f8f68da3ad8a67683662b6d8474ac207

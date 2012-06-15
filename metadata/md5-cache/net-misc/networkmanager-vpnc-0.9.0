@@ -10,5 +10,5 @@ RDEPEND=>=net-misc/networkmanager-0.9.0 >=dev-libs/dbus-glib-0.74 >=net-misc/vpn
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager-vpnc/0.9/NetworkManager-vpnc-0.9.0.tar.xz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b5cb4e35c85be59d1c6db5fa4dfdb16c

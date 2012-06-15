@@ -9,5 +9,5 @@ LICENSE=CeCILL-2 FDL-1.3
 RDEPEND=ffmpeg? ( virtual/ffmpeg ) fftw? ( sci-libs/fftw:3.0 ) graphicsmagick? ( media-gfx/graphicsmagick ) jpeg? ( virtual/jpeg ) opencv? ( >=media-libs/opencv-2.3.1a-r1 ) openexr? ( media-libs/ilmbase media-libs/openexr ) png? ( media-libs/libpng ) tiff? ( media-libs/tiff ) X? ( x11-libs/libX11 x11-libs/libXext ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=mirror://sourceforge/gmic/gmic_1.5.1.0.tar.gz doc? ( http://dev.gentoo.org/~radhermit/distfiles/gmic_reference-1.5.1.0.pdf.xz )
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=c50cc2434daac6b224a073b2caff92ac

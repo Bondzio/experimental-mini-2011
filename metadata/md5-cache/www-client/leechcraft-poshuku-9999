@@ -7,5 +7,5 @@ IUSE=debug +cleanweb +fatape +filescheme +fua +idn +keywords +onlinebookmarks wy
 LICENSE=GPL-3
 RDEPEND=~net-misc/leechcraft-core-9999[postgres?,sqlite?] x11-libs/qt-webkit onlinebookmarks? ( >=dev-libs/qjson-0.7.1-r1 ) idn? ( net-dns/libidn ) virtual/leechcraft-downloader-http
 SLOT=0
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	git-2	15733ab6a6feb34af9837b41623c2bad	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=d3503fe37bb5206e2e0a5c072584b50a

@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.16:2 >=x11-libs/cairo-1.4 >=x11-libs/pango-1.20[introspection?] >=dev-libs/json-glib-0.8[introspection?] virtual/opengl x11-libs/libX11 x11-libs/libXext x11-libs/libXdamage x11-libs/libXi x11-proto/inputproto >=x11-libs/libXfixes-3 >=x11-libs/libXcomposite-0.4 gtk? ( || ( x11-libs/gdk-pixbuf:2 >=x11-libs/gtk+-2.0:2 ) )
 SLOT=1.0
 SRC_URI=http://www.clutter-project.org/sources/clutter/1.2/clutter-1.2.14.tar.bz2
-_eclasses_=clutter	66956faa308d10b83c72bd8876c8497f	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=clutter	66956faa308d10b83c72bd8876c8497f	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=bf56215e9a80dbd10c197c6154c95e60

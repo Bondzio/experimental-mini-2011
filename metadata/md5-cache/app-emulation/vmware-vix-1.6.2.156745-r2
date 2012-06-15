@@ -9,5 +9,5 @@ RDEPEND=>=dev-lang/perl-5 sys-apps/pciutils sys-apps/findutils >=sys-libs/glibc-
 RESTRICT=strip
 SLOT=0
 SRC_URI=x86? ( mirror://vmware/software/vmserver/VMware-vix-1.6.2-156745.i386.tar.gz ) amd64? ( mirror://vmware/software/vmserver/VMware-vix-1.6.2-156745.x86_64.tar.gz )
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0988df5625a2fd9a3d136be97474db2c

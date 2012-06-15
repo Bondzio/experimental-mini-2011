@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/alsa-lib >=media-libs/liblscp-0.5.5 x11-libs/libX11 x11-libs/qt-core:4 x11-libs/qt-gui:4 libgig? ( >=media-libs/libgig-3.2.1 ) >=media-sound/linuxsampler-0.5
 SLOT=0
 SRC_URI=mirror://gentoo/qsampler-0.2.2.2345.tar.xz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=883b1b64e34b4ebe020b0f9702183753

@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=virtual/fortran app-admin/eselect-blas app-admin/eselect-cblas doc? ( app-doc/blas-docs )
 SLOT=0
 SRC_URI=mirror://sourceforge/math-atlas/atlas3.9.21.tar.bz2 mirror://gentoo/atlas-3.9.21-shared-libs.2.patch.bz2
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=cd8989f88696b8a8e5c48af1178d6830

@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=emacs? ( app-emacs/pymacs app-emacs/python-mode ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/bicyclerepair/bicyclerepair-0.9.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=9d008f42095e33a69a08f744c19a3d4f

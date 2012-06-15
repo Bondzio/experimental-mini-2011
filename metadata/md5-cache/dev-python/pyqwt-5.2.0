@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/qwt:5[svg?] >=dev-python/PyQt4-4.6.1 dev-python/numpy =dev-lang/python-2*
 SLOT=5
 SRC_URI=mirror://sourceforge/pyqwt/PyQwt-5.2.0.tar.gz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=109096a5975bf950e04b9741bf69d78b

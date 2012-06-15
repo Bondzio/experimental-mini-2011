@@ -1,11 +1,12 @@
-DEFINED_PHASES=compile install postinst unpack
-DEPEND=>=x11-wm/windowmaker-0.80.2-r1 >=x11-libs/libPropList-0.10.1-r3 >=media-sound/wmsound-data-1.0.0 x11-misc/imake
+DEFINED_PHASES=compile install prepare
+DEPEND=media-sound/wmsound-data x11-libs/libproplist x11-wm/windowmaker x11-misc/gccmakedep x11-misc/imake
 DESCRIPTION=WindowMaker sound server
+EAPI=4
 HOMEPAGE=http://largo.windowmaker.org/
-KEYWORDS=x86 ~ppc
+KEYWORDS=~ppc x86
 LICENSE=GPL-2
-RDEPEND=>=x11-wm/windowmaker-0.80.2-r1 >=x11-libs/libPropList-0.10.1-r3 >=media-sound/wmsound-data-1.0.0
+RDEPEND=media-sound/wmsound-data x11-libs/libproplist x11-wm/windowmaker
 SLOT=0
 SRC_URI=http://largo.windowmaker.org/files/wmsound-0.9.5.tar.gz
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=d0b17b8c826d25fb0985e5a21698ccb1
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=5e1e226cb9c09cd2e8c00cc17909e2ea

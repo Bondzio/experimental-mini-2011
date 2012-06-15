@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=sys-apps/sed-4
+DESCRIPTION=An P2P Internet Telephony (VoiceIP) client
+EAPI=4
+HOMEPAGE=http://www.skype.com/
+IUSE=pax_kernel qt-static
+KEYWORDS=~amd64 ~x86
+LICENSE=skype-4.0.0.7-copyright skype-4.0.0.7-third-party_attributions.txt
+RDEPEND=virtual/ttf-fonts amd64? ( >=app-emulation/emul-linux-x86-baselibs-20120127 >=app-emulation/emul-linux-x86-soundlibs-20120127 >=app-emulation/emul-linux-x86-xlibs-20120127 !qt-static? ( >=app-emulation/emul-linux-x86-qtlibs-20120127 ) ) x86? ( media-libs/alsa-lib x11-libs/libX11 x11-libs/libXext x11-libs/libXScrnSaver x11-libs/libXv qt-static? ( >=dev-libs/glib-2.28 media-libs/fontconfig >=media-libs/freetype-2 sys-libs/zlib x11-libs/libICE x11-libs/libSM x11-libs/libXrender ) !qt-static? ( x11-libs/qt-core:4 x11-libs/qt-dbus:4 x11-libs/qt-gui:4[accessibility,dbus] ) )
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=!qt-static? ( http://download.skype.com/linux/skype-4.0.0.7.tar.bz2 ) qt-static? ( http://download.skype.com/linux/skype_static-4.0.0.7.tar.bz2 )
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=32606c8977fa904d25516f6a2ea564fe

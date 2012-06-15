@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=virtual/libc !sys-process/psmisc
 SLOT=0
 SRC_URI=http://mbsd.msk.ru/dist/fuser-1142334561.tar.bz2 mirror://gentoo/fuser-bsd-patches-1.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bsdmk	d13d2e416a2fa9a525bf82c9bdb05509	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	bsdmk	d13d2e416a2fa9a525bf82c9bdb05509	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=ca1c1e4d3b2d844d41500a9811581a9e

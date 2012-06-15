@@ -4,10 +4,10 @@ DESCRIPTION=Python library for creating 3D images
 EAPI=3
 HOMEPAGE=http://cgkit.sourceforge.net
 IUSE=3ds
-KEYWORDS=~amd64 ppc ~x86
+KEYWORDS=~amd64 ppc x86
 LICENSE=LGPL-2.1 MPL-1.1 GPL-2
 RDEPEND=>=dev-libs/boost-1.48[python] dev-python/pyprotocols dev-python/pyopengl dev-python/pygame dev-python/imaging 3ds? ( media-libs/lib3ds ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/cgkit/cgkit-2.0.0alpha9.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=a0d1830e0e431bc113dacd40cf69395b
+_md5_=e4be685306e6a6b9067f091547b5dd29

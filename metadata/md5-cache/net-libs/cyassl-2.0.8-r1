@@ -10,5 +10,5 @@ RDEPEND=sniffer? ( net-libs/libpcap ) zlib? ( sys-libs/zlib )
 REQUIRED_USE=^^ ( small big huge ) x86? ( !sha512 ) test? ( !dtls )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~blueness/cyassl/cyassl-2.0.8.zip
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=f72bb6e9af318b7aca238326bb2957a3

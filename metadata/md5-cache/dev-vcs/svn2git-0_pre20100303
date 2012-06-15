@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-vcs/subversion x11-libs/qt-core dev-vcs/git
 SLOT=0
 SRC_URI=http://www.hartwork.org/public/svn2git-0_pre20100303.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=cb82c04e37e3f2855380b4dd9f9f1842

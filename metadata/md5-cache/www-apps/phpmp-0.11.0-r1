@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
 SLOT=0.11.0-r1
 SRC_URI=mirror://sourceforge/musicpd/phpMp-0.11.0.tar.gz
-_eclasses_=depend.php	df169a364e191b840b695604097e3c21	eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=depend.php	df169a364e191b840b695604097e3c21	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	webapp	30d951d5c98c4f31c7999ab4ba4806d1
 _md5_=132a12c8ab39b49d7f48f809a744d03b

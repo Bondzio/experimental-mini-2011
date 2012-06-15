@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=fuse? ( sys-fs/fuse ) snmp? ( net-analyzer/net-snmp )
 SLOT=0
 SRC_URI=http://download.boulder.ibm.com/ibmdl/pub/software/dw/linux390/ht_src/s390-tools-1.15.0.tar.bz2 zfcpdump? ( mirror://sourceforge/e2fsprogs/e2fsprogs-1.41.3.tar.gz mirror://kernel/linux/kernel/v2.6/linux-2.6.27.tar.bz2 )
-_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
 _md5_=70f556560297fc8e432f5adb76441ca4
