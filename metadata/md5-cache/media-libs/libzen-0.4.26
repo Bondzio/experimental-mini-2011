@@ -1,13 +1,12 @@
 DEFINED_PHASES=compile configure install prepare
-DEPEND=sys-libs/zlib doc? ( app-doc/doxygen ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=doc? ( app-doc/doxygen ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Shared library for libmediainfo and mediainfo
 EAPI=4
 HOMEPAGE=http://sourceforge.net/projects/zenlib
 IUSE=doc static-libs
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=as-is ZLIB
-RDEPEND=sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/zenlib/ZenLib%20-%20Sources/0.4.26/libzen_0.4.26.tar.bz2
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=eeadcec6719f1d8b6d42c775e4cde1fa
+_md5_=7de8a9697319e70ee28656566e3b77bf

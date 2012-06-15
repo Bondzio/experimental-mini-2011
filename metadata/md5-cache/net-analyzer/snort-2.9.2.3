@@ -4,10 +4,10 @@ DESCRIPTION=The de facto standard for intrusion detection/prevention
 EAPI=2
 HOMEPAGE=http://www.snort.org/
 IUSE=static +dynamicplugin +zlib +gre +mpls +targetbased +decoder-preprocessor-rules +ppm +perfprofiling linux-smp-stats inline-init-failopen +threads debug +active-response +normalizer reload-error-restart +react +flexresp3 +paf large-pcap-64bit aruba mysql odbc postgres selinux
-KEYWORDS=~amd64 ~x86 ~mips
+KEYWORDS=~amd64 ~mips ~ppc ~x86
 LICENSE=GPL-2
 RDEPEND=>=net-libs/libpcap-1.0.0 >=net-libs/daq-0.6 >=dev-libs/libpcre-6.0 dev-libs/libdnet postgres? ( dev-db/postgresql-base ) mysql? ( virtual/mysql ) odbc? ( dev-db/unixODBC ) zlib? ( sys-libs/zlib ) selinux? ( sec-policy/selinux-snort )
 SLOT=0
 SRC_URI=http://www.snort.org/dl/snort-current/snort-2.9.2.3.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=9d6d63464ee125db0a71ee724f8516ae
+_md5_=f403221119912b8027ef5c9f0d96c711

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=Framework for Unix-like command line programs
+EAPI=4
+HOMEPAGE=http://liw.fi/cliapp/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=http://code.liw.fi/debian/pool/main/p/python-cliapp/python-cliapp_0.29.orig.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=157480febd2bc45374960d41cc6b967b

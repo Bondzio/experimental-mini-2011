@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libzen/libzen-0.4.27.ebuild,v 1.1 2012/05/31 10:18:43 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libzen/libzen-0.4.27.ebuild,v 1.4 2012/06/15 09:25:23 radhermit Exp $
 
 EAPI="4"
 
-inherit autotools multilib
+inherit autotools multilib eutils
 
 MY_PN="ZenLib"
 DESCRIPTION="Shared library for libmediainfo and mediainfo"
@@ -16,8 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="doc static-libs"
 
-RDEPEND="sys-libs/zlib"
-DEPEND="${RDEPEND}
+DEPEND="virtual/pkgconfig
 	doc? ( app-doc/doxygen )"
 
 S=${WORKDIR}/${MY_PN}/Project/GNU/Library
@@ -62,5 +61,5 @@ src_install() {
 		dohtml "${WORKDIR}"/${MY_PN}/Doc/*
 	fi
 
-	find "${ED}" -name '*.la' -exec rm -f {} +
+	prune_libtool_files
 }

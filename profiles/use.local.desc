@@ -303,6 +303,7 @@ app-crypt/shishi:null - Enable dummy NULL encryption/checksum type.
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-dicts/aspell-be:classic - Support classic spelling by default
 app-dicts/gwaei:unique - Enable single instance support using dev-libs/libunique.
+app-dicts/myspell-pt:preao - Use the pre ortographic agreement version of the dictionary
 app-doc/csound-manual:html - Install HTML documentation
 app-doc/doxygen:dot - allow to create dot graphs using media-gfx/graphviz
 app-doc/doxygen:nodot - removes graphviz dependency, along with dot graphs
@@ -1559,6 +1560,7 @@ dev-python/markdown:pygments - Enable fancy pygments support
 dev-python/matplotlib:excel - Pull dev-python/xlwt for the exceltools toolkit
 dev-python/matplotlib:traits - Pull dev-python/traits for the experimental enthought traits support
 dev-python/mpmath:matplotlib - Add support for dev-python/matplotlib
+dev-python/netaddr:cli - Enable netaddr shell with dev-python/ipython
 dev-python/nose:coverage - Utilize dev-python/coverage
 dev-python/numexpr:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl.
 dev-python/pandas:R - Enable support for R via dev-python/rpy
@@ -3982,6 +3984,7 @@ net-libs/libnids:libnet - Include code requiring net-libs/libnet
 net-libs/liboauth:bindist - Alias for the nss USE flag, since there are license compliancy trouble when using OpenSSL.
 net-libs/liboauth:curl - If enabled, net-misc/curl is used thorugh the libcurl library; if it's not, the curl command is used instead. Some features are only available when using the library, but using it as library requires matching SSL implementations.
 net-libs/liboauth:nss - Use Mozilla NSS (dev-libs/nss) as hash library; if this is disabled, dev-libs/openssl is used instead.
+net-libs/libosmocore:embedded - Build for embedded use and disable unsupported features
 net-libs/libpcap:libnl - link with dev-libs/libnl (used to put wireless interfaces in monitor mode)
 net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME
 net-libs/libproxy:kde - Enable support for reading proxy settings from KDE
@@ -5466,11 +5469,9 @@ www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the de
 www-client/lynx:ssl - Enable HTTPS support.
 www-client/midori:deprecated - Enable GTK+-2 instead of GTK+-3 because of external plugins like adobe-flash
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
-www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME version 2 desktop integration
-www-client/opera:gtk3 - Set runtime dependencies to support GTK+/GNOME version 3 desktop integration
+www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
 www-client/opera:kde - Set runtime dependencies to support KDE desktop integration
-www-client/opera-next:gtk - Set runtime dependencies to support GTK+/GNOME version 2 desktop integration
-www-client/opera-next:gtk3 - Set runtime dependencies to support GTK+/GNOME version 3 desktop integration
+www-client/opera-next:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
 www-client/opera-next:kde - Set runtime dependencies to support KDE desktop integration
 www-client/seamonkey:chatzilla - Build Mozilla's IRC client (default on)
 www-client/seamonkey:composer - Build Mozilla's HTML editor component (default on)

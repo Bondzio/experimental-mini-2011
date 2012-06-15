@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libzen/libzen-0.4.26.ebuild,v 1.1 2012/04/10 22:38:07 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libzen/libzen-0.4.26.ebuild,v 1.3 2012/06/15 09:36:46 ago Exp $
 
 EAPI="4"
 
@@ -13,12 +13,10 @@ SRC_URI="mirror://sourceforge/zenlib/${MY_PN}%20-%20Sources/${PV}/${PN}_${PV}.ta
 
 LICENSE="as-is ZLIB"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="doc static-libs"
 
-RDEPEND="sys-libs/zlib"
-DEPEND="${RDEPEND}
-	doc? ( app-doc/doxygen )"
+DEPEND="doc? ( app-doc/doxygen )"
 
 S="${WORKDIR}/${MY_PN}/Project/GNU/Library"
 
