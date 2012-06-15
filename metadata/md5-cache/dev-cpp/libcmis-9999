@@ -1,12 +1,12 @@
 DEFINED_PHASES=configure install prepare unpack
-DEPEND=dev-libs/boost dev-libs/libxml2 net-misc/curl test? ( dev-util/cppunit ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
+DEPEND=dev-libs/boost dev-libs/libxml2 net-misc/curl man? ( app-text/docbook2X ) test? ( dev-util/cppunit ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
 DESCRIPTION=C++ client library for the CMIS interface
 EAPI=4
 HOMEPAGE=https://sourceforge.net/projects/libcmis/
-IUSE=static-libs test
+IUSE=static-libs man test
 LICENSE=|| ( GPL-2 LGPL-2 MPL-1.1 )
 RDEPEND=dev-libs/boost dev-libs/libxml2 net-misc/curl
 RESTRICT=test
 SLOT=0
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=55eeaeccf40714333ba5c7fbdcca205f
+_md5_=0ca9191f5c2154689747dad21b0dbd79

@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile configure install preinst prepare
-DEPEND=>=dev-util/scons-0.98 x11-libs/libXt x11-proto/inputproto >=dev-libs/openssl-0.9.6 ffmpeg? ( virtual/ffmpeg ) jpeg? ( virtual/jpeg ) media-libs/tiff >=dev-lang/python-2.4 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl dev-util/scons
+DEFINED_PHASES=compile configure install preinst prepare setup
+DEPEND=>=dev-util/scons-0.98 x11-libs/libXt x11-proto/inputproto >=dev-libs/openssl-0.9.6 ffmpeg? ( virtual/ffmpeg ) jpeg? ( virtual/jpeg ) media-libs/tiff:0 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng:0 ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl dev-util/scons || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=3D Creation/Animation/Publishing System
 EAPI=2
 HOMEPAGE=http://www.blender.org/
 IUSE=blender-game ffmpeg jpeg nls openal openexr openmp player png quicktime verse
 KEYWORDS=amd64 ppc ppc64 x86
 LICENSE=|| ( GPL-2 BL )
-RDEPEND=>=dev-libs/openssl-0.9.6 ffmpeg? ( virtual/ffmpeg ) jpeg? ( virtual/jpeg ) media-libs/tiff >=dev-lang/python-2.4 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl
+RDEPEND=>=dev-libs/openssl-0.9.6 ffmpeg? ( virtual/ffmpeg ) jpeg? ( virtual/jpeg ) media-libs/tiff:0 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) openexr? ( media-libs/openexr ) png? ( media-libs/libpng:0 ) quicktime? ( media-libs/libquicktime ) >=media-libs/libsdl-1.2 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) virtual/opengl || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://download.blender.org/source/blender-2.48a.tar.gz
 _eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=c4d8da9beda7ffc44acd54e5fef739f4
+_md5_=2e69539a04e4ec73ed849d1ead897f94

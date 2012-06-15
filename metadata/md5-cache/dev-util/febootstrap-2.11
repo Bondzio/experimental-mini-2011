@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=sys-apps/fakeroot-1.11 >=sys-apps/fakechroot-2.9 dev-lang/perl >=sys-apps/yum-3.2.21 sys-fs/e2fsprogs sys-libs/e2fsprogs-libs
+DESCRIPTION=Fedora bootstrap scripts
+EAPI=2
+HOMEPAGE=http://people.redhat.com/~rjones/febootstrap/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/fakeroot-1.11 >=sys-apps/fakechroot-2.9 dev-lang/perl >=sys-apps/yum-3.2.21 sys-fs/e2fsprogs sys-libs/e2fsprogs-libs
+SLOT=0
+SRC_URI=http://people.redhat.com/~rjones/febootstrap/files/febootstrap-2.11.tar.gz
+_eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=60ccd00290c4c49a5946066dca9304dd

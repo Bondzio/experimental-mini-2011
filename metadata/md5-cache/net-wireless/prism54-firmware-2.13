@@ -2,11 +2,11 @@ DEFINED_PHASES=install preinst unpack
 DESCRIPTION=firmware for Intersil Prism GT / Prism Duette (including USB) wireless chipsets
 EAPI=4
 HOMEPAGE=http://wireless.kernel.org/en/users/Drivers/p54
-KEYWORDS=~amd64 ppc ~x86
+KEYWORDS=amd64 ppc x86
 LICENSE=as-is
 RDEPEND=|| ( >=sys-fs/udev-096 >=sys-apps/hotplug-20040923 )
 RESTRICT=mirror
 SLOT=1
 SRC_URI=http://daemonizer.de/prism54/prism54-fw/fw-softmac/2.13.12.0.arm http://daemonizer.de/prism54/prism54-fw/fw-usb/2.13.1.0.lm86.arm http://daemonizer.de/prism54/prism54-fw/fw-usb/2.13.24.0.lm87.arm http://daemonizer.de/prism54/prism54-fw/stlc4560/2.13.12.0.a.5.2.arm
 _eclasses_=eutils	21a26e8e10b392a8de6b2cdab67cb3d8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=8004b9bc72b8df948f15402644a4af0f
+_md5_=91528c2b01c33058d36a79cfbbb6e326
