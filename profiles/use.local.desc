@@ -240,8 +240,6 @@ app-backup/spideroak-bin:system-libs - Use the system libraries rather than bund
 app-backup/tsm:hsm - Installs Tivoli Storage Manager for Space Management
 app-backup/tsm:tsm_cit - IBM Tivoli Common Inventory Technology
 app-backup/tsm:tsm_hw - Difference snapshot support for NetApp and N-Series file servers
-app-benchmarks/bootchart:acct - Enable process accounting
-app-benchmarks/bootchart:java - Enable autorendering to svg via a java interface
 app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
 app-benchmarks/sysbench:aio - Enable libaio support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
@@ -678,7 +676,6 @@ app-misc/recoll:msdoc - Index Microsoft Word documents
 app-misc/recoll:msppt - Index Microsoft PowerPoint documents
 app-misc/recoll:msxls - Index Microsoft Excel documents
 app-misc/recoll:pdf - Index PDF documents
-app-misc/recoll:ps - Index PostScript files
 app-misc/recoll:rtf - Index Microsoft RTF documents
 app-misc/recoll:session - Stop monitoring file alterations when X11 session terminates
 app-misc/recoll:tex - Index TeX files
@@ -796,7 +793,6 @@ app-office/lyx:monolithic-build - This should speed up compilation significantly
 app-office/lyx:rcs - Add support for revision control via dev-vcs/rcs
 app-office/lyx:rtf - Add support for RTF import/export packages
 app-office/lyx:xetex - Add support for XeTeX typesetting
-app-office/rabbit:gs - Ghostscript support (app-text/ghostscript-gpl)
 app-office/rabbit:markdown - Markdown support (dev-ruby/kramdown)
 app-office/rabbit:tgif - tgif support (media-gfx/tgif)
 app-office/scribus:linguas_cs_CZ - Language support for cs_CZ
@@ -873,7 +869,6 @@ app-text/evince:dvi - Enable the built-in DVI viewer
 app-text/evince:gnome - Enable the use of gnome-base/gconf to honour lockdown settings
 app-text/evince:introspection - Use dev-libs/gobject-introspection for introspection
 app-text/evince:nautilus - Enable property page extension in gnome-base/nautilus
-app-text/evince:ps - Enable PostScript viewer using app-text/libspectre
 app-text/evince:t1lib - Enable the Type-1 fonts for the built-in DVI viewer (media-libs/t1lib)
 app-text/evince:xps - Enable XPS viewer using app-text/libgxps
 app-text/getxbook:ocr - Use app-text/tesseract for optical character recognition
@@ -1188,7 +1183,6 @@ dev-lang/gdl:grib - Add support for the meteorological GRIB format with sci-libs
 dev-lang/gdl:gshhs - Add support for projection adn continent maps with sci-geosciences/gshhs-data
 dev-lang/gdl:hdf - Add support for the Hierarchical Data Format v.4
 dev-lang/gdl:proj - Add support for sci-libs/proj (geographic projections)
-dev-lang/gdl:ps - Add support for Postscript with dev-libs/pslib
 dev-lang/gdl:udunits - Add support for manipulating units of physical quantities
 dev-lang/gforth:force-reg - Enable a possibly unstable GCC flag for possibly large performance gains
 dev-lang/ghc:binary - Install the binary version directly, rather than using it to build the source version.
@@ -1456,7 +1450,6 @@ dev-lisp/sbcl:ldb - Include support for the SBCL low level debugger
 dev-lisp/sbcl:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 dev-lua/luarocks:curl - Uses net-misc/curl for fetching lua packages instead of net-misc/wget.
 dev-lua/luarocks:openssl - Uses dev-libs/openssl for verifying lua packages instead of md5sum.
-dev-ml/camlimages:gs - Ghostscript support (app-text/ghostscript-gpl)
 dev-ml/lablgtk:glade - Enable libglade bindings compilation.
 dev-ml/lablgtk:gnomecanvas - Enable libgnomecanvas bindings compilation.
 dev-ml/lablgtk:sourceview - Enable GtkSourceView support
@@ -2107,7 +2100,6 @@ gpe-base/gpe:games - Builds and installs GPE games.
 kde-base/ark:archive - Enable support for a variety of archive formats through libarchive
 kde-base/cantor:R - Enable R backend support
 kde-base/cantor:analitza - Enable support kde-base/analitza
-kde-base/cantor:ps - Enable rendering EPS files
 kde-base/dolphin:thumbnail - Enables video thumbnails generation for kde-base/dolphin file manager.
 kde-base/dolphin-plugins:bazaar - Enable support for the bazaar VCS
 kde-base/dolphin-plugins:git - Enable support for the git VCS
@@ -2184,7 +2176,6 @@ kde-base/libplasmaclock:holidays - Include support for holidays in plasma calend
 kde-base/marble:designer-plugin - Enable designer plugin
 kde-base/okular:chm - Enable support for Microsoft Compiled HTML Help files
 kde-base/okular:ebook - Add E-Book support
-kde-base/okular:ps - Add PostScript support
 kde-base/perlkde:akonadi - Compile bindings for Akonadi.
 kde-base/perlkde:attica - Compile bindings for dev-libs/libattica.
 kde-base/perlkde:kate - Compile bindings for KDE Advanced Text Editor.
@@ -2439,18 +2430,15 @@ media-gfx/freewrl:glew - Enable glew extensions
 media-gfx/freewrl:java - Build and install java EAI/SAI support library
 media-gfx/freewrl:libeai - Build EAI C library
 media-gfx/freewrl:osc - Allows for OSC-based control and communication between multiple freewrl instances
-media-gfx/gimp:gs - Enable Ghostscript support (app-text/ghostscript-gpl)
 media-gfx/gimp:smp - Enable support for multiprocessors
 media-gfx/gmic:graphicsmagick - Enable support for many common image file formats using the GraphicsMagick++ library
 media-gfx/gmic:opencv - Enable support for webcams using the OpenCV library
 media-gfx/graphicsmagick:fpx - Enable FlashPix support with media-libs/libfpx
-media-gfx/graphicsmagick:gs - Enable ghostscript support
 media-gfx/graphicsmagick:modules - Compile graphicsmagick with dynamically loadable modules
 media-gfx/graphicsmagick:q16 - Set storage quantum size to 16 (~2*memory)
 media-gfx/graphicsmagick:q32 - Set storage quantum size to 32 (~5*memory)
 media-gfx/graphviz:X - Builds lefty front-end, builds plugin -Txlib, and enables support for x11 in various other modules (needs cairo)
 media-gfx/graphviz:devil - Enables DevIL output plugin -Tdevil
-media-gfx/graphviz:gs - Enables PostScript output via ghostscript, for plugin -Tgs (needs cairo)
 media-gfx/graphviz:gtk - Enables gtk+ output plugin -Tgtk (needs cairo)
 media-gfx/graphviz:gts - Enables support for gts
 media-gfx/graphviz:lasi - Enables PostScript output via media-libs/lasi, for plugin -Tlasi (needs cairo)
@@ -2461,7 +2449,6 @@ media-gfx/hugin:sift - automatically align images with media-gfx/autopano-sift o
 media-gfx/imagemagick:autotrace - Use media-gfx/autotrace to convert bitmaps into vector graphics
 media-gfx/imagemagick:corefonts - Use media-fonts/corefonts which is required by some commands
 media-gfx/imagemagick:fpx - Enable media-libs/libfpx support
-media-gfx/imagemagick:gs - Enable ghostscript support
 media-gfx/imagemagick:hdri - enable High Dynamic Range Images formats
 media-gfx/imagemagick:lqr - Enable experimental liquid rescale support using media-libs/liblqr
 media-gfx/imagemagick:opencl - Enable OpenCL support
@@ -2472,7 +2459,6 @@ media-gfx/imagemagick:q8 - Set quantum depth value to 8
 media-gfx/imagemagick:webp - Enable webp image format support using media-libs/libwebp
 media-gfx/imageworsener:webp - enable webp image format support
 media-gfx/inkscape:dia - pull in app-office/dia for dia import extension
-media-gfx/inkscape:gs - enables support for the PostScript import extension
 media-gfx/inkscape:inkjar - enables support for OpenOffice.org SVG jar files
 media-gfx/iscan-plugin-gt-f500:minimal - Install the firmware only, and not the plugin.
 media-gfx/jpeg2ps:metric - Default to A4 paper size
@@ -2674,7 +2660,6 @@ media-libs/swfdec:gstreamer - Enable media-libs/gstreamer to support various med
 media-libs/swfdec:gtk - Enable GTK+ convenience library while is necessary for all GTK+ apps using swfdec (gnome-extra/swfdec-gnome and www-plugins/swfdec-mozilla)
 media-libs/swfdec:pulseaudio - Use media-sound/pulseaudio for audio output
 media-libs/taglib:asf - Provide support for Microsoft's 'advanced systems format' media container.
-media-libs/urt:gs - Add support for postscript
 media-libs/vips:fits - Enable support for the FITS image format through sci-libs/cfitsio
 media-libs/vips:orc - Use dev-lang/orc for runtime optimisations
 media-libs/win32codecs:real - Installs the real video codecs
@@ -2980,7 +2965,6 @@ media-sound/split2flac:enca - Try to guess the charset using enca
 media-sound/split2flac:flake - Add support for Flake, alternative FLAC encoder
 media-sound/split2flac:mac - Add support for Monkey's Audio files
 media-sound/split2flac:replaygain - Support for Replay Gain metadata, for relative volume adjustment
-media-sound/squeezeboxserver:aac - Enable playback support for AAC (.m4a) encoded files
 media-sound/squeezeslave:display - Enable a text-based display
 media-sound/squeezeslave:wma - Enable support for streaming Windows Media Audio
 media-sound/squeezeslave:zones - Pairs surround sound speakers into stereo zones (requires 5.1 setup or better)
@@ -3282,7 +3266,6 @@ media-video/transcode:nuv - NuppelVideo container format demuxing
 media-video/transcode:pic - disable optimized assembly code that is not PIC friendly
 media-video/transcode:postproc - Build with ffmpeg libpostproc support
 media-video/tsmuxer:qt4 - Installs tsMuxerGUI (needs Qt4)
-media-video/undvd:ogm - Support for OGM container format
 media-video/ushare:dlna - Add DLNA (media-libs/libdlna) support
 media-video/vdr:analogtv - Add support for the analogtv plugin
 media-video/vdr:atsc - Support for NorthAmerican Broadcast ( rudimentary )
@@ -4724,7 +4707,6 @@ sci-geosciences/gmt:gmttria - Non GNU triangulation method, more efficient
 sci-geosciences/gmt:metric - Use SI (cm) units instead of US (inches) ones
 sci-geosciences/gmt:mex - Enable compilation of mex supplement which requires Octave/Matlab
 sci-geosciences/gmt:octave - Enable octave support
-sci-geosciences/gmt:ps - Enable rendering EPS files
 sci-geosciences/googleearth:mdns-bundled - Use bundled nss-mdns library instead of depending on sys-auth/nss-mdns. Enable this if you want to avoid the deptree.
 sci-geosciences/googleearth:qt-bundled - Use bundled Qt4 libraries instead of system ones. Recommended only for troubleshooting.
 sci-geosciences/gpsd:dbus - export gpsd data over dbus connections
@@ -4836,7 +4818,6 @@ sci-mathematics/agda:stdlib - Install the standard library.
 sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
 sci-mathematics/cvc3:isabelle - Add integration support for the Isabelle/HOL theorem prover.
 sci-mathematics/cvc3:zchaff - Use the SAT solver zchaff whose copyright is owned by Princeton University and is more restrictive (see zchaff license).
-sci-mathematics/dataplot:gs - Add Ghostscript support (app-text/ghostscript-gpl)
 sci-mathematics/e:isabelle - Add integration support for the Isabelle/HOL theorem prover.
 sci-mathematics/form:devref - Build and install developers reference
 sci-mathematics/form:doxygen - Build and install API documentation
@@ -4893,7 +4874,6 @@ sci-misc/nco:dap - Support for remote data access with the NETCDF DAP client
 sci-misc/nco:ncap2 - Build next generation netcdf arithmetic processor (needs dev-java/antlr)
 sci-misc/nco:udunits - Add sci-libs/udunits files support
 sci-misc/ncview:udunits - Add sci-libs/udunits files support
-sci-physics/abinit:plugins - Build all plugins
 sci-physics/bullet:double-precision - Build libraries in double precision
 sci-physics/bullet:extras - Build additional libraries
 sci-physics/cernlib-montecarlo:herwig - Build Herwig internal event generator, newer version available in sci-physics/herwig
@@ -5331,10 +5311,8 @@ sys-kernel/openvz-sources:deblob - Remove binary blobs from kernel sources to pr
 sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
 sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
-sys-kernel/sparc-sources:ultra1 - If you have a SUN Ultra 1 with a HME interface
 sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vserver-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
-sys-kernel/xen-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/zen-sources:bfq - Make the BFQ IO Scheduler available by applying upstream patches
 sys-kernel/zen-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/zen-sources:minimal - Clone git tree with --depth 1 to reduce amount of data to download. Use with caution

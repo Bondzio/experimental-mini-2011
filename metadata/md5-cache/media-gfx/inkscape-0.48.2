@@ -3,12 +3,12 @@ DEPEND=>=app-text/poppler-0.12.3-r3[cairo,xpdf-headers] dev-cpp/glibmm >=dev-cpp
 DESCRIPTION=A SVG based generic vector-drawing program
 EAPI=4
 HOMEPAGE=http://www.inkscape.org/
-IUSE=dia gnome gs inkjar lcms nls spell wmf debug
+IUSE=dia gnome postscript inkjar lcms nls spell wmf debug
 KEYWORDS=amd64 hppa ppc ppc64 x86 ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
 LICENSE=GPL-2 LGPL-2.1
-RDEPEND=>=app-text/poppler-0.12.3-r3[cairo,xpdf-headers] dev-cpp/glibmm >=dev-cpp/gtkmm-2.18.0:2.4 >=dev-libs/boehm-gc-6.4 >=dev-libs/glib-2.6.5 >=dev-libs/libsigc++-2.0.12 >=dev-libs/libxml2-2.6.20 >=dev-libs/libxslt-1.0.15 dev-libs/popt dev-python/lxml media-gfx/imagemagick[cxx] media-libs/fontconfig media-libs/freetype:2 >=media-libs/libpng-1.2 app-text/libwpd:0.9 app-text/libwpg:0.2 sci-libs/gsl x11-libs/libXft >=x11-libs/gtk+-2.10.7:2 >=x11-libs/pango-1.4.0 || ( dev-lang/python[xml] dev-python/pyxml ) gnome? ( >=gnome-base/gnome-vfs-2.0 ) lcms? ( media-libs/lcms:0 ) spell? ( app-text/aspell app-text/gtkspell:2 ) dev-python/numpy media-gfx/uniconvertor dia? ( app-office/dia ) gs? ( app-text/ghostscript-gpl ) wmf? ( media-libs/libwmf )
+RDEPEND=>=app-text/poppler-0.12.3-r3[cairo,xpdf-headers] dev-cpp/glibmm >=dev-cpp/gtkmm-2.18.0:2.4 >=dev-libs/boehm-gc-6.4 >=dev-libs/glib-2.6.5 >=dev-libs/libsigc++-2.0.12 >=dev-libs/libxml2-2.6.20 >=dev-libs/libxslt-1.0.15 dev-libs/popt dev-python/lxml media-gfx/imagemagick[cxx] media-libs/fontconfig media-libs/freetype:2 >=media-libs/libpng-1.2 app-text/libwpd:0.9 app-text/libwpg:0.2 sci-libs/gsl x11-libs/libXft >=x11-libs/gtk+-2.10.7:2 >=x11-libs/pango-1.4.0 || ( dev-lang/python[xml] dev-python/pyxml ) gnome? ( >=gnome-base/gnome-vfs-2.0 ) lcms? ( media-libs/lcms:0 ) spell? ( app-text/aspell app-text/gtkspell:2 ) dev-python/numpy media-gfx/uniconvertor dia? ( app-office/dia ) postscript? ( app-text/ghostscript-gpl ) wmf? ( media-libs/libwmf )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/inkscape/inkscape-0.48.2.tar.bz2
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=295778feb4d99882c5a36afff4cc72b0
+_md5_=c34153b88d96e15b3c277280d255d474

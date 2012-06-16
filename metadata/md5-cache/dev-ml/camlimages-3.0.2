@@ -3,11 +3,11 @@ DEPEND=dev-ml/ocaml-autoconf dev-ml/findlib || ( >=sys-devel/automake-1.11.1:1.1
 DESCRIPTION=An image manipulation library for ocaml
 EAPI=2
 HOMEPAGE=http://cristal.inria.fr/camlimages/
-IUSE=doc gif gs gtk jpeg tiff truetype xpm
+IUSE=doc gif gtk jpeg postscript tiff truetype xpm
 KEYWORDS=~amd64 ppc x86
 LICENSE=LGPL-2.1
-RDEPEND=>=dev-lang/ocaml-3.10.2[X,ocamlopt] gif? ( media-libs/giflib ) gtk? ( dev-ml/lablgtk ) gs? ( app-text/ghostscript-gpl ) jpeg? ( virtual/jpeg ) tiff? ( media-libs/tiff ) >=media-libs/libpng-1.4 truetype? ( >=media-libs/freetype-2 ) xpm? ( x11-libs/libXpm )
+RDEPEND=>=dev-lang/ocaml-3.10.2[X,ocamlopt] gif? ( media-libs/giflib ) gtk? ( dev-ml/lablgtk ) jpeg? ( virtual/jpeg ) postscript? ( app-text/ghostscript-gpl ) tiff? ( media-libs/tiff ) >=media-libs/libpng-1.4:0 truetype? ( >=media-libs/freetype-2 ) xpm? ( x11-libs/libXpm )
 SLOT=0
 SRC_URI=http://cristal.inria.fr/camlimages/camlimages-3.0.2.tgz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=6db5712f5a4df13006df28d500956b76
+_md5_=62007c5d1800b3e7d43423e3a79f7ad2

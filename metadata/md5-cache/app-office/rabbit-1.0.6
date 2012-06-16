@@ -3,12 +3,12 @@ DEPEND=emacs? ( virtual/emacs ) test? ( ruby_targets_ruby18? ( >=dev-ruby/codera
 DESCRIPTION=An application to do presentation with RD document
 EAPI=4
 HOMEPAGE=http://rabbit-shockers.org/
-IUSE=nls gs migemo tgif enscript emacs markdown test elibc_FreeBSD ruby_targets_ruby18
+IUSE=nls migemo tgif enscript emacs markdown postscript test elibc_FreeBSD ruby_targets_ruby18
 KEYWORDS=~amd64
 LICENSE=GPL-2
-RDEPEND=emacs? ( virtual/emacs ) nls? ( dev-ruby/ruby-gettext ) gs? ( app-text/ghostscript-gpl ) migemo? ( app-text/migemo ) enscript? ( app-text/enscript ) tgif? ( media-gfx/tgif ) ruby_targets_ruby18? ( >=dev-ruby/coderay-1.0.0[ruby_targets_ruby18] >=dev-ruby/ruby-gdkpixbuf2-0.15.0[ruby_targets_ruby18] dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/ruby-poppler[ruby_targets_ruby18] >=dev-ruby/ruby-rsvg-1.0.3[ruby_targets_ruby18] dev-ruby/rdtool[ruby_targets_ruby18] dev-ruby/haml[ruby_targets_ruby18] markdown? ( dev-ruby/kramdown[ruby_targets_ruby18] ) dev-ruby/sinatra[ruby_targets_ruby18] enscript? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) emacs? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
+RDEPEND=emacs? ( virtual/emacs ) nls? ( dev-ruby/ruby-gettext ) postscript? ( app-text/ghostscript-gpl ) migemo? ( app-text/migemo ) enscript? ( app-text/enscript ) tgif? ( media-gfx/tgif ) ruby_targets_ruby18? ( >=dev-ruby/coderay-1.0.0[ruby_targets_ruby18] >=dev-ruby/ruby-gdkpixbuf2-0.15.0[ruby_targets_ruby18] dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/ruby-poppler[ruby_targets_ruby18] >=dev-ruby/ruby-rsvg-1.0.3[ruby_targets_ruby18] dev-ruby/rdtool[ruby_targets_ruby18] dev-ruby/haml[ruby_targets_ruby18] markdown? ( dev-ruby/kramdown[ruby_targets_ruby18] ) dev-ruby/sinatra[ruby_targets_ruby18] enscript? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) emacs? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
 REQUIRED_USE=|| ( ruby_targets_ruby18 )
 SLOT=0
 SRC_URI=http://rabbit-shockers.org/download/rabbit-1.0.6.tar.gz
 _eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	7b605062b7d609ee1d0b225de9eccbe2	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	7bfb9d5afe376884a98c3f3b40cf673a	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=cb1e079df6a9b0ef6228d51e3e4400a3
+_md5_=42926d128dc2a9e1a51458bab15f388a
