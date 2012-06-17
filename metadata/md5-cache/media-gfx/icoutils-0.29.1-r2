@@ -4,10 +4,10 @@ DESCRIPTION=A set of programs for extracting and converting images in Microsoft 
 EAPI=2
 HOMEPAGE=http://www.nongnu.org/icoutils/
 IUSE=nls
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=media-libs/libpng nls? ( virtual/libintl ) >=dev-lang/perl-5.6 >=dev-perl/libwww-perl-5.64
 SLOT=0
 SRC_URI=http://savannah.nongnu.org/download/icoutils/icoutils-0.29.1.tar.bz2
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=1a46b53158aed6b2069deac5712c2ae3
+_md5_=3c7be8faff7310f1772373488d241c11

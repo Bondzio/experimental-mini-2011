@@ -3,10 +3,10 @@ DEPEND=app-text/libpaper >=media-libs/libpng-1.2:0 sys-libs/zlib dev-libs/kpaths
 DESCRIPTION=DVI to PDF translator with multi-byte character support
 EAPI=3
 HOMEPAGE=http://project.ktug.or.kr/dvipdfmx/
-KEYWORDS=alpha amd64 arm hppa ~ia64 ppc ppc64 ~s390 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
 LICENSE=GPL-2
 RDEPEND=app-text/libpaper >=media-libs/libpng-1.2:0 sys-libs/zlib dev-libs/kpathsea app-text/libpaper virtual/tex-base >=app-text/poppler-0.12.3-r3 app-text/poppler-data
 SLOT=0
 SRC_URI=http://project.ktug.or.kr/dvipdfmx/snapshot/latest/dvipdfmx-20110311.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	texlive-common	273a6e678b05051f2101ab6d8b19c894	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=0b4be2f5376d3f702c76943714166502
+_md5_=9055a53fdbc78dbb7473254abf940cff

@@ -939,6 +939,7 @@ app-text/wv:tools - Install optional utilities considered deprecated in favor of
 app-text/xiphos:webkit - Use net-libs/webkit-gtk instead of gnome-extra/gtkhtml
 app-text/yagf:cuneiform - Enable support for the app-text/cuneiform OCR engine.
 app-text/yagf:tesseract - Enable support for the app-text/tesseract OCR engine.
+app-text/zathura-meta:cb - Install plug-in for ComicBook support
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/vim-latex:html - Install HTML documentation
 dev-cpp/glog:gflags - Use gflags module for flag parsing
@@ -3219,7 +3220,6 @@ media-video/mplayer:xanim - Enables support for xanim based codecs
 media-video/mplayer:xvmc - Enables X-Video Motion Compensation support
 media-video/mplayer:zoran - Enables ZR360[56]7/ZR36060 video output
 media-video/mplayer2:3dnowext - Enable 3dnowext cpu instructions
-media-video/mplayer2:ass - SRT/SSA/ASS (SubRip / SubStation Alpha) subtitle support
 media-video/mplayer2:bl - Blinkenlights video output
 media-video/mplayer2:bluray - Enable playback of Blu-ray filesystems
 media-video/mplayer2:bs2b - Enable Bauer stereophonic-to-binaural headphone filter
@@ -4572,6 +4572,7 @@ net-wireless/gnuradio:fcd - enable Funcube Dongle source block
 net-wireless/gnuradio:grc - enable GNU Radio Companion graphical tool to design signal processing flow graphs
 net-wireless/gnuradio:utils - install scripts to enable viewing and analysis of files produced by flow graphs
 net-wireless/gnuradio:wavelet - enable wavelet signal processing blocks
+net-wireless/hostapd:crda - Add CRDA support
 net-wireless/hostapd:debug - Enables debugging
 net-wireless/hostapd:logwatch - Install support files for sys-app/logwatch
 net-wireless/hostapd:madwifi - Add support for madwifi (Atheros chipset)
@@ -5239,6 +5240,7 @@ sys-fs/ecryptfs-utils:gpg - Enable app-crypt/gnupg key module
 sys-fs/ecryptfs-utils:openssl - Enable dev-libs/openssl key module
 sys-fs/ecryptfs-utils:pkcs11 - Enable PKCS#11 (Smartcards) key module
 sys-fs/ecryptfs-utils:tpm - Enable support for Trusted Platform Module (TPM) using app-crypt/trousers
+sys-fs/fur:void-chmod - Enable fake hook for "chmod" that will only return 0
 sys-fs/lessfs:filelog - Enable the ability to log to a file instead of syslog
 sys-fs/lessfs:memtrace - Enable leefs to create a report regarding the memory allocation. This feature should be used for debugging purposes to avoid performance degradation
 sys-fs/loop-aes:aes-ni - Enable support for Intel's AES instruction set

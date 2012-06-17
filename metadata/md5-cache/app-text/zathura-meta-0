@@ -1,0 +1,10 @@
+DEFINED_PHASES=-
+DESCRIPTION=Meta package for app-text/zathura plugins
+EAPI=4
+HOMEPAGE=http://pwmt.org/projects/zathura/
+IUSE=cb djvu +pdf postscript
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=app-text/zathura cb? ( app-text/zathura-cb ) djvu? ( app-text/zathura-djvu ) pdf? ( || ( app-text/zathura-pdf-poppler app-text/zathura-pdf-mupdf ) ) postscript? ( app-text/zathura-ps )
+SLOT=0
+_md5_=30e6d397433b60492f7f93eec8d4257d
