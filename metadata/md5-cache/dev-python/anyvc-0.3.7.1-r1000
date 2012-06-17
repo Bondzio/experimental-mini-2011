@@ -9,6 +9,6 @@ LICENSE=GPL-2
 RDEPEND=dev-python/apipkg[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] dev-python/execnet[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] dev-python/py[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] git? ( dev-python/dulwich[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] ) mercurial? ( dev-vcs/mercurial[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] ) subversion? ( dev-python/subvertpy[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.8?,python_abis_2.7-pypy-1.9?] ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_2.7-pypy-1.8? ( dev-python/pypy:1.8 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 )
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
-SRC_URI=mirror://pypi/a/anyvc/anyvc-0.3.7.tar.gz
+SRC_URI=mirror://pypi/a/anyvc/anyvc-0.3.7.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
 _md5_=39791646c5f7e1bff0f8fb084345a0fc
