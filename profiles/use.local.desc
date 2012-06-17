@@ -444,6 +444,7 @@ app-emulation/open-vm-tools:pic - Force shared libraries to be built as PIC
 app-emulation/open-vm-tools:unity - Enable host unity support
 app-emulation/opennebula:qemu - Pull in packages needed to create Qemu/Kvm nodes.
 app-emulation/opennebula:xen - Pull in packages needed to create Xen nodes.
+app-emulation/playonlinux:winbind - Enables support for the winbind auth daemon
 app-emulation/q4wine:gnome - Use the gksu sudo GUI for managing the devices
 app-emulation/q4wine:icoutils - Enable icoutils support
 app-emulation/q4wine:kde - Use the kdesu sudo GUI for managing the devices
@@ -1470,7 +1471,13 @@ dev-perl/Eidetic:auth - Enables dev-perl/Apache-AuthTicket based cookie authenti
 dev-perl/GD:animgif - Enable animated gif support
 dev-perl/Graphics-ColorNames:recommended - Install recommended support modules
 dev-perl/HTML-Mason:modperl - Enable www-apache/mod_perl support
-dev-perl/PDL:badval - Enable badval support
+dev-perl/PDL:badval - Enable bad values support
+dev-perl/PDL:hdf - Enable HDF (version 4) format support
+dev-perl/PDL:netpbm - Enable NETPBM and MPEG support
+dev-perl/PDL:pdl2 - Build pdf2 shell (requires Devel-REPL)
+dev-perl/PDL:pgplot - Enable PGPLOT plotting capabilities
+dev-perl/PDL:plplot - Enable plplot plotting capabilities
+dev-perl/PDL:proj - Enable projection support
 dev-perl/Panotools-Script:gui - Installs GUIs for some tools
 dev-perl/Sysadm-Install:hammer - Enable hammer() funtion to run a command in the shell and simulate a user hammering the ENTER key to accept defaults on prompts
 dev-php/PEAR-HTTP_Download:minimal - Do not include support for PEAR-MIME_Type
@@ -2855,6 +2862,7 @@ media-sound/lmms:vst - Enables the VeSTige plugin to run VST plugins through Win
 media-sound/mangler:celt - High quality, low delay audio codec
 media-sound/mangler:espeak - Text to speach engine
 media-sound/mangler:g15 - Logitech g15 lcd support
+media-sound/mangler:opus - Codec specialized for speach over the internet
 media-sound/mixxx:shout - Enable broadcasting support via media-libs/libshout
 media-sound/moc:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mp3blaster:sid - Build with SID (Commodore 64 Audio) support
@@ -3095,7 +3103,6 @@ media-video/dvdrip:subtitles - Enables support for subtitle ripping
 media-video/ffmpeg:3dnowext - Enable manually-optimised routines using the AMD 3DNow!Ex SIMD instruction set, present in modern AMD CPUs. (Check for 3dnowext in /proc/cpuinfo to know whether your CPU supports it).
 media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
-media-video/ffmpeg:ass - Enables media-libs/libass based subtitle renderer.
 media-video/ffmpeg:avresample - Enables libavresample, media-video/libav version of libswresample (which installed and makes libavresample redundant): A conversion library between uncompressed audio formats.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
 media-video/ffmpeg:bluray - Enable playback of Blu-ray filesystems
@@ -3170,7 +3177,6 @@ media-video/mjpg-streamer:www - Installs WWW content
 media-video/motiontrack:multiprocess - Enables multi-process support (SMP/cluster) for motiontrack programs
 media-video/mplayer:3dnowext - Enable 3dnowext cpu instructions
 media-video/mplayer:amr - Enables Adaptive Multi-Rate format support
-media-video/mplayer:ass - SRT/SSA/ASS (SubRip / SubStation Alpha) subtitle support
 media-video/mplayer:bl - Blinkenlights video output
 media-video/mplayer:bluray - Enable playback of Blu-ray filesystems
 media-video/mplayer:bs2b - Enable Bauer stereophonic-to-binaural headphone filter
@@ -3338,7 +3344,6 @@ media-video/vlc:httpd - Enables a web based interface for vlc.
 media-video/vlc:id3tag - Enables id3tag metadata reader plugin.
 media-video/vlc:ios-vout - Enables iPhone OS video output.
 media-video/vlc:kate - Adds support for Ogg Kate subtitles via libkate.
-media-video/vlc:libass - Enables subtitles support using libass.
 media-video/vlc:libproxy - Enables support for proxy settings in the HTTP access module.
 media-video/vlc:libtar - Uses libtar instead of the built-in tar reader for reading custom skins.
 media-video/vlc:libtiger - Enables Ogg Kate subtitles rendering using libtiger.
@@ -4166,6 +4171,7 @@ net-misc/bfgminer:adl - Enable support for controlling fans and overclocking on 
 net-misc/bfgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
 net-misc/bfgminer:cpumining - Enable support for mining with CPUs
 net-misc/bfgminer:icarus - Enable support for mining with Icarus FPGAs
+net-misc/bfgminer:modminer - Enable support for mining with ModMiner FPGAs
 net-misc/bfgminer:opencl - Enable support for mining with OpenCL-capable devices (GPUs)
 net-misc/bfgminer:padlock - Enable support for mining with VIA Padlock CPUs
 net-misc/bfgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
@@ -4935,6 +4941,7 @@ sys-apps/dmtcp:fast - Enable experimental performance options such as mmap alloc
 sys-apps/dmtcp:trace - Enable ptrace support (only valid with debug enabled).
 sys-apps/dstat:wifi - Enable wireless network functions
 sys-apps/elfix:xtpax - Enable XATTR_PAX_FLAGS support (EXPERIMENTAL).
+sys-apps/etckeeper:bazaar - Support dev-vcs/bzr based repository
 sys-apps/flashrom:atahpt - Highpoint (HPT) ATA/RAID controller support
 sys-apps/flashrom:bitbang_spi - Bitbanging SPI infrastructure
 sys-apps/flashrom:buspirate_spi - Enable Bus Pirate SPI programmer

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs/zfs-9999.ebuild,v 1.21 2012/04/30 15:38:47 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs/zfs-9999.ebuild,v 1.22 2012/06/16 18:57:39 ryao Exp $
 
 EAPI="4"
 
@@ -8,16 +8,24 @@ AT_M4DIR="config"
 AUTOTOOLS_AUTORECONF="1"
 AUTOTOOLS_IN_SOURCE_BUILD="1"
 
-inherit flag-o-matic git-2 linux-mod toolchain-funcs autotools-utils
+inherit flag-o-matic linux-mod toolchain-funcs autotools-utils
+
+if [[ ${PV} == "9999" ]] ; then
+	inherit git-2
+	EGIT_REPO_URI="git://github.com/zfsonlinux/${PN}.git"
+else
+	inherit versionator
+	MY_PV=$(replace_version_separator 3 '-')
+	SRC_URI="https://github.com/downloads/zfsonlinux/${PN}/${PN}-${MY_PV}.tar.gz"
+	S="${WORKDIR}/${PN}-${MY_PV}"
+	KEYWORDS=""
+fi
 
 DESCRIPTION="Native ZFS for Linux"
 HOMEPAGE="http://zfsonlinux.org/"
-SRC_URI=""
-EGIT_REPO_URI="git://github.com/zfsonlinux/zfs.git"
 
 LICENSE="CDDL GPL-2"
 SLOT="0"
-KEYWORDS=""
 IUSE="custom-cflags debug dracut +rootfs test test-suite static-libs"
 
 DEPEND="

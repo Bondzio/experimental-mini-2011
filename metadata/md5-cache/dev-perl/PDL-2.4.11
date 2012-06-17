@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst prepare prerm setup test unpack
+DEPEND=sys-libs/ncurses app-arch/sharutils dev-perl/Astro-FITS-Header dev-perl/File-Map dev-perl/Inline dev-perl/TermReadKey || ( dev-perl/Term-ReadLine-Perl dev-perl/Term-ReadLine-Gnu ) virtual/perl-Data-Dumper virtual/perl-PodParser virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-Filter virtual/perl-Storable virtual/perl-Text-Balanced fftw? ( sci-libs/fftw:2.1 ) gd? ( media-libs/gd ) gsl? ( sci-libs/gsl ) hdf? ( sci-libs/hdf ) netpbm? ( media-libs/netpbm virtual/ffmpeg ) pdl2? ( dev-perl/Devel-REPL ) proj? ( <sci-libs/proj-4.8 ) opengl? ( dev-perl/OpenGL ) pgplot? ( dev-perl/PGPLOT ) plplot? ( sci-libs/plplot ) fortran? ( virtual/fortran >=dev-perl/ExtUtils-F77-1.13 ) dev-lang/perl[-build]
+DESCRIPTION=Perl Data Language for scientific computing
+EAPI=4
+HOMEPAGE=http://pdl.perl.org/
+IUSE=+badval doc fftw fortran gd gsl hdf netpbm opengl pdl2 proj pgplot plplot threads
+KEYWORDS=~amd64 ~x86
+LICENSE=Artistic as-is
+RDEPEND=sys-libs/ncurses app-arch/sharutils dev-perl/Astro-FITS-Header dev-perl/File-Map dev-perl/Inline dev-perl/TermReadKey || ( dev-perl/Term-ReadLine-Perl dev-perl/Term-ReadLine-Gnu ) virtual/perl-Data-Dumper virtual/perl-PodParser virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-Filter virtual/perl-Storable virtual/perl-Text-Balanced fftw? ( sci-libs/fftw:2.1 ) gd? ( media-libs/gd ) gsl? ( sci-libs/gsl ) hdf? ( sci-libs/hdf ) netpbm? ( media-libs/netpbm virtual/ffmpeg ) pdl2? ( dev-perl/Devel-REPL ) proj? ( <sci-libs/proj-4.8 ) opengl? ( dev-perl/OpenGL ) pgplot? ( dev-perl/PGPLOT ) plplot? ( sci-libs/plplot ) dev-lang/perl[-build]
+REQUIRED_USE=plplot? ( badval )
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/C/CH/CHM/PDL-2.4.11.tar.gz
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=098a995386b1ac958eacc6cd7d40c353

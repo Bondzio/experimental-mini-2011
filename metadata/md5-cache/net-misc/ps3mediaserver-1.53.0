@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prepare
+DEPEND=app-arch/unzip
+DESCRIPTION=DLNA compliant UPNP server for streaming media to Playstation 3
+EAPI=4
+HOMEPAGE=http://code.google.com/p/ps3mediaserver
+IUSE=multiuser +transcode tsmuxer
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=virtual/jre-1.6.0 || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) media-libs/libmediainfo media-libs/libzen tsmuxer? ( media-video/tsmuxer ) transcode? ( media-video/mplayer[encode] )
+SLOT=0
+SRC_URI=http://ps3mediaserver.googlecode.com/files/pms-generic-linux-unix-1.53.0.tgz
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_md5_=dd0969b1a7b19df4aa493495dce18b2c

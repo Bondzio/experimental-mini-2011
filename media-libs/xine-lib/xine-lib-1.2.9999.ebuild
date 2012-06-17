@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.9999.ebuild,v 1.17 2012/06/01 02:41:52 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.2.9999.ebuild,v 1.18 2012/06/16 19:49:12 ssuominen Exp $
 
 EAPI=4
 
@@ -9,9 +9,15 @@ inherit libtool multilib
 if [[ ${PV} == *9999* ]]; then
 	EHG_REPO_URI="http://hg.debian.org/hg/xine-lib/xine-lib-1.2"
 	inherit autotools mercurial eutils
+	unset NLS_IUSE
+	NLS_DEPEND="sys-devel/gettext"
+	NLS_RDEPEND="virtual/libintl"
 else
 	KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~x86 ~x86-fbsd"
 	SRC_URI="mirror://sourceforge/xine/${P}.tar.xz"
+	NLS_IUSE="nls"
+	NLS_DEPEND="nls? ( sys-devel/gettext )"
+	NLS_RDEPEND="nls? ( virtual/libintl )"
 fi
 
 DESCRIPTION="Core libraries for Xine movie player"
@@ -19,15 +25,15 @@ HOMEPAGE="http://xine.sourceforge.net/"
 
 LICENSE="GPL-2"
 SLOT="1"
-IUSE="a52 aac aalib +alsa altivec bluray +css directfb dts dvb dxr3 fbcon flac fusion gtk imagemagick ipv6 jack libcaca mad +mmap mng modplug musepack opengl oss pulseaudio real samba sdl speex theora truetype v4l vcd vdpau vdr vidix +vis vorbis wavpack win32codecs +X +xcb xinerama +xv xvmc"
+IUSE="a52 aac aalib +alsa altivec bluray +css directfb dts dvb dxr3 fbcon flac fusion gtk imagemagick ipv6 jack libcaca mad +mmap mng modplug musepack opengl oss pulseaudio real samba sdl speex theora truetype v4l vcd vdpau vdr vidix +vis vorbis wavpack win32codecs +X +xcb xinerama +xv xvmc ${NLS_IUSE}"
 
-RDEPEND="dev-libs/libxdg-basedir
+RDEPEND="${NLS_RDEPEND}
+	dev-libs/libxdg-basedir
 	media-libs/libdvdnav
 	sys-libs/zlib
 	|| ( media-video/ffmpeg media-libs/libpostproc <media-video/libav-0.8.2-r1 )
 	virtual/ffmpeg
 	virtual/libiconv
-	virtual/libintl
 	a52? ( media-libs/a52dec )
 	aac? ( media-libs/faad2 )
 	aalib? ( media-libs/aalib )
@@ -92,11 +98,10 @@ RDEPEND="dev-libs/libxdg-basedir
 	xv? ( x11-libs/libXv )
 	xvmc? ( x11-libs/libXvMC )"
 DEPEND="${RDEPEND}
+	${NLS_DEPEND}
 	app-arch/xz-utils
 	virtual/pkgconfig
-	sys-devel/gettext
 	>=sys-devel/libtool-2.2.6b
-	bluray? ( !media-libs/libbluray-xine )
 	oss? ( virtual/os-headers )
 	v4l? ( virtual/os-headers )
 	X? (
@@ -116,8 +121,6 @@ src_prepare() {
 
 	if [[ ${PV} == *9999* ]]; then
 		epatch_user
-
-		eautopoint
 		eautoreconf
 	else
 		elibtoolize
@@ -131,6 +134,9 @@ src_configure() {
 	else
 		win32dir=/usr/$(get_libdir)/win32
 	fi
+
+	local myconf
+	[[ ${PV} == *9999* ]] || myconf="$(use_enable nls)"
 
 	econf \
 		$(use_enable ipv6) \
@@ -184,7 +190,8 @@ src_configure() {
 		$(use_with vorbis) \
 		--with-real-codecs-path=/usr/$(get_libdir)/codecs \
 		--with-w32-path=${win32dir} \
-		$(use_with wavpack)
+		$(use_with wavpack) \
+		${myconf}
 }
 
 src_install() {
