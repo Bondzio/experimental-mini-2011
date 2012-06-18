@@ -1,10 +1,11 @@
-DEFINED_PHASES=install postinst
+DEFINED_PHASES=install postinst prepare
 DESCRIPTION=Core Rule Set for ModSecurity
 EAPI=4
 HOMEPAGE=http://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project
+IUSE=lua geoip
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=Apache-2.0
-RDEPEND=>=www-apache/mod_security-2.5.13-r1
+RDEPEND=>=www-apache/mod_security-2.5.13-r1[lua?,geoip?]
 SLOT=0
 SRC_URI=mirror://sourceforge/mod-security/modsecurity-crs_2.2.5.tar.gz
-_md5_=f8ffcfa31c8fc34077a83093f62439f1
+_md5_=16a01a77c83849fe9ab7bec4928b62f1

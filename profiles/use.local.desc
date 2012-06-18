@@ -5797,7 +5797,6 @@ x11-terms/rxvt-unicode:buffer-on-clear - Store visible output to history buffer 
 x11-terms/rxvt-unicode:fading-colors - Enable colors fading when off focus
 x11-terms/rxvt-unicode:focused-urgency - Enable the urgent flag when a terminal window is focused
 x11-terms/rxvt-unicode:font-styles - Enable support for bold and italic fonts
-x11-terms/rxvt-unicode:force-hints - Force WM hints on rxvt-unicode's geometry. Read http://bugs.gentoo.org/show_bug.cgi?id=346553
 x11-terms/rxvt-unicode:iso14755 - Enable ISO-14755 support
 x11-terms/rxvt-unicode:mousewheel - Enable scrolling via mouse wheel or buttons 4 and 5
 x11-terms/rxvt-unicode:perl - Enable perl script support. You can still disable this at runtime with -pe ""
