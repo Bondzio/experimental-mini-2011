@@ -8,5 +8,5 @@ LICENSE=MIT as-is
 RDEPEND=x11-libs/libXmu x11-libs/libICE x11-libs/libXaw utempter? ( sys-libs/libutempter ) >=x11-libs/libXaw3d-1.5 media-fonts/baekmuk-fonts
 SLOT=0
 SRC_URI=http://download.kldp.net/hanterm/hanterm-3.1.6.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=a4050fba2557ce14158d81794b54d3fa

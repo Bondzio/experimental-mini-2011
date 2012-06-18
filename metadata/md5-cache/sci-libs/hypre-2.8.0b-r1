@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=sci-libs/superlu blas? ( virtual/blas ) lapack? ( virtual/lapack ) mpi? ( virtual/mpi )
 SLOT=0
 SRC_URI=https://computation.llnl.gov/casc/hypre/download/hypre-2.8.0b.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=22f6a80f7a7caff021ab79d1d8fa7784

@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DESCRIPTION=Small shell utility, similar to expect(1)
+EAPI=4
+HOMEPAGE=http://empty.sourceforge.net
+IUSE=examples
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=virtual/logger
+SLOT=0
+SRC_URI=mirror://sourceforge/empty/empty-0.6.18b.tgz
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=111711a1c0c5a3d21a21e53b08518205

@@ -9,5 +9,5 @@ LICENSE=CDDL
 RDEPEND=>=virtual/jre-1.6 dev-java/glassfish-servlet-api:2.5 dev-java/groovy:0 dev-java/jakarta-jstl:0 dev-java/portletapi:1 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=1.2
 SRC_URI=https://javaserverfaces.dev.java.net/files/documents/1866/151669/mojarra-1.2_15-b01-FCS-source.zip mirror://gentoo/mojarra-1.2_15-b01-FCS-patch.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b69b83efd7b77e3702ee9d4d4f2774f2

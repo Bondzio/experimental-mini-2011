@@ -9,5 +9,5 @@ LICENSE=hylafaxplus
 RDEPEND=>=sys-libs/zlib-1.1.4 !net-misc/hylafax app-text/ghostscript-gpl virtual/mta media-libs/tiff[jbig?] virtual/jpeg jbig? ( media-libs/jbigkit ) sys-apps/gawk ldap? ( net-nds/openldap ) pam? ( virtual/pam ) mgetty? ( net-dialup/mgetty[-fax] ) net-mail/metamail !net-dialup/sendpage
 SLOT=0
 SRC_URI=mirror://sourceforge/hylafax/hylafax-5.5.1.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=a11f788bcca515c241207287fcdc372a

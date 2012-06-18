@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=sys-apps/attr-2.4 nfs? ( net-libs/libnfsidmap )
 SLOT=0
 SRC_URI=http://download.savannah.gnu.org/releases/acl/acl-2.2.51.src.tar.gz nfs? ( http://www.citi.umich.edu/projects/nfsv4/linux/acl-patches/2.2.42-2/acl-2.2.42-CITI_NFS4_ALL-2.dif )
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=fac314bf9830feba2aa3b354998e3ecd

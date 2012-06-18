@@ -3,11 +3,12 @@ DEPEND=sys-libs/readline alsa? ( media-libs/alsa-lib ) audiofile? ( media-libs/a
 DESCRIPTION=a package for multitrack audio processing
 EAPI=4
 HOMEPAGE=http://ecasound.seul.org/ecasound
-IUSE=alsa audiofile debug doc jack libsamplerate lv2 mikmod ncurses oil osc oss python ruby sndfile static-libs
+IUSE=alsa audiofile debug doc jack libsamplerate lv2 mikmod ncurses oil osc oss python ruby sndfile static-libs test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=sys-libs/readline alsa? ( media-libs/alsa-lib ) audiofile? ( media-libs/audiofile ) jack? ( media-sound/jack-audio-connection-kit ) libsamplerate? ( media-libs/libsamplerate ) lv2? ( >=media-libs/lilv-0.5.0 ) media-libs/ladspa-sdk mikmod? ( media-libs/libmikmod:0 ) ncurses? ( sys-libs/ncurses ) oil? ( dev-libs/liboil ) osc? ( media-libs/liblo ) ruby? ( dev-lang/ruby ) sndfile? ( media-libs/libsndfile ) python? ( =dev-lang/python-2* )
+REQUIRED_USE=test? ( lv2 )
 SLOT=1
 SRC_URI=http://ecasound.seul.org/download/ecasound-2.9.0.tar.gz
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=e0ba60b4aea95bc3ea427472892c5a59
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=be9f5aae6875bce1e7de326bfffe1fba

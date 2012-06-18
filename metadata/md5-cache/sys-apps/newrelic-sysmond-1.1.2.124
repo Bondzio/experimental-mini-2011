@@ -7,5 +7,5 @@ LICENSE=as-is
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://download.newrelic.com/server_monitor/release/newrelic-sysmond-1.1.2.124-linux.tar.gz
-_eclasses_=user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=ddf2bafca4b306189bb668e9cf54155e

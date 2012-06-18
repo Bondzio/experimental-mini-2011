@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/ruby dev-ruby/ruby-romkan dev-ruby/ruby-bsearch app-dicts/migemo-dict[-unicode] emacs? ( virtual/emacs app-emacs/apel )
 SLOT=0
 SRC_URI=http://0xcc.net/migemo/stable/migemo-0.40.tar.gz
-_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=f6109033ea8b50b1b986f31c18fbad88

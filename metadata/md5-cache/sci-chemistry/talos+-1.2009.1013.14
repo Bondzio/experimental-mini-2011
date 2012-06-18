@@ -8,5 +8,5 @@ RDEPEND=dev-lang/tcl sci-chemistry/rasmol
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://spin.niddk.nih.gov/bax/software/TALOS+/talos+.tar.Z -> talos+-1.2009.1013.14.tar.Z
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=044544323bb432ddabd40e5735e38e5a

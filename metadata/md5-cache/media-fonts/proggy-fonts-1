@@ -7,5 +7,5 @@ KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=http://dl.liveforge.org/fonts/proggy-fonts-1.tar.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=528753033c3818c4af566c3418c5f587

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-sound/cd-discid net-misc/wget virtual/eject aac? ( media-libs/faac media-video/atomicparsley ) cdparanoia? ( media-sound/cdparanoia ) flac? ( media-libs/flac ) id3? ( >=media-sound/id3-0.12 media-sound/id3v2 ) lame? ( media-sound/lame ) normalize? ( >=media-sound/normalize-0.7.4 ) replaygain? ( vorbis? ( media-sound/vorbisgain ) lame? ( media-sound/mp3gain ) ) speex? ( media-libs/speex ) vorbis? ( media-sound/vorbis-tools )
 SLOT=0
 SRC_URI=http://abcde.googlecode.com/files/abcde-2.4.2.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=c8c9946426648b0f02e8cc8553464f22

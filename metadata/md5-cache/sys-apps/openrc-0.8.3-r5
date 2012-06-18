@@ -11,5 +11,5 @@ RDEPEND=kernel_linux? ( >=sys-apps/sysvinit-2.86-r11 ) kernel_FreeBSD? ( virtual
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=https://www.github.com/funtoo/openrc/tarball/funtoo-openrc-0.8.3 -> openrc-funtoo-openrc-0.8.3.tar.gz https://www.github.com/funtoo/corenetwork/tarball/1.3 -> corenetwork-1.3.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=48808ebe05eea9efe95131016e82cfe7

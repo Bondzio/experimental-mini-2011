@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!<app-laptop/laptop-mode-tools-1.55-r1 !sys-power/powermgmt-base[-pm-utils(+)] sys-apps/dbus >=sys-apps/util-linux-2.13 sys-power/pm-quirks alsa? ( media-sound/alsa-utils ) ntp? ( || ( net-misc/ntp net-misc/openntpd ) ) amd64? ( !video_cards_intel? ( sys-apps/vbetool ) ) x86? ( !video_cards_intel? ( sys-apps/vbetool ) ) video_cards_radeon? ( app-laptop/radeontool )
 SLOT=0
 SRC_URI=http://pm-utils.freedesktop.org/releases/pm-utils-1.4.1.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=ee601228ad695845eec2fd31e6fc7bda

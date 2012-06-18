@@ -1,9 +1,10 @@
-DEFINED_PHASES=compile install preinst unpack
-DEPEND=dev-util/premake doc? ( app-doc/doxygen sys-apps/sed ) dev-vcs/subversion net-misc/rsync
+DEFINED_PHASES=compile install preinst prepare unpack
+DEPEND=>=dev-util/premake-4.3 doc? ( app-doc/doxygen ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=A completely new interface to TinyXML that uses MANY of the C++ strengths
+EAPI=4
 HOMEPAGE=http://code.google.com/p/ticpp/
 IUSE=debug doc
-LICENSE=GPL-2
+LICENSE=MIT
 SLOT=0
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
-_md5_=06abeed5088e3b498d4040e0e3f9595a
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=75b999d95145caa94bf7715cd5e44f80

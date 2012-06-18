@@ -7,5 +7,5 @@ IUSE=gtk kde
 LICENSE=LGPL-2.1
 RDEPEND=app-emulation/wine gtk? ( gnome-extra/zenity ) kde? ( kde-base/kdialog )
 SLOT=0
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=a2bde15e93a5d242b56a2d1f113f25ff

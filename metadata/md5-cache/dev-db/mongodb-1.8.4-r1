@@ -10,5 +10,5 @@ PDEPEND=mms-agent? ( dev-python/pymongo )
 RDEPEND=!v8? ( =dev-lang/spidermonkey-1.8.2* ) v8? ( dev-lang/v8 ) dev-libs/boost dev-libs/libpcre[cxx] net-libs/libpcap
 SLOT=0
 SRC_URI=http://downloads.mongodb.org/src/mongodb-src-r1.8.4.tar.gz mms-agent? ( http://dev.gentoo.org/~ultrabug/20111027-10gen-mms-agent.zip )
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=ea2d2ec29b062f588eca962a67619350

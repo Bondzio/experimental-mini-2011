@@ -10,5 +10,5 @@ RDEPEND=x86? ( dev-libs/atk dev-libs/glib:2 dev-libs/libxml2:2 sys-libs/zlib x11
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=http://dl.google.com/linux/rpm/testing/i386/picasa-3.0-current.i386.rpm -> picasa-3.0.0.57.4402.0_beta.i386.rpm
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	nsplugins	53a3f3fd1f914a7f2bd910ba57e155a9	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	nsplugins	53a3f3fd1f914a7f2bd910ba57e155a9	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=66eaee234a50d3f18b6e8b94a11bdd2a

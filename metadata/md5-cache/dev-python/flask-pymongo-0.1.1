@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare test
+DEPEND=>=dev-python/flask-0.8 >=dev-python/pymongo-2.1 dev-python/setuptools dev-python/nose || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) test? ( dev-python/nose )
+DESCRIPTION=PyMongo support for Flask
+EAPI=3
+HOMEPAGE=http://pypi.python.org/pypi/Flask-PyMongo
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=>=dev-python/flask-0.8 >=dev-python/pymongo-2.1 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SLOT=0
+SRC_URI=mirror://pypi/F/Flask-PyMongo/Flask-PyMongo-0.1.1.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=ffb8a66eeb660c836c134737e24acfe2

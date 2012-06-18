@@ -9,5 +9,5 @@ RDEPEND=dbus? ( sys-apps/dbus ) !headless? ( media-libs/fontconfig media-libs/fr
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=i386&revision=9941 -> spideroak-bin-4.5.9941_x86.deb ) amd64? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=x86_64&revision=9941 -> spideroak-bin-4.5.9941_amd64.deb )
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=eb83335db45b42f2d7378e0617691357

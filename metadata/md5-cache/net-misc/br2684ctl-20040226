@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND==net-dialup/linux-atm-2.4.1*
 SLOT=0
 SRC_URI=mirror://debian/pool/main/b/br2684ctl/br2684ctl_20040226.orig.tar.gz mirror://debian/pool/main/b/br2684ctl/br2684ctl_20040226-1.diff.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0a1bca2379ba0fc876ba359700b09114

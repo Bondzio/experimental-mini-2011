@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=app-arch/xz-utils-4.999.9_beta
 SLOT=0
 SRC_URI=http://jnovy.fedorapeople.org/pxz/pxz-4.999.9beta.20091201git.tar.xz -> pxz-4.999.9beta.tar.xz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=aa01e7245ac0d114fad1274cb3093414

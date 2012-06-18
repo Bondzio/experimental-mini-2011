@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sdl? ( media-libs/libsdl media-libs/sdl-gfx ui? ( x11-libs/gtk+:2 ) alsa? ( media-libs/alsa-lib ) ) !sdl? ( X? ( x11-libs/libXext dga? ( x11-libs/libXxf86dga x11-libs/libXxf86vm ) ui? ( x11-libs/gtk+:2 ) ) !X? ( svga? ( media-libs/svgalib ui? ( sys-libs/ncurses ) ) !svga? ( aalib? ( media-libs/aalib ui? ( sys-libs/ncurses ) ) ) !aalib? ( media-libs/libsdl ui? ( x11-libs/gtk+:2 ) ) ) alsa? ( media-libs/alsa-lib ) ) scsi? ( app-cdr/cdrtools )
 SLOT=0
 SRC_URI=ftp://ftp.coresystems.de/pub/uae/sources/develop/uae-0.8.26.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=9f034dbedddc326b686fcda5452c97c2

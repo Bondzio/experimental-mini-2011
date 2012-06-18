@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=media-plugins/vdr-skinenigmang
 SLOT=0
 SRC_URI=!dxr3? ( http://andreas.vdr-developer.org/enigmang/download/skinenigmang-logos-xpm-hi-20070214.tgz ) dxr3? ( http://andreas.vdr-developer.org/enigmang/download/skinenigmang-logos-xpm-lo-20070214.tgz )
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=118567a7e3e7309b531d75acec68d15d

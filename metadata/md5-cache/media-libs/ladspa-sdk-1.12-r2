@@ -6,5 +6,5 @@ KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86 ~x86-fbsd
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=http://www.ladspa.org/download/ladspa_sdk_1.12.tgz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=b21ecdcc55ebc0e6b5a9e6fa68c877e0

@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=~sys-devel/gcc-4.5.2[gcj] dev-java/ecj-gcj:3.5 =dev-java/java-config-2* || ( app-admin/eselect-java <dev-java/java-config-2.2 )
 SLOT=0
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	b2ea63076444c18b292e4ac8ee7170ba	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	java-vm-2	b2ea63076444c18b292e4ac8ee7170ba	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a37753cadc5e56265c8c4153d29f597d

@@ -9,5 +9,5 @@ RDEPEND=>=net-dialup/ppp-2.4.2 dev-lang/perl tk? ( dev-perl/perl-tk )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/pptpclient/pptp-1.7.1.tar.gz mirror://gentoo/pptp-command-20050401.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=ee45906ac8741f4a27643c3e1fa17a9b

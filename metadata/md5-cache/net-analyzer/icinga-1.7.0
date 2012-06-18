@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=idoutils? ( dev-db/libdbi-drivers[mysql?,postgres?] ) perl? ( dev-lang/perl ) virtual/mailx web? ( media-libs/gd[jpeg,png] lighttpd? ( www-servers/lighttpd dev-lang/php[cgi] ) apache2? ( || ( dev-lang/php[apache2] dev-lang/php[cgi] ) ) ) !net-analyzer/nagios-core plugins? ( net-analyzer/nagios-plugins ) apache2? ( =www-servers/apache-2* )
 SLOT=0
 SRC_URI=mirror://sourceforge/icinga/icinga-1.7.0.tar.gz
-_eclasses_=depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=779ee7a7b85311033d9f9cbcfefbd002

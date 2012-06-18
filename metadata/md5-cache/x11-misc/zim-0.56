@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( >=dev-lang/python-2.6 dev-python/simplejson ) dev-python/pygtk || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] =dev-lang/python-2.5*[sqlite] )
 SLOT=0
 SRC_URI=http://zim-wiki.org/downloads/zim-0.56.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	7b605062b7d609ee1d0b225de9eccbe2	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	7b605062b7d609ee1d0b225de9eccbe2	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=cf6883e2f973369340a0d573552c2c27

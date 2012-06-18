@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dv? ( media-libs/libdv ) gtk? ( >=x11-libs/gtk+-2.4.0:2 ) aac? ( media-libs/faad2 encode? ( media-libs/faac ) ) alsa? ( >=media-libs/alsa-lib-1.0.16 ) png? ( media-libs/libpng ) jpeg? ( virtual/jpeg ) vorbis? ( media-libs/libvorbis media-libs/libogg ) lame? ( media-sound/lame ) ffmpeg? ( virtual/ffmpeg ) x264? ( media-libs/x264 ) schroedinger? ( >=media-libs/schroedinger-1.0.5 ) X? ( x11-libs/libXaw x11-libs/libXv x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/mesa ) ) virtual/libintl
 SLOT=0
 SRC_URI=mirror://sourceforge/libquicktime/libquicktime-1.2.3.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=c0558d577fe3fa53b20c80a26d884f36

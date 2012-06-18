@@ -9,5 +9,5 @@ PDEPEND=>=media-plugins/audacious-plugins-3.3_alpha1
 RDEPEND=>=dev-libs/dbus-glib-0.60 >=dev-libs/glib-2.16 dev-libs/libxml2 >=x11-libs/cairo-1.2.6 >=x11-libs/pango-1.8.0 x11-libs/gtk+:3 session? ( x11-libs/libSM )
 SLOT=0
 SRC_URI=http://distfiles.audacious-media-player.org/audacious-3.3-alpha1.tar.bz2 mirror://gentoo/gentoo_ice-xmms-0.2.tar.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=981cfc540380353fa4fe0e349c81adb6

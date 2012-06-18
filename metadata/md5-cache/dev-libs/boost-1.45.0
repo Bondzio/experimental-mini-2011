@@ -9,5 +9,5 @@ LICENSE=Boost-1.0
 RDEPEND=icu? ( >=dev-libs/icu-3.3 ) mpi? ( || ( sys-cluster/openmpi[cxx] sys-cluster/mpich2[cxx,threads] ) ) sys-libs/zlib python? ( dev-lang/python ) !!<=dev-libs/boost-1.35.0-r2 >=app-admin/eselect-boost-0.3
 SLOT=1.45
 SRC_URI=mirror://sourceforge/boost/boost_1_45_0.tar.bz2
-_eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	d4d85170c0ee7a80c9a7cd009ae13133	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7423f023753c0e2013ca2698f36f957f

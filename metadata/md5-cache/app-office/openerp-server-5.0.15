@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-db/postgresql-server dev-python/lxml dev-python/psycopg dev-python/pychart dev-python/pytz dev-python/pyxml dev-python/pyopenssl dev-python/reportlab media-gfx/pydot dev-libs/libxslt[python] dev-libs/libxml2[python] =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.openerp.com/download/stable/source/openerp-server-5.0.15.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=3b7e5e5e4907384564091a8888851d54

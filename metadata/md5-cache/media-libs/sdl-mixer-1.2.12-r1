@@ -10,5 +10,5 @@ RDEPEND=>=media-libs/libsdl-1.2.10 flac? ( media-libs/flac ) midi? ( fluidsynth?
 REQUIRED_USE=midi? ( || ( timidity fluidsynth ) ) timidity? ( midi ) fluidsynth? ( midi ) mp3? ( || ( smpeg mad ) ) smpeg? ( mp3 ) mad? ( mp3 ) mod? ( || ( mikmod modplug ) ) mikmod? ( mod ) modplug? ( mod )
 SLOT=0
 SRC_URI=http://www.libsdl.org/projects/SDL_mixer/release/SDL_mixer-1.2.12.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	32a09e82e2f592bf88ad2fd08525166e
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=45cb931a62ad335536969133f296501b

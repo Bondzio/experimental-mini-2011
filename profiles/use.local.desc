@@ -2857,6 +2857,7 @@ media-sound/jack-audio-connection-kit:pam - Add basic realime configuration via 
 media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
 media-sound/kid3:chroma - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
 media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
+media-sound/leechcraft-lmp:mpris - Enable MPRIS support
 media-sound/lmms:fluidsynth - Enables Fluidsynth MIDI software synthesis plugin.
 media-sound/lmms:stk - Enables STK Mallet plugin.
 media-sound/lmms:vst - Enables the VeSTige plugin to run VST plugins through Wine.
