@@ -1,4 +1,4 @@
-DEFINED_PHASES=-
+DEFINED_PHASES=prepare test
 DEPEND=>=dev-scheme/guile-1.8
 DESCRIPTION=Guile Scheme modules to facilitate HTTP, URL and CGI programming
 EAPI=4
@@ -8,4 +8,5 @@ LICENSE=GPL-3
 RDEPEND=>=dev-scheme/guile-1.8
 SLOT=0
 SRC_URI=mirror://nongnu/guile-www/guile-www-2.30.tar.gz
-_md5_=4c5d93d2255b144c68dad51e4d72f6c9
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=96dd9d515217699a99ec97af1e358f75

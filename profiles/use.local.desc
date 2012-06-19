@@ -1384,6 +1384,7 @@ dev-libs/nss:utils - Install utilities included with the library
 dev-libs/opencryptoki:tpm - Enable support for Trusted Platform Module (TPM) using app-crypt/trousers
 dev-libs/openct:debug - Add debug output to the driver library for pcsc-lite.
 dev-libs/openct:pcsc-lite - Build a driver library for sys-apps/pcsc-lite, providing PC/SC API access to devices supported by OpenCT.
+dev-libs/openct:udev - Install rules for sys-fs/udev to auto-start openct.
 dev-libs/openobex:irda - Enable IrDA support
 dev-libs/opensc:libtool - Use sys-devel/libtool for dynamically loading libraries rather than the host libdl/dlopen helpers.
 dev-libs/opensc:openct - Use dev-libs/openct (and CT-API) for accessing Smartcard hardware. If neither openct nor pcsc-lite are enabled, only CT-API dynamic linking is enabled.
@@ -3993,6 +3994,8 @@ net-libs/libssh:server - Build with SSH server support
 net-libs/libssh:sftp - Build with SFTP support
 net-libs/libssh:ssh1 - Build with SSH1 support
 net-libs/libssh2:gcrypt - Use dev-libs/libgcrypt for crypto
+net-libs/libvncserver:24bpp - enable 24bpp support
+net-libs/libvncserver:gcrypt - enable support for gcrypt
 net-libs/libvncserver:no24bpp - disable 24bpp support
 net-libs/loudmouth:asyncns - Use libasyncns for asynchronous name resolution.
 net-libs/neon:libproxy - Add support for net-libs/libproxy
@@ -5055,6 +5058,7 @@ sys-auth/pambase:pam_krb5 - Enable pam_krb5 module on system auth stack, as an a
 sys-auth/pambase:pam_ssh - Enable pam_ssh module on system auth stack for authentication and session handling. This module will accept as password the passphrase of a private SSH key (one of ~/.ssh/id_rsa, ~/.ssh/id_dsa or ~/.ssh/identity), and will spawn an ssh-agent instance to cache the open key.
 sys-auth/pambase:passwdqc - Enable pam_passwdqc module on system auth stack for password quality validation. This is an alternative to pam_cracklib producing warnings, rejecting or providing example passwords when changing your system password. It is used by default by OpenWall GNU/*/Linux and by FreeBSD.
 sys-auth/pambase:sha512 - Switch Linux-PAM's pam_unix module to use sha512 for passwords hashes rather than MD5. This option requires >=sys-libs/pam-1.0.1 built against >=sys-libs/glibc-2.7, if it's built against an earlier version, it will silently be ignored, and MD5 hashes will be used. All the passwords changed after this USE flag is enabled will be saved to the shadow file hashed using SHA512 function. The password previously saved will be left untouched. Please note that while SHA512-hashed passwords will still be recognised if the USE flag is removed, the shadow file will not be compatible with systems using an earlier glibc version.
+sys-auth/pambase:systemd - Use pam_systemd module to register user sessions in the systemd control group hierarchy.
 sys-auth/polkit:introspection - Use dev-libs/gobject-introspection for introspection
 sys-auth/polkit:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
 sys-auth/sssd:glib - Use dev-libs/glib as UTF-8 string library

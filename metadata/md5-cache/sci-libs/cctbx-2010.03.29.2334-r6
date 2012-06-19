@@ -10,4 +10,4 @@ RDEPEND=virtual/fortran >=dev-libs/boost-1.48[python] sci-libs/clipper sci-libs/
 SLOT=0
 SRC_URI=http://cci.lbl.gov/cctbx_build/results/2010_03_29_2334/cctbx_bundle.tar.gz -> cctbx-2010.03.29.2334.tar.gz
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=12922f7457470ac1c0ac9eabd05eca0b
+_md5_=a6db0212ee0da35a0ff797ceedcf7c3b

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-shells/posh/posh-0.10.1.ebuild,v 1.1 2012/01/27 13:55:13 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-shells/posh/posh-0.10.1.ebuild,v 1.2 2012/06/19 14:25:12 mgorny Exp $
 
 EAPI=3
 inherit autotools-utils
@@ -13,6 +13,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc ~x86"
 IUSE=""
+
+RESTRICT=test
 
 src_configure() {
 	myeconfargs=(
