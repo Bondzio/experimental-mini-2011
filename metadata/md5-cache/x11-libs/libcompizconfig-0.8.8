@@ -1,12 +1,13 @@
 DEFINED_PHASES=configure install
-DEPEND=dev-libs/libxml2:2 dev-libs/protobuf >=x11-wm/compiz-0.8.8 >=dev-util/intltool-0.41 virtual/pkgconfig
+DEPEND=dev-libs/libxml2 dev-libs/protobuf >=x11-wm/compiz-0.8.8 x11-libs/libX11 >=dev-util/intltool-0.41 virtual/pkgconfig x11-proto/xproto
 DESCRIPTION=Compiz Configuration System
-EAPI=2
+EAPI=4
 HOMEPAGE=http://www.compiz.org/
 KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/libxml2:2 dev-libs/protobuf >=x11-wm/compiz-0.8.8
+RDEPEND=dev-libs/libxml2 dev-libs/protobuf >=x11-wm/compiz-0.8.8 x11-libs/libX11
 RESTRICT=test
 SLOT=0
 SRC_URI=http://releases.compiz.org/0.8.8/libcompizconfig-0.8.8.tar.bz2
-_md5_=30c01512284ec323e287d1ddaca101e0
+_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=c39e49568495bd3f3cea00703e5847b5

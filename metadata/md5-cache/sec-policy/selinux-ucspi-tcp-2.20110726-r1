@@ -1,9 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=SELinux policy for ucspi-tcp (meta-package for selinux-ucspitcp)
-EAPI=3
-HOMEPAGE=http://hardened.gentoo.org/selinux
-KEYWORDS=amd64 x86
-LICENSE=as-is
-RDEPEND=>=sec-policy/selinux-ucspitcp-2.20110726-r1
-SLOT=0
-_md5_=d202c688cf821ccfcc73dcbf5f3e21ec

@@ -4,11 +4,11 @@ DESCRIPTION=Crazy Eddie's GUI System
 EAPI=4
 HOMEPAGE=http://www.cegui.org.uk/
 IUSE=bidi debug devil doc examples expat gtk irrlicht lua ogre opengl pcre static-libs tinyxml truetype xerces-c xml zip
-KEYWORDS=amd64 -ppc ~x86
+KEYWORDS=amd64 -ppc x86
 LICENSE=MIT
 RDEPEND=bidi? ( dev-libs/fribidi ) devil? ( media-libs/devil ) expat? ( dev-libs/expat ) truetype? ( media-libs/freetype:2 ) irrlicht? ( dev-games/irrlicht ) lua? ( dev-lang/lua dev-lua/toluapp ) ogre? ( >=dev-games/ogre-1.7 ) opengl? ( virtual/opengl virtual/glu media-libs/freeglut media-libs/glew ) pcre? ( dev-libs/libpcre ) tinyxml? ( dev-libs/tinyxml ) xerces-c? ( dev-libs/xerces-c ) xml? ( dev-libs/libxml2 ) zip? ( sys-libs/zlib[minizip] )
 REQUIRED_USE=|| ( expat tinyxml xerces-c xml )
 SLOT=0
 SRC_URI=mirror://sourceforge/crayzedsgui/CEGUI-0.7.6.tar.gz doc? ( mirror://sourceforge/crayzedsgui/CEGUI-DOCS-0.7.6.tar.gz )
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=76e7d9cd91c4f0226d1ec695d850d47d
+_md5_=faa74d3d577b4c9de94738ce8159369b

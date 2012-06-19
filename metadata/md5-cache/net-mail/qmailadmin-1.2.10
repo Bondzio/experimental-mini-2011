@@ -3,11 +3,11 @@ DEPEND=virtual/qmail >=net-mail/vpopmail-5.3 net-mail/autorespond maildrop? ( >=
 DESCRIPTION=A web interface for managing a qmail system with virtual domains
 HOMEPAGE=http://www.inter7.com/qmailadmin.html
 IUSE=maildrop
-KEYWORDS=amd64 arm hppa ppc s390 sh sparc x86
+KEYWORDS=amd64 arm ~hppa ppc s390 sh sparc x86
 LICENSE=GPL-2
 RDEPEND=virtual/qmail >=net-mail/vpopmail-5.3 net-mail/autorespond maildrop? ( >=mail-filter/maildrop-2.0.1 )
 RESTRICT=userpriv
 SLOT=0
 SRC_URI=mirror://sourceforge/qmailadmin/qmailadmin-1.2.10.tar.gz
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=c9becb6e96c4d70f9e4950391d6608b0
+_md5_=80e4146bcac829fa38b52ddf46576f4c
