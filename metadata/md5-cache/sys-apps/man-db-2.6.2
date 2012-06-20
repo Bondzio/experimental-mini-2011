@@ -1,13 +1,13 @@
-DEFINED_PHASES=configure install postinst preinst prepare setup
+DEFINED_PHASES=configure install postinst preinst setup
 DEPEND=dev-libs/libpipeline berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) !berkdb? ( !gdbm? ( sys-libs/gdbm ) ) || ( sys-apps/groff >=app-doc/heirloom-doctools-080407-r2 ) zlib? ( sys-libs/zlib ) !sys-apps/man nls? ( sys-devel/gettext )
 DESCRIPTION=a man replacement that utilizes berkdb instead of flat files
 EAPI=2
 HOMEPAGE=http://www.nongnu.org/man-db/
 IUSE=berkdb +gdbm nls zlib
-KEYWORDS=*
+KEYWORDS=~*
 LICENSE=GPL-3
 RDEPEND=dev-libs/libpipeline berkdb? ( sys-libs/db ) gdbm? ( sys-libs/gdbm ) !berkdb? ( !gdbm? ( sys-libs/gdbm ) ) || ( sys-apps/groff >=app-doc/heirloom-doctools-080407-r2 ) zlib? ( sys-libs/zlib ) !sys-apps/man
 SLOT=0
-SRC_URI=http://download.savannah.nongnu.org/releases/man-db/man-db-2.6.0.2.tar.gz
+SRC_URI=http://download.savannah.nongnu.org/releases/man-db/man-db-2.6.2.tar.gz
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=5470d090fd2cdbc76ba07c7d3ec30dc3
+_md5_=6a8af229185f2e96b6f55b127321ebe6
