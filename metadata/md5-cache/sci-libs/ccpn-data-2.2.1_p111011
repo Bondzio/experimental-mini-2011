@@ -9,5 +9,5 @@ RDEPEND=!<sci-chemistry/ccpn-2.2.1_p111011 =dev-lang/python-2*
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=http://www.bio.cam.ac.uk/ccpn/download/ccpnmr/analysis2.2.1.tar.gz http://dev.gentoo.org/~jlec/distfiles/ccpn-update-2.2.1-111011.patch.xz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=273907111c395a7e80278c9028a6914e

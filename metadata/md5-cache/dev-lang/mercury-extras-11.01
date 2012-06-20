@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=~dev-lang/mercury-11.01 cairo? ( >=x11-libs/cairo-1.10.0 ) glut? ( media-libs/freeglut ) odbc? ( dev-db/unixODBC ) iodbc? ( !odbc? ( dev-db/libiodbc ) ) ncurses? ( sys-libs/ncurses ) opengl? ( virtual/opengl ) tcl? ( tk? ( dev-lang/tcl dev-lang/tk x11-libs/libX11 x11-libs/libXmu ) )
 SLOT=0
 SRC_URI=http://www.mercury.cs.mu.oz.au/download/files/mercury-extras-11.01.tar.gz mirror://gentoo/mercury-extras-11.01-gentoo-patchset-2.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=9d9462bc3085902b785f80ea1fb210eb

@@ -10,5 +10,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 RESTRICT=binchecks strip
 SLOT=2.6.19_rc6-r1
 SRC_URI=mirror://kernel/linux/kernel/v2.6/testing/patch-2.6.19-rc6.bz2 mirror://kernel/linux/kernel/v2.6/linux-2.6.18.tar.bz2 http://kernel.org/pub/linux/kernel/people/arnd/patches/2.6.19-rc6-arnd1/2.6.19-rc6-arnd1.diff.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6f0cbcfd9cd4207787d7cc7c188f8b99

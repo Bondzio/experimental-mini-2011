@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/blueman/blueman-1.23-r1.ebuild,v 1.1 2012/06/19 06:10:22 dev-zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/blueman/blueman-1.23-r1.ebuild,v 1.2 2012/06/20 06:12:44 dev-zero Exp $
 
 EAPI="4"
 
-PYTHON_DEPEND="2"
+PYTHON_DEPEND="2:2.7"
 
 inherit eutils python gnome2-utils
 

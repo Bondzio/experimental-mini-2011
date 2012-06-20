@@ -188,6 +188,8 @@ app-admin/sysstat:cron - Install /etc/cron.d script to periodically run sar
 app-admin/sysstat:isag - Install isag, the Interactive System Activity Graph tool
 app-admin/testdisk:ntfs - Include the ability to read NTFS filesystems
 app-admin/testdisk:reiserfs - include reiserfs reading ability
+app-admin/tripwire:ssl - Adds support for Secure Socket Layer connections
+app-admin/tripwire:static - Builds the package statically
 app-admin/ulogd:mysql - Build MYSQL output plugin to save packets in a mysql database.
 app-admin/ulogd:pcap - Build PCAP output plugin to save packets in PCAP format. Uses the net-libs/libpcap library
 app-admin/ulogd:postgres - Build PGSQL output plugin to save packets in a postgres database.
@@ -5029,6 +5031,9 @@ sys-apps/smartmontools:minimal - Do not install the monitoring daemon and associ
 sys-apps/superiotool:pci - Support for PCI-attached "Super I/Os" (e.g. in VIA VT82686A/B).
 sys-apps/systemd:audit - Enable support for sys-process/audit
 sys-apps/systemd:cryptsetup - Use libcryptsetup
+sys-apps/systemd:doc - Build gtk-doc API docs
+sys-apps/systemd:gudev - Enable libudev gobject interface
+sys-apps/systemd:introspection - Use dev-libs/gobject-introspection for introspection
 sys-apps/systemd:plymouth - Enable support for sys-boot/plymouth
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely need want it)
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level

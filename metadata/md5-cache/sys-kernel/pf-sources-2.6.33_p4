@@ -11,5 +11,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 RESTRICT=binchecks strip
 SLOT=2.6.33_p4
 SRC_URI=mirror://kernel/linux/kernel/v2.6/linux-2.6.33.tar.bz2 deblob? ( http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-2.6.33.N/deblob-2.6.33 http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-2.6.33.N/deblob-check -> deblob-check-2.6.33 ) http://pf.natalenko.name/sources/2.6.33/patch-2.6.33-pf4.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9fc64d0b66eb375ec0e7c36d9cf5ec1b

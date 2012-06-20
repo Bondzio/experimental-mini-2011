@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/mediastreamer-2.3.0[video?] >=net-libs/libeXosip-3.0.2 >=net-libs/libosip-3.0.0 >=net-libs/ortp-0.16.1 gtk? ( dev-libs/glib:2 >=gnome-base/libglade-2.4.0:2.0 >=x11-libs/gtk+-2.4.0:2 ) ncurses? ( sys-libs/readline sys-libs/ncurses )
 SLOT=0
 SRC_URI=http://download.savannah.nongnu.org/releases/linphone/stable/sources/linphone-3.2.1.tar.gz
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=beb9a7f67c47582c1de378e5d6d3b084

@@ -8,5 +8,5 @@ KEYWORDS=amd64 ppc ppc64 x86 ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris ~
 LICENSE=GPL-2
 RDEPEND=|| ( >=virtual/jre-1.6 >=dev-java/jaxp-1.4-r1:0 ) >=dev-java/java-config-2.1.8 >=dev-java/java-config-2.1.6
 SLOT=0
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	java-virtuals-2	99b1a71af8f8c9fcbab6fe6bc4684a76	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	java-virtuals-2	99b1a71af8f8c9fcbab6fe6bc4684a76	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9b268ef6f9a5f508f5ce8409f27dd7e4

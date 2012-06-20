@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=mp3? ( media-sound/lame >=media-sound/mp3info-0.8.4-r1 ) virtual/cdrtools vorbis? ( media-sound/vorbis-tools )
 SLOT=0
 SRC_URI=ftp://ftp.wspse.de/pub/linux/wspse/mp3c-0.31.tar.bz2
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=a9a83b09cf600955dc94819b9d9d8f66

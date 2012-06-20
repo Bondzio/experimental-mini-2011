@@ -3,10 +3,10 @@ DEPEND=virtual/commonlisp dev-lisp/asdf doc? ( virtual/texi2dvi ) dev-lisp/commo
 DESCRIPTION=SLIME, the Superior Lisp Interaction Mode (Extended)
 HOMEPAGE=http://common-lisp.net/project/slime/
 IUSE=doc
-KEYWORDS=amd64 ppc sparc x86
+KEYWORDS=amd64 ppc ~sparc x86
 LICENSE=GPL-2 xref.lisp
 RDEPEND=virtual/commonlisp dev-lisp/asdf >=virtual/emacs-21
 SLOT=0
 SRC_URI=mirror://gentoo/slime-2.0_p20080731.tar.bz2 mirror://gentoo/slime-2.0_p20080731-patches.tar.bz2
-_eclasses_=common-lisp	c0762703d46ef354d2354f7d73b80008	common-lisp-common	cc88c2e76410141434593a63f108303b	elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=56a86e4ea76dd03b24bf333337a62db0
+_eclasses_=common-lisp	c0762703d46ef354d2354f7d73b80008	common-lisp-common	cc88c2e76410141434593a63f108303b	elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=eab77be427c2c49bd0aac60c5a12411c

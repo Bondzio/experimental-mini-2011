@@ -8,5 +8,5 @@ LICENSE=sun-bcla-j2me
 RDEPEND=>=app-office/libreoffice-l10n-3.5.4 virtual/ooo
 SLOT=0
 SRC_URI=http://ooo.itc.hu/oxygenoffice/download/libreoffice/472ffb92d82cf502be039203c606643d-Sun-ODF-Template-Pack-en-US_1.0.0.oxt http://ooo.itc.hu/oxygenoffice/download/libreoffice/53ca5e56ccd4cab3693ad32c6bd13343-Sun-ODF-Template-Pack-de_1.0.0.oxt http://ooo.itc.hu/oxygenoffice/download/libreoffice/4ad003e7bbda5715f5f38fde1f707af2-Sun-ODF-Template-Pack-es_1.0.0.oxt http://ooo.itc.hu/oxygenoffice/download/libreoffice/a53080dc876edcddb26eb4c3c7537469-Sun-ODF-Template-Pack-fr_1.0.0.oxt http://ooo.itc.hu/oxygenoffice/download/libreoffice/09ec2dac030e1dcd5ef7fa1692691dc0-Sun-ODF-Template-Pack-hu_1.0.0.oxt http://ooo.itc.hu/oxygenoffice/download/libreoffice/b33775feda3bcf823cad7ac361fd49a6-Sun-ODF-Template-Pack-it_1.0.0.oxt
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	office-ext	8815a7a77efd0d07eb25422a6cb67257	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	office-ext	8815a7a77efd0d07eb25422a6cb67257	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=60fb39cc41b556c4f2993d76659eeb58

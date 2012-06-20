@@ -9,5 +9,5 @@ LICENSE=LGPL-3 GPL-3 Boost-1.0
 RDEPEND=dev-libs/boost dev-libs/mpfr sys-libs/zlib x11-libs/libX11 virtual/opengl gmp? ( dev-libs/gmp[cxx=] ) qt4? ( x11-libs/qt-gui:4 x11-libs/qt-opengl:4 ) mpfi? ( sci-libs/mpfi )
 SLOT=0
 SRC_URI=http://gforge.inria.fr/frs/download.php/30385/CGAL-4.0.tar.xz doc? ( http://gforge.inria.fr/frs/download.php/30389/CGAL-4.0-doc_html.tar.xz )
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=541766ffb9c352508c4f956bd74012c3

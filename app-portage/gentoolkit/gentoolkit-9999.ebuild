@@ -1,17 +1,17 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/gentoolkit/gentoolkit-9999.ebuild,v 1.19 2012/01/06 23:01:07 vapier Exp $
 
-EAPI="3"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.[45]"
-PYTHON_USE_WITH="xml"
+EAPI="4-python"
+PYTHON_DEPEND="<<[xml]>>"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython *-pypy-*"
 PYTHON_NONVERSIONED_EXECUTABLES=(".*")
 
 EGIT_MASTER="gentoolkit"
 EGIT_BRANCH="gentoolkit"
 
-inherit distutils python git-2
+inherit distutils git-2
 
 EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/gentoolkit.git"
 
@@ -28,25 +28,25 @@ KEYWORDS=""
 DEPEND="sys-apps/portage"
 RDEPEND="${DEPEND}
 	!<=app-portage/gentoolkit-dev-0.2.7
-	dev-python/argparse
-	|| ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin )
+	|| ( >=sys-apps/coreutils-8.15 sys-freebsd/freebsd-bin )
 	sys-apps/gawk
 	sys-apps/grep
+	$(python_abi_depend virtual/python-argparse)
 	!minimal? (
+		app-admin/eclean-kernel
 		app-portage/diffmask
-		app-portage/eclean-kernel
 		app-portage/flaggie
 		app-portage/install-mask
 		app-portage/smart-live-rebuild
 	)"
 
 distutils_src_compile_pre_hook() {
-	echo VERSION="9999-${EGIT_VERSION}" "$(PYTHON)" setup.py set_version
-	VERSION="9999-${EGIT_VERSION}" "$(PYTHON)" setup.py set_version
+	python_execute VERSION="9999-${EGIT_VERSION}" "$(PYTHON)" setup.py set_version || die "setup.py set_version failed"
 }
 
-src_compile() {
-	distutils_src_compile
+src_prepare() {
+	distutils_src_prepare
+	sed -e "/^_pkg_re =/s/a-zA-Z0-9+_/a-zA-Z0-9+._/" -i pym/gentoolkit/cpv.py
 }
 
 src_install() {
@@ -69,6 +69,7 @@ src_install() {
 		rm -rf "${ED}"/etc/revdep-rebuild
 		rm -rf "${ED}"/var
 	fi
+
 	# Can distutils handle this?
 	dosym eclean /usr/bin/eclean-dist
 	dosym eclean /usr/bin/eclean-pkg

@@ -8,5 +8,5 @@ LICENSE=LGPL-2 GPL-2
 RDEPEND=sys-libs/ncurses
 SLOT=0
 SRC_URI=ftp://emboss.open-bio.org/pub/EMBOSS/old/6.0.1/EMBOSS-6.0.1.tar.gz mirror://gentoo/embassy-6.0.1-emnu-1.05.tar.gz
-_eclasses_=embassy	41c19a872bf59e5911ae5e5979ecd556	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=embassy	41c19a872bf59e5911ae5e5979ecd556	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=8712ed8917338f5c91644976e302c4ea

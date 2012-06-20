@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-perl/Exception-Class dev-perl/Readonly dev-perl/Test-Pod dev-perl/Test-Pod-Coverage dev-perl/Test-Trap dev-perl/Test-DistManifest dev-perl/Try-Tiny dev-perl/perl-tk dev-perl/Config-Simple dev-perl/X11-Protocol x11-apps/xlsfonts dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://sourceforge/clusterssh/App-ClusterSSH-4.01_01.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=00294eba81dfcee2a504bd9ac4e3c049

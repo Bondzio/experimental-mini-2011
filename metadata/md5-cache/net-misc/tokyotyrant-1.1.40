@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-db/tokyocabinet sys-libs/zlib app-arch/bzip2 lua? ( dev-lang/lua )
 SLOT=0
 SRC_URI=http://1978th.net/tokyotyrant/tokyotyrant-1.1.40.tar.gz
-_eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
 _md5_=687f378fbe70d8a16827d7c1b74b84ab
