@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-libs/expat dev-python/numpy dev-python/configobj doc? ( dev-python/sphinx ) test? ( dev-python/pytest ) dev-lang/python
+DEPEND=dev-libs/expat dev-python/numpy dev-python/configobj dev-python/pytest doc? ( dev-python/sphinx dev-python/matplotlib ) dev-lang/python
 DESCRIPTION=Collection of common tools needed for performing astronomy and astrophysics
 EAPI=4
 HOMEPAGE=http://astropy.org/ https://github.com/astropy/astropy
 IUSE=doc test
-KEYWORDS=~amd64
+KEYWORDS=~amd64 ~x86
 LICENSE=BSD
 RDEPEND=dev-libs/expat dev-python/numpy dev-lang/python
 SLOT=0
 SRC_URI=http://github.com/downloads/astropy/astropy/astropy-0.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	7b605062b7d609ee1d0b225de9eccbe2	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=614eba57e2d009924574428d1d65e868
+_md5_=25465ca9fe7b6ec272104a0642b2c310

@@ -6,8 +6,8 @@ HOMEPAGE=http://xtables-addons.sourceforge.net/
 IUSE=modules xtables_addons_quota2 xtables_addons_psd xtables_addons_pknock xtables_addons_lscan xtables_addons_length2 xtables_addons_ipv4options xtables_addons_ipset6 xtables_addons_ipp2p xtables_addons_iface xtables_addons_gradm xtables_addons_geoip xtables_addons_fuzzy xtables_addons_condition xtables_addons_tee xtables_addons_tarpit xtables_addons_sysrq xtables_addons_steal xtables_addons_rawnat xtables_addons_logmark xtables_addons_ipmark xtables_addons_echo xtables_addons_dnetmap xtables_addons_dhcpmac xtables_addons_delude xtables_addons_checksum xtables_addons_chaos xtables_addons_account kernel_linux
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=net-firewall/iptables-1.4.3 xtables_addons_ipset6? ( !net-firewall/ipset net-libs/libmnl ) xtables_addons_geoip? ( virtual/perl-Getopt-Long dev-perl/Text-CSV_XS ) kernel_linux? ( sys-apps/module-init-tools )
+RDEPEND=>=net-firewall/iptables-1.4.3 xtables_addons_ipset6? ( !net-firewall/ipset net-libs/libmnl ) xtables_addons_geoip? ( app-arch/unzip dev-perl/Text-CSV_XS virtual/perl-Getopt-Long ) kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/xtables-addons/xtables-addons-1.39.tar.xz
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=3cbece90222ce97cbe5735a6d78efab2
+_md5_=a070021cbc35505efe0766ac1e1962eb

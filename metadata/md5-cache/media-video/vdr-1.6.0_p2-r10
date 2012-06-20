@@ -4,7 +4,7 @@ DESCRIPTION=Video Disk Recorder - turns a pc into a powerful set top box for DVB
 EAPI=4
 HOMEPAGE=http://www.tvdr.de/
 IUSE=debug vanilla dxr3 analogtv atsc cmdsubmenu cutterlimit cutterqueue cuttime ddepgentry dolbyinrec dvbplayer dvbsetup dvdarchive dvdchapjump graphtft hardlinkcutter jumpplay lnbshare mainmenuhooks menuorg noepg osdmaxitems pinplugin rotor settime setup sortrecords sourcecaps livebuffer ttxtsubs timercmd timerinfo validinput yaepg syncearly dvlfriendlyfnames dvlrecscriptaddon dvlvidprefer volctrl wareagleicon lircsettings deltimeshiftrec em84xx cmdreccmdi18n softosd parentalrating iptv liemikuutio
-KEYWORDS=~arm ~amd64 ~ppc ~x86
+KEYWORDS=~arm amd64 ~ppc x86
 LICENSE=GPL-2
 PDEPEND=setup? ( >=media-plugins/vdr-setup-0.3.1-r4 ) dxr3? ( >=media-plugins/vdr-dxr3-0.2.13 )
 RDEPEND=virtual/jpeg sys-libs/libcap >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2 sys-devel/gettext dvdarchive? ( dvdchapjump? ( >=media-libs/libdvdread-4.1.3_p1168 ) ) dev-lang/perl >=media-tv/gentoo-vdr-scripts-0.4.5 media-fonts/corefonts
@@ -12,4 +12,4 @@ REQUIRED_USE=setup? ( !menuorg ) menuorg? ( !setup )
 SLOT=0
 SRC_URI=ftp://ftp.tvdr.de/vdr/vdr-1.6.0.tar.bz2 ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-1.diff ftp://ftp.tvdr.de/vdr/Developer/vdr-1.6.0-2.diff http://www.zulu-entertainment.de/files/patches/VDR-Extensions-Patch-72.tar.bz2
 _eclasses_=eutils	7b605062b7d609ee1d0b225de9eccbe2	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=db02105cd95bb67a970b4524dd9160ab
+_md5_=5ca14b20a29f2c9f6eaf78be2e4f8028

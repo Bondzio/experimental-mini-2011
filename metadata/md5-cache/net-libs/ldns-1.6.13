@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.7 ) ecdsa? ( >=dev-libs/openssl-0.9.8 ) gost? ( >=dev-libs/openssl-1 ) python? ( dev-lang/swig ) doc? ( app-doc/doxygen ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+DESCRIPTION=ldns is a library with the aim to simplify DNS programing in C
+EAPI=4
+HOMEPAGE=http://www.nlnetlabs.nl/projects/ldns/
+IUSE=doc gost ecdsa python ssl static-libs vim-syntax
+KEYWORDS=~amd64 ~x86 ~ppc-macos ~x64-macos
+LICENSE=BSD
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.7 ) ecdsa? ( >=dev-libs/openssl-0.9.8 ) gost? ( >=dev-libs/openssl-1 ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) )
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.nlnetlabs.nl/downloads/ldns/ldns-1.6.13.tar.gz
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	7b605062b7d609ee1d0b225de9eccbe2	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=9a5299dcf26a84185061434bdfdcf6bf
