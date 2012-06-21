@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
-DEPEND=x11-libs/libX11 xft? ( x11-libs/libXft ) xinerama? ( x11-libs/libXinerama ) xpm? ( x11-libs/libXpm ) xtest? ( x11-libs/libXtst ) xrandr? ( x11-libs/libXrandr ) test? ( ruby_targets_ruby19? ( dev-ruby/archive-tar-minitar[ruby_targets_ruby19] ) ) ruby_targets_ruby19? ( dev-ruby/rake[ruby_targets_ruby19] ) dev-vcs/mercurial ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
+DEPEND=x11-libs/libX11 xft? ( x11-libs/libXft ) xinerama? ( x11-libs/libXinerama ) xpm? ( x11-libs/libXpm ) xtest? ( x11-libs/libXtst ) xrandr? ( x11-libs/libXrandr ) virtual/pkgconfig test? ( ruby_targets_ruby19? ( dev-ruby/archive-tar-minitar[ruby_targets_ruby19] ) ) ruby_targets_ruby19? ( dev-ruby/rake[ruby_targets_ruby19] ) dev-vcs/mercurial ruby_targets_ruby19? ( dev-lang/ruby:1.9 )
 DESCRIPTION=A manual tiling window manager
 EAPI=4
 HOMEPAGE=http://subforge.org/projects/subtle/wiki
@@ -9,4 +9,4 @@ RDEPEND=x11-libs/libX11 xft? ( x11-libs/libXft ) xinerama? ( x11-libs/libXineram
 REQUIRED_USE=|| ( ruby_targets_ruby19 )
 SLOT=0
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	mercurial	add64e64d758a9618d46a08a95f77483	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	7bfb9d5afe376884a98c3f3b40cf673a	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=4febb2c8cbefb2a247cd7011bd1571fc
+_md5_=7e7fdf6b7ac35fa396455e8d84c892c5

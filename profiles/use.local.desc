@@ -3455,6 +3455,10 @@ net-analyzer/nfdump:compat15 - Enable read support for nfdump data files created
 net-analyzer/nfdump:ftconv - Build the flow-tools to nfdump converter
 net-analyzer/nfdump:nfprofile - Build nfprofile used by NfSen
 net-analyzer/nfdump:sflow - Build sflow collector sfcpad
+net-analyzer/nmap:ncat - Install the ncat utility
+net-analyzer/nmap:ndiff - Install the ndiff utility
+net-analyzer/nmap:nmap-update - Install nmap-update, which uses dev-vcs/subversion to update nmap scripts in your home directory
+net-analyzer/nmap:nping - Install the nping utility
 net-analyzer/pchar:pcap - Use the net-libs/libpcap library
 net-analyzer/pmacct:64bit - Use 64bit counters instead of 32bit ones
 net-analyzer/pmacct:ulog - Enable ULOG support
@@ -5861,6 +5865,7 @@ x11-wm/muffin:introspection - Use dev-libs/gobject-introspection for introspecti
 x11-wm/musca:apis - Optionally install the experimental `apis' window manager
 x11-wm/musca:xlisten - Optionally install the xlisten utility
 x11-wm/mutter:introspection - Use dev-libs/gobject-introspection for introspection
+x11-wm/notion:xrandr - Add support for xrandr
 x11-wm/openbox:session - Enables support for session managers
 x11-wm/ratpoison:history - Use sys-libs/readline for history handling
 x11-wm/stumpwm:clisp - Use CLISP for the runtime

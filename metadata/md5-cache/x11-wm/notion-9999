@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst prepare unpack
+DEPEND=dev-lang/lua x11-libs/libSM x11-libs/libX11 x11-libs/libXext nls? ( sys-devel/gettext ) xinerama? ( x11-libs/libXinerama ) xrandr? ( x11-libs/libXrandr ) dev-util/pkgconfig dev-vcs/git
+DESCRIPTION=Notion is a tiling, tabbed window manager for the X window system
+EAPI=4
+HOMEPAGE=http://notion.sourceforge.net
+IUSE=nls xinerama +xrandr
+LICENSE=LGPL-2.1
+RDEPEND=dev-lang/lua x11-libs/libSM x11-libs/libX11 x11-libs/libXext nls? ( sys-devel/gettext ) xinerama? ( x11-libs/libXinerama ) xrandr? ( x11-libs/libXrandr )
+SLOT=0
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_md5_=638c20a9f5f9dd66748e7e362803a2fa
