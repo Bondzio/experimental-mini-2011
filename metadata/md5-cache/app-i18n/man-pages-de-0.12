@@ -1,4 +1,5 @@
 DEFINED_PHASES=compile install
+DEPEND=dev-lang/perl
 DESCRIPTION=A somewhat comprehensive collection of Linux german man page translations
 EAPI=4
 HOMEPAGE=http://alioth.debian.org/projects/manpages-de/
@@ -7,4 +8,4 @@ LICENSE=as-is GPL-2 GPL-3 BSD
 RDEPEND=virtual/man
 SLOT=0
 SRC_URI=http://manpages-de.alioth.debian.org/downloads/manpages-de-0.12.tar.bz2
-_md5_=2b4d30a152e29c2b40e97da399e6faa7
+_md5_=b65448e268f13ac132733ffe3db91d88
