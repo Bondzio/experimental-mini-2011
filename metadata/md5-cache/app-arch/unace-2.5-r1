@@ -5,5 +5,5 @@ KEYWORDS=~alpha ~amd64 -hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~sparc-sol
 LICENSE=freedist
 SLOT=1
 SRC_URI=mirror://debian/pool/non-free/u/unace-nonfree/unace-nonfree_2.5.orig.tar.gz mirror://debian/pool/non-free/u/unace-nonfree/unace-nonfree_2.5-5.diff.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=8cca64f13011af5608d937cac1b1622d

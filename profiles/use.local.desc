@@ -662,6 +662,7 @@ app-misc/lirc:hardware-carrier - The transmitter device generates its clock sign
 app-misc/lirc:transmitter - Add transmitter support to some lirc-drivers (e.g. serial)
 app-misc/mc:edit - Compile and install the mcedit application
 app-misc/mc:mclib - Compile and install the libmc.so shared library
+app-misc/mc:sftp - Add support for sftp (uses net-libs/libssh2 for it).
 app-misc/mc:slang - Use sys-libs/slang instead of sys-libs/ncurses.
 app-misc/mc:xdg - Toggles mc's config dir location. Enable for $XDG_CONFIG_HOME/mc, disable for $HOME/.mc
 app-misc/muttprint:doc - Builds documentation
@@ -3019,7 +3020,6 @@ media-tv/freevo:tvtime - Enables tvtime support, additional to tv use flag
 media-tv/gentoo-vdr-scripts:nvram - Add support for using nvram-wakeup to set wakeup time in bios
 media-tv/mythtv:alsa - Allows MythTV to directly output sound to ALSA devices, this is needed if you are using ALSA dmix or SPDIF. Note, you will have to physically type your device into the MythTV configuration since it will only give you /dev/dsp devices in the drop down.
 media-tv/mythtv:altivec - Builds ffmpeg's codec libraries with altivec support.
-media-tv/mythtv:ass - Use the ASS/SSA subtitle render
 media-tv/mythtv:autostart - Uses a custom autostart configuration gleaned from experience with MythTV since its early versions and discussed with other MythTV maintainers and users. Does not rely on KDE being installed like most methods do.
 media-tv/mythtv:bluray - Pulls in libbluray for BluRay support.
 media-tv/mythtv:cec - Allows you to control CEC enabled TVs via HDMI. Currently requires a USB based CEC -> HDMI injector between your TV and video card since no graphics drivers support CEC natively.
@@ -3029,6 +3029,7 @@ media-tv/mythtv:dvb - Enables support for Linux DVB cards. These include all car
 media-tv/mythtv:ieee1394 - Allows MythTV to communicate and use Firewire enabled Cable boxes. These are typically found in the United States, where such support is required by law. This will also install Firewire test programs and external channel changers if the internal changer does not work.
 media-tv/mythtv:jack - Allows MythTV to use JACK as your sound output device. You will have to manually configure the path to your JACK settings.
 media-tv/mythtv:lcd - Tells MythTV that you have an instance of app-misc/lcdproc configured on your machine and it should output information such as current time, show name, episode name, etc to that LCD.
+media-tv/mythtv:libass - SRT/SSA/ASS (SubRip / SubStation Alpha) subtitle support
 media-tv/mythtv:lirc - Adds LIRC support directly to MythTV allowing for built in control via a LIRC device.
 media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write scripts in Perl to control your MythTV setup or communicate with it.
 media-tv/mythtv:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding

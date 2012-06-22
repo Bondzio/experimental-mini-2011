@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-text/aspell-0.60
 SLOT=0
 SRC_URI=mirror://gnu/aspell/dict/de-alt/aspell6-de-alt-2.1-1.tar.bz2
-_eclasses_=aspell-dict	8fec0fbbba24fb7023cdc7be53b64548	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=aspell-dict	8fec0fbbba24fb7023cdc7be53b64548	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=9e15d539dc78a6c4b0205f9c82b233c2

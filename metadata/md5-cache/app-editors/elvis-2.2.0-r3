@@ -8,5 +8,5 @@ LICENSE=Artistic
 RDEPEND=>=sys-libs/ncurses-5.2 X? ( >=x11-proto/xproto-7.0.4 >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXpm-3.5.4.2 >=x11-libs/libXft-2.1.8.2 ) app-admin/eselect-vi
 SLOT=0
 SRC_URI=ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a99a9b00f645daa162850b4385841f50

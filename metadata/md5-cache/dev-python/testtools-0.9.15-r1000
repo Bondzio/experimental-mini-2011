@@ -10,5 +10,5 @@ RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=http://launchpad.net/testtools/0.9/0.9.15/+download/testtools-0.9.15.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4d54118c27d3d30bff332f943ba8b610

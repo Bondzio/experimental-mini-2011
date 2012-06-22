@@ -8,5 +8,5 @@ LICENSE=LGPL-2
 RDEPEND=virtual/ooo[java] virtual/ooo
 SLOT=0
 SRC_URI=http://ooo2gd.googlecode.com/files/ooo2gd_3.0.0.oxt
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	office-ext	8815a7a77efd0d07eb25422a6cb67257	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	office-ext	8815a7a77efd0d07eb25422a6cb67257	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=b3939deb92b8d69a02f631f44835549a

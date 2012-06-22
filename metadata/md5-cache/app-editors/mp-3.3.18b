@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!dev-util/rej ncurses? ( sys-libs/ncurses ) gtk? ( x11-libs/gtk+:2 >=x11-libs/pango-1.8.0 ) !gtk? ( sys-libs/ncurses ) nls? ( sys-devel/gettext ) pcre? ( dev-libs/libpcre ) dev-lang/perl
 SLOT=0
 SRC_URI=http://www.triptico.com/download/mp-3.3.18b.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=995c1258d3a4bf82094e8ead93c5ee23

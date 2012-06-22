@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=virtual/jpeg amd64? ( sys-libs/libieee1284 ) x86? ( sys-libs/libieee1284 ) usb? ( virtual/libusb:0 ) gphoto2? ( media-libs/libgphoto2 ) v4l? ( sys-kernel/linux-headers )
 SLOT=0
 SRC_URI=ftp://ftp.sane-project.org/pub/sane/sane-backends-1.0.17/sane-backends-1.0.17.tar.gz ftp://ftp.sane-project.org/pub/sane/old-versions/sane-backends-1.0.17/sane-backends-1.0.17.tar.gz usb? ( mirror://gentoo/sane-1.0.16-brother-driver.diff.bz2 http://dev.gentoo.org/~phosphan/sane-1.0.16-brother-driver.diff.bz2 )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=77c228288f162f4cfcdf7c7bf4888724

@@ -10,5 +10,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make )
 RESTRICT=binchecks strip
 SLOT=2.6.32_p7-r1
 SRC_URI=mirror://kernel/linux/kernel/v2.6/linux-2.6.32.tar.bz2 deblob? ( http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-2.6.32.N/deblob-2.6.32 mirror://gentoo/deblob-check-2.6.32 ) http://downloads.zen-kernel.org/2.6.32/2.6.32-zen7.patch.lzma
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	kernel-2	4fbd75462523383ba153fa86d46603f4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=bb9753851a6695982c101eb8f63ca385

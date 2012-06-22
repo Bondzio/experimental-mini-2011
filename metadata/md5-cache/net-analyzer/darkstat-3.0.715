@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=net-libs/libpcap
 SLOT=0
 SRC_URI=http://unix4lyfe.org/darkstat/darkstat-3.0.715.tar.bz2
-_eclasses_=user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=3eea40b7b8250797741fca327251f069

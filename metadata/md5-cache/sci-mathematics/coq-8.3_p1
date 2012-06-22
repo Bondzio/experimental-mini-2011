@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-lang/ocaml-3.10[ocamlopt?] >=dev-ml/camlp5-5.09[ocamlopt?] gtk? ( >=dev-ml/lablgtk-2.10.1[ocamlopt?] )
 SLOT=0
 SRC_URI=http://coq.inria.fr/V8.3pl1/files/coq-8.3pl1.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=28c170cda1034e1231b4e7c2f9ed589d

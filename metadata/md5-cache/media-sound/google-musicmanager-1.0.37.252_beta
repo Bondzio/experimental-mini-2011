@@ -10,5 +10,5 @@ RDEPEND=dev-libs/expat dev-libs/glib:2 media-libs/flac media-libs/fontconfig med
 RESTRICT=strip mirror
 SLOT=0
 SRC_URI=x86? ( http://dl.google.com/linux/musicmanager/deb/pool/main/g/google-musicmanager-beta/google-musicmanager-beta_1.0.37.252-r0_i386.deb ) amd64? ( http://dl.google.com/linux/musicmanager/deb/pool/main/g/google-musicmanager-beta/google-musicmanager-beta_1.0.37.252-r0_amd64.deb )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	unpacker	e1b907c6a72dc4c9025109f3e84129c7	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	unpacker	e1b907c6a72dc4c9025109f3e84129c7	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=b5a1f7529919cd21fd588e2f9214b889

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=virtual/jre-1.5 dev-java/commons-httpclient:3 dev-java/commons-logging:0 dev-java/jgoodies-forms:0 dev-java/jgoodies-looks:2.0 dev-java/log4j:0 dev-java/l2fprod-common:0 dev-java/commons-beanutils:1.7 dev-java/commons-codec:0 dev-java/commons-collections:0 dev-java/commons-lang:2.1 >=dev-java/java-config-2.1.9-r1
 SLOT=0
 SRC_URI=mirror://sourceforge/phex/phex_3.2.0.102_src.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=4e81c0123e4fdf7265330fd0cfab3d4b

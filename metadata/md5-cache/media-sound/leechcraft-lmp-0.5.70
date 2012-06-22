@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=~net-misc/leechcraft-core-0.5.70 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) media-libs/taglib >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils
+DEPEND=~net-misc/leechcraft-core-0.5.70 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) media-libs/taglib x11-libs/qt-declarative >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) app-arch/xz-utils
 DESCRIPTION=LeechCraft Media Player, Phonon-based audio/video player.
 EAPI=4
 HOMEPAGE=http://leechcraft.org/
 IUSE=debug kde
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=~net-misc/leechcraft-core-0.5.70 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) media-libs/taglib
+RDEPEND=~net-misc/leechcraft-core-0.5.70 kde? ( media-libs/phonon ) !kde? ( x11-libs/qt-phonon ) media-libs/taglib x11-libs/qt-declarative
 SLOT=0
 SRC_URI=mirror://sourceforge/leechcraft/leechcraft-0.5.70.tar.xz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=dbb1be9049f432715d17990e6a6f2549
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	leechcraft	1b215843b07989f61c5a8ba447fd5550	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=16961c41c1439e09ed883bec9ffe63d1

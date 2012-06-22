@@ -9,5 +9,5 @@ RDEPEND=>=sys-devel/binutils-2.20 sys-devel/gcc:4.4 profiler? ( x86? ( x11-libs/
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=amd64? ( http://developer.download.nvidia.com/compute/cuda/4_0/toolkit/cudatoolkit_4.0.17_linux_64_ubuntu10.10.run ) x86? ( http://developer.download.nvidia.com/compute/cuda/4_0/toolkit/cudatoolkit_4.0.17_linux_32_ubuntu10.10.run )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	unpacker	e1b907c6a72dc4c9025109f3e84129c7	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	unpacker	e1b907c6a72dc4c9025109f3e84129c7	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=8d4f6f3aba193fc81355018c4f4a763e

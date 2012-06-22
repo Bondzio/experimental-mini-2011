@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=selinux? ( sec-policy/selinux-radvd )
 SLOT=0
 SRC_URI=http://v6web.litech.org/radvd/dist/radvd-1.8.5.tar.gz
-_eclasses_=user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=d5265a367c297a47c50293216f6dfa86

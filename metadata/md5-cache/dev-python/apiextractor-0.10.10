@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/libxml2-2.6.32 >=dev-libs/libxslt-1.1.19 >=x11-libs/qt-core-4.7.0:4 >=x11-libs/qt-xmlpatterns-4.7.0:4
 SLOT=0
 SRC_URI=http://www.pyside.org/files/apiextractor-0.10.10.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=2913eb34d2cf0ca14b3d1437af1ce87c

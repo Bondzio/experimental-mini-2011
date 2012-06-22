@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2
 RDEPEND=>=sys-libs/zlib-1.1.4 kerberos? ( virtual/krb5 ) pam? ( virtual/pam )
 SLOT=0
 SRC_URI=mirror://gnu/non-gnu/cvs/source/feature/1.12.12/cvs-1.12.12.tar.bz2 doc? ( mirror://gnu/non-gnu/cvs/source/feature/1.12.12/cederqvist-1.12.12.html.tar.bz2 mirror://gnu/non-gnu/cvs/source/feature/1.12.12/cederqvist-1.12.12.pdf mirror://gnu/non-gnu/cvs/source/feature/1.12.12/cederqvist-1.12.12.ps )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=088198f03630d9bb9453b3b45fdfc217

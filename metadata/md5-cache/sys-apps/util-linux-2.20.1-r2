@@ -9,5 +9,5 @@ LICENSE=GPL-2 GPL-3 LGPL-2.1 BSD-4 MIT public-domain
 RDEPEND=!sys-process/schedutils !sys-apps/setarch !<sys-apps/sysvinit-2.88-r3 !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 cramfs? ( sys-libs/zlib ) ncurses? ( >=sys-libs/ncurses-5.2-r2 ) perl? ( dev-lang/perl ) selinux? ( sys-libs/libselinux ) slang? ( sys-libs/slang )
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/util-linux/v2.20/util-linux-2.20.1.tar.bz2 loop-aes? ( http://loop-aes.sourceforge.net/updates/util-linux-2.20-20110905.diff.bz2 )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
 _md5_=f6326229df97eab8da72ec021e84cd5d

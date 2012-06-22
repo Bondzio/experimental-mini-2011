@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND==sys-freebsd/freebsd-lib-7.2* >=sys-freebsd/freebsd-lib-7.2-r1 pam? ( virtual/pam ) xinetd? ( sys-apps/xinetd )
 SLOT=0
 SRC_URI=mirror://gentoo/freebsd-libexec-7.2.tar.bz2 mirror://gentoo/freebsd-ubin-7.2.tar.bz2 mirror://gentoo/freebsd-bin-7.2.tar.bz2 mirror://gentoo/freebsd-contrib-7.2.tar.bz2 mirror://gentoo/freebsd-lib-7.2.tar.bz2 mirror://gentoo/freebsd-etc-7.2.tar.bz2 mirror://gentoo/freebsd-usbin-7.2.tar.bz2
-_eclasses_=bsdmk	d13d2e416a2fa9a525bf82c9bdb05509	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	freebsd	ba8e26233fd04f10f90adfaadaa945b8	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bsdmk	d13d2e416a2fa9a525bf82c9bdb05509	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	freebsd	ba8e26233fd04f10f90adfaadaa945b8	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=12d8b9d968ce720c423c17ceca530007
