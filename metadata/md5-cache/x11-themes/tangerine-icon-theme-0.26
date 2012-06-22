@@ -10,5 +10,5 @@ RDEPEND=>=x11-themes/gnome-icon-theme-2.24
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=mirror://gentoo/tangerine-icon-theme_0.26.tar.gz http://www.gentoo.org/images/gentoo-logo.svg
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
 _md5_=f312de8dbd86656eb92d5cb375e90747

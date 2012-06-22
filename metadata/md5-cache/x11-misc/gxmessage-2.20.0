@@ -8,5 +8,5 @@ LICENSE=GPL-3 public-domain
 RDEPEND=>=x11-libs/gtk+-2.20:2
 SLOT=0
 SRC_URI=mirror://gnu/gxmessage/gxmessage-2.20.0.tar.gz http://homepages.ihug.co.nz/~trmusson/stuff/gxmessage-2.20.0.tar.gz
-_eclasses_=gnome2-utils	e374753c8bbf3d5a2799c98f08a3e714
+_eclasses_=gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba
 _md5_=c1bf3ae712e6d4dcd7f2e55ccfb901ca
