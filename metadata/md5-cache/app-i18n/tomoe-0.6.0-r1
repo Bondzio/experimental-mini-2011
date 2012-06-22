@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/tomoe/tomoe-0.6.0.tar.gz
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	a0c068b0a2e1b2a724349c81e600d712
-_md5_=68e0b113f320083ded37bff18f175637
+_md5_=f7f154c856ee142b1c325488683efbf3

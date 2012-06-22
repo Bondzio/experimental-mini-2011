@@ -10,4 +10,4 @@ RDEPEND=dev-python/pandas sci-libs/scikits sci-libs/scipy examples? ( dev-python
 SLOT=0
 SRC_URI=mirror://pypi/s/statsmodels/statsmodels-0.4.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=1f14ec2460d373d98399d5dbdc8cec37
+_md5_=4caf7c19d45a413c1ebe4461c758ce0d
