@@ -1273,6 +1273,7 @@ dev-lang/v8cgi:fcgi - Support for FastCGI
 dev-lang/v8cgi:memcached - Support for the memcached daemon
 dev-lang/v8cgi:xerces - Use the xerces XML parser
 dev-lang/vala:vapigen - Enable vala's library binding generator
+dev-lang/yap:R - Enable support for connecting R to Prolog
 dev-libs/STLport:boost - Enable the usage of dev-libs/boost
 dev-libs/ace:ciao - Include Component Intergraced Ace ORB into the build of ace
 dev-libs/ace:tao - Include the ACE ORB (CORBA stuff) (called tao) into the build of ace
@@ -2582,6 +2583,7 @@ media-libs/libextractor:gsf - Enable OLE2 (MS Office) plug-in support using gnom
 media-libs/libggi:vis - Enables sparc vis support for libggi
 media-libs/libgnome-media-profiles:twolame - Allow encoding MPEG Audio Layer 2 (MP2) files using twolame
 media-libs/libgpod:gtk - Enable ArtworkDB support
+media-libs/liblastfm:fingerprint - Build the lastfm-fingerprint library
 media-libs/libmikmod:raw - Enable raw file writer plug-in
 media-libs/libmp4v2:utils - Install command-line utilities
 media-libs/libpng:apng - support unofficial APNG (Animated PNG) spec
@@ -3856,11 +3858,12 @@ net-irc/charybdis:largenet - Enable support/tweaks for large networks
 net-irc/epic5:archive - Use app-arch/libarchive to use zip and tar archives from scripts.
 net-irc/epic5:valgrind - Compile against dev-util/valgrind headers to improve memory-leak checking when running epic5 under valgrind.
 net-irc/ezbounce:boost - Compile against dev-libs/boost libraries
+net-irc/inspircd:geoip - Add geoip support for country and city lookup based on IPs
 net-irc/inspircd:gnutls - Enable TLS support
 net-irc/inspircd:ipv6 - Enable support for IP version 6
 net-irc/inspircd:ldap - Enable LDAP support
 net-irc/inspircd:mysql - Enable MySQL database backend
-net-irc/inspircd:openssl - Enable SSL support
+net-irc/inspircd:openssl - Enable SSL support (obsolete)
 net-irc/inspircd:postgres - Enable PostgreSQL database backend
 net-irc/inspircd:sqlite - Enable Sqlite database backend
 net-irc/inspircd:ssl - Enable SSL support
@@ -4573,10 +4576,6 @@ net-wireless/blueman:gconf - Enable the GConf configuration backend
 net-wireless/blueman:network - Add functionality to setup (host) PAN connections using either net-dns/dnsmasq or net-misc/dhcp
 net-wireless/blueman:sendto - Install the sendto-plugin for gnome-base/nautilus
 net-wireless/bluez:consolekit - Use sys-auth/pambase[consolekit] to determine access to bluetooth devices based on whether a user is logged in locally or remotely
-net-wireless/bluez:health - Compile with initial support for HDP
-net-wireless/bluez:maemo6 - Compile with maemo6 plugin
-net-wireless/bluez:old-daemons - Install old daemons like hidd and sdpd that are deprecated by the new Service framework
-net-wireless/bluez:pnat - Enable pnat plugin
 net-wireless/bluez:test-programs - Install tools for testing of various Bluetooth functions
 net-wireless/gnome-bluetooth:introspection - Use dev-libs/gobject-introspection for introspection
 net-wireless/gnome-bluetooth:nautilus - Build the gnome-extra/nautilus-sendto plugin
@@ -5417,9 +5416,7 @@ www-apps/bugzilla:extras - Optional Perl modules
 www-apps/bugzilla:modperl - Enable www-apache/mod_perl support
 www-apps/cgit:highlight - Enable source code highlighting
 www-apps/egroupware:gallery - Install gallery2 port for eGW
-www-apps/egroupware:icalsrv - Install iCal Server (eGroupware-iCalSrv)
-www-apps/egroupware:jpgraph - Add dev-php5/jpgraph support
-www-apps/egroupware:mydms - Install eGroupware-MyDMS
+www-apps/egroupware:jpgraph - Add dev-php/jpgraph support
 www-apps/gallery:netpbm - Add media-libs/netpbm support
 www-apps/gallery:unzip - Add app-arch/unzip support for the archive upload module
 www-apps/gallery:zip - Add app-arch/zip for the zip download module
