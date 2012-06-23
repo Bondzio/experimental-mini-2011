@@ -9,5 +9,5 @@ LICENSE=BSD GPL-2
 RDEPEND=activefilter? ( >=net-libs/libpcap-0.9.4 ) atm? ( net-dialup/linux-atm ) pam? ( virtual/pam ) gtk? ( >=x11-libs/gtk+-2.8:2 ) eap-tls? ( net-misc/curl >=dev-libs/openssl-0.9.7 )
 SLOT=0
 SRC_URI=ftp://ftp.samba.org/pub/ppp/ppp-2.4.4.tar.gz mirror://gentoo/ppp-2.4.4-gentoo-20091116.tar.gz dhcp? ( http://www.netservers.co.uk/gpl/ppp-dhcpc.tgz )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	linux-info	cc184ad3383ffb6ffbaa82f53608e77f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=0b62f7e0189f3f08ef3d9b2c0849eef9

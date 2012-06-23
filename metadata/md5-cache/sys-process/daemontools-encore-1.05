@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=selinux? ( sec-policy/selinux-daemontools ) !sys-process/daemontools !app-doc/daemontools-man
 SLOT=0
 SRC_URI=http://untroubled.org/daemontools-encore//daemontools-encore-1.05.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=9612fd543840d0bf80f96d3485bab5f1

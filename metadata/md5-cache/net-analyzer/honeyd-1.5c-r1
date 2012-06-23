@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=net-libs/libpcap dev-libs/libdnet =dev-libs/libevent-1* dev-libs/libdnsres dev-libs/libpcre sys-libs/zlib
 SLOT=0
 SRC_URI=http://www.citi.umich.edu/u/provos/honeyd/honeyd-1.5c.tar.gz http://www.tracking-hackers.com/solutions/honeyd/honeyd-0.7a-beta2.tgz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=dd7c0bf55211fbd65a307b8646fd0a2c

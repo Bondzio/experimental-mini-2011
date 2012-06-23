@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test unpack
-DEPEND=app-arch/unzip >=virtual/jdk-1.6 freemail? ( >=dev-java/bcprov-1.45 ) dev-java/commons-compress dev-db/db-je:3.3 dev-java/fec dev-java/java-service-wrapper dev-java/db4o-jdk11 dev-java/db4o-jdk12 dev-java/db4o-jdk5 dev-java/jbitcollider-core dev-java/lzma dev-java/lzmajio dev-java/mersennetwister test? ( dev-java/junit dev-java/ant-junit ) dev-java/ant-core >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2 >=dev-lang/python-2.4
+DEPEND=app-arch/unzip >=virtual/jdk-1.6 freemail? ( >=dev-java/bcprov-1.45:0 ) dev-java/commons-compress:0 dev-db/db-je:3.3 dev-java/fec:0 dev-java/java-service-wrapper:0 dev-java/db4o-jdk11:0 dev-java/db4o-jdk12:0 dev-java/db4o-jdk5:0 dev-java/jbitcollider-core:0 dev-java/lzma:0 dev-java/lzmajio:0 dev-java/mersennetwister:0 test? ( dev-java/junit:0 dev-java/ant-junit:0 ) dev-java/ant-core:0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip ) >=dev-java/ant-core-1.7.0 >=dev-java/javatoolkit-0.3.0-r2 >=dev-lang/python-2.4
 DESCRIPTION=An encrypted network without censorship
 EAPI=2
 HOMEPAGE=https://freenetproject.org/
 IUSE=freemail test elibc_FreeBSD doc source elibc_FreeBSD
 KEYWORDS=~amd64 ~x86
 LICENSE=as-is GPL-2
-PDEPEND=net-libs/NativeThread
-RDEPEND=>=virtual/jre-1.6 net-libs/nativebiginteger freemail? ( >=dev-java/bcprov-1.45 ) dev-java/commons-compress dev-db/db-je:3.3 dev-java/fec dev-java/java-service-wrapper dev-java/db4o-jdk11 dev-java/db4o-jdk12 dev-java/db4o-jdk5 dev-java/jbitcollider-core dev-java/lzma dev-java/lzmajio dev-java/mersennetwister >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
+PDEPEND=net-libs/NativeThread:0
+RDEPEND=>=virtual/jre-1.6 net-libs/nativebiginteger:0 freemail? ( >=dev-java/bcprov-1.45:0 ) dev-java/commons-compress:0 dev-db/db-je:3.3 dev-java/fec:0 dev-java/java-service-wrapper:0 dev-java/db4o-jdk11:0 dev-java/db4o-jdk12:0 dev-java/db4o-jdk5:0 dev-java/jbitcollider-core:0 dev-java/lzma:0 dev-java/lzmajio:0 dev-java/mersennetwister:0 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=http://github.com/freenet/fred-official/zipball/build01407 -> freenet-0.7.5_p1407.zip mirror://gentoo/seednodes-20120415.fref.bz2 mirror://gentoo/freenet-ant-1.7.1.jar
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	4bd5ca843fbc2ccbcce723676b9d8f91	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=61f759ef8fe273d68fe41d4a72416c7c
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=d9e76c6e6cd7f51d7cf5aecc9f1e6435
