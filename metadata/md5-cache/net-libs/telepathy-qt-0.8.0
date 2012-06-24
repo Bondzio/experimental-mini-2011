@@ -4,10 +4,11 @@ DESCRIPTION=Qt4 bindings for the Telepathy D-Bus protocol
 EAPI=4
 HOMEPAGE=http://telepathy.freedesktop.org/
 IUSE=debug farsight glib test
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=dev-python/dbus-python x11-libs/qt-core:4[glib?] x11-libs/qt-dbus:4 farsight? ( dev-libs/dbus-glib dev-libs/libxml2 media-libs/gstreamer >=net-libs/telepathy-glib-0.15.1 net-libs/telepathy-farsight ) glib? ( dev-libs/glib:2 ) !net-libs/telepathy-qt4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+RESTRICT=test
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-qt4/telepathy-qt4-0.8.0.tar.gz
 _eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=0b3beb2867bf5b936ac359d7cb414798
+_md5_=c90701bf74b50bc377985c22deab1767

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=>=sys-auth/libyubikey-1.6 virtual/libusb:1 virtual/pkgconfig
+DESCRIPTION=Library and tool for personalization of Yubico's YubiKey
+EAPI=4
+HOMEPAGE=https://github.com/Yubico/yubikey-personalization
+IUSE=static-libs
+KEYWORDS=~amd64
+LICENSE=BSD-2
+RDEPEND=>=sys-auth/libyubikey-1.6 virtual/libusb:1
+SLOT=0
+SRC_URI=http://yubikey-personalization.googlecode.com/files/ykpers-1.7.0.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=b11f7a4cabf85f8b709b476c4e8030b4
