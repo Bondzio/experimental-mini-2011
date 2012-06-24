@@ -1,0 +1,12 @@
+DEFINED_PHASES=install prepare
+DEPEND=!<app-text/html-xml-utils-5.3 >=sci-libs/cifparse-obj-7.025
+DESCRIPTION=Tools for extracting mmCIF data from structure determination applications
+EAPI=4
+HOMEPAGE=http://sw-tools.pdb.org/apps/PDB_EXTRACT/index.html
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
+LICENSE=PDB
+RDEPEND=!<app-text/html-xml-utils-5.3
+SLOT=0
+SRC_URI=http://sw-tools.pdb.org/apps/PDB_EXTRACT/pdb-extract-v3.11-prod-src.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=2631db57e33b938c5198d2a7466c0b3a

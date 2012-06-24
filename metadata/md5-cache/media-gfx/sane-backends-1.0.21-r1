@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=sane_backends_dc210? ( virtual/jpeg ) sane_backends_dc240? ( virtual/jpeg ) sane_backends_dell1600n_net? ( virtual/jpeg ) avahi? ( >=net-dns/avahi-0.6.24 ) sane_backends_canon_pp? ( sys-libs/libieee1284 ) sane_backends_hpsj5s? ( sys-libs/libieee1284 ) sane_backends_mustek_pp? ( sys-libs/libieee1284 ) usb? ( virtual/libusb:0 ) gphoto2? ( media-libs/libgphoto2 virtual/jpeg ) v4l? ( media-libs/libv4l ) !<sys-fs/udev-114
 SLOT=0
 SRC_URI=http://alioth.debian.org/frs/download.php/3258/sane-backends-1.0.21.tar.gz ftp://ftp.sane-project.org/pub/sane/sane-backends-1.0.21/sane-backends-1.0.21.tar.gz ftp://ftp.sane-project.org/pub/sane/old-versions/sane-backends-1.0.21/sane-backends-1.0.21.tar.gz ftp://ftp.sane-project.org/pub/sane/sane-backends-1.0.21/sane-backends-1.0.21-i18n.patch
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=72683350d22ac6162c3e4005ec8eace3

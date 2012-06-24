@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=>=sys-libs/ncurses-5.2 pam? ( >=sys-auth/pambase-20080219.1 )
 SLOT=0
 SRC_URI=ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/netkit-rsh-0.17.tar.gz mirror://gentoo/rexec-1.5.tar.gz mirror://gentoo/netkit-rsh-0.17-patches-3.tar.lzma
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=1a98d38a3fb2fb7828ae31f07d67ea77

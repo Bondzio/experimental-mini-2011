@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=dev-libs/openssl !<net-dns/dnssec-tools-1.13 !net-dns/dnsval
+DESCRIPTION=DNSSEC validator (dnsval)
+EAPI=4
+HOMEPAGE=http://www.dnssec-tools.org/
+IUSE=ipv6 static-libs +threads
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-libs/openssl !<net-dns/dnssec-tools-1.13 !net-dns/dnsval
+SLOT=0
+SRC_URI=http://www.dnssec-tools.org/download/dnsval-1.13.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=f4df4069b601d3b5948f2b52891bd5e3

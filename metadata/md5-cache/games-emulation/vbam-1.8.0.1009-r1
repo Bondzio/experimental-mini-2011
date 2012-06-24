@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/libpng-1.4 media-libs/libsdl[joystick] link? ( media-libs/libsfml ) sys-libs/zlib virtual/opengl gtk? ( >=dev-cpp/glibmm-2.4.0:2 >=dev-cpp/gtkmm-2.4.0:2.4 >=dev-cpp/gtkglextmm-1.2.0 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/vbam-1.8.0.1009.tar.bz2
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	c560ee28222213c7fe3374094a2e1624	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	confutils	a80706bb5b9ddcf6bbd14365656d4985	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f1ae3cffc5c1097f1cffd86ef65b9537

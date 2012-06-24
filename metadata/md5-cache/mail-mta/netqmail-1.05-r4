@@ -9,5 +9,5 @@ RDEPEND=!mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !m
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://qmail/netqmail-1.05.tar.gz !vanilla? ( ssl? ( http://shupp.org/patches/netqmail-1.05-tls-smtpauth-20060105.patch ) highvolume? ( mirror://qmail/big-todo.103.patch ) qmail-spp? ( mirror://sourceforge/qmail-spp/qmail-spp-0.42.tar.gz ) )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	c560ee28222213c7fe3374094a2e1624	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=48b2df8550f273141ed04d26fbe48475
