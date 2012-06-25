@@ -4936,6 +4936,8 @@ sec-policy/selinux-base:open_perms - Enable the open permissions for file object
 sec-policy/selinux-base:peer_perms - Enable the labeled networking peer permissions (SELinux policy capability).
 sec-policy/selinux-base:ubac - Enable User Based Access Control (UBAC) in the SELinux policy
 sys-apps/accountsservice:introspection - Use dev-libs/gobject-introspection for introspection
+sys-apps/accountsservice:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
+sys-apps/accountsservice:vala - Enable bindings for dev-lang/vala
 sys-apps/acl:nfs - add support for NFS acls
 sys-apps/baselayout-prefix:prefix-chaining - install in a chained Prefix environment
 sys-apps/busybox:make-symlinks - Create all the appropriate symlinks in /bin and /sbin.
@@ -5116,9 +5118,6 @@ sys-cluster/gearmand:tokyocabinet - Support dev-db/tokyocabinet for the queue st
 sys-cluster/glusterfs:extras - Install extra helper scripts
 sys-cluster/glusterfs:fuse - Add FUSE mount helper
 sys-cluster/glusterfs:infiniband - Add support for Infiniband ibverbs transport. Libraries can be found in science overlay
-sys-cluster/lam-mpi:pbs - Add support for the Portable Batch System (PBS)
-sys-cluster/lam-mpi:romio - Enable romio, a high-performance portable MPI-IO implementation
-sys-cluster/lam-mpi:xmpi - Build support for the external XMPI debugging GUI
 sys-cluster/maui:pbs - Enable pbs integration
 sys-cluster/maui:slurm - Enable slurm integration
 sys-cluster/moosefs:cgi - Install CGI server and scripts.

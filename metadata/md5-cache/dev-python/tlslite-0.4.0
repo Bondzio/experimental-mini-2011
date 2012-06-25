@@ -4,10 +4,10 @@ DESCRIPTION=TLS Lite is a free python library that implements SSL 3.0 and TLS 1.
 EAPI=4
 HOMEPAGE=http://trevp.net/tlslite/ http://pypi.python.org/pypi/tlslite
 IUSE=doc gmp
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=BSD public-domain
 RDEPEND=>=dev-libs/cryptlib-3.3.3[python] || ( dev-python/m2crypto dev-python/pycrypto ) gmp? ( dev-python/gmpy ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://github.com/trevp/tlslite/downloads/tlslite-0.4.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=455fcb6ebf2e3b02dcece605e86163ee
+_md5_=a0a511b3b2abb14abbb5df6a159fb258
