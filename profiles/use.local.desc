@@ -416,6 +416,7 @@ app-emulation/libguestfs:introspection - Use dev-libs/gobject-introspection for 
 app-emulation/libguestfs:javadoc - Install java docs
 app-emulation/libguestfs:systemtap - Use dev-util/systemtap to trace programs
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
+app-emulation/libvirt:audit - support sys-process/audit
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
 app-emulation/libvirt:json - Support QEmu 0.13 JSON-based interface, using dev-libs/yajl.
 app-emulation/libvirt:libvirtd - Builds the libvirtd daemon as well as the client utilities instead of just the client utilities
@@ -423,13 +424,14 @@ app-emulation/libvirt:lvm - Allow using the Logical Volume Manager (sys-apps/lvm
 app-emulation/libvirt:lxc - Support management of Linux Containers virtualisation (app-emulation/lxc)
 app-emulation/libvirt:macvtap - Support for MAC-based TAP (macvlan/macvtap). For networking instead of the normal TUN/TAP. It has its advantages and disadvantages. macvtap support requires very new kernels and is currently evolving. Support for this is experimental at best.
 app-emulation/libvirt:nfs - Allow using Network File System mounts as pool for disk image storage
-app-emulation/libvirt:numa - Use NUMA for memory segmenting via sys-process/numactl
+app-emulation/libvirt:numa - Use NUMA for memory segmenting via sys-process/numactl and sys-process/numad
 app-emulation/libvirt:openvz - Support management of OpenVZ virtualisation (see sys-kernel/openvz-sources)
 app-emulation/libvirt:parted - Allow using real disk partitions as pool for disk image storage, using sys-block/parted to create, resize and delete them.
 app-emulation/libvirt:pcap - Support auto learning IP addreses for routing
 app-emulation/libvirt:phyp - Support management of virtualisation through the PHYP hypervisor protocol.
 app-emulation/libvirt:qemu - Support management of QEmu virtualisation (one of app-emulation/qemu, app-emulation/qemu-kvm or app-emulation/qemu-spice)
 app-emulation/libvirt:uml - Support management of User Mode Linux virtualisation
+app-emulation/libvirt:vepa - Virtual Ethernet Port Aggregator (VEPA) / 802.1Qbg support. Relies on macvtap support.
 app-emulation/libvirt:virt-network - Enable virtual networking (NAT) support for guests. Includes all the dependencies for NATed network mode. Effectively any network setup that relies on libvirt to setup and configure network interfaces on your host. This can include bridged and routed networks ONLY if you are allowing libvirt to create and manage the underlying devices for you. In some cases this requires enabling the 'netcf' USE flag (currently unavailable).
 app-emulation/libvirt:virtualbox - Support management of VirtualBox virtualisation (one of app-emulation/virtualbox or app-emulation/virtualbox-ose)
 app-emulation/libvirt:xen - Support management of Xen virtualisation (app-emulation/xen)
@@ -2854,6 +2856,7 @@ media-sound/jack-audio-connection-kit:netjack - Build with support for Realtime 
 media-sound/jack-audio-connection-kit:pam - Add basic realime configuration via sys-auth/realtime-base
 media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
 media-sound/kid3:chroma - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
+media-sound/kwave:phonon - Enable playback via Phonon
 media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
 media-sound/leechcraft-lmp:mpris - Enable MPRIS support
 media-sound/lmms:fluidsynth - Enables Fluidsynth MIDI software synthesis plugin.
@@ -4195,6 +4198,7 @@ net-misc/cgminer:adl - Enable support for controlling fans and overclocking on A
 net-misc/cgminer:bitforce - Enable support for mining with ButterFly Labs BitFORCE FPGAs
 net-misc/cgminer:cpumining - Enable support for mining with CPUs
 net-misc/cgminer:icarus - Enable support for mining with Icarus FPGAs
+net-misc/cgminer:modminer - Enable support for ModMiner FPGAs
 net-misc/cgminer:opencl - Enable support for mining with OpenCL-capable devices (GPUs)
 net-misc/cgminer:padlock - Enable support for mining with VIA Padlock CPUs
 net-misc/cgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm

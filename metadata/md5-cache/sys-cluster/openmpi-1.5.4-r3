@@ -1,14 +1,14 @@
 DEFINED_PHASES=configure install prepare setup test
-DEPEND=elibc_FreeBSD? ( dev-libs/libexecinfo ) fortran? ( virtual/fortran ) infiniband? ( sys-infiniband/ofed ) knem? ( sys-cluster/knem ) numa? ( sys-process/numactl ) open-mx? ( sys-cluster/open-mx ) pbs? ( sys-cluster/torque ) psm? ( sys-infiniband/infinipath-psm ) sctp? ( net-misc/lksctp-tools ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools ) >=sys-apps/hwloc-1.3 !sys-cluster/mpich !sys-cluster/lam-mpi !sys-cluster/mpich2 !sys-cluster/mpiexec
+DEPEND=elibc_FreeBSD? ( dev-libs/libexecinfo ) fortran? ( virtual/fortran ) infiniband? ( sys-infiniband/ofed ) knem? ( sys-cluster/knem ) numa? ( sys-process/numactl ) open-mx? ( sys-cluster/open-mx ) pbs? ( sys-cluster/torque ) psm? ( sys-infiniband/infinipath-psm ) sctp? ( net-misc/lksctp-tools ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools ) >=sys-apps/hwloc-1.3 !sys-cluster/mpich2 !sys-cluster/mpiexec
 DESCRIPTION=A high-performance message passing library (MPI)
 EAPI=4
 HOMEPAGE=http://www.open-mpi.org
 IUSE=+cxx elibc_FreeBSD fortran heterogeneous infiniband ipv6 knem mpi-threads +numa open-mx pbs psm romio sctp slurm threads vt
 KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux
 LICENSE=BSD
-RDEPEND=elibc_FreeBSD? ( dev-libs/libexecinfo ) fortran? ( virtual/fortran ) infiniband? ( sys-infiniband/ofed ) knem? ( sys-cluster/knem ) numa? ( sys-process/numactl ) open-mx? ( sys-cluster/open-mx ) pbs? ( sys-cluster/torque ) psm? ( sys-infiniband/infinipath-psm ) sctp? ( net-misc/lksctp-tools ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools ) >=sys-apps/hwloc-1.3 !sys-cluster/mpich !sys-cluster/lam-mpi !sys-cluster/mpich2 !sys-cluster/mpiexec
+RDEPEND=elibc_FreeBSD? ( dev-libs/libexecinfo ) fortran? ( virtual/fortran ) infiniband? ( sys-infiniband/ofed ) knem? ( sys-cluster/knem ) numa? ( sys-process/numactl ) open-mx? ( sys-cluster/open-mx ) pbs? ( sys-cluster/torque ) psm? ( sys-infiniband/infinipath-psm ) sctp? ( net-misc/lksctp-tools ) vt? ( !dev-libs/libotf !app-text/lcdf-typetools ) >=sys-apps/hwloc-1.3 !sys-cluster/mpich2 !sys-cluster/mpiexec
 REQUIRED_USE=slurm? ( !pbs ) pbs? ( !slurm ) psm? ( infiniband )
 SLOT=0
 SRC_URI=http://www.open-mpi.org/software/ompi/vopenmpi-1.5/downloads/openmpi-1.5.4.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=5b4a957637bd46e934db733be16fbe42
+_md5_=b1ab6e1bc05a07658237d9bbe62d3738

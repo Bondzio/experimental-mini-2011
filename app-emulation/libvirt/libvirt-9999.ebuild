@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-9999.ebuild,v 1.35 2012/06/16 20:39:08 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/libvirt/libvirt-9999.ebuild,v 1.36 2012/06/26 02:38:33 cardoe Exp $
 
 EAPI=4
 
@@ -34,13 +34,18 @@ DESCRIPTION="C toolkit to manipulate virtual machines"
 HOMEPAGE="http://www.libvirt.org/"
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="avahi +caps debug iscsi +libvirtd lvm +lxc macvtap nfs \
+IUSE="audit avahi +caps debug iscsi +libvirtd lvm +lxc +macvtap nfs \
 	nls numa openvz parted pcap phyp policykit python qemu sasl selinux +udev \
-	uml virtualbox virt-network xen elibc_glibc"
+	uml +vepa virtualbox virt-network xen elibc_glibc"
 # IUSE=one : bug #293416 & bug #299011
 REQUIRED_USE="libvirtd? ( || ( lxc openvz qemu uml virtualbox xen ) )
-	lxc? ( caps libvirtd ) openvz? ( libvirtd ) qemu? ( libvirtd ) uml? ( libvirtd )
-	virtualbox? ( libvirtd ) xen? ( libvirtd )"
+	lxc? ( caps libvirtd )
+	openvz? ( libvirtd )
+	qemu? ( libvirtd )
+	uml? ( libvirtd )
+	vepa? ( macvtap )
+	virtualbox? ( libvirtd )
+	xen? ( libvirtd )"
 
 # gettext.sh command is used by the libvirt command wrappers, and it's
 # non-optional, so put it into RDEPEND.
@@ -58,6 +63,7 @@ RDEPEND="sys-libs/readline
 	sys-devel/gettext
 	>=net-analyzer/netcat6-1.0-r2
 	app-misc/scrub
+	audit? ( sys-process/audit )
 	avahi? ( >=net-dns/avahi-0.6[dbus] )
 	caps? ( sys-libs/libcap-ng )
 	iscsi? ( sys-block/open-iscsi )
@@ -130,6 +136,8 @@ VIRTNET_CONFIG_CHECK="
 	~NETFILTER_XT_TARGET_CHECKSUM
 "
 
+MACVTAP_CONFIG_CHECK="~MACVTAP"
+
 pkg_setup() {
 	python_set_active_version 2
 	python_pkg_setup
@@ -139,6 +147,7 @@ pkg_setup() {
 
 	CONFIG_CHECK=""
 	use lxc && CONFIG_CHECK+="${LXC_CONFIG_CHECK}"
+	use macvtap && CONFIG_CHECK+="${MACVTAP}"
 	use virt-network && CONFIG_CHECK+="${VIRTNET_CONFIG_CHECK}"
 	if [[ -n ${CONFIG_CHECK} ]]; then
 		linux-info_pkg_setup
@@ -225,6 +234,7 @@ src_configure() {
 	# network bits
 	myconf="${myconf} $(use_with macvtap)"
 	myconf="${myconf} $(use_with pcap libpcap)"
+	myconf="${myconf} $(use_with vepa virtualport)"
 
 	## other
 	myconf="${myconf} $(use_enable nls)"
@@ -239,8 +249,11 @@ src_configure() {
 		myconf="${myconf} --with-qemu-group=root"
 	fi
 
+	# audit support
+	myconf="${myconf} $(use_with audit)"
+
 	## stuff we don't yet support
-	myconf="${myconf} --without-netcf --without-audit"
+	myconf="${myconf} --without-netcf"
 
 	# we use udev over hal
 	myconf="${myconf} --without-hal"

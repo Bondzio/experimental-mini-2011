@@ -1,12 +1,13 @@
-DEFINED_PHASES=compile configure install prepare unpack
+DEFINED_PHASES=compile configure install prepare test
 DEPEND=>=dev-libs/boost-1.41.0-r3 || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A variant ascertainment algorithm that can be used to detect SNPs, indels, and other polymorphisms
-EAPI=2
-HOMEPAGE=http://www.broadinstitute.org/science/programs/genome-biology/crd
-KEYWORDS=amd64
+EAPI=4
+HOMEPAGE=http://www.broadinstitute.org/science/programs/genome-biology/crd/
+IUSE=openmp
+KEYWORDS=amd64 ~x86
 LICENSE=Whitehead-MIT
 RDEPEND=>=dev-libs/boost-1.41.0-r3
 SLOT=0
 SRC_URI=ftp://ftp.broad.mit.edu/pub/crd/VAAL/VAAL.1.6.tgz ftp://ftp.broad.mit.edu/pub/crd/VAAL/VAAL_manual.doc
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4e7ceb3aea908f8f013ae21ad8a12644
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	autotools-utils	cfb1126efe81254030227216aa71f32c	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=6b02578d19c73ba408f51a19a779f2e8

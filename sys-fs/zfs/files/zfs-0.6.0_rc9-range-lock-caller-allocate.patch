@@ -1,6 +1,6 @@
-commit 4bbb86db6d6da5c05c452a810f20ffb19d6918de
+commit e7deab3edf6940f13013ca147c91472577223923
 Author: Richard Yao <ryao@cs.stonybrook.edu>
-Date:   Sun Jun 24 20:11:40 2012 -0400
+Date:   Mon Jun 25 14:41:30 2012 -0400
 
     Make callers responsible for memory allocation in zfs_range_lock()
     
@@ -174,7 +174,7 @@ index da18b1f..85dc16a 100644
  /*
   * Unlock range and destroy range lock structure.
 diff --git a/module/zfs/zfs_rlock.c b/module/zfs/zfs_rlock.c
-index f3ada17..6e9afc0 100644
+index f3ada17..eb81777 100644
 --- a/module/zfs/zfs_rlock.c
 +++ b/module/zfs/zfs_rlock.c
 @@ -31,9 +31,9 @@
@@ -205,8 +205,27 @@ index f3ada17..6e9afc0 100644
  	new->r_zp = zp;
  	new->r_off = off;
  	if (len + off < off)	/* overflow */
+@@ -531,7 +529,6 @@ zfs_range_unlock_reader(znode_t *zp, rl_t *remove, list_t *free_list)
+ 		}
+ 
+ 		mutex_exit(&zp->z_range_lock);
+-		kmem_free(remove, sizeof (rl_t));
+ 	}
+ }
+ 
+@@ -572,7 +569,9 @@ zfs_range_unlock(rl_t *rl)
+ 
+ 	while ((free_rl = list_head(&free_list)) != NULL) {
+ 		list_remove(&free_list, free_rl);
+-		zfs_range_free(free_rl);
++		/* Freeing rl is the caller's responsibility */
++		if (free_rl != rl)
++			zfs_range_free(free_rl);
+ 	}
+ 
+ 	list_destroy(&free_list);
 diff --git a/module/zfs/zfs_vnops.c b/module/zfs/zfs_vnops.c
-index 2da5fec..039269a 100644
+index 2da5fec..1ef5299 100644
 --- a/module/zfs/zfs_vnops.c
 +++ b/module/zfs/zfs_vnops.c
 @@ -370,7 +370,7 @@ zfs_read(struct inode *ip, uio_t *uio, int ioflag, cred_t *cr)
@@ -299,7 +318,23 @@ index 2da5fec..039269a 100644
  
  	/*
  	 * If we're in replay mode, or we made no progress, return error.
-@@ -946,7 +946,7 @@ zfs_get_data(void *arg, lr_write_t *lr, char *buf, zio_t *zio)
+@@ -893,6 +893,7 @@ zfs_get_done(zgd_t *zgd, int error)
+ 	if (error == 0 && zgd->zgd_bp)
+ 		zil_add_block(zgd->zgd_zilog, zgd->zgd_bp);
+ 
++	kmem_free(zgd->zgd_rl, sizeof (rl_t));
+ 	kmem_free(zgd, sizeof (zgd_t));
+ }
+ 
+@@ -935,6 +936,7 @@ zfs_get_data(void *arg, lr_write_t *lr, char *buf, zio_t *zio)
+ 	}
+ 
+ 	zgd = (zgd_t *)kmem_zalloc(sizeof (zgd_t), KM_SLEEP);
++	zgd->zgd_rl = (rl_t *)kmem_zalloc(sizeof (rl_t), KM_SLEEP);
+ 	zgd->zgd_zilog = zsb->z_log;
+ 	zgd->zgd_private = zp;
+ 
+@@ -946,7 +948,7 @@ zfs_get_data(void *arg, lr_write_t *lr, char *buf, zio_t *zio)
  	 * we don't have to write the data twice.
  	 */
  	if (buf != NULL) { /* immediate write */
@@ -308,7 +343,7 @@ index 2da5fec..039269a 100644
  		/* test for truncation needs to be done while range locked */
  		if (offset >= zp->z_size) {
  			error = ENOENT;
-@@ -967,7 +967,7 @@ zfs_get_data(void *arg, lr_write_t *lr, char *buf, zio_t *zio)
+@@ -967,7 +969,7 @@ zfs_get_data(void *arg, lr_write_t *lr, char *buf, zio_t *zio)
  			size = zp->z_blksz;
  			blkoff = ISP2(size) ? P2PHASE(offset, size) : offset;
  			offset -= blkoff;
@@ -446,7 +481,7 @@ index 3a6872f..e363839 100644
  	return (0);
  }
 diff --git a/module/zfs/zvol.c b/module/zfs/zvol.c
-index 125d58d..5cae597 100644
+index 125d58d..bbe53d9 100644
 --- a/module/zfs/zvol.c
 +++ b/module/zfs/zvol.c
 @@ -537,7 +537,7 @@ zvol_write(void *arg)
@@ -538,7 +573,7 @@ index 125d58d..5cae597 100644
  	if (error == 0 && zgd->zgd_bp)
  		zil_add_block(zgd->zgd_zilog, zgd->zgd_bp);
  
-+	kmem_free(zgd->zgd_rl, sizeof(rl_t));
++	kmem_free(zgd->zgd_rl, sizeof (rl_t));
  	kmem_free(zgd, sizeof (zgd_t));
  }
  
