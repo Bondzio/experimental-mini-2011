@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/err/err-9999.ebuild,v 1.1 2012/06/21 11:27:53 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/err/err-9999.ebuild,v 1.2 2012/06/26 16:51:34 maksbotan Exp $
 
 EAPI=4
 
@@ -21,12 +21,13 @@ SRC_URI=""
 KEYWORDS=""
 LICENSE="GPL-3"
 SLOT="0"
-IUSE=""
+IUSE="+plugins"
 
 DEPEND="dev-python/setuptools"
 RDEPEND="dev-python/xmpppy
 	dev-python/python-daemon
-	dev-python/yapsy"
+	dev-python/yapsy
+	plugins? ( dev-vcs/git )"
 
 pkg_setup() {
 	python_pkg_setup
@@ -42,6 +43,9 @@ src_install() {
 	newconfd "${FILESDIR}"/errd.confd errd
 	dodir /etc/${PN}
 	dodir /var/lib/${PN}
+	# Create plugins directory here because of err creates it itself with 0777 rights
+	dodir /var/lib/${PN}/plugins
+
 	keepdir /var/log/${PN}
 	keepdir /var/run/${PN}
 	fowners -R err:err /var/lib/${PN}

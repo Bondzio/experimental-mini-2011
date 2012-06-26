@@ -409,12 +409,10 @@ app-emulation/ganeti:kvm - Enable KVM support
 app-emulation/ganeti:lxc - Enable Linux Countainers support
 app-emulation/ganeti:sharedstorage - Enable Shared Storage support
 app-emulation/ganeti:xen - Enable Xen support
-app-emulation/libguestfs:erlang - Install Erlang bindings
+app-emulation/libguestfs:erlang - Use dev-libs/gobject-introspection for introspection
 app-emulation/libguestfs:fuse - Enable image mount support via fuse
-app-emulation/libguestfs:haskell - Install GHC binding
 app-emulation/libguestfs:introspection - Use dev-libs/gobject-introspection for introspection
-app-emulation/libguestfs:javadoc - Install java docs
-app-emulation/libguestfs:systemtap - Use dev-util/systemtap to trace programs
+app-emulation/libguestfs:systemtap - Use dev-libs/gobject-introspection for introspection
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:audit - support sys-process/audit
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
@@ -876,6 +874,7 @@ app-text/gonzui:zip - Enable ZIP archive support
 app-text/gtranslator:http - Enable support for open translation plugin using net-libs/libsoup
 app-text/hyperestraier:mecab - Enable app-text/mecab support for Estraier
 app-text/lcdf-typetools:kpathsea - Enable integration with kpathsea search library (TeX related)
+app-text/leechcraft-monocle:fb2 - Enable support for FictionBook format
 app-text/libgxps:introspection - Use dev-libs/gobject-introspection for introspection
 app-text/libwpd:tools - Build miscellaneous tools
 app-text/libwpg:tools - Build miscellaneous tools
@@ -3710,6 +3709,7 @@ net-im/empathy:map - Enable world map support through media-libs/libchamplain
 net-im/empathy:nautilus - Enable nautilus-sendto support
 net-im/empathy:sendto - Enable support for sending files to various devices using gnome-extra/nautilus-sendto
 net-im/empathy:webkit - Build support for Adium-style HTML-based conversation window themes using net-libs/webkit-gtk
+net-im/err:plugins - Enable support for installing plugins with dev-vcs/git
 net-im/gajim:gmail - Depend on net-dns/bind-tools to get gmail chats working
 net-im/gajim:idle - Enable idle module
 net-im/gajim:srv - SRV capabilities
@@ -4390,7 +4390,6 @@ net-misc/termpkg:uucp - Adds support for uucp style device locking
 net-misc/tigervnc:server - Build TigerVNC server
 net-misc/tigervnc:xorgmodule - Build the Xorg module
 net-misc/tightvnc:server - Build vncserver. Allows us to only build server on one machine if set, build only viewer otherwise.
-net-misc/tinc:raw - Enable support for Raw Sockets
 net-misc/tinc:uml - Enable support for User Mode Linux Sockets
 net-misc/tinc:vde - Enable Virtual Distributed Ethernet (VDE) based networking
 net-misc/tor:bufferevents - Use Libevent's buffered IO
@@ -5417,8 +5416,6 @@ www-apps/horde-passwd:clearpasswd - Enables cleartext password storage in the vp
 www-apps/ikiwiki:extras - Installs additional modules used by ikiwiki plugins
 www-apps/lxr:freetext - Adds support for freetext search using swish-e
 www-apps/otrs:mod_perl - Provide all dependencies for use of mod_perl instead of cgi
-www-apps/postfixadmin:extras - Install contributed scripts and plugins
-www-apps/postfixadmin:tests - Install model unit tests
 www-apps/postfixadmin:vacation - Install vacation.pl script and dependencies
 www-apps/redmine:openid - Enable support for OpenID
 www-apps/redmine:passenger - Enable support for www-apache/passenger
