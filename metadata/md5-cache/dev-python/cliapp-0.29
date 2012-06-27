@@ -3,10 +3,11 @@ DEPEND=test? ( dev-python/CoverageTestRunner ) || ( =dev-lang/python-2.7* =dev-l
 DESCRIPTION=Framework for Unix-like command line programs
 EAPI=4
 HOMEPAGE=http://liw.fi/cliapp/
+IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://code.liw.fi/debian/pool/main/p/python-cliapp/python-cliapp_0.29.orig.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=120df5465ca5f036e5f83b04296a2e75
+_md5_=91efe5751d8c8ed763733e595fdfafc3

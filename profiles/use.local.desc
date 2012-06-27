@@ -426,7 +426,7 @@ app-emulation/libvirt:numa - Use NUMA for memory segmenting via sys-process/numa
 app-emulation/libvirt:openvz - Support management of OpenVZ virtualisation (see sys-kernel/openvz-sources)
 app-emulation/libvirt:parted - Allow using real disk partitions as pool for disk image storage, using sys-block/parted to create, resize and delete them.
 app-emulation/libvirt:pcap - Support auto learning IP addreses for routing
-app-emulation/libvirt:phyp - Support management of virtualisation through the PHYP hypervisor protocol.
+app-emulation/libvirt:phyp - Support IBM HMC / IVM hypervisor via PHYP protocol
 app-emulation/libvirt:qemu - Support management of QEmu virtualisation (one of app-emulation/qemu, app-emulation/qemu-kvm or app-emulation/qemu-spice)
 app-emulation/libvirt:uml - Support management of User Mode Linux virtualisation
 app-emulation/libvirt:vepa - Virtual Ethernet Port Aggregator (VEPA) / 802.1Qbg support. Relies on macvtap support.
@@ -5776,6 +5776,7 @@ x11-plugins/compiz-plugins-main:gconf - Install GConf schemas for the plugins, n
 x11-plugins/enigmail:custom-optimization - Enable user CFLAGS
 x11-plugins/enigmail:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
 x11-plugins/pidgin-mbpurple:twitgin - Enable graphical plugin for Gtk+ interface of Pidgin.
+x11-plugins/pidgin-sipe:ocs2005-message-hack - disable message timeout for OCS2005 clients which causes "false" not delivered error messages
 x11-plugins/pidgin-sipe:voice - Enable experimental voice/video support
 x11-plugins/purple-plugin_pack:talkfilters - Enable support for app-text/talklfilters
 x11-plugins/screenlets:svg - Highly Recommended: Enable SVG graphics via dev-python/librsvg-python
