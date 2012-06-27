@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-process/audit/audit-2.1.3-r1.ebuild,v 1.3 2012/05/21 23:23:36 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-process/audit/audit-2.1.3-r1.ebuild,v 1.5 2012/06/27 11:56:43 ago Exp $
 
 EAPI="3"
 PYTHON_DEPEND="python? 2"
@@ -15,7 +15,7 @@ SRC_URI="http://people.redhat.com/sgrubb/audit/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86"
 IUSE="ldap prelude python"
 # Testcases are pretty useless as they are built for RedHat users/groups and
 # kernels.
@@ -127,7 +127,7 @@ src_install() {
 
 	dodoc AUTHORS ChangeLog README* THANKS TODO
 	docinto contrib
-	dodoc contrib/*
+	dodoc contrib/{*.rules,avc_snap,skeleton.c}
 	docinto contrib/plugin
 	dodoc contrib/plugin/*
 

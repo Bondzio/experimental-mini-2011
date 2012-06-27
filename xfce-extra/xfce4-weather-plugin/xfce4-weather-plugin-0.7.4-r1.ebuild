@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-weather-plugin/xfce4-weather-plugin-0.7.4-r1.ebuild,v 1.5 2012/05/05 07:47:44 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-weather-plugin/xfce4-weather-plugin-0.7.4-r1.ebuild,v 1.6 2012/06/27 14:20:01 ssuominen Exp $
 
 EAPI=4
 inherit multilib xfconf
@@ -34,10 +34,10 @@ pkg_setup() {
 
 src_prepare() {
 	# http://bugzilla.xfce.org/show_bug.cgi?id=8105#c9
-	sed -i \
-		-e '/PARTNER_ID/s:1121946239:1003666583:' \
-		-e '/LICENSE_KEY/s:3c4cd39ee5dec84f:4128909340a9b2fc:' \
-		panel-plugin/weather.h || die
+#	sed -i \
+#		-e '/PARTNER_ID/s:1121946239:1003666583:' \
+#		-e '/LICENSE_KEY/s:3c4cd39ee5dec84f:4128909340a9b2fc:' \
+#		panel-plugin/weather.h || die
 
 	xfconf_src_prepare
 }

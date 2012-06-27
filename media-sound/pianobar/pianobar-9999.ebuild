@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/pianobar/pianobar-9999.ebuild,v 1.2 2012/05/14 09:36:54 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/pianobar/pianobar-9999.ebuild,v 1.3 2012/06/27 09:51:27 radhermit Exp $
 
 EAPI="4"
 
@@ -15,7 +15,7 @@ SRC_URI=""
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS=""
-IUSE="aac +mp3 static-libs"
+IUSE="+aac mp3 static-libs"
 
 RDEPEND="media-libs/libao
 	net-libs/gnutls
@@ -26,7 +26,7 @@ RDEPEND="media-libs/libao
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-REQUIRED_USE="|| ( mp3 aac )"
+REQUIRED_USE="|| ( aac mp3 )"
 
 # Only releases are tested since patches required for testing often break
 RESTRICT="test"

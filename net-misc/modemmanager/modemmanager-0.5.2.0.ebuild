@@ -1,11 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/modemmanager/modemmanager-0.5.2.0.ebuild,v 1.3 2012/05/05 03:20:43 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/modemmanager/modemmanager-0.5.2.0.ebuild,v 1.5 2012/06/27 14:44:26 ssuominen Exp $
 
 EAPI="4"
 GNOME_ORG_MODULE="ModemManager"
 
-inherit gnome.org user
+inherit gnome.org user multilib
 
 DESCRIPTION="Modem and mobile broadband management libraries"
 HOMEPAGE="http://cgit.freedesktop.org/ModemManager/ModemManager/"
@@ -53,8 +53,10 @@ src_install() {
 
 	# Allow users in plugdev group full control over their modem
 	if use policykit; then
-		insinto /etc/polkit-1/localauthority/10-vendor.d
-		doins "${FILESDIR}/01-org.freedesktop.ModemManager.pkla"
+		if has_version '<sys-auth/polkit-0.106'; then
+			insinto /etc/polkit-1/localauthority/10-vendor.d
+			doins "${FILESDIR}/01-org.freedesktop.ModemManager.pkla"
+		fi
 	fi
 
 	# Remove useless .la files
