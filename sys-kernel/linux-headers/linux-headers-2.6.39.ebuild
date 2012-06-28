@@ -10,8 +10,15 @@ inherit kernel-2
 detect_version
 
 PATCH_VER="1"
+<<<<<<< HEAD
+SRC_URI="mirror://gentoo/gentoo-headers-base-${PV}.tar.xz"
+[[ -n ${PATCH_VER} ]] && SRC_URI="${SRC_URI} mirror://gentoo/gentoo-headers-${PV}-${PATCH_VER}.tar.xz"
+
+KEYWORDS="*"
+=======
 SRC_URI="http://www.funtoo.org/distfiles/gentoo-headers-base-${PV}.tar.xz"
 [[ -n ${PATCH_VER} ]] && SRC_URI="${SRC_URI} http://www.funtoo.org/distfiles/gentoo-headers-${PV}-${PATCH_VER}.tar.xz"
+>>>>>>> master
 
 KEYWORDS="*"
 RESTRICT="mirror"
