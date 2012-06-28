@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.8.0.ebuild,v 1.2 2012/06/26 20:41:27 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.8.0.ebuild,v 1.5 2012/06/27 21:11:04 jer Exp $
 
 EAPI="4"
 PYTHON_DEPEND="python? 2"
-inherit flag-o-matic python toolchain-funcs user
+inherit autotools eutils flag-o-matic python toolchain-funcs user
 
 [[ -n ${PV#*_rc} && ${PV#*_rc} != ${PV} ]] && MY_P=${PN}-${PV/_} || MY_P=${P}
 DESCRIPTION="A network protocol analyzer formerly known as ethereal"
@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="adns ares doc doc-pdf gtk ipv6 lua gcrypt geoip kerberos
-profile +pcap portaudio python +caps selinux smi ssl threads zlib"
+profile +pcap portaudio python +caps selinux smi ssl zlib"
 
 RDEPEND=">=dev-libs/glib-2.14:2
 	zlib? ( sys-libs/zlib
@@ -102,6 +102,11 @@ pkg_setup() {
 	enewgroup wireshark
 }
 
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-underlinking.patch
+	eautoreconf
+}
+
 src_configure() {
 	local myconf
 
@@ -149,7 +154,6 @@ src_configure() {
 		$(use_with ssl gnutls) \
 		$(use_with gcrypt) \
 		$(use_enable ipv6) \
-		$(use_enable threads) \
 		$(use_with lua) \
 		$(use_with kerberos krb5) \
 		$(use_with smi libsmi) \

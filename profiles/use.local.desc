@@ -1325,6 +1325,7 @@ dev-libs/igraph:gprof - Enables profiling support
 dev-libs/igraph:lapack - Use external lapack numerical library
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/json-glib:introspection - Use dev-libs/gobject-introspection for introspection
+dev-libs/keybinder:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libappindicator:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/libburn:cdio - Enable EXPERIMENTAL use of libcdio as system adapter
 dev-libs/libburn:track-src-odirect - Read track input with O_DIRECT (see man 2 open), this may deliver a better write performance in some situations
@@ -4914,11 +4915,11 @@ sci-physics/hepmc:cm - Build with cm instead of default mm for length units
 sci-physics/hepmc:gev - Build with GeV instead of default MeV for momentum units
 sci-physics/lhapdf:octave - Add bindings for sci-mathematics/octave
 sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Generators sci-physics/hepmc
+sci-physics/root:c++0x - Build ROOT using the C++11 standard. Not supported, requires sys-devel/gcc>=4.7.0
 sci-physics/root:clarens - Build the Clarens and PEAC plug-ins, to use in a GRID enabled analysis
 sci-physics/root:fits - Support for images and data from FITS files with sci-libs/cfitsio
 sci-physics/root:geant4 - Support for sci-physics/geant version 4
 sci-physics/root:htmldoc - Generate html documentation
-sci-physics/root:llvm - Build the new cling interactive interpreter based on sys-devel/llvm
 sci-physics/root:math - Build all math related libraries plugins, needs sci-libs/gsl
 sci-physics/root:pythia6 - Build the interface for sci-physics/pythia version 6.x
 sci-physics/root:pythia8 - Build the interface for sci-physics/pythia version 8.x
@@ -5463,10 +5464,10 @@ www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the de
 www-client/lynx:ssl - Enable HTTPS support.
 www-client/midori:deprecated - Enable GTK+-2 instead of GTK+-3 because of external plugins like adobe-flash
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
-www-client/opera:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
-www-client/opera:kde - Set runtime dependencies to support KDE desktop integration
-www-client/opera-next:gtk - Set runtime dependencies to support GTK+/GNOME desktop integration
-www-client/opera-next:kde - Set runtime dependencies to support KDE desktop integration
+www-client/opera:gtk - Install support libraries and runtime dependencies to support GTK+/GNOME desktop integration
+www-client/opera:kde - Install support libraries and runtime dependencies to support KDE desktop integration
+www-client/opera-next:gtk - Install support libraries and runtime dependencies to support GTK+/GNOME desktop integration
+www-client/opera-next:kde - Install support libraries and runtime dependencies to support KDE desktop integration
 www-client/seamonkey:chatzilla - Build Mozilla's IRC client (default on)
 www-client/seamonkey:composer - Build Mozilla's HTML editor component (default on)
 www-client/seamonkey:custom-optimization - Fine-tune custom compiler optimizations

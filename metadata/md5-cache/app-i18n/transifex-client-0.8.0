@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND==dev-lang/python-2*
+DESCRIPTION=A command line interface for Transifex
+EAPI=3
+HOMEPAGE=http://pypi.python.org/pypi/transifex-client http://www.transifex.net/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND==dev-lang/python-2*
+SLOT=0
+SRC_URI=http://github.com/transifex/transifex-client/tarball/0.8 -> transifex-client-0.8.0.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=0728b16615f96faa6ae2652e75a63347
