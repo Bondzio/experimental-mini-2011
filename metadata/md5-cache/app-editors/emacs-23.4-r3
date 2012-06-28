@@ -4,11 +4,11 @@ DESCRIPTION=The extensible, customizable, self-documenting real-time display edi
 EAPI=4
 HOMEPAGE=http://www.gnu.org/software/emacs/
 IUSE=alsa aqua athena dbus gconf gif gpm gtk gzip-el hesiod jpeg kerberos livecd m17n-lib motif pax_kernel png sound source svg tiff toolkit-scroll-bars X Xaw3d xft +xpm
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
 LICENSE=GPL-3 FDL-1.3 BSD as-is MIT W3C unicode PSF-2
 RDEPEND=sys-libs/ncurses >=app-admin/eselect-emacs-1.2 >=app-emacs/emacs-common-gentoo-1.3-r3[X?] net-libs/liblockfile hesiod? ( net-dns/hesiod ) kerberos? ( virtual/krb5 ) alsa? ( media-libs/alsa-lib ) gpm? ( sys-libs/gpm ) dbus? ( sys-apps/dbus ) X? ( x11-libs/libXmu x11-libs/libXt x11-misc/xbitmaps gconf? ( >=gnome-base/gconf-2.26.2 ) gif? ( media-libs/giflib ) jpeg? ( virtual/jpeg ) png? ( >=media-libs/libpng-1.4:0 ) svg? ( >=gnome-base/librsvg-2.0 ) tiff? ( media-libs/tiff ) xpm? ( x11-libs/libXpm ) xft? ( media-libs/fontconfig media-libs/freetype x11-libs/libXft m17n-lib? ( >=dev-libs/libotf-0.9.4 >=dev-libs/m17n-lib-1.5.1 ) ) gtk? ( x11-libs/gtk+:2 ) !gtk? ( Xaw3d? ( x11-libs/libXaw3d ) !Xaw3d? ( athena? ( x11-libs/libXaw ) !athena? ( motif? ( >=x11-libs/openmotif-2.3:0 ) ) ) ) ) !<app-editors/emacs-vcs-23.4
 REQUIRED_USE=aqua? ( !X )
 SLOT=23
 SRC_URI=mirror://gnu/emacs/emacs-23.4.tar.bz2 mirror://gentoo/emacs-23.4-patches-4.tar.bz2
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4f4e27628764692f02f7cf2eb72daa7a
+_md5_=090e1a5655e53ecaadd90d9a3f73a0e9

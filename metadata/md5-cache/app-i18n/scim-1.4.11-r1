@@ -4,10 +4,10 @@ DESCRIPTION=Smart Common Input Method (SCIM) is an Input Method (IM) development
 EAPI=3
 HOMEPAGE=http://www.scim-im.org/
 IUSE=doc
-KEYWORDS=~alpha amd64 ~hppa ~ppc ppc64 ~sparc x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~hppa ppc ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 dev-libs/glib:2 x11-libs/gtk+:2 >=dev-libs/atk-1 >=x11-libs/pango-1 !app-i18n/scim-cvs
 SLOT=0
 SRC_URI=mirror://sourceforge/scim/scim-1.4.11.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=65df6ba334c1cad686fb30b77881daf6
+_md5_=375ffb436e1dc617b5eefaaa68deca2b

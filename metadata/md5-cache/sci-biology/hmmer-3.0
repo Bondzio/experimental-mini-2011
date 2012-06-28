@@ -10,4 +10,4 @@ RDEPEND=mpi? ( virtual/mpi ) gsl? ( >=sci-libs/gsl-1.12 )
 SLOT=0
 SRC_URI=ftp://selab.janelia.org/pub/software/hmmer3/3.0/hmmer-3.0.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b8cd8be506c4c16c73e0df602a6854b9
+_md5_=c5e7b3d1abbad6f6c5bc9e539f555233
