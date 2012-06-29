@@ -10,4 +10,4 @@ RDEPEND=!static? ( acl? ( virtual/acl ) xattr? ( kernel_linux? ( sys-apps/attr )
 SLOT=0
 SRC_URI=http://rsync.samba.org/ftp/rsync/src/rsync-3.0.9.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=367ae6df5e9c0cf4440a1e2652f8a025
+_md5_=8be5ffc1a9e67f7c6a96090f94995734

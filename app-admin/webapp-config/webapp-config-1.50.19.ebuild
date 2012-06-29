@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/webapp-config/webapp-config-1.50.19.ebuild,v 1.2 2012/06/28 01:48:16 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/webapp-config/webapp-config-1.50.19.ebuild,v 1.4 2012/06/28 23:28:24 blueness Exp $
 
 EAPI="3"
 
-PYTHON_DEPEND="2"
+PYTHON_DEPEND="2:2.6"
 SUPPORT_PYTHON_ABIS="1"
 
 inherit distutils
@@ -20,13 +20,14 @@ IUSE=""
 
 DEPEND="app-text/xmlto"
 RDEPEND=""
-RESTRICT_PYTHON_ABIS="3.*"
+RESTRICT_PYTHON_ABIS="2.5 3.*"
 
 PYTHON_MODNAME="WebappConfig"
 
 src_compile() {
 	distutils_src_compile
-	emake -C doc/
+	#parallel build fixed in next release
+	emake -j1 -C doc/
 }
 
 src_install() {
