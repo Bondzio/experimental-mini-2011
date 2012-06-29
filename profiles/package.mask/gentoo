@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13894 2012/06/27 05:49:15 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13897 2012/06/29 13:57:55 floppym Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,15 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Mike Gilbert <floppym@gentoo.org> (29 Jun 2012)
+# Mask v8 versions used for www-client/chromium dev channel releases.
+>=dev-lang/v8-3.12
+
+# Michael Weber <xmw@gentoo.org> (29 Jun 2012)
+# Masking for security reasons (bug 424025, CVE-2012-3366)
+# Users of trigger plugin, update asap.
+<app-admin/bcfg2-1.2.2-r1
 
 # Matti Bickel <mabi@gentoo.org> (26 Jun 2012)
 # Dead upstream. Use any other wiki software like ikiwiki.
@@ -411,11 +420,6 @@ games-util/nforenum
 # experimental features and accept a more unstable release.
 >=www-client/chromium-21
 >=www-client/google-chrome-21
-
-# Pawel Hajdan, Jr. <phajdan.jr@gentoo.org> (22 May 2012)
-# Mask v8 versions used for www-client/chromium dev channel releases.
->=dev-lang/v8-3.11
->=net-libs/nodejs-0.8.0
 
 # Michael Weber <xmw@gentoo.org> (22 May 2012)
 # Masked for removal in 30 days.
@@ -1023,6 +1027,7 @@ sci-astronomy/casa-data
 # rdep on the one above
 sci-astronomy/casacore
 sci-electronics/kicad
+dev-ruby/rcsparse
 
 # Federico Ferri <mescalinum@gentoo.org> (08 Aug 2009)
 # Doesn't build with Tcl 8.5, has several bugs open
