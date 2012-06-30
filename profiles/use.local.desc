@@ -1922,6 +1922,11 @@ games-puzzle/jag:editor - Install level editor
 games-puzzle/jag:extras - Install additional graphics
 games-puzzle/xlogical:alt_gfx - Use alternate graphics which are closer to the original Amiga version
 games-roguelike/angband:sound - Enable and install sounds
+games-rpg/arx-libertatis:crash-reporter - Build a x11-libs/qt-gui-based tool that allows to submit crash information to the upstream backtracker.
+games-rpg/arx-libertatis:debug - Enable asserts and debug logging.
+games-rpg/arx-libertatis:demo - Install the Arx Fatalis demo data.
+games-rpg/arx-libertatis:tools - Build tools that can extract the game's data and save files.
+games-rpg/arx-libertatis:unity-build - Build everything in one big source file, allowing for faster build times and better optimizations at the cost of higher memory usage.
 games-rpg/daimonin-client:music - Install extra music
 games-rpg/drascula:sound - Install optional audio files
 games-rpg/eternal-lands-data:bloodsuckermaps - Will install Bloodsucker's Maps in place of the official map files.
@@ -2794,7 +2799,8 @@ media-sound/audacious:chardet - Try to handle non-UTF8 chinese/japanese/korean I
 media-sound/audacious:gtk3 - Link against version 3 of the GIMP Toolkit instead of version 2 (x11-libs/gtk+)
 media-sound/audacity:id3tag - Enables ID3 tagging with id3tag library
 media-sound/audacity:midi - Enables MIDI support
-media-sound/audacity:soundtouch - Enables soundtouch library support
+media-sound/audacity:sbsms - Enables sbsms library support for pitch and tempo changing
+media-sound/audacity:soundtouch - Enables soundtouch library support for pitch and tempo changing
 media-sound/audacity:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
 media-sound/audacity:vamp - Enables vamp plugins support (Audio analysing plugins)
 media-sound/banshee:boo - Use external Boo instead of the bundled one

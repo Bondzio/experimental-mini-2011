@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND==dev-lang/python-2*
+DESCRIPTION=An automatic disk mounting service using udisks
+EAPI=4
+HOMEPAGE=http://bitbucket.org/byronclark/udiskie
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=dev-python/dbus-python dev-python/notify-python dev-python/pygobject:2 dev-python/pyxdg sys-fs/udisks:0 =dev-lang/python-2*
+SLOT=0
+SRC_URI=mirror://bitbucket/byronclark/udiskie/downloads/udiskie-0.4.0.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=74e4b5232111d2163e20bf9fc6757a76
