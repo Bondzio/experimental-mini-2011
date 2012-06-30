@@ -28,8 +28,6 @@ gnome-base/gvfs cdda
 
 # Required by media-video/cheese
 x11-libs/gdk-pixbuf jpeg
-<<<<<<< HEAD
-=======
 
 # Required by app-accessibility/orca-3
 app-accessibility/speech-dispatcher python
@@ -69,4 +67,3 @@ gnome-extra/nm-applet bluetooth
 
 # Required by app-misc/tracker
 media-gfx/imagemagick png jpeg
->>>>>>> master
