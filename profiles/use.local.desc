@@ -2987,6 +2987,7 @@ media-sound/split2flac:flake - Add support for Flake, alternative FLAC encoder
 media-sound/split2flac:mac - Add support for Monkey's Audio files
 media-sound/split2flac:replaygain - Support for Replay Gain metadata, for relative volume adjustment
 media-sound/squeezeslave:display - Enable a text-based display
+media-sound/squeezeslave:tremor - Use a fixed-point version of the Ogg Vorbis decoder (media-libs/tremor)
 media-sound/squeezeslave:wma - Enable support for streaming Windows Media Audio
 media-sound/squeezeslave:zones - Pairs surround sound speakers into stereo zones (requires 5.1 setup or better)
 media-sound/tomahawk:resolver - Resolver download and installation integration
@@ -3972,6 +3973,7 @@ net-libs/gssdp:introspection - Use dev-libs/gobject-introspection for introspect
 net-libs/gtk-vnc:gtk3 - Build the gtk3 gtk-vnc library and other gtk3 assets
 net-libs/gtk-vnc:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gtk-vnc:vala - Enable bindings for dev-lang/vala
+net-libs/gupnp:connman - Add support for net-misc/connman
 net-libs/gupnp:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gupnp-av:introspection - Use dev-libs/gobject-introspection for introspection
 net-libs/gupnp-igd:introspection - Use dev-libs/gobject-introspection for introspection
@@ -5433,6 +5435,7 @@ www-apps/postfixadmin:vacation - Install vacation.pl script and dependencies
 www-apps/redmine:openid - Enable support for OpenID
 www-apps/redmine:passenger - Enable support for www-apache/passenger
 www-apps/rt:lighttpd - Add www-servers/lighttpd support
+www-apps/sitebar:plugins - Install optional plugins
 www-apps/sugarcrm:json - Add JSON (JavaScript Object Notation) support
 www-apps/trac:i18n - Enable support for i18n with dev-python/Babel
 www-apps/tt-rss:daemon - Install additional init scripts for automated RSS updates

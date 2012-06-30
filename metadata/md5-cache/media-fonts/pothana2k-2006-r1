@@ -3,9 +3,9 @@ DEPEND=app-arch/unzip X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-li
 DESCRIPTION=Pothana 2000 and Vemana fonts for the Telugu script
 HOMEPAGE=http://www.kavya-nandanam.com/
 IUSE=doc X
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+KEYWORDS=amd64 ppc ppc64 x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://gentoo/pothana2k-2006.zip
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4ed0e45f55c760b55343f03814245e66
+_md5_=6553289e26273901139038b915a2630d
