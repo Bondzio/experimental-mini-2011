@@ -1,11 +1,12 @@
-DEFINED_PHASES=compile install
-DEPEND=>=media-libs/stimg-0.1.0 virtual/w3m
+DEFINED_PHASES=install prepare
+DEPEND=media-libs/stimg
 DESCRIPTION=Image viewer for w3m under frame buffer environment
+EAPI=4
 HOMEPAGE=http://homepage3.nifty.com/slokar/fb/w3mimg.html
-KEYWORDS=x86 ppc
+KEYWORDS=~amd64 x86 ppc
 LICENSE=w3m BSD
-RDEPEND=>=media-libs/stimg-0.1.0 virtual/w3m
+RDEPEND=media-libs/stimg virtual/w3m
 SLOT=0
 SRC_URI=http://homepage3.nifty.com/slokar/fb/w3mimgfb-0.9.1.tar.gz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=4690d4c112dbb243db26d45195801a21
+_md5_=25ffc393773fb9137463b473f99ae336

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-fs/leechcraft-vrooby/leechcraft-vrooby-9999.ebuild,v 1.1 2012/06/29 19:37:26 maksbotan Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/leechcraft-vrooby/leechcraft-vrooby-9999.ebuild,v 1.1 2012/07/01 13:36:56 maksbotan Exp $
 
 EAPI="4"
 

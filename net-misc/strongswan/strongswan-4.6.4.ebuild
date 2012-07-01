@@ -1,9 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/strongswan/strongswan-4.6.4.ebuild,v 1.1 2012/05/31 16:30:53 gurligebis Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/strongswan/strongswan-4.6.4.ebuild,v 1.2 2012/07/01 10:45:17 gurligebis Exp $
 
 EAPI=2
-inherit eutils linux-info
+inherit eutils linux-info user
 
 DESCRIPTION="IPsec-based VPN solution focused on security and ease of use, supporting IKEv1/IKEv2 and MOBIKE"
 HOMEPAGE="http://www.strongswan.org/"
