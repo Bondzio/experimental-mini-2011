@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/libusb-compat/libusb-compat-0.1.4.ebuild,v 1.8 2012/06/17 18:23:10 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libusb-compat/libusb-compat-0.1.4.ebuild,v 1.10 2012/07/01 18:08:09 ssuominen Exp $
 
 EAPI=4
 inherit eutils
@@ -23,6 +23,9 @@ DOCS="AUTHORS ChangeLog NEWS README"
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN/-compat}-0.1-ansi.patch
+
+	has_version dev-libs/libusbx && \
+		epatch "${FILESDIR}"/${PN/-compat}-0.1-libusbx.patch
 }
 
 src_configure() {
@@ -37,5 +40,5 @@ src_install() {
 	insinto /usr/share/doc/${PF}/examples
 	doins examples/*.c
 
-	rm -f "${ED}"/usr/lib*/*.la
+	prune_libtool_files
 }

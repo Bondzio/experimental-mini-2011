@@ -2,10 +2,10 @@ DEFINED_PHASES=compile install postinst postrm setup unpack
 DEPEND=>=virtual/emacs-21
 DESCRIPTION=Emacs modes for editing ebuilds and other Gentoo specific files
 HOMEPAGE=http://www.gentoo.org/proj/en/lisp/emacs/
-KEYWORDS=~alpha amd64 hppa ~ia64 ppc ppc64 ~sparc x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86 ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=GPL-2
 RDEPEND=>=virtual/emacs-21
 SLOT=0
 SRC_URI=mirror://gentoo/gentoo-syntax-1.19.tar.bz2
 _eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=f33a8a8d3e2ee28d38bae76b1baac568
+_md5_=c0a95fa217776d61dd8e525be2a24f13
