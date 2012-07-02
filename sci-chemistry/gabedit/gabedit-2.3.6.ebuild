@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/gabedit/gabedit-2.3.6.ebuild,v 1.6 2012/05/04 07:02:33 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/gabedit/gabedit-2.3.6.ebuild,v 1.7 2012/07/02 09:07:32 jlec Exp $
 
 EAPI=2
 
-inherit toolchain-funcs versionator
+inherit toolchain-funcs versionator multilib
 
 MY_PN=${PN/g/G}
 MY_PV=$(delete_all_version_separators)

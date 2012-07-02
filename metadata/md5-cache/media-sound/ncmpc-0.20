@@ -1,13 +1,13 @@
 DEFINED_PHASES=configure
-DEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.2 sys-libs/ncurses lirc? ( app-misc/lirc ) virtual/pkgconfig
+DEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.2 sys-libs/ncurses lirc? ( app-misc/lirc ) nls? ( sys-libs/ncurses[unicode] ) virtual/pkgconfig
 DESCRIPTION=A ncurses client for the Music Player Daemon (MPD)
 EAPI=4
 HOMEPAGE=http://mpd.wikia.com/wiki/Client:Ncmpc
 IUSE=artist-screen colors debug +help-screen key-screen lirc lyrics-screen mouse nls search-screen song-screen
 KEYWORDS=amd64 hppa ppc ppc64 ~sparc x86
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.2 sys-libs/ncurses lirc? ( app-misc/lirc )
+RDEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.2 sys-libs/ncurses lirc? ( app-misc/lirc ) nls? ( sys-libs/ncurses[unicode] )
 SLOT=0
 SRC_URI=http://downloads.sourceforge.net/musicpd/ncmpc-0.20.tar.bz2
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=ef981bfd2f1458bf8990b3fbb1d723ae
+_md5_=5d67d05701476327e5a4ba1f01510050

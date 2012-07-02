@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=dev-db/sqlite:3 >=dev-libs/boost-1.44 dev-libs/libgcrypt dev-libs/tinyxml[stl] net-libs/libircclient >=net-misc/curl-7.16 x11-libs/qt-core:4 virtual/gsasl !dedicated? ( media-libs/libsdl media-libs/sdl-mixer[mikmod,vorbis] x11-libs/qt-gui:4 ) !dedicated? ( x11-libs/qt-sql:4 )
+DESCRIPTION=Texas Hold'em poker game
+EAPI=2
+HOMEPAGE=http://www.pokerth.net/
+IUSE=dedicated
+KEYWORDS=~amd64 ~x86
+LICENSE=AGPL-3 GPL-1 GPL-2 GPL-3 BitstreamVera public-domain
+RDEPEND=dev-db/sqlite:3 >=dev-libs/boost-1.44 dev-libs/libgcrypt dev-libs/tinyxml[stl] net-libs/libircclient >=net-misc/curl-7.16 x11-libs/qt-core:4 virtual/gsasl !dedicated? ( media-libs/libsdl media-libs/sdl-mixer[mikmod,vorbis] x11-libs/qt-gui:4 )
+SLOT=0
+SRC_URI=mirror://sourceforge/pokerth/PokerTH-0.9.5-src.tar.bz2
+_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	39290524224abe0f3325e99948a37f41	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a0463a4315bed26c3e2e66b5c188fa16
