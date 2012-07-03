@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install postinst preinst prepare unpack
+DEFINED_PHASES=compile install postinst preinst prepare test unpack
 DEPEND=|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-9999 dev-vcs/subversion net-misc/rsync
 DESCRIPTION=GCC plugin that uses LLVM for optimization and code generation
 EAPI=4
@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-9999
 SLOT=0
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=e63973748c0bf3894745e1fe2e9c159c
+_md5_=de1a3c00145e4ada17ae7be3462a3af7

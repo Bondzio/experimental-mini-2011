@@ -4,11 +4,11 @@ DESCRIPTION=A set of extensions to TCL
 EAPI=4
 HOMEPAGE=http://tclx.sourceforge.net
 IUSE=tk threads
-KEYWORDS=~alpha amd64 ~ppc ~sparc x86 ~amd64-linux ~x86-linux ~x86-macos
+KEYWORDS=~alpha amd64 ppc ~sparc x86 ~amd64-linux ~x86-linux ~x86-macos
 LICENSE=BSD
 RDEPEND=>=dev-lang/tcl-8.4.6 tk? ( >=dev-lang/tk-8.4.6 )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/tclx/tclx8.4.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=1395588f8c77d875aa405ee2c5f3fdc0
+_md5_=774bf94451a91f95f9059f10b1825e03
