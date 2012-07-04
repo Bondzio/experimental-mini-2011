@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst prepare
-DEPEND=x11-libs/qt-gui:4 dev-libs/openssl:0 media-libs/mesa dev-libs/expat x11-libs/qt-dbus:4 sys-libs/zlib
+DEFINED_PHASES=compile install postinst postrm preinst prepare
+DEPEND=dev-libs/expat dev-libs/openssl:0 sys-libs/zlib virtual/opengl x11-libs/qt-core:4 x11-libs/qt-dbus:4 x11-libs/qt-gui:4 amd64? ( multilib? ( app-emulation/emul-linux-x86-baselibs ) ) >=sys-apps/sed-4
 DESCRIPTION=Tool for ripping Blu-Ray, HD-DVD and DVD discs and copying content to a Matroska container
-EAPI=3
+EAPI=4
 HOMEPAGE=http://www.makemkv.com/
+IUSE=multilib
 KEYWORDS=~amd64 ~x86
-LICENSE=MakeMKV-EULA
-RDEPEND=x11-libs/qt-gui:4 dev-libs/openssl:0 media-libs/mesa dev-libs/expat x11-libs/qt-dbus:4 sys-libs/zlib
+LICENSE=LGPL-2.1 MPL-1.1 MakeMKV-EULA openssl
+RDEPEND=dev-libs/expat dev-libs/openssl:0 sys-libs/zlib virtual/opengl x11-libs/qt-core:4 x11-libs/qt-dbus:4 x11-libs/qt-gui:4 amd64? ( multilib? ( app-emulation/emul-linux-x86-baselibs ) )
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.makemkv.com/download/makemkv-oss-1.7.6.tar.gz http://www.makemkv.com/download/makemkv-bin-1.7.6.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=8cf1266117ce0fdf0141c790d5b5cfc7
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a21de6b4252373023856cfd5a9c3128d

@@ -4102,12 +4102,6 @@ net-libs/wt:graphicsmagick - Enable GraphicsMagick, for supporting painting to r
 net-libs/wt:resources - Install resources directory
 net-libs/wt:server - Compile in stand-alone httpd connector
 net-libs/xrootd:fuse - Enable the sys-fs/fuse filesystem driver
-net-libs/xulrunner:crashreporter - Enable crash reporter for bugs
-net-libs/xulrunner:custom-optimization - Fine-tune custom compiler optimizations
-net-libs/xulrunner:gconf - Enable gnome2 gconf support
-net-libs/xulrunner:ipc - Use inter-process communication between tabs and plugins. Allows for greater stability in case of plugin crashes
-net-libs/xulrunner:system-sqlite - Use the system-wide dev-db/sqlite installation with secure-delete enabled
-net-libs/xulrunner:webm - Use system libvpx media-libs/libvpx
 net-libs/zeromq:pgm - 0MQ is build with 'Pragmatic General Multicast' (RFC 3208) support using the excellent OpenPGM implementation.
 net-mail/automx:sql - Enable support for SQL backends
 net-mail/automx:tools - Install additional tool: automx-test

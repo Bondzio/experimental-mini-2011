@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/libbegemot tcpd? ( sys-apps/tcp-wrappers )
+DESCRIPTION=Mini-SNMP Daemon and Library
+HOMEPAGE=http://people.freebsd.org/~harti/
+IUSE=tcpd
+KEYWORDS=~amd64-fbsd ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/libbegemot tcpd? ( sys-apps/tcp-wrappers )
+SLOT=0
+SRC_URI=http://people.freebsd.org/~harti/bsnmp/bsnmp-1.12.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=d9142084344a3666386efd1b9efd7b7d
