@@ -3,10 +3,11 @@ DEPEND=|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-3.1
 DESCRIPTION=GCC plugin that uses LLVM for optimization and code generation
 EAPI=4
 HOMEPAGE=http://dragonegg.llvm.org/
+IUSE=test
 KEYWORDS=~amd64 ~x86 ~amd64-linux
 LICENSE=GPL-2
 RDEPEND=|| ( sys-devel/gcc:4.5[lto] >=sys-devel/gcc-4.6 ) ~sys-devel/llvm-3.1
 SLOT=0
 SRC_URI=http://llvm.org/releases/3.1/dragonegg-3.1.src.tar.gz test? ( http://llvm.org/releases/3.1/llvm-3.1.src.tar.gz )
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=292284c645bbdea5cb6c3120e1d6b3c0
+_md5_=af98936fe5993e3a6843104221c446bc
