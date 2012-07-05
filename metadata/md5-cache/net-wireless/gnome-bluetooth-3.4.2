@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=>=dev-libs/glib-2.29.90:2 >=x11-libs/gtk+-2.91.3:3[introspection?] >=x11-libs/libnotify-0.7.0 introspection? ( >=dev-libs/gobject-introspection-0.9.5 ) sendto? ( >=gnome-extra/nautilus-sendto-2.91 ) !net-wireless/bluez-gnome app-text/docbook-xml-dtd:4.1.2 app-text/gnome-doc-utils app-text/scrollkeeper dev-libs/libxml2 >=dev-util/intltool-0.40.0 dev-util/gdbus-codegen >=sys-devel/gettext-0.17 virtual/pkgconfig x11-libs/libX11 x11-libs/libXi x11-proto/xproto doc? ( >=dev-util/gtk-doc-1.9 ) app-arch/xz-utils >=sys-apps/sed-4
+DESCRIPTION=Fork of bluez-gnome focused on integration with GNOME
+EAPI=4
+HOMEPAGE=http://live.gnome.org/GnomeBluetooth
+IUSE=doc +introspection sendto debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=dev-libs/glib-2.29.90:2 >=x11-libs/gtk+-2.91.3:3[introspection?] >=x11-libs/libnotify-0.7.0 introspection? ( >=dev-libs/gobject-introspection-0.9.5 ) sendto? ( >=gnome-extra/nautilus-sendto-2.91 ) >=net-wireless/bluez-4.34 app-mobilephone/obexd sys-fs/udev x11-themes/gnome-icon-theme-symbolic
+SLOT=2
+SRC_URI=mirror://gnome/sources/gnome-bluetooth/3.4/gnome-bluetooth-3.4.2.tar.xz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=ec613a3e559f087790e99e03ebae83b5

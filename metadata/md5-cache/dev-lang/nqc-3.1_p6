@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install postinst prepare
 DEPEND=usb? ( dev-libs/legousbtower )
 DESCRIPTION=Not Quite C - C-like compiler for Lego Mindstorms
-EAPI=2
+EAPI=4
 HOMEPAGE=http://bricxcc.sourceforge.net/nqc/
 IUSE=usb
 KEYWORDS=~amd64 ~ppc ~x86
@@ -10,4 +10,4 @@ RDEPEND=usb? ( dev-libs/legousbtower )
 SLOT=0
 SRC_URI=http://bricxcc.sourceforge.net/nqc/release/nqc-3.1.r6.tgz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4c4b58441a736a2eeaba0285e8a76b0b
+_md5_=e4fd1fa2114670e561429e54e9d23a02

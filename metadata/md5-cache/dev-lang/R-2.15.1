@@ -4,7 +4,7 @@ DESCRIPTION=Language and environment for statistical computing and graphics
 EAPI=4
 HOMEPAGE=http://www.r-project.org/
 IUSE=bash-completion cairo doc icu java jpeg lapack minimal nls openmp perl png profile readline static-libs tiff tk X
-KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-fbsd ~x86-linux ~x64-macos
 LICENSE=|| ( GPL-2 GPL-3 ) LGPL-2.1
 RDEPEND=app-arch/bzip2 app-text/ghostscript-gpl dev-libs/libpcre virtual/blas virtual/fortran cairo? ( x11-libs/cairo[X] x11-libs/pango ) icu? ( dev-libs/icu ) jpeg? ( virtual/jpeg ) lapack? ( virtual/lapack ) perl? ( dev-lang/perl ) png? ( media-libs/libpng ) readline? ( sys-libs/readline ) tk? ( dev-lang/tk ) X? ( x11-libs/libXmu x11-misc/xdg-utils ) ( || ( <sys-libs/zlib-1.2.5.1-r1 >=sys-libs/zlib-1.2.5.1-r2[minizip] ) ) app-arch/xz-utils java? ( >=virtual/jre-1.5 )
 REQUIRED_USE=png? ( || ( cairo X ) ) jpeg? ( || ( cairo X ) ) tiff? ( || ( cairo X ) )
@@ -12,4 +12,4 @@ RESTRICT=minimal? ( test )
 SLOT=0
 SRC_URI=mirror://cran/src/base/R-2/R-2.15.1.tar.gz bash-completion? ( http://dev.gentoo.org/~bicatali/distfiles/R-20120306.bash_completion.bz2 )
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=5bd833cac00d2cf1279fed613bb9ebb0
+_md5_=017685de058debec0df7c9262bdc2dad
