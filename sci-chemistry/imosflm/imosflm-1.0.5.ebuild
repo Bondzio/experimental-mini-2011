@@ -1,10 +1,10 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/imosflm/imosflm-1.0.5.ebuild,v 1.3 2011/12/11 09:14:36 phajdan.jr Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/imosflm/imosflm-1.0.5.ebuild,v 1.4 2012/07/05 14:33:39 jlec Exp $
 
 EAPI=4
 
-inherit eutils toolchain-funcs versionator
+inherit eutils multilib toolchain-funcs versionator
 
 MY_PV="$(delete_all_version_separators ${PV})"
 
