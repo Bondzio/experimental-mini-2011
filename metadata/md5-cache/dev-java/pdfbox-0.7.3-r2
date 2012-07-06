@@ -10,5 +10,5 @@ RDEPEND=>=virtual/jre-1.4 dev-java/fontbox >=dev-java/bcprov-1.32:0 >=dev-java/b
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/pdfbox/PDFBox-0.7.3.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	b173b5d55bfd6e328939985bc54a1c9e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=8fe1c2c6199177e730f5de71cec505ec
