@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=virtual/libusb:0 ncurses? ( sys-libs/ncurses ) gtk? ( x11-libs/gtk+:2 )
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=260b717f4c3ac06f1491347df1ca46bf
+_md5_=07cdef3e18908336f54aadd75bf38b26

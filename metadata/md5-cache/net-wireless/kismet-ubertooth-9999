@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst preinst prepare unpack
+DEPEND=>=net-wireless/kismet-2011.03.2-r1 >=net-libs/libbtbb-0.8 >=dev-libs/libusb-1.0.0 dev-vcs/subversion net-misc/rsync
+DESCRIPTION=Based on the subversion eclass
+EAPI=4
+HOMEPAGE=http://ubertooth.sourceforge.net/
+LICENSE=GPL-2
+RDEPEND=>=net-wireless/kismet-2011.03.2-r1 >=net-libs/libbtbb-0.8 >=dev-libs/libusb-1.0.0
+SLOT=0
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	subversion	0dcbf97982a8420280528c5c94e13a13	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=2855c4a1f9cdf3ec8907e0a157414838
