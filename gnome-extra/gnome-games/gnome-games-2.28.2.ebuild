@@ -1,9 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-extra/gnome-games/gnome-games-2.28.2.ebuild,v 1.13 2012/05/05 06:25:20 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-extra/gnome-games/gnome-games-2.28.2.ebuild,v 1.16 2012/07/07 17:17:15 hasufell Exp $
 
-EAPI="3"
+EAPI="4"
 GCONF_DEBUG="no"
+GNOME_TARBALL_SUFFIX="bz2"
 WANT_AUTOMAKE="1.11"
 PYTHON_DEPEND="2"
 
@@ -91,6 +92,7 @@ pkg_setup() {
 	#$(use_enable introspection)
 	G2CONF="${G2CONF}
 		$(use_enable test tests)
+		--disable-silent-rules
 		--disable-introspection
 		--disable-card-themes-installer
 		--with-scores-group=${GAMES_GROUP}
@@ -119,8 +121,8 @@ pkg_setup() {
 }
 
 src_prepare() {
-	# disable pyc compiling
-	echo > py-compile
+	python_clean_py-compile_files
+	python_convert_shebangs -r 2 .
 
 	# Fix implicit declaration of yylex.
 	epatch "${FILESDIR}/${PN}-2.26.3-implicit-declaration.patch"
@@ -131,6 +133,9 @@ src_prepare() {
 	# Fix build failure, conflicting types for 'games_sound_init',
 	# in libgames-support/games_sound.c.
 	epatch "${FILESDIR}/${PN}-2.28.1-conflicting-types-libgames-support.patch"
+
+	# fix underlinking
+	epatch "${FILESDIR}"/${P}-underlinking.patch
 
 	# If calling eautoreconf, this ebuild uses libtool-2
 	eautoreconf
