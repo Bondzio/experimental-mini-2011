@@ -1,14 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-shells/pdmenu/pdmenu-1.2.89.ebuild,v 1.13 2012/07/01 11:14:56 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-shells/pdmenu/pdmenu-1.2.89.ebuild,v 1.15 2012/07/08 15:26:09 armin76 Exp $
 
 DESCRIPTION="A simple console menu program"
-HOMEPAGE="http://www.kitenet.net/programs/pdmenu/"
+HOMEPAGE="http://joeyh.name/code/pdmenu/"
 SRC_URI="mirror://debian/pool/main/p/pdmenu/pdmenu_${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="alpha ~amd64 ia64 ~mips x86"
+KEYWORDS="~amd64 ~mips x86"
 IUSE="nls gpm examples"
 
 DEPEND="

@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/librep-0.92.1 >=x11-libs/rep-gtk-0.90.7 >=x11-libs/pango-1.8.0[X] >=x11-libs/gtk+-2.24.0:2 x11-libs/libXtst nls? ( sys-devel/gettext ) xinerama? ( x11-libs/libXinerama ) virtual/pkgconfig
+DESCRIPTION=Extensible window manager using a Lisp-based scripting language
+EAPI=4
+HOMEPAGE=http://sawfish.wikia.com/
+IUSE=nls xinerama
+KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sh ~sparc ~x86
+LICENSE=GPL-2 Artistic-2
+RDEPEND=>=dev-libs/librep-0.92.1 >=x11-libs/rep-gtk-0.90.7 >=x11-libs/pango-1.8.0[X] >=x11-libs/gtk+-2.24.0:2 x11-libs/libXtst nls? ( sys-devel/gettext ) xinerama? ( x11-libs/libXinerama )
+SLOT=0
+SRC_URI=http://download.tuxfamily.org/sawfish/sawfish-1.9.0.tar.xz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=375962aec097c7a6c999f3058346f860
