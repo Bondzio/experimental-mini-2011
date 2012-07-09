@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-lang/tk[threads] dev-python/numpy dev-tcltk/tix =sci-libs/ccpn-data-2.2.2* sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
+DESCRIPTION=The Collaborative Computing Project for NMR
+EAPI=4
+HOMEPAGE=http://www.ccpn.ac.uk/ccpn
+IUSE=extendnmr +opengl
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=|| ( CCPN LGPL-2.1 )
+PDEPEND=extendnmr? ( >=sci-chemistry/aria-2.3.2-r1 sci-chemistry/prodecomp )
+RDEPEND=dev-lang/tk[threads] dev-python/numpy dev-tcltk/tix =sci-libs/ccpn-data-2.2.2* sci-biology/psipred x11-libs/libXext x11-libs/libX11 opengl? ( media-libs/freeglut dev-python/pyglet ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ssl,tk] =dev-lang/python-2.6*[ssl,tk] =dev-lang/python-2.5*[ssl,tk] )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://www-old.ccpn.ac.uk/download/ccpnmr/analysis2.2.2.tar.gz http://dev.gentoo.org/~jlec/distfiles/ccpn-update-2.2.2-120709.patch.xz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	portability	536c5e70c5fb252ed3b769e04aa3f05b	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=c798a79eec07d24151e4ec536910d741

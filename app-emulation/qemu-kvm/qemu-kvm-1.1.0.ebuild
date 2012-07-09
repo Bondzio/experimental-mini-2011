@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-1.1.0.ebuild,v 1.6 2012/07/08 22:57:39 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-1.1.0.ebuild,v 1.8 2012/07/09 07:33:24 cardoe Exp $
 
 EAPI="4"
 
@@ -292,12 +292,12 @@ src_configure() {
 }
 
 src_install() {
-	emake DESTDIR="${ED}" install || die "make install failed"
+	emake DESTDIR="${ED}" install
 
 	if [[ -n ${softmmu_targets} ]]; then
 		if use kernel_linux; then
 			insinto /lib/udev/rules.d/
-			doins "${FILESDIR}"/65-kvm.rules || die
+			doins "${FILESDIR}"/65-kvm.rules
 		fi
 
 		if use qemu_softmmu_targets_x86_64 ; then
@@ -311,13 +311,14 @@ src_install() {
 		fi
 	fi
 
-	dodoc Changelog MAINTAINERS TODO pci-ids.txt || die
-	newdoc pc-bios/README README.pc-bios || die
-	dohtml qemu-doc.html qemu-tech.html || die
+	dodoc Changelog MAINTAINERS TODO pci-ids.txt
+	newdoc pc-bios/README README.pc-bios
 
-	if use python; then
-		dobin scripts/kvm/kvm_stat || die
+	if use doc; then
+		dohtml qemu-doc.html qemu-tech.html || die
 	fi
+
+	use python & dobin scripts/kvm/kvm_stat
 
 	# FIXME: Need to come up with a solution for non-x86 based systems
 	if use x86 || use amd64; then
@@ -340,7 +341,6 @@ src_install() {
 }
 
 pkg_postinst() {
-
 	if [[ -n ${softmmu_targets} ]]; then
 		elog "If you don't have kvm compiled into the kernel, make sure you have"
 		elog "the kernel module loaded before running kvm. The easiest way to"

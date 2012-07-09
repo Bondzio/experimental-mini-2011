@@ -8,5 +8,5 @@ LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
 RDEPEND=>=dev-perl/Moose-0.94 dev-perl/Crypt-SSLeay dev-perl/Data-Visitor >=dev-perl/DateTime-0.51 dev-perl/DateTime-Format-Strptime >=dev-perl/Devel-StackTrace-1.21 dev-perl/Digest-HMAC virtual/perl-Digest-SHA virtual/perl-File-Spec dev-perl/HTML-Parser dev-perl/libwww-perl dev-perl/JSON virtual/perl-Scalar-List-Utils >=dev-perl/Try-Tiny-0.03 dev-perl/MooseX-Aliases dev-perl/MooseX-Role-Parameterized >=dev-perl/Net-OAuth-0.25 dev-perl/namespace-autoclean >=dev-perl/URI-1.40 dev-lang/perl[-build]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/M/MM/MMIMS/Net-Twitter-3.18003.tar.gz
-_eclasses_=base	56b5d6bcc4a0fc2a3055a84fd4a5c36b	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=da9014611fbd14ede4ff2fd3bc7deda9
