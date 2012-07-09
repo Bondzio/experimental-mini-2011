@@ -3,10 +3,10 @@ DEPEND=|| ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) dev-lang/php >=dev-php/
 DESCRIPTION=Miscellaneous HTTP utilities.
 EAPI=2
 HOMEPAGE=http://pear.php.net/HTTP
-KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ppc64 ~sparc x86
+KEYWORDS=alpha amd64 hppa ia64 ~ppc ppc64 sparc x86
 LICENSE=BSD
 RDEPEND=|| ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/HTTP-1.4.1.tgz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=a7a73102fcd99b9201665c79248b41a9
+_md5_=67f991f9e3b10f9c6a0b7b27873c8a88

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=>=virtual/emacs-21
+DESCRIPTION=Yet Another TeX mode for Emacs
+HOMEPAGE=http://www.yatex.org/
+IUSE=linguas_ja
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=as-is
+RDEPEND=>=virtual/emacs-21
+SLOT=0
+SRC_URI=http://www.yatex.org/yatex1.76.tar.gz
+_eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=2cac88f12272d6f7ec285329dfb23247

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/mythtv-0.25.1.ebuild,v 1.10 2012/06/28 15:01:07 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/mythtv-0.25.1.ebuild,v 1.11 2012/07/08 22:29:21 cardoe Exp $
 
 EAPI=4
 
@@ -211,7 +211,7 @@ src_install() {
 	insinto /usr/share/mythtv/contrib
 	doins -r contrib/*
 
-	dobin "${FILESDIR}"/runmythfe
+	newbin "${FILESDIR}"/runmythfe-r1 runmythfe
 
 	if use autostart; then
 		dodir /etc/env.d/

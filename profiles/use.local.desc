@@ -494,12 +494,14 @@ app-emulation/qemu-kvm:rbd - Enable rados block device backend support, see http
 app-emulation/qemu-kvm:sdl - Enable the SDL-based console
 app-emulation/qemu-kvm:spice - Enable Spice protocol support via app-emulation/spice
 app-emulation/qemu-kvm:ssl - Enable TLS support for the VNC console server
+app-emulation/qemu-kvm:tci - Enable the TCG Interpreter which can speed up or slowdown workloads depending on the host and guest CPUs being emulated. In the future it will be a runtime option but for now its compile time.
 app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
 app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu-kvm:vde - Enable VDE-based networking
 app-emulation/qemu-kvm:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
 app-emulation/qemu-kvm:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu-kvm:xen - Enables support for Xen backends
+app-emulation/qemu-kvm:xfs - Support xfsctl() notification and syncing for XFS backed virtual disks.
 app-emulation/spice:client - Build the spicec client app (does not reduce dependencies at the moment).
 app-emulation/spice:gui - Build some GUI components (inside the guest window).
 app-emulation/spice:smartcard - Enable smartcard remoting using app-emulation/libcacard
@@ -2751,6 +2753,20 @@ media-plugins/kipi-plugins:redeyes - Add redeyes removal suppport
 media-plugins/kipi-plugins:vkontakte - Build plugin for vkontakte.ru
 media-plugins/mediastreamer-ilbc:20ms-frames - enable 20ms frame size (default is 30ms). Some VOIP providers such as Gizmo5 (aka Sipphone) require the codec to be compiled with the 30ms setting.
 media-plugins/mythmusic:libvisual - Enables media-libs/libvisual support for effects
+media-plugins/mythplugins:cdr - Allows MythMusic to burn CD-Rs
+media-plugins/mythplugins:exif - Allows MythGallery to read EXIF data from photos
+media-plugins/mythplugins:fftw - Adds visual effects to MythMusic when playing back music
+media-plugins/mythplugins:mytharchive - Allows you to archive recorded content to CD or DVD
+media-plugins/mythplugins:mythbrowser - Adds a web browser within MythTV
+media-plugins/mythplugins:mythgallery - Adds a picture viewing gallery within MythTV
+media-plugins/mythplugins:mythgame - Adds a frontend to various ROM emulators within MythTV
+media-plugins/mythplugins:mythmusic - Adds the ability for MythTV to act as a music player
+media-plugins/mythplugins:mythnetvision - Adds the ability to view netvision devices within MythTV
+media-plugins/mythplugins:mythnews - Adds a news viewer within MythTV
+media-plugins/mythplugins:mythweather - Adds weather information within MythTV
+media-plugins/mythplugins:opengl - Adds OpenGL visualizations to MythMusic and transition support to MythGallery
+media-plugins/mythplugins:projectm - Adds additional visualizations from Project M to MythMusic
+media-plugins/mythplugins:raw - Allows MythGallery to view photos saved in RAW format
 media-plugins/mythvideo:jamu - Use and configure the Just Another Metadata Utility by default
 media-plugins/vdr-burn:dvdarchive - DMH DVD - Archive
 media-plugins/vdr-burn:projectx - Enables support for media-video/projectx
@@ -4368,10 +4384,6 @@ net-misc/remmina:telepathy - Enable telepathy support
 net-misc/remmina:unique - Enable single instance support using dev-libs/libunique
 net-misc/remmina:vte - Enable Terminal support using x11-libs/vte
 net-misc/remmina:xdmcp - Enable support for X Display Manager Control Protocol
-net-misc/remmina-plugins:nx - Enable support for NX protocol
-net-misc/remmina-plugins:ssh - Enable support for SSH protocol
-net-misc/remmina-plugins:telepathy - Enable telepathy support
-net-misc/remmina-plugins:xdmcp - Use Xephyr for XDMCP protocol
 net-misc/rygel:tracker - Install dependencies for the tracker plugin
 net-misc/rygel:transcode - Install dependencies for transcoding support
 net-misc/scponly:gftp - Enables gFTP compatibility
