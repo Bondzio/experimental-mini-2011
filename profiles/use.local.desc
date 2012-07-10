@@ -3539,12 +3539,10 @@ net-analyzer/tcpdump:smi - Build with net-libs/libsmi to load MIBs on the fly to
 net-analyzer/tcpreplay:pcapnav - Enable if you want the jump to byte offset feature via net-libs/libpcapnav
 net-analyzer/tcpreplay:tcpdump - Use net-analyzer/tcpdump for packet decoding feature
 net-analyzer/wireshark:ares - Use GNU net-dns/c-ares library to resolve DNS names
-net-analyzer/wireshark:btbb - Use net-libs/libbtbb (and appropriate hardware) to sniff bluetooth baseband
 net-analyzer/wireshark:doc-pdf - Build documentation in pdf format (US and a4 paper sizes)
 net-analyzer/wireshark:gcrypt - Use GNU crypto library (dev-libs/libgcrypt) to decrypt ipsec traffic
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
 net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into human readable format
-net-analyzer/wireshark:third-party-plugins - Build plugins from third party sources
 net-analyzer/zabbix:agent - Enable zabbix agent (for to-be-monitored machines)
 net-analyzer/zabbix:frontend - Enable zabbix web frontend
 net-analyzer/zabbix:iodbc - Use iodbc rather than unixodbc for ODBC functions

@@ -1,9 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/x2goserver/x2goserver-3.1.0.1.ebuild,v 1.1 2012/03/14 22:30:45 voyageur Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/x2goserver/x2goserver-3.1.0.1.ebuild,v 1.2 2012/07/10 13:56:11 voyageur Exp $
 
 EAPI=4
-inherit eutils multilib
+inherit eutils multilib user
 
 DESCRIPTION="The X2Go server"
 HOMEPAGE="http://www.x2go.org"
