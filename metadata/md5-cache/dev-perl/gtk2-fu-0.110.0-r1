@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/gtk2-perl virtual/perl-Module-Build test? ( dev-perl/Test-Pod dev-perl/Test-Pod-Coverage ) dev-lang/perl[-build]
+DESCRIPTION=gtk2-fu is a layer on top of perl gtk2, that brings power, simplicity and speed of development
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Gtk2Fu/
+IUSE=test
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~ppc64 ~x86
+LICENSE=|| ( Artistic GPL-1 GPL-2 GPL-3 )
+RDEPEND=dev-perl/gtk2-perl dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/D/DA/DAMS/Gtk2Fu-0.11.tar.gz http://dev.gentoo.org/~tove/distfiles/dev-perl/Gtk2Fu/Gtk2Fu-0.110.0-patch.tar.bz2
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a20b92ba559a728769b31dcb991d937d

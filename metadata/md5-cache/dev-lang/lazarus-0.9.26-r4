@@ -4,10 +4,10 @@ DESCRIPTION=Lazarus IDE is a feature rich visual programming environment emulati
 EAPI=2
 HOMEPAGE=http://www.lazarus.freepascal.org/
 KEYWORDS=~amd64 ~ppc ~x86
-LICENSE=GPL-2 LGPL-2.1 LGPL-2.1-linking-exception
+LICENSE=GPL-2 LGPL-2.1-with-linking-exception
 RDEPEND=~dev-lang/fpc-2.2.4[source] net-misc/rsync x11-libs/gtk+:2 !=gnome-base/librsvg-2.16.1
 RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://sourceforge/lazarus/lazarus-0.9.26-0.tgz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=901a8b43a5f24bdbeb54f694fbbc1e39
+_md5_=e36464da8841c6b302b3a83de058e255

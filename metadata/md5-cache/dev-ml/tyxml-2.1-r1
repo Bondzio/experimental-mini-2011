@@ -5,9 +5,9 @@ EAPI=4
 HOMEPAGE=http://ocsigen.org/tyxml/
 IUSE=doc ocamlduce +ocamlopt
 KEYWORDS=~amd64
-LICENSE=LGPL-2.1-linking-exception
+LICENSE=LGPL-2.1-with-linking-exception
 RDEPEND=>=dev-lang/ocaml-3.12[ocamlopt?] dev-ml/ocamlnet ocamlduce? ( dev-ml/ocamlduce )
 SLOT=0
 SRC_URI=http://www.ocsigen.org/download/tyxml-2.1.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=67c5d46e7cf43204b60efa366e511373
+_md5_=6f3be963853af9c6c23d541e7c0ea012

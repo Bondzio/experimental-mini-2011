@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/v8-9999.ebuild,v 1.29 2012/07/02 17:13:05 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/v8/v8-9999.ebuild,v 1.30 2012/07/10 03:02:23 floppym Exp $
 
 EAPI="4"
 
@@ -30,6 +30,7 @@ src_unpack() {
 
 src_compile() {
 	tc-export AR CC CXX RANLIB
+	export LINK=${CXX}
 
 	# Use target arch detection logic from bug #354601.
 	case ${CHOST} in

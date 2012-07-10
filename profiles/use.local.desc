@@ -2752,7 +2752,6 @@ media-plugins/kipi-plugins:panorama - Pull in dependencies needed by panorama pl
 media-plugins/kipi-plugins:redeyes - Add redeyes removal suppport
 media-plugins/kipi-plugins:vkontakte - Build plugin for vkontakte.ru
 media-plugins/mediastreamer-ilbc:20ms-frames - enable 20ms frame size (default is 30ms). Some VOIP providers such as Gizmo5 (aka Sipphone) require the codec to be compiled with the 30ms setting.
-media-plugins/mythmusic:libvisual - Enables media-libs/libvisual support for effects
 media-plugins/mythplugins:cdr - Allows MythMusic to burn CD-Rs
 media-plugins/mythplugins:exif - Allows MythGallery to read EXIF data from photos
 media-plugins/mythplugins:fftw - Adds visual effects to MythMusic when playing back music
@@ -3062,15 +3061,19 @@ media-tv/mythtv:cec - Allows you to control CEC enabled TVs via HDMI. Currently 
 media-tv/mythtv:crystalhd - Allows you to utilize a Broadcom CrystalHD hardware based video decoder to improve the performance of video decode.
 media-tv/mythtv:debug - Instructs Qt to use the 'debug' target instead of 'release' target. If your MythTV is crashing or you need a backtrace, you need to compile it with this option otherwise the debugging data is useless.
 media-tv/mythtv:dvb - Enables support for Linux DVB cards. These include all cards that work with digital signals such as ATSC, DVB-T, DVB-C, and DVB-S, QAM-64, and QAM-256.
+media-tv/mythtv:fftw - Support visualizations via sci-libs/fftw
+media-tv/mythtv:hls - HTTP Live Streaming support
 media-tv/mythtv:ieee1394 - Allows MythTV to communicate and use Firewire enabled Cable boxes. These are typically found in the United States, where such support is required by law. This will also install Firewire test programs and external channel changers if the internal changer does not work.
 media-tv/mythtv:jack - Allows MythTV to use JACK as your sound output device. You will have to manually configure the path to your JACK settings.
 media-tv/mythtv:lcd - Tells MythTV that you have an instance of app-misc/lcdproc configured on your machine and it should output information such as current time, show name, episode name, etc to that LCD.
 media-tv/mythtv:libass - SRT/SSA/ASS (SubRip / SubStation Alpha) subtitle support
 media-tv/mythtv:lirc - Adds LIRC support directly to MythTV allowing for built in control via a LIRC device.
 media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write scripts in Perl to control your MythTV setup or communicate with it.
+media-tv/mythtv:raop - Remote Audio Output Protocol (aka AirTunes/AirPlay)
 media-tv/mythtv:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-tv/mythtv:vdpau - Enable support of NVIDIA's VDPAU for video playback
 media-tv/mythtv:video_cards_nvidia - When combined with the xvmc USE flag, enables NVIDIA specific XvMC extension usage.
+media-tv/mythtv:xmltv - Pulls in the media-tv/xmltv TV listing grabbers for users not using Schedules Direct.
 media-tv/mythtv:xvmc - Instructs MythTV to use XvMC for its video output. By default, this will use the generic XvMC wrapper unless a specific video card driver is enabled via their VIDEO_CARDS USE flags.
 media-tv/tvbrowser:themes - Install extra theme packs
 media-tv/tvtime:alsa - Enables an EXPERIMENTAL ALSA patch by the Ubuntu maintainers. Several problems were reported, use with care.
@@ -3536,10 +3539,12 @@ net-analyzer/tcpdump:smi - Build with net-libs/libsmi to load MIBs on the fly to
 net-analyzer/tcpreplay:pcapnav - Enable if you want the jump to byte offset feature via net-libs/libpcapnav
 net-analyzer/tcpreplay:tcpdump - Use net-analyzer/tcpdump for packet decoding feature
 net-analyzer/wireshark:ares - Use GNU net-dns/c-ares library to resolve DNS names
+net-analyzer/wireshark:btbb - Use net-libs/libbtbb (and appropriate hardware) to sniff bluetooth baseband
 net-analyzer/wireshark:doc-pdf - Build documentation in pdf format (US and a4 paper sizes)
 net-analyzer/wireshark:gcrypt - Use GNU crypto library (dev-libs/libgcrypt) to decrypt ipsec traffic
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
 net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into human readable format
+net-analyzer/wireshark:third-party-plugins - Build plugins from third party sources
 net-analyzer/zabbix:agent - Enable zabbix agent (for to-be-monitored machines)
 net-analyzer/zabbix:frontend - Enable zabbix web frontend
 net-analyzer/zabbix:iodbc - Use iodbc rather than unixodbc for ODBC functions
@@ -4785,6 +4790,7 @@ sci-geosciences/qlandkartegt:rmap - Enable support for TwoNav RMAP file format
 sci-libs/acml:gfortran - Fetch and install acml compiled with GNU gfortran
 sci-libs/acml:ifc - Fetch and install acml compiled with Intel Fortran Compiler (dev-lang/ifc)
 sci-libs/acml:int64 - Install the 64 bits integer library
+sci-libs/adolc:sparse - Add support for sparse matrix algebra with sci-libs/colpack
 sci-libs/armadillo:atlas - Link with ATLAS libraries for cblas and clapack (needs sci-libs/lapack-atlas)
 sci-libs/arprec:qd - Use sci-libs/qd
 sci-libs/cfitsio:tools - Build execs fpack, funpack, imcopy, fitscopy, listhead
