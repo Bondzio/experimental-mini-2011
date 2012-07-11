@@ -499,6 +499,7 @@ app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
 app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
 app-emulation/qemu-kvm:vde - Enable VDE-based networking
 app-emulation/qemu-kvm:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
+app-emulation/qemu-kvm:virtfs - Enable VirtFS support. See http://wiki.qemu.org/Documentation/9psetup
 app-emulation/qemu-kvm:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu-kvm:xen - Enables support for Xen backends
 app-emulation/qemu-kvm:xfs - Support xfsctl() notification and syncing for XFS backed virtual disks.
@@ -5030,6 +5031,7 @@ sys-apps/memtest86+:floppy - Install a script to create floppy disks containing 
 sys-apps/memtest86+:serial - Compile with serial console support
 sys-apps/moreutils:perl - Install scripts written in Perl
 sys-apps/net-tools:old-output - use old ifconfig output style (useful for when new output breaks scripts)
+sys-apps/openrc:newnet - enable the new network stack (experimental)
 sys-apps/pacman:gpg - Support verifying packages signed with GPG using app-crypt/gpgme
 sys-apps/paludis:pbins - Enable binary package support. Adds dependency upon app-arch/libarchive
 sys-apps/paludis:pink - Use a less boring colourscheme than the default
