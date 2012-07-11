@@ -2920,6 +2920,7 @@ media-sound/mpd:lastfmradio - Support listening to last.fm radio stations
 media-sound/mpd:mpg123 - Enable support for mp3 decoding over media-sound/mpg123
 media-sound/mpd:network - Enables network streaming support
 media-sound/mpd:pipe - Support writing audio to a pipe
+media-sound/mpd:recorder - Enables output plugin for recording radio streams
 media-sound/mpd:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mpd:soundcloud - Build plugin to access soundcloud
 media-sound/mpd:soup - Use net-libs/libsoup for HTTP streaming

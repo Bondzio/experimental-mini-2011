@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13949 2012/07/10 16:54:21 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13952 2012/07/11 14:20:15 pesa Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,9 +31,11 @@
 
 #--- END OF EXAMPLES ---
 
-# Alexandre Rostovtsev <tetromino@gentoo.org> (10 Jul 2012)
-# Fails to unlock the screen for some gnome-shell users, bug #425070
-=gnome-extra/gnome-screensaver-3.4.2
+# Tony Vroon <chainsaw@gentoo.org> (11 Jul 2012)
+# This segfaults repeatedly in actual use for me, and I can not in good 
+# conscience allow this to surprise others. Unmask only to help trace 
+# where the fault is, not to run on live systems.
+=net-misc/asterisk-10.6.0
 
 # Mike Gilbert <floppym@gentoo.org> (09 Jul 2012)
 # Dev channel releases are only for people who are developers or want more
@@ -92,10 +94,6 @@ dev-python/sexy-python
 # bug 424263 423047
 # dead on upstream, fails on gcc-4.7
 =media-plugins/vdr-cdda-0.1.0-r1
-
-# Richard Yao <ryao@gentoo.org> (29 Jun 2012)
-# Patch introduced regressions
-=sys-fs/zfs-0.6.0_rc9-r3
 
 # Mike Gilbert <floppym@gentoo.org> (29 Jun 2012)
 # Mask v8 versions used for www-client/chromium dev channel releases.
@@ -305,12 +303,6 @@ app-shells/pdksh
 >=sci-biology/ncbi-tools-20080302
 >=sci-libs/arpack-96
 >=sci-chemistry/dssp-070831
-
-# Davide Pesavento <pesa@gentoo.org> (12 Jun 2012)
-# Both have been merged into >=dev-python/shiboken-1.1.1.
-# Removal in 30 days.
-dev-python/apiextractor
-dev-python/generatorrunner
 
 # Alexis Ballier <aballier@gentoo.org> (10 Jun 2012)
 # Beta release, mask until rev. deps are fixed

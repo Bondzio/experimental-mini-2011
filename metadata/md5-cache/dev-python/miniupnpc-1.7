@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=>=net-libs/miniupnpc-1.7 !<sys-apps/portage-2.1.10.58 python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+DESCRIPTION=Python bindings for UPnP client library
+EAPI=4
+HOMEPAGE=http://miniupnp.free.fr/
+IUSE=python_targets_python2_6 python_targets_python2_7
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=BSD
+RDEPEND=>=net-libs/miniupnpc-1.7 python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
+SLOT=0
+SRC_URI=http://miniupnp.free.fr/files/miniupnpc-1.7.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python-distutils-ng	6786a3ab681bb2f21310183278f72e33	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=c782db52dac8a318085ce0add261ed31

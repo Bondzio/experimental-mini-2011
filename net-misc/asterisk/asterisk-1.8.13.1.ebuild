@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/asterisk/asterisk-1.8.13.1.ebuild,v 1.3 2012/07/09 01:26:07 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/asterisk/asterisk-1.8.13.1.ebuild,v 1.4 2012/07/11 08:29:27 chainsaw Exp $
 
 EAPI=4
 inherit autotools base eutils linux-info multilib
@@ -9,7 +9,7 @@ MY_P="${PN}-${PV/_/-}"
 
 DESCRIPTION="Asterisk: A Modular Open Source PBX System"
 HOMEPAGE="http://www.asterisk.org/"
-SRC_URI="http://downloads.asterisk.org/pub/telephony/asterisk/${MY_P}.tar.gz
+SRC_URI="http://downloads.asterisk.org/pub/telephony/asterisk/releases/${MY_P}.tar.gz
 	 mirror://gentoo/gentoo-asterisk-patchset-1.13.tar.bz2"
 LICENSE="GPL-2"
 SLOT="0"
