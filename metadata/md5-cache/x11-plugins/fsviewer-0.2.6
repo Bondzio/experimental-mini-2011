@@ -1,13 +1,13 @@
-DEFINED_PHASES=configure install
-DEPEND=x11-wm/windowmaker x11-libs/libXft x11-libs/libXpm x11-libs/libX11 x11-proto/xproto nls? ( sys-devel/gettext )
+DEFINED_PHASES=configure install prepare
+DEPEND=>=x11-wm/windowmaker-0.95.2 x11-libs/libXft x11-libs/libXpm x11-libs/libX11 x11-proto/xproto nls? ( sys-devel/gettext ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=A file system viewer for Window Maker
-EAPI=2
+EAPI=4
 HOMEPAGE=http://www.bayernline.de/~gscholz/linux/fsviewer/
 IUSE=nls
 KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=x11-wm/windowmaker x11-libs/libXft x11-libs/libXpm x11-libs/libX11
+RDEPEND=>=x11-wm/windowmaker-0.95.2 x11-libs/libXft x11-libs/libXpm x11-libs/libX11
 SLOT=0
 SRC_URI=http://www.bayernline.de/~gscholz/linux/fsviewer/fsviewer-app-0.2.6.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=e5944f2716186bb7739d46adb9dc8b69
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=229bea87786ca7edfad03abe2b365a32

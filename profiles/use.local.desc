@@ -2764,8 +2764,6 @@ media-plugins/mythplugins:mythmusic - Adds the ability for MythTV to act as a mu
 media-plugins/mythplugins:mythnetvision - Adds the ability to view netvision devices within MythTV
 media-plugins/mythplugins:mythnews - Adds a news viewer within MythTV
 media-plugins/mythplugins:mythweather - Adds weather information within MythTV
-media-plugins/mythplugins:opengl - Adds OpenGL visualizations to MythMusic and transition support to MythGallery
-media-plugins/mythplugins:projectm - Adds additional visualizations from Project M to MythMusic
 media-plugins/mythplugins:raw - Allows MythGallery to view photos saved in RAW format
 media-plugins/mythvideo:jamu - Use and configure the Just Another Metadata Utility by default
 media-plugins/vdr-burn:dvdarchive - DMH DVD - Archive
@@ -2867,6 +2865,7 @@ media-sound/darkice:twolame - Build with twolame support
 media-sound/decibel-audio-player:gnome - Adds Gnome media keys support, so you can control Decibel using hotkeys.
 media-sound/decibel-audio-player:gnome-keyring - Adds support for storing your Last.fm password using gnome-keyring.
 media-sound/denemo:fluidsynth - Enable Fluidsynth MIDI software synthesis
+media-sound/denemo:portmidi - Enable support for the portmidi backend
 media-sound/dir2ogg:mac - Add support for decoding Monkey's Audio files
 media-sound/dir2ogg:wma - Add support for wma files through mplayer
 media-sound/ecasound:lv2 - Add support for Ladspa V2
@@ -2924,6 +2923,7 @@ media-sound/mpd:recorder - Enables output plugin for recording radio streams
 media-sound/mpd:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mpd:soundcloud - Build plugin to access soundcloud
 media-sound/mpd:soup - Use net-libs/libsoup for HTTP streaming
+media-sound/mpd:systemd - Enable support for systemd socket activation
 media-sound/mpd:twolame - Support twolame MPEG-2 encoding
 media-sound/mpd:wildmidi - Enable MIDI support via wildmidi
 media-sound/mpd:zip - Support for ZIP files
