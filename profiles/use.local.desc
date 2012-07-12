@@ -1776,18 +1776,13 @@ dev-util/pkgconfig-openbsd:pkg-config - Install as a replacement for dev-util/pk
 dev-util/qdevelop:plugins - Build and install additional plugins
 dev-util/qt-creator:autotools - Enable autotools project manager plugin
 dev-util/qt-creator:bazaar - Add support for dev-vcs/bzr version control system
-dev-util/qt-creator:bineditor - Enable bineditor plugin
-dev-util/qt-creator:bookmarks - Enable bookmarks plugin
 dev-util/qt-creator:botan-bundled - Use the bundled copy of dev-libs/botan
 dev-util/qt-creator:cmake - Enable cmake project manager plugin
-dev-util/qt-creator:designer - Enable Qt Designer integration
 dev-util/qt-creator:fakevim - Enable support for vim-like key bindings
 dev-util/qt-creator:git - Add support for dev-vcs/git version control system
 dev-util/qt-creator:madde - Enable integration with MADDE (Maemo Application Development and Debugging Environment)
 dev-util/qt-creator:mercurial - Add support for dev-vcs/mercurial version control system
 dev-util/qt-creator:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
-dev-util/qt-creator:qml - Build QML support and many other QML-related tools (recommended)
-dev-util/qt-creator:qtscript - Enable QtScript editor plugin
 dev-util/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
 dev-util/schroot:btrfs - Enable support for chroots using btrfs snapshots.
 dev-util/schroot:dchroot - Enables the building of a wrapper named "dchroot", replacing sys-apps/dchroot.
@@ -2945,6 +2940,7 @@ media-sound/ncmpcpp:fftw - Build the visualizer plugin that pulls in sci-libs/ff
 media-sound/ncmpcpp:outputs - Enable outputs screen
 media-sound/ncmpcpp:visualizer - Enable visualizer screen with sound wave/frequency spectrum modes
 media-sound/pianobooster:fluidsynth - Enable Fluidsynth MIDI software synthesis
+media-sound/picard:acoustid - Use media-libs/chromaprint for acoustic fingerprinting
 media-sound/picard:coverart - Install plugin for direct coverart dowload
 media-sound/pms:regex - Enable regular expression searches using dev-libs/boost
 media-sound/podcatcher:bittorrent - Enable support for bittorrent downloads
