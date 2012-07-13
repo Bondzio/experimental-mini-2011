@@ -947,7 +947,8 @@ app-text/yagf:tesseract - Enable support for the app-text/tesseract OCR engine.
 app-text/zathura-meta:cb - Install plug-in for ComicBook support
 app-vim/gentoo-syntax:ignore-glep31 - Remove GLEP 31 (UTF-8 file encodings) settings
 app-vim/vim-latex:html - Install HTML documentation
-dev-cpp/glog:gflags - Use gflags module for flag parsing
+dev-cpp/glog:gflags - Use dev-cpp/gflags for flag parsing
+dev-cpp/glog:unwind - Use sys-libs/libunwind for stack unwinding instead of glibc/gcc (may be more reliable on x86_64)
 dev-cpp/gtkmm:wayland - Enable dev-libs/wayland backend
 dev-cpp/libcmis:man - Build and install man pages.
 dev-cpp/pficommon:fcgi - Build FCGI feature
@@ -1939,7 +1940,6 @@ games-rpg/eternal-lands-data:bloodsuckermaps - Will install Bloodsucker's Maps i
 games-rpg/eternal-lands-data:music - Adds in-game music.
 games-rpg/eternal-lands-data:sound - Adds in-game sound effects.
 games-rpg/kqlives:cheats - Enable cheating mode
-games-rpg/mana:server - Enable Manaserv support
 games-rpg/nwn:hou - Install the Hordes of the Underdark expansion pack
 games-rpg/nwn:sou - Installs the Shadows of Undrentide expension pack
 games-rpg/nwn-data:hou - Install the Hordes of the Underdark expansion pack
@@ -2886,7 +2886,7 @@ media-sound/jack-audio-connection-kit:cpudetection - Enables runtime cpudetectio
 media-sound/jack-audio-connection-kit:netjack - Build with support for Realtime Audio Transport over generic IP
 media-sound/jack-audio-connection-kit:pam - Add basic realime configuration via sys-auth/realtime-base
 media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
-media-sound/kid3:chroma - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
+media-sound/kid3:acoustid - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
 media-sound/kwave:phonon - Enable playback via Phonon
 media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
 media-sound/leechcraft-lmp:mpris - Enable MPRIS support
@@ -3766,6 +3766,7 @@ net-im/kadu:sdk - Install Kadu SDK (cmake module, API headers)
 net-im/kadu:speech - Enables speech module
 net-im/kmess:konqueror - Enable integration with konqueror
 net-im/kmess:libnotify - Enable desktop notifications using the knotify library
+net-im/ktp-text-ui:history - Enables saving chat history.
 net-im/leechcraft-azoth:acetamide - Build Acetamide, the IRC protocol support
 net-im/leechcraft-azoth:adiumstyles - Build support for Adium styles
 net-im/leechcraft-azoth:astrality - Build Astrality, support for protocols provided by Telepathy
