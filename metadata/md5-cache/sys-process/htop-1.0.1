@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure prepare setup
-DEPEND=sys-libs/ncurses[unicode?]
+DEPEND=sys-libs/ncurses[unicode?] || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=interactive process viewer
 EAPI=4
 HOMEPAGE=http://htop.sourceforge.net
@@ -9,4 +9,5 @@ LICENSE=BSD GPL-2
 RDEPEND=sys-libs/ncurses[unicode?]
 SLOT=0
 SRC_URI=mirror://sourceforge/htop/htop-1.0.1.tar.gz
-_md5_=1d239d491a5072033fb9446c1be42482
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_md5_=30bb67b389a053bd8a3fa8a20b57d206

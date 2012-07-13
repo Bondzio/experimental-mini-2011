@@ -1,8 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/swig/swig-2.0.7.ebuild,v 1.1 2012/07/11 20:55:06 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/swig/swig-2.0.7-r1.ebuild,v 1.1 2012/07/12 19:20:57 radhermit Exp $
 
 EAPI=4
+
+inherit eutils
 
 DESCRIPTION="Simplified Wrapper and Interface Generator"
 HOMEPAGE="http://www.swig.org/"
@@ -19,6 +21,11 @@ DEPEND="pcre? ( dev-libs/libpcre )
 RDEPEND="${DEPEND}"
 
 DOCS=( ANNOUNCE CHANGES CHANGES.current README TODO )
+
+src_prepare() {
+	# bug 417823
+	epatch "${FILESDIR}"/${PN}-2.0.7-illegal-destructors-warning.patch
+}
 
 src_configure() {
 	econf \
