@@ -2414,6 +2414,7 @@ media-gfx/blender:apidoc - Build GameEngine/Python/C API documentation directly 
 media-gfx/blender:blender-game - Adds Game Engine support to Blender (2.4* ebuilds).
 media-gfx/blender:collada - Add support for Collada interchange format through media-libs/opencollada.
 media-gfx/blender:contrib - Install contrib scripts.
+media-gfx/blender:cycles - Build cycles renderer.
 media-gfx/blender:dds - Adds DDS textures support to Blender.
 media-gfx/blender:elbeem - Adds surface fluid simulation to Blender using El'Beem library.
 media-gfx/blender:game-engine - Adds Game Engine support to Blender (2.5* ebuilds).
