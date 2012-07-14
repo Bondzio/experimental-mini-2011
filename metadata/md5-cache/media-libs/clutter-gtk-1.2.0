@@ -4,10 +4,10 @@ DESCRIPTION=Clutter-GTK - GTK+3 Integration library for Clutter
 EAPI=4
 HOMEPAGE=http://www.clutter-project.org/
 IUSE=doc examples +introspection debug
-KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~x86
+KEYWORDS=~alpha ~amd64 ~mips ~ppc ~ppc64 ~x86
 LICENSE=LGPL-2.1
 RDEPEND=>=x11-libs/gtk+-3.2.0:3[introspection?] >=media-libs/clutter-1.9.16:1.0[introspection?] introspection? ( >=dev-libs/gobject-introspection-0.9.12 )
 SLOT=1.0
 SRC_URI=mirror://gnome/sources/clutter-gtk/1.2/clutter-gtk-1.2.0.tar.xz
 _eclasses_=clutter	66956faa308d10b83c72bd8876c8497f	eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=5c0daa05346679ab269af5680e13df79
+_md5_=31b1b8cebceff6dde0e98a15467e47e4

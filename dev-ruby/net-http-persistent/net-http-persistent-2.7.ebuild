@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/net-http-persistent/net-http-persistent-2.3.2.ebuild,v 1.1 2011/12/18 17:45:49 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/net-http-persistent/net-http-persistent-2.7.ebuild,v 1.1 2012/07/14 17:29:51 graaff Exp $
 
 EAPI=4
 

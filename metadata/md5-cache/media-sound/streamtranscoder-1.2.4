@@ -1,10 +1,12 @@
-DEFINED_PHASES=install
-DEPEND=>=media-libs/libogg-1.1 >=media-libs/libvorbis-1.0.1-r2 >=media-sound/lame-3.96 >=media-libs/libmad-0.15.1b >=net-misc/curl-7.11.0
+DEFINED_PHASES=install prepare
+DEPEND=>=media-libs/libogg-1.1 >=media-libs/libvorbis-1.0.1-r2 >=media-sound/lame-3.96 >=media-libs/libmad-0.15.1b >=net-misc/curl-7.11.0 virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Command line application to transcode shoutcast/icecast streams to different bitrates
+EAPI=4
 HOMEPAGE=http://www.oddsock.org
 KEYWORDS=amd64 ppc sparc x86
 LICENSE=GPL-2
 RDEPEND=>=media-libs/libogg-1.1 >=media-libs/libvorbis-1.0.1-r2 >=media-sound/lame-3.96 >=media-libs/libmad-0.15.1b >=net-misc/curl-7.11.0
 SLOT=0
 SRC_URI=http://www.oddsock.org/tools/streamTranscoder/streamtranscoder-1.2.4.tar.gz
-_md5_=0e053bb11ad54c2ce6115c6d8d6e03ac
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a010f19e957e745347513f9e85833543

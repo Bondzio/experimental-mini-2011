@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=ruby_targets_ruby18? ( test? ( virtual/ruby-test-unit[ruby_targets_ruby18] ) ) sys-apps/file ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
+DEPEND=sys-apps/file ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) test? ( ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) )
 DESCRIPTION=Ruby binding to libmagic
 EAPI=2
 HOMEPAGE=http://ruby-filemagic.rubyforge.org/
@@ -7,7 +7,8 @@ IUSE=elibc_FreeBSD ruby_targets_ruby18 test
 KEYWORDS=~amd64 ~hppa ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
 LICENSE=Ruby
 RDEPEND=sys-apps/file ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] )
+RESTRICT=test
 SLOT=0
 SRC_URI=mirror://rubygems/ruby-filemagic-0.4.2.gem
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	ruby-fakegem	9348ccfdf65a1e1ccc9acc7f73a0bacd	ruby-ng	9f370f4fc88a58204a8d375ce53fe08c	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=337e1da3d8d746a40b3456e40f41de6e
+_md5_=897423f712fd9271143a848a35c25315
