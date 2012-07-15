@@ -4,10 +4,10 @@ DESCRIPTION=Manage special features such as screen and keyboard backlight on App
 EAPI=1
 HOMEPAGE=http://technologeek.org/projects/pommed/index.html
 IUSE=gtk X
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=~amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=media-libs/alsa-lib x86? ( sys-apps/pciutils ) amd64? ( sys-apps/pciutils ) dev-libs/confuse >=sys-apps/dbus-1.1 dev-libs/dbus-glib sys-libs/zlib media-libs/audiofile gtk? ( x11-libs/gtk+:2 ) X? ( x11-libs/libX11 x11-libs/libXext x11-libs/libXpm ) media-sound/alsa-utils virtual/eject
 SLOT=0
 SRC_URI=http://alioth.debian.org/frs/download.php/3583/pommed-1.39.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=f490e665fb5391bcc07adb4971b5c3d4
+_md5_=92f7ec6550e0399db58ec8bb91892212

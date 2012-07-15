@@ -1,0 +1,12 @@
+DEFINED_PHASES=setup
+DEPEND=media-libs/taglib sys-apps/file
+DESCRIPTION=A Command-line ID3 Tag Editor
+EAPI=4
+HOMEPAGE=http://muennich.github.com/id3ted/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=media-libs/taglib sys-apps/file
+SLOT=0
+SRC_URI=mirror://github/muennich/id3ted/id3ted-1.0b3.tar.gz
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_md5_=f69aa957093e914fa4d72289249dc92d

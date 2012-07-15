@@ -4,11 +4,10 @@ DESCRIPTION=A vector graphics library with cross-device output support
 EAPI=4
 HOMEPAGE=http://cairographics.org/
 IUSE=X aqua debug directfb doc drm gallium +glib opengl openvg qt4 static-libs +svg xcb
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE=|| ( LGPL-2.1 MPL-1.1 )
 RDEPEND=media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 directfb? ( dev-libs/DirectFB ) glib? ( >=dev-libs/glib-2.28.6:2 ) opengl? ( virtual/opengl ) openvg? ( media-libs/mesa[openvg] ) qt4? ( >=x11-libs/qt-gui-4.8:4 ) svg? ( dev-libs/libxml2 ) X? ( >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libXft drm? ( >=sys-fs/udev-136 gallium? ( media-libs/mesa[gallium] ) ) ) xcb? ( x11-libs/libxcb x11-libs/xcb-util )
 REQUIRED_USE=drm? ( X ) gallium? ( drm )
 RESTRICT=test
 SLOT=0
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ae42b3a0266f64436bb794e33544bf20
+_md5_=3b7025587cd40b9b423392148a7fdf50
