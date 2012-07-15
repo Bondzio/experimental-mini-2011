@@ -4952,7 +4952,6 @@ sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Gene
 sci-physics/root:c++0x - Build ROOT using the C++11 standard. Not supported, requires sys-devel/gcc>=4.7.0
 sci-physics/root:clarens - Build the Clarens and PEAC plug-ins, to use in a GRID enabled analysis
 sci-physics/root:fits - Support for images and data from FITS files with sci-libs/cfitsio
-sci-physics/root:geant4 - Support for sci-physics/geant version 4
 sci-physics/root:htmldoc - Generate html documentation
 sci-physics/root:math - Build all math related libraries plugins, needs sci-libs/gsl
 sci-physics/root:pythia6 - Build the interface for sci-physics/pythia version 6.x
