@@ -24,6 +24,8 @@ RDEPEND=""
 FONTDIR=/usr/share/fonts/terminus
 DOCS="README README-BG AUTHORS CHANGES"
 
+FONT_CONF=( "${FILESDIR}/80-terminus.conf" )
+
 pkg_setup() {
 	# Note: that pcf fonts can be loaded by freetype even if X is not installed.
 	# That's why configuration +pcf and -X is supported, bug #155783.

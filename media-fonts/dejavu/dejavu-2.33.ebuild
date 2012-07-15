@@ -1,10 +1,10 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-fonts/dejavu/dejavu-2.33.ebuild,v 1.10 2012/04/26 19:28:04 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/dejavu/dejavu-2.33.ebuild,v 1.2 2011/05/29 17:55:45 grobian Exp $
 
 EAPI="4"
 
-inherit font versionator
+inherit eutils font versionator
 
 DESCRIPTION="DejaVu fonts, bitstream vera with ISO-8859-2 characters"
 HOMEPAGE="http://dejavu.sourceforge.net/"
@@ -30,7 +30,7 @@ else
 fi
 
 SLOT="0"
-KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x86-solaris"
 
 IUSE="fontforge"
 DEPEND="fontforge? ( x11-apps/mkfontscale
@@ -60,6 +60,10 @@ FONT_CONF=(
 
 FONT_SUFFIX="ttf"
 DOCS="AUTHORS NEWS README status.txt langcover.txt unicover.txt"
+
+src_prepare() {
+	epatch "${FILESDIR}"/${PN}-wine.patch
+}
 
 src_compile() {
 	if use fontforge

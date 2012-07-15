@@ -1,0 +1,28 @@
+--- fontconfig/57-dejavu-sans.conf.orig	2011-11-24 19:12:11.363001082 +0100
++++ fontconfig/57-dejavu-sans.conf	2011-11-23 16:50:25.000000000 +0100
+@@ -70,6 +70,25 @@
+       <family>DejaVu Sans</family>
+     </accept>
+   </alias>
++  <!-- WINE UI fonts -->
++  <alias binding="same">
++    <family>System</family>
++    <accept>
++      <family>DejaVu Sans</family>
++    </accept>
++  </alias>
++  <alias binding="same">
++    <family>MS Shell Dlg</family>
++    <accept>
++      <family>DejaVu Sans</family>
++    </accept>
++  </alias>
++  <alias binding="same">
++    <family>MS Sans Serif</family>
++    <accept>
++      <family>DejaVu Sans</family>
++    </accept>
++  </alias>
+   <!-- Generic name assignment -->
+   <alias>
+     <family>DejaVu Sans</family>

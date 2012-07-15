@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/freetype/freetype-2.4.10.ebuild,v 1.1 2012/06/24 03:34:36 dirtyepic Exp $
+# $Header: $
 
 EAPI="4"
 
@@ -15,7 +15,7 @@ SRC_URI="mirror://sourceforge/freetype/${P/_/}.tar.bz2
 LICENSE="FTL GPL-2"
 SLOT="2"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt"
-IUSE="X auto-hinter bindist bzip2 debug doc fontforge static-libs utils"
+IUSE="X auto-hinter bindist bzip2 debug doc fontforge static-libs utils lcdfilter"
 
 DEPEND="sys-libs/zlib
 	bzip2? ( app-arch/bzip2 )
@@ -55,6 +55,14 @@ src_prepare() {
 	fi
 
 	disable_option FT_CONFIG_OPTION_OLD_INTERNALS
+
+	if use lcdfilter; then
+		epatch "${FILESDIR}"/${P}-subpixel-hinting.patch
+		epatch "${FILESDIR}"/${P}-subpixel-rendering.patch
+
+		enable_option TT_CONFIG_OPTION_SUBPIXEL_HINTING
+		enable_option TT_CONFIG_OPTION_SUBPIXEL_RENDERING
+	fi
 
 	epatch "${FILESDIR}"/${PN}-2.3.2-enable-valid.patch
 
@@ -130,4 +138,9 @@ src_install() {
 
 	use doc && dohtml -r docs/*
 
+	if use lcdfilter; then
+		newenvd "${FILESDIR}"/${P}-99lcdfilter 99lcdfilter
+		insinto /usr/lib
+		newins "${FILESDIR}"/${P}-ft-settings.sh ft-settings.sh
+	fi
 }

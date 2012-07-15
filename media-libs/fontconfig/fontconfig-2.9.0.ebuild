@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/fontconfig/fontconfig-2.9.0.ebuild,v 1.2 2012/05/05 08:02:34 jdhore Exp $
+# $Header: $
 
 EAPI="4"
 
@@ -13,12 +13,12 @@ SRC_URI="http://fontconfig.org/release/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="1.0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd"
-IUSE="doc static-libs"
+IUSE="+cleartype doc lcdfilter static-libs"
 
 # Purposefully dropped the xml USE flag and libxml2 support.  Expat is the
 # default and used by every distro.  See bug #283191.
 
-RDEPEND=">=media-libs/freetype-2.2.1
+RDEPEND=">=media-libs/freetype-2.2.1[lcdfilter=]
 	>=dev-libs/expat-1.95.3"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
@@ -32,6 +32,11 @@ PDEPEND="app-admin/eselect-fontconfig
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-2.7.1-latin-reorder.patch	# 130466
 	epatch "${FILESDIR}"/${PN}-2.3.2-docbook.patch			# 310157
+
+	if use lcdfilter; then
+		epatch "${FILESDIR}"/${P}-ubuntu.patch
+		epatch "${FILESDIR}"/${P}-infinality.patch
+	fi
 
 	eautoreconf
 
@@ -120,6 +125,9 @@ pkg_postinst() {
 	ewarn
 	ewarn "If you need to reset your configuration to upstream defaults, delete"
 	ewarn "the directory ${ROOT}etc/fonts/conf.d/ and re-emerge fontconfig."
+	ewarn
+	ewarn "DO NOT report bugs to Gentoo's bugzilla"
+	ewarn "See http://forums.gentoo.org/viewtopic-t-511382.html for support topic on Gentoo forums."
 	echo
 
 	if [[ ${ROOT} = / ]]; then
