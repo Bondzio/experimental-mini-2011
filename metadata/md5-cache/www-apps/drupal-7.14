@@ -10,5 +10,5 @@ RDEPEND=virtual/httpd-php dev-lang/php[gd,pdo,postgres?,xml] dev-php/pecl-apc de
 REQUIRED_USE=|| ( mysql postgres sqlite )
 SLOT=7.14
 SRC_URI=http://drupal.org/files/projects/drupal-7.14.tar.gz
-_eclasses_=webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=webapp	de4b9c8a801861e4a56bdf422bceff8c
 _md5_=9e504c1083c64409b520c11551c58565

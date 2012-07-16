@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13966 2012/07/15 15:10:25 kensington Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13970 2012/07/15 23:34:13 cardoe Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,6 +31,14 @@
 
 #--- END OF EXAMPLES ---
 
+# Doug Goldstein <cardoe@gentoo.org> (15 Jul 2012)
+# Under development
+=www-apps/mythweb-0.25.1_p20120715
+
+# Johannes Huber <johu@gentoo.org> (16 Jul 2012)
+# Build is broken, needs further investigation.
+>=net-libs/telepathy-qt-0.9.3
+
 # Michael Palimaka <kensington@gentoo.org> (15 Jul 2012)
 # Bundles dev-python/pexpect (bug #315843)
 # Replaced by ssh-copy-id from net-misc/openssh.
@@ -58,14 +66,6 @@ app-laptop/omnibook
 # Eray Aslan <eras@gentoo.org> (13 Jul 2012)
 # Mask experimental patch for linking with gold
 =net-mail/dovecot-2.1.8-r1
-
-# Doug Goldstein <cardoe@gentoo.org> (11 Jul 2012)
-# Results in many people's machines not having a usable screen
-# once the screen locks requiring the X server to be killed
-# which is a clear data loss. I asked the GNOME team today
-# about this and they told me it was already masked but there's no
-# mask, so here it is. bug #425070
-=gnome-extra/gnome-screensaver-3.4.2
 
 # Tony Vroon <chainsaw@gentoo.org> (11 Jul 2012)
 # This segfaults repeatedly in actual use for me, and I can not in good
@@ -173,16 +173,6 @@ www-apps/phpgroupware
 # Ian Stakenvicius <axs@gentoo.org> (19 Jun 2012)
 # Mask new spidermonkey until rdeps can accept it
 ~dev-lang/spidermonkey-1.8.7
-
-# Torsten Veller <tove@gentoo.org> (16 Jun 2012)
-# Mask for removal (#421461)
-# Test suite fails since perl 5.13.6
-dev-perl/Tie-RegexpHash
-
-# Torsten Veller <tove@gentoo.org> (16 Jun 2012)
-# Mask for removal (#310711)
-# vulture is the only consumer of =dev-perl/DBD-SQLite-0.31*
-net-proxy/vulture
 
 # Pacho Ramos <pacho@gentoo.org> (16 Jun 2012)
 # No needed since kernel-3.2, bug#411405#c6
@@ -347,29 +337,6 @@ app-shells/pdksh
 =sys-fs/mdadm-3.2.4
 =sys-fs/mdadm-3.2.5
 
-# Torsten Veller <tove@gentoo.org> (08 Jun 2012)
-# Masked for removal (#420075)
-# The Phalanx Project is finished and no longer active
-dev-perl/CPAN-Mini-Phalanx
-
-# Torsten Veller <tove@gentoo.org> (08 Jun 2012)
-# Masked for removal (#249786,#331675,#420211)
-# No release since 2005, not needed.
-dev-perl/gimp-perl
-
-# Torsten Veller <tove@gentoo.org> (08 Jun 2012)
-# Masked for removal (#420179)
-# Fails with perl-5.16, probably 5.14 too.
-# No release since 2005, not needed in the tree and
-# upstream bug not fixed for one year
-dev-perl/XML-Sablot
-
-# Torsten Veller <tove@gentoo.org> (08 Jun 2012)
-# Masked for removal (#420109)
-# Depends on Devel-DProf, removed from perl-5.16.
-# Use dev-perl/Devel-NYTProf instead
-dev-perl/Devel-Profiler
-
 # Patrick Lauer <patrick@gentoo.org> (06 Jun 2012)
 # Temporarily mask nginx >=1.3 see #411937
 >=www-servers/nginx-1.3
@@ -385,15 +352,6 @@ dev-perl/Devel-Profiler
 # Dead upstream. Security problems. Bug #249112
 # Removal in 30 days
 net-misc/ptrtd
-
-# Torsten Veller <tove@gentoo.org> (02 Jun 2012)
-# Install perl modules in the site branch (#280728)
-# - dev-perl/Cflow (#391391)
-# - dev-lang/eleven (#295118)
-# - net-im/silc-client (#294854)
-dev-perl/Cflow
-dev-lang/eleven
-net-im/silc-client
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (01 Jun 2012)
 # Mask unreleased, alpha, and beta

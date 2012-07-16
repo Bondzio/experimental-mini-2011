@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/httpd-php dev-lang/php[simplexml,xml,xsl,unicode] >=app-admin/webapp-config-1.50.15
 SLOT=3.0.15
 SRC_URI=mirror://sourceforge/phpsysinfo/phpsysinfo-3.0.15.tar.gz
-_eclasses_=webapp	30d951d5c98c4f31c7999ab4ba4806d1
+_eclasses_=webapp	de4b9c8a801861e4a56bdf422bceff8c
 _md5_=f0b20ae97c301700f85c3773639fc3e6
