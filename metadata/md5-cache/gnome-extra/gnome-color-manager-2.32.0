@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=>=dev-libs/glib-2.14:2 >=dev-libs/dbus-glib-0.73 >=dev-libs/libunique-1:1 >=gnome-base/gconf-2 >=gnome-base/gnome-desktop-2.14:2 media-gfx/sane-backends media-libs/lcms:0 media-libs/libcanberra[gtk] media-libs/tiff net-print/cups || ( sys-fs/udev[gudev] sys-fs/udev[extras] ) x11-libs/libX11 x11-libs/libXxf86vm x11-libs/libXrandr >=x11-libs/gtk+-2.14:2 x11-libs/libnotify >=x11-libs/vte-0.22:0 app-text/gnome-doc-utils >=dev-util/intltool-0.35 doc? ( >=dev-util/gtk-doc-1.9 ) >=sys-apps/sed-4
+DEPEND=>=dev-libs/glib-2.14:2 >=dev-libs/dbus-glib-0.73 >=dev-libs/libunique-1:1 >=gnome-base/gconf-2 >=gnome-base/gnome-desktop-2.14:2 media-gfx/sane-backends media-libs/lcms:0 media-libs/libcanberra[gtk] media-libs/tiff net-print/cups || ( sys-fs/udev[gudev] sys-fs/udev[extras] ) x11-libs/libX11 x11-libs/libXxf86vm x11-libs/libXrandr >=x11-libs/gtk+-2.14:2 x11-libs/libnotify >=x11-libs/vte-0.22:0 app-text/gnome-doc-utils app-text/scrollkeeper >=dev-util/intltool-0.35 doc? ( >=dev-util/gtk-doc-1.9 ) >=sys-apps/sed-4
 DESCRIPTION=Color profile manager for the GNOME desktop
 EAPI=3
 HOMEPAGE=http://projects.gnome.org/gnome-color-manager/
@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnome/sources/gnome-color-manager/2.32/gnome-color-manager-2.32.0.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=24d110a7cd249a28c61477787dde5ed6
+_md5_=f22c07bc9df755957568c2be06088550
