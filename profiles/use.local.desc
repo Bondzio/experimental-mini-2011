@@ -2761,7 +2761,6 @@ media-plugins/mythplugins:mythnetvision - Adds the ability to view netvision dev
 media-plugins/mythplugins:mythnews - Adds a news viewer within MythTV
 media-plugins/mythplugins:mythweather - Adds weather information within MythTV
 media-plugins/mythplugins:raw - Allows MythGallery to view photos saved in RAW format
-media-plugins/mythvideo:jamu - Use and configure the Just Another Metadata Utility by default
 media-plugins/vdr-burn:dvdarchive - DMH DVD - Archive
 media-plugins/vdr-burn:projectx - Enables support for media-video/projectx
 media-plugins/vdr-dvdconvert:projectx - Enable support for media-video/projectx
@@ -3071,9 +3070,7 @@ media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write 
 media-tv/mythtv:raop - Remote Audio Output Protocol (aka AirTunes/AirPlay)
 media-tv/mythtv:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-tv/mythtv:vdpau - Enable support of NVIDIA's VDPAU for video playback
-media-tv/mythtv:video_cards_nvidia - When combined with the xvmc USE flag, enables NVIDIA specific XvMC extension usage.
 media-tv/mythtv:xmltv - Pulls in the media-tv/xmltv TV listing grabbers for users not using Schedules Direct.
-media-tv/mythtv:xvmc - Instructs MythTV to use XvMC for its video output. By default, this will use the generic XvMC wrapper unless a specific video card driver is enabled via their VIDEO_CARDS USE flags.
 media-tv/tvbrowser:themes - Install extra theme packs
 media-tv/tvtime:alsa - Enables an EXPERIMENTAL ALSA patch by the Ubuntu maintainers. Several problems were reported, use with care.
 media-tv/xawtv:xext - Enable use of XFree extensions (DGA,VidMode,DPMS)

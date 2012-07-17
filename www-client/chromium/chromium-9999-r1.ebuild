@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.123 2012/07/11 03:30:56 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.124 2012/07/17 03:49:57 floppym Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.6"
@@ -53,7 +53,7 @@ RDEPEND="app-arch/bzip2
 	kerberos? ( virtual/krb5 )
 	selinux? ( sys-libs/libselinux )"
 DEPEND="${RDEPEND}
-	>=dev-lang/nacl-toolchain-newlib-0_p7311
+	>=dev-lang/nacl-toolchain-newlib-0_p9093
 	dev-lang/perl
 	dev-lang/yasm
 	dev-python/ply
