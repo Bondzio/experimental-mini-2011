@@ -11,4 +11,4 @@ REQUIRED_USE=player? ( game-engine ) linguas_en? ( nls ) linguas_ar? ( nls ) lin
 SLOT=0
 SRC_URI=http://download.blender.org/source/blender-2.63a.tar.gz http://dev.gentoo.org/~flameeyes/blender/blender-2.63a-patches-2.tar.bz2
 _eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	python	1a2be1ad82e0d83243e3808e4edb70c5	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=bd0c56d65ba9dd8df2b2592bfe721e71
+_md5_=0c6614f826cb4832442ec135fa9b06a6

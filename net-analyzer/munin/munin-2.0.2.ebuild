@@ -1,21 +1,25 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/munin/munin-2.0.2.ebuild,v 1.1 2012/07/16 16:15:11 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/munin/munin-2.0.2.ebuild,v 1.4 2012/07/17 15:27:05 flameeyes Exp $
 
 EAPI=4
 
-inherit eutils user versionator
+PATCHSET=7
+
+inherit eutils user versionator java-pkg-opt-2
 
 MY_P=${P/_/-}
 
 DESCRIPTION="Munin Server Monitoring Tool"
 HOMEPAGE="http://munin-monitoring.org/"
-SRC_URI="mirror://sourceforge/munin/${MY_P}.tar.gz"
+SRC_URI="mirror://sourceforge/munin/${MY_P}.tar.gz
+	http://dev.gentoo.org/~flameeyes/${PN}/${P}-patches-${PATCHSET}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~mips ~ppc ~x86"
-IUSE="asterisk doc irc java memcached minimal mysql postgres ssl test cgi"
+IUSE="asterisk irc java memcached minimal mysql postgres ssl test +cgi"
+REQUIRED_USE="cgi? ( !minimal )"
 
 # Upstream's listing of required modules is NOT correct!
 # Some of the postgres plugins use DBD::Pg, while others call psql directly.
@@ -24,7 +28,6 @@ DEPEND_COM="dev-lang/perl
 			sys-process/procps
 			asterisk? ( dev-perl/Net-Telnet )
 			irc? ( dev-perl/Net-IRC )
-			java? ( >=virtual/jdk-1.5 )
 			mysql? ( virtual/mysql
 					 dev-perl/Cache-Cache
 					 dev-perl/DBD-mysql )
@@ -48,12 +51,13 @@ DEPEND_COM="dev-lang/perl
 			virtual/perl-Text-Balanced
 			virtual/perl-Time-HiRes
 			!minimal? ( dev-perl/HTML-Template
-						net-analyzer/rrdtool[perl]
+						>=net-analyzer/rrdtool-1.3[perl]
 						dev-perl/Log-Log4perl )"
 
 # Keep this seperate, as previous versions have had other deps here
 DEPEND="${DEPEND_COM}
 	virtual/perl-Module-Build
+	java? ( >=virtual/jdk-1.5 )
 	test? (
 		dev-perl/Test-LongString
 		dev-perl/Test-Differences
@@ -62,30 +66,23 @@ DEPEND="${DEPEND_COM}
 		dev-perl/IO-stringy
 	)"
 RDEPEND="${DEPEND_COM}
-		!minimal? ( virtual/cron )"
+		java? ( >=virtual/jre-1.5 )
+		!minimal? (
+			virtual/cron
+			media-fonts/dejavu
+		)"
 
 S="${WORKDIR}/${MY_P}"
 
 pkg_setup() {
 	enewgroup munin
 	enewuser munin 177 -1 /var/lib/munin munin
+	java-pkg-opt-2_pkg_setup
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-1.4.7-munin-version-identifier.patch
-
-	# Don't build java plugins if not requested via USE.
-	if ! use java; then
-		sed -i -e 's: build-plugins-java : :' \
-			-e 's: install-plugins-java : :' Makefile || die
-	fi
-
-	# Bug 304447, fix for gentoo PS location
-	sed -i -e 's,/usr/bin/ps,/bin/ps,g' \
-		"${S}"/plugins/node.d/ifx_concurrent_sessions_.in || die
-
-	# bug 367785, cleanup make output by disabling HP-UX cruft
-	sed -i "/plugins\/\*\.adv/d" Makefile || die
+	epatch "${WORKDIR}"/patches/*.patch
+	java-pkg-opt-2_src_prepare
 }
 
 src_configure() {
@@ -95,7 +92,7 @@ src_configure() {
 	cat - >> "${S}"/Makefile.config <<EOF
 PREFIX=\$(DESTDIR)/usr
 CONFDIR=\$(DESTDIR)/etc/munin
-DOCDIR=\$(DESTDIR)/usr/share/doc/${PF}
+DOCDIR=${T}/useless/doc
 MANDIR=\$(PREFIX)/share/man
 LIBDIR=\$(PREFIX)/libexec/munin
 HTMLDIR=\$(DESTDIR)/var/www/localhost/htdocs/munin
@@ -103,13 +100,9 @@ CGIDIR=${cgidir}
 DBDIR=\$(DESTDIR)/var/lib/munin
 LOGDIR=\$(DESTDIR)/var/log/munin
 PERLSITELIB=$(perl -V:vendorlib | cut -d"'" -f2)
+JCVALID=$(usex java yes no)
 EOF
 }
-
-src_compile() {
-	emake default $(use doc && echo build-doc)
-}
-
 src_install() {
 	local dirs
 	dirs="/var/log/munin/ /var/lib/munin/"
@@ -120,24 +113,35 @@ src_install() {
 	keepdir ${dirs}
 
 	local install_targets="install-common-prime install-node-prime install-plugins-prime"
+	use java && install_targets+=" install-plugins-java"
 	use minimal || install_targets=install
 
-	emake DESTDIR="${D}" ${install_targets}
+	# parallel install doesn't work and it's also pointless to have this
+	# run in parallel for now (because it uses internal loops).
+	emake -j1 DESTDIR="${D}" ${install_targets}
 	fowners munin:munin ${dirs}
+
+	# remove font files so that we don't have to keep them around
+	rm "${D}"/usr/libexec/${PN}/*.ttf || die
 
 	insinto /etc/munin/plugin-conf.d/
 	newins "${FILESDIR}"/${PN}-1.3.2-plugins.conf munin-node
 
 	# make sure we've got everything in the correct directory
 	insinto /var/lib/munin
-	newins "${FILESDIR}"/${PN}-2.0_rc-crontab crontab
+	newins "${FILESDIR}"/${PN}-1.3.3-crontab crontab
 	newinitd "${FILESDIR}"/munin-node_init.d_2.0.2 munin-node
 	newconfd "${FILESDIR}"/munin-node_conf.d_1.4.6-r2 munin-node
 	dodoc README ChangeLog INSTALL build/resources/apache*
 
 	# bug 254968
 	insinto /etc/logrotate.d/
-	newins "${FILESDIR}"/logrotate.d-munin munin || die
+	newins "${FILESDIR}"/logrotate.d-munin munin
+
+	if ! use minimal; then
+		exeinto /etc/local.d/
+		newexe "${FILESDIR}"/localstart-munin 50munin.start
+	fi
 }
 
 pkg_config() {

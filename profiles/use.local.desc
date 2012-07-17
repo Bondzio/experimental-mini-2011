@@ -1314,7 +1314,9 @@ dev-libs/eina:mempool-buddy - Compile "buddy" memory pool allocation.
 dev-libs/eina:mempool-chained - Compile "chained-pool" memory pool allocation.
 dev-libs/eina:mempool-fixed-bitmap - Compile "fixed-bitmap" memory pool allocation.
 dev-libs/eina:mempool-pass-through - Compile "pass-through" (system's malloc) memory pool allocation.
-dev-libs/elfutils:lzma - Support automatic decompression of LZMA-compressed files and kernel images.
+dev-libs/elfutils:lzma - Support automatic decompression of LZMA-compressed files and kernel images
+dev-libs/elfutils:threads - Build the libraries with thread safe support
+dev-libs/elfutils:utils - Install command-line utilities (all the eu-* programs)
 dev-libs/fcgi:html - Install HTML documentation
 dev-libs/ferrisloki:stlport - Include support for dev-libs/STLport
 dev-libs/folks:socialweb - Load web service contacts using net-libs/libsocialweb
@@ -3467,10 +3469,14 @@ net-analyzer/linkchecker:bookmarks - Mozilla Bookmark parsing
 net-analyzer/linkchecker:login - login form submission
 net-analyzer/linkchecker:syntax-check - HTML/CSS syntax checks
 net-analyzer/metasploit:gui - Enable Java GUI
-net-analyzer/munin:asterisk - installs deps for monitoring Asterisk
-net-analyzer/munin:irc - installs deps for monitoring IRC
-net-analyzer/munin:memcached - installs deps for monitoring memcached
-net-analyzer/munin:minimal - installs only the munin-node, applicable if the host is not the munin master installation"
+net-analyzer/munin:asterisk - Install the packages required for monitoring Asterisk. Disabling the flag does not remove any plugin files.
+net-analyzer/munin:cgi - Install the CGI-compatible scripts for on-the-fly generation of web pages and graphs. This is only meaningful if the minimal USE flag is disabled.
+net-analyzer/munin:irc - Install the packages required for monitoring IRC. Disabling the flag does not remove any plugin files.
+net-analyzer/munin:java - Build the Java-based plugins to monitor JMX-compatible applications. Disabling the flag removes the jmx monitoring plugins.
+net-analyzer/munin:memcached - Install the packages required for memcached monitoring. Disabling the flag does not remove any plugin files.
+net-analyzer/munin:minimal - Only install munin-node and its plugins. This excludes the scripts to generate the web pages and the graphs.
+net-analyzer/munin:mysql - Install the packages required for monitoring MySQL. Disabling the flag does not remove any plugin files.
+net-analyzer/munin:postgres - Install the packages required for monitoring PostgreSQL. Disabling the flag does not remove any plugin files.
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
 net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments

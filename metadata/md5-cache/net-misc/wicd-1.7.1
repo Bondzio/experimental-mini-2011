@@ -2,7 +2,7 @@ DEFINED_PHASES=compile configure install postinst postrm prepare setup
 DEPEND==dev-lang/python-2* =dev-lang/python-2*[ncurses?,xml] !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
 DESCRIPTION=A lightweight wired and wireless network manager for Linux
 EAPI=3
-HOMEPAGE=http://wicd.sourceforge.net/
+HOMEPAGE=https://launchpad.net/wicd
 IUSE=X +gtk ioctl libnotify mac4lin ncurses nls +pm-utils
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
@@ -10,4 +10,4 @@ RDEPEND=dev-python/dbus-python X? ( gtk? ( dev-python/pygtk || ( x11-misc/ktsuss
 SLOT=0
 SRC_URI=http://launchpad.net/wicd/1.7/1.7.1/+download/wicd-1.7.1.tar.gz mac4lin? ( http://dev.gentoo.org/~anarchy/dist/wicd-mac4lin-icons.tar.xz )
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=18f8c3aedafc826b99e02b67ef58c489
+_md5_=f67535c7e71083fdc8f81a10cbaed453

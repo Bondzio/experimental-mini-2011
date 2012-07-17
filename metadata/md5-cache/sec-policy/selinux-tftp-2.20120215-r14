@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst prepare unpack
+DEPEND=>=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.20120215-r14 sys-devel/m4 >=sys-apps/checkpolicy-2.0.21
+DESCRIPTION=SELinux policy for tftp
+EAPI=4
+HOMEPAGE=http://www.gentoo.org/proj/en/hardened/selinux/
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.20120215-r14
+SLOT=0
+SRC_URI=http://oss.tresys.com/files/refpolicy/refpolicy-2.20120215.tar.bz2 http://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20120215-r14.tar.bz2
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	selinux-policy-2	0ead53370a365f78dccc975faedbd8af	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=9886534ab40708fa80f9c6f53b98a705

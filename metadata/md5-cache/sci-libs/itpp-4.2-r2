@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=blas? ( virtual/blas lapack? ( virtual/lapack ) ) !minimal? ( fftw? ( >=sci-libs/fftw-3 ) ) >=sys-devel/automake-1.11.1 blas? ( virtual/pkgconfig ) doc? ( app-doc/doxygen virtual/latex-base ) lapack? ( virtual/pkgconfig ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESCRIPTION=C++ library of mathematical, signal processing and communication
+EAPI=4
+HOMEPAGE=http://itpp.sourceforge.net/
+IUSE=blas debug doc fftw lapack minimal static-libs
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=GPL-3
+RDEPEND=blas? ( virtual/blas lapack? ( virtual/lapack ) ) !minimal? ( fftw? ( >=sci-libs/fftw-3 ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/itpp/itpp-4.2.tar.bz2
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	autotools-utils	cfb1126efe81254030227216aa71f32c	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=c2b89b663f76c38415e33b48374523a7
