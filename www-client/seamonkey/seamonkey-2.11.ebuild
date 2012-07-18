@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/seamonkey-2.11.ebuild,v 1.1 2012/07/17 11:54:38 polynomial-c Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/seamonkey-2.11.ebuild,v 1.3 2012/07/18 00:25:59 anarchy Exp $
 
 EAPI="3"
 WANT_AUTOCONF="2.1"
