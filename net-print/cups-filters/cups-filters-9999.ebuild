@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-print/cups-filters/cups-filters-9999.ebuild,v 1.10 2012/06/26 20:19:09 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-print/cups-filters/cups-filters-9999.ebuild,v 1.12 2012/07/18 22:34:24 dilfridge Exp $
 
 EAPI=4
 
@@ -8,12 +8,12 @@ GENTOO_DEPEND_ON_PERL=no
 
 inherit base perl-module
 
-if [[ "${PV}"=="9999" ]] ; then
+if [[ "${PV}" == "9999" ]] ; then
 	inherit autotools bzr
 	EBZR_REPO_URI="http://bzr.linuxfoundation.org/openprinting/cups-filters"
 	KEYWORDS=""
 else
-	SRC_URI="http://www.openprinting.org/download/${PN}/${P}.tar.gz"
+	SRC_URI="http://www.openprinting.org/download/${PN}/${P}.tar.xz"
 	KEYWORDS=""
 fi
 DESCRIPTION="Cups PDF filters"
@@ -37,6 +37,8 @@ RDEPEND="
 	tiff? ( media-libs/tiff )
 "
 DEPEND="${RDEPEND}"
+
+PATCHES=( "${FILESDIR}/${PN}-1.0.19-poppler020.patch" )
 
 src_prepare() {
 	base_src_prepare
