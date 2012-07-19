@@ -10,5 +10,5 @@ RDEPEND=>=dev-lang/ocaml-3.10[ocamlopt?] dev-ml/sexplib emacs? ( virtual/emacs )
 REQUIRED_USE=test? ( ocaml python )
 SLOT=0
 SRC_URI=http://coccinelle.lip6.fr/distrib/coccinelle-1.0.0-rc12.tgz
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	elisp-common	230b4edb497ef94e18cc7f0712daa862	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=27751970d63d234bbbaf85ce621fb37b

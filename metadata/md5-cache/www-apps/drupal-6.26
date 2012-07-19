@@ -10,5 +10,5 @@ RDEPEND=virtual/httpd-php dev-lang/php[gd,pdo,postgres?,xml] mysql? ( || ( dev-l
 REQUIRED_USE=|| ( mysql postgres )
 SLOT=6.26
 SRC_URI=http://drupal.org/files/projects/drupal-6.26.tar.gz
-_eclasses_=webapp	de4b9c8a801861e4a56bdf422bceff8c
+_eclasses_=webapp	25b9b1696f5e698711f47d45c3d45e3e
 _md5_=dcb78d3de7f3f174db23d1e8cda54d56

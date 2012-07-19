@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13977 2012/07/18 00:19:32 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.13979 2012/07/18 14:13:44 sera Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,12 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Ralph Sennhauser <sera@gentoo.org> (18 Jul 2012)
+# Unmaintained, multiple vulnarabilities. #351626
+# A more recent source build maintained by the community is available in the
+# seden overlay. A more recent binary is available in the java-overlay.
+<=dev-util/eclipse-sdk-3.5.1-r1
 
 # Bernard Cafarelli <voyageur@gentoo.org> (16 Jul 2012)
 # No upstream development since 2008
@@ -76,12 +82,6 @@ app-laptop/omnibook
 # Eray Aslan <eras@gentoo.org> (13 Jul 2012)
 # Mask experimental patch for linking with gold
 =net-mail/dovecot-2.1.8-r1
-
-# Tony Vroon <chainsaw@gentoo.org> (11 Jul 2012)
-# This segfaults repeatedly in actual use for me, and I can not in good
-# conscience allow this to surprise others. Unmask only to help trace
-# where the fault is, not to run on live systems.
-=net-misc/asterisk-10.6.0
 
 # Mike Gilbert <floppym@gentoo.org> (09 Jul 2012)
 # Dev channel releases are only for people who are developers or want more

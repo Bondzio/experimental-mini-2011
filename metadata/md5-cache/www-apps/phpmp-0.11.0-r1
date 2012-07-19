@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/httpd-php || ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) >=app-admin/webapp-config-1.50.15
 SLOT=0.11.0-r1
 SRC_URI=mirror://sourceforge/musicpd/phpMp-0.11.0.tar.gz
-_eclasses_=webapp	de4b9c8a801861e4a56bdf422bceff8c
+_eclasses_=webapp	25b9b1696f5e698711f47d45c3d45e3e
 _md5_=1c6c73582b7591f025c67e5ecb3c1867
