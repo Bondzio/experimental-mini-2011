@@ -1,3 +1,7 @@
+# Copyright 2008-2012 Funtoo Technologies
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
 EAPI=3
 
 inherit eutils games cmake-utils git
@@ -72,4 +76,3 @@ pkg_preinst() {
 	chown minetest:minetest ${D}/var/lib/minetest
 	cp "${FILESDIR}"/minetestserver.init ${D}/etc/init.d/minetestserver
 }
-

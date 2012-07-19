@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=x11-libs/qt-gui-4.5:4[qt3support] dev-libs/openssl kde-base/kdelibs x11-libs/qt-assistant x11-libs/qt-webkit >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=>=x11-libs/qt-gui-4.5:4[qt3support] dev-libs/openssl kde-base/kdelibs x11-libs/qt-assistant:4 x11-libs/qt-webkit:4 >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=A BBS client for Linux
 EAPI=3
 HOMEPAGE=http://www.qterm.org/
@@ -9,4 +9,4 @@ RDEPEND=>=x11-libs/qt-gui-4.5:4[qt3support] dev-libs/openssl
 SLOT=0
 SRC_URI=mirror://sourceforge/qterm/qterm-0.5.12.tar.bz2
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=eb2efb9d04916393b187de8413380c2e
+_md5_=707450c4de6d3044b819cd347f700116

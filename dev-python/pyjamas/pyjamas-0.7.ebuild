@@ -1,4 +1,4 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 2008-2012 Funtoo Technologies
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -58,4 +58,3 @@ pkg_postinst() {
 	PYTHON_MODNAME="pyjd" distutils_pkg_postinst
 	PYTHON_MODNAME="pyjs" distutils_pkg_postinst
 }
-

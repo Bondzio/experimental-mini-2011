@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-biology/primer3/primer3-2.3.0.ebuild,v 1.2 2012/03/07 19:40:07 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/primer3/primer3-2.3.0.ebuild,v 1.3 2012/07/19 12:21:52 jlec Exp $
 
-EAPI="3"
+EAPI=4
 
 inherit toolchain-funcs
 
@@ -31,18 +31,17 @@ src_prepare() {
 }
 
 src_compile() {
-	emake -C src || die
+	emake -C src
 }
 
 src_test () {
-	emake -C test || die
+	emake -C test
 }
 
 src_install () {
-	dobin src/{long_seq_tm_test,ntdpal,oligotm,primer3_core} || die \
-		"Could not install program."
-	dodoc src/release_notes.txt example primer3_manual.htm || die \
-		"Could not install documentation."
+	dobin src/{long_seq_tm_test,ntdpal,oligotm,primer3_core}
+	dodoc src/release_notes.txt example
 	insinto /opt/primer3_config
-	doins -r src/primer3_config/* primer3*settings.txt || die
+	doins -r src/primer3_config/* primer3*settings.txt
+	dohtml primer3_manual.htm
 }

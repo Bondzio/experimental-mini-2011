@@ -10,4 +10,4 @@ RDEPEND=jpeg? ( virtual/jpeg ) png? ( media-libs/libpng ) sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/crayzedsgui/SILLY-0.1.0.tar.gz doc? ( mirror://sourceforge/crayzedsgui/SILLY-DOCS-0.1.0.tar.gz )
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=8729821f39a7dfaf5cd21c2b6d8a3aa0
+_md5_=4665003c422416ecbc9b48ccdb21dd92

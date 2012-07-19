@@ -7,4 +7,4 @@ LICENSE=GPL-3
 RDEPEND=app-shells/bash zsh? ( app-shells/zsh ) dev-vcs/gitflow
 SLOT=0
 SRC_URI=https://github.com/bobthecow/git-flow-completion/tarball/0.4.1.0 -> git-flow-completion-0.4.1.0.tar.gz
-_md5_=9abd3c3907e5acbd70e582046a845389
+_md5_=bd9900f4a5a201a899650ee8d8d92788

@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl dev-perl/DelimMatch xml? ( dev-perl/Data-DumpXML )
 SLOT=0
 SRC_URI=http://damien.krotkine.com/libconf/dist/perl-Libconf-0.40.00.tar.bz2
-_md5_=25297286f19beb239897cd21ad14e829
+_md5_=3ef372e942fbb2dfbca4f99817cab1bb

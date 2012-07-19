@@ -1,4 +1,8 @@
-EAPI=2
+# Copyright 2008-2012 Funtoo Technologies
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+EAPI="2"
 
 inherit eutils autotools
 
@@ -74,4 +78,3 @@ pkg_postinst() {
 	chown ${PN}:${PN} /var/lib/${PN}
 	chown ${PN}:${PN} /var/log/${PN}
 }
-

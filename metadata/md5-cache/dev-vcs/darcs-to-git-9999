@@ -8,4 +8,4 @@ LICENSE=MIT
 RDEPEND=dev-lang/ruby dev-vcs/git dev-vcs/darcs
 SLOT=0
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6ccbc43039bd3d0ab4e4dd0d3ceec592
+_md5_=1f2671399c7ceee084e140b81c5dc81b
