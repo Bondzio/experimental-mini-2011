@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/glib-2.26 dev-libs/dbus-glib dev-libs/libxml2 gtk? ( >=x11-li
 SLOT=0
 SRC_URI=http://launchpad.net/dbusmenu/0.5/0.5.1/+download/libdbusmenu-0.5.1.tar.gz
 _eclasses_=virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=89683b4cac63a887d59df7cc6e6ca4ca
+_md5_=f56c827a1a9e41f2e2d3e6aa1c326bef

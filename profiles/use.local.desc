@@ -1834,7 +1834,6 @@ dev-vcs/subversion:webdav-serf - Enable WebDAV support using net-libs/serf
 dev-vcs/svk:log4p - Enable perl logger support
 dev-vcs/svk:pager - Enable perl pager selection support
 dev-vcs/svk:patch - Enable patch creation, import support
-dev-vcs/tortoisehg:nautilus - Integrate with gnome-base/nautilus file manager
 games-action/abuse:demo - Use the demo data instead of the full game
 games-action/abuse:levels - Install user-created levels (fRaBs)
 games-action/abuse:sound - Install optional sound data
