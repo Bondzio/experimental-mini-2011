@@ -13,7 +13,7 @@ SRC_URI="http://fontconfig.org/release/${P}.tar.gz"
 LICENSE="MIT"
 SLOT="1.0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd"
-IUSE="doc lcdfilter"
+IUSE="doc +lcdfilter"
 
 # Purposefully dropped the xml USE flag and libxml2 support.  Expat is the
 # default and used by every distro.  See bug #283191.

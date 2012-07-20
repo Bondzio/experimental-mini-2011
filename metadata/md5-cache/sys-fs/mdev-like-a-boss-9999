@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=dev-vcs/git
+DESCRIPTION=Config and scripts mdev-like-a-boss
+EAPI=4
+HOMEPAGE=https://github.com/slashbeast/mdev-like-a-boss
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+SLOT=0
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_md5_=41f52cd0f24a5d12a36b361e3140140f
