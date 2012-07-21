@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test unpack
-DEPEND=emacs? ( virtual/emacs ) test? ( ruby_targets_ruby18? ( >=dev-ruby/coderay-1.0.0[ruby_targets_ruby18] >=dev-ruby/ruby-gdkpixbuf2-0.15.0[ruby_targets_ruby18] dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/ruby-poppler[ruby_targets_ruby18] >=dev-ruby/ruby-rsvg-1.0.3[ruby_targets_ruby18] dev-ruby/rdtool[ruby_targets_ruby18,emacs?] dev-ruby/haml[ruby_targets_ruby18] markdown? ( dev-ruby/kramdown[ruby_targets_ruby18] ) dev-ruby/sinatra[ruby_targets_ruby18] enscript? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) emacs? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
+DEPEND=emacs? ( virtual/emacs ) ruby_targets_ruby18? ( emacs? ( dev-ruby/rdtool[ruby_targets_ruby18,emacs] ) ) test? ( ruby_targets_ruby18? ( >=dev-ruby/coderay-1.0.0[ruby_targets_ruby18] >=dev-ruby/ruby-gdkpixbuf2-0.15.0[ruby_targets_ruby18] dev-ruby/ruby-gtk2[ruby_targets_ruby18] dev-ruby/ruby-poppler[ruby_targets_ruby18] >=dev-ruby/ruby-rsvg-1.0.3[ruby_targets_ruby18] dev-ruby/rdtool[ruby_targets_ruby18,emacs?] dev-ruby/haml[ruby_targets_ruby18] markdown? ( dev-ruby/kramdown[ruby_targets_ruby18] ) dev-ruby/sinatra[ruby_targets_ruby18] enscript? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) emacs? ( dev-ruby/nokogiri[ruby_targets_ruby18] ) ) ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
 DESCRIPTION=An application to do presentation with RD document
 EAPI=4
 HOMEPAGE=http://rabbit-shockers.org/
@@ -10,5 +10,5 @@ RDEPEND=emacs? ( virtual/emacs ) nls? ( dev-ruby/ruby-gettext ) postscript? ( ap
 REQUIRED_USE=|| ( ruby_targets_ruby18 )
 SLOT=0
 SRC_URI=http://rabbit-shockers.org/download/rabbit-1.0.8.tar.gz
-_eclasses_=elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	9f370f4fc88a58204a8d375ce53fe08c	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=1deeab65ab0f628d414d1c350b3d625a
+_eclasses_=elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	9f370f4fc88a58204a8d375ce53fe08c	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=33981142e40ecf022a22a05a6c3690d2

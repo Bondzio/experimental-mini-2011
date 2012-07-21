@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-video/vdr-1.2.0 >=dev-perl/DateManip-5.42a-r1 >=virtual/perl-IO-Compress-1.22 >=dev-perl/Archive-Zip-1.14 >=dev-perl/Text-Iconv-1.4 >=dev-perl/libwww-perl-5.69-r2 >=dev-perl/HTML-Parser-3.34-r1 >=dev-perl/HTML-Scrubber-0.08 >=dev-perl/HTML-TableContentParser-0.13 >=dev-perl/XML-Simple-DTDReader-0.03 >=media-gfx/imagemagick-6.2.2.3 dev-perl/DateManip dev-perl/XML-Simple-DTDReader
 SLOT=0
 SRC_URI=http://steckrue.be/download/tvmovie2vdr-0.5.12.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=7796b061ee442bb5468742c7fd036c50

@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=>=media-libs/libpng-1.4:0 sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://sourceforge/pmt/pngcrush-1.7.25-nolib.tar.xz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=7a5c96dff7ad96c4ac622592f01e188a

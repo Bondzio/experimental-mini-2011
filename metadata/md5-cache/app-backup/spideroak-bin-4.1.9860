@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/glib-2.12.0 dbus? ( sys-apps/dbus ) >=sys-devel/gcc-4 >=sys-l
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=x86? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=i386&revision=9860 -> spideroak-bin-4.1.9860_x86.deb ) amd64? ( https://spideroak.com/directdownload?platform=ubuntulucid&arch=x86_64&revision=9860 -> spideroak-bin-4.1.9860_amd64.deb )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7182b2a61ae70409788c318b2bd0d043

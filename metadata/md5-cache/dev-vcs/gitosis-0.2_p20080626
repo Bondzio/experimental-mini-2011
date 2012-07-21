@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-vcs/git-1.5.3.6 >=dev-python/setuptools-0.6_rc5 !dev-vcs/gitosis-gentoo =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/gitosis.git-20080626-72c754b2f03a139122dc4a3877b05704fa88f751.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=bd3e5c2f8cab27368572a08979454aeb

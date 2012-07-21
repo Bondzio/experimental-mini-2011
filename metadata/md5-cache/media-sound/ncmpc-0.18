@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.12:2 >=media-libs/libmpdclient-2.3 sys-libs/ncurses lirc? ( app-misc/lirc )
 SLOT=0
 SRC_URI=http://downloads.sourceforge.net/musicpd/ncmpc-0.18.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=32e92250c167b8b3a70ab151b303cfd4

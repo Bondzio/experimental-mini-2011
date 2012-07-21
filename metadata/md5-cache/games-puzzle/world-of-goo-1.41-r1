@@ -8,5 +8,5 @@ RDEPEND=media-libs/libsdl[audio,opengl,video] media-libs/sdl-mixer[vorbis] sys-l
 RESTRICT=fetch strip
 SLOT=0
 SRC_URI=WorldOfGooSetup.1.41.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=28ea1be36e2a25852cfc7d6e8f729d88

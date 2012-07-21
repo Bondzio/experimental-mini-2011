@@ -7,5 +7,5 @@ LICENSE=PHP-2.02
 RDEPEND=dev-php/PEAR-XML_Parser dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/XML_RSS-0.9.2.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=0204a8eb77fb90e4537ada4ffb87a72a

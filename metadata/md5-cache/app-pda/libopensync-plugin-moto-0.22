@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=~app-pda/libopensync-0.22 ~app-pda/libopensync-plugin-python-0.22 dev-python/python-dateutil bluetooth? ( dev-python/pybluez ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://www.opensync.org/download/releases/0.22/libopensync-plugin-moto-0.22.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=f62b154183eba420296bf5da9a718551

@@ -1,12 +1,12 @@
 DEFINED_PHASES=configure install postinst postrm prepare unpack
-DEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.22.1:2 >=lxde-base/menu-cache-0.3.2 >=x11-libs/libfm-0.1.15 >=dev-util/intltool-0.40 virtual/pkgconfig sys-devel/gettext || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
+DEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.22.1:2 >=lxde-base/menu-cache-0.3.2 >=x11-libs/libfm-9999 >=dev-util/intltool-0.40 virtual/pkgconfig sys-devel/gettext || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/git
 DESCRIPTION=Fast lightweight tabbed filemanager
 EAPI=3
 HOMEPAGE=http://pcmanfm.sourceforge.net/
 IUSE=debug
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.22.1:2 >=lxde-base/menu-cache-0.3.2 >=x11-libs/libfm-0.1.15 virtual/eject virtual/freedesktop-icon-theme
+RDEPEND=>=dev-libs/glib-2.18:2 >=x11-libs/gtk+-2.22.1:2 >=lxde-base/menu-cache-0.3.2 >=x11-libs/libfm-9999 virtual/eject virtual/freedesktop-icon-theme
 RESTRICT=test
 SLOT=0
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
-_md5_=88abe68afb0fa89bf0abeb0e547166e1
+_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_md5_=1ec9dc0821f74b1a216a3cf189896bd0

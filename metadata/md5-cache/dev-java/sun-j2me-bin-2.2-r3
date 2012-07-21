@@ -9,5 +9,5 @@ RDEPEND=dev-java/sun-jaf dev-java/sun-javamail dev-java/xsdlib >=virtual/jdk-1.4
 RESTRICT=fetch
 SLOT=0
 SRC_URI=j2me_wireless_toolkit-2_2-linux-i386.bin j2me_wireless_toolkit-2_2-update_2-linux.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-pkg-2	f12d7295133e77160a42c2f1ec69a43d	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=eb6d409bac702a478051eaf933440af9

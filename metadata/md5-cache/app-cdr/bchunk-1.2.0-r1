@@ -5,5 +5,5 @@ KEYWORDS=amd64 ppc ~sparc x86 ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://he.fi/bchunk/bchunk-1.2.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=0f52d385d912ad1fec7c68833cae13d4

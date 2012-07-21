@@ -10,5 +10,5 @@ RDEPEND=>=dev-util/nvidia-cuda-toolkit-3.0_beta1 examples? ( !emulation? ( >=x11
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=http://developer.download.nvidia.com/compute/cuda/3_0-Beta1/sdk/gpucomputingsdk_3.0-beta1_linux.run
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	unpacker	e1b907c6a72dc4c9025109f3e84129c7
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	unpacker	e1b907c6a72dc4c9025109f3e84129c7
 _md5_=b2b340f096a74da7c11b7850b115d226

@@ -6,5 +6,5 @@ KEYWORDS=~amd64 ~arm ~ia64 ~mips ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=mirror://sourceforge/sevenzip/lzma920.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=b37d0722415dd96d3ffb8560598fe57d

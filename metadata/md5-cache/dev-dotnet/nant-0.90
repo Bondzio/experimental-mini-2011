@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/mono-2.0
 SLOT=0
 SRC_URI=mirror://sourceforge/nant/nant-0.90-src.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=5829762601b077b4a96e8bc1698135e2

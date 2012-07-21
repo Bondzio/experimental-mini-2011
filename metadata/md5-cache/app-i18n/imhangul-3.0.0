@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=>=app-i18n/libhangul-0.0.12 x11-libs/gtk+:3 virtual/libintl
 SLOT=3
 SRC_URI=http://kldp.net/frs/download.php/5925/imhangul-3.0.0.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=c8d9cff51d0150a68934a861a334f17b

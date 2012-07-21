@@ -9,5 +9,5 @@ RDEPEND=dev-lang/perl
 RESTRICT=strip
 SLOT=0
 SRC_URI=mirror://kernel/linux/libs/klibc/klibc-1.5.12.tar.bz2 mirror://kernel/linux/libs/klibc/Testing/klibc-1.5.12.tar.bz2 mirror://kernel/linux/kernel/v2.6/patch-2.6.24-rc7.bz2 mirror://kernel/linux/kernel/v2.6/testing/linux-2.6.23.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=80a164891a846597c75b79a4fae5200f

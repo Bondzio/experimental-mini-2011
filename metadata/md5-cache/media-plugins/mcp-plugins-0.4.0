@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/ladspa-sdk
 SLOT=0
 SRC_URI=http://www.kokkinizita.net/linuxaudio/downloads/MCP-plugins-0.4.0.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=8321fbecf6502d10d3d263650f888571

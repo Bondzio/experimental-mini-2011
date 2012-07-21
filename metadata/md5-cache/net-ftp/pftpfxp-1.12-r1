@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6c )
 SLOT=0
 SRC_URI=http://www.geekspot.nl/wp-content/uploads/2011/03/pftp-shit.v.1.12.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=04a968997ad398a74e7f0ba0cc16bdc7

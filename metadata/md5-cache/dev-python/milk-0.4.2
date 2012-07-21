@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/setuptools test? ( dev-python/milksets sci-libs/scipy ) dev-lang/python
+DEPEND=dev-python/setuptools test? ( dev-python/milksets sci-libs/scipy ) =dev-lang/python-2*
 DESCRIPTION=Machine learning toolkit in Python
 EAPI=4
 HOMEPAGE=http://luispedro.org/software/milk
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=dev-python/numpy dev-lang/python
+RDEPEND=dev-python/numpy =dev-lang/python-2*
 SLOT=0
-SRC_URI=mirror://pypi/m/milk/milk-0.4.2.tar.gz
+SRC_URI=http://dev.gentoo.org/~jlec/distfiles/milk-0.4.2.tar.xz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=5c429abe8585a45ee25a2a14e2f074bf
+_md5_=6ea59eb430bbcb0949f24cdcd89c55c8

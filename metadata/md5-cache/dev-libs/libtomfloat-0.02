@@ -8,5 +8,5 @@ LICENSE=WTFPL-2
 RDEPEND=dev-libs/libtommath
 SLOT=0
 SRC_URI=http://libtom.org/files/ltf-0.02.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=61e36cbf74d26093eebcf331bfe7380b

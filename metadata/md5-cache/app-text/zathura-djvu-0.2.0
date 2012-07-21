@@ -8,5 +8,5 @@ LICENSE=ZLIB
 RDEPEND=>=app-text/djvu-3.5.24-r1 >=app-text/zathura-0.2.0 >=dev-libs/girara-0.1.3:2 >=dev-libs/glib-2 x11-libs/cairo
 SLOT=0
 SRC_URI=http://pwmt.org/projects/zathura/plugins/download/zathura-djvu-0.2.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	e575dd4d4682fc3539829c52d8382856
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=80a0139f830984dbd2a2f869e1de0301
