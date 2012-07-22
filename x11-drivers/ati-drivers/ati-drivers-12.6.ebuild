@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/ati-drivers/ati-drivers-12.6.ebuild,v 1.1 2012/06/30 09:17:19 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/ati-drivers/ati-drivers-12.6.ebuild,v 1.2 2012/07/21 21:45:01 chithanh Exp $
 
 EAPI=4
 
@@ -18,7 +18,7 @@ else
 	SRC_URI="http://www2.ati.com/drivers/hotfix/catalyst_12.6_hotfixes/amd-driver-installer-8.98-x86.x86_64.zip"
 	FOLDER_PREFIX="common/"
 fi
-IUSE="debug +modules multilib pax_kernel qt4 static-libs"
+IUSE="debug +modules multilib qt4 static-libs"
 
 LICENSE="AMD GPL-2 QPL-1.0 as-is"
 KEYWORDS="amd64 x86"
@@ -330,8 +330,8 @@ src_prepare() {
 	# add function to detect default state.
 	epatch "${FILESDIR}"/ati-powermode-opt-path-2.patch
 
-	# fix needed for at least hardened-sources, see bug #392753
-	use pax_kernel && epatch "${FILESDIR}"/ati-drivers-12.2-redefine-WARN.patch
+	#fixes bug #420751
+	epatch "${FILESDIR}"/ati-drivers-do_mmap.patch
 
 	# see http://ati.cchtml.com/show_bug.cgi?id=495
 	epatch "${FILESDIR}"/ati-drivers-old_rsp.patch

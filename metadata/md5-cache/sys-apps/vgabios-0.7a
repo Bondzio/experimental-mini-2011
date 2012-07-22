@@ -1,13 +1,12 @@
 DEFINED_PHASES=compile install prepare
-DEPEND=sys-devel/dev86
+DEPEND=amd64? ( sys-devel/dev86 ) x86? ( sys-devel/dev86 )
 DESCRIPTION=VGA BIOS implementation
 EAPI=4
 HOMEPAGE=http://www.nongnu.org/vgabios/
 IUSE=debug
-KEYWORDS=-*
+KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-2.1
-RDEPEND=!app-emulation/qemu !<=app-emulation/qemu-kvm-1.0
 SLOT=0
 SRC_URI=http://savannah.gnu.org/download/vgabios/vgabios-0.7a.tgz http://dev.gentoo.org/~cardoe/distfiles/vgabios-0.7a-fixes-1.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=f08042f20ba4254b354bba12e64a97ab
+_md5_=b79b72e89fe99cc17227f210fd003922

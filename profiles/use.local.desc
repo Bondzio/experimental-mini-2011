@@ -3067,6 +3067,7 @@ media-tv/mythtv:cec - Allows you to control CEC enabled TVs via HDMI. Currently 
 media-tv/mythtv:crystalhd - Allows you to utilize a Broadcom CrystalHD hardware based video decoder to improve the performance of video decode.
 media-tv/mythtv:debug - Instructs Qt to use the 'debug' target instead of 'release' target. If your MythTV is crashing or you need a backtrace, you need to compile it with this option otherwise the debugging data is useless.
 media-tv/mythtv:dvb - Enables support for Linux DVB cards. These include all cards that work with digital signals such as ATSC, DVB-T, DVB-C, and DVB-S, QAM-64, and QAM-256.
+media-tv/mythtv:egl - Support EGL video output.
 media-tv/mythtv:fftw - Support visualizations via sci-libs/fftw
 media-tv/mythtv:hls - HTTP Live Streaming support
 media-tv/mythtv:ieee1394 - Allows MythTV to communicate and use Firewire enabled Cable boxes. These are typically found in the United States, where such support is required by law. This will also install Firewire test programs and external channel changers if the internal changer does not work.
