@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst prepare setup unpack
-DEPEND=~sci-physics/root-5.34.00[X,doc,graphviz,htmldoc,opengl] virtual/pkgconfig test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=~sci-physics/root-5.34.01[X,doc,graphviz,htmldoc,opengl] virtual/pkgconfig test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=API documentation for ROOT (An Object-Oriented Data Analysis Framework)
 EAPI=4
 HOMEPAGE=http://root.cern.ch/
@@ -7,6 +7,6 @@ IUSE=test
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=LGPL-2.1
 SLOT=0
-SRC_URI=ftp://root.cern.ch/root/root_v5.34.00.source.tar.gz
+SRC_URI=ftp://root.cern.ch/root/root_v5.34.01.source.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=bdc66e742e69bc23e7fd6ac97f47eea3
+_md5_=47e6e75c6e82dbc6883a1c37ea6503dc

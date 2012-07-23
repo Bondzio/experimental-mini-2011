@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-i18n/ibus-mozc/ibus-mozc-1.5.1090.102.ebuild,v 1.2 2012/07/10 07:32:25 naota Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/mozc/mozc-1.5.1090.102.ebuild,v 1.2 2012/07/23 04:20:12 naota Exp $
 
 EAPI="3"
 PYTHON_DEPEND="2"
@@ -9,10 +9,9 @@ inherit elisp-common eutils multilib multiprocessing python toolchain-funcs
 DESCRIPTION="The Mozc engine for IBus Framework"
 HOMEPAGE="http://code.google.com/p/mozc/"
 
-MY_P="${P/ibus-}"
 PROTOBUF_VER="2.4.1"
 GMOCK_VER="403"
-MOZC_URL="http://mozc.googlecode.com/files/${MY_P}.tar.bz2"
+MOZC_URL="http://mozc.googlecode.com/files/${P}.tar.bz2"
 PROTOBUF_URL="http://protobuf.googlecode.com/files/protobuf-${PROTOBUF_VER}.tar.bz2"
 SRC_URI="${MOZC_URL} ${PROTOBUF_URL}"
 
@@ -33,8 +32,6 @@ RDEPEND="dev-libs/glib:2
 	)"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
-
-S="${WORKDIR}/${MY_P}"
 
 BUILDTYPE="${BUILDTYPE:-Release}"
 

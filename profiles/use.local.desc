@@ -587,9 +587,6 @@ app-i18n/ibus:gtk3 - Enable support for gtk+3
 app-i18n/ibus:introspection - Use dev-libs/gobject-introspection for introspection
 app-i18n/ibus:vala - Enable support for dev-lang/vala
 app-i18n/ibus-m17n:gtk - Build the preference interfaces, based on x11-libs/gtk+ (GTK+ 2).
-app-i18n/ibus-mozc:ibus - Enable support for app-i18n/ibus
-app-i18n/ibus-mozc:renderer - Enable native candidate window.
-app-i18n/ibus-mozc:scim - Enable support for app-i18n/scim
 app-i18n/ibus-pinyin:boost - Compile against dev-libs/boost libraries
 app-i18n/ibus-pinyin:opencc - Enable support for app-i18n/opencc
 app-i18n/ibus-table-xingma:extra-phrases - Add extra phrases into builded Engine
@@ -600,6 +597,9 @@ app-i18n/imsettings:xfconf - Enable integration in the Xfce desktop environment 
 app-i18n/kimera:anthy - Support for Anthy input method
 app-i18n/libskk:introspection - Use dev-libs/gobject-introspection for introspection
 app-i18n/libtomoe-gtk:gucharmap - Enable gucharmap dictionary plugin
+app-i18n/mozc:ibus - Enable support for app-i18n/ibus
+app-i18n/mozc:renderer - Enable native candidate window.
+app-i18n/mozc:scim - Enable support for app-i18n/scim
 app-i18n/scim-tomoe:gucharmap - Enable gucharmap dictionary plugin
 app-i18n/tomoe:hyperestraier - Enable support for app-text/hyperestraier
 app-i18n/uim:anthy - Enable support for app-i18n/anthy input method
@@ -5624,6 +5624,7 @@ x11-base/xorg-server:xvfb - Build the Xvfb server
 x11-drivers/ati-drivers:modules - Build the kernel modules
 x11-drivers/ati-drivers:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 x11-drivers/ati-drivers:qt4 - Install qt4 dependent optional tools (e.g Catalyst Control Panel)
+x11-drivers/nvidia-drivers:X - Controls whether the X.org driver, OpenGL libraries, XvMC libraries, and VDPAU libraries are installed
 x11-drivers/nvidia-drivers:tools - Installs additional tools such as nvidia-settings
 x11-drivers/xf86-video-geode:ztv - Enable building the V4L2 ZTV driver
 x11-drivers/xf86-video-intel:glamor - Enable glamor GL-based acceleration
