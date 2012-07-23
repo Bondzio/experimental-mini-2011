@@ -1,12 +1,13 @@
 DEFINED_PHASES=compile install prepare test
+DEPEND=dev-libs/libparserutils dev-libs/libwapcaplet test? ( dev-lang/perl )
 DESCRIPTION=CSS parser and selection engine, written in C
 EAPI=4
 HOMEPAGE=http://www.netsurf-browser.org/projects/libcss/
 IUSE=static-libs test
 KEYWORDS=~amd64 ~arm
 LICENSE=MIT
-RDEPEND=test? ( dev-lang/perl )
+RDEPEND=dev-libs/libparserutils dev-libs/libwapcaplet
 SLOT=0
 SRC_URI=http://download.netsurf-browser.org/libs/releases/libcss-0.1.2-src.tar.gz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
-_md5_=b34a2ae98b711b354caf1a0a558a838f
+_md5_=869581def0f9e44f9acae5e71010f54a

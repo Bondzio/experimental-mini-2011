@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-9999.ebuild,v 1.97 2012/07/06 14:04:26 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-9999.ebuild,v 1.99 2012/07/23 13:04:25 aballier Exp $
 
 EAPI="4"
 
@@ -31,10 +31,10 @@ fi
 IUSE="
 	aac aacplus alsa amr avresample bindist bluray +bzip2 cdio celt
 	cpudetection debug doc +encode faac fontconfig frei0r gnutls gsm
-	+hardcoded-tables iec61883 ieee1394 jack jpeg2k libass libv4l modplug mp3
-	network openal openssl oss pic pulseaudio rtmp schroedinger sdl speex
-	static-libs	test theora threads truetype v4l vaapi vdpau vorbis vpx X x264
-	xvid +zlib
+	+hardcoded-tables iec61883 ieee1394 jack jpeg2k libass libcaca libv4l
+	modplug mp3	network openal openssl opus oss pic pulseaudio rtmp schroedinger
+	sdl speex static-libs test theora threads truetype v4l vaapi vdpau vorbis
+	vpx X x264 xvid +zlib
 	"
 
 # String for CPU features in the useflag[:configure_option] form
@@ -77,9 +77,11 @@ RDEPEND="
 	jack? ( media-sound/jack-audio-connection-kit )
 	jpeg2k? ( >=media-libs/openjpeg-1.3-r2 )
 	libass? ( media-libs/libass )
+	libcaca? ( media-libs/libcaca )
 	libv4l? ( media-libs/libv4l )
 	modplug? ( media-libs/libmodplug )
 	openal? ( >=media-libs/openal-1.1 )
+	opus? ( media-libs/opus )
 	pulseaudio? ( media-sound/pulseaudio )
 	rtmp? ( >=media-video/rtmpdump-2.2f )
 	sdl? ( >=media-libs/libsdl-1.2.13-r1[audio,video] )
@@ -162,6 +164,7 @@ src_configure() {
 		use ${i} && myconf="${myconf} --enable-lib${i}"
 	done
 	use ieee1394 && myconf="${myconf} --enable-libdc1394"
+	use libcaca && myconf="${myconf} --enable-libcaca"
 	use openal && myconf="${myconf} --enable-openal"
 	# Indevs
 	# v4l1 is gone since linux-headers-2.6.38
@@ -188,7 +191,7 @@ src_configure() {
 
 	# Decoders
 	use amr && { myconf="${myconf} --enable-libopencore-amrwb --enable-libopencore-amrnb" ; version3=" --enable-version3" ; }
-	for i in bluray celt gsm modplug rtmp schroedinger speex vorbis vpx; do
+	for i in bluray celt gsm modplug opus rtmp schroedinger speex vorbis vpx; do
 		use ${i} && myconf="${myconf} --enable-lib${i}"
 	done
 	use jpeg2k && myconf="${myconf} --enable-libopenjpeg"

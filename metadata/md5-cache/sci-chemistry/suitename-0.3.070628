@@ -7,4 +7,4 @@ LICENSE=richardson
 SLOT=0
 SRC_URI=http://kinemage.biochem.duke.edu/downloads/software/suitename/suitename.0.3.070628.src.tgz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
-_md5_=1dd7978839ab21c44aa407a9115a7aab
+_md5_=1ad13b4af17c9e393028e0cb1a9572de
