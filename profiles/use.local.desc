@@ -398,6 +398,7 @@ app-emulation/emul-linux-x86-db:development - Install pkgconfig files
 app-emulation/emul-linux-x86-gstplugins:development - Install pkgconfig files
 app-emulation/emul-linux-x86-gtklibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-gtkmmlibs:development - Install pkgconfig files
+app-emulation/emul-linux-x86-java:pax_kernel - Use paxctl to mark the JVM binaries.
 app-emulation/emul-linux-x86-jna:development - Install pkgconfig files
 app-emulation/emul-linux-x86-medialibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-motif:development - Install pkgconfig files
@@ -1178,7 +1179,9 @@ dev-java/proguard:j2me - Adds support for J2ME Wireless Toolkit
 dev-java/rxtx:lfd - Installs and uses LockFileServer daemon (lfd)
 dev-java/sun-jdk:derby - Enable Installation of Bundled Derby (Java DB)
 dev-java/sun-jdk:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
+dev-java/sun-jdk:pax_kernel - Use paxctl to mark the JVM binaries.
 dev-java/sun-jre-bin:jce - Enable Java Cryptographic Extension Unlimited Strength Policy files
+dev-java/sun-jre-bin:pax_kernel - Use paxctl to mark the JVM binaries.
 dev-java/swt:webkit - Embedded browser support via net-libs/webkit-gtk:2, replacing former xulrunner-based browser.
 dev-lang/bas:lr0 - Use the LR0 parser instead of the recursive descending parser
 dev-lang/erlang:compat-ethread - Enable compatibility with pre-pentium 4 CPUs in the ethread library.
