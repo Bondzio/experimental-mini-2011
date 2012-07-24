@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup
+DEPEND==media-tv/mythtv-0.25.1* >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=Video player module for MythTV.
+EAPI=2
+HOMEPAGE=http://www.mythtv.org
+IUSE=profile debug experimental
+KEYWORDS=amd64 x86 ~ppc
+LICENSE=GPL-2
+RDEPEND=media-tv/mythtv[python] dev-python/mysql-python dev-python/pycurl dev-python/oauth dev-python/lxml =media-tv/mythtv-0.25.1* || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=https://github.com/MythTV/mythtv/tarball/1d41f74720f0c89ef73e25fe7586e33caf946802 -> mythtv-0.25.1_p20120622.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	mythtv	4ed311a770cfb86e57de23a032d32d85	mythtv-plugins	60ee43f1f8c65625d8409248b7268a72	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=d882c7e02253c403756682455850b9d1

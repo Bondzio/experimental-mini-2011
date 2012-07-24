@@ -8,4 +8,4 @@ LICENSE=BSD
 RDEPEND=>=app-shells/bash-4.0.0
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=3464aa36c1246a8bf3975f6a1948ad56
+_md5_=93ee0a3bb76dd1645a49af032a13f2b6
