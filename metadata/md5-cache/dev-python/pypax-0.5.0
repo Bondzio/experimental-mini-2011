@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare
+DEPEND=|| ( dev-libs/elfutils dev-libs/libelf ) sys-devel/binutils xtpax? ( sys-apps/attr ) dev-lang/python
+DESCRIPTION=Python module for reading or writing PaX flags to an ELF.
+EAPI=3
+HOMEPAGE=http://dev.gentoo.org/~blueness/elfix/
+IUSE=xtpax
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-lang/python
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~blueness/elfix/elfix-0.5.0.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=5eecdac8ec25c7bdc1592a147b07ace6

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-perl/Tie-Cache-LRU dev-lang/perl[-build]
+DESCRIPTION=Extends Tie::Cache::LRU with expiring
+EAPI=4
+HOMEPAGE=http://search.cpan.org/dist/Tie-Cache-LRU-Expires/
+KEYWORDS=~amd64 ~x86 ~x86-solaris
+LICENSE=Artistic
+RDEPEND=dev-perl/Tie-Cache-LRU dev-lang/perl[-build]
+SLOT=0
+SRC_URI=mirror://cpan/authors/id/O/OE/OESTERHOL/Tie-Cache-LRU-Expires-0.55.tar.gz
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a52f223a96ef052f765c9d01d80f1a35

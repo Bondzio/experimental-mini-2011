@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=Open licensed fonts metrically compatible with MS corefonts
+EAPI=4
+HOMEPAGE=http://www.google.com/webfonts/specimen/Arimo http://www.google.com/webfonts/specimen/Cousine http://www.google.com/webfonts/specimen/Tinos
+IUSE=X
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=OFL-1.1
+RESTRICT=test binchecks
+SLOT=0
+SRC_URI=http://gsdview.appspot.com/chromeos-localmirror/distfiles/croscorefonts-1.21.0.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=2d8906ff5a5049834eac04093684a548

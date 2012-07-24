@@ -831,7 +831,6 @@ app-portage/eix:clang - Use sys-devel/clang for building
 app-portage/eix:debug - Build with upstream's CXXFLAGS/LDFLAGS for debugging support; not recommended for normal use.
 app-portage/eix:dep - Make DEP=true the default which enables support for {,R,P}DEPEND but requires roughly double disk and memory.
 app-portage/eix:doc - Create description of the eix cache file additionally in html format
-app-portage/eix:nls - Support foreign language messages (experimental; currently only de)
 app-portage/eix:optimization - Accept upstream's choices for CXXFLAGS/LDFLAGS for optimization. Absense of this USE flag does not strip user's *FLAGS
 app-portage/eix:security - This adds some checks which can prevent certain exploits if e.g. the eix code has a bug. If you use the hardened toolchain, using this flag does not increase security and can even lead to problems.
 app-portage/eix:sqlite - Compile in support for portage's sqlite backend; to actually use it you need additional configuration of portage and eix
@@ -3484,12 +3483,14 @@ net-analyzer/linkchecker:syntax-check - HTML/CSS syntax checks
 net-analyzer/metasploit:gui - Enable Java GUI
 net-analyzer/munin:asterisk - Install the packages required for monitoring Asterisk. Disabling the flag does not remove any plugin files.
 net-analyzer/munin:cgi - Install the CGI-compatible scripts for on-the-fly generation of web pages and graphs. This is only meaningful if the minimal USE flag is disabled.
+net-analyzer/munin:ipv6 - Add support for IPv6 in munin-node. IPv6 support for the master is always enabled, but the node requires a newer version of dev-perl/net-server, capable of listening to IPv6 sockets.
 net-analyzer/munin:irc - Install the packages required for monitoring IRC. Disabling the flag does not remove any plugin files.
 net-analyzer/munin:java - Build the Java-based plugins to monitor JMX-compatible applications. Disabling the flag removes the jmx monitoring plugins.
 net-analyzer/munin:memcached - Install the packages required for memcached monitoring. Disabling the flag does not remove any plugin files.
 net-analyzer/munin:minimal - Only install munin-node and its plugins. This excludes the scripts to generate the web pages and the graphs.
 net-analyzer/munin:mysql - Install the packages required for monitoring MySQL. Disabling the flag does not remove any plugin files.
 net-analyzer/munin:postgres - Install the packages required for monitoring PostgreSQL. Disabling the flag does not remove any plugin files.
+net-analyzer/munin:syslog - Configure the node by default to log on syslog. This requires the presence of virtual/perl-Sys-Syslog. As of version 2.0.2, the master scripts only log to file, and not to syslog.
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
 net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments
@@ -5531,6 +5532,7 @@ www-client/opera:gtk - Install support libraries and runtime dependencies to sup
 www-client/opera:kde - Install support libraries and runtime dependencies to support KDE desktop integration
 www-client/opera-next:gtk - Install support libraries and runtime dependencies to support GTK+/GNOME desktop integration
 www-client/opera-next:kde - Install support libraries and runtime dependencies to support KDE desktop integration
+www-client/rekonq:opera - Support for Opera sync handler
 www-client/seamonkey:chatzilla - Build Mozilla's IRC client (default on)
 www-client/seamonkey:composer - Build Mozilla's HTML editor component (default on)
 www-client/seamonkey:custom-optimization - Fine-tune custom compiler optimizations

@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
-DEPEND=>=media-libs/skstream-0.3.6 >=dev-games/wfmath-0.3.9 >=dev-games/mercator-0.2.9:0 dev-libs/libgcrypt dev-libs/libsigc++:2 sys-libs/ncurses sys-libs/readline =media-libs/atlas-c++-0.6* >=media-libs/varconf-0.6.4 dev-db/postgresql-base dev-libs/libxml2 virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2*
+DEPEND=>=media-libs/skstream-0.3.6 >=dev-games/wfmath-0.3.9 =dev-games/mercator-0.2* dev-libs/libgcrypt dev-libs/libsigc++:2 sys-libs/ncurses sys-libs/readline =media-libs/atlas-c++-0.6* >=media-libs/varconf-0.6.4 dev-db/postgresql-base dev-libs/libxml2 virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2*
 DESCRIPTION=WorldForge server running small games
 EAPI=2
 HOMEPAGE=http://worldforge.org/dev/eng/servers/cyphesis
 KEYWORDS=amd64 x86
 LICENSE=GPL-2
-RDEPEND=>=media-libs/skstream-0.3.6 >=dev-games/wfmath-0.3.9 >=dev-games/mercator-0.2.9:0 dev-libs/libgcrypt dev-libs/libsigc++:2 sys-libs/ncurses sys-libs/readline =media-libs/atlas-c++-0.6* >=media-libs/varconf-0.6.4 dev-db/postgresql-base =dev-lang/python-2*
+RDEPEND=>=media-libs/skstream-0.3.6 >=dev-games/wfmath-0.3.9 =dev-games/mercator-0.2* dev-libs/libgcrypt dev-libs/libsigc++:2 sys-libs/ncurses sys-libs/readline =media-libs/atlas-c++-0.6* >=media-libs/varconf-0.6.4 dev-db/postgresql-base =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/worldforge/cyphesis-0.5.25.tar.bz2
 _eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=178b1648ffb1d62f00b28d74802d63bf
+_md5_=7d1bfe277d48a17d1c53139a7294e72e
