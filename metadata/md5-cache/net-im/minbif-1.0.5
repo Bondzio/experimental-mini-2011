@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=>=net-im/pidgin-2.6 video? ( >=net-im/pidgin-2.6[gstreamer] net-libs/farsight2 ) libcaca? ( media-libs/libcaca media-libs/imlib2 ) imlib? ( media-libs/imlib2 ) pam? ( sys-libs/pam ) gnutls? ( net-libs/gnutls ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=an IRC gateway to IM networks
+EAPI=4
+HOMEPAGE=https://symlink.me/projects/minbif/wiki/
+IUSE=gnutls +imlib +libcaca pam video xinetd
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=GPL-2
+RDEPEND=>=net-im/pidgin-2.6 video? ( >=net-im/pidgin-2.6[gstreamer] net-libs/farsight2 ) libcaca? ( media-libs/libcaca media-libs/imlib2 ) imlib? ( media-libs/imlib2 ) pam? ( sys-libs/pam ) gnutls? ( net-libs/gnutls ) virtual/logger xinetd? ( sys-apps/xinetd )
+REQUIRED_USE=video? ( libcaca )
+SLOT=0
+SRC_URI=https://symlink.me/attachments/download/148/minbif-1.0.5.tar.gz
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=7def9c4683cf2c3e1932f2389af022fb

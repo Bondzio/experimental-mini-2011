@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==net-mail/dovecot-2.0*
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~radhermit/distfiles/dovecot-antispam-2.0_pre20101222.tar.bz2
-_eclasses_=autotools	9d170f07df0e48055093b8c6a60d0fba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
 _md5_=60045d30c9df31313d90898bdc5d993a
