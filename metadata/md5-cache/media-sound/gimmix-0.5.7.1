@@ -1,7 +1,7 @@
-DEFINED_PHASES=configure install
+DEFINED_PHASES=configure prepare
 DEPEND=>=media-libs/libmpd-0.17 gnome-base/libglade x11-libs/gtk+:2 cover? ( net-libs/libnxml net-misc/curl ) lyrics? ( net-libs/libnxml net-misc/curl ) taglib? ( >=media-libs/taglib-1.5 ) virtual/pkgconfig dev-util/intltool
 DESCRIPTION=a graphical music player daemon (MPD) client using GTK+2
-EAPI=2
+EAPI=4
 HOMEPAGE=http://gimmix.berlios.de/
 IUSE=cover lyrics taglib
 KEYWORDS=amd64 ~ppc x86
@@ -9,4 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/libmpd-0.17 gnome-base/libglade x11-libs/gtk+:2 cover? ( net-libs/libnxml net-misc/curl ) lyrics? ( net-libs/libnxml net-misc/curl ) taglib? ( >=media-libs/taglib-1.5 )
 SLOT=0
 SRC_URI=mirror://berlios/gimmix/gimmix-0.5.7.1.tar.bz2
-_md5_=1602017a74584f55dd18434a6f13af61
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=cf4d872487f13ecc75a66be9e0bb0b41

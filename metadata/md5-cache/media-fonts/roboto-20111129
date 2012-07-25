@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=X? ( x11-apps/mkfontdir media-fonts/encodings ) >=media-libs/fontconfig-2.4.0
+DESCRIPTION=Standard font for Android 4.0 (Ice Cream Sandwich) and later
+HOMEPAGE=http://developer.android.com/design/style/typography.html
+IUSE=X
+KEYWORDS=~amd64
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=https://dl-ssl.google.com/android/design/Roboto_Hinted_20111129.zip
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=484ec742f8f7acb28f6b63cef677719c

@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile configure install prepare unpack
 DEPEND=app-arch/unzip
-DESCRIPTION=Czech dictionaries for myspell/hunspell
+DESCRIPTION=Portugalese dictionaries for myspell/hunspell
 EAPI=4
 HOMEPAGE=http://natura.di.uminho.pt/wiki/doku.php?id=dicionarios:main
 IUSE=+preao
@@ -9,4 +9,4 @@ LICENSE=GPL-2 MIT
 SLOT=0
 SRC_URI=http://darkstar.ist.utl.pt/openoffice.org/pt/oo3x-pt-PT.oxt preao? ( http://darkstar.ist.utl.pt/openoffice.org/pt/oo3x-pt-PT-preao.oxt )
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	myspell-r2	1e83a30c08c1bf342d17120e49a1ae1c	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=f4e09119c325d289dbb15fa783255111
+_md5_=3675a88535eaa2416aa124c617121fe8

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.9 2012/07/10 19:19:25 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/transmission/transmission-9999.ebuild,v 1.10 2012/07/25 08:58:37 ssuominen Exp $
 
 EAPI=4
 LANGS="en es eu kk lt pt_BR ru"
@@ -75,13 +75,6 @@ src_prepare() {
 
 	# http://trac.transmissionbt.com/ticket/4324
 	sed -i -e 's|noinst\(_PROGRAMS = $(TESTS)\)|check\1|' lib${PN}/Makefile.am || die
-
-	# http://bugs.gentoo.org/400929 ->
-	# http://trac.transmissionbt.com/ticket/4915 ->
-	# http://github.com/bittorrent/libutp/issues/35
-	if ! grep -qs include.*netinet.*in.h third-party/libutp/utp.h; then
-		epatch "${FILESDIR}"/${PN}-2.51-fbsd.patch
-	fi
 
 	eautoreconf
 
