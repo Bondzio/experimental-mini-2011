@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare prerm pretend setup test unpack
-DEPEND=<=x11-base/xorg-server-1.12.49[-minimal] >=app-admin/eselect-opengl-1.0.7 app-admin/eselect-opencl sys-power/acpid x11-apps/xauth x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXrender multilib? ( app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-xlibs ) qt4? ( x11-libs/libICE x11-libs/libSM x11-libs/libXcursor x11-libs/libXfixes x11-libs/libXxf86vm x11-libs/qt-core x11-libs/qt-gui ) x11-proto/inputproto x11-proto/xf86miscproto x11-proto/xf86vidmodeproto x11-proto/xineramaproto x11-libs/libXtst sys-apps/findutils app-misc/pax-utils kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DEPEND=<=x11-base/xorg-server-1.12.49[-minimal] >=app-admin/eselect-opengl-1.0.7 app-admin/eselect-opencl sys-power/acpid x11-apps/xauth x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXrender multilib? ( app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-xlibs ) qt4? ( x11-libs/libICE x11-libs/libSM x11-libs/libXcursor x11-libs/libXfixes x11-libs/libXxf86vm x11-libs/qt-core:4 x11-libs/qt-gui:4 ) x11-proto/inputproto x11-proto/xf86miscproto x11-proto/xf86vidmodeproto x11-proto/xineramaproto x11-libs/libXtst sys-apps/findutils app-misc/pax-utils kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=Ati precompiled drivers for radeon r600 (HD Series) and newer chipsets
 EAPI=4
 HOMEPAGE=http://www.amd.com
 IUSE=debug +modules multilib qt4 static-libs kernel_linux
 KEYWORDS=~amd64 ~x86
 LICENSE=AMD GPL-2 QPL-1.0 as-is
-RDEPEND=<=x11-base/xorg-server-1.12.49[-minimal] >=app-admin/eselect-opengl-1.0.7 app-admin/eselect-opencl sys-power/acpid x11-apps/xauth x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXrender multilib? ( app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-xlibs ) qt4? ( x11-libs/libICE x11-libs/libSM x11-libs/libXcursor x11-libs/libXfixes x11-libs/libXxf86vm x11-libs/qt-core x11-libs/qt-gui ) kernel_linux? ( sys-apps/module-init-tools )
+RDEPEND=<=x11-base/xorg-server-1.12.49[-minimal] >=app-admin/eselect-opengl-1.0.7 app-admin/eselect-opencl sys-power/acpid x11-apps/xauth x11-libs/libX11 x11-libs/libXext x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXrender multilib? ( app-emulation/emul-linux-x86-opengl app-emulation/emul-linux-x86-xlibs ) qt4? ( x11-libs/libICE x11-libs/libSM x11-libs/libXcursor x11-libs/libXfixes x11-libs/libXxf86vm x11-libs/qt-core:4 x11-libs/qt-gui:4 ) kernel_linux? ( sys-apps/module-init-tools )
 SLOT=1
 SRC_URI=http://www2.ati.com/drivers/legacy/amd-driver-installer-12.6-legacy-x86.x86_64.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=c0e624bf426e2b5fa7477821d5016f91
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=5a40c8a5e82df920e85bac294f8b6ec1

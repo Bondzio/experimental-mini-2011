@@ -7,5 +7,5 @@ LICENSE=PHP-2.02
 RDEPEND=dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Net_CheckIP-1.1.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=c36a9a1d81996a3557b0815e622f1f35

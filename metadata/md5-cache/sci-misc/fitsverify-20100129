@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=>=sci-libs/cfitsio-3
 SLOT=0
 SRC_URI=http://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify//fitsverify.tar
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=339237c42e82ac324485c75af45ab689

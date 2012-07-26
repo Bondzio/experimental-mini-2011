@@ -5,5 +5,5 @@ KEYWORDS=-* ~ppc ~x86
 LICENSE=BSD
 SLOT=0
 SRC_URI=x86? ( mirror://gentoo/smlnj-110.45-boot.x86-unix.tgz ) ppc? ( mirror://gentoo/smlnj-110.45-boot.ppc-unix.tgz ) mirror://gentoo/smlnj-110.45-config.tgz mirror://gentoo/smlnj-110.45-MLRISC.tgz mirror://gentoo/smlnj-110.45-runtime.tgz mirror://gentoo/smlnj-110.45-ml-lex.tgz mirror://gentoo/smlnj-110.45-ml-yacc.tgz mirror://gentoo/smlnj-110.45-ml-burg.tgz mirror://gentoo/smlnj-110.45-smlnj-lib.tgz mirror://gentoo/smlnj-110.45-cml.tgz mirror://gentoo/smlnj-110.45-eXene.tgz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=ecaf645003f16c866dcf153f5c082280

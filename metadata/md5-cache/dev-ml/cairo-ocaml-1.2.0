@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=dev-lang/ocaml x11-libs/cairo gtk? ( dev-ml/lablgtk:2 ) pango? ( x11-libs/pango ) svg? ( x11-libs/libsvg-cairo )
 SLOT=0
 SRC_URI=http://cgit.freedesktop.org/cairo-ocaml/snapshot/cairo-ocaml-1.2.0.tar.bz2
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	findlib	9cf6020ee5481f39f1aa566a323f9868	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	findlib	9cf6020ee5481f39f1aa566a323f9868	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=790a1e1b9682f99554ddd7b126c62eff

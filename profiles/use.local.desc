@@ -212,15 +212,15 @@ app-arch/libzpaq:jit - Enable just-in-time compilation for faster compression (r
 app-arch/p7zip:rar - Enable support for non-free rar decoder
 app-arch/pbzip2:symlink - Install symlinks which override app-arch/bzip2 implementation
 app-arch/rar:all_sfx - Install all SFX (Self-Extracting) files rather than just the native format (allows creation of Windows EXEs on Linux ELF systems)
-app-arch/rpm:augeas - Add support for configuration files changing (app-admin/augeas)
-app-arch/rpm:keyutils - Enable for the keyring ccache using keyutils.
-app-arch/rpm:magic - Add magic file support (sys-apps/file)
-app-arch/rpm:nss - Build support for ssl/crypto handling using dev-libs/nss
-app-arch/rpm:openssl - Build support for ssl/crypto handling using dev-libs/openssl
-app-arch/rpm:pkcs11 - Build token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
-app-arch/rpm:uuid - Enable server side UUID generation (via dev-libs/ossp-uuid)
-app-arch/rpm:webdav-neon - Include support for net-libs/neon
-app-arch/rpm:xar - Build support for xar archives using app-arch/xar
+app-arch/rpm5:augeas - Add support for configuration files changing (app-admin/augeas)
+app-arch/rpm5:keyutils - Enable for the keyring ccache using keyutils.
+app-arch/rpm5:magic - Add magic file support (sys-apps/file)
+app-arch/rpm5:nss - Build support for ssl/crypto handling using dev-libs/nss
+app-arch/rpm5:openssl - Build support for ssl/crypto handling using dev-libs/openssl
+app-arch/rpm5:pkcs11 - Build token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
+app-arch/rpm5:uuid - Enable server side UUID generation (via dev-libs/ossp-uuid)
+app-arch/rpm5:webdav-neon - Include support for net-libs/neon
+app-arch/rpm5:xar - Build support for xar archives using app-arch/xar
 app-arch/unzip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-arch/zip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-backup/amanda:devpay - Support for using Amazon DevPay with S3

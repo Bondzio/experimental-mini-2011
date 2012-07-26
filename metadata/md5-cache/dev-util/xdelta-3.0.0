@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=3
 SRC_URI=http://xdelta.googlecode.com/files/xdelta3.0.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=9035f16fad73b2c088bd2792257267a8

@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=|| ( <dev-lang/php-5.3[pcre] >=dev-lang/php-5.3 ) dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/HTTP-1.4.1.tgz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=67f991f9e3b10f9c6a0b7b27873c8a88

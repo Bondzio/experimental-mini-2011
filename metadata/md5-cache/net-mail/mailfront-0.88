@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/bglibs-1.006 net-libs/cvm virtual/qmail
 SLOT=0
 SRC_URI=http://untroubled.org/mailfront/archive/mailfront-0.88.tar.gz
-_eclasses_=fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=db12b1376fc1a4aef2f032e6c8845864

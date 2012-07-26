@@ -9,4 +9,4 @@ RDEPEND=dev-python/imaging || ( >=media-gfx/imagemagick-5.4.9 media-gfx/graphics
 SLOT=0
 SRC_URI=mirror://gentoo/curator-3.0_pf078f1686a78.tar.xz
 _eclasses_=python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=f802c62b8db1a798a7eb92b5d645a649
+_md5_=52f637597d9ac30ab686bd198e40e29c

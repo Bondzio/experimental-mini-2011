@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=|| ( x11-libs/fox:1.6 x11-libs/fox:1.7 )
 SLOT=0
 SRC_URI=http://savannah.nongnu.org/download/fxscintilla/fxscintilla-2.28.0.tar.gz
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=701ae02a143a353c9edec72f5022d758

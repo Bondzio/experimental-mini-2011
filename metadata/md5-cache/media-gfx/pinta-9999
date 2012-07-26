@@ -6,5 +6,5 @@ HOMEPAGE=http://pinta-project.com
 LICENSE=MIT CCPL-Attribution-3.0
 RDEPEND=dev-dotnet/atk-sharp:2 dev-dotnet/gdk-sharp:2 dev-dotnet/glib-sharp:2 dev-dotnet/gtk-sharp:2 dev-dotnet/mono-addins[gtk] dev-dotnet/pango-sharp:2 dev-lang/mono x11-libs/cairo[X] x11-libs/gdk-pixbuf[X,jpeg,tiff] x11-themes/gnome-icon-theme
 SLOT=0
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	46e19fa7553f66c48ebc7cf025acd3ed	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	libtool	a83de71c2123161fc5a8323cb275f8e5	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=723c0afeacd10f7e00c1cfceb9b0b16a

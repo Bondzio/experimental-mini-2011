@@ -10,5 +10,5 @@ RDEPEND=dev-lang/tk >=dev-tcltk/tcllib-1.11 media-libs/tiff:0 media-libs/libpng:
 RESTRICT=test
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~jlec/distfiles/tkimg-1.4-gentoo+bundled-tiff.patch.xz mirror://sourceforge/tkimg/1.4/tkimg1.4.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=f0777dbf007f57b1ea3d430a077a4207

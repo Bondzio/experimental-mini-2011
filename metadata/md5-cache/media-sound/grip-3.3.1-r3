@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/gtk+-2.2:2 x11-libs/vte:0 media-sound/lame media-sound/cdparanoia >=media-libs/id3lib-3.8.3 >=gnome-base/libgnomeui-2.2.0 >=gnome-base/orbit-2 net-misc/curl vorbis? ( media-sound/vorbis-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/grip/grip-3.3.1.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c9ed28db37d49a464f86f3bfd0a5dfb1

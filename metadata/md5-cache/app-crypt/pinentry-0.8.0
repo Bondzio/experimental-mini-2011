@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=static? ( sys-libs/ncurses ) !static? ( gtk? ( x11-libs/gtk+:2 ) ncurses? ( sys-libs/ncurses ) qt4? ( >=x11-libs/qt-gui-4.4.1 ) !gtk? ( !qt4? ( !ncurses? ( sys-libs/ncurses ) ) ) ) caps? ( sys-libs/libcap )
 SLOT=0
 SRC_URI=mirror://gnupg/pinentry/pinentry-0.8.0.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b56ed5290d0e95061813a8deddfdeb22

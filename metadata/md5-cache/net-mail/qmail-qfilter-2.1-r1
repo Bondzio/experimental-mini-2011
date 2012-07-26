@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/bglibs-1.106 virtual/qmail
 SLOT=0
 SRC_URI=http://untroubled.org/qmail-qfilter/archive/qmail-qfilter-2.1.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=e37071febcb0cf32063c1124ab2b167a

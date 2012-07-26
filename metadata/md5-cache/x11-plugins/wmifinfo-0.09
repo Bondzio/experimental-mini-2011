@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm
 SLOT=0
 SRC_URI=http://zevv.nl/play/code/wmifinfo/wmifinfo-0.09.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=aefe05e5fbfeaed3a8c712f1ce51018c

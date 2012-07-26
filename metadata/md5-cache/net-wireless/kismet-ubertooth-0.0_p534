@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=net-wireless/kismet-2011.03.2-r1 >=net-libs/libbtbb-0.8 >=dev-libs/libusb-1.0.0
 SLOT=0
 SRC_URI=mirror://sourceforge/ubertooth/ubertooth-r534.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=9f88842daa946acf261d69b38f26dfb3

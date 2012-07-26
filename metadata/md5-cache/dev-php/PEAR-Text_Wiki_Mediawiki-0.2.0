@@ -7,5 +7,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-php/PEAR-Text_Wiki-1.1.0 dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Text_Wiki_Mediawiki-0.2.0.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=4f868bd074694466e0525dd52b16950e

@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://debian/pool/main/i/ifenslave-2.6/ifenslave-2.6_1.1.0.orig.tar.gz mirror://debian/pool/main/i/ifenslave-2.6/ifenslave-2.6_1.1.0-17.debian.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=a021fb26d7a4066a9e5e9d93418817fb

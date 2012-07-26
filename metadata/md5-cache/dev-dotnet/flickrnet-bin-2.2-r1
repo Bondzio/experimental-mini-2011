@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-lang/mono-2.4
 SLOT=0
 SRC_URI=mirror://gentoo/FlickrNet2.2.zip
-_eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=6c29ff79c9bb32d253742ef4d6df00f1

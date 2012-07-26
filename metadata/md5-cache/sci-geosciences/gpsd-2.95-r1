@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare setup unpack
-DEPEND=dev-python/pygtk:2 sys-libs/ncurses virtual/libusb:1 dbus? ( sys-apps/dbus dev-libs/dbus-glib ) ntp? ( net-misc/ntp ) qt4? ( x11-libs/qt-gui ) app-text/xmlto =app-text/docbook-xml-dtd-4.1* || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=dev-python/pygtk:2 sys-libs/ncurses virtual/libusb:1 dbus? ( sys-apps/dbus dev-libs/dbus-glib ) ntp? ( net-misc/ntp ) qt4? ( x11-libs/qt-gui:4 ) app-text/xmlto =app-text/docbook-xml-dtd-4.1* || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=GPS daemon and library to support USB/serial GPS devices and various GPS/mapping clients.
 EAPI=3
 HOMEPAGE=http://gpsd.berlios.de/
 IUSE=gpsd_protocols_ashtech gpsd_protocols_aivdm gpsd_protocols_clientdebug gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_navcom gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tsip gpsd_protocols_tripmate gpsd_protocols_tnt gpsd_protocols_ubx dbus ipv6 ntp qt4
 KEYWORDS=amd64 arm ppc ppc64 x86
 LICENSE=BSD
-RDEPEND=dev-python/pygtk:2 sys-libs/ncurses virtual/libusb:1 dbus? ( sys-apps/dbus dev-libs/dbus-glib ) ntp? ( net-misc/ntp ) qt4? ( x11-libs/qt-gui ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=dev-python/pygtk:2 sys-libs/ncurses virtual/libusb:1 dbus? ( sys-apps/dbus dev-libs/dbus-glib ) ntp? ( net-misc/ntp ) qt4? ( x11-libs/qt-gui:4 ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://berlios/gpsd/gpsd-2.95.tar.gz
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=58700d3dd4742f5b516d42ae3b134fdb
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=e37e942849d8025b336566e7f75d2f7b

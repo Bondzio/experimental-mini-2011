@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/linux-sources sys-apps/util-linux kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=http://www.open-iscsi.org/bits/open-iscsi-2.0-871.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=6d65c0293e273b7d207780b33361888b

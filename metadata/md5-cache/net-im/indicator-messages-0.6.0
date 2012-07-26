@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install postinst postrm preinst
+DEPEND=>=dev-libs/libdbusmenu-0.6.2:3[gtk] >=dev-libs/glib-2.22 >=dev-libs/libindicate-12.10.0:3 >=dev-libs/libindicator-12.10.0:3 net-libs/telepathy-glib >=x11-libs/gtk+-3.2:3 dev-util/intltool virtual/pkgconfig >=sys-apps/sed-4
+DESCRIPTION=A place on the user's desktop that collects messages that need a response
+EAPI=4
+HOMEPAGE=http://launchpad.net/indicator-messages
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/libdbusmenu-0.6.2:3[gtk] >=dev-libs/glib-2.22 >=dev-libs/libindicate-12.10.0:3 >=dev-libs/libindicator-12.10.0:3 net-libs/telepathy-glib >=x11-libs/gtk+-3.2:3
+SLOT=0
+SRC_URI=http://launchpad.net/indicator-messages/0.6/0.6.0/+download/indicator-messages-0.6.0.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=748e4452a8ace94b4ee1d9b69d6e1ed9

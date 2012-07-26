@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sdl? ( media-libs/libsdl media-libs/sdl-gfx ui? ( x11-libs/gtk+:2 ) alsa? ( media-libs/alsa-lib ) ) !sdl? ( X? ( x11-libs/libXext dga? ( x11-libs/libXxf86dga x11-libs/libXxf86vm ) ui? ( x11-libs/gtk+:2 ) ) !X? ( svga? ( media-libs/svgalib ui? ( sys-libs/ncurses ) ) !svga? ( aalib? ( media-libs/aalib ui? ( sys-libs/ncurses ) ) ) !aalib? ( media-libs/libsdl ui? ( x11-libs/gtk+:2 ) ) ) alsa? ( media-libs/alsa-lib ) ) scsi? ( app-cdr/cdrtools )
 SLOT=0
 SRC_URI=ftp://ftp.amigaemulator.org/pub/uae/sources/develop/uae-0.8.29.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=87b42a355443c4e8ba2a2aa1a638dbef

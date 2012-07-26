@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install prepare setup unpack
-DEPEND=x11-libs/qt-gui amd64? ( app-emulation/emul-linux-x86-qtlibs )
+DEPEND=x11-libs/qt-gui:4 amd64? ( app-emulation/emul-linux-x86-qtlibs )
 DESCRIPTION=An LD_PRELOAD wrapper that adds tabs to Skype for Linux
 EAPI=4
 HOMEPAGE=http://github.com/kekekeks/skypetab-ng
 KEYWORDS=-* ~x86 ~amd64
 LICENSE=LGPL-3
-RDEPEND=x11-libs/qt-gui amd64? ( app-emulation/emul-linux-x86-qtlibs ) net-im/skype[-qt-static]
+RDEPEND=x11-libs/qt-gui:4 amd64? ( app-emulation/emul-linux-x86-qtlibs ) net-im/skype[-qt-static]
 SLOT=0
 SRC_URI=http://github.com/kekekeks/skypetab-ng/tarball/v0.5.0-fixed -> skypetab-ng-0.5.0.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
-_md5_=641919e5130123a345cee8898adef9b8
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
+_md5_=1eeca03b59251ca3cfa712a2407569fc

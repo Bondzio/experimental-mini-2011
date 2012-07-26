@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=virtual/fortran sci-libs/pgplot x11-libs/libX11
 SLOT=0
 SRC_URI=ftp://ftp.ornl.gov/pub/ortep/src/ortep.f
-_eclasses_=fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=eaf33c2a32b5acee56162671e04f0638

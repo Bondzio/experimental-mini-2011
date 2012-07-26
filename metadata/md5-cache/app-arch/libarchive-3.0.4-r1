@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/openssl:0 acl? ( virtual/acl ) bzip2? ( app-arch/bzip2 ) expat? ( dev-libs/expat ) !expat? ( dev-libs/libxml2 ) iconv? ( virtual/libiconv ) kernel_linux? ( xattr? ( sys-apps/attr ) ) lzma? ( app-arch/xz-utils ) nettle? ( dev-libs/nettle ) zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=mirror://github/libarchive/libarchive/libarchive-3.0.4.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=ab226b468a1d963f266a995facf93f18

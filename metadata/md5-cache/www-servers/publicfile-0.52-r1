@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=virtual/daemontools >=sys-apps/ucspi-tcp-0.83 selinux? ( sec-policy/selinux-publicfile ) !net-ftp/netkit-ftpd
 SLOT=0
 SRC_URI=http://cr.yp.to/publicfile/publicfile-0.52.tar.gz http://www.ohse.de/uwe/patches/publicfile-0.52-filetype-diff http://www.publicfile.org/ftp-ls-patch
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c4913a749d5759982b5fb7c2784bf3e3

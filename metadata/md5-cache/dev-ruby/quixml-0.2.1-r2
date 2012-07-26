@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/expat ruby_targets_ruby18? ( dev-lang/ruby:1.8 )
 SLOT=0
 SRC_URI=http://rubyforge.org/download.php/89/quixml-0.2.1.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	9f370f4fc88a58204a8d375ce53fe08c	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	ruby-ng	9f370f4fc88a58204a8d375ce53fe08c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=50578852a98c10e8fc838e54f0753dec

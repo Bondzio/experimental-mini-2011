@@ -3,11 +3,11 @@ DEPEND=x11-libs/libX11 >=x11-libs/qt-core-4.5:4 >=x11-libs/qt-gui-4.5:4 >=x11-li
 DESCRIPTION=A Qt-based microblogging client
 EAPI=4
 HOMEPAGE=http://www.qt-apps.org/content/show.php/qTwitter?content=99087
-IUSE=debug linguas_nb_NO linguas_pt_BR linguas_ca linguas_cs linguas_de linguas_es linguas_fr linguas_it linguas_ja linguas_pl
+IUSE=debug linguas_ca_ES linguas_cs_CZ linguas_de_DE linguas_es_ES linguas_fr_FR linguas_it_IT linguas_ja_JP linguas_nb_NO linguas_pl_PL linguas_pt_BR
 KEYWORDS=amd64 x86
 LICENSE=LGPL-2.1
 RDEPEND=x11-libs/libX11 >=x11-libs/qt-core-4.5:4 >=x11-libs/qt-gui-4.5:4 >=x11-libs/qt-dbus-4.5:4 >=dev-libs/qoauth-1.0
 SLOT=0
 SRC_URI=http://files.ayoy.net/qtwitter/release/0.10.0/src/qtwitter-0.10.0-src.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6c9156bef5641a801a1578ea6ce8393d
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	l10n	33bde4fb0cfd3a21a277b66bfd837e19	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=af794039b90b977306f453f65892f71d

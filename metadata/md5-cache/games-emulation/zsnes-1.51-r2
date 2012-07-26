@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/libsdl[audio,video] >=sys-libs/zlib-1.2.3-r1 amd64? ( >=app-emulation/emul-linux-x86-sdl-10.1 ) ao? ( media-libs/libao ) opengl? ( virtual/opengl ) png? ( media-libs/libpng )
 SLOT=0
 SRC_URI=mirror://sourceforge/zsnes/zsnes151src.tar.bz2
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c5160ff0ed705235fa32b339e9f2516b

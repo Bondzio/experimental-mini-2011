@@ -5,5 +5,5 @@ EAPI=4
 HOMEPAGE=http://www.netsurf-browser.org/projects/librosprite/
 LICENSE=MIT
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=5abf988cb906fe0244b768687f992657

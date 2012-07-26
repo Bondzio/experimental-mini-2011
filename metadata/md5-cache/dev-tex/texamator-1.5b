@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/PyQt4 app-text/dvipng virtual/latex-base =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://snouffy.free.fr/blog-en/public/TeXamator/TeXamator.v.1.5b.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=3062164e5783902e698d4318a08b37ac

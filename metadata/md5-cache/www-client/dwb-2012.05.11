@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=net-libs/libsoup-2.32:2.4 !gtk3? ( >=net-libs/webkit-gtk-1.4.0:2 x11-libs/gtk+:2 ) gtk3? ( >=net-libs/webkit-gtk-1.4.0:3 x11-libs/gtk+:3 )
 SLOT=0
 SRC_URI=mirror://bitbucket/portix/dwb/downloads/dwb-2012.05.11.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=14d7d8ccf68062fe83880aa34c0392a1

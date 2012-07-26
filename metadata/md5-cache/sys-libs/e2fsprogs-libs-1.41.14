@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!sys-libs/com_err !sys-libs/ss !<sys-fs/e2fsprogs-1.41.8
 SLOT=0
 SRC_URI=mirror://sourceforge/e2fsprogs/e2fsprogs-libs-1.41.14.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=a51b57338a9a6a6b2983a44d9cb2a905

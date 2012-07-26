@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=bluetooth? ( net-wireless/bluez ) curl? ( net-misc/curl ) usb? ( virtual/libusb:1 ) mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-server ) dbi? ( >=dev-db/libdbi-0.8.3 ) dev-util/dialog !dev-python/python-gammu python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://dl.cihar.com/gammu/releases/gammu-1.30.0.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=3740d0103089d8b2d741ed0d840ffbbe

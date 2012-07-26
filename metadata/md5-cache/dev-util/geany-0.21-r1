@@ -9,5 +9,5 @@ LICENSE=GPL-2 Scintilla
 RDEPEND=>=x11-libs/gtk+-2.12:2 >=dev-libs/glib-2.16:2 vte? ( x11-libs/vte:0 )
 SLOT=0
 SRC_URI=http://download.geany.org/geany-0.21.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b9f77d3210bfeeacfbce829aff418066

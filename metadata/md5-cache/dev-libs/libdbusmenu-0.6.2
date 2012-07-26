@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare test
-DEPEND=>=dev-libs/glib-2.30 >=dev-libs/dbus-glib-0.100 dev-libs/libxml2 gtk? ( >=x11-libs/gtk+-3.2:3 ) introspection? ( >=dev-libs/gobject-introspection-1 ) !<dev-libs/libdbusmenu-0.5.1-r200 app-text/gnome-doc-utils dev-lang/vala:0.16[vapigen] dev-util/intltool virtual/pkgconfig test? ( >=dev-libs/json-glib-0.14[introspection?] dev-util/dbus-test-runner ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=>=dev-libs/glib-2.30 >=dev-libs/dbus-glib-0.100 dev-libs/libxml2 gtk? ( >=x11-libs/gtk+-3.2:3 ) introspection? ( >=dev-libs/gobject-introspection-1 ) !<dev-libs/libdbusmenu-0.5.1-r200 app-text/gnome-doc-utils dev-util/intltool virtual/pkgconfig introspection? ( dev-lang/vala:0.16[vapigen] ) test? ( >=dev-libs/json-glib-0.14[introspection?] dev-util/dbus-test-runner ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Library to pass menu structure across DBus
 EAPI=4
 HOMEPAGE=http://launchpad.net/dbusmenu
@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 LGPL-3
 RDEPEND=>=dev-libs/glib-2.30 >=dev-libs/dbus-glib-0.100 dev-libs/libxml2 gtk? ( >=x11-libs/gtk+-3.2:3 ) introspection? ( >=dev-libs/gobject-introspection-1 ) !<dev-libs/libdbusmenu-0.5.1-r200
 SLOT=3
 SRC_URI=http://launchpad.net/dbusmenu/0.6/0.6.2/+download/libdbusmenu-0.6.2.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=d822ab37703aec73d3b8811d28bdc26f
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_md5_=71a2890e494806c01b42c44043512714

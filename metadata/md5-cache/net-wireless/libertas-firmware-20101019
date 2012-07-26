@@ -5,5 +5,5 @@ KEYWORDS=~arm
 LICENSE=libertas-fw
 SLOT=0
 SRC_URI=mirror://gentoo/libertas-firmware-20101019.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=4d2d319e62c62d6a7696c2c8e75cb385

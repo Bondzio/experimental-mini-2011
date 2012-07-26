@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=x11-libs/libX11 x11-libs/libXtst x11-libs/libXext
 SLOT=0
 SRC_URI=http://ftp.digital.com/pub/Digital/SRC/x2x/x2x-1.27.tar.gz mirror://debian/pool/main/x/x2x/x2x_1.27-8.diff.gz mirror://gentoo/x2x_1.27-8-initvars.patch.gz mirror://gentoo/x2x-1.27-license.patch.gz mirror://gentoo/x2x-1.27-keymap.diff.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f0f9843161f969f1af77c6ad98cf89f7

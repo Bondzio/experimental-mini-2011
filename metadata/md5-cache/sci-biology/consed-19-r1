@@ -9,5 +9,5 @@ RDEPEND=>=x11-libs/openmotif-2.3:0 >=sci-biology/phred-000925 >=sci-biology/phra
 RESTRICT=fetch
 SLOT=0
 SRC_URI=consed-19-sources.tar.gz consed-19-linux.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=23e76506d8d4b8f776bb1acd640e2249

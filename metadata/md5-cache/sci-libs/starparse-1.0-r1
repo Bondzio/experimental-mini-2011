@@ -1,13 +1,13 @@
-DEFINED_PHASES=configure install prepare test
+DEFINED_PHASES=compile configure install prepare test
 DEPEND=guile? ( dev-scheme/guile ) virtual/pkgconfig || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=Library for parsing NMR star files (peak-list format) and CIF files
-EAPI=2
+EAPI=4
 HOMEPAGE=http://burrow-owl.sourceforge.net/
-IUSE=guile
+IUSE=guile static-libs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=guile? ( dev-scheme/guile )
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~jlec/distfiles/starparse-1.0.tar.bz2
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=99d3996aabb6c129f5a62d0c7204df6a
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	autotools-utils	cfb1126efe81254030227216aa71f32c	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=a00b4e6401776a9644a3863d430be8da

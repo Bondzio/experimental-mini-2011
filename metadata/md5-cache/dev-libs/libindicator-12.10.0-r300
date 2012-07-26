@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/glib-2.22 >=x11-libs/gtk+-3.2:3 virtual/pkgconfig !<dev-libs/libindicator-0.4.1-r201
+DESCRIPTION=A set of symbols and convience functions that all indicators would like to use
+EAPI=4
+HOMEPAGE=http://launchpad.net/libindicator
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=dev-libs/glib-2.22 >=x11-libs/gtk+-3.2:3
+SLOT=3
+SRC_URI=http://launchpad.net/libindicator/12.10/12.10.0/+download/libindicator-12.10.0.tar.gz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=f9a71142a98f62040bbec265386df8b1
