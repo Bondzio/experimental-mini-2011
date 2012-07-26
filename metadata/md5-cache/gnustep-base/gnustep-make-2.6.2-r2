@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=doc? ( virtual/texi2dvi dev-tex/latex2html app-text/texi2html ) >=sys-devel/make-3.75 libobjc2? ( gnustep-base/libobjc2 >=sys-devel/clang-2.9 ) !libobjc2? ( >=sys-devel/gcc-3.3[objc] !!gnustep-base/libobjc2 )
 SLOT=0
 SRC_URI=ftp://ftp.gnustep.org/pub/gnustep/core/gnustep-make-2.6.2.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnustep-base	87d599af9a09a523d6d233e462f3758e	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnustep-base	87d599af9a09a523d6d233e462f3758e	multilib	5782800349f728f725f9378105c6a2ab	prefix	21058c21ca48453d771df15500873ede	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=eb606786766148f436ac1889e3261280

@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=>=x11-libs/openmotif-2.3:0
 SLOT=0
 SRC_URI=ftp://ftp.fu-berlin.de/unix/X11/apps/plan/plan-1.9.tar.gz mirror://gentoo/plan-1.9-gentoo.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=7089e7be51d66e3a0be14a4267a59c1b

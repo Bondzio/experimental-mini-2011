@@ -10,5 +10,5 @@ RDEPEND=dedicated? ( || ( games-fps/quake3[dedicated] games-fps/quake3-bin[dedic
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=mirror://quakeunity/modifications/matrix24.zip
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	games-mods	9d44c6f45289592ca9cf29d77424a048	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	games-mods	9d44c6f45289592ca9cf29d77424a048	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=2e658e22f40ff25e3ee73c87a9af8707

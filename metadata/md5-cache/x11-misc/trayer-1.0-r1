@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/glib:2 x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/libX11
 SLOT=0
 SRC_URI=http://download.gna.org/fvwm-crystal/trayer/trayer-1.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=fd3bf0d826fedd4ddb31f28f117ce146

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-text/djvu-3.5.21 >=app-text/poppler-0.16.7[xpdf-headers] dev-libs/libxml2 dev-libs/libxslt graphicsmagick? ( media-gfx/graphicsmagick )
 SLOT=0
 SRC_URI=http://pdf2djvu.googlecode.com/files/pdf2djvu_0.7.13.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=5f80649da10ddd675a6ef0295d1c3fa2

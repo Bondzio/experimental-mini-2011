@@ -9,5 +9,5 @@ RDEPEND=sys-libs/glibc !games-fps/ut2004[dedicated] games-fps/ut2004-bonuspack-e
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=mirror://3dgamers/unrealtourn2k4/dedicatedserver3339-bonuspack.zip http://downloads.unrealadmin.org/UT2004/Server/dedicatedserver3339-bonuspack.zip http://sonic-lux.net/data/mirror/ut2004/dedicatedserver3339-bonuspack.zip mirror://3dgamers/unrealtourn2k4/ut2004-lnxpatch3369-2.tar.bz2 http://downloads.unrealadmin.org/UT2004/Patches/Linux/ut2004-lnxpatch3369-2.tar.bz2 http://sonic-lux.net/data/mirror/ut2004/ut2004-lnxpatch3369-2.tar.bz2 mirror://gentoo/ut2004-v3369-3-linux-dedicated.7z
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=390e3ea2228667d2a81be0b6202069a2

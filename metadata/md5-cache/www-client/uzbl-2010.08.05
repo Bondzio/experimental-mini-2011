@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 MPL-1.1
 RDEPEND=>=dev-libs/icu-4.0.1 >=net-libs/libsoup-2.24:2.4 >=net-libs/webkit-gtk-1.1.15:2 >=x11-libs/gtk+-2.14:2 x11-misc/xdg-utils browser? ( x11-misc/xclip ) helpers? ( dev-python/pygtk dev-python/pygobject:2 gnome-extra/zenity net-misc/socat x11-libs/pango x11-misc/dmenu x11-misc/xclip ) tabbed? ( dev-python/pygtk ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
 SLOT=0
 SRC_URI=http://github.com/Dieterbe/uzbl/tarball/2010.08.05 -> uzbl-2010.08.05.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=7faa994c1922a43f660d08038b309e41

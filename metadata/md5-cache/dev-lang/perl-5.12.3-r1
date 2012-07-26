@@ -11,5 +11,5 @@ PROVIDE=sys-devel/libperl
 RDEPEND=berkdb? ( sys-libs/db ) gdbm? ( >=sys-libs/gdbm-1.8.3 ) app-arch/bzip2 sys-libs/zlib
 SLOT=0
 SRC_URI=mirror://cpan/src/perl-5.12.3.tar.bz2 mirror://cpan/authors/id/R/RJ/RJBS/perl-5.12.3.tar.bz2 mirror://gentoo/perl-5.12.3-1.tar.bz2 http://dev.gentoo.org/~tove/files/perl-5.12.3-1.tar.bz2
-_eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=e762b74fdf5a9c150b016d7884a3f271

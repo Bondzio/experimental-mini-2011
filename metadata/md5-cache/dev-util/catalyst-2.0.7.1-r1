@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/python app-crypt/shash virtual/cdrtools ccache? ( dev-util/ccache ) ia64? ( sys-fs/dosfstools ) kernel_linux? ( app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 )
 SLOT=0
 SRC_URI=mirror://gentoo/catalyst-2.0.7.1.tar.bz2 http://dev.gentoo.org/~jmbsvicetto/distfiles/catalyst-2.0.7.1.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f4b84507bd8564c95b3c9034a6c2e277

@@ -5,5 +5,5 @@ KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=LGPL-2.1
 SLOT=0
 SRC_URI=http://www.kokkinizita.net/linuxaudio/downloads/clthreads-2.4.0.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=e5295193f6cf279f6f60af4bc9f80d5b

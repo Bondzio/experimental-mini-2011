@@ -1,13 +1,13 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/spacefm/spacefm-9999.ebuild,v 1.6 2012/06/17 17:31:44 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/spacefm/spacefm-9999.ebuild,v 1.7 2012/07/25 17:40:53 hasufell Exp $
 
 EAPI=4
 
 EGIT_REPO_URI="git://github.com/IgnorantGuru/${PN}.git"
 EGIT_BRANCH="next"
 
-inherit fdo-mime git-2 linux-info
+inherit fdo-mime git-2 gnome2-utils linux-info
 
 DESCRIPTION="A multi-panel tabbed file manager"
 HOMEPAGE="http://ignorantguru.github.com/spacefm/"
@@ -37,12 +37,19 @@ src_configure() {
 	econf \
 		--htmldir=/usr/share/doc/${PF}/html \
 		--disable-hal \
-		--enable-inotify
+		--enable-inotify \
+		--disable-pixmaps
+}
+
+pkg_preinst() {
+	gnome2_icon_savelist
 }
 
 pkg_postinst() {
 	fdo-mime_desktop_database_update
 	fdo-mime_mime_database_update
+	gnome2_icon_cache_update
+
 	einfo
 	elog "To mount as non-root user you need one of the following:"
 	elog "  sys-apps/udevil (recommended, see below)"
@@ -72,4 +79,5 @@ pkg_postinst() {
 pkg_postrm() {
 	fdo-mime_desktop_database_update
 	fdo-mime_mime_database_update
+	gnome2_icon_cache_update
 }

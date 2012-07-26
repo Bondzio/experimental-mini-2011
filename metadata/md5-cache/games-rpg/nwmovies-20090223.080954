@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=>=games-rpg/nwn-data-1.29-r3[videos] >=games-rpg/nwn-1.68-r4 media-video/binkplayer
 SLOT=0
 SRC_URI=http://home.roadrunner.com/~nwmovies//nwmovies/nwmovies-v4-public.20090223.080954.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f4a43218022e39f1dbd800507769dc26

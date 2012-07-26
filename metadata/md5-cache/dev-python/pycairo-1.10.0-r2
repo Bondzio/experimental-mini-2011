@@ -10,5 +10,5 @@ RDEPEND=>=x11-libs/cairo-1.10.0[svg?] python_abis_2.6? ( dev-lang/python:2.6 ) p
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=http://cairographics.org/releases/py2cairo-1.10.0.tar.bz2 http://cairographics.org/releases/pycairo-1.10.0.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	waf-utils	5ca825b3d0a1669e0ab2ea7ba10f30ea
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	waf-utils	5ca825b3d0a1669e0ab2ea7ba10f30ea
 _md5_=f5bb46e83b5dd2e236381131532a4bb2

@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=sys-apps/ucspi-tcp virtual/daemontools
 SLOT=0
 SRC_URI=http://untroubled.org/relay-ctrl/archive/relay-ctrl-3.1.1.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=ea116475e350f51888a3ba33c1abf6ad

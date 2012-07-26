@@ -11,5 +11,5 @@ RDEPEND=>=media-libs/libsndfile-1.0.20 X? ( >=x11-libs/libX11-1.4.0 >=x11-libs/l
 REQUIRED_USE=bluetooth? ( dbus )
 SLOT=0
 SRC_URI=http://freedesktop.org/software/pulseaudio/releases/pulseaudio-2.0.tar.xz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b36aa7aca0dfc066b0d117923aaa6049

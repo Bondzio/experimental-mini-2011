@@ -5,5 +5,5 @@ KEYWORDS=~amd64 ppc x86
 LICENSE=public-domain
 SLOT=0
 SRC_URI=http://foremost.sourceforge.net/pkg/foremost-0.69.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=3fec3dd6b8c60b7a8431eaf21f11d9ea

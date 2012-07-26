@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-sound/audacious-3.2 >=media-libs/dumb-0.9.3
 SLOT=0
 SRC_URI=http://www.netswarm.net/misc/audacious-dumb-0.80.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=456acfb46d6101715b805ba2b3d61677

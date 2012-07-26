@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-php/phpdepend dev-lang/php >=dev-php/pear-1.9.0
 SLOT=0
 SRC_URI=http:///get/PHP_PMD-1.1.0.tgz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-lib-r1	024ac3a18afc036cef6557c1076cc339	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-lib-r1	024ac3a18afc036cef6557c1076cc339	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=17d3ee30d6d4e4fe3f299d258e31abd0

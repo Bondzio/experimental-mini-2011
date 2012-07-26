@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 x11-libs/libXmu x11-libs/libXt x11-libs/libXaw x11-libs/libXext x11-libs/libXpm x11-libs/libXp
 SLOT=0
 SRC_URI=mirror://sourceforge/ezix/xdaf-A.01.11.01.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=3c38d61d0fe546c5cc27a4f762cb04fd

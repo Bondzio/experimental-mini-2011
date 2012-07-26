@@ -9,5 +9,5 @@ LICENSE=BSD GPL-2
 RDEPEND=dev-libs/openssl sys-libs/zlib >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( net-libs/miniupnpc ) selinux? ( sec-policy/selinux-tor )
 SLOT=0
 SRC_URI=https://archive.torproject.org/tor-package-archive/tor-0.2.3.18-rc.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=932f8ada43e73404b6fc5eb3d33b0676

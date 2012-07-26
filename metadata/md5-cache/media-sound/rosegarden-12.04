@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/qt-gui:4 media-libs/ladspa-sdk x11-libs/libSM media-sound/jack-audio-connection-kit media-libs/alsa-lib >=media-libs/dssi-1.0.0 media-libs/liblo media-libs/liblrdf sci-libs/fftw:3.0 media-libs/libsamplerate[sndfile] lirc? ( app-misc/lirc )
 SLOT=0
 SRC_URI=mirror://sourceforge/rosegarden/rosegarden/12.04-LINUX/rosegarden-12.04.tar.bz2
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=66cbb7c1c766c9348d4f24c0de33c97a

@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=net-analyzer/nagios-core
 SLOT=0
 SRC_URI=mirror://sourceforge/nagios-sap-ccms/sap-ccms-plugin-0.7.3.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=b4a77b92d61f0e7bae2f6a09fe70aaef

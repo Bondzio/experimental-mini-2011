@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=!sys-libs/glibc !sys-apps/man-pages
 SLOT=0
 SRC_URI=mirror://gnu/libiconv/libiconv-1.14.tar.gz
-_eclasses_=libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=libtool	46e19fa7553f66c48ebc7cf025acd3ed	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=88137a4f02174e0a5134641e2712bf2c

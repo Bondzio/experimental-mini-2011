@@ -8,5 +8,5 @@ LICENSE=openknights
 RDEPEND=!sci-biology/newick-utils
 SLOT=0
 SRC_URI=mirror://sourceforge/openknights/libnw-1.30.02.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=4985699ac0236b3142944df9eeccaa50

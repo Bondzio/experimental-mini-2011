@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=sys-libs/db-4.2.52 cracklib? ( sys-libs/cracklib ) pam? ( virtual/pam ) ssl? ( dev-libs/openssl ) tcpd? ( sys-apps/tcp-wrappers ) slp? ( net-libs/openslp ) cups? ( net-print/cups ) kerberos? ( virtual/krb5 ) >=sys-apps/coreutils-7.1 !app-text/yudit
 SLOT=0
 SRC_URI=mirror://sourceforge/netatalk/netatalk-2.0.5.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=e2a0617208eb06c084933b25b26347d3

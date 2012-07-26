@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=dev-libs/libnl:1.1
 SLOT=0
 SRC_URI=http://wireless.kernel.org/download/iw/iw-0.9.17.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f
 _md5_=11e9d3022d28fb6d43c4c584d117a0ac

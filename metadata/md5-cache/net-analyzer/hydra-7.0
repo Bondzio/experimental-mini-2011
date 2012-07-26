@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-libs/openssl firebird? ( dev-db/firebird ) gtk? ( dev-libs/atk dev-libs/glib:2 x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 ) idn? ( net-dns/libidn ) mysql? ( virtual/mysql ) ncp? ( net-fs/ncpfs ) oracle? ( dev-db/oracle-instantclient-basic ) pcre? ( dev-libs/libpcre ) postgres? ( dev-db/postgresql-base ) ssl? ( >=net-libs/libssh-0.4.0 ) subversion? ( dev-vcs/subversion )
 SLOT=0
 SRC_URI=http://freeworld.thc.org/releases/hydra-7.0-src.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=70e99a4b0c0b018aad10b9d7a9c30f3a

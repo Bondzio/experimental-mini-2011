@@ -5,5 +5,5 @@ HOMEPAGE=http://bdelta.org
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://github.com/jjwhitney/BDelta/tarball/v0.3.0 -> bdelta-0.3.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	vcs-snapshot	07df4a337a309c0aa605525027917677
 _md5_=eb72899abf6bab2a54b0c44c1f80cd4c

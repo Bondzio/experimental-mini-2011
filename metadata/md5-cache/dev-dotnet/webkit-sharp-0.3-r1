@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=>=dev-lang/mono-2 >=net-libs/webkit-gtk-1.4:2 dev-dotnet/gtk-sharp:2
 SLOT=0
 SRC_URI=http://mono.ximian.com/monobuild/preview/sources/webkit-sharp/webkit-sharp-0.3.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=771dc19653d9c2f36b5e0fbc35ca9c93

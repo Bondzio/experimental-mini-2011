@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libX11 dev-libs/glib:2 x11-libs/gtk+:2 >=dev-libs/atk-1 >=x11-libs/pango-1 !app-i18n/scim-cvs
 SLOT=0
 SRC_URI=mirror://sourceforge/scim/scim-1.4.11.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=72bf8d095b916be7ff5c2d77ba4a7372

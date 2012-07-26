@@ -4,12 +4,12 @@ DESCRIPTION=KDE multimedia API
 EAPI=4
 HOMEPAGE=https://projects.kde.org/projects/kdesupport/phonon
 IUSE=aqua debug +gstreamer pulseaudio vlc zeitgeist
-KEYWORDS=~amd64 ~hppa ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux
+KEYWORDS=~amd64 ~arm ~hppa ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux
 LICENSE=LGPL-2.1
 PDEPEND=aqua? ( media-libs/phonon-qt7 ) gstreamer? ( media-libs/phonon-gstreamer ) vlc? ( >=media-libs/phonon-vlc-0.3.2 )
 RDEPEND=!!x11-libs/qt-phonon:4 >=x11-libs/qt-core-4.6.0:4 >=x11-libs/qt-dbus-4.6.0:4 >=x11-libs/qt-gui-4.6.0:4 >=x11-libs/qt-test-4.6.0:4 pulseaudio? ( dev-libs/glib:2 >=media-sound/pulseaudio-0.9.21[glib] ) zeitgeist? ( dev-libs/libqzeitgeist )
 REQUIRED_USE=|| ( aqua gstreamer vlc )
 SLOT=0
 SRC_URI=mirror://kde/stable/phonon/4.6.0/src/phonon-4.6.0.tar.xz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=265560c7eb7937e7a582580685a3b512
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=11c871cc7492fe3a38932f8c09b0d738

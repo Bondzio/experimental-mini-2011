@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=!sys-fs/mtd dev-libs/lzo sys-libs/zlib >=sys-apps/util-linux-2.16
 SLOT=0
 SRC_URI=http://git.infradead.org/mtd-utils.git/snapshot/v1.5.0.tar.gz -> mtd-utils-1.5.0.tar.gz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d4dd74ca3e6ed58454bba41af9a8829f	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
 _md5_=0abdbeb25bd229d9c7d97e65be98329b
