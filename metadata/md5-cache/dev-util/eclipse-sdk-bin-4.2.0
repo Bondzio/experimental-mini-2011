@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=Eclipse SDK
+EAPI=4
+HOMEPAGE=http://www.eclipse.org
+KEYWORDS=~*
+LICENSE=EPL-1.0
+RDEPEND=>=virtual/jdk-1.6 x11-libs/gtk+:2
+SLOT=4.2
+SRC_URI=amd64? ( http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-java-juno-linux-gtk-x86_64.tar.gz&r=1 -> eclipse-java-juno-linux-gtk-x86_64.tar.gz ) x86? ( http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-java-juno-linux-gtk.tar.gz&r=1 -> eclipse-java-juno-linux-gtk.tar.gz )
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	87012e8fbee401b74b7e2bcbcd654141	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=db1a5cfd8b02312a0b9644a5327467ac
