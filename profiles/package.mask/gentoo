@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14013 2012/07/27 01:49:49 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14015 2012/07/27 13:14:54 jer Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -42,10 +42,6 @@ sys-apps/chpax
 # GTK+-2.x bindings
 # Removal in 30 days
 x11-misc/glipper
-
-# Christian Ruppert <idl0r@gentoo.org> (24 Jul 2012)
-# Masked because of the nvidia-drivers-3* mask below
-=media-video/nvidia-settings-3*
 
 # Tiziano Müller <dev-zero@gentoo.org> (24 Jul 2012)
 # Now part of net-fs/cifs-utils & unmaintained by upstream
@@ -518,7 +514,6 @@ sys-apps/systemd-sysv-utils
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
->www-client/opera-12.01
 
 # Hanno Boeck <hanno@gentoo.org> (15 Dec 2011)
 # Breaks pam_mount, which is its only user in the tree.

@@ -1,35 +1,20 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/protobuf-c/protobuf-c-0.15.ebuild,v 1.1 2012/07/27 06:32:05 radhermit Exp $
 
 EAPI=4
 
-DEPEND="dev-libs/protobuf"
-RDEPEND="${DEPEND}"
+inherit autotools-utils
 
-inherit eutils autotools
-
-DESCRIPTION="C bindings for Google's Protocol Buffers"
+DESCRIPTION="code generator and runtime libraries to use Protocol Buffers (protobuf) from pure C"
 HOMEPAGE="http://code.google.com/p/protobuf-c/"
 SRC_URI="http://protobuf-c.googlecode.com/files/${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~x64-macos"
+KEYWORDS="~amd64 ~x86"
 IUSE="static-libs"
-RESTRICT="strip"
 
-src_configure() {
-	econf \
-		$(use_enable static-libs static)
-}
-
-src_compile() {
-	emake || die "emake failed"
-}
-
-src_install() {
-	emake DESTDIR="${D}" install || die "emake install failed"
-	dodoc README ChangeLog
-
-	use static-libs || rm -rf "${D}"/usr/lib*/*.la
-}
+RDEPEND="dev-libs/protobuf"
+DEPEND="${RDEPEND}
+	virtual/pkgconfig"

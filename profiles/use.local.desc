@@ -4662,6 +4662,10 @@ net-wireless/pyrit:opencl - Enable OpenCL support via net-wireless/cpyrit-opencl
 net-wireless/spectools:debug - Build the raw output client for spectools. (for developers)
 net-wireless/spectools:gtk - Build the gtk-2 based client for spectools
 net-wireless/spectools:ncurses - Build the ncurses based client for spectools
+net-wireless/ubertooth:dfu - Install ubertooth-dfu (needed for read/write of firmware)
+net-wireless/ubertooth:specan - Enable the ubertooth spectrum analyzer
+net-wireless/ubertooth:ubertooth0-firmware - Build/install ubertooth0-firmware
+net-wireless/ubertooth:ubertooth1-firmware - Build/install ubertooth1-firmware
 net-wireless/wepattack:john - Build with app-crypt/johntheripper support
 net-wireless/wifiscanner:wireshark - Use the net-analyzer/wireshark wtap library
 net-wireless/wireless-tools:multicall - Build the most commonly used tools as one binary

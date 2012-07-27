@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/dracut/dracut-022.ebuild,v 1.2 2012/07/26 18:01:05 aidecoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/dracut/dracut-022.ebuild,v 1.5 2012/07/27 16:49:14 aidecoe Exp $
 
 EAPI=4
 
-inherit eutils linux-info
+inherit eutils linux-info toolchain-funcs
 
 add_req_use_for() {
 	local dep="$1"; shift
@@ -55,7 +55,7 @@ NETWORK_MODULES="
 add_req_use_for device-mapper ${DM_MODULES}
 add_req_use_for net ${NETWORK_MODULES}
 IUSE_DRACUT_MODULES="${COMMON_MODULES} ${DM_MODULES} ${NETWORK_MODULES}"
-IUSE="debug device-mapper +optimization net selinux ${IUSE_DRACUT_MODULES}"
+IUSE="debug device-mapper optimization net selinux ${IUSE_DRACUT_MODULES}"
 
 RESTRICT="test"
 
@@ -155,10 +155,14 @@ src_prepare() {
 	epatch "${FILESDIR}/${PV}-0013-ro_mnt-option-at-build-time-to-force-r.patch"
 	epatch "${FILESDIR}/${PV}-0014-parse-root-opts-first-check-for-ro-lat.patch"
 	epatch "${FILESDIR}/${PV}-0015-gentoo.conf-enable-ro_mnt.patch"
+	einfo "Removing ${S}/install/hashmap.o ..."
+	rm "${S}/install/hashmap.o" || die
 }
 
 src_compile() {
 	if use optimization; then
+		ewarn "Enabling experimental optimization!"
+		tc-export CC
 		emake prefix=/usr sysconfdir=/etc DESTDIR="${D}" doc \
 			install/dracut-install
 	fi

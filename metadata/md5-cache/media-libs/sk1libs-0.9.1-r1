@@ -9,4 +9,4 @@ RDEPEND=media-fonts/ttf-bitstream-vera media-libs/freetype:2 virtual/jpeg >=medi
 SLOT=0
 SRC_URI=http://uniconvertor.googlecode.com/files/sk1libs-0.9.1.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=98e4b70bb18d2c848ed8956fcad209f5
+_md5_=836b2506b08d81e8e9c40a0ae7dff0de
