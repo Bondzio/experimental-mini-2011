@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install postinst prepare
+DEFINED_PHASES=compile install prepare
 DEPEND=>=dev-libs/libxslt-1.1.26 app-text/docbook-xml-dtd:4.5 >=app-text/docbook-xsl-stylesheets-1.75.2
 DESCRIPTION=Generic initramfs generation tool
 EAPI=4
@@ -12,4 +12,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/boot/dracut/dracut-014.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4c776c5740960638999b012bc9ae248a
+_md5_=a781571b3be69ed23a895446af9adcc2
