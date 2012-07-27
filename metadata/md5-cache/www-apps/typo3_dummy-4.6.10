@@ -11,4 +11,4 @@ RDEPEND=>=app-admin/webapp-config-1.50.15
 SLOT=4.6.10
 SRC_URI=mirror://sourceforge/typo3/dummy-4.6.10.tar.gz
 _eclasses_=webapp	25b9b1696f5e698711f47d45c3d45e3e
-_md5_=b7303524bd30834e50fcf5f3a66037b5
+_md5_=e34b2b827cb5263904582a617588ce13

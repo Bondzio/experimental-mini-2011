@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=3.2.0.23.36
 SRC_URI=http://archive.ubuntu.com/ubuntu/pool/main/l/linux/./linux_3.2.0.orig.tar.gz http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_3.2.0-23.36.diff.gz http://kernel.ubuntu.com/~kernel-ppa/configs/precise/amd64-config.flavour.generic http://kernel.ubuntu.com/~kernel-ppa/configs/precise/i386-config.flavour.generic
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=4c64cee5468b42c7bbadee124b3a66ce
+_md5_=40beac3ec7b0cf94ffd1547175ab0018

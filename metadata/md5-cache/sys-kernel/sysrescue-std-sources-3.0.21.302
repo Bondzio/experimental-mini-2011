@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=3.0.21.302
 SRC_URI=mirror://kernel/linux/kernel/v3.0/linux-3.0.21.tar.bz2 http://www.funtoo.org/distfiles/std-sources-3.0.21.302-patches-config.tar.xz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=4d9f50cd7a1734b07695679fc591c3eb
+_md5_=11d0b70700097f93a87e16f7f312e118

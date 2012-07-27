@@ -3,4 +3,4 @@ DESCRIPTION=Virtual for the package manager
 KEYWORDS=*
 RDEPEND=|| ( sys-apps/portage )
 SLOT=0
-_md5_=5e50ccf0d95acdd6223bcc4c1e06f76d
+_md5_=fc3618aafbed4f5854c51b036b58624d

@@ -9,4 +9,4 @@ RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXfixes x11-libs/libXi x11-l
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=amd64? ( http://repository.spotify.com/pool/non-free/s/spotify//spotify-client_0.8.3.278.g21c7566.632-1_amd64.deb ) x86? ( http://repository.spotify.com/pool/non-free/s/spotify//spotify-client_0.8.3.278.g21c7566.632-1_i386.deb )
-_md5_=6bef8111474b983e2255fbea159457c8
+_md5_=06e73b3e19685e90d5be21fe5ffb999a

@@ -8,4 +8,4 @@ RDEPEND=>=media-gfx/splashutils-1.1.9.5[png]
 RESTRICT=binchecks strip nomirror
 SLOT=0
 SRC_URI=http://splash-themes-funtoo.googlecode.com/files/fb-splash-theme-funtoo_purple.tar.bz2 http://splash-themes-funtoo.googlecode.com/files/fb-splash-theme-funtoo_blue.tar.bz2
-_md5_=ff5b290d78a0c42348cd7efe26e27597
+_md5_=70eb33de412d7f8abe655efcfe5feb16

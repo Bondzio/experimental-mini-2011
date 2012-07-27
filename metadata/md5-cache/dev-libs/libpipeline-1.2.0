@@ -8,4 +8,4 @@ KEYWORDS=*
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=mirror://nongnu/libpipeline/libpipeline-1.2.0.tar.gz
-_md5_=b6407345f3ed257bb173ecd40f2e1c73
+_md5_=a9d39ca4e125e1742d3eeaa9855e0d68

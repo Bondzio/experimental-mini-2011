@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=2.6.32.32.62
 SRC_URI=mirror://kernel/linux/kernel/v./linux-2.6.32.tar.bz2 http://www.funtoo.org/distfiles/linux_2.6.32-32.62.diff.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=75aaccba9852e9bd432055296135b007
+_md5_=6317dcd648df4ccc34a4d78e82fb9031

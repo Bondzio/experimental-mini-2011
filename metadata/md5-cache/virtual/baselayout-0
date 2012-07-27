@@ -3,4 +3,4 @@ EAPI=3
 KEYWORDS=*
 RDEPEND=sys-apps/openrc sys-apps/baselayout
 SLOT=0
-_md5_=fc9efb385efe9a8f433edfa295b7ab22
+_md5_=f7ad0cb5e7d9cc8171d1fa01e6c43d0e

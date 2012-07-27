@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=3.2.12
 SRC_URI=http://ftp.bg.debian.org/debian/pool/main/l/linux-2.6/linux-2.6_3.2.12.orig.tar.gz http://ftp.bg.debian.org/debian/pool/main/l/linux-2.6/linux-2.6_3.2.12-1.diff.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=f53c4e692f00006da442dd72487787f2
+_md5_=8cf38af8d5a15c46f061068f5d5bac51

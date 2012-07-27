@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.
 SLOT=0
 SRC_URI=http://pypi.python.org/packages/source/P/PrettyTable/prettytable-0.5.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=8dca638e410cadd56b2eb832136497f2
+_md5_=445cda04109a2d91b38cfab08e853517

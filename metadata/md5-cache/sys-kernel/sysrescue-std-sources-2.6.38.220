@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=2.6.38.220
 SRC_URI=mirror://kernel/linux/kernel/v./linux-2.6.38.tar.bz2 http://www.funtoo.org/archive/sysrescue-std-sources/std-sources-2.6.38.220-patches-config.tar.xz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=00c717feb6e67e882751f1f8fcd96871
+_md5_=bd943220e8345b86f56d1d8d42fbc21e

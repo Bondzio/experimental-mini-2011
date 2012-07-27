@@ -10,4 +10,4 @@ RESTRICT=binchecks strip
 SLOT=2.6.32.042.055.10-r1
 SRC_URI=mirror://kernel/linux/kernel/v./linux-2.6.32.tar.bz2 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab055.10/configs/config-2.6.32-042stab055.10.i686 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab055.10/configs/config-2.6.32-042stab055.10.x86_64 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab055.10/patches/patch-042stab055.10-combined.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=e9e48649cdff841fe459da2f5e8c1f2b
+_md5_=7b4845b778bd6b6a3643ee3146f08c7d

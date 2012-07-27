@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=2.6.32.41.88
 SRC_URI=mirror://kernel/linux/kernel/v./linux-2.6.32.tar.bz2 http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_2.6.32-41.88.diff.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=c1ec786549002759d35a59c1ab267057
+_md5_=df86e32c8dcad5c765ea95ac2145bf11

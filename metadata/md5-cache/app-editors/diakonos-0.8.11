@@ -8,4 +8,4 @@ LICENSE=MIT
 RDEPEND=>=dev-lang/ruby-1.9
 SLOT=0
 SRC_URI=http://purepistos.net/diakonos/diakonos-0.8.11.tar.bz2
-_md5_=51c98aa8ccd8b2a3c127c629f1593ddb
+_md5_=3575854e35a9ac8dc7828255bceff88f

@@ -11,4 +11,4 @@ REQUIRED_USE=ldap-bind? ( ldap sasl )
 SLOT=0
 SRC_URI=ftp://ftp.porcupine.org/mirrors/postfix-release/official/postfix-2.8.7.tar.gz vda? ( http://vda.sourceforge.net/VDA/postfix-vda-v10-2.8.5.patch )
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	pam	3f746974e1cc47cabe3bd488c08cdc8e	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6d3c457910bf527bebced44143d9ce54
+_md5_=f9410dfbea34abe23137213fdfb1d75b

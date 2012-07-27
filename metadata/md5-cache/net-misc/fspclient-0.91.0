@@ -5,4 +5,4 @@ KEYWORDS=~x86
 LICENSE=MIT
 SLOT=0
 SRC_URI=mirror://sourceforge/fspclient/fspclient-0.91.0.tar.bz2
-_md5_=88bfd9fa18abbcf4ca6a27241dc6b5b7
+_md5_=12750f6fe5343a5fb892bf1bec21507f

@@ -3,4 +3,4 @@ DESCRIPTION=Virtual for the device filesystem manager
 KEYWORDS=*
 RDEPEND=|| ( sys-fs/udev sys-fs/mdev-bb )
 SLOT=0
-_md5_=2fedffbc7a3083600e01e5a28ae00f5b
+_md5_=b47a40919dc8bbb4baff34068331012b
