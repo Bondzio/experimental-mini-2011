@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/sdl-mixer media-libs/sdl-image media-libs/libsdl media-libs/sdl-net
 SLOT=0
 SRC_URI=mirror://sourceforge/njam/njam-1.25-src.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	1ba4fe0b02be8bba5fb1c80ff0c1d281	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=0c8ce556c2247811b9f92a2c0d571f3e

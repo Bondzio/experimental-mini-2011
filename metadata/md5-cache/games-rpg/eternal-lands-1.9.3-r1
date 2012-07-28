@@ -9,5 +9,5 @@ LICENSE=eternal_lands
 RDEPEND=x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext virtual/opengl virtual/glu media-libs/libsdl[X] media-libs/sdl-net media-libs/sdl-image media-libs/openal media-libs/freealut media-libs/libvorbis dev-libs/libxml2 media-libs/cal3d[-16bit-indices] media-libs/libpng >=games-rpg/eternal-lands-data-1.9.3
 SLOT=0
 SRC_URI=mirror://gentoo/elc_1.9.3-20120213.tar.bz2 http://dev.gentoo.org/~rich0/distfiles/eternal-lands.png
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	1ba4fe0b02be8bba5fb1c80ff0c1d281	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=cac8660bd48662a447d5ae3c919c5c8a

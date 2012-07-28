@@ -9,5 +9,5 @@ LICENSE=LGPL-2
 RDEPEND=media-libs/sdl-mixer media-libs/sdl-image media-libs/gd[jpeg,png] dev-libs/libxml2 dev-libs/libzip net-misc/curl joystick? ( media-libs/libsdl[joystick] ) !joystick? ( media-libs/libsdl ) X? ( x11-libs/libX11 media-libs/libsdl[X] ) !X? ( media-libs/libsdl )
 SLOT=0
 SRC_URI=mirror://sourceforge/openlierox/OpenLieroX_0.58_rc1.src.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	208d30509b917ca42d728b7d106acb73	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	1ba4fe0b02be8bba5fb1c80ff0c1d281	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f98535fa8c90929d3c03b374c34ae44c
