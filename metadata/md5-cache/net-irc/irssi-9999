@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install preinst prepare test unpack
-DEPEND=sys-libs/ncurses >=dev-libs/glib-2.2.1 ssl? ( dev-libs/openssl ) perl? ( dev-lang/perl ) socks5? ( >=net-proxy/dante-1.1.18 ) virtual/pkgconfig >=sys-devel/autoconf-2.58 dev-lang/perl www-client/lynx || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-lang/perl[-build] dev-vcs/subversion net-misc/rsync
+DEPEND=sys-libs/ncurses >=dev-libs/glib-2.2.1 ssl? ( dev-libs/openssl ) perl? ( dev-lang/perl ) socks5? ( >=net-proxy/dante-1.1.18 ) virtual/pkgconfig >=sys-devel/autoconf-2.58 dev-lang/perl www-client/lynx || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-lang/perl[-build] || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=A modular textUI IRC client with IPv6 support
 EAPI=4
 HOMEPAGE=http://irssi.org/
@@ -7,5 +7,5 @@ IUSE=ipv6 +perl ssl socks5
 LICENSE=GPL-2
 RDEPEND=sys-libs/ncurses >=dev-libs/glib-2.2.1 ssl? ( dev-libs/openssl ) perl? ( dev-lang/perl ) socks5? ( >=net-proxy/dante-1.1.18 ) perl? ( !net-im/silc-client ) dev-lang/perl[-build]
 SLOT=0
-_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	subversion	0b5e9e287abf099066bedf0b0def3665	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	1512bdfe7004902b8cd2c466fc3df772	perl-module	54833a59de4a136fb0461e6038792ef7	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c60c1bb46ea4d13ea5623d331a5c99d1

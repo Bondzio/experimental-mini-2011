@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile install postinst preinst prepare setup test unpack
-DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) dev-vcs/subversion net-misc/rsync
+DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=Google's open source JavaScript engine
 EAPI=4
 HOMEPAGE=http://code.google.com/p/v8
 LICENSE=BSD
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	python	1a2be1ad82e0d83243e3808e4edb70c5	subversion	0b5e9e287abf099066bedf0b0def3665	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	python	1a2be1ad82e0d83243e3808e4edb70c5	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=234854258ab4f1e44b2d01b7fe7c7703

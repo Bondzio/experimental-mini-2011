@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst preinst prepare setup unpack
-DEPEND=ubertooth0-firmware? ( sys-devel/crossdev ) ubertooth1-firmware? ( sys-devel/crossdev ) dev-vcs/subversion net-misc/rsync
+DEPEND=ubertooth0-firmware? ( sys-devel/crossdev ) ubertooth1-firmware? ( sys-devel/crossdev ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=An open source wireless development platform suitable for Bluetooth experimentation
 EAPI=4
 HOMEPAGE=http://ubertooth.sourceforge.net/
@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=specan? ( virtual/libusb:1 ) dfu? ( >=dev-libs/libusb-1.0.8 ) specan? ( >=x11-libs/qt-gui-4.7.2:4 >=dev-python/pyside-1.0.2 >=dev-python/numpy-1.3 >=dev-python/pyusb-1.0.0_alpha1 ) dfu? ( >=dev-python/pyusb-1.0.0_alpha1 ) =net-libs/libbtbb-9999
 REQUIRED_USE=ubertooth0-firmware? ( dfu ) ubertooth1-firmware? ( dfu )
 SLOT=0
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	subversion	0b5e9e287abf099066bedf0b0def3665	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=3719ccf56b7c84ac1232e0a065f98f15

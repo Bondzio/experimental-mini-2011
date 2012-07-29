@@ -2552,6 +2552,7 @@ media-libs/evas:tga - Support tga image loader
 media-libs/faad2:digitalradio - Digital Radio Mondiale (warning: disables other decoders)
 media-libs/flickcurl:oauth - Enable experimental OAuth support
 media-libs/flickcurl:raptor - Use media-libs/raptor for proper RDF serializing
+media-libs/fontconfig-infinality:nyx - Additional style by Ben de Groot using croscorefonts
 media-libs/freeglut:mpx - Enable support for multi-pointer-X. One pointer for each pointer device.
 media-libs/freetype:auto-hinter - Use the unpatented auto-hinter instead of the (recommended) TrueType bytecode interpreter
 media-libs/freetype:bzip2 - Support bzip2 compressed PCF fonts.
@@ -4177,6 +4178,7 @@ net-mail/lbdb:finger - Enables finger support
 net-mail/libpst:dii - enable dii support
 net-mail/mailutils:tokyocabinet - Enable Tokyo Cabinet database support
 net-mail/mairix:gnus - Add support for the marks propagation feature in app-emacs/gnus
+net-mail/mu:emacs - Install the mu4e mail client.
 net-mail/mu:gui - Build and install the experimental gui 'mug'.
 net-mail/notmuch:crypt - Support decryption and verification of PGP/MIME messages and in Emacs UI - encryption
 net-mail/notmuch:doc - Install API documentation for enabled bindings
@@ -4277,7 +4279,9 @@ net-misc/connman:vpnc - Use net-misc/vpnc for cisco VPN support.
 net-misc/connman:wimax - Use net-wireless/wimax for WiMAX support.
 net-misc/curl:ares - Enabled c-ares dns support
 net-misc/curl:gnutls - Prefer gnutls over nss and openssl as the crypto engine
+net-misc/curl:metalink - Enalbe metalink support
 net-misc/curl:nss - Prefer NSS over openssl as the crypto engine
+net-misc/curl:rtmp - Enable Enables RTMPDump Streaming Media support
 net-misc/curl:ssh - Enabled SSH urls in curl using libssh2
 net-misc/curl:ssl - Enable crypto engine support (via openssl if USE='-gnutls -nss')
 net-misc/dahdi:flash - Support (short) flash on FXS

@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=x11-libs/qt-qt3support sci-libs/fftw:3.0 x11-libs/libXft app-arch/xz-utils
+DEPEND=x11-libs/qt-qt3support:4 sci-libs/fftw:3.0 x11-libs/libXft app-arch/xz-utils
 DESCRIPTION=Convert an image file showing a graph or map into numbers
 EAPI=3
 HOMEPAGE=http://digitizer.sourceforge.net/
 IUSE=doc examples
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=x11-libs/qt-qt3support sci-libs/fftw:3.0 x11-libs/libXft
+RDEPEND=x11-libs/qt-qt3support:4 sci-libs/fftw:3.0 x11-libs/libXft
 SLOT=0
 SRC_URI=mirror://sourceforge/digitizer/digit-src-4_1.tar.gz -> engauge-4.1.tar.gz http://dev.gentoo.org/~calchan/distfiles/engauge-4.1_qt4.patch.xz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=8e7aa205f5c749d3a153153c1095494c
+_md5_=6edbfeda8e58f8ebed7204d66ae0f012

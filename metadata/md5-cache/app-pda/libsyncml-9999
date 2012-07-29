@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install preinst prepare setup test unpack
-DEPEND=>=dev-libs/glib-2.12 >=dev-libs/libwbxml-0.10 dev-libs/libxml2 http? ( net-libs/libsoup:2.4 ) obex? ( net-wireless/bluez >=dev-libs/openobex-1.1[bluetooth] ) virtual/pkgconfig doc? ( app-doc/doxygen ) test? ( >=dev-libs/check-0.9.7 ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) dev-vcs/subversion net-misc/rsync
+DEPEND=>=dev-libs/glib-2.12 >=dev-libs/libwbxml-0.10 dev-libs/libxml2 http? ( net-libs/libsoup:2.4 ) obex? ( net-wireless/bluez >=dev-libs/openobex-1.1[bluetooth] ) virtual/pkgconfig doc? ( app-doc/doxygen ) test? ( >=dev-libs/check-0.9.7 ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=Implementation of the SyncML protocol
 EAPI=2
 HOMEPAGE=http://libsyncml.opensync.org/
@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.12 >=dev-libs/libwbxml-0.10 dev-libs/libxml2 http? ( net-libs/libsoup:2.4 ) obex? ( net-wireless/bluez >=dev-libs/openobex-1.1[bluetooth] )
 SLOT=0
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	subversion	0b5e9e287abf099066bedf0b0def3665	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=a46bf23b213bced67aa5037686d367ae
