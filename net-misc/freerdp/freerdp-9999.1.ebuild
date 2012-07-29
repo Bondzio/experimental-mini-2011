@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/freerdp/freerdp-9999.1.ebuild,v 1.10 2012/07/08 00:32:24 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/freerdp/freerdp-9999.1.ebuild,v 1.11 2012/07/28 19:39:32 floppym Exp $
 
 EAPI="4"
 
@@ -25,10 +25,6 @@ HOMEPAGE="http://www.freerdp.com/"
 LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="alsa cups directfb doc ffmpeg pulseaudio smartcard sse2 test X xinerama xv"
-
-FREERDP_DEBUG="transport chanman svc dvc kbd nla nego certificate license gdi
-	rfx x11 rail xv scard orders redir"
-IUSE+=" $(printf 'debug-%s ' ${FREERDP_DEBUG})"
 
 RESTRICT="test"
 
@@ -80,10 +76,5 @@ src_configure() {
 		$(cmake-utils_use_with xinerama XINERAMA)
 		$(cmake-utils_use_with xv XV)
 	)
-	for i in ${FREERDP_DEBUG}; do
-		mycmakeargs+=(
-			$(cmake-utils_use_with debug-${i} DEBUG_$(LC_ALL=C echo ${i} | tr a-z A-Z))
-		)
-	done
 	cmake-utils_src_configure
 }

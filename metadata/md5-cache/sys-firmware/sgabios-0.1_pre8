@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install prepare
+DESCRIPTION=serial graphics adapter bios option rom for x86
+EAPI=4
+HOMEPAGE=http://code.google.com/p/sgabios/
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+LICENSE=Apache-2.0
+SLOT=0
+SRC_URI=mirror://gentoo/sgabios-0.1_pre8.tar.xz http://dev.gentoo.org/~cardoe/distfiles/sgabios-0.1_pre8.tar.xz http://dev.gentoo.org/~cardoe/distfiles/sgabios-0.1_pre8-bins.tar.xz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=659fda8fa04e07e376e92324f71645e0

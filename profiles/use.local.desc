@@ -479,6 +479,7 @@ app-emulation/qemu:vhost-net - Enable accelerated networking using vhost-net, se
 app-emulation/qemu:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu:xen - Enables support for Xen backends
 app-emulation/qemu:xfs - Support specific optimizations when files are stored on XFS filesystem.
+app-emulation/qemu-guest-agent:systemd - Install SystemD init script instead of OpenRC
 app-emulation/qemu-kvm:aio - Enables support for Linux's Async IO
 app-emulation/qemu-kvm:alsa - Enable alsa output for sound emulation
 app-emulation/qemu-kvm:brltty - Adds support for braille displays using brltty
@@ -4291,33 +4292,6 @@ net-misc/dropbear:multicall - Build all the programs as one little binary (to sa
 net-misc/dropbox:librsync-bundled - Use bundled librsync library
 net-misc/flexget:deluge - Enable deluge output plugin
 net-misc/flexget:transmission - Enable transmission output plugin
-net-misc/freerdp:debug-assert - Enable assert debugging
-net-misc/freerdp:debug-certificate - Enable certificate related debug messages
-net-misc/freerdp:debug-chanman - Enable channel manager debug messages
-net-misc/freerdp:debug-dvc - Enable dynamic virtual channel debug messages
-net-misc/freerdp:debug-gdi - Enable graphics debug messages
-net-misc/freerdp:debug-kbd - Enable keyboard related debug messages
-net-misc/freerdp:debug-license - Enable license debug messages
-net-misc/freerdp:debug-nego - Enable negotiation related debug messages
-net-misc/freerdp:debug-nla - Enable authentication related debug messages
-net-misc/freerdp:debug-orders - Print drawing orders debug messages
-net-misc/freerdp:debug-proto - Enable protocol debugging output
-net-misc/freerdp:debug-rail - Enable RemoteApp debug messages
-net-misc/freerdp:debug-redir - Print redirection debug messages
-net-misc/freerdp:debug-rfx - Enable RemoteFX debug messages
-net-misc/freerdp:debug-scard - Print smartcard debug messages
-net-misc/freerdp:debug-serial - Enable debugging of serial code
-net-misc/freerdp:debug-smartcard - Enable debugging of smard-card code
-net-misc/freerdp:debug-sound - Enable debugging of sound code
-net-misc/freerdp:debug-stream-assert - Enable stream assert debugging
-net-misc/freerdp:debug-svc - Enable static virtual channel debug messages
-net-misc/freerdp:debug-transport - Enable transport debug messages
-net-misc/freerdp:debug-x11 - Enable X11 Client debug messages
-net-misc/freerdp:debug-xv - Enable XVideo debug messages
-net-misc/freerdp:gnutls - Use GnuTLS as crypto backend
-net-misc/freerdp:nss - Use NSS as crypto backend
-net-misc/freerdp:polarssl - Use PolarSSL as crypto backend
-net-misc/freerdp:ssl - Use OpenSSL as crypto backend
 net-misc/gsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
 net-misc/gsasl:ntlm - Add support for Microsoft's NTLM mechanism using net-libs/libntlm
 net-misc/gwget:epiphany - Build epiphany extensions

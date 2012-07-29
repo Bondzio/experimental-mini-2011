@@ -10,4 +10,4 @@ RDEPEND=specan? ( virtual/libusb:1 ) dfu? ( >=dev-libs/libusb-1.0.8 ) specan? ( 
 REQUIRED_USE=ubertooth0-firmware? ( dfu ) ubertooth1-firmware? ( dfu )
 SLOT=0
 SRC_URI=mirror://sourceforge/ubertooth/ubertooth-r534.tar.gz
-_md5_=4ace6947b25d16ead80ad7b088188df8
+_md5_=45148a870033a8a2909c471e92ce12a7
