@@ -4,10 +4,10 @@ DESCRIPTION=A network protocol analyzer formerly known as ethereal
 EAPI=3
 HOMEPAGE=http://www.wireshark.org/
 IUSE=adns ares doc doc-pdf gtk ipv6 lua gcrypt geoip kerberos profile +pcap portaudio python +caps selinux smi ssl threads zlib
-KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.14:2 zlib? ( sys-libs/zlib !=sys-libs/zlib-1.2.4 ) smi? ( net-libs/libsmi ) gtk? ( >=x11-libs/gtk+-2.4.0:2 x11-libs/pango dev-libs/atk x11-misc/xdg-utils ) ssl? ( <net-libs/gnutls-3 ) gcrypt? ( dev-libs/libgcrypt ) pcap? ( net-libs/libpcap ) caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) portaudio? ( media-libs/portaudio ) ares? ( >=net-dns/c-ares-1.5 ) !ares? ( adns? ( net-libs/adns ) ) geoip? ( dev-libs/geoip ) lua? ( >=dev-lang/lua-5.1 ) selinux? ( sec-policy/selinux-wireshark ) python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.wireshark.org/download/src/all-versions/wireshark-1.6.9.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ba47badd7534fb0ad4492354cf5e8202
+_md5_=6c0b3a99decc684702da2ac68285711a

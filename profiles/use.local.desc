@@ -1930,6 +1930,7 @@ games-fps/unreal-tournament-goty:S3TC - Add the extra fancy textures to UT ... o
 games-fps/urbanterror:server - Build server target
 games-fps/warsow:angelscript - Enable AngelScript support
 games-fps/warsow:irc - Enable IRC support
+games-fps/warsow:server - Build server binaries additionally
 games-fps/worldofpadman:maps - Install extra maps (PadPack)
 games-kids/gcompris:gnet - will let GCompris fetch content from a web server
 games-misc/xcowsay:fortune - Installs the fortune-mod xcow binary
@@ -2558,6 +2559,7 @@ media-libs/freetype:auto-hinter - Use the unpatented auto-hinter instead of the 
 media-libs/freetype:bzip2 - Support bzip2 compressed PCF fonts.
 media-libs/freetype:fontforge - Install internal headers required for TrueType debugger in media-gfx/fontforge (built with USE=truetype-debugger)
 media-libs/freetype:kpathsea - Enable TeX support (ttf2pk and ttf2pfb)
+media-libs/freetype:lcdfilter - Enable infinality LCD filtering support
 media-libs/freetype:utils - Install utilities and examples from ft2demos
 media-libs/freeverb3:audacious - Build Audacious plugin
 media-libs/freeverb3:avx - Adds support for Advanced Vector Extensions instructions
@@ -2905,6 +2907,7 @@ media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
 media-sound/kid3:acoustid - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
 media-sound/kwave:phonon - Enable playback via Phonon
 media-sound/lame:mp3rtp - Build the mp3-to-RTP streaming utility. **UNSUPPORTED**
+media-sound/leechcraft-lmp:mp3tunes - Build plugin for supporting the mp3tunes.com music locker service.
 media-sound/leechcraft-lmp:mpris - Enable MPRIS support
 media-sound/lmms:fluidsynth - Enables Fluidsynth MIDI software synthesis plugin.
 media-sound/lmms:stk - Enables STK Mallet plugin.

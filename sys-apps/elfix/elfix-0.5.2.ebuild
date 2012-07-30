@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/elfix/elfix-0.5.2.ebuild,v 1.1 2012/07/29 15:56:25 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/elfix/elfix-0.5.2.ebuild,v 1.5 2012/07/29 22:04:14 blueness Exp $
 
 EAPI="4"
 
@@ -10,12 +10,12 @@ SRC_URI="http://dev.gentoo.org/~blueness/elfix/${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm ~mips ~ppc ~ppc64 ~x86"
 IUSE="test xtpax"
 
 DEPEND="
 	dev-libs/elfutils
-	=dev-python/pypax-0.5*[xtpax=]
+	=dev-python/pypax-${PV}[xtpax=]
 	xtpax? ( sys-apps/attr )"
 
 RDEPEND="${DEPEND}"

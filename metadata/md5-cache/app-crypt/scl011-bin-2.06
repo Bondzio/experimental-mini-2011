@@ -10,4 +10,4 @@ RESTRICT=mirror bindist
 SLOT=0
 SRC_URI=x86? ( http://www.scmmicro.com/npa/files/scl011_2.06_linux_32bit.tar.gz ) amd64? ( http://www.scmmicro.com/npa/files/scl011_2.06_linux_64bit.tar.gz )
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=2e57cc778fb6080c30080706c43c22b4
+_md5_=b1e85883c8930217c227d1e745363806
