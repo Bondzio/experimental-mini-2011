@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=>=dev-libs/uriparser-0.7.5 >=dev-libs/expat-2 virtual/pkgconfig test? ( >=dev-util/cpptest-1.1 ) doc? ( >=app-doc/doxygen-1.5.8 media-gfx/graphviz x11-libs/qt-assistant:4 )
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/expat-2 >=dev-libs/uriparser-0.7.5 virtual/pkgconfig doc? ( >=app-doc/doxygen-1.5.8 media-gfx/graphviz x11-libs/qt-assistant:4 ) test? ( >=dev-util/cpptest-1.1 )
 DESCRIPTION=Playlist handling library
 EAPI=4
-HOMEPAGE=http://libspiff.sourceforge.net
-IUSE=doc test
+HOMEPAGE=http://libspiff.sourceforge.net/
+IUSE=doc static-libs test
 KEYWORDS=amd64 ppc x86
 LICENSE=BSD LGPL-2.1
-RDEPEND=>=dev-libs/uriparser-0.7.5 >=dev-libs/expat-2
+RDEPEND=>=dev-libs/expat-2 >=dev-libs/uriparser-0.7.5
 SLOT=0
 SRC_URI=mirror://sourceforge/libspiff/libxspf-1.2.0.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=62af201c1f8e588f1d315095e9d64470
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=d982ff6de98eb6721cee291751dd1c06

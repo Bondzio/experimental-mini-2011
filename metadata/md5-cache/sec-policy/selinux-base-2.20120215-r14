@@ -4,10 +4,10 @@ DESCRIPTION=Gentoo base policy for SELinux
 EAPI=4
 HOMEPAGE=http://www.gentoo.org/proj/en/hardened/selinux/
 IUSE=+peer_perms +open_perms +ubac doc
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=sys-apps/policycoreutils-2.1.10 >=sys-fs/udev-151 !<=sec-policy/selinux-base-policy-2.20120215
 SLOT=0
 SRC_URI=http://oss.tresys.com/files/refpolicy/refpolicy-2.20120215.tar.bz2 http://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20120215-r14.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=5f071ea1c6892218a0baae2998ea32b2
+_md5_=5c808fcd7c1da2e1d94d54ae9933ab2f

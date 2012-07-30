@@ -3,10 +3,10 @@ DEPEND=>=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.2012
 DESCRIPTION=SELinux policy for mailman
 EAPI=4
 HOMEPAGE=http://www.gentoo.org/proj/en/hardened/selinux/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=sys-apps/policycoreutils-2.0.82 >=sec-policy/selinux-base-policy-2.20120215-r14
 SLOT=0
 SRC_URI=http://oss.tresys.com/files/refpolicy/refpolicy-2.20120215.tar.bz2 http://dev.gentoo.org/~swift/patches/selinux-base-policy/patchbundle-selinux-base-policy-2.20120215-r14.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	selinux-policy-2	de2e4942ebd87a27323be88e2bcc5af7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=155c7b6e42313b44f12b5abff198a150
+_md5_=dcc2e6d6f5a9e98c211ada359b9e6720

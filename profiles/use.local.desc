@@ -900,7 +900,6 @@ app-text/poppler:introspection - Enable GObject introspection.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
 app-text/poppler:xpdf-headers - 
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
-app-text/stardict:editor - Build and install the stardict-editor utility
 app-text/stardict:espeak - Enable text to speech synthesizer using espeak engine
 app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
 app-text/stardict:pronounce - Install WyabdcRealPeopleTTS package (it is just many .wav files) to make StarDict pronounce English words
@@ -2553,13 +2552,13 @@ media-libs/evas:tga - Support tga image loader
 media-libs/faad2:digitalradio - Digital Radio Mondiale (warning: disables other decoders)
 media-libs/flickcurl:oauth - Enable experimental OAuth support
 media-libs/flickcurl:raptor - Use media-libs/raptor for proper RDF serializing
-media-libs/fontconfig-infinality:nyx - Additional style by Ben de Groot using croscorefonts
+media-libs/fontconfig-infinality:nyx - Additional style using croscorefonts
 media-libs/freeglut:mpx - Enable support for multi-pointer-X. One pointer for each pointer device.
 media-libs/freetype:auto-hinter - Use the unpatented auto-hinter instead of the (recommended) TrueType bytecode interpreter
 media-libs/freetype:bzip2 - Support bzip2 compressed PCF fonts.
 media-libs/freetype:fontforge - Install internal headers required for TrueType debugger in media-gfx/fontforge (built with USE=truetype-debugger)
+media-libs/freetype:infinality - Enable infinality options for improved LCD filtering
 media-libs/freetype:kpathsea - Enable TeX support (ttf2pk and ttf2pfb)
-media-libs/freetype:lcdfilter - Enable infinality LCD filtering support
 media-libs/freetype:utils - Install utilities and examples from ft2demos
 media-libs/freeverb3:audacious - Build Audacious plugin
 media-libs/freeverb3:avx - Adds support for Advanced Vector Extensions instructions
@@ -3036,7 +3035,6 @@ media-sound/squeezeslave:display - Enable a text-based display
 media-sound/squeezeslave:tremor - Use a fixed-point version of the Ogg Vorbis decoder (media-libs/tremor)
 media-sound/squeezeslave:wma - Enable support for streaming Windows Media Audio
 media-sound/squeezeslave:zones - Pairs surround sound speakers into stereo zones (requires 5.1 setup or better)
-media-sound/tomahawk:resolver - Resolver download and installation integration
 media-sound/tomahawk:twitter - Enable twitter support
 media-sound/traverso:lv2 - Add support for Ladspa V2
 media-sound/vorbis-tools:kate - Adds support for Ogg Kate subtitles via libkate.
@@ -5808,7 +5806,7 @@ x11-misc/lightdm:branding - Replace original gnome background with one from Gent
 x11-misc/lightdm:introspection - Use dev-libs/gobject-introspection for introspection
 x11-misc/obconf:lxde - Add wrapper for LXDE environment
 x11-misc/rednotebook:libyaml - enable libyaml support
-x11-misc/rednotebook:webkit - enable previews using webkit engine
+x11-misc/rednotebook:spell - enable gtk-spell support
 x11-misc/redshift:geoclue - Control dependency on app-misc/geoclue
 x11-misc/revelation:applet - Enable applet for gnome-base/gnome-panel
 x11-misc/rodent:experimental - Build experimental plugins (obexfs, curlftpfs, ecryptfs, cifs and samba)

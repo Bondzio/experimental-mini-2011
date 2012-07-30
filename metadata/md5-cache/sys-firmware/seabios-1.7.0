@@ -3,10 +3,10 @@ DEPEND==dev-lang/python-2*
 DESCRIPTION=Open Source implementation of a 16-bit x86 BIOS
 EAPI=4
 HOMEPAGE=http://www.seabios.org
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~amd64-fbsd ~x86-fbsd
+KEYWORDS=~amd64 ~ppc ~ppc64 x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=LGPL-3 GPL-3
 RDEPEND=!app-emulation/qemu !<=app-emulation/qemu-kvm-0.15.0 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.linuxtogo.org/~kevin/SeaBIOS/seabios-1.7.0.tar.gz http://dev.gentoo.org/~cardoe/distfiles/seabios-1.7.0-bins.tar.xz
 _eclasses_=python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=12d4ca12ff66b6afc405c0f26467a03c
+_md5_=b122718cf7942c0f64d00d6320c7f582
