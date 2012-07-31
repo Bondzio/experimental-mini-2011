@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-rpg/arx-libertatis/arx-libertatis-1.0.2-r1.ebuild,v 1.2 2012/07/16 10:35:45 kensington Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-rpg/arx-libertatis/arx-libertatis-1.0.2-r1.ebuild,v 1.4 2012/07/31 09:07:27 hasufell Exp $
 
 EAPI=4
 
@@ -8,8 +8,7 @@ inherit eutils cmake-utils gnome2-utils games
 
 DESCRIPTION="Cross-platform port of Arx Fatalis, a first-person role-playing game"
 HOMEPAGE="http://arx-libertatis.org/"
-SRC_URI="mirror://github/arx/ArxLibertatis/${P}.tar.xz
-	mirror://sourceforge/arx/${P}/${P}.tar.xz"
+SRC_URI="mirror://sourceforge/arx/${P}/${P}.tar.xz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -49,6 +48,7 @@ src_configure() {
 		$(cmake-utils_use unity-build UNITY_BUILD)
 		$(cmake-utils_use_build tools TOOLS)
 		$(cmake-utils_use_build crash-reporter CRASHREPORTER)
+		-DCMAKE_INSTALL_PREFIX="${GAMES_PREFIX}"
 		-DGAMESBINDIR="${GAMES_BINDIR}"
 		-DCMAKE_INSTALL_DATAROOTDIR="${GAMES_DATADIR_BASE}"
 		-DICONDIR=/usr/share/icons/hicolor/128x128/apps
