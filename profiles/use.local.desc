@@ -1572,6 +1572,7 @@ dev-python/icalendar:doc - Generate examples and other extra documentation
 dev-python/ipython:matplotlib - Add support for dev-python/matplotlib
 dev-python/ipython:mongodb - Enable support for MongoDB via dev-python/pymongo
 dev-python/ipython:notebook - Install requirements for the web notebook based on www-servers/tornado
+dev-python/ipython:octave - Enable octave bridge via dev-python/oct2py
 dev-python/jinja:i18n - Enables support for i18n with dev-python/Babel
 dev-python/kaa-base:tls - SSL/TLS support via dev-python/tlslite
 dev-python/ldaptor:web - enable the web front end for ldaptor (uses dev-python/nevow)
@@ -2625,6 +2626,7 @@ media-libs/libvpx:postproc - Enable additional post processing filters
 media-libs/libvpx:sse3 - Enable optimization for SSE3 capable chips
 media-libs/libvpx:sse4_1 - Enable optimization for SSE4_1 capable processors (Intel Core 2 Penryn and later chips)
 media-libs/libvpx:ssse3 - faster floating point optimization for SSSE3 capable chips (Intel Core 2 and later chips)
+media-libs/libwebp:experimental - Build with -DWEBP_EXPERIMENTAL_FEATURES
 media-libs/lilv:dyn-manifest - Add LV2 Dynamic Manifest support. See http://lv2plug.in/ns/ext/dynmanifest/
 media-libs/lv2:plugins - Enables examples plugins.
 media-libs/mash:introspection - Use dev-libs/gobject-introspection for introspection
@@ -2665,6 +2667,7 @@ media-libs/mlt:ruby - Build SWIG bindings for Ruby
 media-libs/mlt:swfdec - Use media-libs/swfdec for reading .swf files (Macromedia Flash) instead of libavformat.
 media-libs/mlt:vdpau - Build with vdpau support
 media-libs/netpbm:rle - Build converters for the RLE format (utah raster toolkit)
+media-libs/openal:alstream - Build and install the FFmpeg based alstream example utility
 media-libs/opencv:cuda - Enable NVIDIA Cuda computations support
 media-libs/opencv:eigen - Enable usage of dev-cpp/eigen for computations
 media-libs/opencv:ipp - Enable Intel Integrated Primitive support
@@ -4252,6 +4255,7 @@ net-misc/bfgminer:icarus - Enable support for mining with Icarus FPGAs
 net-misc/bfgminer:modminer - Enable support for mining with ModMiner FPGAs
 net-misc/bfgminer:opencl - Enable support for mining with OpenCL-capable devices (GPUs)
 net-misc/bfgminer:padlock - Enable support for mining with VIA Padlock CPUs
+net-misc/bfgminer:scrypt - Enable support for scrypt mining algorithm
 net-misc/bfgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
 net-misc/bfgminer:sse4 - Enable support for CPU SSE4 mining algorithm
 net-misc/bfgminer:ztex - Enable support for mining with Ztex FPGAs
@@ -5323,7 +5327,6 @@ sys-fs/quota:rpc - Enable quota interaction via RPC
 sys-fs/s3ql:contrib - Install additional contributed scripts
 sys-fs/snapraid:ssl - use the MD5 fast implementation of the OpenSSL
 sys-fs/squashfs-tools:xz - Enable support for XZ ("LZMA2") compression using app-arch/xz-utils
-sys-fs/udev:acl - apply ACLs for users with local forground sessions
 sys-fs/udev:action_modeswitch - switch Mobile Action cables into serial mode
 sys-fs/udev:devfs-compat - Install rules for devfs compatible device names
 sys-fs/udev:edd - create /dev/disk/by-id/edd-* links for BIOS EDD data

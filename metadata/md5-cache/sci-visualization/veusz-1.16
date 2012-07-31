@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/numpy =dev-lang/python-2*
+DESCRIPTION=Qt based scientific plotting package with good Postscript output
+EAPI=4
+HOMEPAGE=http://home.gna.org/veusz/ http://pypi.python.org/pypi/veusz
+IUSE=doc examples fits
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
+LICENSE=GPL-2
+RDEPEND=dev-python/numpy dev-python/PyQt4[X,svg] fits? ( dev-python/pyfits ) =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://download.gna.org/veusz/veusz-1.16.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=1ddf6e465bbad9dab7d10abda2b387a3

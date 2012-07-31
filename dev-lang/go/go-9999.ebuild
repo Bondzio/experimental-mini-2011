@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/go/go-9999.ebuild,v 1.4 2012/06/12 22:24:11 williamh Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/go/go-9999.ebuild,v 1.5 2012/07/30 18:49:38 williamh Exp $
 
 EAPI=4
 
@@ -23,11 +23,6 @@ LICENSE="BSD"
 SLOT="0"
 IUSE="bash-completion emacs vim-syntax zsh-completion"
 
-if [[ ${PV} != 9999 ]]; then
-	IUSE="${IUSE} pax_kernel"
-	COMMON_DEPEND="pax_kernel? ( sys-apps/paxctl )"
-fi
-
 DEPEND="sys-apps/ed
 	${COMMON_DEPEND}"
 RDEPEND="bash-completion? ( app-shells/bash-completion )
@@ -47,6 +42,7 @@ src_prepare()
 	if [[ ${PV} != 9999 ]]; then
 		epatch "${FILESDIR}"/${P}-hardened.patch
 	fi
+	epatch_user
 }
 
 src_compile()
@@ -57,11 +53,8 @@ src_compile()
 	export GOROOT="$(pwd)"
 	export GOBIN="${GOROOT}/bin"
 
-	if [[ ${PV} != 9999 ]]; then
-		use pax_kernel && opts="--pax-kernel"
-	fi
 	cd src
-	./make.bash $opts || die "build failed"
+	./make.bash || die "build failed"
 	cd ..
 
 	if use emacs; then
