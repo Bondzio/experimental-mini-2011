@@ -898,7 +898,7 @@ app-text/pelican:markdown - Markdown support
 app-text/podofo:boost - Add support for boost
 app-text/poppler:introspection - Enable GObject introspection.
 app-text/poppler:utils - Install command-line PDF converters and various utilities.
-app-text/poppler:xpdf-headers - 
+app-text/poppler:xpdf-headers - Install (upstream-)unsupported xpdf headers
 app-text/sgmltools-lite:jadetex - Add support for app-text/jadetex (for processing tex files produced by the TeX backend of Jade)
 app-text/stardict:espeak - Enable text to speech synthesizer using espeak engine
 app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
@@ -1199,7 +1199,6 @@ dev-lang/gforth:force-reg - Enable a possibly unstable GCC flag for possibly lar
 dev-lang/ghc:binary - Install the binary version directly, rather than using it to build the source version.
 dev-lang/ghc:ghcbootstrap - Internal: Bootstrap GHC from an existing GHC installation.
 dev-lang/ghc:llvm - Enable llvm code geenrator for ghc (-fllvm)
-dev-lang/go:pax_kernel - enable running under a kernel with PaX enabled
 dev-lang/icc:eclipse - Install the dev-util/eclipse-sdk plugins
 dev-lang/icc:idb - Install the Intel Debugger
 dev-lang/icc:ipp - Install the Intel Integrated Primitive
