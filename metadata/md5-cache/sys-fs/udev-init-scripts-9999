@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile postinst unpack
-DEPEND=!<sys-fs/udev-182 dev-vcs/git
+DEPEND=dev-vcs/git
 DESCRIPTION=udev startup scripts for openrc
 EAPI=4
 HOMEPAGE=http://www.gentoo.org
 LICENSE=GPL-2
-RDEPEND=!<sys-fs/udev-182 >=sys-fs/udev-182 sys-apps/openrc
+RDEPEND=>=sys-fs/udev-187 sys-apps/openrc !<sys-fs/udev-186
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=18b8b81a17d6ba254e2421211b210ad2
+_md5_=0b7d76a0725c4d5d2d493a5f8dd388d6

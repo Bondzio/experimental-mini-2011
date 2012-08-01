@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare unpack
+DEPEND=expat? ( dev-libs/expat ) !expat? ( >=dev-libs/libxml2-2.6.24 ) test? ( dev-util/cunit )
+DESCRIPTION=Library for handling Metalink files
+EAPI=2
+HOMEPAGE=http://launchpad.net/libmetalink
+IUSE=expat test
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86
+LICENSE=MIT
+RDEPEND=expat? ( dev-libs/expat ) !expat? ( >=dev-libs/libxml2-2.6.24 )
+SLOT=0
+SRC_URI=https://launchpad.net/libmetalink/trunk/libmetalink-0.1.0/+download/libmetalink-0.1.0.tar.bz2
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=be0d1a53546ff4aeaf269f3c17774ffa

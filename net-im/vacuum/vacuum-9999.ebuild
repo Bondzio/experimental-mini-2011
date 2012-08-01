@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-im/vacuum/vacuum-9999.ebuild,v 1.4 2012/03/10 20:20:13 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-im/vacuum/vacuum-9999.ebuild,v 1.5 2012/08/01 07:49:23 maksbotan Exp $
 
 EAPI="4"
 LANGS="de pl ru uk"
@@ -14,7 +14,7 @@ ESVN_REPO_URI="http://vacuum-im.googlecode.com/svn/trunk"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
-PLUGINS=" adiummessagestyle annotations autostatus avatars birthdayreminder bitsofbinary bookmarks captchaforms chatstates clientinfo commands compress console dataforms datastreamsmanager emoticons filestreamsmanager filetransfer gateways inbandstreams iqauth jabbersearch messagearchiver multiuserchat pepmanager privacylists privatestorage registration remotecontrol rostersearch servicediscovery sessionnegotiation socksstreams vcard xmppuriqueries"
+PLUGINS=" adiummessagestyle annotations autostatus avatars birthdayreminder bitsofbinary bookmarks captchaforms chatstates clientinfo commands compress console dataforms datastreamsmanager emoticons filemessagearchive filestreamsmanager filetransfer gateways inbandstreams iqauth jabbersearch messagearchiver multiuserchat pepmanager privacylists privatestorage registration remotecontrol rosteritemexchange rostersearch servermessagearchive servicediscovery sessionnegotiation shortcutmanager socksstreams urlprocessor vcard xmppuriqueries"
 IUSE="${PLUGINS// / +} vcs-revision"
 for x in ${LANGS}; do
 	IUSE+=" linguas_${x}"
@@ -23,15 +23,18 @@ done
 REQUIRED_USE="
 	annotations? ( privatestorage )
 	avatars? ( vcard )
+	birthdayreminder? ( vcard )
 	bookmarks? ( privatestorage )
 	captchaforms? ( dataforms )
 	commands? ( dataforms )
 	datastreamsmanager? ( dataforms )
+	filemessagearchive? ( messagearchiver )
 	filestreamsmanager? ( datastreamsmanager )
 	filetransfer? ( filestreamsmanager datastreamsmanager )
 	pepmanager? ( servicediscovery )
 	registration? ( dataforms )
 	remotecontrol? ( commands dataforms )
+	servermessagearchive? ( messagearchiver )
 	sessionnegotiation? ( dataforms )
 "
 

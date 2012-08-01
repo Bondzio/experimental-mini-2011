@@ -10,4 +10,4 @@ RDEPEND=dev-python/numpy dev-python/PyQt4[X,svg] fits? ( dev-python/pyfits ) =de
 SLOT=0
 SRC_URI=http://download.gna.org/veusz/veusz-1.16.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=1ddf6e465bbad9dab7d10abda2b387a3
+_md5_=bf9b61338d87fcb4a1a188084fa8482a

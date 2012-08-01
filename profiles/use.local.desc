@@ -1746,7 +1746,8 @@ dev-util/geany-plugins:devhelp - Enable the devhelp plugin which integrates dev-
 dev-util/geany-plugins:enchant - Enable spell checking using enchant
 dev-util/geany-plugins:gpg - Enable geanypg plugin which integrates GPG using app-crypt/gpgme
 dev-util/geany-plugins:gtkspell - Use gtkspell for dictionary support
-dev-util/geany-plugins:soup - Enable updatechecker plugin which requires net-libs/libsoup
+dev-util/geany-plugins:multiterm - Enable the multiterm plugin
+dev-util/geany-plugins:soup - Enable updatechecker and geniuspaste plugins which require net-libs/libsoup
 dev-util/geany-plugins:webkit - Enable webhelper plugin which requires net-libs/webkit-gtk
 dev-util/glade:introspection - Use dev-libs/gobject-introspection for introspection
 dev-util/global:vim - Integrate the GNU GLOBAL source code tag system with Vim
@@ -2853,6 +2854,7 @@ media-sound/beets:chroma - Enable support for acoustic fingerprinting plugin usi
 media-sound/beets:lastgenre - Enable support for importing music genres from last.fm tags
 media-sound/beets:replaygain - Enable support for Replay Gain metadata calculation during import
 media-sound/beets:web - Enable embedded webserver support through dev-python/flask
+media-sound/cantata:mpg123 - Enable support for mp3 decoding over media-sound/mpg123.
 media-sound/clementine:kde - Enable plasma krunner global search
 media-sound/clementine:lastfm - Enable Last.fm streaming services support through media-libs/liblastfm
 media-sound/clementine:projectm - Build with ProjectM visualization
@@ -3892,6 +3894,7 @@ net-im/vacuum:console - Enable inspecting a raw XML stream
 net-im/vacuum:dataforms - Allow other modules to process and display data forms intended for the user
 net-im/vacuum:datastreamsmanager - Enable initiating a custom data stream between two XMPP entities
 net-im/vacuum:emoticons - Enable using smiley images in messages
+net-im/vacuum:filemessagearchive - Allows to save the history of conversations to local files
 net-im/vacuum:filestreamsmanager - Enable transferring files between two XMPP entities
 net-im/vacuum:filetransfer - Enable sending files to peers
 net-im/vacuum:gateways - Simplify the interaction with gateways to other IM systems
@@ -3905,10 +3908,14 @@ net-im/vacuum:privacylists - Enable blocking the undesirable contacts
 net-im/vacuum:privatestorage - Allow other modules to store arbitrary data on the server
 net-im/vacuum:registration - Enable creating accounts in Jabber services
 net-im/vacuum:remotecontrol - Allows to remotely control the client
+net-im/vacuum:rosteritemexchange - Allows to exchange contact list items
 net-im/vacuum:rostersearch - Allows to search for contacts in the roster
+net-im/vacuum:servermessagearchive - Allows to save the history of communications on the server
 net-im/vacuum:servicediscovery - Enable receiving information about Jabber entities
 net-im/vacuum:sessionnegotiation - Enable initiating the session between two entities with setting the rules for XMPP stanzas exchange
+net-im/vacuum:shortcutmanager - Allows to setup user defined shortcuts
 net-im/vacuum:socksstreams - Enable initiating SOCKS5 data streams between two XMPP entities
+net-im/vacuum:urlprocessor - Allows other plugins to load data from custom types of URLs
 net-im/vacuum:vcard - Enable obtaining peer's personal contact information
 net-im/vacuum:vcs-revision - Add VCS revision to version number, INSECURE.
 net-im/vacuum:xmppuriqueries - Allow other plugins to handle XMPP URI queries
@@ -5511,7 +5518,7 @@ www-client/lynx:ssl - Enable HTTPS support.
 www-client/midori:deprecated - Enable GTK+-2 instead of GTK+-3 because of external plugins like adobe-flash
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
 www-client/netsurf:bmp - enable bmp bitmap support (media-libs/libnsbmp)
-www-client/netsurf:freetype - use edia-libs/freetype for font rendering on framebuffer
+www-client/netsurf:freetype - use media-libs/freetype for font rendering on framebuffer
 www-client/netsurf:pdf-writer - Enable pdf output support (media-libs/libharu)
 www-client/netsurf:rosprite - enable RISC OS Sprite bitmap support (media-libs/librosprite)
 www-client/netsurf:svgtiny - enable svg image support via media-libs/svgatiny instead of gnome-base/librsvg
