@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=x11-libs/qt-core-4.8:4 >=x11-libs/qt-gui-4.8:4 >=x11-libs/qt-svg-4.8:4 alsa? ( media-libs/alsa-lib ) dbus? ( >=x11-libs/qt-dbus-4.8:4 ) jack? ( media-sound/jack-audio-connection-kit ) app-text/docbook-xsl-stylesheets virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=Virtual MIDI Piano Keyboard
+EAPI=4
+HOMEPAGE=http://vmpk.sourceforge.net/
+IUSE=alsa dbus jack
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=>=x11-libs/qt-core-4.8:4 >=x11-libs/qt-gui-4.8:4 >=x11-libs/qt-svg-4.8:4 alsa? ( media-libs/alsa-lib ) dbus? ( >=x11-libs/qt-dbus-4.8:4 ) jack? ( media-sound/jack-audio-connection-kit )
+SLOT=0
+SRC_URI=mirror://sourceforge/vmpk/vmpk-0.5.0.tar.bz2
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=710f4a45201bff826ccfca287018a74a

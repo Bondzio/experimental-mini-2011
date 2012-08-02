@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.8.1.ebuild,v 1.7 2012/07/30 05:24:24 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.8.1.ebuild,v 1.8 2012/08/02 15:21:15 jer Exp $
 
 EAPI="4"
 PYTHON_DEPEND="python? 2"
-inherit autotools eutils flag-o-matic python toolchain-funcs user
+inherit eutils flag-o-matic python toolchain-funcs user
 
 [[ -n ${PV#*_rc} && ${PV#*_rc} != ${PV} ]] && MY_P=${PN}-${PV/_} || MY_P=${P}
 DESCRIPTION="A network protocol analyzer formerly known as ethereal"

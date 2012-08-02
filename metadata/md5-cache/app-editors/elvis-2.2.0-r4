@@ -4,10 +4,10 @@ DESCRIPTION=A vi/ex clone
 EAPI=3
 HOMEPAGE=ftp://ftp.cs.pdx.edu/pub/elvis/
 IUSE=X
-KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-interix ~ppc-macos ~x86-macos ~m68k-mint ~sparc-solaris
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc x86 ~x86-interix ~ppc-macos ~x86-macos ~m68k-mint ~sparc-solaris
 LICENSE=Artistic
 RDEPEND=>=sys-libs/ncurses-5.2 X? ( >=x11-proto/xproto-7.0.4 >=x11-libs/libX11-1.0.0 >=x11-libs/libXt-1.0.0 >=x11-libs/libXpm-3.5.4.2 >=x11-libs/libXft-2.1.8.2 ) app-admin/eselect-vi
 SLOT=0
 SRC_URI=ftp://ftp.cs.pdx.edu/pub/elvis/elvis-2.2_0.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=aecda5e8c947f68d4120ea38e5b7bbbd
+_md5_=2481bb4f4616ace749bc5d22cb918c23

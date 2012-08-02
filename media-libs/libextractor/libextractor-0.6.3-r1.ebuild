@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libextractor/libextractor-0.6.3-r1.ebuild,v 1.1 2012/06/01 07:10:22 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libextractor/libextractor-0.6.3-r1.ebuild,v 1.3 2012/08/02 17:06:12 ssuominen Exp $
 
 EAPI=4
 inherit eutils flag-o-matic multilib toolchain-funcs
@@ -13,6 +13,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86"
 IUSE="ffmpeg gsf gtk pdf qt4" # test
+
+RESTRICT="test"
 
 RDEPEND="app-arch/bzip2
 	app-text/iso-codes
@@ -32,13 +34,15 @@ RDEPEND="app-arch/bzip2
 	qt4? (
 		x11-libs/qt-gui:4
 		x11-libs/qt-svg:4
-		)"
+		)
+	!app-crypt/pkcrack
+	!media-sound/csound
+	!sci-biology/glimmer
+	!sci-chemistry/pdb-extract"
 DEPEND="${RDEPEND}
-	virtual/pkgconfig
-	sys-devel/gettext"
+	sys-devel/gettext
+	virtual/pkgconfig"
 # test? ( app-forensics/zzuf )
-
-RESTRICT="test"
 
 DOCS="AUTHORS ChangeLog NEWS README TODO"
 
