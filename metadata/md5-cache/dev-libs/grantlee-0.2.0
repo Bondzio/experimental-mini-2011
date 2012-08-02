@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=x11-libs/qt-core-4.5.0:4 >=x11-libs/qt-gui-4.5.0:4 >=x11-libs/qt-script-4.5.0:4 doc? ( || ( <app-doc/doxygen-1.7.6.1[-nodot] >=app-doc/doxygen-1.7.6.1[dot] ) ) test? ( >=x11-libs/qt-test-4.5.0:4 ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=C++ string template engine based on the Django template system
+EAPI=4
+HOMEPAGE=http://www.gitorious.org/grantlee/pages/Home
+IUSE=debug doc test
+KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=>=x11-libs/qt-core-4.5.0:4 >=x11-libs/qt-gui-4.5.0:4 >=x11-libs/qt-script-4.5.0:4
+RESTRICT=test
+SLOT=0
+SRC_URI=http://www.loegria.net/grantlee/grantlee-0.2.0.tar.gz
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=860fa2f674a135681418187ca377d787

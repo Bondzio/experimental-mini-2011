@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare
-DEPEND=>=sci-libs/netcdf-4 virtual/latex-base || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png] ) app-text/ghostscript-gpl emacs? ( virtual/emacs )
+DEPEND=>=sci-libs/netcdf-4 virtual/latex-base || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png,imagemagick] ) app-text/ghostscript-gpl emacs? ( virtual/emacs )
 DESCRIPTION=Language for scientific graphics programming
 EAPI=4
 HOMEPAGE=http://gri.sourceforge.net/
 IUSE=doc emacs examples
-KEYWORDS=~amd64 ~ppc ~x86
+KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
-RDEPEND=>=sci-libs/netcdf-4 virtual/latex-base || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png] ) app-text/ghostscript-gpl emacs? ( virtual/emacs )
+RDEPEND=>=sci-libs/netcdf-4 virtual/latex-base || ( media-gfx/imagemagick[png] media-gfx/graphicsmagick[png,imagemagick] ) app-text/ghostscript-gpl emacs? ( virtual/emacs )
 SLOT=0
 SRC_URI=mirror://sourceforge/gri/gri-2.12.23.tar.gz
 _eclasses_=elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=5d1fd7231d3187b2e7a348a9eb897226
+_md5_=3b3fd1e03be9ac6d9d22eb66c5107fcb

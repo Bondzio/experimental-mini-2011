@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/gpsd/gpsd-9999.ebuild,v 1.4 2012/07/26 15:06:26 kensington Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/gpsd/gpsd-9999.ebuild,v 1.5 2012/08/01 21:51:58 vapier Exp $
 
 EAPI="4"
 
@@ -61,10 +61,9 @@ pkg_setup() {
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-3.3-ldflags.patch
-	epatch "${FILESDIR}"/${PN}-3.4-chrpath.patch
 	epatch "${FILESDIR}"/${PN}-3.4-always-install-man-pages.patch
-	epatch "${FILESDIR}"/${PN}-3.5-clock.patch
 	epatch "${FILESDIR}"/${PN}-3.4-no-man-gen.patch
+	epatch "${FILESDIR}"/${PN}-3.7-rpath.patch
 
 	# Avoid useless -L paths to the install dir
 	sed -i \
@@ -96,6 +95,7 @@ src_configure() {
 	myesconsargs=(
 		prefix="${EPREFIX}/usr"
 		libdir="\$prefix/$(get_libdir)"
+		chrpath=False
 		gpsd_user=gpsd
 		gpsd_group=uucp
 		strip=False
