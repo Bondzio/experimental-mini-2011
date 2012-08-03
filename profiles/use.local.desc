@@ -1470,6 +1470,8 @@ dev-lisp/sbcl:pax_kernel - Enable if the user plans to run the package under a p
 dev-lua/luarocks:curl - Uses net-misc/curl for fetching lua packages instead of net-misc/wget.
 dev-lua/luarocks:openssl - Uses dev-libs/openssl for verifying lua packages instead of md5sum.
 dev-ml/cairo-ocaml:pango - Enable support for x11-libs/pango
+dev-ml/deriving-ocsigen:type-conv - Enable type-conv for the syntax extention.
+dev-ml/js_of_ocaml:deriving-ocsigen - Enable deriving-ocsigen for improving the type safety.
 dev-ml/lablgtk:glade - Enable libglade bindings compilation.
 dev-ml/lablgtk:gnomecanvas - Enable libgnomecanvas bindings compilation.
 dev-ml/lablgtk:sourceview - Enable GtkSourceView support

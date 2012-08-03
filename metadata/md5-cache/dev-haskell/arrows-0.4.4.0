@@ -4,10 +4,10 @@ DESCRIPTION=Arrow classes and transformers
 EAPI=4
 HOMEPAGE=http://www.haskell.org/arrows/
 IUSE=doc hscolour profile
-KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~alpha amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
 RDEPEND=dev-haskell/stream[profile?] >=dev-lang/ghc-6.10.1 dev-lang/ghc
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/arrows/0.4.4.0/arrows-0.4.4.0.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	10f63c8efa3135a67f680571f1956a97	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=9ad164c8f081a5274a54cfd64f929ec8
+_md5_=d4e62cd0e83bfd9fab7d038573de3221

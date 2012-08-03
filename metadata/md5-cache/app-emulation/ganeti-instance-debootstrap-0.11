@@ -2,10 +2,10 @@ DEFINED_PHASES=configure install
 DESCRIPTION=Scripts to build Ganeti VMs with debootstrap
 EAPI=2
 HOMEPAGE=http://code.google.com/p/ganeti/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=app-arch/dpkg app-arch/dump app-emulation/ganeti dev-util/debootstrap >=sys-apps/coreutils-6.10-r1 sys-apps/util-linux sys-fs/e2fsprogs
 SLOT=0
 SRC_URI=http://ganeti.googlecode.com/files/ganeti-instance-debootstrap-0.11.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6d9b2ba2481ee695a197dd18bf56d429
+_md5_=ec394b8c813056b3c0676edaf415d6c1
