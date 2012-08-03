@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
+DEPEND=app-arch/xz-utils dev-lang/perl
+DESCRIPTION=Linux system headers
+EAPI=3
+HOMEPAGE=http://www.kernel.org/ http://www.gentoo.org/
+KEYWORDS=*
+LICENSE=GPL-2
+RESTRICT=binchecks strip
+SLOT=0
+SRC_URI=mirror://gentoo/gentoo-headers-base-3.4.tar.xz mirror://gentoo/gentoo-headers-3.4-3.tar.xz
+_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	kernel-2	dd451098928ff900df7c254820871c00	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=fde6d126eb50655ff2f62a4d9dbb586c
