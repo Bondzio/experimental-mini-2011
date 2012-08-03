@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
+DEFINED_PHASES=compile install postinst postrm prepare setup test
 DEPEND=dev-python/cython test? ( dev-python/numpy ) =dev-lang/python-2*
 DESCRIPTION=Python module for discrete, stationary, and packet wavelet transforms.
-EAPI=3
+EAPI=4
 HOMEPAGE=http://www.pybytes.com/pywavelets/ http://pypi.python.org/pypi/PyWavelets
 IUSE=doc examples test
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=MIT
 RDEPEND=dev-python/numpy =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/P/PyWavelets/PyWavelets-0.2.0.tar.bz2
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=970e02b1b1470b1ba0453fafb8850f45
+_md5_=6c9e7cdb04273f2f0decb5104f6feaf2

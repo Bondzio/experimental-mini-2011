@@ -1,13 +1,13 @@
-DEFINED_PHASES=compile install postinst postrm prepare test
+DEFINED_PHASES=compile install postinst postrm prepare setup test
 DEPEND=dev-python/numpy test? ( dev-python/pytest dev-python/numpy dev-python/matplotlib dev-python/pyfits dev-python/pywcs ) =dev-lang/python-2*
 DESCRIPTION=Astronomical Plotting Library in Python
-EAPI=2
+EAPI=4
 HOMEPAGE=http://aplpy.github.com/ http://pypi.python.org/pypi/APLpy
 IUSE=test
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-3
 RDEPEND=dev-python/numpy dev-python/matplotlib dev-python/pyfits dev-python/pywcs =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://github/aplpy/aplpy/APLpy-0.9.8.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=7fdf480591a8e185f8d85969c0cd95d0
+_md5_=65ca1436b7715159b20bfdfcddc596ed
