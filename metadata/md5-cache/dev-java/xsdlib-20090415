@@ -4,10 +4,10 @@ DESCRIPTION=Sun XML Datatypes Library
 EAPI=4
 HOMEPAGE=http://msv.java.net/
 IUSE=elibc_FreeBSD doc source elibc_FreeBSD
-KEYWORDS=~amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+KEYWORDS=amd64 ~ia64 ~ppc ~ppc64 ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE=BSD-2 Apache-1.1
 RDEPEND=dev-java/xerces:2 dev-java/relaxng-datatype:0 >=virtual/jre-1.4 >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=0
 SRC_URI=http://java.net/downloads/msv/releases/xsdlib.20090415.zip
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-pkg-simple	d7cef87260947d4cce245c4f026377e2	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=319eceb27263d70cea023c023ea131fa
+_md5_=0867740322495138020c123a1e20636f
