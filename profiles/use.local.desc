@@ -153,6 +153,7 @@ app-admin/gkrellm:ssl - Enable SSL support for mail checking with dev-libs/opens
 app-admin/gnome-system-tools:nfs - Adds support for NFS shares
 app-admin/gtkdiskfree:gtk3 - Use GTK+3 instead of 2
 app-admin/hddtemp:network-cron - Monthly cronjob to update hddtemp.db.
+app-admin/keepass:aot - Generate native code at build time, rather than runtime.
 app-admin/lcap:lids - If you have the Linux Intrusion Detection System
 app-admin/logrotate:acl - Installs acl support
 app-admin/logrotate:selinux - Installs Security Enhanced Linux support
@@ -1865,6 +1866,7 @@ games-arcade/smc:music - Download and install the music files
 games-arcade/tuxanci:physfs - Use dev-games/physfs instead of dev-libs/libzip to load compressed data
 games-arcade/tuxanci:sound - Enable sound
 games-board/chessdb:tb4 - Install 4 pieces table bases
+games-board/cockatrice:server - Compile server support
 games-board/crafty:no-opts - Don't try to enable crazy CFLAG options
 games-board/freedoko:backgrounds - Install additional background images
 games-board/freedoko:gnomecards - Install the gnome-games card set

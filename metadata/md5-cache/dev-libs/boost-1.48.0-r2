@@ -10,4 +10,4 @@ RDEPEND=icu? ( >=dev-libs/icu-3.3 ) mpi? ( || ( sys-cluster/openmpi[cxx] sys-clu
 SLOT=1.48
 SRC_URI=mirror://sourceforge/boost/boost_1_48_0.tar.bz2
 _eclasses_=check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=e6fb3c812aa75918587a08c1e40e244a
+_md5_=5c2f8370593cff293dbafb3036a5a6cb

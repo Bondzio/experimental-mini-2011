@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/pg/pg-0.13.2.ebuild,v 1.2 2012/05/01 18:24:04 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/pg/pg-0.13.2.ebuild,v 1.3 2012/08/04 07:15:46 graaff Exp $
 
 EAPI=4
 USE_RUBY="ruby18 ree18 ruby19"
@@ -41,6 +41,8 @@ all_ruby_prepare() {
 		-e '/Rakefile.cross/s:^:#:' \
 		-e '/ExtensionTask/,/^end$/ s:^:#:' \
 		Rakefile || die
+
+	sed -i -e '18i require "socket"' spec/pg/connection_spec.rb || die
 }
 
 each_ruby_configure() {
