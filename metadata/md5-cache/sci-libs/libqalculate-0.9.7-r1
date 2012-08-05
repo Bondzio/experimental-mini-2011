@@ -10,4 +10,4 @@ RDEPEND=>=sci-libs/cln-1.2 dev-libs/libxml2:2 dev-libs/glib:2 sys-libs/zlib read
 SLOT=0
 SRC_URI=mirror://sourceforge/qalculate-0.9.7/libqalculate-0.9.7.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=83f9e7d9805254e7838103f3bc397473
+_md5_=5a89396c38e701ba7da379a32df02993

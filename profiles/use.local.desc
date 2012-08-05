@@ -4851,6 +4851,8 @@ sci-libs/linux-gpib:firmware - Install firmware
 sci-libs/lis:fma - Use the Fused Multiply Add instruction set (x86 arches)
 sci-libs/lis:quad - Enable quadruple precision operations
 sci-libs/lis:saamg - Build the Smoothed Aggregation Algebraic MultiGrid preconditioner
+sci-libs/mathgl:double-precision - Add double precision calculations
+sci-libs/mathgl:hdf - Add support for the Hierarchical Data Format v.4 sci-libs/hdf
 sci-libs/mathgl:octave - Add bindings for sci-mathematics/octave
 sci-libs/matio:sparse - Extend formats for sparse matrix (not matlab)
 sci-libs/metis:int64 - Build the 64 bits integer library (metis >=5 only)
@@ -4859,7 +4861,7 @@ sci-libs/mkl:int64 - Installs the 64 bits integer libraries
 sci-libs/mkl:serial - Installs the serial (as non-threaded) libraries
 sci-libs/mpir:cpudetection - Enables runtime cpudetection (useful for bindist, compatability on other CPUs)
 sci-libs/netcdf:dap - Support for remote data access with the built-in OPeNDAP client
-sci-libs/netcdf:hdf - dd support for the Hierarchical Data Format v. 4sci-libs/hdf
+sci-libs/netcdf:hdf - Add support for the Hierarchical Data Format v.4 sci-libs/hdf
 sci-libs/netcdf:tools - Build the utilities nccopy, ncgen and ncdump
 sci-libs/nlopt:octave - Add plugin for sci-mathematics/octave
 sci-libs/opencascade:gl2ps - Use gl2ps PostScript printing library
