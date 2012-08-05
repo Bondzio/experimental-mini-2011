@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.25.0-r1.ebuild,v 1.15 2012/07/20 01:59:05 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.26.0.ebuild,v 1.5 2012/07/24 14:16:29 jer Exp $
 
 EAPI="4"
 
@@ -12,16 +12,17 @@ SRC_URI="http://curl.haxx.se/download/${P}.tar.bz2"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 IUSE="ares idn ipv6 kerberos ldap ssh ssl static-libs test threads"
-IUSE="${IUSE} curl_ssl_axtls curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl"
+IUSE="${IUSE} curl_ssl_axtls curl_ssl_cyassl curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl"
 
 #lead to lots of false negatives, bug #285669
 RESTRICT="test"
 
 RDEPEND="ldap? ( net-nds/openldap )
 	ssl? (
-		curl_ssl_axtls? ( net-libs/axtls app-misc/ca-certificates )
+		curl_ssl_axtls?  ( net-libs/axtls  app-misc/ca-certificates )
+		curl_ssl_cyassl? ( net-libs/cyassl app-misc/ca-certificates )
 		curl_ssl_gnutls? (
 			|| (
 				( >=net-libs/gnutls-3[static-libs?] dev-libs/nettle )
@@ -62,6 +63,7 @@ REQUIRED_USE="threads? ( !ares )
 	ssl? (
 		^^ (
 			curl_ssl_axtls
+			curl_ssl_cyassl
 			curl_ssl_gnutls
 			curl_ssl_openssl
 			curl_ssl_nss
@@ -74,7 +76,6 @@ DOCS=( CHANGES README docs/FEATURES docs/INTERNALS \
 
 src_prepare() {
 	epatch \
-		"${FILESDIR}"/${PN}-7.19.7-test241.patch \
 		"${FILESDIR}"/${PN}-7.18.2-prefix.patch \
 		"${FILESDIR}"/${PN}-respect-cflags-3.patch \
 		"${FILESDIR}"/${PN}-fix-gnutls-nettle.patch
@@ -98,6 +99,12 @@ src_configure() {
 			einfo "NOTE: axtls is meant for embedded systems and"
 			einfo "may not be the best choice as an ssl provider"
 			myconf+=( --with-axtls )
+		fi
+		if use curl_ssl_cyassl; then
+			einfo "SSL provided by cyassl"
+			einfo "NOTE: cyassl is meant for embedded systems and"
+			einfo "may not be the best choice as an ssl provider"
+			myconf+=( --with-cyassl )
 		fi
 		if use curl_ssl_gnutls; then
 			einfo "SSL provided by gnutls"

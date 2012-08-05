@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.25.0-r1.ebuild,v 1.15 2012/07/20 01:59:05 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.27.0-r2.ebuild,v 1.4 2012/08/04 16:39:50 jer Exp $
 
 EAPI="4"
 
@@ -12,22 +12,22 @@ SRC_URI="http://curl.haxx.se/download/${P}.tar.bz2"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
-IUSE="ares idn ipv6 kerberos ldap ssh ssl static-libs test threads"
-IUSE="${IUSE} curl_ssl_axtls curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl"
+KEYWORDS="~amd64 ~arm ~hppa ~mips ~ppc ~ppc64 ~s390 ~sh ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+IUSE="ares idn ipv6 kerberos ldap metalink rtmp ssh ssl static-libs test threads"
+IUSE="${IUSE} curl_ssl_axtls curl_ssl_cyassl curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl"
 
 #lead to lots of false negatives, bug #285669
 RESTRICT="test"
 
 RDEPEND="ldap? ( net-nds/openldap )
 	ssl? (
-		curl_ssl_axtls? ( net-libs/axtls app-misc/ca-certificates )
+		curl_ssl_axtls?  ( net-libs/axtls  app-misc/ca-certificates )
+		curl_ssl_cyassl? ( net-libs/cyassl app-misc/ca-certificates )
 		curl_ssl_gnutls? (
 			|| (
 				( >=net-libs/gnutls-3[static-libs?] dev-libs/nettle )
 				( =net-libs/gnutls-2.12*[nettle,static-libs?] dev-libs/nettle )
 				( =net-libs/gnutls-2.12*[-nettle,static-libs?] dev-libs/libgcrypt[static-libs?] )
-				( <net-libs/gnutls-2.12 dev-libs/libgcrypt[static-libs?] )
 			)
 			app-misc/ca-certificates
 		)
@@ -38,13 +38,22 @@ RDEPEND="ldap? ( net-nds/openldap )
 	idn? ( net-dns/libidn[static-libs?] )
 	ares? ( net-dns/c-ares )
 	kerberos? ( virtual/krb5 )
+	metalink? ( >=media-libs/libmetalink-0.1.0 )
+	rtmp? ( media-video/rtmpdump )
 	ssh? ( net-libs/libssh2[static-libs?] )
 	sys-libs/zlib"
+
+# Do we need to enforce the same ssl backend for curl and rtmpdump? Bug #423303
+#	rtmp? (
+#		media-video/rtmpdump
+#		curl_ssl_gnutls? ( media-video/rtmpdump[gnutls] )
+#		curl_ssl_polarssl? ( media-video/rtmpdump[polarssl] )
+#		curl_ssl_openssl? ( media-video/rtmpdump[-gnutls,-polarssl,ssl] )
+#	)
 
 # ssl providers to be added:
 # fbopenssl  $(use_with spnego)
 
-# rtmpdump ( media-video/rtmpdump )  / --with-librtmp
 # krb4 http://web.mit.edu/kerberos/www/krb4-end-of-life.html
 
 DEPEND="${RDEPEND}
@@ -54,14 +63,15 @@ DEPEND="${RDEPEND}
 		sys-apps/diffutils
 		dev-lang/perl
 	)"
-# used - but can do without in self test: net-misc/stunnel
 
 # ares must be disabled for threads
 # only one ssl provider can be enabled
-REQUIRED_USE="threads? ( !ares )
+REQUIRED_USE="
+	threads? ( !ares )
 	ssl? (
 		^^ (
 			curl_ssl_axtls
+			curl_ssl_cyassl
 			curl_ssl_gnutls
 			curl_ssl_openssl
 			curl_ssl_nss
@@ -74,8 +84,8 @@ DOCS=( CHANGES README docs/FEATURES docs/INTERNALS \
 
 src_prepare() {
 	epatch \
-		"${FILESDIR}"/${PN}-7.19.7-test241.patch \
-		"${FILESDIR}"/${PN}-7.18.2-prefix.patch \
+		"${FILESDIR}"/${PN}-7.27.0-curl-config.patch \
+		"${FILESDIR}"/${PN}-7.27.0-prefix.patch \
 		"${FILESDIR}"/${PN}-respect-cflags-3.patch \
 		"${FILESDIR}"/${PN}-fix-gnutls-nettle.patch
 	sed -i '/LD_LIBRARY_PATH=/d' configure.ac || die #382241
@@ -98,6 +108,12 @@ src_configure() {
 			einfo "NOTE: axtls is meant for embedded systems and"
 			einfo "may not be the best choice as an ssl provider"
 			myconf+=( --with-axtls )
+		fi
+		if use curl_ssl_cyassl; then
+			einfo "SSL provided by cyassl"
+			einfo "NOTE: cyassl is meant for embedded systems and"
+			einfo "may not be the best choice as an ssl provider"
+			myconf+=( --with-cyassl )
 		fi
 		if use curl_ssl_gnutls; then
 			einfo "SSL provided by gnutls"
@@ -147,7 +163,6 @@ src_configure() {
 		$(use_enable ldap) \
 		$(use_enable ldap ldaps) \
 		--enable-pop3 \
-		--without-librtmp \
 		--enable-rtsp \
 		$(use_with ssh libssh2) \
 		--enable-smtp \
@@ -166,10 +181,15 @@ src_configure() {
 		$(use_enable static-libs static) \
 		$(use_enable threads threaded-resolver) \
 		--disable-versioned-symbols \
+		--without-darwinssl \
 		$(use_with idn libidn) \
 		$(use_with kerberos gssapi "${EPREFIX}"/usr) \
 		--without-krb4 \
+		$(use_with metalink libmetalink)  \
+		$(use_with rtmp librtmp) \
 		--without-spnego \
+		--without-winidn \
+		--without-winssl \
 		--with-zlib \
 		"${myconf[@]}"
 }

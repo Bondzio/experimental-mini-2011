@@ -1,5 +1,8 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.21.4.ebuild,v 1.14 2012/05/05 03:20:41 jdhore Exp $
 
+# NOTE: If you bump this ebuild, make sure you bump dev-python/pycurl!
 
 EAPI=4
 
@@ -11,24 +14,26 @@ SRC_URI="http://curl.haxx.se/download/${P}.tar.bz2"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="*"
-IUSE="ares gnutls idn ipv6 kerberos ldap ssh nss ssl static-libs test threads"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+IUSE="ares gnutls idn ipv6 kerberos ldap nss ssh ssl static-libs test threads"
 
 RDEPEND="ldap? ( net-nds/openldap )
+	ssl? (
 		gnutls? ( net-libs/gnutls dev-libs/libgcrypt app-misc/ca-certificates )
-		nss? ( !gnutls? ( !ssl? ( dev-libs/nss app-misc/ca-certificates ) ) )
-		ssl? ( !gnutls? ( dev-libs/openssl ) )
-		idn? ( net-dns/libidn )
-		ares? ( >=net-dns/c-ares-1.6 )
-		kerberos? ( virtual/krb5 )
-		ssh? ( >=net-libs/libssh2-0.16 )"
+		nss? ( !gnutls? ( dev-libs/nss app-misc/ca-certificates ) )
+		!gnutls? ( !nss? ( dev-libs/openssl ) )
+	)
+	idn? ( net-dns/libidn )
+	ares? ( >=net-dns/c-ares-1.4.0 )
+	kerberos? ( virtual/krb5 )
+	ssh? ( >=net-libs/libssh2-0.16 )"
 
 # rtmpdump ( media-video/rtmpdump )  / --with-librtmp
 # fbopenssl (not in gentoo) --with-spnego
 # krb4 http://web.mit.edu/kerberos/www/krb4-end-of-life.html
 
 DEPEND="${RDEPEND}
-	sys-apps/ed
+	virtual/pkgconfig
 	test? (
 		sys-apps/diffutils
 		dev-lang/perl
@@ -37,13 +42,15 @@ DEPEND="${RDEPEND}
 
 # ares must be disabled for threads and both can be disabled
 # one can use wether gnutls or nss if ssl is enabled
-REQUIRED_USE="threads? ( !ares ) nss? ( !gnutls )"
+REQUIRED_USE="threads? ( !ares )
+	gnutls? ( ssl )
+	nss? ( ssl )"
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-7.20.0-strip-ldflags.patch \
 		"${FILESDIR}"/${PN}-7.19.7-test241.patch \
 		"${FILESDIR}"/${PN}-7.18.2-prefix.patch \
-		"${FILESDIR}"/${PN}-respect-cflags-3.patch
+		"${FILESDIR}"/${PN}-respect-cflags.patch
 
 	eprefixify curl-config.in
 	eautoreconf
@@ -80,40 +87,26 @@ src_configure() {
 		--without-librtmp
 		--without-spnego"
 
+	if use ssl ; then
 		if use gnutls; then
 			myconf+=" --without-ssl --with-gnutls --without-nss"
 			myconf+=" --with-ca-bundle=${EPREFIX}/etc/ssl/certs/ca-certificates.crt"
 		elif use nss; then
 			myconf+=" --without-ssl --without-gnutls --with-nss"
 			myconf+=" --with-ca-bundle=${EPREFIX}/etc/ssl/certs/ca-certificates.crt"
-		elif use ssl; then
-			myconf+=" --without-gnutls --without-nss --with-ssl"
-			myconf+=" --with-ca-bundle=${EPREFIX}/etc/ssl/certs/ca-certificates.crt"
 		else
 			myconf+=" --without-gnutls --without-nss --with-ssl"
 			myconf+=" --without-ca-bundle --with-ca-path=${EPREFIX}/etc/ssl/certs"
 		fi
-		
+	else
+		myconf+=" --without-gnutls --without-nss --without-ssl"
+	fi
+
 	econf ${myconf}
 }
 
-src_compile() {
-
-	default 
-
-	# curl seems to be in troubles when being cross-compiled in the amd64 world as a 32 bits binary (wrong sizes are configured by configuration scripts thus making the package to break)
-	# unfortunately the original Gentoo ebuild at revision 7.22.0 assumes this is was true everywhere and makes things badly broken on other arches like sparc64
-
-	if [ ${PROFILE_ARCH} != "sparc64" ] ; then 
-		
-		ed - lib/curl_config.h < "${FILESDIR}"/config.h.ed || die
-		ed - src/curl_config.h < "${FILESDIR}"/config.h.ed || die
-		ed - include/curl/curlbuild.h < "${FILESDIR}"/curlbuild.h.ed || die
-	fi
-}
-
 src_install() {
-	default
+	emake DESTDIR="${D}" install
 	find "${ED}" -name '*.la' -exec rm -f {} +
 	rm -rf "${ED}"/etc/
 
