@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/molmol/molmol-2k_p2-r2.ebuild,v 1.11 2012/02/17 09:24:23 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/molmol/molmol-2k_p2-r2.ebuild,v 1.12 2012/08/05 12:38:45 jlec Exp $
 
 EAPI=4
 
@@ -22,23 +22,25 @@ IUSE=""
 
 DEPEND="
 	|| (
-		media-libs/mesa[motif]
 		(	media-libs/mesa
-			x11-libs/libGLw ) )
+			x11-libs/libGLw )
+		media-libs/mesa[motif] )
 	media-libs/libpng:0
 	media-libs/tiff:0
 	sys-libs/zlib
 	virtual/jpeg
 	x11-libs/libXpm
-	>=x11-libs/openmotif-2.3:0
+	x11-libs/openmotif:0
 	x11-apps/xdpyinfo"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
 
-MMDIR="/usr/$(get_libdir)/molmol"
-
 MAKEOPTS="${MAKEOPTS} -j1"
+
+pkg_setup() {
+	MMDIR="/usr/$(get_libdir)/molmol"
+}
 
 src_prepare() {
 	rm -rf tiff*
@@ -50,7 +52,7 @@ src_prepare() {
 
 	epatch "${FILESDIR}"/ldflags.patch
 
-	ln -s makedef.lnx "${S}"/makedef
+	ln -s makedef.lnx "${S}"/makedef || die
 
 	sed \
 		-e "s:/bin/ksh:${EPREFIX}/bin/sh:" \

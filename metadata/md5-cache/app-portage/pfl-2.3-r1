@@ -4,10 +4,10 @@ DESCRIPTION=Searchable online file/package database for Gentoo
 EAPI=4
 HOMEPAGE=http://www.portagefilelist.de
 IUSE=+network-cron
-KEYWORDS=~amd64 ~arm ~hppa ~ppc ~sparc ~x86 ~amd64-fbsd
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~sparc ~x86 ~amd64-fbsd ~x64-freebsd
 LICENSE=GPL-2
 RDEPEND=net-misc/curl sys-apps/portage =dev-lang/python-2* =dev-lang/python-2*[xml] =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=http://files.portagefilelist.de/pfl-2.3.tar.bz2
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=7ccdb016b89272a3c9098cd32f621b00
+_md5_=fb84bfd5f0d651089acd47019cdcb92b
