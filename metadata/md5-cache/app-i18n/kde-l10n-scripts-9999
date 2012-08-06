@@ -1,4 +1,4 @@
-DEFINED_PHASES=unpack
+DEFINED_PHASES=prepare unpack
 DEPEND=app-i18n/pology app-shells/bash dev-vcs/subversion dev-vcs/git
 DESCRIPTION=Set of scripts to manage KDE translation files.
 EAPI=4
@@ -7,4 +7,4 @@ LICENSE=LGPL-3
 RDEPEND=app-i18n/pology app-shells/bash dev-vcs/subversion
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=63eac35f5837bf25a92a9c1f6cd7c88b
+_md5_=a4ab5839ea95cfb5495e20dab2396df7

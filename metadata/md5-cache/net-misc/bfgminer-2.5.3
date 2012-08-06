@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) dev-libs/jansson udev? ( sys-fs/udev ) ztex? ( virtual/libusb:1 ) virtual/pkgconfig sys-apps/sed adl? ( x11-libs/amd-adl-sdk ) opencl? ( || ( virtual/opencl virtual/opencl-sdk app-admin/eselect-opencl dev-util/ati-stream-sdk dev-util/ati-stream-sdk-bin dev-util/amdstream dev-util/amd-app-sdk dev-util/amd-app-sdk-bin dev-util/nvidia-cuda-sdk[opencl] dev-util/intel-opencl-sdk ) ) sse2? ( >=dev-lang/yasm-1.0.1 ) sse4? ( >=dev-lang/yasm-1.0.1 )
+DEPEND=net-misc/curl ncurses? ( sys-libs/ncurses ) dev-libs/jansson udev? ( sys-fs/udev ) ztex? ( virtual/libusb:1 ) virtual/pkgconfig sys-apps/sed adl? ( x11-libs/amd-adl-sdk ) opencl? ( virtual/opencl ) sse2? ( >=dev-lang/yasm-1.0.1 ) sse4? ( >=dev-lang/yasm-1.0.1 )
 DESCRIPTION=Modular Bitcoin CPU/GPU/FPGA miner in C
 EAPI=4
 HOMEPAGE=https://bitcointalk.org/index.php?topic=78192.0
@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( bitforce cpumining icarus modminer opencl ztex ) adl? ( opencl
 SLOT=0
 SRC_URI=http://luke.dashjr.org/programs/bitcoin/files/bfgminer/2.5.3/bfgminer-2.5.3.tbz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=a96899d185cba5e92a512a189d3f8806
+_md5_=8fe2bcdb3797fbc9d4c2baba59d233d0
