@@ -3,10 +3,10 @@ DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Generic server class for PHP.
 EAPI=4
 HOMEPAGE=http://pear.php.net/Net_Server
-KEYWORDS=~alpha amd64 hppa ~ia64 ppc ppc64 ~sparc x86
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
 LICENSE=PHP-3.01
 RDEPEND=dev-lang/php[sockets] dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Net_Server-1.0.2.tgz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	php-pear-r1	ec6ca81a78eed55923c519977010e559	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=82465602284505a3860519119fcaa981
+_md5_=f1aab76148bc79a80aecf9119bf5d3ed

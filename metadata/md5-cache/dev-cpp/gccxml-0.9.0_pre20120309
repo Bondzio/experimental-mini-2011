@@ -3,9 +3,9 @@ DEPEND=>=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=XML output extension to GCC
 EAPI=4
 HOMEPAGE=http://www.gccxml.org/
-KEYWORDS=amd64 ~arm ~ia64 ~mips ~ppc ~s390 ~sh ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=amd64 ~arm ~mips ~ppc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=BSD
 SLOT=0
 SRC_URI=mirror://gentoo/gccxml-0.9.0_pre20120309.tar.xz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=cdf0cf9fb430df062ddac6bf47244e08
+_md5_=ffd736b82df2cc76a8f44ca9bf9407e4

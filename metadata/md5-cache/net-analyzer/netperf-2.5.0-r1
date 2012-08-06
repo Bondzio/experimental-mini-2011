@@ -3,9 +3,9 @@ DEPEND=>=sys-apps/sed-4
 DESCRIPTION=Network performance benchmark including tests for TCP, UDP, sockets, ATM and more.
 EAPI=4
 HOMEPAGE=http://www.netperf.org/
-KEYWORDS=~alpha amd64 hppa ~ia64 ppc ppc64 ~sparc x86
+KEYWORDS=alpha amd64 hppa ia64 ppc ppc64 sparc x86
 LICENSE=netperf
 SLOT=0
 SRC_URI=ftp://ftp.netperf.org/netperf/netperf-2.5.0.tar.bz2
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6703f784240c11493059f83d44c10fe7
+_md5_=29e5d7ee014d406d13e9015b548d32c9

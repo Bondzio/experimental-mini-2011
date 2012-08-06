@@ -1,12 +1,12 @@
 DEFINED_PHASES=install prepare
 DEPEND=>=x11-libs/openmotif-2.3:0
 DESCRIPTION=Viewer for astronomical images in FITS format
-EAPI=2
+EAPI=4
 HOMEPAGE=http://www.nrao.edu/software/fitsview/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 RDEPEND=>=x11-libs/openmotif-2.3:0
 SLOT=0
 SRC_URI=ftp://ftp.cv.nrao.edu/fits/os-support/unix/xfitsview/xfitsview2.2.tgz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=f65743fa6c136848ce739803196e5b7c
+_md5_=ca6a71c2d3b903ee370fc93ee6c69849
