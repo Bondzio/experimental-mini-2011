@@ -3,10 +3,10 @@ DEPEND=app-text/gv dev-libs/libxml2:2 media-libs/libpng sci-libs/cfitsio sci-lib
 DESCRIPTION=Gnuplot like graphing program publication-quality figures
 EAPI=4
 HOMEPAGE=http://www.pyxplot.org.uk/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
 RDEPEND=app-text/gv dev-libs/libxml2:2 media-libs/libpng sci-libs/cfitsio sci-libs/fftw:3.0 sci-libs/gsl sci-libs/scipy virtual/latex-base || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pyxplot/pyxplot_0.9.0.tar.gz
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=2953b7ca2a8adc8fd17cb967e6b8f59e
+_md5_=e7c0fb36937fffb1070a0fbf6c200b38

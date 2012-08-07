@@ -10,4 +10,4 @@ RDEPEND=>=dev-python/apptools-4.0 >=dev-python/chaco-4.0 >=dev-python/codetools-
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/blockcanvas-4.0.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	virtualx	0c41ff55e46b959d9457dde69e7a09d9
-_md5_=9d8d8c7d75dd5984ca98563041f02255
+_md5_=fb4bc63dd7c123a1e21558cb2ce51207
