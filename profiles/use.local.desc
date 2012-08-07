@@ -547,6 +547,7 @@ app-emulation/wine:custom-cflags - Bypass strip-flags; use are your own peril
 app-emulation/wine:gecko - Add support for the Gecko engine when using iexplore
 app-emulation/wine:mono - Add support for .NET using Wine's Mono add-on
 app-emulation/wine:opencl - Enable OpenCL support
+app-emulation/wine:osmesa - Add support for OpenGL in bitmaps using libOSMesa
 app-emulation/wine:perl - Install helpers written in perl (winedump/winemaker)
 app-emulation/wine:samba - Add support for NTLM auth. see http://wiki.winehq.org/NtlmAuthSetupGuide and http://wiki.winehq.org/NtlmSigningAndSealing
 app-emulation/wine:udisks - Support dynamic storage devices using sys-fs/udisks
@@ -889,6 +890,7 @@ app-text/hyperestraier:mecab - Enable app-text/mecab support for Estraier
 app-text/lcdf-typetools:kpathsea - Enable integration with kpathsea search library (TeX related)
 app-text/leechcraft-monocle:fb2 - Enable support for FictionBook format
 app-text/libgxps:introspection - Use dev-libs/gobject-introspection for introspection
+app-text/liblangtag:introspection - Use dev-libs/gobject-introspection for introspection
 app-text/libwpd:tools - Build miscellaneous tools
 app-text/libwpg:tools - Build miscellaneous tools
 app-text/lodgeit:vim - Install a vim plugin allowing to paste and download from within vim
@@ -3815,6 +3817,7 @@ net-im/leechcraft-azoth:adiumstyles - Build support for Adium styles
 net-im/leechcraft-azoth:astrality - Build Astrality, support for protocols provided by Telepathy
 net-im/leechcraft-azoth:autoidler - Build support for automatic status changing according to user idle time
 net-im/leechcraft-azoth:autopaste - Build Autopaste for pasting long texts to pastebins
+net-im/leechcraft-azoth:birthdaynotifier - Build Birthday Notifier for you to not forget about birthdays of your contacts.
 net-im/leechcraft-azoth:chathistory - Build ChatHistory which stories chat history
 net-im/leechcraft-azoth:depester - Build Depester which enables to ignore MUC participants
 net-im/leechcraft-azoth:embedmedia - Build EmbedMedia for embedding flash videos and images directly into chat windows
