@@ -4,10 +4,10 @@ DESCRIPTION=DDCControl allows control of monitor parameters via DDC
 EAPI=4
 HOMEPAGE=http://ddccontrol.sourceforge.net/
 IUSE=+ddcpci doc gnome gtk nls static-libs
-KEYWORDS=amd64 ~ppc ~x86
+KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND=dev-libs/libxml2:2 gtk? ( >=x11-libs/gtk+-2.4:2 ) gnome? ( >=gnome-base/gnome-panel-2.10 ) sys-apps/pciutils nls? ( sys-devel/gettext ) >=app-misc/ddccontrol-db-20060730
 SLOT=0
 SRC_URI=mirror://sourceforge/ddccontrol/ddccontrol-0.4.2.tar.bz2
 _eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=001107e0c2beee0fb278bd2ebc8ad73d
+_md5_=8294727635288df12fc65ec11a2b160a

@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=app-text/poppler-0.18[cairo] >=x11-libs/gtk+-2.10.4:2 djvu? ( app-text/djvu ) virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=>=app-text/poppler-0.18[cairo,xpdf-headers(+)] >=x11-libs/gtk+-2.10.4:2 djvu? ( app-text/djvu ) virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Alf's PDF Viewer Like Vim
 EAPI=4
 HOMEPAGE=http://naihe2010.github.com/apvlv/
 IUSE=debug djvu
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=app-text/poppler-0.18[cairo] >=x11-libs/gtk+-2.10.4:2 djvu? ( app-text/djvu )
+RDEPEND=>=app-text/poppler-0.18[cairo,xpdf-headers(+)] >=x11-libs/gtk+-2.10.4:2 djvu? ( app-text/djvu )
 SLOT=0
 SRC_URI=mirror://github/naihe2010/apvlv/apvlv-0.1.4-Source.tar.gz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=85ef3062dc6774456c4823c513461b51
+_md5_=e6f768009f549c576170508c459f7401
