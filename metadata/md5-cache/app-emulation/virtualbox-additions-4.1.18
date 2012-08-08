@@ -2,11 +2,11 @@ DEFINED_PHASES=install unpack
 DESCRIPTION=CD image containing guest additions for VirtualBox
 EAPI=2
 HOMEPAGE=http://www.virtualbox.org/
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=PUEL
 RDEPEND=!app-emulation/virtualbox-bin !=app-emulation/virtualbox-9999
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://download.virtualbox.org/virtualbox/4.1.18/VBoxGuestAdditions_4.1.18.iso
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=24f85d3a6cf1b5499d70549214e630d5
+_md5_=946f2f902b7cd7d0f36d0be9e809f24d
