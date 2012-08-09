@@ -7,10 +7,10 @@ inherit eutils webapp depend.php
 
 DESCRIPTION="TYPO3 is a free Open Source CMS. This is the source package."
 HOMEPAGE="http://typo3.org/"
-SRC_URI="mirror://sourceforge/typo3/${PN}-4.7.0beta3.tar.gz"
+SRC_URI="mirror://sourceforge/typo3/${PN}-${PV}.tar.gz"
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="amd64 ~hppa ~ppc ~ppc64 ~sparc x86"
 IUSE="mysql"
 
 RDEPEND="=www-apps/typo3_dummy-${PV}
@@ -21,10 +21,8 @@ RDEPEND="=www-apps/typo3_dummy-${PV}
 
 need_php5_httpd
 
-S=${WORKDIR}/${PN}-4.7.0beta3
-
 pkg_setup() {
-	local optional="curl hash"
+	local optional="truetype zlib"
 	if ! PHPCHECKNODIE="yes" require_php_with_use ${optional} || \
 		! PHPCHECKNODIE="yes" require_php_with_any_use gd gd-external ; then
 		    ewarn
