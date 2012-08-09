@@ -4,11 +4,11 @@ DESCRIPTION=A framework for packaging Haskell software
 EAPI=4
 HOMEPAGE=http://www.haskell.org/cabal/
 IUSE=doc profile
-KEYWORDS=~alpha amd64 ~ia64 ppc ppc64 ~sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
 LICENSE=BSD
 RDEPEND=>=dev-lang/ghc-6.10.1 virtual/pkgconfig dev-lang/ghc
 RESTRICT=test
 SLOT=0
 SRC_URI=http://hackage.haskell.org/packages/archive/Cabal/1.14.0/Cabal-1.14.0.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	10f63c8efa3135a67f680571f1956a97	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=6dc01ebfa6355ddfe0cc54b50a6ae2b1
+_md5_=d7bda919caaffc6c1c5f0e790241b350

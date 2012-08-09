@@ -1,15 +1,14 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/mupdf/mupdf-9999.ebuild,v 1.21 2012/07/04 19:34:29 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/mupdf/mupdf-9999.ebuild,v 1.22 2012/08/09 06:25:45 xmw Exp $
 
 EAPI=4
-
-EGIT_REPO_URI="git://git.ghostscript.com/mupdf.git"
 
 inherit eutils flag-o-matic git-2 multilib toolchain-funcs
 
 DESCRIPTION="a lightweight PDF viewer and toolkit written in portable C"
 HOMEPAGE="http://mupdf.com/"
+EGIT_REPO_URI="git://git.ghostscript.com/mupdf.git"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -26,10 +25,10 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-1.0-buildsystem.patch
+	epatch "${FILESDIR}"/${PN}-1.1_rc1-buildsystem.patch
 
 	if ! use vanilla ; then
-		epatch "${FILESDIR}"/${PN}-9999-zoom-2.patch
+		epatch "${FILESDIR}"/${PN}-1.1_rc1-zoom-2.patch
 	fi
 }
 
@@ -37,7 +36,7 @@ src_compile() {
 	use X || my_nox11="NOX11=yes MUPDF= "
 
 	emake CC="$(tc-getCC)" OS=Linux \
-		build=debug verbose=true ${my_nox11} -j1
+		build=debug verbose=true ${my_nox11}
 }
 
 src_install() {
