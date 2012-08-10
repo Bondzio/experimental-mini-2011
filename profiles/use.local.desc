@@ -3702,6 +3702,7 @@ net-fs/samba:ads - Enable Active Directory support
 net-fs/samba:aio - Enable asynchronous IO support
 net-fs/samba:client - Enables the client part
 net-fs/samba:cluster - Enable support for clustering
+net-fs/samba:dmapi - Enable support for DMAPI. This currently works only in combination with XFS.
 net-fs/samba:dso - Enable dso support
 net-fs/samba:fulltest - Enabling extra tests in test phase
 net-fs/samba:iprint - Enabling iPrint technology by Novell
@@ -4339,6 +4340,7 @@ net-misc/icecast:yp - Build support for yp public directory listings
 net-misc/iputils:SECURITY_HAZARD - Allow non-root users to flood (ping -f). This is generally a very bad idea.
 net-misc/italc:system-libvncserver - Build against the system libvncserver (experimental)
 net-misc/knock:server - Installs the knockd server daemon.
+net-misc/leechcraft-netstoremanager:googledrive - Support Google Drive storage backend
 net-misc/leechcraft-netstoremanager:yandexdisk - Support Yandex.Disk storage backend
 net-misc/lldpd:snmp - Enable the use of SNMP
 net-misc/mediatomb:inotify - Enable inotify filesystem monitoring support
@@ -4466,6 +4468,7 @@ net-misc/tor:tor-hardening - Compile tor with hardening on vanilla compilers/lin
 net-misc/tor:transparent-proxy - Enable transparent proxying
 net-misc/tor:upnp - Enable Universal Plug and Play
 net-misc/tor:web - Enable tor2web support
+net-misc/uftp:server - Install uftp server daemon
 net-misc/vde:pcap - Enable the pcap-based plugin that allows creating a switch against a real interface.
 net-misc/vde:ssl - Enable the cryptcab plugin that allows creating an encrypted virtual cable.
 net-misc/vidalia:tor - Allow to use a local tor setup

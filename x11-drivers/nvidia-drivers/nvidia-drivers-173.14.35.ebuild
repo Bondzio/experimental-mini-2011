@@ -1,10 +1,11 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-173.14.35.ebuild,v 1.4 2012/08/06 22:09:31 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/nvidia-drivers/nvidia-drivers-173.14.35.ebuild,v 1.8 2012/08/10 14:40:54 jer Exp $
 
 EAPI="2"
 
-inherit eutils unpacker multilib portability versionator linux-mod flag-o-matic nvidia-driver
+inherit eutils flag-o-matic linux-mod multilib nvidia-driver portability \
+	unpacker user versionator
 
 X86_NV_PACKAGE="NVIDIA-Linux-x86-${PV}"
 AMD64_NV_PACKAGE="NVIDIA-Linux-x86_64-${PV}"
@@ -18,7 +19,7 @@ SRC_URI="x86? ( ftp://download.nvidia.com/XFree86/Linux-x86/${PV}/${X86_NV_PACKA
 
 LICENSE="NVIDIA"
 SLOT="0"
-KEYWORDS="-* ~amd64 x86 ~x86-fbsd"
+KEYWORDS="-* amd64 x86 ~x86-fbsd"
 IUSE="acpi multilib kernel_linux tools"
 RESTRICT="strip"
 EMULTILIB_PKG="true"
@@ -38,7 +39,7 @@ RDEPEND="${COMMON}
 		x11-libs/gtk+:2
 		x11-libs/libX11
 		x11-libs/libXext
-		x11-libs/pango
+		x11-libs/pango[X]
 	)"
 
 QA_TEXTRELS_x86="usr/lib/opengl/nvidia/lib/libnvidia-tls.so.${PV}

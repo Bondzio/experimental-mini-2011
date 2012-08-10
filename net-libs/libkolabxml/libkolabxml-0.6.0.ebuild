@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libkolabxml/libkolabxml-0.6.0.ebuild,v 1.1 2012/08/01 20:00:09 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libkolabxml/libkolabxml-0.6.0.ebuild,v 1.2 2012/08/10 16:35:18 creffett Exp $
 
 EAPI=4
 
@@ -22,10 +22,10 @@ RDEPEND="
 "
 DEPEND="
 	${RDEPEND}
-	csharp? ( dev-lang/swig )
-	java? ( dev-lang/swig )
-	php? ( dev-lang/swig )
-	python? ( dev-lang/swig )
+	csharp? ( >=dev-lang/swig-2.0.7 dev-lang/mono )
+	java? ( >=dev-lang/swig-2.0.7 virtual/jre )
+	php? ( >=dev-lang/swig-2.0.7 dev-lang/php )
+	python? ( >=dev-lang/swig-2.0.7 dev-lang/python )
 	test? ( x11-libs/qt-test:4 )
 "
 

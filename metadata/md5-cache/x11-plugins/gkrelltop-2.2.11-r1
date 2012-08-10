@@ -4,10 +4,10 @@ DESCRIPTION=a GKrellM2 plugin which displays the top three processes
 EAPI=2
 HOMEPAGE=http://sourceforge.net/projects/gkrelltop
 IUSE=X
-KEYWORDS=~alpha amd64 ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ppc ~sparc x86
 LICENSE=GPL-2
 RDEPEND==app-admin/gkrellm-2*[X=] =app-admin/gkrellm-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/gkrelltop/gkrelltop_2.2.11.orig.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gkrellm-plugin	4599c73f33aed9a9988a7031f60d2ed8	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ebc6733a60e4620e48c1b35b34abed79
+_md5_=328f68c7084ed54545f55b1ba6606435
