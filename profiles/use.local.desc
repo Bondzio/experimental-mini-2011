@@ -5109,7 +5109,6 @@ sys-apps/systemd:cryptsetup - Use libcryptsetup
 sys-apps/systemd:doc - Build gtk-doc API docs
 sys-apps/systemd:gudev - Enable libudev gobject interface
 sys-apps/systemd:introspection - Use dev-libs/gobject-introspection for introspection
-sys-apps/systemd:plymouth - Enable support for sys-boot/plymouth
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely need want it)
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level
 sys-apps/tuxonice-userui:fbsplash - Add support for framebuffer splash
