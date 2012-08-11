@@ -3,10 +3,10 @@ DEPEND==dev-lang/python-2*
 DESCRIPTION=Plugin providing fast loading of revision control data into Bazaar
 EAPI=4
 HOMEPAGE=https://launchpad.net/bzr-fastimport http://wiki.bazaar.canonical.com/BzrFastImport
-KEYWORDS=~amd64 x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=dev-vcs/bzr-1.18 >=dev-python/python-fastimport-0.9 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://launchpad.net/bzr-fastimport/trunk/0.13.0/+download/bzr-fastimport-0.13.0.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=bdc0da1d1ba528ffbe5512ff066768fd
+_md5_=73f1e085c1fe214a57c1f5ee08705c4c

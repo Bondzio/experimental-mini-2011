@@ -311,7 +311,6 @@ app-dicts/myspell-pt:preao - Use the pre ortographic agreement version of the di
 app-doc/csound-manual:html - Install HTML documentation
 app-doc/doxygen:dot - allow to create dot graphs using media-gfx/graphviz
 app-doc/doxygen:nodot - removes graphviz dependency, along with dot graphs
-app-doc/doxygen:tcl - adds experimental support for parsing/documenting Tcl source code
 app-doc/linuxfromscratch:htmlsingle - Install all-on-one-page HTML version.
 app-doc/pms:html - Generate PMS as .html as well
 app-doc/tldp-howto:html - Install the docs in multipage HTML format (default)
@@ -5109,10 +5108,6 @@ sys-apps/smartmontools:minimal - Do not install the monitoring daemon and associ
 sys-apps/superiotool:pci - Support for PCI-attached "Super I/Os" (e.g. in VIA VT82686A/B).
 sys-apps/systemd:audit - Enable support for sys-process/audit
 sys-apps/systemd:cryptsetup - Use libcryptsetup
-sys-apps/systemd:doc - Build gtk-doc API docs
-sys-apps/systemd:gudev - Enable libudev gobject interface
-sys-apps/systemd:introspection - Use dev-libs/gobject-introspection for introspection
-sys-apps/systemd:plymouth - Enable support for sys-boot/plymouth
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely need want it)
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level
 sys-apps/tuxonice-userui:fbsplash - Add support for framebuffer splash
@@ -5686,6 +5681,7 @@ x11-libs/gtkmathview:t1lib - Enable media-libs/t1lib support
 x11-libs/gtksourceview:glade - Install a glade catalog file
 x11-libs/gtksourceview:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/libSM:uuid - Use UUID for session identification instead of IP address and system time.
+x11-libs/libXaw:deprecated - Install deprecated Xaw6 library.
 x11-libs/libaosd:pango - Enable the textual helpers (requires pangocairo).
 x11-libs/libaosd:tools - Install the aosd_cat tool (requires glib-2.0).
 x11-libs/libcryptui:introspection - Use dev-libs/gobject-introspection for introspection
