@@ -1,6 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-headers/linux-headers-3.4-r2.ebuild,v 1.1 2012/07/22 20:12:27 vapier Exp $
 
 EAPI="3"
 
@@ -13,7 +11,7 @@ PATCH_VER="3"
 SRC_URI="mirror://gentoo/gentoo-headers-base-${PV}.tar.xz
 	${PATCH_VER:+mirror://gentoo/gentoo-headers-${PV}-${PATCH_VER}.tar.xz}"
 
-KEYWORDS="*"
+KEYWORDS="~*"
 
 DEPEND="app-arch/xz-utils
 	dev-lang/perl"

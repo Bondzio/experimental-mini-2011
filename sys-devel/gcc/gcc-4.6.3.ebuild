@@ -1,6 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/gcc/gcc-4.6.3.ebuild,v 1.11 2012/07/23 16:13:51 vapier Exp $
 
 PATCH_VER="1.5"
 UCLIBC_VER="1.0"
@@ -23,7 +21,7 @@ inherit toolchain
 DESCRIPTION="The GNU Compiler Collection"
 
 LICENSE="GPL-3 LGPL-3 || ( GPL-3 libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.2"
-KEYWORDS="*"
+KEYWORDS="~*"
 
 RDEPEND=""
 DEPEND="${RDEPEND}
