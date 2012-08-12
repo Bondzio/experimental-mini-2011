@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND=!qt-static? ( x11-libs/qt-core:4 ) >=sys-apps/sed-4
+DEPEND=!qt-static? ( x11-libs/qt-core:4 ) selinux? ( sec-policy/selinux-skype ) >=sys-apps/sed-4
 DESCRIPTION=An P2P Internet Telephony (VoiceIP) client
 EAPI=4
 HOMEPAGE=http://www.skype.com/
-IUSE=pax_kernel qt-static
+IUSE=pax_kernel selinux qt-static
 KEYWORDS=~amd64 ~x86
 LICENSE=skype-eula
-RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-20120520 >=app-emulation/emul-linux-x86-soundlibs-20120520 >=app-emulation/emul-linux-x86-xlibs-20120520 !qt-static? ( >=app-emulation/emul-linux-x86-qtlibs-20120520 ) ) x86? ( >=media-libs/alsa-lib-1.0.24.1 x11-libs/libX11 x11-libs/libXext x11-libs/libXScrnSaver x11-libs/libXv qt-static? ( =dev-libs/glib-2* media-libs/fontconfig >=media-libs/freetype-2 >=media-libs/tiff-3.9.5-r3:3 sys-libs/zlib x11-libs/libICE x11-libs/libSM x11-libs/libXrender ) !qt-static? ( x11-libs/qt-core:4 x11-libs/qt-dbus:4 x11-libs/qt-gui:4[accessibility,dbus] ) ) virtual/ttf-fonts
+RDEPEND=amd64? ( >=app-emulation/emul-linux-x86-baselibs-20120520 >=app-emulation/emul-linux-x86-soundlibs-20120520 >=app-emulation/emul-linux-x86-xlibs-20120520 !qt-static? ( >=app-emulation/emul-linux-x86-qtlibs-20120520 ) ) x86? ( >=media-libs/alsa-lib-1.0.24.1 x11-libs/libX11 x11-libs/libXext x11-libs/libXScrnSaver x11-libs/libXv qt-static? ( =dev-libs/glib-2* media-libs/fontconfig >=media-libs/freetype-2 >=media-libs/tiff-3.9.5-r3:3 sys-libs/zlib x11-libs/libICE x11-libs/libSM x11-libs/libXrender ) !qt-static? ( x11-libs/qt-core:4 x11-libs/qt-dbus:4 x11-libs/qt-gui:4[accessibility,dbus] ) ) virtual/ttf-fonts selinux? ( sec-policy/selinux-skype )
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=qt-static? ( http://download.skype.com/linux/skype_static-2.2.0.99.tar.bz2 ) !qt-static? ( http://download.skype.com/linux/skype-2.2.0.35.tar.bz2 )
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	pax-utils	0ace932c4045349c7fc1af0fe7091acf	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ed91ee6574e0af4689ac48d4a8bc7186
+_md5_=6b5dc2f8fc267fa73e9e5610ad77849c
