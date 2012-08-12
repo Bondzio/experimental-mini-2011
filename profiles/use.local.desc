@@ -2186,6 +2186,7 @@ kde-base/kig:kig-scripting - Support Python scripting
 kde-base/kimono:akonadi - Compile bindings for Akonadi.
 kde-base/kimono:plasma - Compile bindings for KDE's Plasma.
 kde-base/klipper:prison - Enable support for barcodes/QRcodes
+kde-base/kmix:canberra - Enable sound event support using media-libs/libcanberra
 kde-base/konqueror:bookmarks - Add dependency on bookmark package.
 kde-base/kopete:addbookmarks - Automatically add incoming urls to bookmarks.
 kde-base/kopete:autoreplace - Automatically replace selected text

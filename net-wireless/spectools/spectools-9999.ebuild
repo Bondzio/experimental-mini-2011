@@ -1,8 +1,9 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/spectools/spectools-9999.ebuild,v 1.5 2012/07/06 21:14:42 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/spectools/spectools-9999.ebuild,v 1.6 2012/08/12 08:43:43 ssuominen Exp $
 
 EAPI=4
+inherit toolchain-funcs
 
 MY_PN=${PN}
 MY_PV=${PV/\./-}
@@ -27,10 +28,11 @@ LICENSE="GPL-2"
 SLOT="0"
 IUSE="debug ncurses gtk"
 
-DEPEND="${RDEPEND}"
 RDEPEND="virtual/libusb:0
 	ncurses? ( sys-libs/ncurses )
 	gtk? ( x11-libs/gtk+:2 )"
+DEPEND="${RDEPEND}
+	virtual/pkgconfig"
 # Upstream has still not migrated to the libusb-1 line.
 # Maemo: Add hildon and bbus
 
@@ -59,8 +61,9 @@ src_install() {
 	use ncurses && dobin spectool_curses
 	use gtk && dobin spectool_gtk
 
-	dodir /lib/udev/rules.d/
-	insinto /lib/udev/rules.d/
+	local udevdir=/lib/udev
+	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
+	insinto "${udevdir}"/rules.d
 	doins 99-wispy.rules
 	dodoc README
 
