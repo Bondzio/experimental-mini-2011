@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.101 2012/08/12 09:00:35 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/libreoffice/libreoffice-9999-r2.ebuild,v 1.103 2012/08/13 15:49:32 scarabeus Exp $
 
 EAPI=4
 
@@ -64,6 +64,7 @@ ADDONS_SRC+=" java? ( ${ADDONS_URI}/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_
 ADDONS_SRC+=" java? ( ${ADDONS_URI}/ada24d37d8d638b3d8a9985e80bc2978-source-9.0.0.7-bj.zip )"
 ADDONS_SRC+=" libreoffice_extensions_wiki-publisher? ( ${ADDONS_URI}/a7983f859eafb2677d7ff386a023bc40-xsltml_2.1.2.zip )" # no release for 8 years, should we package it?
 ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/798b2ffdc8bcfe7bca2cf92b62caf685-rhino1_5R5.zip )" # Does not build with 1.6 rhino at all
+ADDONS_SRC+=" libreoffice_extensions_scripting-javascript? ( ${ADDONS_URI}/35c94d2df8893241173de1d16b6034c0-swingExSrc.zip )" # requirement of rhino
 ADDONS_SRC+=" odk? ( http://download.go-oo.org/extern/185d60944ea767075d27247c3162b3bc-unowinreg.dll )" # not packageable
 SRC_URI+=" ${ADDONS_SRC}"
 
@@ -71,9 +72,8 @@ unset ADDONS_URI
 unset EXT_URI
 unset ADDONS_SRC
 
-IUSE="binfilter binfilterdebug +branding +cups dbus eds gnome +graphite
-gstreamer +gtk gtk3 jemalloc kde mysql odk opengl postgres svg test +vba
-+webdav"
+IUSE="binfilter binfilterdebug +branding +cups dbus eds gnome gstreamer +gtk
+gtk3 jemalloc kde mysql odk opengl postgres svg test +vba +webdav"
 
 LO_EXTS="nlpsolver pdfimport presenter-console presenter-minimizer scripting-beanshell scripting-javascript wiki-publisher"
 # Unpackaged separate extensions:
@@ -115,6 +115,7 @@ COMMON_DEPEND="
 	>=dev-lang/perl-5.0
 	>=dev-libs/openssl-1.0.0d
 	>=dev-libs/redland-1.0.14[ssl]
+	media-gfx/graphite2
 	>=media-libs/fontconfig-2.8.0
 	media-libs/freetype:2
 	media-libs/lcms:2
@@ -139,10 +140,9 @@ COMMON_DEPEND="
 		>=x11-libs/gtk+-2.24:2
 	)
 	gtk3? ( >=x11-libs/gtk+-3.2:3 )
-	graphite? ( media-gfx/graphite2 )
 	gstreamer? (
-		>=media-libs/gstreamer-0.10
-		>=media-libs/gst-plugins-base-0.10
+		>=media-libs/gstreamer-0.10:0.10
+		>=media-libs/gst-plugins-base-0.10:0.10
 	)
 	jemalloc? ( dev-libs/jemalloc )
 	libreoffice_extensions_pdfimport? ( >=app-text/poppler-0.16[xpdf-headers(+),cxx] )
@@ -414,8 +414,10 @@ src_configure() {
 	# system headers/libs/...: enforce using system packages
 	# --enable-unix-qstart-libpng: use libpng splashscreen that is faster
 	# --enable-cairo: ensure that cairo is always required
+	# --enable-graphite: disabling causes build breakages
 	# --enable-*-link: link to the library rather than just dlopen on runtime
 	# --enable-release-build: build the libreoffice as release
+	# --enable-xmlsec: disabling causes build breakages
 	# --disable-fetch-external: prevent dowloading during compile phase
 	# --disable-gnome-vfs: old gnome virtual fs support
 	# --disable-gstreamer: support for 1.0 api, we use gstreamer-0.10 for now
@@ -442,6 +444,7 @@ src_configure() {
 		--with-system-jars \
 		--with-system-dicts \
 		--enable-cairo-canvas \
+		--enable-graphite \
 		--enable-largefile \
 		--enable-mergelibs \
 		--enable-python=system \
@@ -495,7 +498,6 @@ src_configure() {
 		$(use_enable gnome gconf) \
 		$(use_enable gnome gio) \
 		$(use_enable gnome lockdown) \
-		$(use_enable graphite) \
 		$(use_enable gstreamer gstreamer-0-10) \
 		$(use_enable gtk) \
 		$(use_enable gtk3) \

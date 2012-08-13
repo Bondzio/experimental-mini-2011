@@ -16,7 +16,8 @@ IUSE=""
 DEPEND=""
 
 # mail-mta/citadel is from sunrise
-RDEPEND="|| (	>=mail-mta/ssmtp-2.64-r2[mta]
+RDEPEND="|| (	mail-mta/postfix
+				>=mail-mta/ssmtp-2.64-r2[mta]
 				<mail-mta/ssmtp-2.64-r2
 				mail-mta/courier
 				mail-mta/esmtp
@@ -27,7 +28,6 @@ RDEPEND="|| (	>=mail-mta/ssmtp-2.64-r2[mta]
 				mail-mta/nbsmtp
 				mail-mta/netqmail
 				mail-mta/nullmailer
-				mail-mta/postfix
 				mail-mta/qmail-ldap
 				mail-mta/sendmail
 				mail-mta/citadel[-postfix] )"

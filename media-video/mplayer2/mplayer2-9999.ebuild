@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.40 2012/07/20 15:42:00 lu_zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplayer2/mplayer2-9999.ebuild,v 1.42 2012/08/13 13:19:20 scarabeus Exp $
 
 EAPI=4
 
@@ -152,9 +152,8 @@ RDEPEND+="
 ASM_DEP="dev-lang/yasm"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
-	dev-lang/python
+	>=dev-lang/python-2.6
 	sys-devel/gettext
-	=dev-lang/python-3*
 	X? (
 		x11-proto/videoproto
 		x11-proto/xf86vidmodeproto
@@ -170,6 +169,10 @@ DEPEND="${RDEPEND}
 	x86? ( ${ASM_DEP} )
 	x86-fbsd? ( ${ASM_DEP} )
 "
+
+PATCHES=(
+	"${FILESDIR}/${PN}-py2compat.patch"
+)
 
 pkg_setup() {
 	if [[ ${PV} == *9999* ]]; then
