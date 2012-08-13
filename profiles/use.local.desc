@@ -487,16 +487,14 @@ app-emulation/qemu-kvm:alsa - Enable alsa output for sound emulation
 app-emulation/qemu-kvm:brltty - Adds support for braille displays using brltty
 app-emulation/qemu-kvm:curl - Support ISOs / -cdrom directives vis HTTP or HTTPS.
 app-emulation/qemu-kvm:fdt - Enables firmware device tree support
-app-emulation/qemu-kvm:jpeg - Enable JPEG compression for the VNC console server
+app-emulation/qemu-kvm:mixemu - Enable audio mixer emulation. On Fedora, known to cause performance problems when using SDL output and ALSA. For OSS, locks the sound device from other applications.
 app-emulation/qemu-kvm:ncurses - Enable the ncurses-based console
-app-emulation/qemu-kvm:nss - Build support for Smartcard devices emulation using dev-libs/nss
-app-emulation/qemu-kvm:png - Enable PNG compression for the VNC console server
 app-emulation/qemu-kvm:pulseaudio - Enable pulseaudio output for sound emulation
 app-emulation/qemu-kvm:qemu-ifup - Provides the qemu-ifup script for use with QEMU's built in bridging
 app-emulation/qemu-kvm:rbd - Enable rados block device backend support, see http://ceph.newdream.net/wiki/QEMU-RBD
 app-emulation/qemu-kvm:sdl - Enable the SDL-based console
 app-emulation/qemu-kvm:spice - Enable Spice protocol support via app-emulation/spice
-app-emulation/qemu-kvm:ssl - Enable TLS support for the VNC console server
+app-emulation/qemu-kvm:systemtap - Enable SystemTAP/DTrace tracing
 app-emulation/qemu-kvm:tci - Enable the TCG Interpreter which can speed up or slowdown workloads depending on the host and guest CPUs being emulated. In the future it will be a runtime option but for now its compile time.
 app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
 app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
