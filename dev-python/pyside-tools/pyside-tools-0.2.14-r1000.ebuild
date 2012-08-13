@@ -1,19 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyside-tools/pyside-tools-0.2.14.ebuild,v 1.4 2012/07/03 14:04:11 ago Exp $
 
-EAPI=4
-
+EAPI="4-python"
 CMAKE_IN_SOURCE_BUILD="1"
-
-PYTHON_DEPEND="2:2.6 3:3.2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.1 *-jython 2.7-pypy-*"
-PYTHON_TESTS_RESTRICTED_ABIS="3.*"
-
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.1 *-jython *-pypy-*"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="3.*"
 VIRTUALX_COMMAND="cmake-utils_src_test"
 
-inherit eutils cmake-utils python virtualx
+inherit cmake-utils eutils python virtualx
 
 DESCRIPTION="PySide development tools (lupdate, rcc, uic)"
 HOMEPAGE="http://www.pyside.org/"
@@ -25,8 +21,8 @@ KEYWORDS="amd64 x86"
 IUSE="test"
 
 RDEPEND="
-	>=dev-python/pyside-1.1.0-r1[X]
-	>=dev-python/shiboken-1.1.0-r1
+	$(python_abi_depend ">=dev-python/pyside-1.1.0-r1[X]")
+	$(python_abi_depend ">=dev-python/shiboken-1.1.0-r1")
 	>=x11-libs/qt-core-4.7.0:4
 	>=x11-libs/qt-gui-4.7.0:4
 "
@@ -35,19 +31,18 @@ DEPEND="${RDEPEND}
 "
 
 src_prepare() {
-	epatch "${FILESDIR}"/0.2.13-fix-pysideuic-test-and-install.patch
+	epatch "${FILESDIR}/0.2.13-fix-pysideuic-test-and-install.patch"
 
 	python_copy_sources
 
 	preparation() {
-		if [[ $(python_get_version -l --major) == 3 ]]; then
+		if [[ "$(python_get_version -l --major)" == "3" ]]; then
 			rm -fr pysideuic/port_v2
 		else
 			rm -fr pysideuic/port_v3
 		fi
 
-		sed -i -e "/pkg-config/ s:shiboken:&-python${PYTHON_ABI}:" \
-			tests/rcc/run_test.sh || die
+		sed -e "/pkg-config/s:shiboken:&-python${PYTHON_ABI}:" -i tests/rcc/run_test.sh || die "sed failed"
 	}
 	python_execute_function -s preparation
 }

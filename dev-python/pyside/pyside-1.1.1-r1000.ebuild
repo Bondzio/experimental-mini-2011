@@ -1,16 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/pyside/pyside-1.1.1.ebuild,v 1.8 2012/07/27 21:32:49 steev Exp $
 
-EAPI=4
-
-PYTHON_DEPEND="2:2.6 3:3.2"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.4 2.5 3.1 *-jython 2.7-pypy-*"
+EAPI="4-python"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 3.1 *-jython *-pypy-*"
+PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*"
 
 VIRTUALX_COMMAND="cmake-utils_src_test"
 
-inherit multilib cmake-utils python virtualx
+inherit cmake-utils multilib python virtualx
 
 MY_P="${PN}-qt4.8+${PV}"
 
@@ -39,7 +38,7 @@ REQUIRED_USE="
 QT_PV="4.7.0:4"
 
 RDEPEND="
-	>=dev-python/shiboken-${PV}
+	$(python_abi_depend ">=dev-python/shiboken-${PV}")
 	>=x11-libs/qt-core-${QT_PV}
 	X? (
 		>=x11-libs/qt-gui-${QT_PV}[accessibility]
@@ -67,7 +66,7 @@ DEPEND="${RDEPEND}
 
 S=${WORKDIR}/${MY_P}
 
-DOCS=( ChangeLog )
+DOCS=(ChangeLog)
 
 src_prepare() {
 	# Fix generated pkgconfig file to require the shiboken
@@ -128,7 +127,7 @@ src_test() {
 src_install() {
 	installation() {
 		CMAKE_BUILD_DIR="${S}_${PYTHON_ABI}" cmake-utils_src_install
-		mv "${ED}"usr/$(get_libdir)/pkgconfig/${PN}{,-python${PYTHON_ABI}}.pc || die
+		mv "${ED}"usr/$(get_libdir)/pkgconfig/${PN}{,-python${PYTHON_ABI}}.pc
 	}
 	python_execute_function installation
 }
