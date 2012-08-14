@@ -1,11 +1,11 @@
 DEFINED_PHASES=install prepare
 DEPEND=app-arch/unzip
 DESCRIPTION=A suite of algorithms for ecological bioinformatics
-EAPI=2
-HOMEPAGE=http://schloss.micro.umass.edu/wiki/Main_Page
+EAPI=4
+HOMEPAGE=http://www.mothur.org/
 KEYWORDS=amd64 x86
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=mirror://gentoo/mothur-1.6.0.zip
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=22bb857fcc2d094a8dbfb9b2df70f74c
+_md5_=ba788f20e5ff636944936fd2481f95cb
