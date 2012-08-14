@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/dee/dee-1.0.10.ebuild,v 1.3 2012/05/09 17:52:41 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/dee/dee-1.0.10.ebuild,v 1.4 2012/08/13 20:01:20 jlec Exp $
 
 EAPI=4
 
@@ -10,7 +10,7 @@ inherit autotools-utils
 
 DESCRIPTION="Provide objects allowing to create Model-View-Controller type programs across DBus"
 HOMEPAGE="https://launchpad.net/dee/"
-SRC_URI="https://launchpad.net/dee/1.0/1.0.10/+download/${P}.tar.gz"
+SRC_URI="https://launchpad.net/dee/1.0/${PV}/+download/${P}.tar.gz"
 
 SLOT="0"
 LICENSE="GPL-3"

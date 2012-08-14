@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rack/rack-1.2.5.ebuild,v 1.4 2012/08/07 17:41:55 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rack/rack-1.2.5.ebuild,v 1.6 2012/08/13 18:27:12 blueness Exp $
 
 EAPI="2"
 USE_RUBY="ruby18 ree18 ruby19 jruby"
@@ -18,7 +18,7 @@ SRC_URI="mirror://rubyforge/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="$(get_version_component_range 1-2)"
-KEYWORDS="amd64 ~ppc ~ppc64 x86 ~x86-fbsd ~amd64-linux ~ia64-linux ~x86-linux ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="amd64 ppc ppc64 x86 ~x86-fbsd ~amd64-linux ~ia64-linux ~x86-linux ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris"
 IUSE=""
 
 ruby_add_rdepend "virtual/ruby-ssl"
@@ -44,8 +44,8 @@ all_ruby_prepare() {
 
 	# Avoid tests depending on now randomized hash ordering.
 	sed -i -e '/foobarfoo/ s:^:#:' test/spec_response.rb || die
-	sed -i -e '/should build query strings correctly/,/end/ s:^:#:' test/spec_utils.rb || die
-	sed -i -e '/should build nested query strings correctly/,/end/ s:^:#:' test/spec_utils.rb || die
+	sed -i -e '/build query strings correctly/,/end/ s:^:#:' test/spec_utils.rb || die
+	sed -i -e '/build nested query strings correctly/,/end/ s:^:#:' test/spec_utils.rb || die
 }
 
 each_ruby_prepare() {

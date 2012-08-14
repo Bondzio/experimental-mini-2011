@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/tm-align/tm-align-20120124.ebuild,v 1.1 2012/03/21 12:18:47 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/tm-align/tm-align-20120124.ebuild,v 1.2 2012/08/13 20:06:36 jlec Exp $
 
 EAPI=4
 
-inherit cmake-utils fortran-2
+inherit cmake-utils flag-o-matic fortran-2
 
 DESCRIPTION="Quick & Accurate Structural Alignment"
 HOMEPAGE="http://zhanglab.ccmb.med.umich.edu/TM-align/"
