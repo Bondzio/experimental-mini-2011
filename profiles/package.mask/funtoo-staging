@@ -1,6 +1,10 @@
 # Keeep the most recent masks in a reverse chrono order
 # newest on top
 
+# Oleg Vinichenko (15 Aug 2012)
+# mdev-bb revised, masked for internal testing only
+sys-fs/mdev-bb
+
 # Oleg Vinichenko ( 1 Jan 2012)
 # new baselayout with cleaned group/shadow
 # DO NOT use on production, only for testing purposes!!!

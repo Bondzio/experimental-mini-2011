@@ -7,20 +7,16 @@ HOMEPAGE="http://www.busybox.net/"
 base='busybox'
 MY_P=${base}-${PV/_/-}
 
-SRC_URI="
-	http://www.busybox.net/downloads/${MY_P}.tar.bz2
-"
-KEYWORDS="~amd64 ~x86"
+SRC_URI="http://www.busybox.net/downloads/${MY_P}.tar.bz2"
+KEYWORDS="~*"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="static +mdev-like-a-boss"
+IUSE="static"
 RESTRICT="test"
 
-RDEPEND="
-	!sys-apps/busybox[mdev]
-	mdev-like-a-boss? ( sys-fs/mdev-like-a-boss )
-"
+RDEPEND="!sys-apps/busybox[mdev]"
+
 DEPEND="${RDEPEND}
 	>=sys-kernel/linux-headers-2.6.39"
 
@@ -66,24 +62,33 @@ src_install() {
 	mkdir "${D}/sbin" || die
 	cp busybox "${D}/sbin/mdev" || die
 	chmod 750 "${D}/sbin/mdev" || die
-
-	if use mdev-like-a-boss; then
-		mkdir -p "${D}/etc" || die
-		( cd "${D}/etc" && ln -s ../opt/mdev/mdev.conf ) || die
-		newinitd "${ROOT}/opt/mdev/mdev.init" mdev || die
-	fi
+	dodir /etc/mdev
+	dodir /etc/mdev/helpers
+	keepdir /etc/mdev
+	keepdir /etc/mdev/helpers
+	# copy basic mdev config to /etc
+	cp "${FILESDIR}"/mdev.conf "${D}/etc/"
+	# copy help scripts to /etc/mdev/helpers
+	cp -a "${FILESDIR}"/1.20.2/* "${D}/etc//mdev/helpers/"
+	newinitd "${FILESDIR}"/mdev.init mdev || die
+}
+add_init() {
+    local runl=$1
+    if [ ! -e ${ROOT}/etc/runlevels/${runl} ]
+    then
+        install -d -m0755 ${ROOT}/etc/runlevels/${runl}
+    fi
+    for initd in $*
+    do
+        # if the initscript is not going to be installed and  is not currently installed, return
+        [[ -e ${D}/etc/init.d/${initd} || -e ${ROOT}/etc/init.d/${initd} ]] || continue
+        [[ -e ${ROOT}/etc/runlevels/${runl}/${initd} ]] && continue
+        elog "Auto-adding '${initd}' service to your ${runl} runlevel"
+        ln -snf /etc/init.d/${initd} "${ROOT}"/etc/runlevels/${runl}/${initd}
+    done
 }
 
-src_postinst() {
-	if use mdev-like-a-boss; then
-		if ! [ -e "${ROOT}/etc/runlevels/sysinit" ]; then
-			ewarn
-			ewarn "Remember to add mdev to sysinit runlevel by:"
-			ewarn "    rc-update add mdev sysinit"
-			ewarn
-			ewarn "Also ensure that udev, udev-postmount and devfs"
-			ewarn "aren't in any runlevel."
-			ewarn
-		fi
-	fi
+pkg_postinst() {
+add_init sysinit mdev
 }
+
