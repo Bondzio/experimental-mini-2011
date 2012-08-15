@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst preinst prepare setup unpack
-DEPEND=binary? ( >=sys-kernel/genkernel-3.4.12.6-r4 )
+DEPEND=binary? ( >=sys-kernel/genkernel-3.4.12.6-r4 ) =sys-devel/gcc-4.4.5*
 DESCRIPTION=Full Linux kernel sources - RHEL6 kernel with OpenVZ patchset
 EAPI=2
 HOMEPAGE=http://www.openvz.org
@@ -11,4 +11,4 @@ RESTRICT=binchecks strip
 SLOT=2.6.32.042.059.7
 SRC_URI=mirror://kernel/linux/kernel/v./linux-2.6.32.tar.bz2 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab059.7/configs/config-2.6.32-042stab059.7.i686 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab059.7/configs/config-2.6.32-042stab059.7.x86_64 http://download.openvz.org/kernel/branches/rhel6-2.6.32/042stab059.7/patches/patch-042stab059.7-combined.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=7557553d86d35dc1d855bedf70e925ec
+_md5_=1cbeed28005827627c4789bced831a5e
