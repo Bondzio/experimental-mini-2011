@@ -9,4 +9,4 @@ RDEPEND=media-libs/libsdl[video] media-sound/pulseaudio media-libs/alsa-lib
 SLOT=0
 SRC_URI=http://www.rastersoft.com/descargas/fbzx-2.10.0.tar.bz2
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	games	024161bb840ff1c7b424696877dbb18b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=64eeea8cb926b6c950e1e8903adb5b1a
+_md5_=00ab0fd4b3fea33d7c0e0d42f22ef9e8

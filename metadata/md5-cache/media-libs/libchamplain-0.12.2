@@ -2,7 +2,7 @@ DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup u
 DEPEND=>=dev-libs/glib-2.16:2 >=x11-libs/cairo-1.4 >=media-libs/clutter-1.2:1.0[introspection?] >=media-libs/memphis-0.2.1:0.2[introspection?] >=net-libs/libsoup-gnome-2.4.1:2.4 dev-db/sqlite:3 gtk? ( >=x11-libs/gtk+-2.90:3[introspection?] >=media-libs/clutter-gtk-0.90:1.0 ) introspection? ( >=dev-libs/gobject-introspection-0.6.3 ) virtual/pkgconfig doc? ( >=dev-util/gtk-doc-1.9 ) vala? ( >=dev-lang/vala-0.14.2-r1:0.14[vapigen] ) app-arch/xz-utils >=sys-apps/sed-4
 DESCRIPTION=Clutter based world map renderer
 EAPI=4
-HOMEPAGE=http://blog.pierlux.com/projects/libchamplain/en/
+HOMEPAGE=http://projects.gnome.org/libchamplain/
 IUSE=debug doc +gtk +introspection vala
 KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=LGPL-2
@@ -11,4 +11,4 @@ REQUIRED_USE=vala? ( introspection )
 SLOT=0.12
 SRC_URI=mirror://gnome/sources/libchamplain/0.12/libchamplain-0.12.2.tar.xz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=545a69285ea48db1a27cb17f11738673
+_md5_=fa24c4fb45f24aee1dc41e38869ddf1e
