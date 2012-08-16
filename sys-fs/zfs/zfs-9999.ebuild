@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs/zfs-9999.ebuild,v 1.33 2012/08/11 20:05:05 ryao Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs/zfs-9999.ebuild,v 1.34 2012/08/15 23:04:21 ryao Exp $
 
 EAPI="4"
 
@@ -83,19 +83,10 @@ src_prepare() {
 
 	if [ ${PV} != "9999" ]
 	then
-		# Fix build issues
-		epatch "${FILESDIR}/${P}-hardened-support.patch"
-		epatch "${FILESDIR}/${P}-hardened-3.3-and-later-support.patch"
-		epatch "${FILESDIR}/${P}-linux-3.5-support.patch"
-		epatch "${FILESDIR}/${P}-fix-32-bit-warnings.patch"
-
 		# Fix various deadlocks
-		epatch "${FILESDIR}/${P}-remove-pfmalloc-1-of-3.patch"
-		epatch "${FILESDIR}/${P}-remove-pfmalloc-2-of-3.patch"
-		epatch "${FILESDIR}/${P}-remove-pfmalloc-3-of-3.patch"
-
-		#Miscellaneous
-		epatch "${FILESDIR}/${P}-bsd-init.patch"
+		epatch "${FILESDIR}/${PN}-0.6.0_rc9-remove-pfmalloc-1-of-3.patch"
+		epatch "${FILESDIR}/${PN}-0.6.0_rc9-remove-pfmalloc-2-of-3.patch"
+		epatch "${FILESDIR}/${PN}-0.6.0_rc9-remove-pfmalloc-3-of-3.patch"
 	fi
 
 	autotools-utils_src_prepare

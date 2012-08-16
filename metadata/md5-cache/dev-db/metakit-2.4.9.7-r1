@@ -4,11 +4,11 @@ DESCRIPTION=Embedded database library
 EAPI=4
 HOMEPAGE=http://www.equi4.com/metakit/
 IUSE=python static tcl
-KEYWORDS=amd64 ~ia64 ~ppc ~s390 ~sparc ~x86
+KEYWORDS=amd64 ~ia64 ppc ~s390 ~sparc ~x86
 LICENSE=MIT
 RDEPEND=tcl? ( dev-lang/tcl ) python? ( =dev-lang/python-2* )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.equi4.com/pub/mk/metakit-2.4.9.7.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=c183dba89f761edb92878455427e6433
+_md5_=5ad39eba09f4064a4f56d35e1de744dc
