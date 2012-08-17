@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libvpx/libvpx-1.1.0.ebuild,v 1.12 2012/08/15 15:35:23 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libvpx/libvpx-1.1.0.ebuild,v 1.14 2012/08/16 23:03:00 vapier Exp $
 
 EAPI=4
 inherit multilib toolchain-funcs base
@@ -42,12 +42,17 @@ REQUIRED_USE="
 PATCHES=(
 	"${FILESDIR}/${P}-chost.patch"
 	"${FILESDIR}/${P}-generic-gnu-shared.patch"
+	"${FILESDIR}/${P}-arm.patch"
 )
 
 src_configure() {
-	#let the build system decide which AS to use (it honours $AS but
-	#then feeds it with yasm flags without checking...) bug 345161
-	unset AS
+	# let the build system decide which AS to use (it honours $AS but
+	# then feeds it with yasm flags without checking...) #345161
+	local a
+	tc-export AS
+	for a in {amd64,x86}{,-{fbsd,linux}} ; do
+		use ${a} && unset AS
+	done
 
 	# build verbose by default
 	MAKEOPTS="${MAKEOPTS} verbose=yes"
