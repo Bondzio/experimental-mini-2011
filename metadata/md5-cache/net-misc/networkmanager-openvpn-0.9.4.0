@@ -4,10 +4,10 @@ DESCRIPTION=NetworkManager OpenVPN plugin
 EAPI=4
 HOMEPAGE=http://www.gnome.org/projects/NetworkManager/
 IUSE=gtk test
-KEYWORDS=amd64 ~x86
+KEYWORDS=amd64 x86
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/dbus-glib-0.74 >=net-misc/networkmanager-0.9.4.0 >=net-misc/openvpn-2.1_rc9 gtk? ( >=x11-libs/gtk+-2.91.4:3 gnome-base/gnome-keyring )
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager-openvpn/0.9/NetworkManager-openvpn-0.9.4.0.tar.xz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=e5e44c23d0c5162d5a004d2729fab42d
+_md5_=42514e8e6c7f21b3494c137d96ca35be

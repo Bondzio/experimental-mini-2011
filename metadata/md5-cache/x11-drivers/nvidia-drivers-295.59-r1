@@ -4,7 +4,7 @@ DESCRIPTION=NVIDIA X11 driver and GLX libraries
 EAPI=2
 HOMEPAGE=http://www.nvidia.com/
 IUSE=acpi multilib kernel_FreeBSD kernel_linux +tools kernel_linux
-KEYWORDS=-* amd64 ~x86 ~amd64-fbsd ~x86-fbsd
+KEYWORDS=-* amd64 x86 ~amd64-fbsd ~x86-fbsd
 LICENSE=NVIDIA
 PDEPEND=>=x11-libs/libvdpau-0.3-r1
 RDEPEND=<x11-base/xorg-server-1.12.99 kernel_linux? ( >=sys-libs/glibc-2.6.1 ) multilib? ( app-emulation/emul-linux-x86-xlibs ) >=app-admin/eselect-opengl-1.0.9 app-admin/eselect-opencl x11-libs/libXvMC acpi? ( sys-power/acpid ) tools? ( dev-libs/atk dev-libs/glib x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/pango[X] ) kernel_linux? ( sys-apps/module-init-tools )
@@ -12,4 +12,4 @@ RESTRICT=strip
 SLOT=0
 SRC_URI=x86? ( http://us.download.nvidia.com/XFree86/Linux-x86/295.59/NVIDIA-Linux-x86-295.59.run ) amd64? ( http://us.download.nvidia.com/XFree86/Linux-x86_64/295.59/NVIDIA-Linux-x86_64-295.59.run ) amd64-fbsd? ( http://us.download.nvidia.com/XFree86/FreeBSD-x86_64/295.59/NVIDIA-FreeBSD-x86_64-295.59.tar.gz ) x86-fbsd? ( http://us.download.nvidia.com/XFree86/FreeBSD-x86/295.59/NVIDIA-FreeBSD-x86-295.59.tar.gz )
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	5782800349f728f725f9378105c6a2ab	nvidia-driver	9c7860a75fb935e7d572c8bc85148e56	portability	536c5e70c5fb252ed3b769e04aa3f05b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	unpacker	e1b907c6a72dc4c9025109f3e84129c7	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=7c760eba5af58dcd430e0dca5b0f5f96
+_md5_=80027cacfd3b2fc7b1aa1d46efdb9146

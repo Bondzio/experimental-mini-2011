@@ -4,11 +4,11 @@ DESCRIPTION=Clam Anti-Virus Scanner
 EAPI=4
 HOMEPAGE=http://www.clamav.net/
 IUSE=bzip2 clamdtop iconv ipv6 milter selinux static-libs
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=bzip2? ( app-arch/bzip2 ) clamdtop? ( sys-libs/ncurses ) iconv? ( virtual/libiconv ) milter? ( || ( mail-filter/libmilter mail-mta/sendmail ) ) dev-libs/libtommath >=sys-libs/zlib-1.2.2 sys-devel/libtool selinux? ( sec-policy/selinux-clamav )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/clamav/clamav-0.97.5.tar.gz
 _eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=fee2a32903191e81ea7a025ab02c5cf3
+_md5_=04f00a99312c625519fcf1b5b9db4ebf
