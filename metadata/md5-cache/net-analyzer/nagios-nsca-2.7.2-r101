@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst setup
+DEPEND=>=dev-libs/libmcrypt-2.5.1-r4 tcpd? ( sys-apps/tcp-wrappers )
+DESCRIPTION=Nagios NSCA - Nagios Service Check Acceptor
+EAPI=4
+HOMEPAGE=http://www.nagios.org/
+IUSE=tcpd
+KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/libmcrypt-2.5.1-r4 tcpd? ( sys-apps/tcp-wrappers ) sys-apps/openrc
+SLOT=0
+SRC_URI=mirror://sourceforge/nagios/nsca-2.7.2.tar.gz
+_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=477a5b3aee7259fbaff92f8793644915

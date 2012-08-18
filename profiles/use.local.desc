@@ -3523,12 +3523,13 @@ net-analyzer/munin:syslog - Configure the node by default to log on syslog. This
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
 net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments
-net-analyzer/nagios-plugins:nagios-dns - installs deps for dns monitoring
-net-analyzer/nagios-plugins:nagios-game - installs deps for monitoring games-util/qstat
-net-analyzer/nagios-plugins:nagios-ntp - installs deps for ntp monitoring
-net-analyzer/nagios-plugins:nagios-ping - installs deps for fancy ping monitoring
-net-analyzer/nagios-plugins:nagios-ssh - installs deps for monitoring ssh
-net-analyzer/nagios-plugins:ups - installs deps for monitoring Network-UPS (sys-power/nut)
+net-analyzer/nagios-plugins:jabber - Install the script for sending IM notifications over Jabber with Nagios.
+net-analyzer/nagios-plugins:nagios-dns - Install net-dns/bind-tools required for monitoring DNS servers. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:nagios-game - Install games-util/qstat required for monitoring FPS servers. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:nagios-ntp - Install net-misc/ntp required for monitoring NTP servers and drifts. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:nagios-ping - Install net-analyzer/fping required for fancy ping monitoring. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:nagios-ssh - Install net-misc/openssh required for monitoring SSH servers. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:ups - Install sys-power/nut required for monitoring compatible UPS units. Disabling the flag does not remove any plugin file.
 net-analyzer/nagvis:automap - Enable automated map generation using media-gfx/graphviz
 net-analyzer/ncrack:ssh - Compile and link against the internal openssh modified library.
 net-analyzer/net-snmp:diskio - Enable the use of diskio mibs

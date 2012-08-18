@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=!app-emacs/u-vm-color bbdb? ( app-emacs/bbdb ) ssl? ( net-misc/stunnel ) >=virtual/emacs-21
 SLOT=0
 SRC_URI=http://launchpad.net/vm/8.1.x/8.1.0/+download/vm-8.1.0.tgz
-_eclasses_=elisp	6e2733d3f6b8238de88467c371e1da8a	elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=elisp	c1d790125c94e2bfd77f359988970980	elisp-common	5785babccf9fc9be868981620c7940d3	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=e035c549ac5b3b5f78f3aae4a6a05c50
