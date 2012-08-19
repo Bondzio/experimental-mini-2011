@@ -4,11 +4,11 @@ DESCRIPTION=An SMTP client and SMTP plugin for mail user agents such as Mutt
 EAPI=4
 HOMEPAGE=http://msmtp.sourceforge.net/
 IUSE=doc gnome-keyring gnutls idn +mta nls sasl ssl vim-syntax
-KEYWORDS=~alpha amd64 ~ia64 ppc ppc64 ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+KEYWORDS=alpha amd64 ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=GPL-3
 RDEPEND=gnome-keyring? ( dev-python/gnome-keyring-python gnome-base/libgnome-keyring ) idn? ( net-dns/libidn ) nls? ( virtual/libintl ) sasl? ( virtual/gsasl ) ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) net-mail/mailbase mta? ( !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/nbsmtp !mail-mta/netqmail !mail-mta/nullmailer !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !<mail-mta/ssmtp-2.64-r2 !>=mail-mta/ssmtp-2.64-r2[mta] )
 REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://sourceforge/msmtp/msmtp-1.4.28.tar.bz2
 _eclasses_=multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=845c14ac22085064de2c4ea2eb63bb69
+_md5_=833ac0bcf821ed7d1cc98858976612b5
