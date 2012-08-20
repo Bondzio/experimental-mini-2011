@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/python ccache? ( dev-util/ccache ) git? ( dev-vcs/git )
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
-_md5_=35bfd8ad67f449d1b9aaa78451126a5a
+_md5_=f44bf612aed278803b5152b51dccf1b4

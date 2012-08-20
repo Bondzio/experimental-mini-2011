@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/youtube-viewer/youtube-viewer-9999.ebuild,v 1.5 2012/08/19 20:52:14 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/youtube-viewer/youtube-viewer-9999.ebuild,v 1.6 2012/08/20 15:12:23 hasufell Exp $
 
 EAPI=4
 
@@ -30,3 +30,15 @@ DEPEND="virtual/perl-Module-Build"
 
 EGIT_SOURCEDIR="${WORKDIR}"
 S=${WORKDIR}/WWW-YoutubeViewer
+
+SRC_TEST="do"
+
+pkg_postinst() {
+	perl-module_pkg_postinst
+	einfo
+	elog "optional dependencies:"
+	elog "  dev-perl/TermReadKey (to get the terminal width size)"
+	elog "  dev-perl/Term-ReadLine-Gnu (for a better STDIN support)"
+	elog "  net-misc/gcap (for retrieving Youtube closed captions)"
+	einfo
+}
