@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sqlite? ( >=dev-db/sqlite-3 ) nls? ( virtual/libintl ) zsh-completion? ( !!<app-shells/zsh-completion-20091203-r1 )
 SLOT=0
 SRC_URI=mirror://berlios/eix/eix-0.23.10.tar.xz
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=dcf2da7e144e3ce1cd2f6b2ee5196b52

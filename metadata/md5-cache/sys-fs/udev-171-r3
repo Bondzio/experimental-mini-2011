@@ -10,5 +10,5 @@ PROVIDE=virtual/dev-manager
 RDEPEND=selinux? ( sys-libs/libselinux ) sys-apps/acl virtual/libusb:0 extras? ( dev-libs/gobject-introspection dev-libs/glib:2 ) gudev? ( dev-libs/glib:2 ) introspection? ( dev-libs/gobject-introspection ) hwdb? ( sys-apps/hwids ) !sys-apps/coldplug !<sys-fs/lvm2-2.02.45 !sys-fs/device-mapper >=sys-apps/baselayout-2.1.6
 SLOT=0
 SRC_URI=mirror://kernel/linux/utils/kernel/hotplug/udev-171.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b8e4e7bbe4839d773c0ba04eb35eeffd

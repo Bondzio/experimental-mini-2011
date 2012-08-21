@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl sys-process/procps asterisk? ( dev-perl/Net-Telnet ) irc? ( dev-perl/Net-IRC ) mysql? ( virtual/mysql dev-perl/Cache-Cache dev-perl/DBD-mysql ) ssl? ( dev-perl/Net-SSLeay ) postgres? ( dev-perl/DBD-Pg dev-db/postgresql-base ) memcached? ( dev-perl/Cache-Memcached ) dev-perl/DateManip dev-perl/Net-CIDR dev-perl/Net-Netmask dev-perl/Net-SNMP dev-perl/libwww-perl dev-perl/net-server dev-perl/DBI virtual/perl-Digest-MD5 virtual/perl-Getopt-Long virtual/perl-MIME-Base64 virtual/perl-Storable virtual/perl-Text-Balanced virtual/perl-Time-HiRes !minimal? ( dev-perl/HTML-Template net-analyzer/rrdtool[perl] dev-perl/Log-Log4perl ) !minimal? ( virtual/cron )
 SLOT=0
 SRC_URI=mirror://sourceforge/munin/munin-1.4.7.tar.gz http://dev.gentoo.org/~flameeyes/munin/munin-1.4.7-patches-1.tar.xz
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8e4591ad4f95e81b0da319543745414a

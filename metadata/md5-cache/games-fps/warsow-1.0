@@ -9,5 +9,5 @@ LICENSE=GPL-2 warsow
 RDEPEND=media-libs/freetype net-misc/curl sys-libs/zlib !dedicated? ( media-libs/libpng:0 media-libs/libsdl media-libs/libtheora media-libs/libvorbis x11-libs/libX11 x11-libs/libXinerama x11-libs/libXrandr x11-libs/libXxf86dga x11-libs/libXxf86vm virtual/jpeg virtual/opengl openal? ( media-libs/openal ) )
 SLOT=0
 SRC_URI=http://funpark.warsow-esport.net/~warsow/1.0/warsow_1.0_unified.tar.gz http://funpark.warsow-esport.net/~warsow/1.0/warsow_1.0_sdk.tar.gz mirror://gentoo/warsow.png
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	327b713e2d6949c42cd96bc4898fd280	games	024161bb840ff1c7b424696877dbb18b	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	check-reqs	4ec51f70e9eca636b9fef0f14cce04ce	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	games	024161bb840ff1c7b424696877dbb18b	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=eaf66de9d10e24ac04a1a6814711bc72

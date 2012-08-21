@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1 MIT
 RDEPEND=caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( dev-db/postgresql-base !dev-db/postgresql-base[ldap,threads] ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail ) virtual/libiconv >=net-mail/mailbase-0.00-r8
 SLOT=0
 SRC_URI=http://dovecot.org/releases/2.0/dovecot-2.0.19.tar.gz sieve? ( http://www.rename-it.nl/dovecot/2.0/dovecot-2.0-pigeonhole-0.2.6.tar.gz ) managesieve? ( http://www.rename-it.nl/dovecot/2.0/dovecot-2.0-pigeonhole-0.2.6.tar.gz )
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	5782800349f728f725f9378105c6a2ab	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=9cdb556a9544f68e3499e66f72535327

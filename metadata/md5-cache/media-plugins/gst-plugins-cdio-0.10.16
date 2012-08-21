@@ -8,5 +8,5 @@ RDEPEND=>=dev-libs/libcdio-0.80 >=media-libs/gst-plugins-base-0.10.26 >=media-li
 RESTRICT=test
 SLOT=0.10
 SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-0.10.16.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gst-plugins-ugly	880ab5c0b66df7c4feaff2cc97c8174c	gst-plugins10	cdf76f89776a74425daf6cd80706ab65	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	gst-plugins-ugly	880ab5c0b66df7c4feaff2cc97c8174c	gst-plugins10	cdf76f89776a74425daf6cd80706ab65	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b9dbd351937dcdf4c3363f7c8158ee8a

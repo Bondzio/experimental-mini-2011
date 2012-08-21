@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/libexif/libexif-0.6.21.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=d0a7bfa0b4d34a9b205fa858d37eaf28

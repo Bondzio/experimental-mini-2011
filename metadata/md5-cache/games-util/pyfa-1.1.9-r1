@@ -9,5 +9,5 @@ LICENSE=GPL-3 LGPL-2.1 CCPL-Attribution-2.5 free-noncomm
 RDEPEND=dev-python/sqlalchemy dev-python/wxpython:2.8 graph? ( dev-python/matplotlib[wxwidgets] dev-python/numpy ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite,threads] =dev-lang/python-2.6*[sqlite,threads] )
 SLOT=0
 SRC_URI=http://dl.evefit.org/stable/1.1.9/pyfa-1.1.9-inferno-1.2-src.tar.bz2 -> pyfa-1.1.9-inferno-1.2-src-r1.tar.bz2
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=bbc0a35e202e20d2a7ef38ed178dd562

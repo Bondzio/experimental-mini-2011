@@ -8,5 +8,5 @@ LICENSE=CDDL
 RDEPEND=>=virtual/jre-1.5 dev-java/jsr67 =dev-java/jaxb-2* >=dev-java/java-config-2.1.9-r1 source? ( app-arch/zip )
 SLOT=2
 SRC_URI=https://jax-ws.dev.java.net/files/documents/4202/34734/jaxws-api-fcs-src.zip
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	java-ant-2	05b1e5a708f4dd372a85c9c6424fecbe	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=eba2d6691f764b79ce953e45ede78e14

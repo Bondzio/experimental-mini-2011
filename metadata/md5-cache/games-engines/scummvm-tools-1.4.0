@@ -10,5 +10,5 @@ RDEPEND=png? ( media-libs/libpng ) mad? ( media-libs/libmad ) flac? ( media-libs
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/scummvm/scummvm-tools-1.4.0.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	327b713e2d6949c42cd96bc4898fd280	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	wxwidgets	fb1a306837717dfa2af841ecdf929565
 _md5_=92fd6e8c923453ed4bd0192db77fdc9f

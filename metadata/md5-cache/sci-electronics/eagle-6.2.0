@@ -8,5 +8,5 @@ RDEPEND=sys-libs/glibc x86? ( sys-libs/zlib x11-libs/libX11 x11-libs/libXext x11
 RESTRICT=strip
 SLOT=0
 SRC_URI=ftp://ftp.cadsoft.de/eagle/program/6.2/eagle-lin-6.2.0.run
-_eclasses_=eutils	327b713e2d6949c42cd96bc4898fd280	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8e2ea8624f0be339f1c8d55000b7e7a2
