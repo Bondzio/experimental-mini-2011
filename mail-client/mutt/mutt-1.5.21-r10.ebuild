@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/mail-client/mutt/mutt-1.5.21-r10.ebuild,v 1.2 2012/06/22 02:25:54 grobian Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-client/mutt/mutt-1.5.21-r10.ebuild,v 1.4 2012/08/21 11:28:09 grobian Exp $
 
 EAPI="3"
 
@@ -16,7 +16,7 @@ SRC_URI="ftp://ftp.mutt.org/mutt/devel/${P}.tar.gz
 IUSE="berkdb crypt debug doc gdbm gnutls gpg idn imap mbox nls nntp pop qdbm sasl selinux sidebar smime smtp ssl tokyocabinet"
 SLOT="0"
 LICENSE="GPL-2"
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~alpha amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 RDEPEND=">=sys-libs/ncurses-5.2
 	tokyocabinet?  ( dev-db/tokyocabinet )
 	!tokyocabinet? (
@@ -194,7 +194,7 @@ src_configure() {
 }
 
 src_install() {
-	make DESTDIR="${D}" install || die "install failed"
+	emake DESTDIR="${D}" install || die "install failed"
 	if use mbox; then
 		insinto /etc/mutt
 		newins "${FILESDIR}"/Muttrc.mbox Muttrc
@@ -209,7 +209,7 @@ src_install() {
 
 	# A man-page is always handy, so fake one
 	if use !doc; then
-		make -C doc DESTDIR="${D}" muttrc.man || die
+		emake -C doc DESTDIR="${D}" muttrc.man || die
 		# make the fake slightly better, bug #413405
 		sed -e 's#@docdir@/manual.txt#http://www.mutt.org/doc/devel/manual.html#' \
 			-e 's#in @docdir@,#at http://www.mutt.org/,#' \

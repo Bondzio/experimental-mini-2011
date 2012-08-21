@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.9 2012/07/20 16:31:52 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.10 2012/08/21 15:17:33 floppym Exp $
 
 EAPI=4
 
@@ -13,7 +13,7 @@ inherit distutils eutils multilib
 if [[ ${PV} != *9999* ]]; then
 	KEYWORDS="~amd64 ~x86"
 	SRC_URI="mirror://bitbucket/${PN}/targz/downloads/${P}.tar.gz"
-	HG_DEPEND=">=dev-vcs/mercurial-2.1 <dev-vcs/mercurial-2.3"
+	HG_DEPEND=">=dev-vcs/mercurial-2.2 <dev-vcs/mercurial-2.4"
 else
 	inherit mercurial
 	EHG_REPO_URI="https://bitbucket.org/tortoisehg/thg"
@@ -73,10 +73,9 @@ src_install() {
 	dodoc doc/ReadMe*.txt doc/TODO
 
 	if use doc ; then
-		dohtml -r doc/build/html || die
+		dohtml -r doc/build/html
 	fi
 
-	insinto /usr/share/icons/hicolor/scalable/apps
-	newins icons/scalable/apps/thg-logo.svg tortoisehg_logo.svg
+	newicon -s scalable icons/scalable/apps/thg-logo.svg tortoisehg_logo.svg
 	domenu contrib/${PN}.desktop
 }
