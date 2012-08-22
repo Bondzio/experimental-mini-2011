@@ -761,6 +761,7 @@ app-office/calligra:mso - Enable support for various MS Office TM file formats
 app-office/calligra:okular - Enable bindings for kde-base/okular
 app-office/calligra:openctl - Enable support for transformation algorithms via media-libs/opengtl
 app-office/calligra:opengtl - Enable support for transformation algorithms via media-libs/opengtl
+app-office/calligra:spacenav - Enable support for the 3Dconnexion spacenav input device via dev-libs/libspnav
 app-office/calligra:word-perfect - Enable support for various WordPerfect file formats
 app-office/calligra:xbase - Enable support for xbase compatible database formats
 app-office/calligra:xslt - Enable xslt and exslt support format support
@@ -2431,6 +2432,7 @@ media-fonts/mplus-outline-fonts:ipafont - Generates new fonts merged with media-
 media-fonts/sil-charis:compact - Use more compactly spaced font
 media-fonts/sil-gentium:compact - Also install more compact version of the font.
 media-fonts/terminus-font:a-like-o - Changes view of letter 'a' - a looks like o (see homepage)
+media-fonts/terminus-font:center-tilda - Place the '~' character vertically centered on the line instead of to the top.
 media-fonts/terminus-font:distinct-l - ll2 variant with more distinctive l (lowercase L)
 media-fonts/terminus-font:pcf - Install Portable Compiled Font (PCF) (required for X11)
 media-fonts/terminus-font:psf - Install PC Screen Font (PSF) with unicode data (for linux console)
@@ -4525,7 +4527,6 @@ net-nds/openldap:smbkrb5passwd - Enable overlay for syncing ldap, unix and lanma
 net-nds/tac_plus:finger - Adds support for checking user counts via fingering the NAS
 net-nds/tac_plus:maxsess - Enforce a limit on maximum sessions per user
 net-news/liferea:libnotify - Enable popup notifications
-net-news/liferea:lua - Enable lua scripting
 net-nntp/inn:innkeywords - Enable automatic keyword generation support
 net-nntp/inn:inntaggedhash - Use tagged hash table for history (disables large file support)
 net-nntp/nzbget:parcheck - Enable support for checking PAR archives

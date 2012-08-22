@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/bfgminer/bfgminer-2.3.6.ebuild,v 1.4 2012/06/16 09:03:02 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/bfgminer/bfgminer-2.3.6.ebuild,v 1.5 2012/08/22 02:10:20 blueness Exp $
 
 EAPI="4"
 
@@ -38,15 +38,16 @@ DEPEND="
 		virtual/libusb:1
 	)
 "
-RDEPEND="${DEPEND}"
+RDEPEND="${DEPEND}
+	opencl? (
+		virtual/opencl
+	)
+"
 DEPEND="${DEPEND}
 	virtual/pkgconfig
 	sys-apps/sed
 	adl? (
 		x11-libs/amd-adl-sdk
-	)
-	opencl? (
-		virtual/opencl
 	)
 	sse2? (
 		>=dev-lang/yasm-1.0.1
