@@ -7,5 +7,5 @@ KEYWORDS=~alpha amd64 arm hppa ppc ppc64 ~sparc x86 ~amd64-linux ~x86-linux ~ppc
 LICENSE=Artistic-2
 SLOT=0
 SRC_URI=http://pipeviewer.googlecode.com/files/pv-1.2.0.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=f8508ec4e625b0e2465a132c704b4bb5

@@ -10,5 +10,5 @@ RDEPEND=!app-emulation/kqemu !app-emulation/qemu !<app-emulation/qemu-1.0 >=dev-
 REQUIRED_USE=static? ( !alsa !pulseaudio ) amd64? ( qemu_softmmu_targets_x86_64 ) x86? ( qemu_softmmu_targets_x86_64 ) virtfs? ( xattr )
 SLOT=0
 SRC_URI=mirror://sourceforge/kvm/qemu-kvm/qemu-kvm-1.1.1.tar.gz http://dev.gentoo.org/~cardoe/distfiles/qemu-kvm-1.1.1-bp-1.tar.xz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	564d80d2026ae9f1910d8da4ea211e91	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b3f01a524c40752e5219e2abf993eb09

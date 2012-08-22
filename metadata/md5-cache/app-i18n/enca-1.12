@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=recode? ( >=app-text/recode-3.6_p15 )
 SLOT=0
 SRC_URI=http://dl.cihar.com/enca/enca-1.12.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=23a085db6f5ddf3d35302711a2c2516d

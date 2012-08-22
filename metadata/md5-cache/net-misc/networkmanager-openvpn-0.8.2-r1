@@ -10,5 +10,5 @@ RDEPEND=>=net-misc/networkmanager-0.8.2 >=net-misc/openvpn-2.1_rc9 >=dev-libs/db
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnome/sources/NetworkManager-openvpn/0.8/NetworkManager-openvpn-0.8.2.tar.bz2
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=fadee62d2354c1984a2a5b5b753a999a

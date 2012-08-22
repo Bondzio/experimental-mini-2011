@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-lang/perl-5.6 dev-perl/DBI dev-perl/DBD-mysql dev-perl/DateManip >=media-video/mjpegtools-1.6.2 media-sound/sox[encode] media-libs/id3lib mplayer? ( media-video/mplayer[encode,mp3,faac?,xvid?] ) >=media-tv/mythtv-0.25_pre20120223[perl,hls,xvid?]
 SLOT=0
 SRC_URI=https://github.com/MythTV/nuvexport/tarball/ad7e20af6e8961c4eea3b79b8022f86c6bf1b9d4 -> nuvexport-0.5_p20120306.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	5782800349f728f725f9378105c6a2ab	mythtv	4ed311a770cfb86e57de23a032d32d85	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	564d80d2026ae9f1910d8da4ea211e91	mythtv	4ed311a770cfb86e57de23a032d32d85	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=d5212d8ac66930b7c292e169a6eabb7d

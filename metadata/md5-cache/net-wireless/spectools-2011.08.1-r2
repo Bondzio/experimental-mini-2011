@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/libusb:0 ncurses? ( sys-libs/ncurses ) gtk? ( x11-libs/gtk+:2 )
 SLOT=0
 SRC_URI=http://www.kismetwireless.net/code/spectools-2011-08-R1.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=93ed851a1f6b029c06fdb7df236feea8

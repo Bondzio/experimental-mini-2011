@@ -5,5 +5,5 @@ KEYWORDS=~amd64 ~ppc x86
 LICENSE=as-is
 SLOT=0
 SRC_URI=mirror://sourceforge/odessa/galleta_20040505_1.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=f5a7a69962535c63b858d5c9796c6b4a

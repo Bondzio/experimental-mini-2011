@@ -8,5 +8,5 @@ KEYWORDS=alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-a
 LICENSE=MIT
 SLOT=0
 SRC_URI=ftp://sourceware.org/pub/libffi/libffi-3.0.10.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=cfb233acf00f14365b362102e09bf4b4

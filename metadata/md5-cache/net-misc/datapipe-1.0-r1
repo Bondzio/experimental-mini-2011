@@ -5,5 +5,5 @@ KEYWORDS=~x86 ~ppc ~arm ~amd64
 LICENSE=public-domain
 SLOT=0
 SRC_URI=ftp://ftp.distributed.net/pub/dcti/unsupported/datapipe-1.0.tar.gz http://http.distributed.net/pub/dcti/unsupported/datapipe-1.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=035934e89e3d100ff1deb115ac9afe1a

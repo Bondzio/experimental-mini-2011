@@ -10,5 +10,5 @@ PDEPEND=cdinstall? ( >=games-rpg/arx-fatalis-data-1.21 ) demo? ( games-rpg/arx-f
 RDEPEND=>=dev-libs/boost-1.39 media-libs/devil[jpeg] media-libs/freetype media-libs/glew media-libs/libsdl[opengl] media-libs/openal sys-libs/zlib virtual/opengl x11-libs/libX11 crash-reporter? ( x11-libs/qt-core:4[ssl] x11-libs/qt-gui:4 ) crash-reporter? ( sys-devel/gdb )
 SLOT=0
 SRC_URI=mirror://sourceforge/arx/arx-libertatis-1.0.2/arx-libertatis-1.0.2.tar.xz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=3a4ecbf1ab6a31a736b243761f28e513

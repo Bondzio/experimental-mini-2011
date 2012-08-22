@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-dotnet/gtk-sharp dev-dotnet/ndesk-dbus dev-dotnet/ndesk-dbus-glib dev-dotnet/gnome-sharp media-libs/libextractor sys-fs/udisks:0
 SLOT=0
 SRC_URI=http://launchpad.net/basenji/trunk/0.7.1/+download/basenji-0.7.1.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=3b5df24a06aafb7213c104ba6a0be6fc

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gmp? ( dev-libs/gmp )
 SLOT=0
 SRC_URI=http://cgm.cs.mcgill.ca/~avis/C/lrslib/lrslib-042c.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=fcee0bb73df48b87cbcae8ac0db93a05

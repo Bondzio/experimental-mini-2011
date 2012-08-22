@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=dev-lang/tk dev-tcltk/tcllib
 SLOT=0
 SRC_URI=mirror://sourceforge/project/tcllib/tklib/0.5/tklib-0.5.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=2b5be68aff60529804b80a9adc54bef2

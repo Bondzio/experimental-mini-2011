@@ -5,5 +5,5 @@ KEYWORDS=x86
 LICENSE=MakeIndex
 SLOT=0
 SRC_URI=ftp://math.feld.cvut.cz/pub/cstex/base/csindex-19980713.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=887edd580ee23d51829a50f78f07c776

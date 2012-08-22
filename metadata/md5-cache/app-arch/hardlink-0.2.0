@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-libs/libpcre
 SLOT=0
 SRC_URI=http://jak-linux.org/projects/hardlink/hardlink_0.2.0.tar.gz
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=4f37bf8c6437f46b0e7f01e58648186b

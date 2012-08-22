@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1-with-linking-exception
 RDEPEND=>=dev-ml/ocaml-data-notation-0.0.3 >=dev-lang/ocaml-3.12[ocamlopt?]
 SLOT=0
 SRC_URI=http://forge.ocamlcore.org/frs/download.php/918/oasis-0.3.0.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	5782800349f728f725f9378105c6a2ab	oasis	b06dffa6b9fecb81ede1ade7fead8438	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	findlib	9cf6020ee5481f39f1aa566a323f9868	multilib	564d80d2026ae9f1910d8da4ea211e91	oasis	b06dffa6b9fecb81ede1ade7fead8438	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b17e044546a0d1fd210053b8d9e8feae

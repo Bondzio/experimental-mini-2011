@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/ftgl media-libs/oyranos x11-libs/fltk
 SLOT=0
 SRC_URI=mirror://sourceforge/oyranos/ICC%20Examin/ICC%20Examin%200.51/icc_examin-0.51.tar.bz2
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=556b377fff45a1fd6bd34cd3be65be86

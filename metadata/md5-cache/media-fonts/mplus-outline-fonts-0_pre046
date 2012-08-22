@@ -9,5 +9,5 @@ LICENSE=mplus-fonts ipafont? ( IPAfont )
 RESTRICT=strip binchecks
 SLOT=0
 SRC_URI=mirror://sourceforge.jp/mplus-fonts/6650/mplus-TESTFLIGHT-046.tar.xz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=14b055533a2d555e96c1bf270ed04381

@@ -8,5 +8,5 @@ LICENSE=public-domain
 RDEPEND=media-libs/libpng
 SLOT=0
 SRC_URI=http://entropymine.com/jason/pngrewrite/pngrewrite-1.4.0.zip
-_eclasses_=multilib	5782800349f728f725f9378105c6a2ab	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=423f4cdad7bc2173b08f97f3bcde9b91

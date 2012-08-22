@@ -8,5 +8,5 @@ LICENSE=Artistic
 RDEPEND=dev-python/numpy dev-python/pygtkglext media-libs/freeglut virtual/glu virtual/opengl x11-libs/libXmu =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pymmlib/pymmlib-1.0.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	5782800349f728f725f9378105c6a2ab	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	multilib	564d80d2026ae9f1910d8da4ea211e91	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=26726c0d896dde667983a16a652bf842
