@@ -1,4 +1,4 @@
-DEFINED_PHASES=install
+DEFINED_PHASES=install prepare
 DESCRIPTION=Command-line interface to various pastebins
 EAPI=4
 HOMEPAGE=http://wgetpaste.zlin.dk/
@@ -8,4 +8,4 @@ LICENSE=public-domain
 RDEPEND=net-misc/wget zsh-completion? ( app-shells/zsh )
 SLOT=0
 SRC_URI=http://wgetpaste.zlin.dk/wgetpaste-2.20.tar.bz2
-_md5_=13108e0d56a910b7d7ba60d3c4bf6689
+_md5_=4a692b2aa1fe02ff40df3f11d1458180
