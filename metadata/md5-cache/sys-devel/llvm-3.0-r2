@@ -4,10 +4,10 @@ DESCRIPTION=Low Level Virtual Machine
 EAPI=3
 HOMEPAGE=http://llvm.org/
 IUSE=debug gold +libffi multitarget ocaml test udis86 vim-syntax
-KEYWORDS=~amd64 ~ppc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos
+KEYWORDS=amd64 ~ppc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos
 LICENSE=UoI-NCSA
 RDEPEND=dev-lang/perl libffi? ( virtual/libffi ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://llvm.org/releases/3.0/llvm-3.0.tar.gz
 _eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	564d80d2026ae9f1910d8da4ea211e91	pax-utils	0ace932c4045349c7fc1af0fe7091acf	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=71a3a817d58b3fd0ecb532c1446dca01
+_md5_=d4164d1648eee0f3143090a8121098bc

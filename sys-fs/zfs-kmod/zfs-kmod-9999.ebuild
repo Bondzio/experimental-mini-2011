@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs-kmod/zfs-kmod-9999.ebuild,v 1.2 2012/08/22 07:50:06 ryao Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/zfs-kmod/zfs-kmod-9999.ebuild,v 1.4 2012/08/24 14:57:46 ryao Exp $
 
 EAPI="4"
 
@@ -13,6 +13,7 @@ inherit bash-completion-r1 flag-o-matic linux-mod toolchain-funcs autotools-util
 if [ ${PV} == "9999" ] ; then
 	inherit git-2
 	EGIT_REPO_URI="git://github.com/zfsonlinux/zfs.git"
+	S="${WORKDIR}/zfs-${MY_PV}"
 else
 	inherit eutils versionator
 	MY_PV=$(replace_version_separator 3 '-')
@@ -42,14 +43,22 @@ pkg_setup() {
 		!PREEMPT
 		BLK_DEV_LOOP
 		EFI_PARTITION
+		IOSCHED_NOOP
 		MODULES
 		!PAX_KERNEXEC_PLUGIN_METHOD_OR
 		ZLIB_DEFLATE
-		ZLIB_INFLATE"
+		ZLIB_INFLATE
+	"
+
 	use rootfs && \
 		CONFIG_CHECK="${CONFIG_CHECK} BLK_DEV_INITRD
 			DEVTMPFS"
+
 	kernel_is ge 2 6 26 || die "Linux 2.6.26 or newer required"
+
+	[ ${PV} != "9999" ] && \
+		{ kernel_is le 3 5 || die "Linux 3.5 is the latest supported version."; }
+
 	check_extra_config
 }
 
