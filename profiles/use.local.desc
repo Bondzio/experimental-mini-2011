@@ -1822,6 +1822,7 @@ dev-vcs/git:blksha1 - Use the new optimized SHA1 implementation.
 dev-vcs/git:cgi - Install gitweb too
 dev-vcs/git:gpg - Pull in gnupg for signing -- without gnupg, attempts at signing will fail at runtime!
 dev-vcs/git:gtk - Include the gitview contrib tool.
+dev-vcs/git:highlight - GitWeb support for app-text/highlight.
 dev-vcs/git:mozsha1 - Makes git use an optimized SHA1 routine from Mozilla that should be fast on non-x86 machines.
 dev-vcs/git:ppcsha1 - Make use of a bundled routine that is optimized for the PPC arch.
 dev-vcs/git:subversion - Include git-svn for dev-vcs/subversion support.
@@ -3529,15 +3530,16 @@ net-analyzer/munin:postgres - Install the packages required for monitoring Postg
 net-analyzer/munin:syslog - Configure the node by default to log on syslog. This requires the presence of virtual/perl-Sys-Syslog. As of version 2.0.2, the master scripts only log to file, and not to syslog.
 net-analyzer/nagios-core:lighttpd - install www-servers/lighttpd config
 net-analyzer/nagios-core:web - enable web interface
-net-analyzer/nagios-nrpe:command-args - allow clients to specify command arguments
-net-analyzer/nagios-nsca:crypt - Build support for crypted communication with nsca, through dev-libs/mcrypt. It's recommended not to disable this flag unless all the communication will be handled in an absolutely safe environment.
 net-analyzer/nagios-plugins:jabber - Install the script for sending IM notifications over Jabber with Nagios.
 net-analyzer/nagios-plugins:nagios-dns - Install net-dns/bind-tools required for monitoring DNS servers. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins:nagios-game - Install games-util/qstat required for monitoring FPS servers. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins:nagios-ntp - Install net-misc/ntp required for monitoring NTP servers and drifts. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins:nagios-ping - Install net-analyzer/fping required for fancy ping monitoring. Disabling the flag does not remove any plugin file.
 net-analyzer/nagios-plugins:nagios-ssh - Install net-misc/openssh required for monitoring SSH servers. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:smart - Install sys-apps/smartmontools required for S.M.A.R.T. disk monitoring. Disabling the flag removes the plugin file. This plugin also requires the sudo flag to be enable.
 net-analyzer/nagios-plugins:snmp - Install dev-perl/Net-SNMP required for monitoring SNMP values. Disabling the flag does not remove any plugin file.
+net-analyzer/nagios-plugins:sudo - Install a file to allow the nagios user to execute some commands via app-admin/sudo, so that the scripts can access devices and features that wouldn't be otherwise allowed by nagios.
+net-analyzer/nagios-plugins:suid - Give root privileges to the ICMP, DHCP and IDE S.M.A.R.T. check binaries. This allows them to ignore the access controls that would disallow the nagios user from running the check.
 net-analyzer/nagios-plugins:ups - Install sys-power/nut required for monitoring compatible UPS units. Disabling the flag does not remove any plugin file.
 net-analyzer/nagvis:automap - Enable automated map generation using media-gfx/graphviz
 net-analyzer/ncrack:ssh - Compile and link against the internal openssh modified library.
@@ -3557,6 +3559,10 @@ net-analyzer/nmap:ncat - Install the ncat utility
 net-analyzer/nmap:ndiff - Install the ndiff utility
 net-analyzer/nmap:nmap-update - Install nmap-update, which uses dev-vcs/subversion to update nmap scripts in your home directory
 net-analyzer/nmap:nping - Install the nping utility
+net-analyzer/nrpe:command-args - Build support for specifying the command-line arguments from the Nagios/Icinga master. Make sure you understand the implications of this flag as it can be a security risk.
+net-analyzer/nrpe:minimal - Only build the check plugins for Nagios/Icinga, and not the daemon.
+net-analyzer/nsca:crypt - Build support for crypted communication with nsca, through dev-libs/mcrypt. It's recommended not to disable this flag unless all the communication will be handled in an absolutely safe environment.
+net-analyzer/nsca:minimal - Only build and install the send_nsca command and not the daemon. This allows a very minimal install with no overhead when setting up a node.
 net-analyzer/pchar:pcap - Use the net-libs/libpcap library
 net-analyzer/pmacct:64bit - Use 64bit counters instead of 32bit ones
 net-analyzer/pmacct:ulog - Enable ULOG support
@@ -4498,6 +4504,7 @@ net-misc/vino:telepathy - Enable desktop sharing through a telepathy client
 net-misc/vpnc:hybrid-auth - Enable hybrid authentication (certificates), only if not redistributed as compiled binary
 net-misc/vpnc:resolvconf - Enable support for DNS managing framework net-dns/openresolv
 net-misc/wget:ntlm - Enable support for NTLM (Windows-based) authorization
+net-misc/wget:uuid - Generate UUIDs for the WARC (Web ARChive file format) using libuuid; otherwise use a simple RNG (random number generator)
 net-misc/wicd:ambiance - Install icons from Ubuntu's ambiance theme
 net-misc/wicd:gtk - Installs a gtk UI. This is enabled by default because it is intended behavior. Requires dev-python/pygtk
 net-misc/wicd:ioctl - Installs additional python libraries to use as a backend. This will improve speed but is experimental.

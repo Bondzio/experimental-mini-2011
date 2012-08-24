@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=>=net-analyzer/nagios-plugins-1.3.1 >=dev-libs/libmcrypt-2.5.1-r4
+DESCRIPTION=Nagios NSCA - Nagios Service Check Acceptor
+HOMEPAGE=http://www.nagios.org/
+KEYWORDS=alpha amd64 ppc ppc64 sparc x86
+LICENSE=GPL-2
+RDEPEND=>=net-analyzer/nagios-plugins-1.3.1 >=dev-libs/libmcrypt-2.5.1-r4
+SLOT=0
+SRC_URI=mirror://sourceforge/nagios/nsca-2.7.2.tar.gz
+_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=0a52f84c9c28a8566a634abaac4c2c28
