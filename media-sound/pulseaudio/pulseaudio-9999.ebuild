@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/pulseaudio/pulseaudio-9999.ebuild,v 1.27 2012/07/21 03:52:09 ford_prefect Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/pulseaudio/pulseaudio-9999.ebuild,v 1.29 2012/08/25 14:02:22 ssuominen Exp $
 
 EAPI=4
 
-inherit autotools eutils flag-o-matic user versionator git-2
+inherit autotools eutils flag-o-matic user versionator git-2 toolchain-funcs
 
 DESCRIPTION="A networked sound server with an advanced plugin system"
 HOMEPAGE="http://www.pulseaudio.org/"
@@ -45,7 +45,7 @@ RDEPEND=">=media-libs/libsndfile-1.0.20
 		>=sys-apps/dbus-1.0.0
 	)
 	asyncns? ( net-libs/libasyncns )
-	udev? ( || ( >=sys-fs/udev-171[hwdb] >=sys-fs/udev-143[extras] ) )
+	udev? ( || ( >=sys-fs/udev-171-r6[hwdb] <sys-fs/udev-171[extras] ) )
 	realtime? ( sys-auth/rtkit )
 	equalizer? (
 		sci-libs/fftw:3.0
@@ -98,6 +98,9 @@ pkg_setup() {
 EGIT_BOOTSTRAP="./bootstrap.sh"
 
 src_configure() {
+	local udevdir=/lib/udev
+	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
+
 	# It's a binutils bug, once I can find time to fix that I'll add a
 	# proper dependency and fix this up. — flameeyes
 	append-ldflags $(no-as-needed)
@@ -141,7 +144,7 @@ src_configure() {
 		--disable-adrian-aec \
 		--disable-esound \
 		--localstatedir="${EPREFIX}"/var \
-		--with-udev-rules-dir="${EPREFIX}/lib/udev/rules.d" \
+		--with-udev-rules-dir="${EPREFIX}/${udevdir}"/rules.d \
 		${myconf}
 
 	if use doc; then

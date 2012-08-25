@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.130 2012/08/16 18:44:52 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/chromium/chromium-9999-r1.ebuild,v 1.131 2012/08/25 17:23:29 floppym Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2:2.6"
@@ -178,6 +178,7 @@ src_prepare() {
 		\! -path 'third_party/cld/*' \
 		\! -path 'third_party/ffmpeg/*' \
 		\! -path 'third_party/flac/flac.h' \
+		\! -path 'third_party/flot/*' \
 		\! -path 'third_party/gpsd/*' \
 		\! -path 'third_party/harfbuzz/*' \
 		\! -path 'third_party/hunspell/*' \
@@ -210,7 +211,7 @@ src_prepare() {
 		\! -path 'third_party/sfntly/*' \
 		\! -path 'third_party/skia/*' \
 		\! -path 'third_party/smhasher/*' \
-		\! -path 'third_party/speex/speex.h' \
+		\! -path 'third_party/speex/*' \
 		\! -path 'third_party/sqlite/*' \
 		\! -path 'third_party/tlslite/*' \
 		\! -path 'third_party/trace-viewer/*' \
@@ -219,7 +220,7 @@ src_prepare() {
 		\! -path 'third_party/webdriver/*' \
 		\! -path 'third_party/webgl_conformance/*' \
 		\! -path 'third_party/webrtc/*' \
-		\! -path 'third_party/zlib/contrib/minizip/*' \
+		\! -path 'third_party/zlib/*' \
 		-delete || die
 
 	local v8_bundled="$(chromium_bundled_v8_version)"
@@ -262,9 +263,11 @@ src_configure() {
 	# Use system-provided libraries.
 	# TODO: use_system_ffmpeg
 	# TODO: use_system_hunspell (upstream changes needed).
+	# TODO: use_system_speex (needs additional shims, bug #432748).
 	# TODO: use_system_ssl (http://crbug.com/58087).
 	# TODO: use_system_sqlite (http://crbug.com/22208).
 	# TODO: use_system_vpx
+	# TODO: use_system_zlib (forked, bug #432746).
 	myconf+="
 		-Duse_system_bzip2=1
 		-Duse_system_flac=1
@@ -275,11 +278,11 @@ src_configure() {
 		-Duse_system_libusb=1
 		-Duse_system_libwebp=1
 		-Duse_system_libxml=1
-		-Duse_system_speex=1
+		-Duse_system_speex=0
 		-Duse_system_v8=1
 		-Duse_system_xdg_utils=1
 		-Duse_system_yasm=1
-		-Duse_system_zlib=1"
+		-Duse_system_zlib=0"
 
 	# Optional dependencies.
 	# TODO: linux_link_kerberos, bug #381289.

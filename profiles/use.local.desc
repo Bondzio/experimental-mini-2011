@@ -3118,6 +3118,7 @@ media-tv/mythtv:vaapi - Enables VAAPI (Video Acceleration API) for hardware deco
 media-tv/mythtv:vdpau - Enable support of NVIDIA's VDPAU for video playback
 media-tv/mythtv:xmltv - Pulls in the media-tv/xmltv TV listing grabbers for users not using Schedules Direct.
 media-tv/tvbrowser:themes - Install extra theme packs
+media-tv/tvheadend:xmltv - Use media-tv/xmltv
 media-tv/tvtime:alsa - Enables an EXPERIMENTAL ALSA patch by the Ubuntu maintainers. Several problems were reported, use with care.
 media-tv/xawtv:xext - Enable use of XFree extensions (DGA,VidMode,DPMS)
 media-tv/xawtv:zvbi - Enable VBI Decoding Library for Zapping
@@ -3967,6 +3968,8 @@ net-irc/charybdis:largenet - Enable support/tweaks for large networks
 net-irc/epic5:archive - Use app-arch/libarchive to use zip and tar archives from scripts.
 net-irc/epic5:valgrind - Compile against dev-util/valgrind headers to improve memory-leak checking when running epic5 under valgrind.
 net-irc/ezbounce:boost - Compile against dev-libs/boost libraries
+net-irc/hexchat:fastscroll - Make scrolling of large text buffers faster by circumventing some of pango's overhead
+net-irc/hexchat:ntlm - Enable NTLM authentication
 net-irc/inspircd:geoip - Add geoip support for country and city lookup based on IPs
 net-irc/inspircd:gnutls - Enable TLS support
 net-irc/inspircd:ipv6 - Enable support for IP version 6
@@ -5484,6 +5487,7 @@ sys-power/powermgmt-base:pm-utils - Adds support for on_ac_power through sys-pow
 sys-power/suspend:crypt - Allows suspend and resume from encrypted disk
 sys-power/suspend:fbsplash - Add support for framebuffer splash
 sys-power/upower:introspection - Use dev-libs/gobject-introspection for introspection
+sys-power/upower:systemd - Use sys-apps/systemd for hibernate and suspend
 sys-process/cronie:anacron - Install the periodic anacron command scheduler.
 sys-process/cronie:inotify - Enable inotify filesystem monitoring support.
 sys-process/fcron:debug - Enable debug code and output. Since version 3.0.5 this will no longer force foreground execution, and fcron will be able to run as a service properly.
