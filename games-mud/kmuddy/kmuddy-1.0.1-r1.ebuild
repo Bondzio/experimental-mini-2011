@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-mud/kmuddy/kmuddy-1.0.1-r1.ebuild,v 1.4 2012/03/06 20:40:37 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-mud/kmuddy/kmuddy-1.0.1-r1.ebuild,v 1.5 2012/08/25 17:58:31 creffett Exp $
 
 EAPI=3
 
@@ -25,7 +25,6 @@ PATCHES=(
 	"${FILESDIR}"/${P}-underlinking.patch
 	"${FILESDIR}"/${P}-tempnam.patch
 )
-
 src_configure() {
 	# not in portage yet
 	mycmakeargs+=(
