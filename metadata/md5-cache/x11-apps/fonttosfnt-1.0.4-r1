@@ -3,10 +3,10 @@ DEPEND=x11-libs/libX11 =media-libs/freetype-2* x11-libs/libfontenc || ( >=sys-de
 DESCRIPTION=X.Org fonttosfnt application
 EAPI=4
 HOMEPAGE=http://xorg.freedesktop.org/
-KEYWORDS=amd64 arm ~mips ppc ppc64 ~s390 ~sh ~sparc x86
+KEYWORDS=amd64 arm ~mips ppc ppc64 s390 sh sparc x86
 LICENSE=MIT
 RDEPEND=x11-libs/libX11 =media-libs/freetype-2* x11-libs/libfontenc
 SLOT=0
 SRC_URI=http://xorg.freedesktop.org/releases/individual/app/fonttosfnt-1.0.4.tar.bz2
 _eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	autotools-utils	1d3db157c8fbd4f2d970385acc5e6c83	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	564d80d2026ae9f1910d8da4ea211e91	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	xorg-2	ee8b06bca07cf32e990d85627c221cb4
-_md5_=439f343830cf313c3acbc09d85b08b87
+_md5_=2c5f635e3ee526877cb80077edf39128
