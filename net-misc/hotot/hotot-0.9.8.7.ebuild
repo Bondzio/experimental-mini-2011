@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/hotot/hotot-0.9.8.7.ebuild,v 1.5 2012/07/09 11:55:16 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/hotot/hotot-0.9.8.7.ebuild,v 1.6 2012/08/27 08:29:44 patrick Exp $
 
 EAPI=4
 
@@ -18,7 +18,8 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="chrome gtk kde qt4"
 
-RDEPEND="
+RDEPEND="dev-python/PyQt4[sql]
+	dev-python/dbus-python
 	gtk? ( dev-python/pywebkitgtk )
 	qt4? ( x11-libs/qt-webkit:4
 		kde? ( kde-base/kdelibs ) )"

@@ -8,5 +8,5 @@ LICENSE=MIT LGPL-2.1 BSD BSD-2 FDL-1.2
 RDEPEND=dev-lang/php[cli,ctype,session,simplexml,tokenizer,xml] dev-php/pear dev-lang/php >=dev-php/pear-1.9.0
 SLOT=0
 SRC_URI=http://pear.symfony-project.com/get/symfony-1.4.16.tgz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	php-pear-lib-r1	683c04445ce44b20b5df954b5050e387	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	php-pear-lib-r1	683c04445ce44b20b5df954b5050e387	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=b81e85072077efb295f062a0b08c04e9

@@ -5,5 +5,5 @@ KEYWORDS=~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://humdi.net/ircstats/IRCStats-1.0.tgz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=be08a9f4f8be5e61c083bb5cf9d09080

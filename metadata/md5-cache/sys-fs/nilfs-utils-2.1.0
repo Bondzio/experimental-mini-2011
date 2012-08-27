@@ -9,5 +9,5 @@ LICENSE=GPL-2 LGPL-2.1
 RDEPEND=sys-libs/e2fsprogs-libs
 SLOT=0
 SRC_URI=http://www.nilfs.org/download/nilfs-utils-2.1.0.tar.bz2
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e52277291539a7abcc08f9df1b712c5c

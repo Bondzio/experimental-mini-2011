@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND=dev-libs/libparserutils dev-libs/libwapcaplet dev-libs/libxml2 net-libs/hubbub
 SLOT=0
 SRC_URI=mirror://gentoo/netsurf-buildsystem-0_p20120717.tar.gz mirror://gentoo/libdom-0.0.1_pre20120705.tar.gz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=0033a5e98bc08f609531ddcbb12e7ebb

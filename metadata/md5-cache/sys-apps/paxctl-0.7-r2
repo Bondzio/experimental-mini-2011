@@ -7,5 +7,5 @@ KEYWORDS=~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=http://pax.grsecurity.net/paxctl-0.7.tar.bz2
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=9c3ab2abcdcfceb203ad845e4c1d3805

@@ -8,5 +8,5 @@ LICENSE=LGPL-2.1 BSD
 RDEPEND=media-libs/alsa-lib >=media-libs/liblo-0.12 >=media-sound/jack-audio-connection-kit-0.99.0-r1 >=media-libs/ladspa-sdk-1.12-r2 >=media-libs/libsndfile-1.0.11 >=media-libs/libsamplerate-0.1.1-r1
 SLOT=0
 SRC_URI=mirror://sourceforge/dssi/dssi-1.0.0.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=ba950b650ae3c4d965819bd64ce1a2f0

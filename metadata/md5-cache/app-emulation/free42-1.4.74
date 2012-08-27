@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/atk x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:2 x11-libs/pango
 SLOT=0
 SRC_URI=mirror://gentoo/free42-1.4.74.tgz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=0974f17fcaba801a68c90b79ff4c1b00

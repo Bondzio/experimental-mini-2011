@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=net-libs/libnet-1.1.1 net-libs/libpcap
 SLOT=0
 SRC_URI=mirror://sourceforge/ntwib/netwib-5.39.0-src.tgz doc? ( mirror://sourceforge/ntwib/netwib-5.39.0-doc_html.tgz )
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=503edd15474992a6a3904b59a2a4ef7a

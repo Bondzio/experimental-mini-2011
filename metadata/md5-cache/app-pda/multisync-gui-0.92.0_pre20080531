@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=~app-pda/libopensync-0.36 >=dev-libs/libxml2-2.6.30 >=gnome-base/libglade-2.6.2:2.0 >=x11-libs/gtk+-2.21:2
 SLOT=0
 SRC_URI=mirror://gentoo/multisync-gui-0.92.0_pre20080531.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=9bb4706febbd75432332a2b1d23aefbd

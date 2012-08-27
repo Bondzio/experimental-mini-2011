@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RDEPEND=dev-libs/openssl
 SLOT=0
 SRC_URI=http://bunny-the-fuzzer.googlecode.com/files/bunny-0.93.tgz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=3aa60e8757efe47de401d2b5349a35fe

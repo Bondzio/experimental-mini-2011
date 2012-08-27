@@ -8,5 +8,5 @@ LICENSE=ZLIB
 RDEPEND=>=app-text/libspectre-0.2.6 >=app-text/zathura-0.2.0 >=dev-libs/girara-0.1.3:2 >=dev-libs/glib-2 x11-libs/cairo
 SLOT=0
 SRC_URI=http://pwmt.org/projects/zathura/plugins/download/zathura-ps-0.2.0.tar.gz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=6fba3fcb56dfdd1d73e70035c539ad55

@@ -9,5 +9,5 @@ LICENSE=Apache-2.0
 RDEPEND=zsh-completion? ( app-shells/zsh ) emacs? ( virtual/emacs ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://github.com/martine/ninja/tarball/release-120715 -> ninja-120715.tar.gz
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	elisp-common	5785babccf9fc9be868981620c7940d3	multilib	564d80d2026ae9f1910d8da4ea211e91	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9	elisp-common	5785babccf9fc9be868981620c7940d3	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	vcs-snapshot	07df4a337a309c0aa605525027917677
 _md5_=ac37dbc3116e4d6e7307cac20b836cfd

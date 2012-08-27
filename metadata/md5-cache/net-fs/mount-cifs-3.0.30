@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=!<net-fs/samba-3.0.25
 SLOT=0
 SRC_URI=mirror://gentoo/mount-cifs-3.0.30.tar.bz2
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=a88040a65db99c822508e4646151c550

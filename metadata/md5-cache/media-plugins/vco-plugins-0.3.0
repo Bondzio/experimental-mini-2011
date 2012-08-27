@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-libs/ladspa-sdk
 SLOT=0
 SRC_URI=http://www.kokkinizita.net/linuxaudio/downloads/VCO-plugins-0.3.0.tar.bz2
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=3cb5bca0ec5da782910152e192dbf4f6

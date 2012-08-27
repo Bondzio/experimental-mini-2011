@@ -6,5 +6,5 @@ HOMEPAGE=https://gitorious.org/x11-tools/set_opacity
 LICENSE=GPL-2
 RDEPEND=x11-libs/libXdamage x11-libs/libXcomposite x11-libs/libXfixes x11-libs/libXrender
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=53b330f885fe62429c8a2627071901ba

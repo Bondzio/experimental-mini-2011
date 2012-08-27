@@ -9,5 +9,5 @@ RDEPEND=>=dev-libs/libpcre-7.6 sys-apps/texinfo emacs? ( virtual/emacs )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://chicken.wiki.br/releases/3.3.0/chicken-3.3.0.tar.gz
-_eclasses_=elisp-common	5785babccf9fc9be868981620c7940d3	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=elisp-common	5785babccf9fc9be868981620c7940d3	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=1af066de014e1f5ff1d43262b208626d

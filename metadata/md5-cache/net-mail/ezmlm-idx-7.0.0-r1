@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=mysql? ( virtual/mysql ) postgres? ( dev-db/postgresql-base ) virtual/qmail
 SLOT=0
 SRC_URI=http://www.ezmlm.org/archive/7.0.0/ezmlm-idx-7.0.0.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	564d80d2026ae9f1910d8da4ea211e91	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	qmail	4769a115633d2afbfcd65d8ee0ed76d8	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=2612f6c3d4c84a3695a6cdf1cfa16742

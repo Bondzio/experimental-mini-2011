@@ -2,11 +2,11 @@ DEFINED_PHASES=compile install postinst postrm prepare
 DEPEND=dev-python/pyxml =dev-lang/python-2* =dev-lang/python-2*
 DESCRIPTION=A tool that figures out the differences between two similar XML files
 EAPI=3
-HOMEPAGE=http://www.logilab.org/projects/xmldiff/
+HOMEPAGE=http://www.logilab.org/project/xmldiff
 KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=dev-python/pyxml =dev-lang/python-2* =dev-lang/python-2*
 SLOT=0
 SRC_URI=ftp://ftp.logilab.fr/pub/xmldiff/xmldiff-0.6.9.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=65f2a61bc06157e4e27bfa25de19b590
+_md5_=456f86983fdea4726bd5cfb44cecef9e

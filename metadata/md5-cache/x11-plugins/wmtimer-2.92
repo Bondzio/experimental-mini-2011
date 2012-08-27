@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:2 x11-libs/libXpm x11-libs/libXext x11-libs/libX11
 SLOT=0
 SRC_URI=http://www.darkops.net/wmtimer/wmtimer-2.92.tar.gz
-_eclasses_=multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=e9adfc7c1fb5d30d4bb722fa681aeb6d

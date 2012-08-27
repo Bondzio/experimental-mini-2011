@@ -571,6 +571,7 @@ app-forensics/afflib:s3 - Enable support for Amazon S3
 app-forensics/aide:audit - Enable support for sys-process/audit
 app-forensics/aide:prelink - Enable support for sys-devel/prelink
 app-forensics/chkrootkit:cron - Install cron script for weekly rootkit scans
+app-forensics/libewf:ewf - Enables the v1 API
 app-forensics/libewf:ewf2 - Enables the v2 API
 app-forensics/libewf:rawio - Enables raw IO handling
 app-forensics/openscap:nss - Prefer NSS over libgcrypt as the crypto engine
@@ -3547,13 +3548,15 @@ net-analyzer/nagios-plugins:suid - Give root privileges to the ICMP, DHCP and ID
 net-analyzer/nagios-plugins:ups - Install sys-power/nut required for monitoring compatible UPS units. Disabling the flag does not remove any plugin file.
 net-analyzer/nagvis:automap - Enable automated map generation using media-gfx/graphviz
 net-analyzer/ncrack:ssh - Compile and link against the internal openssh modified library.
-net-analyzer/net-snmp:diskio - Enable the use of diskio mibs
+net-analyzer/net-snmp:diskio - Enable the use of diskio MIBs.
 net-analyzer/net-snmp:elf - Enable the use of elf utils to check uptime on some systems
-net-analyzer/net-snmp:extensible - build deprecated extensible mib module (extend is successor)
+net-analyzer/net-snmp:extensible - Build deprecated extensible mib module (extend is successor)
 net-analyzer/net-snmp:mfd-rewrites - Use MFD rewrites of mib modules where available
-net-analyzer/net-snmp:rpm - Enable the rpm snmp probing
+net-analyzer/net-snmp:netlink - Use dev-libs/libnl to fetch TCP statistics instead of using /proc/net/tcp (Linux only).
+net-analyzer/net-snmp:pci - Use libpci (from sys-apps/pciutils) to look up network interface description. This feature is only available on Linux.
+net-analyzer/net-snmp:rpm - Enable monitoring of app-arch/rpm. This flag requires the bzip2 and zlib flags to be enabled as well.
 net-analyzer/net-snmp:sendmail - Enable sendmail statistics monitoring
-net-analyzer/net-snmp:smux - Enable the smux MIBS module
+net-analyzer/net-snmp:smux - Enable the SNMP multiplexing (smux) MIBs module
 net-analyzer/net-snmp:ucd-compat - Build UCD compatibility library. Increases significantly the install size.
 net-analyzer/nfdump:compat15 - Enable read support for nfdump data files created with nfdump 1.5.x
 net-analyzer/nfdump:ftconv - Build the flow-tools to nfdump converter
@@ -4108,7 +4111,7 @@ net-libs/liboauth:bindist - Alias for the nss USE flag, since there are license 
 net-libs/liboauth:curl - If enabled, net-misc/curl is used thorugh the libcurl library; if it's not, the curl command is used instead. Some features are only available when using the library, but using it as library requires matching SSL implementations.
 net-libs/liboauth:nss - Use Mozilla NSS (dev-libs/nss) as hash library; if this is disabled, dev-libs/openssl is used instead.
 net-libs/libosmocore:embedded - Build for embedded use and disable unsupported features
-net-libs/libpcap:libnl - link with dev-libs/libnl (used to put wireless interfaces in monitor mode)
+net-libs/libpcap:netlink - Use dev-libs/libnl to put wireless interfaces in monitor mode.
 net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME
 net-libs/libproxy:kde - Enable support for reading proxy settings from KDE
 net-libs/libsocialweb:connman - Use net-misc/connman for getting network connection status information
@@ -4645,6 +4648,8 @@ net-proxy/squid:ipf-transparent - Adds transparent proxy support for systems usi
 net-proxy/squid:kqueue - Enables *BSD kqueue() support
 net-proxy/squid:logrotate - Use app-admin/logrotate for rotating logs
 net-proxy/squid:pf-transparent - Adds transparent proxy support for systems using PF (only for *bsd)
+net-proxy/squid:qos - Adds support for Quality of Service using netfilter conntrack - see qos_flow directive for more info
+net-proxy/squid:ssl-crtd - Adds support for dynamic SSL certificate generation in SslBump environments
 net-proxy/squid:tproxy - Enables real Transparent Proxy support for Linux Netfilter TPROXY
 net-proxy/squid:zero-penalty-hit - Add Zero Penalty Hit patch (http://zph.bratcheda.org)
 net-proxy/sshproxy:client-only - Install only the client wrappers
@@ -5518,6 +5523,7 @@ www-apache/pwauth:faillog - Log failed login attempts
 www-apache/pwauth:ignore-case - Ignore string case in username (mostly Windows compat)
 www-apps/389-dsgw:adminserver - Install DSGW with Admin Server
 www-apps/ampache:transcode - Install optional dependencies for transcoding support
+www-apps/bitten:server - Install master instance that integrates itself with Trac
 www-apps/bugzilla:extras - Optional Perl modules
 www-apps/bugzilla:modperl - Enable www-apache/mod_perl support
 www-apps/cgit:highlight - Enable source code highlighting

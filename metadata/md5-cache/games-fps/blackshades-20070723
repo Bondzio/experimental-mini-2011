@@ -8,5 +8,5 @@ LICENSE=blackshades
 RDEPEND=virtual/opengl virtual/glu media-libs/libvorbis media-libs/openal media-libs/freealut media-libs/libsdl
 SLOT=0
 SRC_URI=http://filesingularity.timedoctor.org/Textures.tar.bz2 mirror://gentoo/blackshades-20070723.tar.bz2
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	games	024161bb840ff1c7b424696877dbb18b	multilib	564d80d2026ae9f1910d8da4ea211e91	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	games	024161bb840ff1c7b424696877dbb18b	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=d3680a8ccc267ff97e9b1b88d146c27a
