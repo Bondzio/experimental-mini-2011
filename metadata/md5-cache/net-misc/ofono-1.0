@@ -1,5 +1,5 @@
 DEFINED_PHASES=configure install prepare
-DEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( virtual/libusb:1 ) virtual/pkgconfig !<sys-apps/systemd-29-r4 !=sys-apps/systemd-37-r1
+DEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( virtual/libusb:1 ) virtual/pkgconfig
 DESCRIPTION=Open Source mobile telephony (GSM/UMTS) daemon.
 EAPI=2
 HOMEPAGE=http://ofono.org/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-apps/dbus-1.2.24 >=dev-libs/glib-2.16 bluetooth? ( >=net-wireless/bluez-4.61 ) caps? ( sys-libs/libcap-ng ) udev? ( >=sys-fs/udev-143 ) examples? ( dev-python/dbus-python ) tools? ( virtual/libusb:1 )
 SLOT=0
 SRC_URI=mirror://kernel/linux/network/ofono/ofono-1.0.tar.bz2
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	systemd	70a153740015c3457222dbdd8e07c1f7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	systemd	552c9779ef210ba1c98f24b1e562addd	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=8a299d9c029806aa2798f5b3434c1794
