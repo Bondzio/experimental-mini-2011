@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/pygtk-2.12 dev-python/feedparser >=media-libs/mutagen-1.14 
 REQUIRED_USE=ipod? ( dbus )
 SLOT=0
 SRC_URI=http://quodlibet.googlecode.com/files/quodlibet-2.3.92.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=fb3b9bd62e281458f10fa28a8b5cec96

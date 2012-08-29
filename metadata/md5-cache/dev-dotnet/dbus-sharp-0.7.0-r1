@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-lang/mono sys-apps/dbus
 SLOT=0
 SRC_URI=mirror://github/mono/dbus-sharp/dbus-sharp-0.7.0.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=bf4fe3e400df88f78b7a8b3ba4b96bdb

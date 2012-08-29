@@ -9,5 +9,5 @@ LICENSE=MIT MPL GPL-2
 RDEPEND=>=dev-libs/openssl-0.9.8 >=x11-libs/gtk+-3.4 >=dev-libs/libp11-0.2.7 smartcard? ( >=sys-apps/pcsc-lite-1.6.1 ) dev? ( >=dev-libs/opensc-0.11.13 ) pkcs11? ( >=dev-libs/engine_pkcs11-0.1.8 )
 SLOT=0
 SRC_URI=http://github.com/samuellb/fribid/tarball/v1.0.1a -> fribid-1.0.1a.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=7bd1dc624618ba8489113b878e5c5b87

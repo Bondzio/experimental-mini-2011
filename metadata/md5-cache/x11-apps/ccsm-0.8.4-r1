@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=>=dev-python/compizconfig-python-0.8.4 >=dev-python/pygtk-2.12:2 dev-util/intltool gnome-base/librsvg =dev-lang/python-2*
+DEPEND=>=dev-python/compizconfig-python-0.8.4 >=dev-python/pygtk-2.12:2 gnome-base/librsvg dev-util/intltool =dev-lang/python-2*
 DESCRIPTION=Compizconfig Settings Manager
 EAPI=3
 HOMEPAGE=http://www.compiz.org/
 KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-python/compizconfig-python-0.8.4 >=dev-python/pygtk-2.12:2 dev-util/intltool gnome-base/librsvg =dev-lang/python-2*
+RDEPEND=>=dev-python/compizconfig-python-0.8.4 >=dev-python/pygtk-2.12:2 gnome-base/librsvg x11-themes/hicolor-icon-theme =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://releases.compiz.org/0.8.4/ccsm-0.8.4.tar.bz2
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=4df8a0ee88729d3ab18ae7af2a6c657a
+_md5_=37400ca1bf8e5e69964b498b4ed2c5a0

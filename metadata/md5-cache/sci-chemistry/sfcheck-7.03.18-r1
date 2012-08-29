@@ -8,5 +8,5 @@ LICENSE=ccp4
 RDEPEND=virtual/fortran sci-libs/ccp4-libs
 SLOT=0
 SRC_URI=mirror://gentoo/sfcheck-7.03.18.tar.gz
-_eclasses_=eutils	b8eb29e3c9c4e94c65da9ebec37902a9	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=36bde025429dc9e4c68d01a3f6e613c2

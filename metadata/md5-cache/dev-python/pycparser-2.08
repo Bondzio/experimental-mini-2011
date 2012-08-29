@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/ply =dev-lang/python-2* test? ( dev-python/nose )
+DESCRIPTION=C parser and AST generator written in Python
+EAPI=4
+HOMEPAGE=http://code.google.com/p/pycparser/
+IUSE=test
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-python/ply =dev-lang/python-2*
+SLOT=0
+SRC_URI=http://pycparser.googlecode.com/files/pycparser-2.08.tar.gz
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_md5_=1a758cfcb2d039f5658d090fc84c1dad

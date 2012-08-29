@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=media-video/em8300-libraries >=media-video/vdr-1.6.0_p2-r7 virtual/ffmpeg >=media-tv/gentoo-vdr-scripts-0.4.2 >=app-admin/eselect-vdr-0.0.2
 SLOT=0
 SRC_URI=mirror://sourceforge/dxr3plugin/vdr-dxr3-0.2.13.tgz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vdr-plugin	7a1042c245522fb5ac48b6e9f961f27a	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=5a15649e5612577414bbbe9738debcd1

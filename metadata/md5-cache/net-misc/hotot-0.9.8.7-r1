@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst prepare setup test unpack
-DEPEND=dev-python/PyQt4[sql] dev-python/dbus-python gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 kde? ( kde-base/kdelibs ) ) sys-devel/gettext >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) gtk? ( =dev-lang/python-2* )
+DEPEND=dev-python/PyQt4[sql] dev-python/dbus-python gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 x11-libs/qt-sql:4 kde? ( kde-base/kdelibs ) ) sys-devel/gettext >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) gtk? ( =dev-lang/python-2* )
 DESCRIPTION=lightweight & open source microblogging client
 EAPI=4
 HOMEPAGE=http://hotot.org
 IUSE=chrome gtk kde qt4
 KEYWORDS=~amd64 ~x86
 LICENSE=LGPL-3
-RDEPEND=dev-python/PyQt4[sql] dev-python/dbus-python gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 kde? ( kde-base/kdelibs ) ) gtk? ( =dev-lang/python-2* )
+RDEPEND=dev-python/PyQt4[sql] dev-python/dbus-python gtk? ( dev-python/pywebkitgtk ) qt4? ( x11-libs/qt-webkit:4 x11-libs/qt-sql:4 kde? ( kde-base/kdelibs ) ) gtk? ( =dev-lang/python-2* )
 REQUIRED_USE=|| ( chrome gtk qt4 )
 SLOT=0
 SRC_URI=https://github.com/shellex/Hotot/tarball/0.9.8.7 -> hotot-0.9.8.7.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
-_md5_=91a22455e1ee040528ca1175bae24cc8
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	07df4a337a309c0aa605525027917677
+_md5_=1733aed563039b83269eb824d63e92ce

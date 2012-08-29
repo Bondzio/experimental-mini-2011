@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/eina-1.0.0_beta ares? ( net-dns/c-ares ) glib? ( dev-libs/gli
 RESTRICT=test
 SLOT=0
 SRC_URI=http://download.enlightenment.org/releases/ecore-1.1.0.tar.bz2
-_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	b8eb29e3c9c4e94c65da9ebec37902a9	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=enlightenment	8b2f159cf37ac63433934b2282d9c318	eutils	f98a70ed99fbfc479df6694dc8af82ac	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=248049dcadc26c8a6e6ff239c40451f8

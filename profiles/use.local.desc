@@ -2441,7 +2441,7 @@ media-fonts/mplus-outline-fonts:ipafont - Generates new fonts merged with media-
 media-fonts/sil-charis:compact - Use more compactly spaced font
 media-fonts/sil-gentium:compact - Also install more compact version of the font.
 media-fonts/terminus-font:a-like-o - Changes view of letter 'a' - a looks like o (see homepage)
-media-fonts/terminus-font:center-tilda - Place the '~' character vertically centered on the line instead of to the top.
+media-fonts/terminus-font:center-tilde - Place the '~' character vertically centered on the line instead of to the top.
 media-fonts/terminus-font:distinct-l - ll2 variant with more distinctive l (lowercase L)
 media-fonts/terminus-font:pcf - Install Portable Compiled Font (PCF) (required for X11)
 media-fonts/terminus-font:psf - Install PC Screen Font (PSF) with unicode data (for linux console)
@@ -3588,7 +3588,11 @@ net-analyzer/scanlogd:pcap - Use net-libs/libpcap for packet capturing
 net-analyzer/scapy:pyx - Enable dev-python/pyx support for psdump/pdfdump commands
 net-analyzer/scapy:tcpreplay - Enable net-analyzer/tcpreply support for fast packet replay
 net-analyzer/scapy:visual - Enable dev-python/visual support for 3d graphs
+net-analyzer/smokeping:dig - Install net-dns/bind-tools for dig functionality
+net-analyzer/smokeping:echoping - Install net-analyzer/echoping for echoping functionality
+net-analyzer/smokeping:fcgi - Use dev-perl/FCGI for CGI
 net-analyzer/smokeping:speedy - Use dev-perl/SpeedyCGI instead of perl to speed up cgi scripts
+net-analyzer/smokeping:telnet - Install dev-perl/Net-Telnet for telnet functionality
 net-analyzer/snort:active-response - Enables support for automatically sending TCP resets and ICMP unreachable messages to terminate connections. Used with inline deployments.
 net-analyzer/snort:aruba - Adds support for monitoring wireless traffic using a Aruba Mobility Controler.
 net-analyzer/snort:decoder-preprocessor-rules - Added support to provide action control (alert, drop, pass, etc) over preprocessor and decoder generated events.
