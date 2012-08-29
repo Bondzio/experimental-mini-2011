@@ -27,7 +27,7 @@ RDEPEND="
     x11-libs/libnotify
     media-libs/libcanberra
     virtual/libusb
-    dev-libs/libunique
+    dev-libs/libunique:1
     dev-libs/dbus-glib
     sys-fs/udev[gudev]
 "
