@@ -3,14 +3,15 @@
 # resolved
 =app-editors/nano-2.3.1-r2
 
-# Oleg Vinichenko (11 Aug 2012)
-# mask latest iproute2 per bug #430320
->=sys-apps/iproute2-3.5.0
-
 # Oleg Vinichenko (9 Aug 2012)
 # mask xorg-server pre releases, no one need
 # broken boxes
->=x11-base/xorg-server-1.12.99
+>=x11-base/xorg-server-1.12.99 
+
+# Richard Yao <ryao@funtoo.org> (29 Jul 2012)
+# Users of app-emulation/virtualbox-bin should switch to
+# app-emulation/virtualbox
+>=app-emulation/virtualbox-bin-4.1.18
 
 # Ryan Harris (28 Jul 2012)
 # Masking of libreoffice-bin > 3.5.* as needing toolchain upgrade
@@ -34,14 +35,6 @@
 # Ref b.g.o.# 421465
 >=sys-devel/automake-1.12.1
 
-# Oleg Vinichenko (8 June 2012)
-# mask udisks, pulls udev-182 too
->=sys-fs/udisks-1.98.0
-
-# Jean-Francis Roy (22 May 2012)
-# Masking polkit version that depends on latest consolekit.
->=sys-auth/polkit-0.105
-
 # Adrien Dessemond (09 May 2012)
 # Python 2.7.4-pre and 3.2.4-pre versions are problematic to fetch from upstrea$
 # and per their nature should not be in Funtoo stable anyway
@@ -62,7 +55,6 @@
 # Segfaults with latest dhcpcd
 >=net-dns/openresolv-3.5.1
 
-
 # Oleg Vinichenko (19 Jan 2012)
 # udev-177 is not ready for daily usage
 # for adventurous ones!
@@ -73,4 +65,23 @@
 # DO NOT USE this one the ebuild does not include kernel revision dependencies (>= 2.6.38 REQUIRED) and it can affect many of our users 
 # See bug #359445
 =net-wireless/iwl5000-ucode-8.83.5.1
+
+#Daniel Robbins (13 Jul 2011)
+#pyxml is BAD - avoid if possible - see http://permalink.gmane.org/gmane.linux.gentoo.devel/71149
+dev-python/pyxml
+
+# Daniel Robbins <drobbins@funtoo.org> (02 Mar 2011)
+# mask sys-apps/man as part of a workaround to get
+# man-db to merge smoothly:
+sys-apps/man
+
+# Daniel Robbins <drobbins@funtoo.org> (28 Dec 2009)
+# Requested by slashbeast (Piotr Karbowski) in #funtoo due to /etc/cron.hourly
+# running up to 4 times per hour:
+=sys-process/cronbase-0.3.3*
+
+# Ryan Harris
+# Mask paludis and pkgcore. Not supported on funtoo at this time
+sys-apps/paludis
+sys-apps/pkgcore
 

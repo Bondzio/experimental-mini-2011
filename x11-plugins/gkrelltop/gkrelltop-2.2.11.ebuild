@@ -1,8 +1,8 @@
-# Copyright 1999-2009 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-plugins/gkrelltop/gkrelltop-2.2.11.ebuild,v 1.7 2009/09/05 22:35:12 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/gkrelltop/gkrelltop-2.2.11.ebuild,v 1.8 2012/08/30 00:28:32 lack Exp $
 
-EAPI=2
+EAPI=4
 inherit gkrellm-plugin
 
 DESCRIPTION="a GKrellM2 plugin which displays the top three processes"
@@ -19,10 +19,8 @@ PLUGIN_SO=gkrelltop.so
 
 S="${WORKDIR}/${P}.orig"
 
-RDEPEND="=app-admin/gkrellm-2*[X=]"
-DEPEND="${RDEPEND}
-	=dev-libs/glib-2*
-	X? ( =x11-libs/gtk+-2* )"
+RDEPEND="dev-libs/glib:2"
+DEPEND="${RDEPEND}"
 
 src_compile() {
 	use X || TARGET="server"
