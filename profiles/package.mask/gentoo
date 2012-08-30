@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14079 2012/08/28 07:55:54 johu Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14082 2012/08/30 16:44:26 pinkbyte Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -80,10 +80,6 @@ net-analyzer/prewikka
 # Markos Chandras <hwoarang@gentoo.org> (17 August 2012)
 # Masked rc release. Required by dev-lang/jimctl-0.73
 =dev-embedded/openocd-0.6.0_rc*
-
-# Michael Sterrett <mr_bones_@gentoo.org> (16 Aug 2012)
-# missing patch from maksbotan@gentoo.org
-=x11-plugins/compiz-plugins-extra-0.8.8
 
 # Ulrich Mueller <ulm@gentoo.org> (15 Aug 2012)
 # Emacs live ebuilds. Use at your own risk.
@@ -500,12 +496,7 @@ kde-misc/kgtk
 x11-libs/compiz-bcop
 x11-libs/compizconfig-backend-gconf
 x11-libs/compizconfig-backend-kconfig4
-x11-plugins/compiz-plugins-extra
-x11-plugins/compiz-plugins-main
-x11-plugins/compiz-plugins-unsupported
-x11-themes/emerald-themes
 x11-wm/compiz-fusion
-x11-wm/emerald
 
 # Michał Górny <mgorny@gentoo.org> (21 Jan 2012)
 # Blocks sysvinit yet doesn't provide all tools provided by it.
@@ -520,7 +511,6 @@ sys-apps/systemd-sysv-utils
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
->www-client/opera-12.02
 
 # Hanno Boeck <hanno@gentoo.org> (15 Dec 2011)
 # Breaks pam_mount, which is its only user in the tree.

@@ -1338,7 +1338,7 @@ dev-libs/folks:utils - Build the folks-inspect utility
 dev-libs/folks:vala - Regenerate pre-generated C code from Vala source
 dev-libs/gdl:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/gecode:gist - Enable Gist, the Gecode Interactive Search Tool
-dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via via the "http_proxy" environment variable and easy to customize.
+dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with Proxy Server support via the "http_proxy" environment variable and easy to customize.
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
