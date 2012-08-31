@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/kismet-ubertooth/kismet-ubertooth-9999.ebuild,v 1.5 2012/07/28 09:30:45 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/kismet-ubertooth/kismet-ubertooth-9999.ebuild,v 1.6 2012/08/30 23:18:08 zerochaos Exp $
 
 EAPI="4"
 
@@ -47,7 +47,7 @@ src_install() {
 	else
 		cd "${S}/kismet/plugin-ubertooth" || die
 	fi
-	emake DESTDIR="${ED}" LIBDIR="/usr/$(get_libdir)" KIS_SRC_DIR="/usr/include/kismet/" KIS_DEST_DIR="${D}/usr/" install
+	emake DESTDIR="${ED}" LIBDIR="/$(get_libdir)" KIS_SRC_DIR="/usr/include/kismet/" install
 }
 
 pkg_postinst() {
