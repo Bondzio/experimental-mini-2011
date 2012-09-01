@@ -325,7 +325,7 @@ pkg_postinst() {
 	# will be identified and removed in postrm.
 	python_mod_optimize /usr/$(get_libdir)/portage/pym
 
-	/usr/$(get_libdir)/bin/pygrade.py
+	/usr/$(get_libdir)/portage/bin/pygrade.py
 
 	if [ $WORLD_MIGRATION_UPGRADE = 0 ] ; then
 		einfo "moving set references from the worldfile into world_sets"
