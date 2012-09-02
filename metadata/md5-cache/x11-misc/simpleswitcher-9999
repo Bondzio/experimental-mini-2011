@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=x11-libs/libX11 x11-libs/libXft x11-libs/libXinerama dev-util/pkgconfig dev-vcs/git
+DEPEND=x11-libs/libX11 x11-libs/libXft x11-libs/libXinerama virtual/pkgconfig dev-vcs/git
 DESCRIPTION=lightweight EWMH window switcher with features and looks of dmenu
 EAPI=4
 HOMEPAGE=https://github.com/seanpringle/simpleswitcher
@@ -7,4 +7,4 @@ LICENSE=MIT
 RDEPEND=x11-libs/libX11 x11-libs/libXft x11-libs/libXinerama
 SLOT=0
 _eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=8a23e018fef0c1afc6fa48ab4434edc6
+_md5_=f5f98932bb811ce969fac54e49d7226c
