@@ -22,6 +22,12 @@ elif "x86" in kw:
 else:
 	print("Couldn't determine system architecture and build. Please upgrade to new system manually.")
 	sys.exit(1)
+of=os.readlink(oldlink).split("/")[-1]
+if of in [ "server", "desktop" ]:
+	flavor=of
+else:
+	flavor="core"
+
 print("Detected architecture %s, build %s" % ( new_arch, new_build ))
 try:
 	if not os.path.exists(os.path.dirname(outfile)):
@@ -29,7 +35,7 @@ try:
 	pf=open(outfile,"w")
 	pf.write("gentoo:funtoo/1.0/linux-gnu/arch/%s\n" % new_arch )
 	pf.write("gentoo:funtoo/1.0/linux-gnu/build/%s\n" % new_build )
-	pf.write("gentoo:funtoo/1.0/linux-gnu/flavor/core" )
+	pf.write("gentoo:funtoo/1.0/linux-gnu/flavor/%s" % flavor )
 	pf.close()
 	if os.path.lexists(oldlink):
 		os.unlink(oldlink)
