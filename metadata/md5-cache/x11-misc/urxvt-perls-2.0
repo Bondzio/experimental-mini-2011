@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=Perl extensions for rxvt-unicode
+EAPI=4
+HOMEPAGE=https://github.com/muennich/urxvt-perls
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=x11-misc/xsel x11-terms/rxvt-unicode[perl]
+SLOT=0
+SRC_URI=mirror://github/muennich/urxvt-perls/urxvt-perls-2.0.tar.gz
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=58cb6fff6fad72ce03a85b94f3d89333

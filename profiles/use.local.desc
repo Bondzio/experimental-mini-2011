@@ -380,7 +380,6 @@ app-emacs/calfw:howm - Add support for the app-emacs/howm note-taking tool
 app-emacs/company-mode:ropemacs - Install backend for dev-python/ropemacs
 app-emacs/company-mode:semantic - Install backend for semantic (app-emacs/cedet)
 app-emacs/delicious:planner - Include support for app-emacs/planner
-app-emacs/emacs-common-gentoo:emacs22icons - Install Emacs 22 style icons
 app-emacs/emacs-common-gentoo:games - Support shared score files for games
 app-emacs/emhacks:jde - Enable support for Java Development Environment
 app-emacs/magit:contrib - Install user-contributed files
