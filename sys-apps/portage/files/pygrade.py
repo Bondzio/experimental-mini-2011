@@ -35,7 +35,7 @@ try:
 	pf=open(outfile,"w")
 	pf.write("gentoo:funtoo/1.0/linux-gnu/arch/%s\n" % new_arch )
 	pf.write("gentoo:funtoo/1.0/linux-gnu/build/%s\n" % new_build )
-	pf.write("gentoo:funtoo/1.0/linux-gnu/flavor/%s" % flavor )
+	pf.write("gentoo:funtoo/1.0/linux-gnu/flavor/%s\n" % flavor )
 	pf.close()
 	if os.path.lexists(oldlink):
 		os.unlink(oldlink)

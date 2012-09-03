@@ -2273,7 +2273,6 @@ kde-base/qtruby:webkit - Compile bindings for x11-libs/qt-webkit.
 kde-base/qyoto:phonon - Compile bindings for Phonon.
 kde-base/qyoto:qscintilla - Compile bindings for x11-libs/qscintilla.
 kde-base/qyoto:webkit - Compile bindings for x11-libs/qt-webkit.
-kde-base/smokekde:akonadi - Compile bindings for Akonadi.
 kde-base/smokekde:attica - Compile bindings for dev-libs/libattica.
 kde-base/smokekde:kate - Compile bindings for KDE Advanced Text Editor.
 kde-base/smokekde:okular - Compile bindings for kde-base/okular.
@@ -3340,6 +3339,7 @@ media-video/mplayer2:nut - Enables support for the NUT container format
 media-video/mplayer2:pnm - Add PNM video output option, to create PPM/PGM/PGMYUV images
 media-video/mplayer2:postproc - Enable image post-processing via libpostproc
 media-video/mplayer2:pvr - Enable Video4Linux2 MPEG PVR
+media-video/mplayer2:quvi - Enable support for streaming sites using media-libs/libquvi
 media-video/mplayer2:radio - Enable V4L2 radio interface and support
 media-video/mplayer2:rar - Enable Unique RAR File Library
 media-video/mplayer2:real - Adds real audo/video support
@@ -3512,6 +3512,7 @@ net-analyzer/echoping:icp - enable support for ICP (used to monitor proxies).
 net-analyzer/echoping:priority - enable socket priority support.
 net-analyzer/echoping:smtp - enable support for SMTP protocol.
 net-analyzer/echoping:tos - enable support for TOS (TYpe Of Service).
+net-analyzer/ettercap:plugins - Install ettercap plugins (et_*.so)
 net-analyzer/flowgrind:pcap - Enable packet capturing support using net-libs/libpcap
 net-analyzer/fprobe:messages - enable console messages
 net-analyzer/hydra:ncp - NCP protocol (NetWare) support through net-fs/ncpfs
@@ -3524,6 +3525,7 @@ net-analyzer/icinga-web:pnp - Enables pnp4nagios integration
 net-analyzer/lilac:nmap - Installs nmap which can be used to automatically discover devices to monitor.
 net-analyzer/linkchecker:bookmarks - Mozilla Bookmark parsing
 net-analyzer/linkchecker:login - login form submission
+net-analyzer/linkchecker:nagios - Install nagios cli plugin
 net-analyzer/linkchecker:syntax-check - HTML/CSS syntax checks
 net-analyzer/metasploit:gui - Enable Java GUI
 net-analyzer/munin:asterisk - Install the packages required for monitoring Asterisk. Disabling the flag does not remove any plugin files.
