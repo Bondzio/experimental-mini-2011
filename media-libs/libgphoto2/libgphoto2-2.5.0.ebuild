@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libgphoto2/libgphoto2-2.5.0.ebuild,v 1.2 2012/08/22 02:51:16 ottxor Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libgphoto2/libgphoto2-2.5.0.ebuild,v 1.4 2012/09/04 15:42:46 ssuominen Exp $
 
 # TODO
 # 1. Track upstream bug --disable-docs does not work.
@@ -8,7 +8,7 @@
 
 EAPI="4"
 
-inherit autotools eutils multilib user
+inherit autotools eutils multilib user toolchain-funcs
 
 DESCRIPTION="Library that implements support for numerous digital cameras"
 HOMEPAGE="http://www.gphoto.org/"
@@ -119,6 +119,9 @@ src_configure() {
 		einfo "Enabled camera drivers: all"
 	fi
 
+	local udevdir=/lib/udev
+	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
+
 	local myconf
 	use doc || myconf="ac_cv_path_DOXYGEN=false"
 	econf \
@@ -135,7 +138,7 @@ src_configure() {
 		--with-html-dir="${EPREFIX}"/usr/share/doc/${PF}/html \
 		--with-hotplug-doc-dir="${EPREFIX}"/usr/share/doc/${PF}/hotplug \
 		--with-rpmbuild=$(type -P true) \
-		udevscriptdir="${EPREFIX}"/lib/udev \
+		udevscriptdir="${EPREFIX}/${udevdir}" \
 		${myconf}
 
 # FIXME: gtk-doc is currently broken
@@ -171,7 +174,10 @@ src_install() {
 	fi
 	# end fixup
 
-	UDEV_RULES="/lib/udev/rules.d/70-libgphoto2.rules"
+	local udevdir=/lib/udev
+	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
+
+	UDEV_RULES="${udevdir}/rules.d/70-libgphoto2.rules"
 	CAM_LIST="/usr/$(get_libdir)/libgphoto2/print-camera-list"
 
 	if [ -x "${ED}"${CAM_LIST} ]; then
