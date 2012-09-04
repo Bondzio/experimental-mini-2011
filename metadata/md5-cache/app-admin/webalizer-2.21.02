@@ -4,10 +4,10 @@ DESCRIPTION=Webserver log file analyzer
 EAPI=2
 HOMEPAGE=http://www.mrunix.net/webalizer/
 IUSE=geoip nls vhosts
-KEYWORDS=alpha amd64 hppa ppc ppc64 sparc x86
+KEYWORDS=alpha amd64 ~arm hppa ppc ppc64 sparc x86
 LICENSE=GPL-2
 RDEPEND=>=sys-libs/db-4.2 >=sys-libs/zlib-1.1.4 >=media-libs/libpng-1.2 >=media-libs/gd-1.8.3 dev-libs/geoip >=app-admin/webapp-config-1.50.15
 SLOT=0
 SRC_URI=ftp://ftp.mrunix.net/pub/webalizer/webalizer-2.21-02-src.tar.bz2 mirror://gentoo/webalizer.conf.gz
 _eclasses_=confutils	a80706bb5b9ddcf6bbd14365656d4985	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4	webapp	25b9b1696f5e698711f47d45c3d45e3e
-_md5_=5da065f08961156dd115599e77a6bdca
+_md5_=6fbecbac482d178f67090436c5c9401b
