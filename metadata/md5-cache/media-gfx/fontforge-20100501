@@ -10,4 +10,4 @@ RDEPEND=gif? ( >=media-libs/giflib-4.1.0-r1 ) jpeg? ( virtual/jpeg ) png? ( >=me
 SLOT=0
 SRC_URI=mirror://sourceforge/fontforge/fontforge_full-20100501.tar.bz2 doc? ( mirror://sourceforge/fontforge/fontforge_htdocs-20100429.tar.bz2 ) cjk? ( mirror://gentoo/cidmaps-20090121.tgz )
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=8e421cb389c2ec085eb8b0bb91be7042
+_md5_=4d322231e4eefba55fdc3518aba222a9

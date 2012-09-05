@@ -8,4 +8,4 @@ RDEPEND=x11-libs/libX11 x11-libs/libXext x11-libs/libXpm
 SLOT=0
 SRC_URI=mirror://gentoo/wmcdplay-1.0-beta1.tgz
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=37411387bed4e89a425c53a94fa55b7c
+_md5_=49217dc086712c4ab042a6ccb8b26334

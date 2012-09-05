@@ -10,4 +10,4 @@ RDEPEND=>=sys-libs/zlib-1.1.4 dev-libs/gmp !bacula-clientonly? ( postgres? ( dev
 SLOT=0
 SRC_URI=mirror://sourceforge/bacula/bacula-5.0.3.tar.gz
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ec35881d9c36f4d3d3133f32130955cf
+_md5_=6b68db9fb34c18ca5b279a4f19687f4f

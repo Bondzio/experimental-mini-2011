@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
-DEPEND=media-libs/sdl-mixer[mikmod] media-libs/libsdl[video]
+DEPEND=media-libs/sdl-mixer[mod] media-libs/libsdl[video]
 DESCRIPTION=A clone of the arcade game Defender, but with a Linux theme
 EAPI=2
 HOMEPAGE=http://www.newbreedsoftware.com/defendguin/
 KEYWORDS=amd64 ppc ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=media-libs/sdl-mixer[mikmod] media-libs/libsdl[video]
+RDEPEND=media-libs/sdl-mixer[mod] media-libs/libsdl[video]
 SLOT=0
 SRC_URI=ftp://ftp.tuxpaint.org/unix/x/defendguin/src/defendguin-0.0.12.tar.gz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	games	024161bb840ff1c7b424696877dbb18b	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=55b895f125d4c6251e818a4ebddbdb0c
+_md5_=ee984427fa92135b75302c79ba4c187f
