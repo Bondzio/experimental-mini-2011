@@ -2203,6 +2203,7 @@ kde-base/kdm:consolekit - Enables support for authorization using consolekit
 kde-base/kget:bittorrent - Enable bittorrent transfer plugin through net-libs/libktorrent
 kde-base/kget:webkit - Enable KdeWebkit browser plugin using kde-misc/kwebkitpart
 kde-base/kig:kig-scripting - Support Python scripting
+kde-base/kig:scripting - Support Python scripting
 kde-base/kimono:akonadi - Compile bindings for Akonadi.
 kde-base/kimono:plasma - Compile bindings for KDE's Plasma.
 kde-base/klipper:prison - Enable support for barcodes/QRcodes
@@ -2246,6 +2247,7 @@ kde-base/kstars:indi - Enable support for Astronomical control library using lib
 kde-base/kwin:gles - Enable support for GLES.
 kde-base/libplasmaclock:holidays - Include support for holidays in plasma calendar
 kde-base/marble:designer-plugin - Enable designer plugin
+kde-base/marble:shapefile - Enable support for ESRI shapefiles
 kde-base/okular:chm - Enable support for Microsoft Compiled HTML Help files
 kde-base/okular:ebook - Add E-Book support
 kde-base/perlkde:akonadi - Compile bindings for Akonadi.
