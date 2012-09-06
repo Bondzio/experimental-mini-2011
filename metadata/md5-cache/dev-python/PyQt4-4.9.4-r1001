@@ -11,4 +11,4 @@ REQUIRED_USE=declarative? ( X ) help? ( X ) multimedia? ( X ) opengl? ( X ) phon
 SLOT=0
 SRC_URI=http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-4.9.4.tar.gz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=960018ab79650694214bf7d06f1cdd39
+_md5_=d2df165ca8f6d0de41156740acbf2cb0
