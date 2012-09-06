@@ -4,11 +4,11 @@ DESCRIPTION=UW server daemons for IMAP and POP network mail protocols.
 EAPI=4
 HOMEPAGE=http://www.washington.edu/imap/
 IUSE=ipv6 +ssl kerberos clearpasswd ssl
-KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
+KEYWORDS=~alpha ~amd64 hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=Apache-2.0
 RDEPEND=!net-libs/c-client >=sys-libs/pam-0.72 >=net-mail/mailbase-0.00-r8[pam] ssl? ( dev-libs/openssl ) kerberos? ( app-crypt/mit-krb5 ) >=net-mail/uw-mailutils-2007f sys-apps/xinetd !net-mail/dovecot !mail-mta/courier !net-mail/courier-imap !net-mail/cyrus-imapd
 REQUIRED_USE=!clearpasswd? ( ssl )
 SLOT=0
 SRC_URI=ftp://ftp.cac.washington.edu/imap/imap-2007f.tar.Z
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	ssl-cert	7f678cd359743d336ecf3a6cc4ce1521	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=153f00e705f55473b84ff4d72918265a
+_md5_=c8553788e1cf492b73a0980823b82af0
