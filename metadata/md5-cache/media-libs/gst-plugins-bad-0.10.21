@@ -7,7 +7,7 @@ IUSE=+orc
 KEYWORDS=alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux
 LICENSE=LGPL-2
 RDEPEND=>=media-libs/gst-plugins-base-0.10.32 >=media-libs/gstreamer-0.10.32 >=dev-libs/glib-2.22 orc? ( >=dev-lang/orc-0.4.7 ) !<media-plugins/gst-plugins-farsight-0.12.11
-SLOT=0
+SLOT=0.10
 SRC_URI=http://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-0.10.21.tar.bz2
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	e6b6f10aba81952c2f18eafbe15a4a50	gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	gst-plugins-bad	b7837b306104936ec96e78be4ea05fd5	gst-plugins10	cdf76f89776a74425daf6cd80706ab65	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=0af4e39e9e94e8a836879869e481e99d
+_md5_=1ba4954b9db9fa041bb303e8f0c66d33

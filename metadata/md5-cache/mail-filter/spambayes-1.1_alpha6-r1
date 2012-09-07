@@ -4,9 +4,9 @@ DESCRIPTION=An anti-spam filter using on Bayesian filtering
 EAPI=3
 HOMEPAGE=http://spambayes.sourceforge.net
 KEYWORDS=~amd64 ~ppc ~x86
-LICENSE=PSF-2.2
+LICENSE=PSF-2.2 GPL-2
 RDEPEND=dev-python/bsddb3 dev-python/lockfile =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/spambayes/spambayes-1.1a6.tar.gz
 _eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
-_md5_=e2d884f3fbe164b298334904a05500c8
+_md5_=a1908138d3aa95e82141c637c694e940

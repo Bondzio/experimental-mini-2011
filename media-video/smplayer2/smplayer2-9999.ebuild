@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/smplayer2/smplayer2-9999.ebuild,v 1.2 2012/06/17 05:48:42 yngwin Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/smplayer2/smplayer2-9999.ebuild,v 1.3 2012/09/07 15:45:51 maksbotan Exp $
 
 EAPI="4"
 LANGS="bg ca cs da de en_US es et eu fi fr gl hu it ja ka ko ku lt mk nl pl pt pt_BR sk sr sv tr zh_CN zh_TW"
@@ -15,7 +15,7 @@ EGIT_REPO_URI="git://github.com/lachs0r/SMPlayer2.git"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS=""
-IUSE="debug +download-subs"
+IUSE="dbus debug +download-subs"
 for x in ${LANGS}; do
 	IUSE="${IUSE} linguas_${x}"
 done
@@ -24,7 +24,7 @@ for x in ${LANGSLONG}; do
 done
 
 DEPEND="
-	x11-libs/qt-gui:4
+	x11-libs/qt-gui:4[dbus?]
 	download-subs? ( dev-libs/quazip )
 "
 RDEPEND="${DEPEND}
@@ -43,6 +43,7 @@ src_configure() {
 
 	local mycmakeargs=(
 		-DLINGUAS="${langs}"
+		"$(cmake-utils_use dbus ENABLE_DBUS)"
 		"$(cmake-utils_use debug DEBUG_OUTPUT)"
 		"$(cmake-utils_use download-subs ENABLE_DOWNLOAD_SUBS)"
 	)

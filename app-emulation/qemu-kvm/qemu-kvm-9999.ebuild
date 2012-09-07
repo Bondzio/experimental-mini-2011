@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-9999.ebuild,v 1.57 2012/08/31 16:34:06 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu-kvm/qemu-kvm-9999.ebuild,v 1.59 2012/09/07 12:39:49 slyfox Exp $
 
 EAPI="4"
 
@@ -30,9 +30,9 @@ kernel_FreeBSD mixemu ncurses opengl pulseaudio python rbd sasl sdl \
 smartcard spice static systemtap tci tls usbredir vde +vhost-net \
 virtfs xattr xen xfs"
 
-COMMON_TARGETS="i386 x86_64 alpha arm cris m68k microblaze microblazeel mips mipsel ppc ppc64 sh4 sh4eb sparc sparc64 s390x"
+COMMON_TARGETS="i386 x86_64 alpha arm cris m68k microblaze microblazeel mips mipsel or32 ppc ppc64 sh4 sh4eb sparc sparc64 s390x unicore32"
 IUSE_SOFTMMU_TARGETS="${COMMON_TARGETS} mips64 mips64el ppcemb xtensa xtensaeb"
-IUSE_USER_TARGETS="${COMMON_TARGETS} armeb ppc64abi32 sparc32plus unicore32"
+IUSE_USER_TARGETS="${COMMON_TARGETS} armeb ppc64abi32 sparc32plus"
 
 # Setup the default SoftMMU targets, while using the loops
 # below to setup the other targets. x86_64 should be the only
@@ -193,6 +193,7 @@ src_prepare() {
 
 	python_convert_shebangs -r 2 "${S}/scripts/kvm/kvm_stat"
 
+	epatch "${FILESDIR}"/${P}-fix-mipsen.patch
 	[[ -n ${BACKPORTS} ]] && \
 		EPATCH_FORCE=yes EPATCH_SUFFIX="patch" EPATCH_SOURCE="${S}/patches" \
 			epatch
@@ -251,6 +252,8 @@ src_configure() {
 	# --enable-vnc-thread will go away in 1.2
 	# $(use_enable xen xen-pci-passthrough) for 1.2
 	# $(use_enable debug debug-mon) goes away for 1.2
+	# --disable-seccomp as in-tree seccomp is API incompatible (in-tree
+	# version is ancient)
 	./configure --prefix=/usr \
 		--sysconfdir=/etc \
 		--disable-bsd-user \
@@ -261,6 +264,7 @@ src_configure() {
 		--enable-vnc-jpeg \
 		--enable-vnc-png \
 		--python=python2 \
+		--disable-seccomp \
 		$(use_enable aio linux-aio) \
 		$(use_enable bluetooth bluez) \
 		$(use_enable brltty brlapi) \
@@ -271,7 +275,6 @@ src_configure() {
 		$(use_enable doc docs) \
 		$(use_enable fdt) \
 		$(use_enable kernel_linux kvm) \
-		$(use_enable kernel_linux kvm-device-assignment) \
 		$(use_enable kernel_linux nptl) \
 		$(use_enable kernel_linux uuid) \
 		$(use_enable ncurses curses) \
