@@ -2669,7 +2669,6 @@ media-libs/mediastreamer:video - Enable video support
 media-libs/memphis:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/memphis:vala - Add support for Vala
 media-libs/mesa:classic - Build drivers based on the classic architecture.
-media-libs/mesa:d3d - Enable DirectX 10/10.1/11 backend for Gallium3D.
 media-libs/mesa:egl - Enable EGL support.
 media-libs/mesa:g3dvl - Enable video decode acceleration support for Gallium3D.
 media-libs/mesa:gallium - Build drivers based on Gallium3D, the new architecture for 3D graphics drivers.
