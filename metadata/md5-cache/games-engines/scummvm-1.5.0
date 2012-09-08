@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
-DEPEND=>=media-libs/libsdl-1.2.2[audio,joystick,video] sys-libs/zlib vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mp3? ( media-libs/libmad ) flac? ( media-libs/flac ) truetype? ( media-libs/freetype:2 ) fluidsynth? ( media-sound/fluidsynth ) x86? ( dev-lang/nasm )
+DEPEND=>=media-libs/libsdl-1.2.2[audio,joystick,video] sys-libs/zlib vorbis? ( media-libs/libogg media-libs/libvorbis ) aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) mp3? ( media-libs/libmad ) flac? ( media-libs/flac ) truetype? ( media-libs/freetype:2 ) fluidsynth? ( media-sound/fluidsynth ) x86? ( dev-lang/nasm )
 DESCRIPTION=Reimplementation of the SCUMM game engine used in Lucasarts adventures
 EAPI=2
 HOMEPAGE=http://scummvm.sourceforge.net/
-IUSE=alsa debug flac fluidsynth truetype mp3 vorbis
+IUSE=aac alsa debug flac fluidsynth truetype mp3 vorbis
 KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
 LICENSE=GPL-2 LGPL-2.1
-RDEPEND=>=media-libs/libsdl-1.2.2[audio,joystick,video] sys-libs/zlib vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mp3? ( media-libs/libmad ) flac? ( media-libs/flac ) truetype? ( media-libs/freetype:2 ) fluidsynth? ( media-sound/fluidsynth )
+RDEPEND=>=media-libs/libsdl-1.2.2[audio,joystick,video] sys-libs/zlib vorbis? ( media-libs/libogg media-libs/libvorbis ) aac? ( media-libs/faad2 ) alsa? ( media-libs/alsa-lib ) mp3? ( media-libs/libmad ) flac? ( media-libs/flac ) truetype? ( media-libs/freetype:2 ) fluidsynth? ( media-sound/fluidsynth )
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/scummvm/scummvm-1.5.0.tar.bz2
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=85bd28b31f5ec245e67b56d4d655eb8a
+_md5_=160af03a6cd93a8389580781b06c1120
