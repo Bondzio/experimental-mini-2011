@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup test unpack
+DEPEND=>=media-libs/libpng-1.4 media-libs/libsdl[joystick] link? ( media-libs/libsfml ) sys-libs/zlib virtual/opengl ffmpeg? ( virtual/ffmpeg ) gtk? ( >=dev-cpp/glibmm-2.4.0:2 >=dev-cpp/gtkmm-2.4.0:2.4 >=dev-cpp/gtkglextmm-1.2.0 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) wxwidgets? ( cairo? ( x11-libs/cairo ) openal? ( media-libs/openal ) x11-libs/wxGTK:2.8[X,opengl] ) x86? ( || ( dev-lang/nasm dev-lang/yasm ) ) nls? ( sys-devel/gettext ) virtual/pkgconfig >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DESCRIPTION=Game Boy, GBC, and GBA emulator forked from VisualBoyAdvance
+EAPI=4
+HOMEPAGE=http://vba-m.ngemu.com
+IUSE=cairo ffmpeg gtk link lirc nls openal +sdl wxwidgets
+LICENSE=GPL-2
+RDEPEND=>=media-libs/libpng-1.4 media-libs/libsdl[joystick] link? ( media-libs/libsfml ) sys-libs/zlib virtual/opengl ffmpeg? ( virtual/ffmpeg ) gtk? ( >=dev-cpp/glibmm-2.4.0:2 >=dev-cpp/gtkmm-2.4.0:2.4 >=dev-cpp/gtkglextmm-1.2.0 ) lirc? ( app-misc/lirc ) nls? ( virtual/libintl ) wxwidgets? ( cairo? ( x11-libs/cairo ) openal? ( media-libs/openal ) x11-libs/wxGTK:2.8[X,opengl] )
+REQUIRED_USE=|| ( sdl gtk wxwidgets )
+SLOT=0
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	a18284c48239b2b3c02951d6dadf8fe3	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	multilib	c2b85b5c63a44798c1e442147ac14c5c	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	wxwidgets	fb1a306837717dfa2af841ecdf929565
+_md5_=3c15f892318d75ad05167f35c6ff3440

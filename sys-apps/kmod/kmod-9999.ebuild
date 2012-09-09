@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/kmod-9999.ebuild,v 1.31 2012/07/20 16:36:42 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/kmod-9999.ebuild,v 1.32 2012/09/08 17:35:44 ssuominen Exp $
 
 EAPI=4
 
@@ -22,6 +22,12 @@ LICENSE="LGPL-2"
 SLOT="0"
 IUSE="debug doc lzma static-libs +tools zlib"
 
+# Upstream does not support running the test suite with custom configure flags.
+# I was also told that the test suite is intended for kmod developers.
+# So we have to restrict it.
+# See bug #408915.
+RESTRICT="test"
+
 RDEPEND="!sys-apps/module-init-tools
 	!sys-apps/modutils
 	lzma? ( app-arch/xz-utils )
@@ -30,12 +36,6 @@ DEPEND="${RDEPEND}
 	doc? ( dev-util/gtk-doc )
 	lzma? ( virtual/pkgconfig )
 	zlib? ( virtual/pkgconfig )"
-
-# Upstream does not support running the test suite with custom configure flags.
-# I was also told that the test suite is intended for kmod developers.
-# So we have to restrict it.
-# See bug #408915.
-RESTRICT="test"
 
 src_prepare()
 {
@@ -65,18 +65,16 @@ src_configure()
 src_install()
 {
 	default
-
-	find "${D}" -name libkmod.la -exec rm -f {} +
+	prune_libtool_files
 
 	if use tools; then
 		local cmd
-		for cmd in insmod lsmod modinfo rmmod; do
+		for cmd in depmod insmod lsmod modinfo modprobe rmmod; do
 			dosym kmod /usr/bin/${cmd}
 		done
-		# according to upstream, modprobe can be called directly by the kernel,
-		# so it cannot be moved to /usr/bin at this time.
-		dosym /usr/bin/kmod /sbin/modprobe
-		# another hardcoded path in the Linux source tree, bug #426698
+		# Compability symlink(s):
+		# These are both hardcoded in the Linux kernel source tree wrt #426698
 		dosym /usr/bin/kmod /sbin/depmod
+		dosym /usr/bin/kmod /sbin/modprobe
 	fi
 }
