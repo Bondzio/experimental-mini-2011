@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/asciidoc/asciidoc-9999.ebuild,v 1.8 2012/04/26 18:29:53 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/asciidoc/asciidoc-9999.ebuild,v 1.9 2012/09/10 03:04:04 floppym Exp $
 
 EAPI="3"
 
@@ -30,7 +30,7 @@ RDEPEND=">=app-text/docbook-xsl-stylesheets-1.75
 		dev-libs/libxslt
 		graphviz? ( media-gfx/graphviz )
 		app-text/docbook-xml-dtd:4.5
-		highlight? ( || ( dev-util/source-highlight dev-python/pygments ) )
+		highlight? ( || ( dev-python/pygments dev-util/source-highlight ) )
 "
 DEPEND="test? ( dev-util/source-highlight
 			media-sound/lilypond

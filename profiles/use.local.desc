@@ -6035,7 +6035,6 @@ x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
 xfce-base/libxfce4ui:glade - Build support for Glade 3's GtkBuilder implementation
 xfce-base/libxfcegui4:glade - Build glade bindings
-xfce-base/xfce-utils:lock - Enable screen locking
 xfce-base/xfce4-session:consolekit - Enable authentication support using sys-auth/consolekit
 xfce-base/xfce4-session:gnome-keyring - Enable password storage support using gnome-base/gnome-keyring
 xfce-base/xfce4-settings:libcanberra - Enable sound event support using media-libs/libcanberra
