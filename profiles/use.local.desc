@@ -1073,6 +1073,10 @@ dev-games/crystalspace:cal3d - include support for skeleton animation
 dev-games/crystalspace:cegui - include support for Crazy Eddie GUI
 dev-games/crystalspace:cg - NVIDIA toolkit plugin
 dev-games/crystalspace:ode - include support for Open Dynamics Engine
+dev-games/gigi:devil - Use DevIL instead of libpng/libjpeg/libtiff
+dev-games/gigi:eve - Add experimental eve support
+dev-games/gigi:ogre - Add support for dev-games/ogre
+dev-games/gigi:ois - Add support for dev-games/ois
 dev-games/guichan:allegro - Build the Allegro frontend
 dev-games/ode:double-precision - more precise calculations at the expense of speed
 dev-games/ode:gyroscopic - enable gyroscopic term (may cause instability)
@@ -1998,6 +2002,7 @@ games-strategy/defcon-demo:system-libs - Use system libraries instead of the one
 games-strategy/freeciv:auth - Add authentication capability
 games-strategy/freeciv:ggz - Add support for GGZ Gaming Zone
 games-strategy/freeciv:sound - Add support for sound provided by media-libs/sdl-mixer
+games-strategy/freeorion:cg - Add support for NVIDIA toolkit plugin
 games-strategy/glest:editor - Also install a level editor
 games-strategy/heroes3:maps - Installs optional map data
 games-strategy/heroes3:music - Installs optional music data
