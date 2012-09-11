@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-9999.ebuild,v 1.9 2012/08/04 15:14:09 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/mc/mc-9999.ebuild,v 1.10 2012/09/10 21:02:57 slyfox Exp $
 
 EAPI=4
 
@@ -50,19 +50,8 @@ DEPEND="${RDEPEND}
 
 [[ -n ${LIVE_EBUILD} ]] && DEPEND="${DEPEND} dev-vcs/cvs" # needed only for SCM source tree (autopoint uses cvs)
 
-LANGS="az be bg ca cs da de el eo es et eu fi
-fr gl hu ia id it ja ka ko lt lv mn nb nl pl pt_BR
-pt ro ru sk sl sr sv sv_SE ta tr uk vi wa zh_CN zh_TW"
-#LANGS+=" de_CH fi_FI it_IT" # suspicious overlap
-
-for X in ${LANGS} ; do
-	IUSE="${IUSE} linguas_${X}"
-done
-
 src_prepare() {
 	[[ -n ${LIVE_EBUILD} ]] && ./autogen.sh
-
-	strip-linguas ${LANGS}
 }
 
 S=${WORKDIR}/${MY_P}

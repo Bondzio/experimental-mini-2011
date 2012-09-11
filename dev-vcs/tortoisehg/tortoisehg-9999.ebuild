@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.10 2012/08/21 15:17:33 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-vcs/tortoisehg/tortoisehg-9999.ebuild,v 1.12 2012/09/10 20:14:10 floppym Exp $
 
 EAPI=4
 
@@ -8,7 +8,7 @@ SUPPORT_PYTHON_ABIS=1
 PYTHON_DEPEND="2:2.5"
 RESTRICT_PYTHON_ABIS="2.4 3.* *-pypy-*"
 
-inherit distutils eutils multilib
+inherit distutils eutils
 
 if [[ ${PV} != *9999* ]]; then
 	KEYWORDS="~amd64 ~x86"
@@ -38,21 +38,18 @@ DEPEND="${RDEPEND}
 	doc? ( >=dev-python/sphinx-1.0.3 )"
 
 src_prepare() {
-	# make the install respect multilib.
-	sed -i -e "s:lib/nautilus:$(get_libdir)/nautilus:" setup.py || die
-
 	if [[ ${LINGUAS+set} ]]; then
 		pushd i18n/tortoisehg > /dev/null || die
 		local x y keep
 		for x in *.po; do
-			keep=
+			keep=false
 			for y in ${LINGUAS}; do
 				if [[ ${y} == ${x%.po}* ]]; then
-					keep=1
+					keep=true
 					break
 				fi
 			done
-			[[ ${keep} ]] || rm "${x}" || die
+			${keep} || rm "${x}" || die
 		done
 		popd > /dev/null || die
 	fi
