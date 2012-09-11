@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/ansible/ansible-9999.ebuild,v 1.1 2012/09/09 08:59:42 pinkbyte Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/ansible/ansible-9999.ebuild,v 1.3 2012/09/10 16:28:59 mr_bones_ Exp $
 
 EAPI="4"
 
@@ -38,11 +38,8 @@ src_prepare() {
 	sed -i 's:PYTHONPATH=./lib nosetests.*:\0 -e \\(TestPlayBook.py\\|TestRunner.py\\):' Makefile || die "sed failed"
 }
 
-src_compile() {
-	distutils_src_compile
-	if use test; then
-		emake tests
-	fi
+src_test() {
+	make tests
 }
 
 src_install() {
