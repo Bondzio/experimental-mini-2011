@@ -8,6 +8,6 @@ KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd ~amd64-linux ~x86-
 LICENSE=BSD
 RDEPEND=>=dev-lang/ghc-6.8.2 dev-lang/ghc
 SLOT=0
-SRC_URI=http://hackage.haskell.org/packages/archive/transformers/0.2.2.0/transformers-0.2.2.0.tar.gz
+SRC_URI=mirror://hackage/packages/archive/transformers/0.2.2.0/transformers-0.2.2.0.tar.gz
 _eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	ghc-package	f39fadb76cd4747582996e6b0d44479c	haskell-cabal	10f63c8efa3135a67f680571f1956a97	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=1f01caba3b8d1e2dd0dfc9d8630de588
+_md5_=4bbbb26ca3232744d5be97f3e2efe558

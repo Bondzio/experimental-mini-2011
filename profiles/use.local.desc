@@ -2037,6 +2037,7 @@ gnome-base/dconf:vala - Add support for dev-lang/vala
 gnome-base/gconf:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
 gnome-base/gconf:orbit - Use gnome-base/orbit for IPC, same as in gconf-2.x
+gnome-base/gdm:audit - Enable support for sys-process/audit
 gnome-base/gdm:consolekit - Allow proper handling of removable media according to who is actually present on the machine.
 gnome-base/gdm:dmx - Enables Distributed Multihead X (DMX) support
 gnome-base/gdm:fallback - Install x11-wm/metacity as fallback in case gnome-shell greeter fails to start
