@@ -1805,15 +1805,18 @@ dev-util/pkgconf:strict - Adhere to POSIX pkg-config specification. Useful for f
 dev-util/pkgconfig:internal-glib - Use internal copy of dev-libs/glib
 dev-util/pkgconfig-openbsd:pkg-config - Install as a replacement for dev-util/pkgconfig
 dev-util/qdevelop:plugins - Build and install additional plugins
+dev-util/qt-creator:android - Build Android plugin
 dev-util/qt-creator:autotools - Enable autotools project manager plugin
 dev-util/qt-creator:bazaar - Add support for dev-vcs/bzr version control system
 dev-util/qt-creator:botan-bundled - Use the bundled copy of dev-libs/botan
+dev-util/qt-creator:clearcase - Add support for IBM ClearCase version control system (requires manual installation of ClearCase client)
 dev-util/qt-creator:cmake - Enable cmake project manager plugin
 dev-util/qt-creator:fakevim - Enable support for vim-like key bindings
 dev-util/qt-creator:git - Add support for dev-vcs/git version control system
 dev-util/qt-creator:madde - Enable integration with MADDE (Maemo Application Development and Debugging Environment)
 dev-util/qt-creator:mercurial - Add support for dev-vcs/mercurial version control system
 dev-util/qt-creator:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
+dev-util/qt-creator:qnx - Build QNX/Blackberry plugin
 dev-util/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
 dev-util/schroot:btrfs - Enable support for chroots using btrfs snapshots.
 dev-util/schroot:dchroot - Enables the building of a wrapper named "dchroot", replacing sys-apps/dchroot.
@@ -2144,6 +2147,7 @@ gnome-extra/zeitgeist:passiv - Use gnome-extra/zeitgeist-datahub to passively in
 gnome-extra/zeitgeist:plugins - Use gnome-extra/zeitgeist-datasources to enable numerous packages to inject events
 gnome-extra/zeitgeist:sql-debug - Enable SQL debugging
 gnome-extra/zeitgeist-datahub:download - Monitor XDG download directory
+gnome-extra/zeitgeist-datahub:telepathy - Telepathy logging support for 1-to-1 chats, calls and file transfers
 gnome-extra/zeitgeist-datasources:bzr - Zeitgeist plugin for dev-vcs/bzr as data source
 gnome-extra/zeitgeist-datasources:chromium - Zeitgeist plugin for www-client/chromium as data source
 gnome-extra/zeitgeist-datasources:emacs - Zeitgeist plugin for emacs as data source
@@ -3690,6 +3694,7 @@ net-dns/bind:filter-aaaa - Enable filtering of AAAA records over IPv4
 net-dns/bind:gost - Enables gost OpenSSL engine support
 net-dns/bind:gssapi - Enable gssapi support
 net-dns/bind:rpz - Enable response policy rewriting (rpz)
+net-dns/bind:rrl - Response Rate Limiting (RRL) - Experimental
 net-dns/bind:sdb-ldap - Enables ldap-sdb backend
 net-dns/bind:urandom - Use /dev/urandom instead of /dev/random
 net-dns/bind-tools:gssapi - Enable gssapi support
@@ -4140,6 +4145,7 @@ net-libs/liboauth:bindist - Alias for the nss USE flag, since there are license 
 net-libs/liboauth:curl - If enabled, net-misc/curl is used thorugh the libcurl library; if it's not, the curl command is used instead. Some features are only available when using the library, but using it as library requires matching SSL implementations.
 net-libs/liboauth:nss - Use Mozilla NSS (dev-libs/nss) as hash library; if this is disabled, dev-libs/openssl is used instead.
 net-libs/libosmocore:embedded - Build for embedded use and disable unsupported features
+net-libs/libpcap:canusb - Use virtual/libusb to support Controller Area Network over USB (CAN USB)
 net-libs/libpcap:netlink - Use dev-libs/libnl to put wireless interfaces in monitor mode.
 net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME
 net-libs/libproxy:kde - Enable support for reading proxy settings from KDE
@@ -5740,6 +5746,7 @@ x11-drivers/xf86-video-geode:ztv - Enable building the V4L2 ZTV driver
 x11-drivers/xf86-video-intel:glamor - Enable Glamor OpenGL 2D acceleration
 x11-drivers/xf86-video-intel:sna - Enable SandyBridge's New Acceleration (useful on all chipsets, not just SandyBridge)
 x11-drivers/xf86-video-intel:uxa - Enable UMA Acceleration Architecture
+x11-drivers/xf86-video-intel:xvmc - Enables X-Video Motion Compensation support
 x11-drivers/xf86-video-openchrome:viaregtool - Install registers dumper tool
 x11-drivers/xf86-video-qxl:xspice - Build the xspice driver
 x11-libs/agg:gpc - Enable gpc polygon clipper library

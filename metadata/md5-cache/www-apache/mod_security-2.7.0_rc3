@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test
+DEPEND=>=dev-libs/libxml2-2.7.8 dev-libs/libpcre[jit?] lua? ( >=dev-lang/lua-5.1 ) curl? ( >=net-misc/curl-7.15.1 ) www-servers/apache[apache2_modules_unique_id] =www-servers/apache-2*
+DESCRIPTION=Web application firewall and Intrusion Detection System for Apache.
+EAPI=4
+HOMEPAGE=http://www.modsecurity.org/
+IUSE=geoip curl lua jit
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=Apache-2.0
+PDEPEND=>=www-apache/modsecurity-crs-2.2.5
+RDEPEND=>=dev-libs/libxml2-2.7.8 dev-libs/libpcre[jit?] lua? ( >=dev-lang/lua-5.1 ) curl? ( >=net-misc/curl-7.15.1 ) www-servers/apache[apache2_modules_unique_id] geoip? ( dev-libs/geoip ) =www-servers/apache-2*
+RESTRICT=test
+SLOT=0
+SRC_URI=mirror://sourceforge/project/mod-security/modsecurity-apache/2.7.0-rc3/modsecurity-apache_2.7.0-rc3.tar.gz
+_eclasses_=apache-module	1f60370f9dceba046ec036cd6bbb0c8b	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=14ca644c2ead7bccd4ea69437c3944d7
