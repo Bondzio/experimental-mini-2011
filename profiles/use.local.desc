@@ -2090,6 +2090,7 @@ gnome-base/libgtop:introspection - Use dev-libs/gobject-introspection for intros
 gnome-base/librsvg:gtk3 - Build with gtk+-3 support
 gnome-base/librsvg:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/librsvg:tools - Build miscellaneous tools
+gnome-base/librsvg:vala - Enable bindings for dev-lang/vala
 gnome-base/nautilus:introspection - Use dev-libs/gobject-introspection for introspection
 gnome-base/nautilus:packagekit - Use packagekit to search for programs to open unknown file types
 gnome-base/nautilus:previewer - Use gnome-extra/sushi to preview files from the file mananger
