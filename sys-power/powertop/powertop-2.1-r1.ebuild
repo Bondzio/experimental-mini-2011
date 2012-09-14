@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/powertop/powertop-2.1-r1.ebuild,v 1.2 2012/09/11 12:22:31 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-power/powertop/powertop-2.1-r1.ebuild,v 1.4 2012/09/14 14:24:15 zerochaos Exp $
 
 EAPI="4"
 
@@ -19,7 +19,7 @@ HOMEPAGE="https://01.org/powertop/ http://www.lesswatts.org/projects/powertop/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="unicode"
+IUSE="unicode X"
 
 COMMON_DEPEND="
 	dev-libs/libnl:3
@@ -33,7 +33,7 @@ DEPEND="${COMMON_DEPEND}
 "
 RDEPEND="
 	${COMMON_DEPEND}
-	x11-apps/xset
+	X? ( x11-apps/xset )
 "
 
 DOCS=( TODO README )
@@ -41,8 +41,8 @@ DOCS=( TODO README )
 pkg_setup() {
 	einfo "Warning: enabling all suggested kconfig params may have performance impacts"
 	CONFIG_CHECK="
-		X86_MSR
-		DEBUG_FS
+		~X86_MSR
+		~DEBUG_FS
 		~PERF_EVENTS
 		~TRACEPOINTS
 		~NO_HZ
@@ -56,6 +56,8 @@ pkg_setup() {
 		~EVENT_POWER_TRACING_DEPRECATED
 		~TRACING
 	"
+	ewarn "If you see any warning about missing kernel config options"
+	ewarn "your bug will most likely be ignored. Thanks in advance."
 	linux-info_pkg_setup
 }
 
