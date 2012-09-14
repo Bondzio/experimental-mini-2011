@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/tevent/tevent-0.9.14-r1.ebuild,v 1.5 2012/07/06 03:16:12 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/tevent/tevent-0.9.14-r1.ebuild,v 1.7 2012/09/13 19:08:03 scarabeus Exp $
 
 EAPI=4
 PYTHON_DEPEND="2"

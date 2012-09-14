@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-cpp/tbb/tbb-4.0.297.ebuild,v 1.10 2012/08/08 12:04:53 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/tbb/tbb-4.0.297.ebuild,v 1.11 2012/09/13 22:37:22 bicatali Exp $
 
 EAPI=4
 inherit eutils flag-o-matic multilib versionator toolchain-funcs
@@ -22,12 +22,12 @@ SRC_URI="http://www.threadingbuildingblocks.org/uploads/${MYU}/${PV1}.${PV2}${MY
 LICENSE="GPL-2-with-exceptions"
 
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 x86 ~amd64-linux ~x86-linux"
 IUSE="debug doc examples"
 # FIXME
 # https://bugs.gentoo.org/show_bug.cgi?id=412675#c10
 # restricting test for stabilization
-RESTRICT="test"
+#RESTRICT="test"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
