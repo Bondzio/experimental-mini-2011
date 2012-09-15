@@ -10,5 +10,5 @@ RDEPEND=gnome-keyring? ( dev-python/gnome-keyring-python gnome-base/libgnome-key
 REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://sourceforge/msmtp/msmtp-1.4.28.tar.bz2
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	python	0f2da082e2993f7cacf1ccd298003666	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=833ac0bcf821ed7d1cc98858976612b5

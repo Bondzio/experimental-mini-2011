@@ -9,5 +9,5 @@ LICENSE=|| ( GPL-2 BL BSD )
 RDEPEND=ffmpeg? ( virtual/ffmpeg[encode,theora] ) >=media-libs/openjpeg-1.5.0 media-libs/tiff:0 nls? ( >=media-libs/freetype-2.0 virtual/libintl >=media-libs/ftgl-2.1 ) openal? ( >=media-libs/openal-1.6.372 >=media-libs/freealut-1.1.0-r1 ) media-libs/openexr media-libs/libpng:0 blender-game? ( >=media-libs/libsdl-1.2[joystick] ) >=media-libs/libsdl-1.2 ogg? ( media-libs/libogg ) virtual/jpeg virtual/opengl || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://download.blender.org/source/blender-2.49b.tar.gz
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	0f2da082e2993f7cacf1ccd298003666	scons-utils	9cb9120b919b1ea34b4b7028d9973261	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8e7fd32f9f8f5eeee5e2bad162affb51

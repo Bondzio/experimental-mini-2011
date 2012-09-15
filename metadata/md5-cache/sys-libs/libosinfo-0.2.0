@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install prepare
+DEPEND=>=dev-libs/glib-2 >=dev-libs/libxslt-1.0.0 dev-libs/libxml2 net-libs/libsoup:2.4 net-libs/libsoup-gnome:2.4 introspection? ( >=dev-libs/gobject-introspection-0.9.0 ) virtual/pkgconfig doc? ( >=dev-util/gtk-doc-1.10 ) test? ( dev-libs/check ) vala? ( || ( dev-lang/vala:0.18[vapigen] dev-lang/vala:0.16[vapigen] ) )
+DESCRIPTION=GObject library for managing information about real and virtual OSes
+EAPI=4
+HOMEPAGE=http://fedorahosted.org/libosinfo/
+IUSE=doc +introspection +vala test
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=>=dev-libs/glib-2 >=dev-libs/libxslt-1.0.0 dev-libs/libxml2 net-libs/libsoup:2.4 net-libs/libsoup-gnome:2.4 introspection? ( >=dev-libs/gobject-introspection-0.9.0 )
+REQUIRED_USE=vala? ( introspection )
+SLOT=0
+SRC_URI=http://fedorahosted.org/releases/l/i/libosinfo/libosinfo-0.2.0.tar.gz
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vala	26bc8dded3bd8d5d8c734ce2eb9f50b8
+_md5_=c096f4ff77ac7084801b9b11dfd355b3

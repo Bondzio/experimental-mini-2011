@@ -10,5 +10,5 @@ RDEPEND=dedicated? ( games-fps/enemy-territory[dedicated] ) opengl? ( || ( games
 RESTRICT=mirror strip
 SLOT=0
 SRC_URI=http://etpro.anime.net/etpro-3_2_6.zip
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	games	024161bb840ff1c7b424696877dbb18b	games-mods	9d44c6f45289592ca9cf29d77424a048	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	6e25eb368f2a449bd6f5f8b55eadba30	games	52ccdf027c2f376f3b9241202fb426f8	games-mods	9d44c6f45289592ca9cf29d77424a048	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=19687d8345fdec399d7992e90681a829

@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=gtk? ( =x11-libs/gtk+-1* ) ncurses? ( sys-libs/ncurses ) nls? ( sys-devel/gettext )
 SLOT=0
 SRC_URI=http://download.enlightenment.org/snapshots/2008-01-25/edb-1.0.5.042.tar.bz2
-_eclasses_=enlightenment	a9a2920666ddb82d7e8dd918872f25f2	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=enlightenment	a9a2920666ddb82d7e8dd918872f25f2	eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b8b421030f1acfa6512613a16468f03a

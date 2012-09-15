@@ -8,5 +8,5 @@ LICENSE=|| ( GPL-2 LGPL-2 )
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pyrtf/PyRTF-0.45.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=cada204197b8671eb202127f5ce66bf0

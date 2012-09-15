@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=app-misc/cwiid[python] dev-python/numpy dev-python/pybluez dev-python/PyQt4 dev-python/python-xlib
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~lxnay/python-whiteboard/python-whiteboard-20101012.tar.bz2
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	python	1a2be1ad82e0d83243e3808e4edb70c5	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	python	0f2da082e2993f7cacf1ccd298003666	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=82cca8b880998465f862f4ba117ddf05

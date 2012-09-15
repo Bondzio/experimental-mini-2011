@@ -8,5 +8,5 @@ LICENSE=|| ( GPL-3 LGPL-3 )
 RDEPEND=>=sys-devel/binutils-config-3-r2 >=sys-devel/binutils-config-1.9 zlib? ( sys-libs/zlib )
 SLOT=0
 SRC_URI=mirror://gnu/binutils/binutils-2.22.tar.bz2 mirror://gentoo/binutils-2.22-patches-1.5.tar.bz2 http://dev.gentoo.org/~vapier/dist/binutils-2.22-patches-1.5.tar.bz2 http://dev.gentoo.org/~radhermit/dist/msp430-binutils-2.22_p20120911.patch.bz2
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnuconfig	9200bfc8e0184357abfb86a08edd4fc3	libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-binutils	b8f646565f71a7e753cb4f14d2122225	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	unpacker	50e1227854e96469a19a63f053496328	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	gnuconfig	c0f61749b1cea36288502e3497dcd6ac	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-binutils	b8f646565f71a7e753cb4f14d2122225	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	unpacker	50e1227854e96469a19a63f053496328	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=efda14598d660f0adeb08997f02e34ea

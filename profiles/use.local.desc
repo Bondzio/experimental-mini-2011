@@ -611,6 +611,7 @@ app-i18n/libtomoe-gtk:gucharmap - Enable gucharmap dictionary plugin
 app-i18n/mozc:ibus - Enable support for app-i18n/ibus
 app-i18n/mozc:renderer - Enable native candidate window.
 app-i18n/mozc:scim - Enable support for app-i18n/scim
+app-i18n/scim:gtk3 - Enable support for x11-libs/gtk+:3
 app-i18n/scim-tomoe:gucharmap - Enable gucharmap dictionary plugin
 app-i18n/tomoe:hyperestraier - Enable support for app-text/hyperestraier
 app-i18n/uim:anthy - Enable support for app-i18n/anthy input method
@@ -2133,7 +2134,6 @@ gnome-extra/libgda:mdb - Enable support for Microsoft Access database using app-
 gnome-extra/libgda:sourceview - Enable support for x11-libs/gtksourceview
 gnome-extra/libgsf:gtk - Enable use of gdk in thumbnailer
 gnome-extra/libgsf:introspection - Use dev-libs/gobject-introspection for introspection
-gnome-extra/libgsf:thumbnail - Enable libgsf supported formats thumbnailer
 gnome-extra/mousetweaks:applet - Build the gnome-base/gnome-panel applet
 gnome-extra/nautilus-actions:deprecated - Enable deprecated functions
 gnome-extra/nautilus-sendto:gajim - Enables support for net-im/gajim

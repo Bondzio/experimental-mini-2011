@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/fortran
 SLOT=0
 SRC_URI=mirror://sourceforge/cbflib/CBFlib-0.9.2.3.tar.gz test? ( mirror://sourceforge/cbflib/CBFlib_0.9.2_Data_Files_Input.tar.gz mirror://sourceforge/cbflib/CBFlib_0.9.2_Data_Files_Output.tar.gz )
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=44b9c44e509e0d9035b403e2fc38733c

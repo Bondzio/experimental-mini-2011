@@ -9,5 +9,5 @@ LICENSE=LGPL-2
 RDEPEND=kernel_linux? ( sys-apps/module-init-tools )
 SLOT=0
 SRC_URI=mirror://sourceforge/open-vm-tools/open-vm-tools-2012.05.21-724730.tar.gz
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	linux-info	0b7adf68a2edb4e5a32b07bb6e68121c	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=2731d118b9198bf5541a59c561857628

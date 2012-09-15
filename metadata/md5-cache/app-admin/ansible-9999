@@ -7,5 +7,5 @@ IUSE=examples paramiko +sudo test
 LICENSE=GPL-3
 RDEPEND=dev-python/jinja dev-python/pyyaml paramiko? ( dev-python/paramiko ) !paramiko? ( virtual/ssh ) sudo? ( app-admin/sudo ) dev-lang/python
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=f0f031fead9f7a8b18b0e6ab4da80ef2

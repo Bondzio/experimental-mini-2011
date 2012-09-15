@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-python/kombu-2.2.5 <dev-python/kombu-3.0 sql? ( dev-python/sqlalchemy ) dev-python/python-dateutil >=dev-python/anyjson-0.3.3 dev-python/pyparsing >=dev-python/billiard-2.7.3.12 || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* )
 SLOT=0
 SRC_URI=mirror://pypi/c/celery/celery-3.0.5.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=f1c0fa6077a661eb5944d948cc7f5c53

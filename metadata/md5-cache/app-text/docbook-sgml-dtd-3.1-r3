@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=app-text/sgml-common
 SLOT=3.1
 SRC_URI=http://www.oasis-open.org/docbook/sgml/3.1/docbk31.zip
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	sgml-catalog	115ce04390f5bb32de8fef875ea71b4b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	sgml-catalog	115ce04390f5bb32de8fef875ea71b4b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=3cab1500f69fffdf794dec3b8f289461

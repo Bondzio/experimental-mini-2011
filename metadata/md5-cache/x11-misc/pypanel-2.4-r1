@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libXft dev-python/python-xlib sys-apps/sed media-libs/imlib2[X] =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pypanel/PyPanel-2.4.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=ad46a640e869074ddadc44f95dc57d47

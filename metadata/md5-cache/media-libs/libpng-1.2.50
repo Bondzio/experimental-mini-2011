@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=sys-libs/zlib !=media-libs/libpng-1.2*:0
 SLOT=1.2
 SRC_URI=mirror://sourceforge/libpng/libpng-1.2.50.tar.xz
-_eclasses_=libtool	a83de71c2123161fc5a8323cb275f8e5	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=94107b94e33f07c4ec59eb04ed213158

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=cli? ( dev-lang/php[simplexml,tokenizer] ) dev-lang/php dev-lang/php
 SLOT=0
 SRC_URI=!minimal? ( http://framework.zend.com/releases/ZendFramework-1.11.12/ZendFramework-1.11.12.tar.gz ) minimal? ( http://framework.zend.com/releases/ZendFramework-1.11.12/ZendFramework-1.11.12-minimal.tar.gz ) doc? ( http://framework.zend.com/releases/ZendFramework-1.11.12/ZendFramework-1.11.12-apidoc.tar.gz http://framework.zend.com/releases/ZendFramework-1.11.12/ZendFramework-1.11.12-manual-en.tar.gz )
-_eclasses_=depend.php	df169a364e191b840b695604097e3c21	eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	php-lib-r1	d7318e400ae0d443613d286980877fd4	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=depend.php	df169a364e191b840b695604097e3c21	eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	php-lib-r1	d7318e400ae0d443613d286980877fd4	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=777636c3717e8d3fffa1a6fc56e4aece

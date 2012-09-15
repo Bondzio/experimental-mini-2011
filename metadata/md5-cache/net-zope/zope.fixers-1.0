@@ -10,5 +10,5 @@ RDEPEND=net-zope/namespaces-zope[zope,python_abis_3.1?,python_abis_3.2?,python_a
 REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=mirror://pypi/z/zope.fixers/zope.fixers-1.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=bc6b71786a65046d615cd2e5279df67d

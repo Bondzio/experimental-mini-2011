@@ -1,12 +1,13 @@
-DEFINED_PHASES=compile install postinst prerm setup test
-DEPEND=>=dev-lang/ghc-6.4 doc? ( dev-haskell/haddock ) >=dev-haskell/cabal-1.1.4
-DESCRIPTION=Haskell interface to the GNU readline library
-HOMEPAGE=http://hackage.haskell.org/cgi-bin/hackage-scripts/package/readline
+DEFINED_PHASES=compile configure install postinst prepare prerm setup test unpack
+DEPEND=doc? ( dev-haskell/haddock ) >=dev-haskell/cabal-1.1.4
+DESCRIPTION=An interface to the GNU readline library
+EAPI=4
+HOMEPAGE=http://hackage.haskell.org/package/readline
 IUSE=doc profile
 KEYWORDS=~alpha ~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-lang/ghc-6.4 dev-lang/ghc
+RDEPEND=dev-lang/ghc
 SLOT=0
 SRC_URI=mirror://hackage/packages/archive/readline/1.0.1.0/readline-1.0.1.0.tar.gz
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	ghc-package	49c8afbe010577bcb717aae35002d003	haskell-cabal	10f63c8efa3135a67f680571f1956a97	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=6176abac57f169a83d569b15a8716147
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	6e25eb368f2a449bd6f5f8b55eadba30	ghc-package	49c8afbe010577bcb717aae35002d003	haskell-cabal	10f63c8efa3135a67f680571f1956a97	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=280ee81247ee283619f775a44a6c1dad

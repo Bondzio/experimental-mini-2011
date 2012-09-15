@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=BSD
 RDEPEND=dev-lang/python dev-python/python-fastimport dev-vcs/bzr dev-vcs/bzr-fastimport dev-vcs/git
 SLOT=0
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	git	08aa84bd1bc27e3dc5e58b3ec83854a6	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8e990515b63a22960f65db57fa3128a6

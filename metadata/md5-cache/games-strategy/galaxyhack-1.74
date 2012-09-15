@@ -8,5 +8,5 @@ LICENSE=GPL-2 galaxyhack
 RDEPEND=media-libs/libsdl media-libs/sdl-image media-libs/sdl-mixer >=dev-libs/boost-1.34
 SLOT=0
 SRC_URI=mirror://sourceforge/galaxyhack/galaxyhack-1.74.tar.bz2 mirror://gentoo/galaxyhack.png
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	f98a70ed99fbfc479df6694dc8af82ac	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	024161bb840ff1c7b424696877dbb18b	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	games	52ccdf027c2f376f3b9241202fb426f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=0785be10076deefd28186de762888f92

@@ -9,5 +9,5 @@ LICENSE=GPL-2 public-domain
 RDEPEND=hesiod? ( net-dns/hesiod ) ssl? ( >=dev-libs/openssl-0.9.6 ) kerberos? ( virtual/krb5 >=dev-libs/openssl-0.9.6 ) nls? ( virtual/libintl ) !elibc_glibc? ( sys-libs/e2fsprogs-libs ) socks? ( net-proxy/dante ) tk? ( =dev-lang/python-2* ) tk? ( =dev-lang/python-2*[tk] )
 SLOT=0
 SRC_URI=mirror://berlios/fetchmail/fetchmail-6.3.22.tar.bz2
-_eclasses_=python	1a2be1ad82e0d83243e3808e4edb70c5	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=python	0f2da082e2993f7cacf1ccd298003666	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=a3baa5a91cc0d4b80be6cee13ed4bd30

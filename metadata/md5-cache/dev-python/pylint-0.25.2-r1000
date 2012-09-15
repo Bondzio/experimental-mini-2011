@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/logilab-common-0.53.0[python_abis_2.5?,python_abis_2.6?,pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=ftp://ftp.logilab.org/pub/pylint/pylint-0.25.2.tar.gz mirror://pypi/p/pylint/pylint-0.25.2.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
 _md5_=8e8e804aca04fa7672bcf5f4f1038ce7

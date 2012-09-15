@@ -9,5 +9,5 @@ LICENSE=as-is
 RDEPEND=sys-apps/sed net-misc/openssh quota? ( sys-fs/quota ) rsync? ( net-misc/rsync ) subversion? ( dev-vcs/subversion )
 SLOT=0
 SRC_URI=mirror://sourceforge/scponly/scponly-4.8.tgz
-_eclasses_=eutils	f98a70ed99fbfc479df6694dc8af82ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=af8714531595333946dbbc69edcaecfb

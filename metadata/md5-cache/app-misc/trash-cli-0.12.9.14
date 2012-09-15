@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://github.com/andreafrancia/trash-cli/tarball/0.12.9.14 -> trash-cli-0.12.9.14.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	1a2be1ad82e0d83243e3808e4edb70c5	vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666	vcs-snapshot	07df4a337a309c0aa605525027917677
 _md5_=933c9a51b938739c4104d4492ad2196a
