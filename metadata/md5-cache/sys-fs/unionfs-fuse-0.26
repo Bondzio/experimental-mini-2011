@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=sys-fs/fuse
+DESCRIPTION=Self-syncing tree-merging file system based on FUSE
+EAPI=3
+HOMEPAGE=http://podgorny.cz/moin/UnionFsFuse
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=sys-fs/fuse
+SLOT=0
+SRC_URI=http://podgorny.cz/unionfs-fuse/releases/unionfs-fuse-0.26.tar.xz
+_md5_=258fbce5ef1c4dd3126855db09d5c459
