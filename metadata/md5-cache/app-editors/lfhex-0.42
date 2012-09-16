@@ -1,7 +1,7 @@
 DEFINED_PHASES=compile configure install prepare unpack
 DEPEND=x11-libs/qt-gui:4 x11-libs/libXt sys-devel/flex sys-devel/bison
 DESCRIPTION=A fast, efficient hex-editor with support for large files and comparing binary files
-EAPI=2
+EAPI=4
 HOMEPAGE=http://stoopidsimple.com/lfhex
 KEYWORDS=amd64 ppc x86
 LICENSE=GPL-2
@@ -9,4 +9,4 @@ RDEPEND=x11-libs/qt-gui:4 x11-libs/libXt
 SLOT=0
 SRC_URI=http://stoopidsimple.com/files/lfhex-0.42.tar.gz
 _eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	qt4-r2	04d507bcd694f43a547748e4a87b3b8c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=fe6ab83dd6f4c9867ae01116aed1086d
+_md5_=d2cb9ec191847678d4fe19282be4ccd9

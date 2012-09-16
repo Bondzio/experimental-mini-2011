@@ -112,13 +112,11 @@ app-admin/collectd:collectd_plugins_tcpconns - Build the tcpconns input plugin (
 app-admin/collectd:collectd_plugins_teamspeak2 - Build the teamspeak2 input plugin (collects traffic statistics from a teamspeak2 instance)
 app-admin/collectd:collectd_plugins_ted - Build the ted input plugin (connects to The Energy Detective and reads the current power over connected power lines)
 app-admin/collectd:collectd_plugins_thermal - Build the thermal input plugin (ACPI thermal zone information)
-app-admin/collectd:collectd_plugins_threshold - Build the threshold plugin
 app-admin/collectd:collectd_plugins_tokyotyrant - Build the tokyotyrant input plugin (number of records and file size from a running Tokyo Tyrant server)
 app-admin/collectd:collectd_plugins_unixsock - Build the unixsock output plugin (opens a UNIX domain socket and accepts connections)
 app-admin/collectd:collectd_plugins_uptime - Build the uptime input plugin (system uptime)
 app-admin/collectd:collectd_plugins_users - Build the users input plugin (number of users currently logged in)
 app-admin/collectd:collectd_plugins_uuid - Build the uuid plugin (tries hard to determine the UUID of the system it is running on)
-app-admin/collectd:collectd_plugins_v5upgrade - Build the v5upgrade plugin
 app-admin/collectd:collectd_plugins_varnish - Build the varnish input plugin
 app-admin/collectd:collectd_plugins_vmem - Build the vmem input plugin (information about the virtual memory subsystem)
 app-admin/collectd:collectd_plugins_vserver - Build the vserver input plugin (virtual servers running on a system)
@@ -1457,7 +1455,6 @@ dev-libs/xapian:flint - Enabled flint backend db support
 dev-libs/xapian:inmemory - Enabled inmemory backend db support
 dev-libs/xapian:remote - Enabled remot backend db support
 dev-libs/xerces-c:iconv - Use iconv (virtual/libiconv) as message loader and transcoder (in general it would be possible to use iconv only as message loader and something else like icu or the native method as transcoder and vice-versa, but this is a less common case and hard to handle)
-dev-libs/xerces-c:libwww - Use the net-libs/libwww library for fetching URLs, instead of the builtin method
 dev-libs/xerces-c:threads - Enable threading support through pthread (or other libraries on AIX, IRIX, HPUX, Solars). Highly recommended
 dev-libs/xml-security-c:nss - Use dev-libs/nss for certain crypto operations (configureable at runtime)
 dev-libs/xml-security-c:xalan - Enable support for XSLT and XPath parsing by dev-libs/xalan-c
@@ -2807,7 +2804,6 @@ media-plugins/gst-plugins-dts:orc - Use dev-lang/orc for runtime optimisations
 media-plugins/gst-plugins-ffmpeg:orc - Use dev-lang/orc for runtime optimisations
 media-plugins/gst-plugins-meta:http - Enable http streaming via net-libs/libsoup
 media-plugins/gst-plugins-meta:libvisual - Enable visualization effects via media-libs/libvisual
-media-plugins/gst-plugins-meta:mythtv - Support for retrieval from media-tv/mythtv backend
 media-plugins/gst-plugins-meta:vpx - Enables vp8 codec support using libvpx, required to play some HTML5 videos
 media-plugins/kipi-plugins:expoblending - Build the expoblending plugin, which requires media-gfx/hugin
 media-plugins/kipi-plugins:gpssync - Build the gpssync plugin, which requires media-lib/libkgeomap and thereby marble
@@ -4534,6 +4530,7 @@ net-misc/strongswan:openssl - Enable dev-libs/openssl plugin which is required f
 net-misc/stunnel:listen-queue - Enable Listen Queue support for Stunnel
 net-misc/stunnel:xforward - Enable X-Forwarded-For support for Stunnel
 net-misc/termpkg:uucp - Adds support for uucp style device locking
+net-misc/tigervnc:internal-fltk - Build+link internal and enhanced fltk library
 net-misc/tigervnc:server - Build TigerVNC server
 net-misc/tigervnc:xorgmodule - Build the Xorg module
 net-misc/tightvnc:server - Build vncserver. Allows us to only build server on one machine if set, build only viewer otherwise.
