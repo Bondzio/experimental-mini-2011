@@ -2630,7 +2630,6 @@ media-libs/giflib:rle - Build converters for RLE format (utah raster toolkit)
 media-libs/gmtk:dconf - Enable support for gnome-base/dconf
 media-libs/grilo:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/grilo:network - Enable network access for media discovery using net-libs/libsoup
-media-libs/grilo:test-ui - Build and install a test UI for the library
 media-libs/grilo:vala - Generate bindings for dev-lang/vala
 media-libs/gst-plugins-bad:orc - Use dev-lang/orc for runtime optimisations
 media-libs/gst-plugins-base:introspection - Use dev-libs/gobject-introspection for introspection

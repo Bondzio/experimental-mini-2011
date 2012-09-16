@@ -11,4 +11,4 @@ REQUIRED_USE=vala? ( introspection )
 SLOT=0
 SRC_URI=http://fedorahosted.org/releases/l/i/libosinfo/libosinfo-0.2.0.tar.gz
 _eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vala	26bc8dded3bd8d5d8c734ce2eb9f50b8
-_md5_=c096f4ff77ac7084801b9b11dfd355b3
+_md5_=8d8f7b0195d0107338ff45f340067c2b
