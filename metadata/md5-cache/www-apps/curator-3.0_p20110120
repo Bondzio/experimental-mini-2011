@@ -3,10 +3,10 @@ DEPEND==dev-lang/python-2*
 DESCRIPTION=Gallery generator
 EAPI=4
 HOMEPAGE=http://furius.ca/curator/
-KEYWORDS=~alpha ~amd64 ~hppa ~mips ~ppc ~sparc ~x86
+KEYWORDS=~alpha amd64 ~hppa ~mips ~ppc ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=dev-python/imaging || ( >=media-gfx/imagemagick-5.4.9 media-gfx/graphicsmagick[imagemagick] ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/curator-3.0_pf078f1686a78.tar.xz
 _eclasses_=python	0f2da082e2993f7cacf1ccd298003666
-_md5_=52f637597d9ac30ab686bd198e40e29c
+_md5_=65258dbc9b21468b59fc7bcda7bb28cb
