@@ -1216,15 +1216,10 @@ dev-lang/ghc:binary - Install the binary version directly, rather than using it 
 dev-lang/ghc:ghcbootstrap - Internal: Bootstrap GHC from an existing GHC installation.
 dev-lang/ghc:llvm - Enable llvm code geenrator for ghc (-fllvm)
 dev-lang/icc:eclipse - Install the dev-util/eclipse-sdk plugins
-dev-lang/icc:idb - Install the Intel Debugger
-dev-lang/icc:ipp - Install the Intel Integrated Primitive
-dev-lang/icc:mkl - Install the Intel Math Kernel Library
 dev-lang/icon:iplsrc - install the icon programming library source
 dev-lang/idb:eclipse - Install the dev-util/eclipse-sdk plugins
 dev-lang/idb:icc - Use dev-lang/icc to install idb (default)
 dev-lang/idb:ifc - Use dev-lang/ifc to install idb
-dev-lang/ifc:idb - Install the Intel Debugger
-dev-lang/ifc:mkl - Install the Intel Math Kernel Library
 dev-lang/io:clutter - Build add-on for media-libs/clutter
 dev-lang/io:editline - Build add-on for dev-libs/libedit
 dev-lang/io:google - Build the google search add-on
@@ -1357,6 +1352,7 @@ dev-libs/igraph:blas - Use external virtual/blas numerical library
 dev-libs/igraph:gmp - Enables dev-libs/gmp support
 dev-libs/igraph:gprof - Enables profiling support
 dev-libs/igraph:lapack - Use external lapack numerical library
+dev-libs/intel-common:compiler - Install the libraries needed for the icc and ifort compilers
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/json-glib:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/keybinder:introspection - Use dev-libs/gobject-introspection for introspection
