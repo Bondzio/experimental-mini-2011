@@ -4,11 +4,11 @@ DESCRIPTION=Official Ruby-on-Rails Integration with Sass
 EAPI=4
 HOMEPAGE=https://github.com/rails/sass-rails
 IUSE=test elibc_FreeBSD ruby_targets_ruby18 ruby_targets_ruby19 ruby_targets_ree18 test test
-KEYWORDS=~amd64 ~x86 ~x64-macos
+KEYWORDS=~amd64 ~x86 ~x64-macos ~x86-solaris
 LICENSE=MIT
 RDEPEND=ruby_targets_ruby18? ( >=dev-ruby/sass-3.1.10[ruby_targets_ruby18] dev-ruby/railties:3.1[ruby_targets_ruby18] dev-ruby/actionpack:3.1[ruby_targets_ruby18] >=dev-ruby/tilt-1.3.2[ruby_targets_ruby18] ) ruby_targets_ruby19? ( >=dev-ruby/sass-3.1.10[ruby_targets_ruby19] dev-ruby/railties:3.1[ruby_targets_ruby19] dev-ruby/actionpack:3.1[ruby_targets_ruby19] >=dev-ruby/tilt-1.3.2[ruby_targets_ruby19] ) ruby_targets_ree18? ( >=dev-ruby/sass-3.1.10[ruby_targets_ree18] dev-ruby/railties:3.1[ruby_targets_ree18] dev-ruby/actionpack:3.1[ruby_targets_ree18] >=dev-ruby/tilt-1.3.2[ruby_targets_ree18] ) ruby_targets_ruby18? ( dev-lang/ruby:1.8 ) ruby_targets_ruby19? ( dev-lang/ruby:1.9 ) ruby_targets_ree18? ( dev-lang/ruby-enterprise:1.8 ) ruby_targets_ruby18? ( virtual/rubygems[ruby_targets_ruby18] ) ruby_targets_ruby19? ( virtual/rubygems[ruby_targets_ruby19] ) ruby_targets_ree18? ( virtual/rubygems[ruby_targets_ree18] )
 REQUIRED_USE=|| ( ruby_targets_ruby18 ruby_targets_ruby19 ruby_targets_ree18 )
 SLOT=0
 SRC_URI=mirror://rubygems/sass-rails-3.1.5.gem
 _eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	c2b85b5c63a44798c1e442147ac14c5c	ruby-fakegem	2785c639b173dd603e95bd60b8d6c4c0	ruby-ng	11b7dd91b6b9c90989dcdba9ea5e9b12	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=a8ca57d775fb0774d619fd484eeebd14
+_md5_=2e1d75c60987af194547276e381a92cb
