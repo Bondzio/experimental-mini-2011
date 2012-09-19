@@ -4,10 +4,10 @@ DESCRIPTION=A network protocol analyzer formerly known as ethereal
 EAPI=4
 HOMEPAGE=http://www.wireshark.org/
 IUSE=adns doc doc-pdf gtk ipv6 libadns lua gcrypt geoip kerberos profile +pcap portaudio python +caps selinux smi ssl zlib
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~ppc ~ppc64 ~sparc x86 ~x86-fbsd
 LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.14:2 zlib? ( sys-libs/zlib !=sys-libs/zlib-1.2.4 ) smi? ( net-libs/libsmi ) gtk? ( >=x11-libs/gtk+-2.4.0:2 x11-libs/pango dev-libs/atk x11-misc/xdg-utils ) ssl? ( <net-libs/gnutls-3 ) gcrypt? ( dev-libs/libgcrypt ) pcap? ( net-libs/libpcap ) caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) portaudio? ( media-libs/portaudio ) adns? ( !libadns? ( >=net-dns/c-ares-1.5 ) ) libadns? ( net-libs/adns ) geoip? ( dev-libs/geoip ) lua? ( >=dev-lang/lua-5.1 ) selinux? ( sec-policy/selinux-wireshark ) python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://www.wireshark.org/download/src/all-versions/wireshark-1.8.2.tar.bz2
 _eclasses_=autotools	d89996a2048bc6d1ae72bfa4c04517fe	eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	python	0f2da082e2993f7cacf1ccd298003666	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ae633c9702d101e734442ded12c67d08
+_md5_=eff9a96cf4af7f6460b840bd6cde07d5
