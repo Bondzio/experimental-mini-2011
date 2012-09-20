@@ -790,6 +790,7 @@ app-office/libreoffice:jemalloc - Use dev-libs/jemalloc for allocations
 app-office/libreoffice:nlpsolver - Build extension for non-linear solving in calc
 app-office/libreoffice:odk - Build the Office Development Kit
 app-office/libreoffice:pdfimport - Build pdf-import extension using app-text/poppler. Note that you don't need this for pdf-export!
+app-office/libreoffice:telepathy - Enable document colaboration features using telepathy communication framework.
 app-office/libreoffice:vba - Enable support for VBA compatibility and ActiveX embedding
 app-office/libreoffice:webdav - Adds support for HTTP content adding via net-libs/neon
 app-office/libreoffice:xmlsec - Adds support for document signing using internal modified dev-libs/xmlsec and system dev-libs/nss
@@ -1813,6 +1814,7 @@ dev-util/qt-creator:mercurial - Add support for dev-vcs/mercurial version contro
 dev-util/qt-creator:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
 dev-util/qt-creator:qnx - Build QNX/Blackberry plugin
 dev-util/qt-creator:valgrind - Add support for memory debugging using dev-util/valgrind
+dev-util/scanmem:gui - Enable the GameConqueror GUI
 dev-util/schroot:btrfs - Enable support for chroots using btrfs snapshots.
 dev-util/schroot:dchroot - Enables the building of a wrapper named "dchroot", replacing sys-apps/dchroot.
 dev-util/schroot:lvm - Enable support for chroots using LVM snapshots.
@@ -2467,6 +2469,7 @@ media-fonts/terminus-font:ru-k - Changes view of Russian letter 'k' (see homepag
 media-gfx/album:plugins - Install optional plugins
 media-gfx/album:themes - Install optional themes
 media-gfx/asymptote:boehm-gc - Enables using the Boehm-Demers-Weiser conservative garbage collector
+media-gfx/asymptote:offscreen - Enables off-screen rendering
 media-gfx/asymptote:sigsegv - Enables using dev-libs/libsigsegv
 media-gfx/blender:3dmouse - Adds support for space navigator devices through package dev-libs/libspnav.
 media-gfx/blender:blender-game - Adds Game Engine support to Blender.
@@ -4996,6 +4999,7 @@ sci-mathematics/fricas:sbcl - Add support for Steel Bank Common Lisp (dev-lisp/s
 sci-mathematics/geomview:avg - Enable experimental motion averaging technique
 sci-mathematics/geomview:netpbm - Add media-libs/netpbm support for external modules
 sci-mathematics/gretl:R - Enable support for dev-lang/R
+sci-mathematics/gsl-shell:fox - Build a x11-libs/fox GUI
 sci-mathematics/isabelle:CCL - CCL (Classical Computational Logic)
 sci-mathematics/isabelle:CTT - CTT (Constructive Type Theory) is an extensional version of Martin-Löf's Type Theory.
 sci-mathematics/isabelle:Cube - Cube (The Lambda Cube)
@@ -5626,6 +5630,7 @@ www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the de
 www-client/lynx:ssl - Enable HTTPS support.
 www-client/midori:deprecated - Enable GTK+-2 instead of GTK+-3 because of external plugins like adobe-flash
 www-client/midori:unique - Enable single instance support using dev-libs/libunique
+www-client/midori:zeitgeist - Add support for Zeitgeist event tracking system
 www-client/netsurf:bmp - enable bmp bitmap support (media-libs/libnsbmp)
 www-client/netsurf:freetype - use media-libs/freetype for font rendering on framebuffer
 www-client/netsurf:pdf-writer - Enable pdf output support (media-libs/libharu)

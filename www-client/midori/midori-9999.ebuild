@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/midori/midori-9999.ebuild,v 1.42 2012/05/15 15:16:48 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/midori/midori-9999.ebuild,v 1.43 2012/09/20 08:30:56 ssuominen Exp $
 
 EAPI=4
 
@@ -16,19 +16,19 @@ fi
 
 inherit eutils fdo-mime gnome2-utils python waf-utils ${_live_inherits}
 
-PV_vala_version=0.16
+VALA_VERSION=0.18
 
 DESCRIPTION="A lightweight web browser based on WebKitGTK+"
 HOMEPAGE="http://www.twotoasts.de/index.php?/pages/midori_summary.html"
 
 LICENSE="LGPL-2.1 MIT"
 SLOT="0"
-IUSE="+deprecated doc gnome libnotify nls +unique"
+IUSE="+deprecated doc gnome libnotify nls +unique zeitgeist"
 
-RDEPEND="dev-db/sqlite:3
+RDEPEND=">=dev-db/sqlite-3.6.19:3
 	>=dev-libs/glib-2.22
 	dev-libs/libxml2
-	net-libs/libsoup:2.4
+	>=net-libs/libsoup-2.34:2.4
 	x11-libs/libXScrnSaver
 	deprecated? (
 		net-libs/webkit-gtk:2
@@ -36,15 +36,17 @@ RDEPEND="dev-db/sqlite:3
 		unique? ( dev-libs/libunique:1 )
 		)
 	!deprecated? (
+		>=app-crypt/gcr-3
 		net-libs/webkit-gtk:3
 		x11-libs/gtk+:3
 		unique? ( dev-libs/libunique:3 )
 		)
-	gnome? ( net-libs/libsoup-gnome:2.4 )
-	libnotify? ( >=x11-libs/libnotify-0.7 )"
+	gnome? ( >=net-libs/libsoup-gnome-2.34:2.4 )
+	libnotify? ( >=x11-libs/libnotify-0.7 )
+	zeitgeist? ( >=dev-libs/libzeitgeist-0.3.14 )"
 DEPEND="${RDEPEND}
 	|| ( dev-lang/python:2.7 dev-lang/python:2.6 )
-	dev-lang/vala:${PV_vala_version}
+	dev-lang/vala:${VALA_VERSION}
 	dev-util/intltool
 	gnome-base/librsvg
 	doc? ( dev-util/gtk-doc )
@@ -66,10 +68,18 @@ src_unpack() {
 	fi
 }
 
+src_prepare() {
+	# TODO: Both zeitgeist and gcr should have ./configure switch!
+	use zeitgeist || { sed -i -e 's:zeitgeist:&dIsAbLe:' wscript || die; }
+
+	# Force disabled because we don't have this custom renamed in Portage
+	sed -i -e 's:gcr-3-gtk2:&dIsAbLe:' wscript || die
+}
+
 src_configure() {
 	strip-linguas -i po
 
-	VALAC="$(type -P valac-${PV_vala_version})" \
+	VALAC="$(type -P valac-${VALA_VERSION})" \
 	waf-utils_src_configure \
 		--disable-docs \
 		 $(use_enable doc apidocs) \
