@@ -4515,14 +4515,10 @@ net-misc/spice-gtk:usbredir - Use sys-apps/usbredir to redirect USB devices to a
 net-misc/spice-gtk:vala - Generate dev-lang/vala bindings using vapigen and regenerate .vala files using valac
 net-misc/streamtuner:shout - Enable shoutcast plug-in.
 net-misc/streamtuner:xiph - Enable xiph.org plug-in.
-net-misc/strongswan:cisco - Enable support for the Cisco VPN client.
 net-misc/strongswan:dhcp - Enable server support for querying virtual IP addresses for clients from a DHCP server. (IKEv2 only)
 net-misc/strongswan:eap - Enable support for the different EAP modules that is supported.
 net-misc/strongswan:farp - Enable faking of ARP responses for virtual IP addresses assigned to clients. (IKEv2 only)
 net-misc/strongswan:gcrypt - Enable dev-libs/libgcrypt plugin which provides 3DES, AES, Blowfish, Camellia, CAST, DES, Serpent and Twofish ciphers along with MD4, MD5 and SHA1/2 hash algorithms, RSA and DH groups 1,2,5,14-18 and 22-24(4.4+). Also includes a software random number generator.
-net-misc/strongswan:ikev1 - Enable IKEv1 protocol (pluto daemon).
-net-misc/strongswan:ikev2 - Enable IKEv2 protocol (charon daemon).
-net-misc/strongswan:nat-transport - Enable potentially insecure NAT traversal for transport mode in IKEv1. Only enable if you really need this.
 net-misc/strongswan:non-root - Force IKEv1/IKEv2 daemons to normal user privileges. This might impose some restrictions mainly to the IKEv1 daemon. Disable only if you really require superuser privileges.
 net-misc/strongswan:openssl - Enable dev-libs/openssl plugin which is required for Elliptic Curve Cryptography (DH groups 19-21,25,26) and ECDSA. Also provides 3DES, AES, Blowfish, Camellia, CAST, DES, IDEA and RC5 ciphers along with MD2, MD4, MD5 and SHA1/2 hash algorithms, RSA and DH groups 1,2,5,14-18 and 22-24(4.4+) dev-libs/openssl has to be compiled with USE="-bindist".
 net-misc/stunnel:listen-queue - Enable Listen Queue support for Stunnel
