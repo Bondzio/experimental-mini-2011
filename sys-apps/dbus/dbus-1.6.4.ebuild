@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/dbus/dbus-1.6.4.ebuild,v 1.1 2012/07/20 23:07:03 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/dbus/dbus-1.6.4.ebuild,v 1.2 2012/09/22 11:16:00 ssuominen Exp $
 
 EAPI=4
 inherit autotools eutils linux-info flag-o-matic python systemd virtualx user
@@ -19,7 +19,6 @@ RDEPEND=">=dev-libs/expat-2
 		sec-policy/selinux-dbus
 		sys-libs/libselinux
 		)
-	systemd? ( >=sys-apps/systemd-44-r1 )
 	X? (
 		x11-libs/libX11
 		x11-libs/libXt
@@ -57,7 +56,9 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${PN}-1.5.12-selinux-when-dropping-capabilities-only-include-AUDI.patch
+	epatch \
+		"${FILESDIR}"/${PN}-1.5.12-selinux-when-dropping-capabilities-only-include-AUDI.patch \
+		"${FILESDIR}"/${PN}-1.6.4-CVE-2012-3524-Don-t-access-environment-variables-or-.patch
 
 	# Tests were restricted because of this
 	sed -i \
@@ -71,14 +72,17 @@ src_prepare() {
 }
 
 src_configure() {
-	local myconf
-
 	# so we can get backtraces from apps
 	append-flags -rdynamic
 
+	local myconf=( --disable-systemd )
+	if use systemd && has_version sys-apps/systemd; then
+		myconf=( --enable-systemd )
+	fi
+
 	# libaudit is *only* used in DBus wrt SELinux support, so disable it, if
 	# not on an SELinux profile.
-	myconf=(
+	myconf+=(
 		--localstatedir=/var
 		--docdir=/usr/share/doc/${PF}
 		--htmldir=/usr/share/doc/${PF}/html
@@ -90,7 +94,6 @@ src_configure() {
 		$(use_enable selinux libaudit)
 		$(use_enable kernel_linux inotify)
 		$(use_enable kernel_FreeBSD kqueue)
-		$(use_enable systemd)
 		--disable-embedded-tests
 		--disable-modular-tests
 		$(use_enable debug stats)
