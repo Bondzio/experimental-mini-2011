@@ -1,4 +1,4 @@
-DEFINED_PHASES=install
+DEFINED_PHASES=install prepare
 DEPEND=sys-fs/fuse
 DESCRIPTION=Self-syncing tree-merging file system based on FUSE
 EAPI=3
@@ -8,4 +8,5 @@ LICENSE=BSD
 RDEPEND=sys-fs/fuse
 SLOT=0
 SRC_URI=http://podgorny.cz/unionfs-fuse/releases/unionfs-fuse-0.26.tar.xz
-_md5_=258fbce5ef1c4dd3126855db09d5c459
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=262f7f2638aef73dcb3c3ed5ffea829f
