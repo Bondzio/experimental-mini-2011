@@ -5616,6 +5616,7 @@ www-client/leechcraft-poshuku:filescheme - Build FileScheme for accessing local 
 www-client/leechcraft-poshuku:fua - Build FUA for faking user agents for different hosts.
 www-client/leechcraft-poshuku:keywords - Build Keywords for adjusting search shortcuts.
 www-client/leechcraft-poshuku:onlinebookmarks - Build OnlineBookmarks for syncing bookmarks with social bookmarking services like Read It Later.
+www-client/leechcraft-poshuku:pcre - Use dev-libs/libpcre for rules matching in CleanWeb instead of slower QRegExp.
 www-client/leechcraft-poshuku:pogooglue - Build Pogooglue for searching for selected words in Google in two clicks
 www-client/leechcraft-poshuku:wyfv - Build WYFV for replacing Flash-based video players on some sites.
 www-client/links:deprecated - Install deprecated 'links2 -> links' symlink for compability reasons temporarily
