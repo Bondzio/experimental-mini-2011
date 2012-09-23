@@ -1,3 +1,6 @@
+=dev-lang/python-3.3_pre20120923
+=dev-lang/python-2.7.4_pre20120923
+=dev-lang/python-3.2.4_pre20120923
 =dev-lang/python-2.7.4_pre20120916
 =dev-lang/python-3.2.4_pre20120916
 =dev-lang/python-3.3_pre20120916
@@ -7,6 +10,3 @@
 =dev-lang/python-2.7.4_pre20120826
 =dev-lang/python-3.2.4_pre20120826
 =dev-lang/python-3.3_pre20120826
-=dev-lang/python-3.3_pre20120819
-=dev-lang/python-3.2.4_pre20120819
-=dev-lang/python-2.7.4_pre20120819
