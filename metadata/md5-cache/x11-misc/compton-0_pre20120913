@@ -1,0 +1,12 @@
+DEFINED_PHASES=setup
+DEPEND=x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXfixes x11-libs/libXrender virtual/pkgconfig x11-proto/xproto
+DESCRIPTION=A compositor for X, and a fork of xcompmgr-dana
+EAPI=4
+HOMEPAGE=http://github.com/chjj/compton
+KEYWORDS=~amd64 ~x86
+LICENSE=MIT
+RDEPEND=x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXfixes x11-libs/libXrender app-shells/bash x11-apps/xprop x11-apps/xwininfo
+SLOT=0
+SRC_URI=http://dev.gentoo.org/~hasufell/distfiles/compton-0_pre20120913.tar.xz
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=8158c7ef9b96ab6c7a39484471233c3c
