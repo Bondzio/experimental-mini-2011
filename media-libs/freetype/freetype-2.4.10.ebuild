@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/freetype/freetype-2.4.10.ebuild,v 1.2 2012/07/18 06:59:18 grobian Exp $
 
 EAPI="4"
 
-inherit autotools eutils flag-o-matic libtool multilib
+inherit eutils flag-o-matic libtool multilib
 
 DESCRIPTION="A high-quality and portable font engine"
 HOMEPAGE="http://www.freetype.org/"
@@ -15,7 +15,7 @@ SRC_URI="mirror://sourceforge/freetype/${P/_/}.tar.bz2
 LICENSE="FTL GPL-2"
 SLOT="2"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt"
-IUSE="X auto-hinter bindist bzip2 debug doc fontforge static-libs utils +lcdfilter"
+IUSE="X auto-hinter bindist bzip2 debug doc fontforge static-libs utils"
 
 DEPEND="sys-libs/zlib
 	bzip2? ( app-arch/bzip2 )
@@ -56,14 +56,6 @@ src_prepare() {
 
 	disable_option FT_CONFIG_OPTION_OLD_INTERNALS
 
-	if use lcdfilter; then
-		epatch "${FILESDIR}"/${P}-subpixel-hinting.patch
-		epatch "${FILESDIR}"/${P}-subpixel-rendering.patch
-
-		enable_option TT_CONFIG_OPTION_SUBPIXEL_HINTING
-		enable_option TT_CONFIG_OPTION_SUBPIXEL_RENDERING
-	fi
-
 	epatch "${FILESDIR}"/${PN}-2.3.2-enable-valid.patch
 
 	if use utils; then
@@ -75,12 +67,7 @@ src_prepare() {
 		fi
 	fi
 
-	if use prefix; then
-		cd "${S}"/builds/unix
-		eautoreconf
-	else
-		elibtoolize
-	fi
+	elibtoolize
 	epunt_cxx
 }
 
@@ -138,9 +125,4 @@ src_install() {
 
 	use doc && dohtml -r docs/*
 
-	if use lcdfilter; then
-		newenvd "${FILESDIR}"/${P}-99lcdfilter 99lcdfilter
-		insinto /usr/lib
-		newins "${FILESDIR}"/${P}-ft-settings.sh ft-settings.sh
-	fi
 }

@@ -4396,6 +4396,8 @@ net-misc/dropbear:multicall - Build all the programs as one little binary (to sa
 net-misc/dropbox:librsync-bundled - Use bundled librsync library
 net-misc/flexget:deluge - Enable deluge output plugin
 net-misc/flexget:transmission - Enable transmission output plugin
+net-misc/freerdp:channels - Build virtual channel plugins
+net-misc/freerdp:client - Build client binaries
 net-misc/gsasl:gcrypt - Use dev-libs/libgcrypt for low-level crypto
 net-misc/gsasl:ntlm - Add support for Microsoft's NTLM mechanism using net-libs/libntlm
 net-misc/gwget:epiphany - Build epiphany extensions
@@ -4531,6 +4533,7 @@ net-misc/tinc:uml - Enable support for User Mode Linux Sockets
 net-misc/tinc:vde - Enable Virtual Distributed Ethernet (VDE) based networking
 net-misc/tor:bufferevents - Use Libevent's buffered IO
 net-misc/tor:nat-pmp - Enable NAT Port Mapping Protocol
+net-misc/tor:stats - Enable to keep track of how much of each kind of resource we download
 net-misc/tor:tor-hardening - Compile tor with hardening on vanilla compilers/linkers
 net-misc/tor:transparent-proxy - Enable transparent proxying
 net-misc/tor:upnp - Enable Universal Plug and Play
@@ -5495,6 +5498,7 @@ sys-kernel/rt-sources:deblob - Remove binary blobs from kernel sources to provid
 sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/vserver-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/zen-sources:minimal - Clone git tree with --depth 1 to reduce amount of data to download. Use with caution
+sys-libs/db:rpc - Enable rpc client/server
 sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm interfaces
 sys-libs/gdbm:exporter - enable gdbmexport binary for exporting data from gdbm-1.8 databases into gdbm-1.9
 sys-libs/glibc:gd - build memusage and memusagestat tools
