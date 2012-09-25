@@ -9,4 +9,4 @@ RDEPEND=x11-misc/dmenu
 SLOT=0
 SRC_URI=http://opensource.conformal.com/snapshots/spectrwm/spectrwm-1.2.0.tgz
 _eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=a791789f3b66ad225702d72aaf4fca92
+_md5_=f3ff2000f20fa216547e76e016cba4c5
