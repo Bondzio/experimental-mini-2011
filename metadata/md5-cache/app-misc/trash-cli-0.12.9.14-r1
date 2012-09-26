@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-python/setuptools !<sys-apps/portage-2.1.10.58 python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+DESCRIPTION=Python scripts to manipulate trash cans via the command line
+EAPI=4
+HOMEPAGE=https://github.com/andreafrancia/trash-cli
+IUSE=python_targets_python2_6 python_targets_python2_7
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
+SLOT=0
+SRC_URI=http://github.com/andreafrancia/trash-cli/tarball/0.12.9.14 -> trash-cli-0.12.9.14.tar.gz
+_eclasses_=python-distutils-ng	0b3089b6a855cb3537e477e0f9001014	vcs-snapshot	07df4a337a309c0aa605525027917677
+_md5_=1cc343f2d9362ed4b9e2b3ec20c64d5c

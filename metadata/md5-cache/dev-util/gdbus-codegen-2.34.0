@@ -11,5 +11,5 @@ RDEPEND=python_targets_python2_5? ( dev-lang/python:2.5[xml] ) python_targets_py
 REQUIRED_USE=|| ( python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 )
 SLOT=0
 SRC_URI=mirror://gnome/sources/glib/2.34/glib-2.34.0.tar.xz
-_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	c2b85b5c63a44798c1e442147ac14c5c	python-distutils-ng	6786a3ab681bb2f21310183278f72e33	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	gnome.org	8fef8f967214f56e08fa92d61163d891	multilib	c2b85b5c63a44798c1e442147ac14c5c	python-distutils-ng	0b3089b6a855cb3537e477e0f9001014	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=e557189db60509ae492a042cb829c4d9
