@@ -7,5 +7,5 @@ LICENSE=GPL-2
 RDEPEND=app-admin/eselect
 SLOT=0
 SRC_URI=https://github.com/yngwin/eselect-infinality/tarball/v1 -> eselect-infinality-1.tar.gz
-_eclasses_=vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
 _md5_=e3f07e1fbb4e8345c4541a3edd2cc6d7

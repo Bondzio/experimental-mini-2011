@@ -10,5 +10,5 @@ RDEPEND=|| ( app-emulation/virtualbox[-headless,python,sdk] >=app-emulation/virt
 REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
 SLOT=0
 SRC_URI=http://vboxgtk.googlecode.com/files/vboxgtk-0.8.0.tar.gz
-_eclasses_=gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	python-distutils-ng	0b3089b6a855cb3537e477e0f9001014
+_eclasses_=gnome2-utils	4ebb1670ec516fb79bf2eaa0b064e8ba	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e
 _md5_=2cad8daa538bab7269bcf099169aeec9

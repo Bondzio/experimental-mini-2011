@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/cppunit/cppunit-9999.ebuild,v 1.1 2012/08/11 09:29:13 scarabeus Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/cppunit/cppunit-9999.ebuild,v 1.2 2012/09/27 11:05:48 scarabeus Exp $
 
 EAPI=4
 
@@ -25,7 +25,7 @@ DEPEND="${RDEPEND}
 	)"
 
 DOCS=( AUTHORS BUGS NEWS README THANKS TODO doc/FAQ )
-[[ ${PV} = 9999 ]] || DOCS+=" ChangeLog"
+[[ ${PV} = 9999 ]] || DOCS+=( ChangeLog )
 
 src_prepare() {
 	[[ ${PV} = 9999 ]] && eautoreconf
@@ -39,14 +39,14 @@ src_configure() {
 		$(use_enable static-libs static) \
 		$(use_enable doc doxygen) \
 		$(use_enable doc dot) \
-		--docdir="${EPREFIX}"/usr/share/doc/${PF}
+		--docdir="${EPREFIX}"/usr/share/doc/${PF} \
 		--htmldir="${EPREFIX}"/usr/share/doc/${PF}/html
 }
 
 src_install() {
 	default
 
-	find "${ED}" -name '*.la' -exec rm -f {} +
+	prune_libtool_files --all
 
 	if use examples ; then
 		find examples -iname "*.o" -delete

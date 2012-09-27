@@ -10,5 +10,5 @@ RDEPEND=python_targets_python2_5? ( dev-lang/python:2.5 ) python_targets_python2
 REQUIRED_USE=|| ( python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 )
 SLOT=4
 SRC_URI=http://pyropus.ca/software/getmail/old-versions/getmail-4.33.0.tar.gz
-_eclasses_=python-distutils-ng	0b3089b6a855cb3537e477e0f9001014
+_eclasses_=python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e
 _md5_=2291dd24477e1b93561c70d543b3a98c

@@ -8,5 +8,5 @@ LICENSE=as-is
 RDEPEND=x11-libs/libXext x11-libs/libXrender
 SLOT=0
 SRC_URI=http://bazaar.launchpad.net/~shantanu-goel/xwinwrap/devel/tarball/4 -> xwinwrap-0_p4.tar.gz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	vcs-snapshot	07df4a337a309c0aa605525027917677
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
 _md5_=ddf88b08f235b5b4a5ef10477565bc46
