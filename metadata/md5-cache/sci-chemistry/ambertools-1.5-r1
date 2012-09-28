@@ -10,5 +10,5 @@ RDEPEND=virtual/cblas virtual/lapack sci-libs/clapack sci-libs/arpack sci-libs/c
 RESTRICT=fetch
 SLOT=0
 SRC_URI=AmberTools-1.5.tar.bz2 mirror://gentoo/ambertools-1.5-bugfix_1-10.patch.xz
-_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	fortran-2	f0710cace0958faa206830a807aabcad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	fortran-2	f0710cace0958faa206830a807aabcad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=d47208c0c34d32cacf625b2aeacb56d7

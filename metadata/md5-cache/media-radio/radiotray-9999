@@ -8,5 +8,5 @@ LICENSE=GPL-1
 RDEPEND=dev-python/gst-python dev-python/pygtk dev-python/lxml dev-python/pyxdg dev-python/pygobject:2 dev-python/notify-python media-libs/gst-plugins-good media-libs/gst-plugins-ugly media-plugins/gst-plugins-alsa media-plugins/gst-plugins-libmms media-plugins/gst-plugins-ffmpeg media-plugins/gst-plugins-mad media-plugins/gst-plugins-ogg media-plugins/gst-plugins-soup media-plugins/gst-plugins-vorbis python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
 REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
 SLOT=0
-_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	mercurial	add64e64d758a9618d46a08a95f77483	multilib	c2b85b5c63a44798c1e442147ac14c5c	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	mercurial	add64e64d758a9618d46a08a95f77483	multilib	c2b85b5c63a44798c1e442147ac14c5c	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=1d75fb53ed0b4b987cc1a5dd6295dde3

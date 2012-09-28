@@ -8,5 +8,5 @@ LICENSE=as-is
 RESTRICT=strip
 SLOT=0
 SRC_URI=ftp://ftp.linux-mips.org/pub/linux/mips/people/skylark/arcload-0.5.tar.bz2
-_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=487771ff661b7c2d6c18adc7c24ed5b4

@@ -11,5 +11,5 @@ RDEPEND=bash-completion? ( app-admin/eselect ) ruby_targets_ruby18? ( dev-lang/r
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://rubyforge/rake/rake-0.8.7.tgz
-_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	c2b85b5c63a44798c1e442147ac14c5c	ruby-fakegem	2785c639b173dd603e95bd60b8d6c4c0	ruby-ng	10ca07a887e226622062d89bb959a175	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	0447741d6fd06d97d48995606c4cc6f8	java-utils-2	2d9eb3508fa5d6759e39354b74545567	multilib	c2b85b5c63a44798c1e442147ac14c5c	ruby-fakegem	2785c639b173dd603e95bd60b8d6c4c0	ruby-ng	10ca07a887e226622062d89bb959a175	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=631a95f2af485e10f80ae70dea3235a1

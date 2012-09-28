@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=dev-python/setuptools || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESCRIPTION=Python multiprocessing fork
+EAPI=4
+HOMEPAGE=http://pypi.python.org/pypi/billiard https://github.com/celery/billiard
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=|| ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SLOT=0
+SRC_URI=mirror://pypi/b/billiard/billiard-2.7.3.17.tar.gz
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_md5_=6033fa69b303dcee0ecce642070de967

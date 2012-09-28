@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/argparse >=dev-python/dbus-python-1 dev-python/logbook dev-python/psutil dev-python/pyyaml >=dev-python/pygtk-2.22 >=dev-python/pygtkhelpers-0.4.3 x11-libs/vte:0[python] app-editors/gvim app-editors/vim || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://pypi/a/a8/a8-0.11.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	0447741d6fd06d97d48995606c4cc6f8	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=9b12f2df8e0b0b45c90372a21be2d482

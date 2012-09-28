@@ -8,5 +8,5 @@ RDEPEND=x86? ( media-libs/freetype virtual/opengl virtual/glu x11-libs/libX11 x1
 RESTRICT=strip
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~calchan/distfiles/eschalon-book-1-demo-106.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	games	e0a83e3f3f024b8c8ef7a8217d716cbf	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	0447741d6fd06d97d48995606c4cc6f8	games	e0a83e3f3f024b8c8ef7a8217d716cbf	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=f86c527932b0487fb3b83f1e7578c709

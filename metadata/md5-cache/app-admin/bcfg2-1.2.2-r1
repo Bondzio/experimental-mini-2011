@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=app-portage/gentoolkit cheetah? ( dev-python/cheetah ) genshi? ( dev-python/genshi ) server? ( virtual/fam dev-python/lxml dev-libs/libgamin[python] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=ftp://ftp.mcs.anl.gov/pub/bcfg/bcfg2-1.2.2.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=6241d92f4a7d62c1a01a670ebc7b7d55
