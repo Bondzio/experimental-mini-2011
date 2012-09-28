@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/ipython-0.10[python_abis_2.6?,python_abis_2.7?,python_abis_
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=mirror://pypi/i/ipdb/ipdb-0.7.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
 _md5_=9fabe8d916ea8a156c819195b4be8ba5

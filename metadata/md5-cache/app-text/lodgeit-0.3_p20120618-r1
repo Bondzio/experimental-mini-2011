@@ -10,5 +10,5 @@ RDEPEND=vim? ( || ( app-editors/vim[python] app-editors/gvim[python] ) ) =dev-la
 RESTRICT=test
 SLOT=0
 SRC_URI=https://bitbucket.org/skrattaren/lodgeit-script-gentoo/raw/1ca55b8189de/scripts/lodgeit.py -> lodgeit-0.3_p20120618.py vim? ( http://www.vim.org/scripts/download_script.php?src_id=8848 -> lodgeit-0.3_p20120618.vim )
-_eclasses_=python	0f2da082e2993f7cacf1ccd298003666
+_eclasses_=python	f5525ce607e5882f9a3dcb0bf831e6c7
 _md5_=44d1e7ccfc83c3952603dac957d57fc2

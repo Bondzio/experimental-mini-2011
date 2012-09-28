@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~ppc ~x86 ~ppc-macos ~x86-macos
 LICENSE=|| ( GPL-2 Blitz-Artistic )
 SLOT=0
 SRC_URI=mirror://sourceforge/blitz/blitz-0.9.tar.gz
-_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	fortran-2	f0710cace0958faa206830a807aabcad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c614b88e2cd4924564986dcdde1a86eb

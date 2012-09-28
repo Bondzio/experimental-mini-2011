@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/pygtk-2.10[python_abis_2.6?,python_abis_2.7?] >=media-libs/
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=http://29a.ch/playitslowly/playitslowly-1.4.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
 _md5_=5a3786ab8f09819b5de3ea4545e999d4

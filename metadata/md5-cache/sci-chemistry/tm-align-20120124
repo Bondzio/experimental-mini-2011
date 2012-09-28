@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=as-is
 SLOT=0
 SRC_URI=http://zhanglab.ccmb.med.umich.edu/TM-align/TMtools20120124.tar.gz
-_eclasses_=base	9ef3e1720046c9c90326cc357ab51a77	cmake-utils	b546318c105098557503865faa81c580	eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	046b01b491c4eb09143ecc1e2d7f025c	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	90d61850f3eddf415e33eab0325d9747	eutils	6e25eb368f2a449bd6f5f8b55eadba30	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	f0710cace0958faa206830a807aabcad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=1f2f2a9470cfb6146fc75070a446850e

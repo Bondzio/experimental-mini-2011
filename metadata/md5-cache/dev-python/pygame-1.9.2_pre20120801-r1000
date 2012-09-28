@@ -10,5 +10,5 @@ RDEPEND=dev-python/numpy[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,pyth
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 )
 SLOT=0
 SRC_URI=http://people.apache.org/~Arfrever/gentoo/pygame-1.9.2_pre20120801.tar.xz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	0c41ff55e46b959d9457dde69e7a09d9
 _md5_=866a26cd5b448d9132fa8ddc2eaa8efc

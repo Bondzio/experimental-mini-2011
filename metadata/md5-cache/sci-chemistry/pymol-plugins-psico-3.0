@@ -9,5 +9,5 @@ LICENSE=BSD-2
 RDEPEND=dev-python/numpy sci-biology/biopython sci-chemistry/mmtk !minimal? ( media-libs/qhull media-video/mplayer sci-biology/stride sci-chemistry/ccp4-apps sci-chemistry/dssp sci-chemistry/mm-align sci-chemistry/pdbmat sci-chemistry/theseus sci-chemistry/tm-align sci-mathematics/diagrtb ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://github.com/speleo3/pymol-psico/tarball/3.0 -> pymol-plugins-psico-3.0.tar.gz
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
 _md5_=4ec103612848f9de8ee43ce82ecd9bc5

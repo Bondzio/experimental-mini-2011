@@ -6,5 +6,5 @@ HOMEPAGE=http://git.overlays.gentoo.org/gitweb/?p=proj/metagen.git;a=summary
 LICENSE=GPL-2
 RDEPEND=>=dev-python/jaxml-3.01 >=sys-apps/portage-2.1.9.42 =dev-lang/python-2*
 SLOT=0
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	git-2	15733ab6a6feb34af9837b41623c2bad	python	0f2da082e2993f7cacf1ccd298003666
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	f5525ce607e5882f9a3dcb0bf831e6c7
 _md5_=55dce0f152764fc8ee8c68c6a8b23bee

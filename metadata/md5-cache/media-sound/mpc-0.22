@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=media-libs/libmpdclient-2.2 iconv? ( virtual/libiconv )
 SLOT=0
 SRC_URI=mirror://sourceforge/musicpd/mpc-0.22.tar.bz2
-_eclasses_=bash-completion-r1	fff8a4a7ab807c81d9000e0791370cb9
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676
 _md5_=8d3547493b0a6d47f6a033393cee2365

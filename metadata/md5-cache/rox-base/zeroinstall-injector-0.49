@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-python/pygtk-2.0 app-crypt/gnupg =dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://sourceforge/zero-install/zeroinstall-injector-0.49.tar.bz2
-_eclasses_=distutils	82a876811ffd4907daba6062958daa26	python	0f2da082e2993f7cacf1ccd298003666
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
 _md5_=ba806ff36c24bc00aa9fe81083e0d907
