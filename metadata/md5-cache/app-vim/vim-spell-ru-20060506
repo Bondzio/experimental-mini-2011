@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=|| ( >=app-editors/vim-7_alpha >=app-editors/gvim-7_alpha )
 SLOT=0
 SRC_URI=mirror://gentoo/vim-spell-ru-20060506.tar.bz2
-_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vim-spell	931d44d9a5a1e08c9a8a1e3a1f9155e7
+_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vim-spell	931d44d9a5a1e08c9a8a1e3a1f9155e7
 _md5_=cf07b0fb68843b51ff49a74e3d5e9189

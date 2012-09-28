@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=games-action/d1x-rebirth
 SLOT=0
 SRC_URI=mirror://gentoo/descent1-maps-1.0.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	6e25eb368f2a449bd6f5f8b55eadba30	games	e0a83e3f3f024b8c8ef7a8217d716cbf	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	games	e0a83e3f3f024b8c8ef7a8217d716cbf	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=c0b2b02ac25693e3f7ae835c050c1029

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-tcltk/expect media-fonts/font-cursor-misc media-fonts/font-misc-misc net-analyzer/gnu-netcat >=net-misc/nx-2.1.0 sys-apps/gawk virtual/ssh x11-apps/xauth x11-apps/xrdb x11-apps/sessreg nxclient? ( net-misc/nxclient ) !nxclient? ( !net-misc/nxclient || ( x11-misc/xdialog x11-apps/xmessage ) ) rdesktop? ( net-misc/rdesktop ) vnc? ( x11-misc/x11vnc net-misc/tightvnc )
 SLOT=0
 SRC_URI=http://ppa.launchpad.net/freenx-team/ppa/ubuntu/pool/main/f/freenx-server/freenx-server_0.7.3+teambzr104.orig.tar.gz
-_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=f3a29565de396d64183a52e8f31565e3

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=bazaar? ( dev-vcs/bzr ) app-portage/portage-utils !bazaar? ( || ( dev-vcs/git dev-vcs/mercurial dev-vcs/darcs ) ) bazaar? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 SLOT=0
 SRC_URI=http://git.kitenet.net/?p=etckeeper.git;a=snapshot;h=refs/tags/0.63;sf=tgz -> etckeeper-0.63.tar.gz
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	prefix	21058c21ca48453d771df15500873ede	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	prefix	21058c21ca48453d771df15500873ede	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=914c4d8508e37e26ae2d40950b79357f

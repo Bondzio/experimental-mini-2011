@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl virtual/perl-File-Path virtual/perl-File-Temp >=dev-vcs/git-1.6.6 !dev-vcs/gitolite-gentoo vim-syntax? ( app-vim/gitolite-syntax ) dev-lang/perl[-build]
 SLOT=0
 SRC_URI=http://milki.github.com/gitolite/gitolite-3.04.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	6e25eb368f2a449bd6f5f8b55eadba30	multilib	c2b85b5c63a44798c1e442147ac14c5c	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	perl-module	c5c475cde59d974bf025236f9f34c1ec	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	f6eb5ff7b97c845050d7d54f4a2eac07	multilib	c2b85b5c63a44798c1e442147ac14c5c	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	perl-module	c5c475cde59d974bf025236f9f34c1ec	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=86c5bf12f0c0eaee0b7014ff61c0dd42

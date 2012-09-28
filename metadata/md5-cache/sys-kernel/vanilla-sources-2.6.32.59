@@ -11,5 +11,5 @@ RDEPEND=!build? ( >=sys-libs/ncurses-5.2 sys-devel/make dev-lang/perl )
 RESTRICT=binchecks strip
 SLOT=2.6.32.59
 SRC_URI=mirror://kernel/linux/kernel/v2.6/longterm/v2.6.32/patch-2.6.32.59.bz2 mirror://kernel/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.tar.bz2 deblob? ( http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-2.6.32.N/deblob-2.6.32 http://www.fsfla.org/svnwiki/selibre/linux-libre//download/releases/LATEST-2.6.32.N/deblob-check -> deblob-check-2.6.32 )
-_eclasses_=eutils	6e25eb368f2a449bd6f5f8b55eadba30	kernel-2	dd451098928ff900df7c254820871c00	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	f6eb5ff7b97c845050d7d54f4a2eac07	kernel-2	dd451098928ff900df7c254820871c00	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=7c54379d35415f3578940ec7f5b490ad
