@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/mscgen/mscgen-0.20.ebuild,v 1.5 2012/08/08 14:58:25 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/mscgen/mscgen-0.20.ebuild,v 1.7 2012/09/29 13:31:43 blueness Exp $
 
 EAPI=4
 inherit autotools
@@ -11,7 +11,7 @@ SRC_URI="http://www.mcternan.me.uk/${PN}/software/${PN}-src-${PV}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 arm ~ppc ~ppc64 ~x86"
+KEYWORDS="~amd64 arm ppc ppc64 ~x86"
 IUSE="png truetype"
 
 RDEPEND="png? (	media-libs/gd[png,truetype?] )"
@@ -19,6 +19,9 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 	sys-devel/bison
 	sys-devel/flex"
+
+# Workaround for bug #379279
+RESTRICT="test"
 
 src_prepare() {
 	sed -i -e '/dist_doc_DATA/d' Makefile.am || die

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-python/traits-4.0 >=dev-python/traitsui-4.0 sci-libs/scipy =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/scimath-4.0.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	0c41ff55e46b959d9457dde69e7a09d9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	dd775933742c75363f23fd47517930d7
 _md5_=5e8754944c9bcee4478136f3ca1393dc

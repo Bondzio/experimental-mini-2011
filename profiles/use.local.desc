@@ -164,7 +164,6 @@ app-admin/packagekit-base:cron - Install cron script for auto-update
 app-admin/packagekit-base:entropy - Enable Entropy backend
 app-admin/packagekit-base:introspection - Use dev-libs/gobject-introspection Enable introspection
 app-admin/packagekit-base:pm-utils - Add pm-utils (suspend/resume) functionalities
-app-admin/prelude-manager:tcpwrapper - Add support for tcp_wrappers
 app-admin/puppet:augeas - Enable augeas support
 app-admin/puppet:diff - Enable diff support
 app-admin/puppet:rrdtool - Enable rrdtool support
@@ -431,7 +430,6 @@ app-emulation/libguestfs:systemtap - Use dev-libs/gobject-introspection for intr
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:audit - support sys-process/audit
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
-app-emulation/libvirt:json - Support QEmu 0.13 JSON-based interface, using dev-libs/yajl.
 app-emulation/libvirt:libvirtd - Builds the libvirtd daemon as well as the client utilities instead of just the client utilities
 app-emulation/libvirt:lvm - Allow using the Logical Volume Manager (sys-apps/lvm2) as pool for disk image storage
 app-emulation/libvirt:lxc - Support management of Linux Containers virtualisation (app-emulation/lxc)
@@ -568,6 +566,7 @@ app-emulation/xen-tools:pygrub - Install the pygrub boot loader
 app-emulation/xen-tools:qemu - Enable IOEMU support via the use of qemu-dm
 app-emulation/xen-tools:screen - Enable support for running domain U console in an app-misc/screen session
 app-emulation/xen-tools:xend - Enable support the xend and xm to manage xen
+app-emulation/xtrs:ldos - Install disk images for Model 4P
 app-forensics/afflib:fuse - Enable extra fuse thingies
 app-forensics/afflib:qemu - Enable qemu stuff
 app-forensics/afflib:s3 - Enable support for Amazon S3
@@ -1397,9 +1396,6 @@ dev-libs/libpeas:glade - Install the glade catalog
 dev-libs/libpeas:python - Build support for loading dev-lang/python plugins
 dev-libs/libpeas:seed - Build support for loading JavaScript plugins using dev-libs/seed
 dev-libs/libpeas:vala - Build support for loading dev-lang/vala plugins
-dev-libs/libprelude:easy-bindings - Enable support for high level bindings (available for C++, Perl, Python)
-dev-libs/libprelude:swig - Enable rebuild of swig bindings
-dev-libs/libpreludedb:swig - Enable rebuild of swig bindings
 dev-libs/librra:recurrence - Enable recurrence support (EXPERIMENTAL)
 dev-libs/libsqlora8:orathreads - Use Oracle threads
 dev-libs/libunique:introspection - Use dev-libs/gobject-introspection for introspection
@@ -3234,6 +3230,7 @@ media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/c
 media-video/ffmpeg:cpudetection - Enables runtime CPU detection (useful for bindist, compatibility on other CPUs)
 media-video/ffmpeg:dirac - Enable Dirac video support (an advanced royalty-free video compression format) via the reference library: dirac.
 media-video/ffmpeg:faac - Use external faac library for AAC encoding
+media-video/ffmpeg:fdk - Use external fdk-aac library for AAC encoding
 media-video/ffmpeg:flite - Adds a text-to-speech filter based on app-accessibility/flite.
 media-video/ffmpeg:frei0r - Enable frei0r wrapping in libavfilter
 media-video/ffmpeg:hardcoded-tables - Use pre-calculated tables rather than calculating them on the fly.
@@ -3650,7 +3647,6 @@ net-analyzer/tcpdump:smi - Build with net-libs/libsmi to load MIBs on the fly to
 net-analyzer/tcpreplay:pcapnav - Enable if you want the jump to byte offset feature via net-libs/libpcapnav
 net-analyzer/tcpreplay:tcpdump - Use net-analyzer/tcpdump for packet decoding feature
 net-analyzer/wireshark:adns - Use the GNU net-dns/c-ares library to resolve DNS names
-net-analyzer/wireshark:ares - Use the GNU net-dns/c-ares library to resolve DNS names
 net-analyzer/wireshark:doc-pdf - Build documentation in pdf format (US and a4 paper sizes)
 net-analyzer/wireshark:gcrypt - Use GNU crypto library (dev-libs/libgcrypt) to decrypt ipsec traffic
 net-analyzer/wireshark:libadns - Use net-lib/adns (DEPRECATED) instead of net-dns/c-ares to resolve DNS names
@@ -3669,9 +3665,10 @@ net-analyzer/zabbix:static - Build statically linked binaries
 net-dialup/capi4k-utils:fax - Install capi-fax demo programs
 net-dialup/capi4k-utils:pppd - Installs pppdcapiplugin modules
 net-dialup/capi4k-utils:rcapid - Installs rcapid daemon
-net-dialup/freeradius:edirectory - Enables Novell eDirectory integration
+net-dialup/freeradius:edirectory - Enables Novell eDirectory integration. Requires ldap USE flag enabled.
 net-dialup/freeradius:frascend - Enables Ascend binary mode
 net-dialup/freeradius:frxp - Enables experimental modules
+net-dialup/freeradius:pcap - Build the RADIUS sniffer which requires net-libs/libpcap.
 net-dialup/freeradius:udpfromto - Compile in UDPFROMTO support (enables freeradius to specify source address correctly in multi-homed setups)
 net-dialup/freeradius-client:scp - Add service type hints derived from username prefix
 net-dialup/freeradius-client:shadow - Enable shadow password support
@@ -5196,6 +5193,7 @@ sys-apps/superiotool:pci - Support for PCI-attached "Super I/Os" (e.g. in VIA VT
 sys-apps/systemd:audit - Enable support for sys-process/audit
 sys-apps/systemd:cryptsetup - Use libcryptsetup
 sys-apps/systemd:gcrypt - Enable sealing of journal files using gcrypt
+sys-apps/systemd:http - Enable embedded HTTP server in journald
 sys-apps/systemd:qrcode - Enable qrcode output support in journal
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely need want it)
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level
@@ -5602,6 +5600,7 @@ www-apps/viewvc:cvsgraph - Add dev-vcs/cvsgraph support to show graphical views 
 www-apps/viewvc:mod_python - Add www-apache/mod_python support
 www-apps/viewvc:mod_wsgi - Add www-apache/mod_wsgi support
 www-apps/viewvc:pygments - Add dev-python/pygments support for syntax highlighting
+www-client/chromium:tcmalloc - Use bundled tcmalloc instead of system malloc.
 www-client/dwb:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
 www-client/elinks:bittorrent - Enable support for the BitTorrent protocol
 www-client/elinks:finger - Enable support for the finger protocol
@@ -5745,6 +5744,7 @@ x11-base/xorg-server:tslib - Build with tslib support for touchscreen devices
 x11-base/xorg-server:xnest - Build the Xnest server
 x11-base/xorg-server:xorg - Build the Xorg X server (HIGHLY RECOMMENDED)
 x11-base/xorg-server:xvfb - Build the Xvfb server
+x11-drivers/ati-drivers:disable-watermark - Do a potentially dangerous binary search and replace to disable watermark
 x11-drivers/ati-drivers:modules - Build the kernel modules
 x11-drivers/ati-drivers:pax_kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
 x11-drivers/ati-drivers:qt4 - Install qt4 dependent optional tools (e.g Catalyst Control Panel)

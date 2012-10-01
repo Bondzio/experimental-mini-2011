@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-visualization/grace/grace-5.1.22-r3.ebuild,v 1.2 2012/09/27 04:51:12 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/grace/grace-5.1.22-r3.ebuild,v 1.4 2012/09/30 17:17:25 armin76 Exp $
 
 EAPI=4
 
@@ -15,7 +15,7 @@ SRC_URI="
 
 SLOT="0"
 LICENSE="GPL-2 LGPL-2"
-KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux"
 IUSE="fortran fftw jpeg netcdf png"
 
 DEPEND="
@@ -87,6 +87,8 @@ src_configure() {
 		--with-helpviewer="xdg-open %s" \
 		--with-editor="xdg-open %s" \
 		--with-printcmd="lpr" \
+		--x-includes="${EPREFIX}"/usr/include \
+		--x-libraries="${EPREFIX}"/usr/$(get_libdir) \
 		$(use_with fftw) \
 		$(use_enable fortran f77-wrapper) \
 		$(use_enable netcdf) \

@@ -3,10 +3,10 @@ DEPEND=>=sys-libs/ncurses-5.2 virtual/perl-Filter virtual/perl-File-Spec dev-per
 DESCRIPTION=PDL Perl Module
 HOMEPAGE=http://search.cpan.org/~csoe/
 IUSE=opengl badval gsl
-KEYWORDS=alpha amd64 arm hppa ia64 ppc ~s390 sh sparc x86
+KEYWORDS=amd64 arm hppa ppc x86
 LICENSE=Artistic as-is
 RDEPEND=>=sys-libs/ncurses-5.2 virtual/perl-Filter virtual/perl-File-Spec dev-perl/Inline dev-perl/Astro-FITS-Header >=dev-perl/ExtUtils-F77-1.13 virtual/perl-Text-Balanced opengl? ( virtual/opengl virtual/glu ) dev-perl/Term-ReadLine-Perl gsl? ( sci-libs/gsl ) >=sys-apps/sed-4
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/C/CS/CSOE/PDL-2.4.3.tar.gz
 _eclasses_=base	5f55566958e88506923ea360535053cc	eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	perl-module	c5c475cde59d974bf025236f9f34c1ec	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b462f7bdbdcef63aa80b260ba2fea9af
+_md5_=8c8950fd61c6cd8977802c400c9e7735

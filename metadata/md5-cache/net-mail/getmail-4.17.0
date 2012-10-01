@@ -3,10 +3,10 @@ DEPEND==dev-lang/python-2*
 DESCRIPTION=A POP3 mail retriever with reliable Maildir and mbox delivery
 EAPI=3
 HOMEPAGE=http://pyropus.ca/software/getmail/
-KEYWORDS=alpha amd64 ppc x86 ~ppc-macos ~x86-macos ~x64-solaris
+KEYWORDS=amd64 ppc x86 ~ppc-macos ~x86-macos ~x64-solaris
 LICENSE=GPL-2
 RDEPEND==dev-lang/python-2*
 SLOT=4
 SRC_URI=http://pyropus.ca/software/getmail/old-versions/getmail-4.17.0.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=4bf3dd94a0c5896f65701f366a4e142e
+_md5_=e63a948a73b9310216590e6c7a740fff

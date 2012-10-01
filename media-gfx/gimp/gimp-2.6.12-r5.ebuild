@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/gimp/gimp-2.6.12-r5.ebuild,v 1.5 2012/09/28 17:01:17 xarthisius Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/gimp/gimp-2.6.12-r5.ebuild,v 1.8 2012/09/29 20:10:26 sping Exp $
 
 EAPI="3"
 
@@ -16,7 +16,7 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="2"
-KEYWORDS="~alpha amd64 hppa ~ia64 ~ppc ppc64 ~sparc x86"
+KEYWORDS="alpha amd64 hppa ia64 ppc ppc64 sparc x86"
 
 LANGS="am ar ast az be bg ca ca@valencia cs da de dz el en_CA en_GB eo es et eu fa fi fr ga gl gu he hi hr hu id is it ja ka kk km kn ko lt lv mk ml mr ms my nb nds ne nl nn oc or pa pl pt pt_BR ro ru rw si sk sl sr sr@latin sv ta th tr tt uk vi xh yi zh_CN zh_HK zh_TW"
 IUSE="alsa aalib altivec curl dbus debug doc exif gnome jpeg lcms mmx mng pdf png python smp sse svg tiff webkit wmf"
@@ -127,10 +127,10 @@ src_prepare() {
 }
 
 _clean_up_locales() {
-	elog "Cleaning up locales..."
+	einfo "Cleaning up locales..."
 	for lang in ${LANGS}; do
 		use "linguas_${lang}" && {
-			elog "- keeping ${lang}"
+			einfo "- keeping ${lang}"
 			continue
 		}
 		rm -Rf "${D}"/usr/share/locale/"${lang}" || die
