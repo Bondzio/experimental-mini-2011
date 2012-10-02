@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/numpy >=dev-python/traits-4 dev-lang/python
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/etsdevtools-4.0.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	dd775933742c75363f23fd47517930d7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	5a437101c75442783c7c49c351dcd35d
 _md5_=1f5402b3e5c21957c8c782108de12878

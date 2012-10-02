@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=>=dev-python/envisagecore-3.2.0 dev-python/setuptools >=dev-python/traitsgui-3.6.0 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/EnvisagePlugins-3.2.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	dd775933742c75363f23fd47517930d7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	5a437101c75442783c7c49c351dcd35d
 _md5_=db202002058d98b797bf58f3b80e6252

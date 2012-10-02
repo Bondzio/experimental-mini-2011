@@ -9,5 +9,5 @@ LICENSE=LGPL-2+
 RDEPEND=>=app-accessibility/at-spi2-core-2.6 >=dev-libs/atk-2.1.0 dev-libs/glib:2 >=sys-apps/dbus-1 !<gnome-extra/at-spi-1.32.0-r1
 SLOT=2
 SRC_URI=mirror://gnome/sources/at-spi2-atk/2.6/at-spi2-atk-2.6.0.tar.xz
-_eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	5914ad8783dd6ac6bc358d730bf4c411	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4	virtualx	dd775933742c75363f23fd47517930d7
+_eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	5914ad8783dd6ac6bc358d730bf4c411	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4	virtualx	5a437101c75442783c7c49c351dcd35d
 _md5_=4252a2e375e289c85b08359d1befe604
