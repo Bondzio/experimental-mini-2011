@@ -3585,15 +3585,11 @@ net-analyzer/nagios-plugins:suid - Give root privileges to the ICMP, DHCP and ID
 net-analyzer/nagios-plugins:ups - Install sys-power/nut required for monitoring compatible UPS units. Disabling the flag does not remove any plugin file.
 net-analyzer/nagvis:automap - Enable automated map generation using media-gfx/graphviz
 net-analyzer/ncrack:ssh - Compile and link against the internal openssh modified library.
-net-analyzer/net-snmp:diskio - Enable the use of diskio MIBs.
 net-analyzer/net-snmp:elf - Enable the use of elf utils to check uptime on some systems
-net-analyzer/net-snmp:extensible - Build deprecated extensible mib module (extend is successor)
 net-analyzer/net-snmp:mfd-rewrites - Use MFD rewrites of mib modules where available
 net-analyzer/net-snmp:netlink - Use dev-libs/libnl to fetch TCP statistics instead of using /proc/net/tcp (Linux only).
 net-analyzer/net-snmp:pci - Use libpci (from sys-apps/pciutils) to look up network interface description. This feature is only available on Linux.
 net-analyzer/net-snmp:rpm - Enable monitoring of app-arch/rpm. This flag requires the bzip2 and zlib flags to be enabled as well.
-net-analyzer/net-snmp:sendmail - Enable sendmail statistics monitoring
-net-analyzer/net-snmp:smux - Enable the SNMP multiplexing (smux) MIBs module
 net-analyzer/net-snmp:ucd-compat - Build UCD compatibility library. Increases significantly the install size.
 net-analyzer/netperf:demo - Emit interim results during the run. May affect results
 net-analyzer/netperf:sctp - Include tests to measure SCTP performance
