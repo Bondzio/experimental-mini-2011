@@ -1,6 +1,6 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-0.11.1.ebuild,v 1.5 2011/03/24 19:50:14 angelos Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-0.11.1.ebuild,v 1.10 2012/05/03 18:49:05 jdhore Exp $
 
 EAPI="2"
 
@@ -12,8 +12,8 @@ SRC_URI="http://download.savannah.gnu.org/releases/qemu/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~ppc64 x86"
-IUSE="alsa bluetooth esd gnutls ncurses pulseaudio sasl +sdl vde kqemu kvm"
+KEYWORDS="amd64 ppc ~ppc64 x86"
+IUSE="alsa bluetooth gnutls ncurses pulseaudio sasl +sdl vde kqemu kvm"
 
 COMMON_TARGETS="i386 x86_64 arm cris m68k mips mipsel mips64 mips64el ppc ppc64 sh4 sh4eb sparc"
 
@@ -28,12 +28,10 @@ for target in ${IUSE_USER_TARGETS}; do
 	IUSE="${IUSE} +qemu_user_targets_${target}"
 done
 
-RDEPEND="!app-emulation/qemu-softmmu
+RDEPEND="
 	!app-emulation/qemu-user
-	!<app-emulation/qemu-0.10.3
 	sys-libs/zlib
 	alsa? ( >=media-libs/alsa-lib-1.0.13 )
-	esd? ( media-sound/esound )
 	pulseaudio? ( media-sound/pulseaudio )
 	gnutls? ( net-libs/gnutls )
 	ncurses? ( sys-libs/ncurses )
@@ -46,7 +44,7 @@ RDEPEND="!app-emulation/qemu-softmmu
 #	fdt? ( sys-apps/dtc )
 
 DEPEND="${RDEPEND}
-		gnutls? ( dev-util/pkgconfig )
+		gnutls? ( virtual/pkgconfig )
 		app-text/texi2html"
 
 src_prepare() {
@@ -63,6 +61,7 @@ src_prepare() {
 	# Append CFLAGS while linking
 	sed -i 's/$(LDFLAGS)/$(QEMU_CFLAGS) $(CFLAGS) $(LDFLAGS)/' rules.mak
 	epatch "${FILESDIR}/qemu-0.11.0-mips64-user-fix.patch"
+	epatch "${FILESDIR}"/${P}-cfg-pulse.patch #384847
 }
 
 src_configure() {
@@ -93,7 +92,6 @@ src_configure() {
 
 		audio_opts="oss"
 		use alsa && audio_opts="alsa $audio_opts"
-		use esd && audio_opts="esd $audio_opts"
 		use pulseaudio && audio_opts="pa $audio_opts"
 		use sdl && audio_opts="sdl $audio_opts"
 	else
