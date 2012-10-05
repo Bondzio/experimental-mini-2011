@@ -1,4 +1,4 @@
-DEFINED_PHASES=install postinst setup
+DEFINED_PHASES=install postinst prepare setup
 DEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=WiFi Radar is a Python/PyGTK2 utility for managing WiFi profiles.
 EAPI=4
@@ -9,4 +9,4 @@ RDEPEND=>=dev-python/pygtk-2.16.0-r1 >=net-wireless/wireless-tools-29 || ( net-m
 SLOT=0
 SRC_URI=mirror://berlios/wifi-radar/wifi-radar-2.0.s08.tar.bz2
 _eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=ff7ccf8fe4bd3e596770e993700426ac
+_md5_=3824a37dbce82aceeaf37bea1cbce0a8
