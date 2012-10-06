@@ -4,11 +4,11 @@ DESCRIPTION=Portable Sound Event Library
 EAPI=4
 HOMEPAGE=http://0pointer.de/lennart/projects/libcanberra/
 IUSE=alsa gnome gstreamer +gtk +gtk3 oss pulseaudio +sound tdb udev
-KEYWORDS=~alpha amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+KEYWORDS=~alpha amd64 arm hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
 LICENSE=LGPL-2.1
 RDEPEND=media-libs/libvorbis >=sys-devel/libtool-2.2.6b alsa? ( media-libs/alsa-lib udev? ( >=sys-fs/udev-160 ) ) gstreamer? ( >=media-libs/gstreamer-0.10.15 ) gtk? ( >=x11-libs/gtk+-2.20.0:2 ) gtk3? ( x11-libs/gtk+:3 ) pulseaudio? ( >=media-sound/pulseaudio-0.9.11 ) tdb? ( sys-libs/tdb ) gnome? ( gnome-base/gsettings-desktop-schemas ) sound? ( x11-themes/sound-theme-freedesktop )
 REQUIRED_USE=udev? ( alsa )
 SLOT=0
 SRC_URI=http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.29.tar.xz
 _eclasses_=autotools	f4bee52a728da1f76470f4b8d246c50f	eutils	0447741d6fd06d97d48995606c4cc6f8	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	systemd	647a5a2d457d440371b3c86b4ccb9d38	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=5929e18673b9ade96bd3c92d236e613a
+_md5_=fed4343f02ac0b66bb3a6dfbed0d5083

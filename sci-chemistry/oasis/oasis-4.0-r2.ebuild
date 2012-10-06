@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/oasis/oasis-4.0-r2.ebuild,v 1.11 2012/04/14 09:50:57 nativemad Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/oasis/oasis-4.0-r2.ebuild,v 1.12 2012/10/06 16:53:01 jlec Exp $
 
 EAPI=3
 
@@ -18,6 +18,7 @@ LICENSE="ccp4 oasis"
 IUSE="examples +minimal"
 
 RDEPEND="
+	!dev-ml/oasis
 	sci-chemistry/ccp4-apps
 	sci-chemistry/pymol
 	sci-libs/mmdb

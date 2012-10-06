@@ -1,10 +1,10 @@
 DEFINED_PHASES=install unpack
 DESCRIPTION=Tandem Repeats Finder
-EAPI=2
+EAPI=4
 HOMEPAGE=http://tandem.bu.edu/trf/trf.html
 KEYWORDS=amd64 x86
 LICENSE=as-is
 SLOT=0
 SRC_URI=http://tandem.bu.edu/trf/downloads/trf404.linux.exe
 _eclasses_=eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=436595289b99fa13b33c06a84a373e5b
+_md5_=10492f6f14f3d5feda32910dc6aaa81e
