@@ -1497,6 +1497,7 @@ dev-ml/lwt:react - Enables support for dev-ml/react: Functional reactive program
 dev-ml/ocamlnet:cryptokit - Enables encryption support via dev-ml/cryptokit
 dev-ml/ocamlnet:httpd - Enables net-httpd web server component
 dev-ml/ocamlnet:zip - Enables netzip support to read/write gzip data using object channels
+dev-ml/pgocaml:batteries - Enable Batteries support instead of extlib
 dev-ml/tyxml:ocamlduce - Enables ocamlduce XML typechecking.
 dev-perl/App-Nopaste:clipboard - copying of URLs with -x/--copy
 dev-perl/App-Nopaste:github - Github authentication
@@ -4494,9 +4495,7 @@ net-misc/rdesktop:pcsc-lite - Enable smartcard support with sys-apps/pcsc-lite d
 net-misc/remmina:freerdp - Add support for the net-misc/freerdp application
 net-misc/remmina:ssh - Enable support for SSH/SFTP using net-libs/libssh
 net-misc/remmina:telepathy - Enable telepathy support
-net-misc/remmina:unique - Enable single instance support using dev-libs/libunique
 net-misc/remmina:vte - Enable Terminal support using x11-libs/vte
-net-misc/remmina:xdmcp - Enable support for X Display Manager Control Protocol
 net-misc/rygel:tracker - Install dependencies for the tracker plugin
 net-misc/rygel:transcode - Install dependencies for transcoding support
 net-misc/scponly:gftp - Enables gFTP compatibility
@@ -4986,6 +4985,7 @@ sci-mathematics/Macaulay2:optimization - Accept upstream's choices for -O option
 sci-mathematics/agda:epic - Add support for the epic compiler.
 sci-mathematics/agda:stdlib - Install the standard library.
 sci-mathematics/cgal:mpfi - Enable support for multiple recision interval arithmetic via sci-mathematics/mpfi
+sci-mathematics/coq:camlp5 - Build using camlp5. This is required for some plugins like Ssreflect.
 sci-mathematics/cvc3:isabelle - Add integration support for the Isabelle/HOL theorem prover.
 sci-mathematics/cvc3:zchaff - Use the SAT solver zchaff whose copyright is owned by Princeton University and is more restrictive (see zchaff license).
 sci-mathematics/e:isabelle - Add integration support for the Isabelle/HOL theorem prover.
