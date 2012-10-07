@@ -7,5 +7,5 @@ IUSE=bash-completion emacs vim-syntax zsh-completion
 LICENSE=BSD
 RDEPEND=bash-completion? ( app-shells/bash-completion ) emacs? ( virtual/emacs ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) ) zsh-completion? ( app-shells/zsh-completion )
 SLOT=0
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	elisp-common	cdb887d0e278ea6e82ea2a5d4792c52a	eutils	0447741d6fd06d97d48995606c4cc6f8	mercurial	add64e64d758a9618d46a08a95f77483	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	elisp-common	cdb887d0e278ea6e82ea2a5d4792c52a	eutils	2fd401453e32e8c9a676cd0361b82a5f	mercurial	add64e64d758a9618d46a08a95f77483	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=569c3c882c235d3abf14e78a3b26c9d7

@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/pygtk:2 x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage ffmpeg? ( virtual/ffmpeg x264? ( media-libs/x264 ) ) server? ( x11-libs/libXtst ) !x11-wm/parti x11-apps/xmodmap parti? ( dev-python/ipython dev-python/dbus-python ) libnotify? ( dev-python/dbus-python ) jpeg? ( dev-python/imaging ) png? ( dev-python/imaging ) ssh? ( virtual/ssh ) server? ( x11-base/xorg-server[xvfb,-minimal] ) dev-lang/python
 SLOT=0
 SRC_URI=http://xpra.org/src/xpra-0.6.0.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	0447741d6fd06d97d48995606c4cc6f8	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	2fd401453e32e8c9a676cd0361b82a5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=6d50de561c361976a1d7ce7b44732a7c
