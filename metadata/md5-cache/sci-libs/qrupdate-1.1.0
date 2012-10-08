@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND=virtual/fortran virtual/blas virtual/lapack
 SLOT=0
 SRC_URI=mirror://sourceforge/qrupdate/qrupdate-1.1.0.tar.gz
-_eclasses_=eutils	2fd401453e32e8c9a676cd0361b82a5f	fortran-2	f0710cace0958faa206830a807aabcad	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	2fd401453e32e8c9a676cd0361b82a5f	fortran-2	2e61f585ad8ae4e1f029e4288ae74dcc	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=d214cd632d8391f70770b2ebc117e249
