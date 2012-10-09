@@ -5063,6 +5063,7 @@ sci-physics/cernlib-montecarlo:herwig - Build Herwig internal event generator, n
 sci-physics/clhep:exceptions - Enable zoom exceptions for user intervention
 sci-physics/espresso:examples - Installs the examples
 sci-physics/espresso:packages - Installs extra subpackages
+sci-physics/espresso++:system-boost - Use system boost (dev-libs/boost) instead of bundled one
 sci-physics/fastjet:cgal - Use sci-mathematics/cgal instead of bundled algorithms
 sci-physics/fastjet:plugins - Build all standard and C++ plugins
 sci-physics/geant:aida - Add support for Abstract Interfaces for Data Analysis

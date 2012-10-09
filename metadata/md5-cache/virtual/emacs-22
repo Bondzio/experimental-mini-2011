@@ -4,4 +4,4 @@ EAPI=4
 KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd
 RDEPEND=app-editors/emacs:22
 SLOT=0
-_md5_=4ab77369725d00e34fe1e19d8a11b920
+_md5_=0dcb80a88c1c628a7e687a31e39c394f
