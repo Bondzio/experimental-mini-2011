@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/ubertooth/ubertooth-9999.ebuild,v 1.11 2012/09/13 03:03:15 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/ubertooth/ubertooth-9999.ebuild,v 1.13 2012/10/08 21:05:43 zerochaos Exp $
 
 EAPI="4"
 
@@ -41,15 +41,15 @@ if [[ ${PV} == "9999" ]] ; then
 	DEPEND="ubertooth0-firmware? ( sys-devel/crossdev )
 		ubertooth1-firmware? ( sys-devel/crossdev )"
 else
-	MY_PV="${PV/p/r}"
-	MY_PV="${MY_PV/0.0_/}"
-	SRC_URI="mirror://sourceforge/${PN}/${PN}-${MY_PV}.tar.gz"
+	MY_P=${P/\./-}
+	MY_P=${MY_P/./-R}
+	S=${WORKDIR}/${MY_P}
+	SRC_URI="mirror://sourceforge/${PN}/${MY_P}.tar.xz"
 	#re-add arm keyword after making a lib-only target
 	KEYWORDS="~amd64 ~x86"
-	S="${WORKDIR}/${PN}-${MY_PV}/"
-	DEPEND=">=net-libs/libbtbb-0.8"
+	DEPEND=">=net-libs/libbtbb-${PV}"
 	RDEPEND="${RDEPEND}
-		>=net-libs/libbtbb-0.8"
+		>=net-libs/libbtbb-${PV}"
 fi
 DESCRIPTION="An open source wireless development platform suitable for Bluetooth experimentation"
 
@@ -115,6 +115,8 @@ src_install() {
 	use clock_debug && dobin bluetooth_rxtx/ubertooth-follow
 
 	use python && distutils_src_install
+	use specan && dobin specan_ui/ubertooth-specan-ui
+	use dfu && dobin usb_dfu/ubertooth-dfu
 
 	dolib.so bluetooth_rxtx/libubertooth.so.0.1
 	dosym libubertooth.so.0.1 /usr/$(get_libdir)/libubertooth.so.0

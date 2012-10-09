@@ -916,6 +916,11 @@ app-text/stardict:gucharmap - Enable gucharmap dictionary plugin
 app-text/stardict:pronounce - Install WyabdcRealPeopleTTS package (it is just many .wav files) to make StarDict pronounce English words
 app-text/stardict:qqwry - Enable QQWry plugin, which provides information (in Chinese language) about geographical positions, owner, etc. for IP addresses
 app-text/stardict:tools - Build and install the extra stardict tools
+app-text/tesseract:linguas_chr - Enable support for the Cherokee language.
+app-text/tesseract:linguas_jp - Enable support for Japanese.
+app-text/tesseract:osd - Enable support orientation and script detection.
+app-text/tesseract:scrollview - Enable graphics support (ScrollView).
+app-text/tesseract:webp - Enable support for webp image format.
 app-text/texlive:context - Add support for the ConTeXt format (dev-texlive/texlive-context)
 app-text/texlive:detex - Add support for dev-tex/detex, a filter program that removes the LaTeX (or TeX) control sequences
 app-text/texlive:dvi2tty - Add support for dev-tex/dvi2tty to preview dvi-files on text-only devices
@@ -3168,6 +3173,7 @@ media-tv/xbmc:projectm - Enable projectM visualization plugin
 media-tv/xbmc:pvr - Enable MythTV support
 media-tv/xbmc:rsxs - Enable really slick X screensavers
 media-tv/xbmc:rtmp - Enable Real Time Messaging Protocol using librtmp
+media-tv/xbmc:sftp - Support browsing files over SFTP
 media-tv/xbmc:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 media-tv/xbmc:vdpau - enable support for Video Decode and Presentation API for Unix
 media-tv/xbmc:webserver - Enable internal webserver
@@ -3650,9 +3656,9 @@ net-analyzer/tcpdump:smi - Build with net-libs/libsmi to load MIBs on the fly to
 net-analyzer/tcpreplay:pcapnav - Enable if you want the jump to byte offset feature via net-libs/libpcapnav
 net-analyzer/tcpreplay:tcpdump - Use net-analyzer/tcpdump for packet decoding feature
 net-analyzer/wireshark:adns - Use the GNU net-dns/c-ares library to resolve DNS names
+net-analyzer/wireshark:crypt - Use dev-libs/libgcrypt to decrypt traffic
 net-analyzer/wireshark:doc-pdf - Build documentation in pdf format (US and a4 paper sizes)
-net-analyzer/wireshark:gcrypt - Use (dev-libs/libgcrypt) to decrypt IPsec traffic
-net-analyzer/wireshark:ipsec - Use (dev-libs/libgcrypt) to decrypt IPsec traffic
+net-analyzer/wireshark:gcrypt - Use dev-libs/libgcrypt to decrypt IPsec traffic
 net-analyzer/wireshark:libadns - Use net-lib/adns (DEPRECATED) instead of net-dns/c-ares to resolve DNS names
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
 net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into human readable format
@@ -3964,6 +3970,7 @@ net-im/tkabber:extras - Enables extra non official patches
 net-im/tkabber:plugins - Enables installation the extra plugins
 net-im/vacuum:adiummessagestyle - Use UI styles created for Adium
 net-im/vacuum:annotations - Enable adding comments to the contacts in the roster
+net-im/vacuum:aspell - Select app-text/aspell spell checker backend
 net-im/vacuum:autostatus - Change the status in accordance with the time of inactivity
 net-im/vacuum:avatars - Enable assigning and displaying avatars
 net-im/vacuum:birthdayreminder - Reminds about birthdays of your friends
@@ -3978,14 +3985,17 @@ net-im/vacuum:console - Enable inspecting a raw XML stream
 net-im/vacuum:dataforms - Allow other modules to process and display data forms intended for the user
 net-im/vacuum:datastreamsmanager - Enable initiating a custom data stream between two XMPP entities
 net-im/vacuum:emoticons - Enable using smiley images in messages
+net-im/vacuum:enchant - Select app-text/enchant spell checker backend
 net-im/vacuum:filemessagearchive - Allows to save the history of conversations to local files
 net-im/vacuum:filestreamsmanager - Enable transferring files between two XMPP entities
 net-im/vacuum:filetransfer - Enable sending files to peers
 net-im/vacuum:gateways - Simplify the interaction with gateways to other IM systems
+net-im/vacuum:hunspell - Select app-text/hunspell spell checker backend
 net-im/vacuum:inbandstreams - Enable initiating in-band data stream between two XMPP enitites
 net-im/vacuum:iqauth - Enable logging on Jabber servers withous SASL authentication support
 net-im/vacuum:jabbersearch - Enable searching contacts in Jabber networks
 net-im/vacuum:messagearchiver - Enable saving the communication history both locally and on the server
+net-im/vacuum:messagecarbons - Allows to keep all user IM clients engaged in a conversation
 net-im/vacuum:multiuserchat - Enable Jabber multi-user conferences
 net-im/vacuum:pepmanager - Allows other plugins to recieve and publish PEP events
 net-im/vacuum:privacylists - Enable blocking the undesirable contacts
@@ -4134,6 +4144,7 @@ net-libs/gupnp-igd:introspection - Use dev-libs/gobject-introspection for intros
 net-libs/iax:snomhack - Use slower memset for SNOM phoneem
 net-libs/ldns:ecdsa - Enable ECDSA support
 net-libs/ldns:gost - Enable GOST support
+net-libs/libbtbb:wireshark - Build the wireshark plugin for bluetooth baseband sniffing
 net-libs/libeXosip:srv - enable support for SRV records DNS queries
 net-libs/libesmtp:ssl - Enable support for advanced SMTP authentication methods, like NTML and STARTTLS. Also use OpenSSL's MD5 implementation over internal version.
 net-libs/libetpan:liblockfile - Enable support for liblockfile library

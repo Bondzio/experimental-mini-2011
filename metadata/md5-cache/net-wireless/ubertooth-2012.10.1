@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup
+DEPEND=>=net-libs/libbtbb-2012.10.1 python? ( =dev-lang/python-2* )
+DESCRIPTION=An open source wireless development platform suitable for Bluetooth experimentation
+EAPI=4
+HOMEPAGE=http://ubertooth.sourceforge.net/
+IUSE=+dfu clock_debug +specan +python ubertooth0-firmware +ubertooth1-firmware
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=clock_debug? ( net-wireless/bluez ) specan? ( virtual/libusb:1 >=x11-libs/qt-gui-4.7.2:4 >=dev-python/pyside-1.0.2 >=dev-python/numpy-1.3 >=dev-python/pyusb-1.0.0_alpha1 ) dfu? ( virtual/libusb:1 >=dev-python/pyusb-1.0.0_alpha1 ) >=net-libs/libbtbb-2012.10.1 python? ( =dev-lang/python-2* )
+REQUIRED_USE=dfu? ( python ) specan? ( python ) ubertooth0-firmware? ( dfu ) ubertooth1-firmware? ( dfu ) python? ( || ( dfu specan ) )
+SLOT=0
+SRC_URI=mirror://sourceforge/ubertooth/ubertooth-2012-10-R1.tar.xz
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=b4e658f101e3431411669c9207d31538
