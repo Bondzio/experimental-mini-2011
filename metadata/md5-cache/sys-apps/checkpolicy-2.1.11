@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=>=sys-libs/libsepol-2.1.8 >=sys-libs/libsemanage-2.1.9 sys-devel/flex sys-devel/bison
+DESCRIPTION=SELinux policy compiler
+HOMEPAGE=http://userspace.selinuxproject.org
+IUSE=debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=sys-libs/libsemanage-2.1.9
+SLOT=0
+SRC_URI=http://userspace.selinuxproject.org/releases/20120924/checkpolicy-2.1.11.tar.gz
+_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=5134bd0c88b8480e2def0862e0b11a1d

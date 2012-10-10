@@ -393,7 +393,6 @@ app-emacs/slime:xref - Install xref.lisp cross-referencing tool
 app-emacs/vm:bbdb - Include support for app-emacs/bbdb
 app-emacs/wanderlust:bbdb - Include support for app-emacs/bbdb
 app-emacs/wikipedia-mode:outline-magic - Enable support for outline-mode extensions (app-emacs/outline-magic)
-app-emulation/aqemu:kvm - Add kernel virtual machine support
 app-emulation/bochs:debugger - Enable the bochs debugger
 app-emulation/e-uae:capslib - Add CAPS library support
 app-emulation/e-uae:sdl-sound - Use media-libs/sdl-sound for audio output
@@ -464,50 +463,31 @@ app-emulation/q4wine:icoutils - Enable icoutils support
 app-emulation/q4wine:kde - Use the kdesu sudo GUI for managing the devices
 app-emulation/q4wine:wineappdb - Enable Win AppDB browser subsystem
 app-emulation/qemu:aio - Enables support for Linux's Async IO
+app-emulation/qemu:alsa - Enable alsa output for sound emulation
 app-emulation/qemu:brltty - Adds support for braille displays using brltty
-app-emulation/qemu:curl - Adds support for read-only block device emulation based on files located on http and ftp servers
+app-emulation/qemu:curl - Support ISOs / -cdrom directives vis HTTP or HTTPS.
 app-emulation/qemu:fdt - Enables firmware device tree support
-app-emulation/qemu:gnutls - Enable TLS support for the VNC console server
-app-emulation/qemu:kqemu - Enables the kernel acceleration module on a x86/x86-64 cpu
-app-emulation/qemu:kvm - Use the KVM (Kernel Virtual Machine) infrastructure on compatible hardware
+app-emulation/qemu:kqemu - Enable old kqemu acceleration
+app-emulation/qemu:kvm - Enable Linux KVM support
+app-emulation/qemu:mixemu - Enable audio mixer emulation. On Fedora, known to cause performance problems when using SDL output and ALSA. For OSS, locks the sound device from other applications.
 app-emulation/qemu:ncurses - Enable the ncurses-based console
-app-emulation/qemu:nss - Enable opengl/x11 output for lm32 target.
+app-emulation/qemu:nss - Enable smartcard support
 app-emulation/qemu:pulseaudio - Enable pulseaudio output for sound emulation
 app-emulation/qemu:qemu-ifup - Provides the qemu-ifup script for use with QEMU's built in bridging
 app-emulation/qemu:rbd - Enable rados block device backend support, see http://ceph.newdream.net/wiki/QEMU-RBD
 app-emulation/qemu:sdl - Enable the SDL-based console
 app-emulation/qemu:spice - Enable Spice protocol support via app-emulation/spice
-app-emulation/qemu:ssl - Enable TLS support for the VNC console server
-app-emulation/qemu:static - Enable static build, useful to chroot in user-mode emulation
+app-emulation/qemu:systemtap - Enable SystemTAP/DTrace tracing
+app-emulation/qemu:tci - Enable the TCG Interpreter which can speed up or slowdown workloads depending on the host and guest CPUs being emulated. In the future it will be a runtime option but for now its compile time.
+app-emulation/qemu:tls - Enable TLS support for the VNC console server
 app-emulation/qemu:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
-app-emulation/qemu:vde - Enable Virtual Distributed Ethernet (VDE) based networking
+app-emulation/qemu:vde - Enable VDE-based networking
 app-emulation/qemu:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
+app-emulation/qemu:virtfs - Enable VirtFS support. See http://wiki.qemu.org/Documentation/9psetup
 app-emulation/qemu:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
 app-emulation/qemu:xen - Enables support for Xen backends
-app-emulation/qemu:xfs - Support specific optimizations when files are stored on XFS filesystem.
+app-emulation/qemu:xfs - Support xfsctl() notification and syncing for XFS backed virtual disks.
 app-emulation/qemu-guest-agent:systemd - Install SystemD init script instead of OpenRC
-app-emulation/qemu-kvm:aio - Enables support for Linux's Async IO
-app-emulation/qemu-kvm:alsa - Enable alsa output for sound emulation
-app-emulation/qemu-kvm:brltty - Adds support for braille displays using brltty
-app-emulation/qemu-kvm:curl - Support ISOs / -cdrom directives vis HTTP or HTTPS.
-app-emulation/qemu-kvm:fdt - Enables firmware device tree support
-app-emulation/qemu-kvm:mixemu - Enable audio mixer emulation. On Fedora, known to cause performance problems when using SDL output and ALSA. For OSS, locks the sound device from other applications.
-app-emulation/qemu-kvm:ncurses - Enable the ncurses-based console
-app-emulation/qemu-kvm:pulseaudio - Enable pulseaudio output for sound emulation
-app-emulation/qemu-kvm:qemu-ifup - Provides the qemu-ifup script for use with QEMU's built in bridging
-app-emulation/qemu-kvm:rbd - Enable rados block device backend support, see http://ceph.newdream.net/wiki/QEMU-RBD
-app-emulation/qemu-kvm:sdl - Enable the SDL-based console
-app-emulation/qemu-kvm:spice - Enable Spice protocol support via app-emulation/spice
-app-emulation/qemu-kvm:systemtap - Enable SystemTAP/DTrace tracing
-app-emulation/qemu-kvm:tci - Enable the TCG Interpreter which can speed up or slowdown workloads depending on the host and guest CPUs being emulated. In the future it will be a runtime option but for now its compile time.
-app-emulation/qemu-kvm:tls - Enable TLS support for the VNC console server
-app-emulation/qemu-kvm:usbredir - Use sys-apps/usbredir to redirect USB devices to another machine over TCP
-app-emulation/qemu-kvm:vde - Enable VDE-based networking
-app-emulation/qemu-kvm:vhost-net - Enable accelerated networking using vhost-net, see http://www.linux-kvm.org/page/VhostNet
-app-emulation/qemu-kvm:virtfs - Enable VirtFS support. See http://wiki.qemu.org/Documentation/9psetup
-app-emulation/qemu-kvm:xattr - Add support for getting and setting POSIX extended attributes, through sys-apps/attr. Requisite for the virtfs backend.
-app-emulation/qemu-kvm:xen - Enables support for Xen backends
-app-emulation/qemu-kvm:xfs - Support xfsctl() notification and syncing for XFS backed virtual disks.
 app-emulation/spice:client - Build the spicec client app (does not reduce dependencies at the moment).
 app-emulation/spice:gui - Build some GUI components (inside the guest window).
 app-emulation/spice:smartcard - Enable smartcard remoting using app-emulation/libcacard
@@ -2569,6 +2549,7 @@ media-gfx/nvidia-texture-tools:cg - Enable NVIDIA C graphics compiler toolkit pl
 media-gfx/nvidia-texture-tools:cuda - Enable NVIDIA CUDA toolkit support
 media-gfx/nvidia-texture-tools:glew - Enable support for The OpenGL Extension Wrangler Library (media-libs/glew)
 media-gfx/openclipart:gzip - Compresses clip art using gzip
+media-gfx/postr:gnome2 - Install plugin for =gnome-base/nautilus-2*. Warning: will make =nautilus-3* crash.
 media-gfx/potrace:metric - default to a4 paper size and metric measurement
 media-gfx/povray:mkl - Enable support for Intel Vector Math Library, part of sci-libs/mkl
 media-gfx/pstoedit:emf - Enable media-libs/libemf support
@@ -4739,6 +4720,7 @@ net-wireless/gnuradio:dot - create dot graphs in documentation
 net-wireless/gnuradio:fcd - enable Funcube Dongle source block
 net-wireless/gnuradio:filter - enable filter signal processing blocks
 net-wireless/gnuradio:grc - enable GNU Radio Companion graphical tool to design signal processing flow graphs
+net-wireless/gnuradio:uhd - install UHD source and sink blocks
 net-wireless/gnuradio:utils - install scripts to enable viewing and analysis of files produced by flow graphs
 net-wireless/gnuradio:wavelet - enable wavelet signal processing blocks
 net-wireless/hostapd:crda - Add CRDA support

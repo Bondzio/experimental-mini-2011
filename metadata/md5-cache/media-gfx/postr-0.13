@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
+DEPEND=dev-python/pygtk:2 gnome2? ( >=dev-python/nautilus-python-0.6.1 <dev-python/nautilus-python-1.0 ) app-text/gnome-doc-utils dev-util/intltool sys-devel/gettext virtual/pkgconfig app-arch/xz-utils >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] )
+DESCRIPTION=Flickr uploader for GNOME
+EAPI=4
+HOMEPAGE=http://projects.gnome.org/postr/
+IUSE=gnome2
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2+ CCPL-Attribution-ShareAlike-3.0
+RDEPEND=dev-python/pygtk:2 gnome2? ( >=dev-python/nautilus-python-0.6.1 <dev-python/nautilus-python-1.0 ) dev-python/bsddb3 dev-python/dbus-python dev-python/gconf-python dev-python/gtkspell-python dev-python/libgnome-python dev-python/pygobject:2 dev-python/twisted dev-python/twisted-web || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] )
+SLOT=0
+SRC_URI=mirror://gnome/sources/postr/0.13/postr-0.13.tar.xz
+_eclasses_=eutils	2fd401453e32e8c9a676cd0361b82a5f	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	5914ad8783dd6ac6bc358d730bf4c411	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	libtool	2b273eea1976cfaed3449345d94331ac	multilib	c2b85b5c63a44798c1e442147ac14c5c	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_md5_=2085a05827977ed3ba83ec7789476441

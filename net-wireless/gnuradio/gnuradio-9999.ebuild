@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/gnuradio/gnuradio-9999.ebuild,v 1.1 2012/09/09 05:38:17 zerochaos Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/gnuradio/gnuradio-9999.ebuild,v 1.2 2012/10/09 21:29:53 zerochaos Exp $
 
 EAPI=4
 PYTHON_DEPEND="2"
@@ -15,11 +15,10 @@ EGIT_REPO_URI="http://gnuradio.org/git/gnuradio.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
-IUSE="alsa doc examples fcd filter grc jack oss portaudio qt4 sdl utils wavelet wxwidgets"
+IUSE="alsa doc examples fcd filter grc jack oss portaudio qt4 sdl uhd utils wavelet wxwidgets"
 
 # bug #348206
 # comedi? ( >=sci-electronics/comedilib-0.7 )
-# uhd? ( dev-libs/uhd )
 RDEPEND=">=dev-lang/orc-0.4.12
 	dev-libs/boost
 	dev-python/cheetah
@@ -46,6 +45,7 @@ RDEPEND=">=dev-lang/orc-0.4.12
 		x11-libs/qt-gui:4
 	)
 	sdl? ( media-libs/libsdl )
+	uhd? ( >=net-wireless/uhd-3.4.3-r1 )
 	wavelet? (
 		sci-libs/gsl
 	)
@@ -98,6 +98,7 @@ src_configure() {
 		$(cmake-utils_use_enable jack GR_AUDIO_JACK)
 		$(cmake-utils_use_enable oss GR_AUDIO_OSS)
 		$(cmake-utils_use_enable portaudio GR_AUDIO_PORTAUDIO)
+		$(cmake-utils_use_enable uhd GR_UHD) \
 		$(cmake-utils_use_enable utils GR_UTILS) \
 		$(cmake-utils_use_enable wavelet GR_WAVELET) \
 		$(cmake-utils_use_enable wxwidgets GR_WXGUI) \

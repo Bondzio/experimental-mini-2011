@@ -9,4 +9,4 @@ RDEPEND=>=sys-libs/ncurses-5.2-r3 >=sys-libs/zlib-1.1.3-r2 >=dev-libs/boehm-gc-6
 SLOT=0
 SRC_URI=http://pub.ks-and-ks.ne.jp/prog/pub/w3mmee-p24-22.tar.gz
 _eclasses_=alternatives	7a734a903498a04a0722152a124aa3a5	eutils	2fd401453e32e8c9a676cd0361b82a5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=c940a6533f953edf94107bf67b2d451d
+_md5_=2aebe9665ebdb181630a0c5313ee0afa
