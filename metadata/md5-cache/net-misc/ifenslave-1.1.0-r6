@@ -3,9 +3,9 @@ DEPEND=sys-devel/gcc >=sys-kernel/linux-headers-2.4.22
 DESCRIPTION=Attach and detach slave interfaces to a bonding device
 EAPI=4
 HOMEPAGE=http://sf.net/projects/bonding/
-KEYWORDS=~amd64 ~arm ~ppc ~sparc ~x86
+KEYWORDS=~amd64 ~arm ppc ~sparc ~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=mirror://debian/pool/main/i/ifenslave-2.6/ifenslave-2.6_1.1.0.orig.tar.gz mirror://debian/pool/main/i/ifenslave-2.6/ifenslave-2.6_1.1.0-17.debian.tar.gz
 _eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
-_md5_=dbcb90e5566734f59e91f15b7c2153fa
+_md5_=81770030c838577fe52b214f9c608ce5

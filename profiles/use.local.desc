@@ -5470,7 +5470,6 @@ sys-kernel/dracut:optimization - Build optimized version of dracut_install funct
 sys-kernel/genkernel:cryptsetup - Enable support for Luks disk enrcyption using sys-fs/cryptsetup
 sys-kernel/gentoo-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/hardened-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
-sys-kernel/hardened-sources:xtpax - Enable XATTR_PAX_FLAGS support (EXPERIMENTAL).
 sys-kernel/linux-docs:html - Install HTML documentation
 sys-kernel/linux-firmware:savedconfig - Allows individual selection of firmware files
 sys-kernel/mips-sources:cobalt - Enables support for Cobalt Microserver hardware (Qube2/RaQ2)

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emacs/yatex/yatex-1.76.ebuild,v 1.2 2012/09/26 05:18:08 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/yatex/yatex-1.76.ebuild,v 1.4 2012/10/10 15:39:16 ranger Exp $
 
 EAPI=4
 
