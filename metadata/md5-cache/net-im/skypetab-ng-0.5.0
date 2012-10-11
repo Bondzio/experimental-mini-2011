@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=x11-libs/qt-gui:4 amd64? ( app-emulation/emul-linux-x86-qtlibs ) net-im/skype[-qt-static]
 SLOT=0
 SRC_URI=http://github.com/kekekeks/skypetab-ng/tarball/v0.5.0-fixed -> skypetab-ng-0.5.0.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	2fd401453e32e8c9a676cd0361b82a5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
 _md5_=1eeca03b59251ca3cfa712a2407569fc

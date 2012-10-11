@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=ssl? ( dev-libs/openssl )
 DESCRIPTION=Reverse Remote Shell
-HOMEPAGE=http://www.cycom.se/dl/rrs
+HOMEPAGE=http://freecode.com/projects/rrs
 IUSE=ssl
-KEYWORDS=~amd64 ppc x86
+KEYWORDS=amd64 ppc x86
 LICENSE=MIT
 RDEPEND=ssl? ( dev-libs/openssl )
 SLOT=0
 SRC_URI=http://www.cycom.se/uploads/36/19/rrs-1.70.tar.gz
-_eclasses_=eutils	2fd401453e32e8c9a676cd0361b82a5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=f226bb07fcc9667739659e733ca9ad23
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=4af0a38fa535f365cc63db18ea8101a1

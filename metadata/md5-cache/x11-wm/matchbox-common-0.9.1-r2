@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/libmatchbox-1.1
 SLOT=0
 SRC_URI=http://matchbox-project.org/sources/matchbox-common/0.9/matchbox-common-0.9.1.tar.bz2
-_eclasses_=eutils	2fd401453e32e8c9a676cd0361b82a5f	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=512c7aa24a013a8b7940a44b88970def
