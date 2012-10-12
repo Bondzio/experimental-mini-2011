@@ -10,4 +10,4 @@ RDEPEND=media-libs/freetype net-misc/curl sys-libs/zlib !dedicated? ( media-libs
 SLOT=0
 SRC_URI=http://funpark.warsow-esport.net/~warsow/1.0/warsow_1.0_unified.tar.gz http://funpark.warsow-esport.net/~warsow/1.01/warsow_1.01_sdk.tar.gz http://funpark.warsow-esport.net/~warsow/1.01/warsow_1.01_update.tar.gz mirror://gentoo/warsow.png
 _eclasses_=base	5f55566958e88506923ea360535053cc	check-reqs	381a4debb7a575eefd7db326d08da3dd	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	games	e0a83e3f3f024b8c8ef7a8217d716cbf	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=36008a64ec205762837a5207cd05bcf4
+_md5_=0d5112b215e9066a79dcb3962f0f17c1
