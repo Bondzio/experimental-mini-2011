@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/xteddy/xteddy-2.2.ebuild,v 1.3 2012/05/05 04:53:52 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xteddy/xteddy-2.2.ebuild,v 1.6 2012/10/12 18:23:40 pinkbyte Exp $
 
 EAPI="4"
 
@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64 x86"
 IUSE=""
 
-RDEPEND="media-libs/imlib2
+RDEPEND="media-libs/imlib2[X,png]
 	x11-libs/libX11
 	x11-libs/libXext"
 DEPEND="${RDEPEND}
@@ -26,5 +26,7 @@ DOCS=( AUTHORS README ChangeLog NEWS xteddy.README )
 src_prepare() {
 	# Fix linking order for --as-needed
 	sed -i -e "s/AM_LDFLAGS/xteddy_LDADD/" Makefile.am || die
+	# Fix paths in xtoys script wrt bug #404899
+	sed -i -e "s:/usr/games:/usr/bin:" xtoys || die
 	eautoreconf
 }
