@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/lilypond/lilypond-2.17.2.ebuild,v 1.1 2012/09/15 09:54:31 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/lilypond/lilypond-2.17.4.ebuild,v 1.1 2012/10/13 17:43:16 radhermit Exp $
 
 EAPI="4"
 PYTHON_DEPEND="2"
@@ -44,7 +44,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-tex-docs.patch
+	epatch "${FILESDIR}"/${PN}-2.17.2-tex-docs.patch
 
 	if ! use vim-syntax ; then
 		sed -i -e "s/vim//" GNUmakefile.in || die

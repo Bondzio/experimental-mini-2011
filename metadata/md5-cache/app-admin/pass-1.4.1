@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DESCRIPTION=Stores, retrieves, generates, and synchronizes passwords securely using gpg, pwgen, and git.
+EAPI=4
+HOMEPAGE=http://zx2c4.com/projects/password-store/
+IUSE=+git X zsh-completion fish-completion
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=app-crypt/gnupg app-admin/pwgen app-text/tree git? ( dev-vcs/git ) X? ( x11-misc/xclip ) zsh-completion? ( app-shells/zsh ) fish-completion? ( app-shells/fish )
+SLOT=0
+SRC_URI=http://git.zx2c4.com/password-store/snapshot/password-store-1.4.1.tar.xz
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676
+_md5_=7d0258298dabbf83702bd216454b49cb
