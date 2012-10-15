@@ -1893,7 +1893,7 @@ games-board/freedoko:xskatcards - Install the XSkat card set
 games-board/grhino:gtp - Install the GTP (Go/Game Text Protocol) frontend
 games-board/pasang-emas:extras - Install some extra themes
 games-board/pysolfc:extra-cardsets - Install extra cardsets
-games-board/pysolfc:sound - Enable sound support usingdev-python/pygame
+games-board/pysolfc:sound - Enable sound support using dev-python/pygame
 games-board/spider:athena - Enable athena widgets
 games-board/xboard:default-font - Install the default font that xboard uses
 games-board/xboard:zippy - Enable experimental zippy client
@@ -4090,7 +4090,9 @@ net-libs/axtls:cgi-lua - Enables lua backed cgi for axhttpd server
 net-libs/axtls:cgi-php - Enables php backed cgi for axhttpd server
 net-libs/axtls:httpd - Enables axhttpd web server component
 net-libs/axtls:static - Statically build axhttpd server
+net-libs/c-client:chappa - Enable Eduardo Chappa's patches for use with mail-client/alpine (mainly adds support for maildir)
 net-libs/c-client:doc - Install RFCs related to IMAP
+net-libs/c-client:topal - Enable support for net-mail/topal for use with mail-client/alpine
 net-libs/courier-authlib:vpopmail - Enable vpopmail support
 net-libs/cvm:vpopmail - Enable vpopmail support
 net-libs/cyassl:aes-gcm - Enable AES Galois/Counter mode
@@ -4773,6 +4775,21 @@ net-wireless/wpa_supplicant:madwifi - Add support for madwifi (Atheros chipset)
 net-wireless/wpa_supplicant:ps3 - Add support for ps3 hypervisor driven gelic wifi
 net-wireless/wpa_supplicant:wimax - Add support for Wimax EAP-PEER authentication algorithm
 net-wireless/wpa_supplicant:wps - Add support for Wi-Fi Protected Setup
+razorqt-base/razorqt-meta:lightdm - Install x11-misc/lightdm display manager and Razor-qt's LightDM greeter
+razorqt-base/razorqt-panel:clock - Add clock panel applet
+razorqt-base/razorqt-panel:colorpicker - Add colorpicker panel applet
+razorqt-base/razorqt-panel:cpuload - Add CPU load panel applet; depends on sys-libs/libstatgrab
+razorqt-base/razorqt-panel:desktopswitch - Add desktop switch panel applet
+razorqt-base/razorqt-panel:mainmenu - Add main menu panel applet
+razorqt-base/razorqt-panel:mount - Add external storage mounting panel applet; depends on sys-fs/udisks
+razorqt-base/razorqt-panel:networkmonitor - Add network monitor panel applet; depends on sys-libs/libstatgrab
+razorqt-base/razorqt-panel:quicklaunch - Add quicklaunch panel applet
+razorqt-base/razorqt-panel:screensaver - Add screensaver panel applet
+razorqt-base/razorqt-panel:sensors - Add sensors panel applet; depends on sys-apps/lm_sensors
+razorqt-base/razorqt-panel:showdesktop - Add show desktop panel applet
+razorqt-base/razorqt-panel:taskbar - Add taskbar panel applet
+razorqt-base/razorqt-panel:tray - Add system tray panel applet
+razorqt-base/razorqt-panel:volume - Add volume mixer panel applet; depends on either media-libs/alsa-lib or media-sound/pulseaudio
 rox-base/rox:video - Enable rox-extra/videothumbnail for creating thumbnails of videos with mplayer or totem.
 rox-extra/archive:ace - Enable .ace extraction via app-arch/unace
 rox-extra/archive:compress - Enable tar.Z and *.Z extraction via app-arch/ncompress
