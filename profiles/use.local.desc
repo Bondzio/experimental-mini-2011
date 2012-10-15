@@ -2972,6 +2972,7 @@ media-sound/mangler:espeak - Text to speach engine
 media-sound/mangler:g15 - Logitech g15 lcd support
 media-sound/mangler:opus - Codec specialized for speach over the internet
 media-sound/mixxx:shout - Enable broadcasting support via media-libs/libshout
+media-sound/moc:magic - Use libmagic to determine mimetypes
 media-sound/moc:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mp3blaster:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mp3splt-gtk:audacious - Include media-sound/audacious support
@@ -4389,8 +4390,8 @@ net-misc/csync:sftp - Enable sftp transfer support via net-libs/libssh
 net-misc/csync:webdav - Adds support for HTTP/dav content via net-libs/neon
 net-misc/curl:ares - Enabled c-ares dns support
 net-misc/curl:gnutls - Prefer gnutls over nss and openssl as the crypto engine
-net-misc/curl:metalink - Enalbe metalink support
-net-misc/curl:nonblocking - Enalbe nonblocking communication
+net-misc/curl:metalink - Enable metalink support
+net-misc/curl:nonblocking - Enable nonblocking communication
 net-misc/curl:nss - Prefer NSS over openssl as the crypto engine
 net-misc/curl:rtmp - Enable Enables RTMPDump Streaming Media support
 net-misc/curl:ssh - Enabled SSH urls in curl using libssh2
@@ -6085,6 +6086,8 @@ x11-wm/xpra:parti - Runtime support for partioning window manager
 x11-wm/xpra:rencode - Enable rencode support
 x11-wm/xpra:server - Build server-side code
 x11-wm/xpra:ssh - Runtime support for secure shell communication
+x11-wm/xpra:vpx - Enable vpx image format support
+x11-wm/xpra:webp - Enable webp image format support
 xfce-base/libxfce4ui:glade - Build support for Glade 3's GtkBuilder implementation
 xfce-base/libxfcegui4:glade - Build glade bindings
 xfce-base/xfce4-session:consolekit - Enable authentication support using sys-auth/consolekit

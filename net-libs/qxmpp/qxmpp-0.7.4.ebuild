@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/qxmpp/qxmpp-0.7.4.ebuild,v 1.2 2012/10/04 15:19:59 pinkbyte Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/qxmpp/qxmpp-0.7.4.ebuild,v 1.6 2012/10/14 18:46:13 pinkbyte Exp $
 
 EAPI=4
 
@@ -12,13 +12,14 @@ SRC_URI="http://qxmpp.googlecode.com/files/${P}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE="debug doc"
+KEYWORDS="~amd64 ~x86 ~amd64-linux"
+IUSE="debug doc test"
 
-DEPEND="x11-libs/qt-core:4
+RDEPEND="x11-libs/qt-core:4
 	x11-libs/qt-gui:4
 	media-libs/speex"
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}
+	test? ( x11-libs/qt-test:4 )"
 
 src_prepare(){
 	if ! use doc; then
@@ -27,11 +28,15 @@ src_prepare(){
 			-e '/INSTALLS/d' \
 			qxmpp.pro || die "sed for removing docs failed"
 	fi
+	if ! use test; then
+		sed -i -e '/SUBDIRS/s/tests//' \
+			qxmpp.pro || die "sed for removing tests failed"
+	fi
 	qt4-r2_src_prepare
 }
 
 src_configure(){
-	eqmake4 "${S}"/qxmpp.pro "PREFIX=/usr" "LIBDIR=$(get_libdir)"
+	eqmake4 "${S}"/qxmpp.pro "PREFIX=${EPREFIX}/usr" "LIBDIR=$(get_libdir)"
 }
 
 src_install() {
