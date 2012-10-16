@@ -2958,6 +2958,7 @@ media-sound/jack-audio-connection-kit:coreaudio - Build the CoreAudio driver on 
 media-sound/jack-audio-connection-kit:cpudetection - Enables runtime cpudetection
 media-sound/jack-audio-connection-kit:netjack - Build with support for Realtime Audio Transport over generic IP
 media-sound/jack-audio-connection-kit:pam - Add basic realime configuration via sys-auth/realtime-base
+media-sound/jalv:gtk2 - Adds support for GTK+2 in addition to GTK+3 controlled by the gtk useflag.
 media-sound/jalv:gtkmm - Adds support for dev-cpp/gtkmm: C++ interface for GTK+2
 media-sound/kid3:acoustid - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
 media-sound/kwave:phonon - Enable playback via Phonon
@@ -4427,7 +4428,14 @@ net-misc/iputils:SECURITY_HAZARD - Allow non-root users to flood (ping -f). This
 net-misc/knock:server - Installs the knockd server daemon.
 net-misc/leechcraft-netstoremanager:googledrive - Support Google Drive storage backend
 net-misc/leechcraft-netstoremanager:yandexdisk - Support Yandex.Disk storage backend
+net-misc/lldpd:cdp - Enable Cisco Discovery Protocol
+net-misc/lldpd:dot1 - Enable Dot1 extension (VLAN stuff)
+net-misc/lldpd:dot3 - Enable Dot3 extension (PHY stuff)
+net-misc/lldpd:edp - Enable Extreme Discovery Protocol
+net-misc/lldpd:fdp - Enable Foundry Discovery Protocol
+net-misc/lldpd:lldpmed - Enable LLDP-MED extension
 net-misc/lldpd:snmp - Enable the use of SNMP
+net-misc/lldpd:sonmp - Enable SynOptics Network Management
 net-misc/mediatomb:id3tag - Use media-libs/libid3tag for reading files' metadata rather than taglib
 net-misc/mediatomb:inotify - Enable inotify filesystem monitoring support
 net-misc/mediatomb:lastfm - Enable last.fm support
@@ -5709,6 +5717,7 @@ www-plugins/gnash:cygnal - Enable building of the cygnal server
 www-plugins/gnash:dump - Enable dump output module for creating video from SWF
 www-plugins/gnash:egl - Enable EGL support for the OpenVG, OpenGL and X11 renderers
 www-plugins/gnash:gconf - Enable GConf configuration backend
+www-plugins/gnash:harden - Enable upstream recommended hardening build flags (may conflict with system ones)
 www-plugins/gnash:openvg - Rendering based on the OpenVG graphics acceleration API
 www-plugins/gnash:sdl-sound - Enable SDL audio output for the standalone player
 www-plugins/gnash:ssh - Enable using SSH for network authentication in libnet
