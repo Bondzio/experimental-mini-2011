@@ -10,4 +10,4 @@ RDEPEND=virtual/linuxtv-dvb-headers avahi? ( net-dns/avahi ) xmltv? ( media-tv/x
 SLOT=0
 SRC_URI=http://www.lonelycoder.com/debian/dists/hts/main/source/hts-tvheadend_2.12.tar.gz
 _eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=3597ebb8d18385520f5dcfe3552d56cf
+_md5_=420bc6e4dd382da7cad942ba3574cc7b

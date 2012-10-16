@@ -4161,6 +4161,9 @@ net-libs/libpcap:canusb - Use virtual/libusb to support Controller Area Network 
 net-libs/libpcap:netlink - Use dev-libs/libnl to put wireless interfaces in monitor mode.
 net-libs/libproxy:gnome - Enable support for reading proxy settings from GNOME
 net-libs/libproxy:kde - Enable support for reading proxy settings from KDE
+net-libs/libproxy:pac - Enable support for PAC and WPAD (proxy auto-config and autodiscovery)
+net-libs/libproxy:spidermonkey - Use libmozjs from dev-lang/spidermonkey for PAC parsing
+net-libs/libproxy:webkit - Use libjavascriptcoregtk from net-libs/webkit-gtk for PAC parsing
 net-libs/libsocialweb:connman - Use net-misc/connman for getting network connection status information
 net-libs/libsocialweb:gnome - Extract proxy information using net-libs/libsoup-gnome
 net-libs/libsocialweb:introspection - Use dev-libs/gobject-introspection for introspection
