@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
+DEPEND=>=sys-apps/sed-4 !<sys-apps/portage-2.1.10.58 python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+DESCRIPTION=GTK frontend for VirtualBox
+EAPI=4
+HOMEPAGE=http://code.google.com/p/vboxgtk/
+IUSE=linguas_cs linguas_gl python_targets_python2_6 python_targets_python2_7
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=|| ( app-emulation/virtualbox[-headless,python,sdk] >=app-emulation/virtualbox-bin-2.2.2[python] ) dev-python/pygobject:3 x11-libs/gtk+:3 python_targets_python2_6? ( dev-lang/python:2.6 ) python_targets_python2_7? ( dev-lang/python:2.7 )
+REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
+SLOT=0
+SRC_URI=http://vboxgtk.googlecode.com/files/vboxgtk-0.8.0.tar.gz
+_eclasses_=gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e
+_md5_=a5b7a0a065a9c99ead22ae07d1f0c786
