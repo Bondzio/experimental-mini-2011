@@ -9,4 +9,4 @@ RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.linuxtogo.org/~kevin/SeaBIOS/seabios-1.7.0.tar.gz http://dev.gentoo.org/~cardoe/distfiles/seabios-1.7.0-bins.tar.xz
 _eclasses_=python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=c74ecd281d9c978c957e714d23d7646c
+_md5_=0ca52b9e6be0b6810be2f94aeed9e909

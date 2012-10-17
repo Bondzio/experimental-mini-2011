@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Symlinks and syncs browser profile dirs to RAM
+EAPI=4
+HOMEPAGE=https://wiki.archlinux.org/index.php/Profile-sync-daemon
+IUSE=cron
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 GPL-3
+RDEPEND=app-shells/bash net-misc/rsync cron? ( virtual/cron )
+SLOT=0
+SRC_URI=https://github.com/hasufell/profile-sync-daemon/tarball/v3.16 -> profile-sync-daemon-3.16.tar.gz
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
+_md5_=414da0d24e57b98b726ab7fbb68b48c2

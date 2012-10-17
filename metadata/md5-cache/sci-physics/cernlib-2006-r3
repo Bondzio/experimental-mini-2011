@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst prepare setup test
-DEPEND=virtual/fortran >=x11-libs/openmotif-2.3:0 virtual/lapack dev-lang/cfortran x11-misc/imake x11-misc/makedepend virtual/pkgconfig
+DEPEND=x11-libs/openmotif:0 virtual/lapack dev-lang/cfortran x11-misc/imake x11-misc/makedepend virtual/pkgconfig virtual/fortran
 DESCRIPTION=CERN program library for High Energy Physics
 EAPI=3
 HOMEPAGE=http://wwwasd.web.cern.ch/wwwasd/cernlib
 KEYWORDS=amd64 hppa sparc x86
 LICENSE=GPL-2 LGPL-2 BSD
-RDEPEND=virtual/fortran >=x11-libs/openmotif-2.3:0 virtual/lapack dev-lang/cfortran
+RDEPEND=x11-libs/openmotif:0 virtual/lapack dev-lang/cfortran virtual/fortran
 SLOT=0
 SRC_URI=mirror://debian/pool/main/c/cernlib/cernlib_2006.dfsg.2.orig.tar.gz mirror://debian/pool/main/c/cernlib/cernlib_2006.dfsg.2-14.diff.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	2e61f585ad8ae4e1f029e4288ae74dcc	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=26b808d54698788e7897650df2d2aed4
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	81ddef687e39a5ba6eaf88c8215f410e	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=494348d2d3af2584863ee01d3c82f36b

@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install prepare setup
-DEPEND=sci-chemistry/ccp4-apps sci-chemistry/pymol sci-libs/mmdb sci-visualization/gnuplot !minimal? ( sci-chemistry/solve-resolve-bin sci-chemistry/arp-warp-bin ) virtual/fortran sci-libs/ccp4-libs
+DEPEND=sci-chemistry/ccp4-apps sci-chemistry/pymol sci-libs/mmdb sci-visualization/gnuplot !minimal? ( sci-chemistry/solve-resolve-bin sci-chemistry/arp-warp-bin ) virtual/fortran sci-libs/ccp4-libs virtual/fortran
 DESCRIPTION=A direct-method program for SAD/SIR phasing
 EAPI=3
 HOMEPAGE=http://cryst.iphy.ac.cn/Project/protein/protein-I.html
 IUSE=examples +minimal
 KEYWORDS=~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux
 LICENSE=ccp4 oasis
-RDEPEND=sci-chemistry/ccp4-apps sci-chemistry/pymol sci-libs/mmdb sci-visualization/gnuplot !minimal? ( sci-chemistry/solve-resolve-bin sci-chemistry/arp-warp-bin )
+RDEPEND=sci-chemistry/ccp4-apps sci-chemistry/pymol sci-libs/mmdb sci-visualization/gnuplot !minimal? ( sci-chemistry/solve-resolve-bin sci-chemistry/arp-warp-bin ) virtual/fortran
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~jlec/distfiles/oasis4.0_Linux.zip
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	2e61f585ad8ae4e1f029e4288ae74dcc	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	81ddef687e39a5ba6eaf88c8215f410e	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=be3c43a3332154bd01eeaaf9bd39c3af
