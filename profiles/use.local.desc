@@ -3493,6 +3493,7 @@ media-video/vlc:matroska - Enables matroska support using reference libraries (f
 media-video/vlc:media-library - Build the (sqlite based) media library.
 media-video/vlc:omxil - Enables OpenMAX Integration Layer codec module.
 media-video/vlc:optimisememory - Enable optimisation for memory rather than performance.
+media-video/vlc:opus - Support opus decoding via libopus.
 media-video/vlc:postproc - Enables image post-processing via libpostproc (part of FFmpeg).
 media-video/vlc:projectm - Enables the projectM visualization plugin.
 media-video/vlc:pvr - Enables PVR cards access module.
