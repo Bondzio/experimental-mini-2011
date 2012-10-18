@@ -8,5 +8,5 @@ LICENSE=BSD-1
 RDEPEND=app-arch/cpio
 SLOT=0
 SRC_URI=mirror://gentoo/rpm2targz-9.0.0.5g.tar.xz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=37b9f4c1e89d63bac00f6261ff30ce02

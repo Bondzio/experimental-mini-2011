@@ -7,5 +7,5 @@ LICENSE=as-is
 RDEPEND=media-sound/lame media-sound/mpg123
 SLOT=0
 SRC_URI=http://star.arm.ac.uk/~spm/software/liveice.tar.gz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=3ee448bf6ae641b7890e203d10f03c7a

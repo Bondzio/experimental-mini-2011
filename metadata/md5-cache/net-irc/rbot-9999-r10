@@ -6,5 +6,5 @@ IUSE=spell aspell timezone translator shorturl nls dict figlet fortune cal host 
 LICENSE=GPL-2 as-is
 RDEPEND=>=dev-lang/ruby-1.8 dev-ruby/ruby-bdb timezone? ( dev-ruby/tzinfo ) spell? ( aspell? ( app-text/aspell ) !aspell? ( app-text/hunspell ) ) translator? ( dev-ruby/mechanize ) shorturl? ( dev-ruby/shorturl ) nls? ( dev-ruby/ruby-gettext ) dict? ( dev-ruby/ruby-dict ) figlet? ( app-misc/figlet ) toilet? ( app-misc/toilet ) fortune? ( games-misc/fortune-mod ) cal? ( || ( sys-apps/util-linux sys-freebsd/freebsd-ubin ) ) host? ( net-dns/bind-tools ) =dev-lang/ruby-1.8*
 SLOT=0
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	c2b85b5c63a44798c1e442147ac14c5c	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	9aa8a023e062fca0ba79362d9d0cc488	ruby	d0d4dafe867eb79ce8953e27d88fc00f	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=fbf95737d3b0624ccea59a28ff154945

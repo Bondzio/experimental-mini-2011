@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.18 >=media-libs/gstreamer-0.10.22 >=media-libs/gst-plugins-base-0.10.22 media-libs/gst-plugins-good >=dev-libs/liboil-0.3 >=x11-libs/qt-gui-4.4:4 >=media-libs/speex-1.2_rc1 media-plugins/gst-plugins-speex >=media-plugins/gst-plugins-vorbis-0.10.22 >=media-plugins/gst-plugins-theora-0.10.22 >=media-plugins/gst-plugins-alsa-0.10.22 >=media-plugins/gst-plugins-ogg-0.10.22 media-plugins/gst-plugins-v4l2 media-plugins/gst-plugins-jpeg net-im/psi !<net-im/psi-0.13_rc1
 SLOT=0
 SRC_URI=http://delta.affinix.com/download/psimedia/psimedia-1.0.3.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=1e3b3e00e24a105fdc5c30357d737f71

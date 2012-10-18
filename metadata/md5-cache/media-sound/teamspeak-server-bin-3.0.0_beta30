@@ -7,5 +7,5 @@ LICENSE=teamspeak3
 RESTRICT=strip
 SLOT=0
 SRC_URI=amd64? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-30/teamspeak3-server_linux-amd64-3.0.0-beta30.tar.gz ) x86? ( http://ftp.4players.de/pub/hosted/ts3/releases/beta-30/teamspeak3-server_linux-x86-3.0.0-beta30.tar.gz )
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=2505a1f731d2418274b97b3dab33509b

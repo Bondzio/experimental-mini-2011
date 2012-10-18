@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-libs/openssl sys-libs/tdb courierauth? ( net-libs/courier-authlib ) pcre? ( dev-libs/libpcre )
 SLOT=0
 SRC_URI=mirror://sourceforge/fdm/fdm-1.6.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8c3f334dbc480a1e45fe6888063cd93b

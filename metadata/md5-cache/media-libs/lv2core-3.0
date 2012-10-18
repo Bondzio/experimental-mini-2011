@@ -7,5 +7,5 @@ LICENSE=LGPL-2.1 MIT
 RDEPEND=!<media-libs/slv2-0.4.2
 SLOT=0
 SRC_URI=http://lv2plug.in/spec/lv2core-3.0.tar.bz2
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=36a0c54957d6a74f2ec6e36bab1d164b

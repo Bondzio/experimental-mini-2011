@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=net-irc/irssi net-libs/loudmouth
 SLOT=0
 SRC_URI=http://cybione.org/~irssi-xmpp/files/irssi-xmpp-0.52.tar.gz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=8e8e94f09acdd3a14d226056754b5762

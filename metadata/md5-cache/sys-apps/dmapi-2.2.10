@@ -7,5 +7,5 @@ LICENSE=LGPL-2.1
 RDEPEND=sys-fs/xfsprogs
 SLOT=0
 SRC_URI=ftp://oss.sgi.com/projects/xfs/cmd_tars/dmapi-2.2.10.tar.gz ftp://oss.sgi.com/projects/xfs/previous/cmd_tars/dmapi-2.2.10.tar.gz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=514ca9a90bbb7152d50372e71e38156b

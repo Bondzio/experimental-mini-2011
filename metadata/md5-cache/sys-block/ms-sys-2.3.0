@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=virtual/libintl
 SLOT=0
 SRC_URI=mirror://sourceforge/ms-sys/ms-sys-2.3.0.tar.gz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=e03c3b18c50c1274e0c4a60c6b96b418

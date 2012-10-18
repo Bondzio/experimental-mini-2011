@@ -7,5 +7,5 @@ LICENSE=PHP-2.02 BSD
 RDEPEND=>=dev-php/PEAR-Net_SMTP-1.2.7 dev-lang/php >=dev-php/pear-1.8.1
 SLOT=0
 SRC_URI=http://pear.php.net/get/Mail-1.1.14.tgz
-_eclasses_=multilib	c2b85b5c63a44798c1e442147ac14c5c	php-pear-r1	21c0c441f5d64d974c77685b2a05867a	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	php-pear-r1	21c0c441f5d64d974c77685b2a05867a	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=54325607f1c8934fa6ae654b019483be
