@@ -1,12 +1,12 @@
 DEFINED_PHASES=install prepare setup
-DEPEND=virtual/fortran virtual/blas virtual/fortran
+DEPEND=virtual/blas virtual/fortran
 DESCRIPTION=Conjugate gradient Codes for large sparse linear systems
 EAPI=4
 HOMEPAGE=http://fetk.org/codes/cgcode/index.html
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
-RDEPEND=virtual/fortran virtual/blas virtual/fortran
+RDEPEND=virtual/blas virtual/fortran
 SLOT=0
 SRC_URI=http://www.fetk.org/codes/download/cgcode-1.0.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	81ddef687e39a5ba6eaf88c8215f410e	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=37cfbd055ba1d82131e160aabf2b1082
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	7ed6d595f33531e0419996c7c29fa632	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=3c44d694c0df6258369a098700c658b2

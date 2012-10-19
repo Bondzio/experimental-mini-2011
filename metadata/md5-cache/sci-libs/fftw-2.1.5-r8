@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare setup test
-DEPEND=fortran? ( virtual/fortran ) mpi? ( virtual/mpi ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool fortran? ( virtual/fortran )
+DEPEND=mpi? ( virtual/mpi ) || ( >=sys-devel/automake-1.11.1:1.11 >=sys-devel/automake-1.12:1.12 ) >=sys-devel/autoconf-2.68 sys-devel/libtool fortran? ( virtual/fortran )
 DESCRIPTION=Fast C library for the Discrete Fourier Transform
 EAPI=4
 HOMEPAGE=http://www.fftw.org
 IUSE=doc float fortran mpi openmp threads static-libs
 KEYWORDS=alpha amd64 ~arm hppa ia64 ppc ppc64 s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
 LICENSE=GPL-2
-RDEPEND=fortran? ( virtual/fortran ) mpi? ( virtual/mpi ) fortran? ( virtual/fortran )
+RDEPEND=mpi? ( virtual/mpi ) fortran? ( virtual/fortran )
 SLOT=2.1
 SRC_URI=http://www.fftw.org/fftw-2.1.5.tar.gz
-_eclasses_=autotools	f4bee52a728da1f76470f4b8d246c50f	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	81ddef687e39a5ba6eaf88c8215f410e	libtool	2b273eea1976cfaed3449345d94331ac	multilib	9aa8a023e062fca0ba79362d9d0cc488	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=bd620a18148c4ffa420da2ea8ed9e677
+_eclasses_=autotools	f4bee52a728da1f76470f4b8d246c50f	eutils	5a98daf52f7430a4a6f46cee24cfe3e2	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	fortran-2	7ed6d595f33531e0419996c7c29fa632	libtool	2b273eea1976cfaed3449345d94331ac	multilib	9aa8a023e062fca0ba79362d9d0cc488	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=22614f64804f61fcbb6e98c276e86283

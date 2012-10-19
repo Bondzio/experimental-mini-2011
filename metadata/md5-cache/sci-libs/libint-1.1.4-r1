@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure prepare setup
-DEPEND=virtual/fortran virtual/fortran
+DEPEND=virtual/fortran
 DESCRIPTION=Matrix elements (integrals) evaluation over Cartesian Gaussian functions
 EAPI=4
 HOMEPAGE=http://www.chem.vt.edu/chem-dept/valeev/software/libint/libint.html
 IUSE=static-libs
 KEYWORDS=amd64 x86 ~amd64-linux ~x86-linux
 LICENSE=GPL-2
-RDEPEND=virtual/fortran virtual/fortran
+RDEPEND=virtual/fortran
 SLOT=0
 SRC_URI=http://www.chem.vt.edu/chem-dept/valeev/software/libint/src/libint-1.1.4.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	81ddef687e39a5ba6eaf88c8215f410e	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=7f0e67c113939151b4234c5eaeeb53a5
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fortran-2	7ed6d595f33531e0419996c7c29fa632	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=fa105742520fc92e4856e8c046acc2c9
