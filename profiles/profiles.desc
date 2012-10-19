@@ -16,8 +16,8 @@
 
 arch		funtoo/1.0/linux-gnu/arch/x86-32bit			testing
 arch		funtoo/1.0/linux-gnu/arch/x86-64bit			testing
-arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv7a		testing
-arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv6j		testing
+arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv7a_hardfp	testing
+arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv6j_hardfp	testing
 
 build		funtoo/1.0/linux-gnu/build/stable			testing
 build		funtoo/1.0/linux-gnu/build/current			testing
