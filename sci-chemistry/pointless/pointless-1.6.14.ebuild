@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/pointless/pointless-1.6.14.ebuild,v 1.1 2012/02/28 20:52:39 jlec Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/pointless/pointless-1.6.14.ebuild,v 1.3 2012/10/19 15:19:34 jlec Exp $
 
 EAPI="3"
 
@@ -23,8 +23,7 @@ DEPEND="
 	sci-libs/clipper
 	sci-libs/fftw:2.1
 	sci-libs/mmdb
-	>=sci-libs/cctbx-2010.03.29.2334-r3
-	virtual/fortran"
+	>=sci-libs/cctbx-2010.03.29.2334-r3"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"

@@ -1,11 +1,12 @@
-DEFINED_PHASES=install preinst prepare unpack
-DEPEND=|| ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DEFINED_PHASES=install postinst postrm preinst prepare unpack
+DEPEND=>=sys-apps/sed-4 || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=Easy way to install DLLs needed to work around problems in Wine
 EAPI=4
 HOMEPAGE=http://code.google.com/p/winetricks/ http://wiki.winehq.org/winetricks
 IUSE=gtk kde
-LICENSE=LGPL-2.1
-RDEPEND=app-emulation/wine gtk? ( gnome-extra/zenity ) kde? ( kde-base/kdialog )
+LICENSE=LGPL-2.1+
+RDEPEND=app-arch/cabextract app-arch/unzip app-emulation/wine gtk? ( gnome-extra/zenity ) kde? ( kde-base/kdialog )
 SLOT=0
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=34e54b47793648f8dc91ae92b147f90b
+SRC_URI=gtk? ( http://dev.gentoo.org/~tetromino/distfiles/wine/winetricks-gentoo-2012.10.19.tar.bz2 ) kde? ( http://dev.gentoo.org/~tetromino/distfiles/wine/winetricks-gentoo-2012.10.19.tar.bz2 )
+_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	multilib	9aa8a023e062fca0ba79362d9d0cc488	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=34e652d0c72e99824a30501f0f72ea97

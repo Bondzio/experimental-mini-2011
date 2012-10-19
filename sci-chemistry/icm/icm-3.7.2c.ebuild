@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/icm/icm-3.7.2c.ebuild,v 1.1 2012/02/27 12:48:07 alexxy Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/icm/icm-3.7.2c.ebuild,v 1.2 2012/10/19 09:09:23 alexxy Exp $
 
 EAPI="4"
 
@@ -86,7 +86,7 @@ src_install () {
 		rm  "${D}/${instdir}/icmng64" || die
 		rm "${D}/${instdir}/icmora64" || die
 		rm "${D}/${instdir}/icmora64.bin" || die
-		rm -rf ${D}/${instdir}/lib64 || die
+		rm -rf "${D}/${instdir}/lib64" || die
 	elif use amd64; then
 		if use 32bit; then
 			dosym "${instdir}/icm"  /opt/bin/icm || die
