@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libsocialweb/libsocialweb-0.25.20.ebuild,v 1.8 2012/09/23 06:14:45 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libsocialweb/libsocialweb-0.25.20.ebuild,v 1.9 2012/10/20 03:01:33 tetromino Exp $
 
 EAPI="4"
 GCONF_DEBUG="no"
@@ -15,7 +15,7 @@ HOMEPAGE="http://git.gnome.org/browse/libsocialweb"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="amd64 ~ppc ~ppc64 x86"
-IUSE="doc connman +gnome +introspection +networkmanager vala"
+IUSE="connman +gnome +introspection +networkmanager vala"
 
 # NOTE: coverage testing should not be enabled
 RDEPEND=">=dev-libs/glib-2.14:2
@@ -36,9 +36,6 @@ DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.40
 	virtual/pkgconfig
 	sys-devel/gettext
-	doc? (
-		dev-libs/libxslt
-		>=dev-util/gtk-doc-1.15 )
 	vala? (
 		>=dev-lang/vala-0.10.0:0.12[vapigen]
 		>=dev-libs/gobject-introspection-0.9.6 )"
