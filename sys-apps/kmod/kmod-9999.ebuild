@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/kmod-9999.ebuild,v 1.33 2012/09/09 17:38:10 williamh Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/kmod-9999.ebuild,v 1.35 2012/10/20 09:30:13 ssuominen Exp $
 
 EAPI=4
 
@@ -76,4 +76,12 @@ src_install()
 		dosym /usr/bin/kmod /sbin/depmod
 		dosym /usr/bin/kmod /sbin/modprobe
 	fi
+
+	cat <<-EOF > "${T}"/usb-load-ehci-first.conf
+	softdep uhci_hcd pre: ehci_hcd
+	softdep ohci_hcd pre: ehci_hcd
+	EOF
+
+	insinto /etc/modprobe.d
+	doins "${T}"/usb-load-ehci-first.conf #260139
 }

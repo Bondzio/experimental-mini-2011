@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libsoup/libsoup-2.36.1-r1.ebuild,v 1.11 2012/10/10 03:18:13 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libsoup/libsoup-2.36.1-r1.ebuild,v 1.13 2012/10/20 06:16:02 tetromino Exp $
 
 EAPI="4"
 GCONF_DEBUG="yes"
@@ -33,22 +33,15 @@ DEPEND="${RDEPEND}
 #		net-libs/glib-networking[ssl])"
 
 pkg_setup() {
-	# Set invalid apache module dir until apache tests are ready, bug #326957
+	# Disable apache tests until they are usable on Gentoo, bug #326957
 	DOCS="AUTHORS NEWS README"
 	G2CONF="${G2CONF}
 		--disable-static
 		--disable-tls-check
 		--without-gnome
-		--with-apache-module-dir="${T}"
+		--without-apache-httpd
 		$(use_enable introspection)
 		$(use_with samba ntlm-auth ${EPREFIX}/usr/bin/ntlm_auth)"
-}
-
-src_configure() {
-	# FIXME: we need addpredict to workaround bug #324779 until
-	# root cause (bug #249496) is solved
-	addpredict /usr/share/snmp/mibs/.index
-	gnome2_src_configure
 }
 
 src_prepare() {
@@ -62,4 +55,11 @@ src_prepare() {
 	epatch "${FILESDIR}/${P}-SoupHTTPInputStream-GCancellable.patch"
 
 	gnome2_src_prepare
+}
+
+src_configure() {
+	# FIXME: we need addpredict to workaround bug #324779 until
+	# root cause (bug #249496) is solved
+	addpredict /usr/share/snmp/mibs/.index
+	gnome2_src_configure
 }

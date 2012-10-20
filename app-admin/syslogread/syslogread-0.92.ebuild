@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/syslogread/syslogread-0.92.ebuild,v 1.11 2012/05/31 02:43:57 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/syslogread/syslogread-0.92.ebuild,v 1.13 2012/10/20 09:26:00 ago Exp $
 
 EAPI="2"
 
@@ -12,7 +12,7 @@ SRC_URI="http://untroubled.org/syslogread/archive/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~arm ~x86"
+KEYWORDS="~amd64 ~arm ~x86"
 IUSE=""
 
 DEPEND=">=dev-libs/bglibs-1.106"
@@ -54,11 +54,11 @@ src_install() {
 	insinto /var/lib/supervise/syslogd/log
 	newins "${FILESDIR}/${PV}/syslogread-log.run" syslogread-log.run
 
-	keepdir /var/log/klogd
-	keepdir /var/log/syslog
+	#keepdir /var/log/klogd
+	#keepdir /var/log/syslog
 
-	fowners syslog:syslog /var/log/syslog
-	fperms o-rwx /var/log/syslog
+	#fowners syslog:syslog /var/log/syslog
+	#fperms o-rwx /var/log/syslog
 }
 
 pkg_postinst() {
