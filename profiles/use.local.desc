@@ -3129,6 +3129,7 @@ media-tv/freevo:mixer - Enable support for adjusting volume via media-sound/aumi
 media-tv/freevo:tv - Enable support for the tv guide plugin
 media-tv/freevo:tvtime - Enables tvtime support, additional to tv use flag
 media-tv/gentoo-vdr-scripts:nvram - Add support for using nvram-wakeup to set wakeup time in bios
+media-tv/me-tv:http - Installation of Web-frontend
 media-tv/mythtv:alsa - Allows MythTV to directly output sound to ALSA devices, this is needed if you are using ALSA dmix or SPDIF. Note, you will have to physically type your device into the MythTV configuration since it will only give you /dev/dsp devices in the drop down.
 media-tv/mythtv:altivec - Builds ffmpeg's codec libraries with altivec support.
 media-tv/mythtv:autostart - Uses a custom autostart configuration gleaned from experience with MythTV since its early versions and discussed with other MythTV maintainers and users. Does not rely on KDE being installed like most methods do.
@@ -5531,7 +5532,6 @@ sys-kernel/mkinitcpio:cryptsetup - Add cryptsetup support
 sys-kernel/mkinitcpio:device-mapper - Add device-mapper support
 sys-kernel/mkinitcpio:dmraid - Add dmraid support
 sys-kernel/mkinitcpio:mdadm - Add mdadm support
-sys-kernel/mkinitcpio:plymouth - Add plymouth support
 sys-kernel/openvz-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/pf-sources:experimental - Apply patches that are considered experimental. For more information, check out the ChangeLog or the ebuild that interests you.
