@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/munin/munin-2.0.7-r2.ebuild,v 1.2 2012/10/18 19:06:33 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/munin/munin-2.0.7-r3.ebuild,v 1.1 2012/10/21 05:26:25 flameeyes Exp $
 
 EAPI=4
 
-PATCHSET=2
+PATCHSET=4
 
 inherit eutils user java-pkg-opt-2
 
@@ -94,7 +94,7 @@ S="${WORKDIR}/${MY_P}"
 pkg_setup() {
 	enewgroup munin
 	enewuser munin 177 -1 /var/lib/munin munin
-	enewuser munin-async -1 /bin/true /var/lib/munin-async
+	enewuser munin-async -1 /usr/libexec/munin/munin-async /var/lib/munin-async
 	java-pkg-opt-2_pkg_setup
 }
 
@@ -164,6 +164,8 @@ src_install() {
 
 	newinitd "${FILESDIR}"/munin-asyncd.init.2 munin-asyncd
 
+	newenvd "${FILESDIR}"/munin.env 50munin
+
 	dodoc README ChangeLog INSTALL
 	if use doc; then
 		cd "${S}"/doc/_build/html
@@ -190,7 +192,7 @@ src_install() {
 
 	keepdir /var/lib/munin-async/.ssh /var/spool/munin-async
 	touch "${D}"/var/lib/munin-async/.ssh/authorized_keys
-	fowners munin-async /var/lib/munin-async/.ssh/{,authorized_keys}
+	fowners munin-async /var/lib/munin-async/.ssh/{,authorized_keys} /var/spool/munin-async
 	fperms 0700 /var/lib/munin-async/.ssh /var/spool/munin-async
 	fperms 0600 /var/lib/munin-async/.ssh/authorized_keys
 
@@ -215,8 +217,10 @@ src_install() {
 		cat - >> "${D}"/var/lib/munin/.ssh/config <<EOF
 IdentityFile /var/lib/munin/.ssh/id_ecdsa
 IdentityFile /var/lib/munin/.ssh/id_rsa
+StrictHostKeyChecking no
 EOF
 
+		fowners munin:munin /var/lib/munin/.ssh/{,config}
 		fperms go-rwx /var/lib/munin/.ssh/{,config}
 
 		dodir /usr/share/${PN}

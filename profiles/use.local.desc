@@ -836,9 +836,11 @@ app-portage/eix:strong-optimization - Adds several more agressive CXXFLAGS/LDFLA
 app-portage/eix:tools - Create separate binary for script helper tools; useful if they are called extremely often
 app-portage/gentoolkit:minimal - Install only the gentoolkit core code.
 app-portage/layman:bazaar - Support dev-vcs/bzr based overlays
+app-portage/layman:cvs - Support dev-vcs/cvs based overlays
 app-portage/layman:darcs - Support dev-vcs/darcs based overlays
 app-portage/layman:git - Support dev-vcs/git based overlays
 app-portage/layman:mercurial - Support dev-vcs/mercurial based overlays
+app-portage/layman:subversion - Support dev-vcs/subversion based overlays
 app-portage/pfl:network-cron - Adds a cron job which does a weekly submit of the package database
 app-portage/tatt:templates - Install template scripts to be used with tatt
 app-shells/bash:bashlogger - Log ALL commands typed into bash; should ONLY be used in restricted environments such as honeypots

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-portage/layman/layman-9999.ebuild,v 1.24 2012/10/15 02:47:07 dolsen Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-portage/layman/layman-9999.ebuild,v 1.25 2012/10/21 03:00:31 dolsen Exp $
 
 EAPI="3"
 SUPPORT_PYTHON_ABIS="1"
@@ -22,58 +22,59 @@ IUSE="bazaar cvs darcs +git mercurial subversion test"
 
 COMMON_DEPS="dev-lang/python"
 DEPEND="${COMMON_DEPS}
-    test? ( dev-vcs/subversion )
-    app-text/asciidoc"
+	test? ( dev-vcs/subversion )
+	app-text/asciidoc"
 RDEPEND="${COMMON_DEPS}
-    bazaar? ( dev-vcs/bzr )
-    cvs? ( dev-vcs/cvs )
-    darcs? ( dev-vcs/darcs )
-    git? ( dev-vcs/git )
-    mercurial? ( dev-vcs/mercurial )
-    subversion? (
-        || (
-            >=dev-vcs/subversion-1.5.4[webdav-neon]
-            >=dev-vcs/subversion-1.5.4[webdav-serf]
-        )
-    )"
+	bazaar? ( dev-vcs/bzr )
+	cvs? ( dev-vcs/cvs )
+	darcs? ( dev-vcs/darcs )
+	git? ( dev-vcs/git )
+	mercurial? ( dev-vcs/mercurial )
+	subversion? (
+		|| (
+			>=dev-vcs/subversion-1.5.4[webdav-neon]
+			>=dev-vcs/subversion-1.5.4[webdav-serf]
+		)
+	)"
 
 src_prepare() {
-    eprefixify etc/layman.cfg layman/config.py
+	eprefixify etc/layman.cfg layman/config.py
 }
 
 src_test() {
-    testing() {
-        for suite in layman/tests/{dtest,external}.py ; do
-            PYTHONPATH="." "$(PYTHON)" ${suite} \
-                    || die "test suite '${suite}' failed"
-        done
-    }
-    python_execute_function testing
+	testing() {
+		for suite in layman/tests/{dtest,external}.py ; do
+			PYTHONPATH="." "$(PYTHON)" ${suite} \
+					|| die "test suite '${suite}' failed"
+		done
+	}
+	python_execute_function testing
 }
 
 src_compile() {
-    distutils_src_compile
-    # override MAKEOPTS to prevent build failure
-    emake -j1 -C doc || die "emake -C doc failed"
+	distutils_src_compile
+	# override MAKEOPTS to prevent build failure
+	emake -j1 -C doc || die "emake -C doc failed"
 }
 
 src_install() {
-    distutils_src_install
+	distutils_src_install
 
-    insinto /etc/layman
-    doins etc/layman.cfg || die
+	insinto /etc/layman
+	doins etc/layman.cfg || die
 
-    doman doc/layman.8
-    dohtml doc/layman.8.html
+	doman doc/layman.8
+	dohtml doc/layman.8.html
 
-    keepdir /var/lib/layman
+	keepdir /var/lib/layman
+	keepdir /etc/layman/overlays
 }
 
 pkg_postinst() {
-    distutils_pkg_postinst
+	distutils_pkg_postinst
 
-    # now run layman's update utility
-    einfo "Running layman-updater..."
-    "${EROOT}"/usr/bin/layman-updater
-    einfo
+	# now run layman's update utility
+	einfo "Running layman-updater..."
+	"${EROOT}"/usr/bin/layman-updater
+	einfo
 }
