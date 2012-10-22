@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libinfinity/libinfinity-0.5.2.ebuild,v 1.2 2012/05/05 02:54:31 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libinfinity/libinfinity-0.5.2.ebuild,v 1.3 2012/10/22 06:47:50 xarthisius Exp $
 
 EAPI=4
 
-inherit autotools-utils eutils versionator
+inherit autotools-utils eutils versionator user
 
 MY_PV=$(get_version_component_range 1-2)
 
