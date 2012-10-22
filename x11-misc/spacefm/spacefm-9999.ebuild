@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/spacefm/spacefm-9999.ebuild,v 1.8 2012/10/18 14:39:04 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/spacefm/spacefm-9999.ebuild,v 1.9 2012/10/21 19:28:06 hasufell Exp $
 
 EAPI=4
 
@@ -15,7 +15,7 @@ HOMEPAGE="http://ignorantguru.github.com/spacefm/"
 LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
 KEYWORDS=""
-IUSE=""
+IUSE="+startup-notification"
 
 RDEPEND="dev-libs/glib:2
 	dev-util/desktop-file-utils
@@ -26,9 +26,9 @@ RDEPEND="dev-libs/glib:2
 	x11-libs/gdk-pixbuf
 	x11-libs/gtk+:2
 	x11-libs/pango
-	x11-libs/startup-notification
 	x11-libs/libX11
-	x11-misc/shared-mime-info"
+	x11-misc/shared-mime-info
+	startup-notification? ( x11-libs/startup-notification )"
 DEPEND="${RDEPEND}
 	dev-util/intltool
 	virtual/pkgconfig
@@ -37,6 +37,7 @@ DEPEND="${RDEPEND}
 src_configure() {
 	econf \
 		--htmldir=/usr/share/doc/${PF}/html \
+		$(use_enable startup-notification) \
 		--disable-hal \
 		--enable-inotify \
 		--disable-pixmaps

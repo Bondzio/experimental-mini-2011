@@ -5236,6 +5236,7 @@ sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via
 sys-apps/timer_entropyd:debug - Enable printf debugging and logging to the syslog at DEBUG level
 sys-apps/tuxonice-userui:fbsplash - Add support for framebuffer splash
 sys-apps/ucspi-ssl:tls - Add TLS support (see also http://www.suspectclass.com/~sgifford/ucspi-tls/)
+sys-apps/udevil:systemd - Support for sys-apps/systemd
 sys-apps/usbutils:network-cron - Monthly cronjob the update-usbids script
 sys-apps/usermode-utilities:fuse - Build tools (currently umlmount) needing fuse
 sys-apps/util-linux:cramfs - build mkfs/fsck helpers for cramfs filesystems
