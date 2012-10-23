@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=dev-util/re2c doc? ( app-text/asciidoc app-doc/doxygen ) =dev-lang/python-2*
+DESCRIPTION=A small build system similar to make.
+EAPI=4
+HOMEPAGE=http://github.com/martine/ninja
+IUSE=doc emacs vim-syntax zsh-completion
+KEYWORDS=~amd64 ~x86 ~ppc-macos
+LICENSE=Apache-2.0
+RDEPEND=emacs? ( virtual/emacs ) vim-syntax? ( || ( app-editors/vim app-editors/gvim ) ) zsh-completion? ( app-shells/zsh ) =dev-lang/python-2*
+SLOT=0
+SRC_URI=https://github.com/martine/ninja/tarball/v1.0.0 -> ninja-1.0.0.tar.gz
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	elisp-common	cdb887d0e278ea6e82ea2a5d4792c52a	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
+_md5_=c368f2d8b70c1a6ed7567f48144aa1e6

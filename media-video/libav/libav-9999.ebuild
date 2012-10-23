@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/libav/libav-9999.ebuild,v 1.52 2012/09/13 19:25:33 lu_zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/libav/libav-9999.ebuild,v 1.53 2012/10/23 14:45:51 lu_zero Exp $
 
 EAPI=4
 
@@ -279,6 +279,8 @@ src_configure() {
 		--extra-cflags="${CFLAGS}" \
 		$(use_enable static-libs static) \
 		${myconf} || die
+
+	MAKEOPTS+=" V=1"
 }
 
 src_compile() {
@@ -324,5 +326,5 @@ pkg_postinst() {
 
 src_test() {
 	LD_LIBRARY_PATH="${S}/libavcore:${S}/libswscale:${S}/libavcodec:${S}/libavdevice:${S}/libavfilter:${S}/libavformat:${S}/libavutil" \
-		emake V=1 -j1 fate
+		emake -j1 fate
 }
