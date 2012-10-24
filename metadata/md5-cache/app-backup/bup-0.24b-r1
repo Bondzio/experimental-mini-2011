@@ -8,5 +8,5 @@ LICENSE=LGPL-2
 RDEPEND=app-arch/par2cmdline dev-vcs/git fuse? ( dev-python/fuse-python ) web? ( www-servers/tornado )
 SLOT=0
 SRC_URI=https://github.com/apenwarr/bup/tarball/bup-0.24b -> bup-0.24b.tar.gz https://github.com/apenwarr/bup/tarball/1783a57 -> bup-0.24b-man.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=d406a205d46680309cf3fb90af72368f

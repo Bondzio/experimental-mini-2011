@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=ssl? ( dev-libs/openssl ) !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp !mail-mta/netqmail !mail-mta/nullmailer !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/ssmtp
 SLOT=0
 SRC_URI=http://www.gentoo-es.org/~ferdy/nbsmtp-1.00.tar.bz2
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=e5e35656fac12c6afa9f1ffc10150013

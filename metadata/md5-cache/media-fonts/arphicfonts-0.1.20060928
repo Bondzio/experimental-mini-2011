@@ -8,5 +8,5 @@ LICENSE=Arphic
 RESTRICT=strip binchecks
 SLOT=0
 SRC_URI=mirror://gnu/non-gnu/chinese-fonts-truetype/gkai00mp.ttf.gz mirror://gnu/non-gnu/chinese-fonts-truetype/bkai00mp.ttf.gz mirror://gnu/non-gnu/chinese-fonts-truetype/bsmi00lp.ttf.gz mirror://gnu/non-gnu/chinese-fonts-truetype/gbsn00lp.ttf.gz mirror://debian/pool/main/t/ttf-arphic-uming/ttf-arphic-uming_0.1.20060928.orig.tar.gz mirror://debian/pool/main/t/ttf-arphic-ukai/ttf-arphic-ukai_0.1.20060928.orig.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	font	9aa70ebc5cefbdd9056687b550a2fdc4	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b3d09cadf836a746b6439b9771cae7ac

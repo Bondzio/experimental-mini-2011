@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/dbus-glib-0.98 >=dev-libs/glib-2.16 >=x11-libs/gtk+-3.2:3 >=x
 RESTRICT=test
 SLOT=0
 SRC_URI=http://launchpad.net/notify-osd/precise/0.9.34/+download/notify-osd-0.9.34.tar.gz
-_eclasses_=autotools	f4bee52a728da1f76470f4b8d246c50f	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	libtool	2b273eea1976cfaed3449345d94331ac	multilib	9aa8a023e062fca0ba79362d9d0cc488	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=autotools	f4bee52a728da1f76470f4b8d246c50f	gnome2-utils	988843266dfab513b7dd325b697b83de	libtool	2b273eea1976cfaed3449345d94331ac	multilib	9aa8a023e062fca0ba79362d9d0cc488	multiprocessing	a2130e6fc4aa4c6a24b265ca0cbcc2b6	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=1974cdbf5ba4f0c365924511d9c1031c

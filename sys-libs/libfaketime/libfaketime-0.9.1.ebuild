@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/libfaketime/libfaketime-0.9-r1.ebuild,v 1.1 2012/02/27 23:54:08 radhermit Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/libfaketime/libfaketime-0.9.1.ebuild,v 1.1 2012/10/23 22:26:58 radhermit Exp $
 
-EAPI=4
+EAPI=5
 
 inherit eutils toolchain-funcs multilib
 
@@ -15,19 +15,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-S=${WORKDIR}
-
 src_prepare() {
-	epatch "${FILESDIR}"/${P}-make.patch
-	epatch "${FILESDIR}"/${P}-as-needed.patch
-}
-
-src_compile() {
-	emake CC="$(tc-getCC)"
-}
-
-src_test() {
-	emake CC="$(tc-getCC)" test
+	epatch "${FILESDIR}"/${P}-makefile.patch
+	epatch "${FILESDIR}"/${PN}-0.9-as-needed.patch
+	tc-export CC
 }
 
 src_install() {

@@ -2634,6 +2634,7 @@ media-libs/gst-plugins-good:orc - Use dev-lang/orc for runtime optimisations
 media-libs/gst-rtsp-server:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/gst-rtsp-server:vala - Add support for dev-lang/vala
 media-libs/gstreamer:introspection - Use dev-libs/gobject-introspection for introspection
+media-libs/gstreamer:orc - Disable some PaX memory protections to allow plugins that use dev-lang/orc for runtime optimization to be used on hardened PaX systems
 media-libs/gupnp-dlna:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/harfbuzz:glib - Enable support for C library routines from dev-libs/glib
 media-libs/harfbuzz:graphite - Enable support for non-Roman fonts via media-gfx/graphite2

@@ -9,5 +9,5 @@ RDEPEND=!app-doc/ucspi-tcp-man selinux? ( sec-policy/selinux-ucspitcp )
 RESTRICT=test
 SLOT=0
 SRC_URI=http://cr.yp.to/ucspi-tcp/ucspi-tcp-0.88.tar.gz mirror://qmail/ucspi-rss.diff http://smarden.org/pape/djb/manpages/ucspi-tcp-0.88-man.tar.gz http://xs3.b92.net/tomislavr/ucspi-tcp-0.88-rblspp.patch
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	9aa8a023e062fca0ba79362d9d0cc488	qmail	5fc81682db4b862e5b126eae627ba70c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	fixheadtails	f96922acc9287f1e889a1e50a6c8986e	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	9aa8a023e062fca0ba79362d9d0cc488	qmail	5fc81682db4b862e5b126eae627ba70c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=b1f2f7bc040269db024e3fd41b3268e7

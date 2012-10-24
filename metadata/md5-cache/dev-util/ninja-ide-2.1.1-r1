@@ -10,5 +10,5 @@ RDEPEND=dev-python/PyQt4[webkit] dev-python/argparse dev-python/simplejson dev-p
 REQUIRED_USE=|| ( python_targets_python2_6 python_targets_python2_7 )
 SLOT=0
 SRC_URI=https://github.com/ninja-ide/ninja-ide/tarball/v2.1.1 -> ninja-ide-2.1.1.tar.gz
-_eclasses_=eutils	5a98daf52f7430a4a6f46cee24cfe3e2	gnome2-utils	ce6efa755297a17906d9d8e1a1b79837	multilib	9aa8a023e062fca0ba79362d9d0cc488	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	gnome2-utils	988843266dfab513b7dd325b697b83de	multilib	9aa8a023e062fca0ba79362d9d0cc488	python-distutils-ng	3e9b44e207485638f0e2b21c6749bf7e	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
 _md5_=cb9aff56ce39f1be418a029088a93470
