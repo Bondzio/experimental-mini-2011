@@ -3,10 +3,10 @@ DEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.10:2 net-misc/curl virtual/pkgconfig >=
 DESCRIPTION=A music related metadata searchengine, both with commandline interface and C API
 EAPI=4
 HOMEPAGE=http://github.com/sahib/glyr
-KEYWORDS=~amd64 ~x86
+KEYWORDS=amd64 ~x86
 LICENSE=GPL-3
 RDEPEND=dev-db/sqlite:3 >=dev-libs/glib-2.10:2 net-misc/curl
 SLOT=0
 SRC_URI=mirror://github/sahib/glyr/glyr-1.0.0.tar.bz2
 _eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	f7c54c10897c8830ce98fff883d63387	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ff88d7b85c686c22469117d9880d0876
+_md5_=8753b7bb561ac87517852804f16c55d4
