@@ -715,6 +715,7 @@ app-misc/tracker:introspection - Use dev-libs/gobject-introspection for introspe
 app-misc/tracker:iptc - Enable extraction of IPTC data from pictures
 app-misc/tracker:iso - Enable extraction of metadata from ISO disk images
 app-misc/tracker:laptop - Make tracker power management aware
+app-misc/tracker:miner-fs - Enable tracker-miner-fs (required for filesystem indexing)
 app-misc/tracker:nautilus - Enable tracker to integrate with gnome-base/nautilus by providing entries in its context menu
 app-misc/tracker:playlist - Add support for playlists
 app-misc/tracker:strigi - Add support for app-misc/strigi search engine.
