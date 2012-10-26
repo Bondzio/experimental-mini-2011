@@ -2972,8 +2972,10 @@ media-sound/mangler:espeak - Text to speach engine
 media-sound/mangler:g15 - Logitech g15 lcd support
 media-sound/mangler:opus - Codec specialized for speach over the internet
 media-sound/mixxx:shout - Enable broadcasting support via media-libs/libshout
+media-sound/moc:cache - Enable tags caching support
 media-sound/moc:magic - Use libmagic to determine mimetypes
 media-sound/moc:sid - Build with SID (Commodore 64 Audio) support
+media-sound/moc:tremor - Build vorbis support using an integer implementation of the vorbis library (media-libs/tremor)
 media-sound/mp3blaster:sid - Build with SID (Commodore 64 Audio) support
 media-sound/mp3splt-gtk:audacious - Include media-sound/audacious support
 media-sound/mp3splt-gtk:gtk3 - Link against x11-libs/gtk+:3 instead of x11-libs/gtk+:2
@@ -5842,6 +5844,8 @@ x11-libs/gtksourceview:glade - Install a glade catalog file
 x11-libs/gtksourceview:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/libSM:uuid - Use UUID for session identification instead of IP address and system time.
 x11-libs/libXaw:deprecated - Install deprecated Xaw6 library.
+x11-libs/libXfont:bzip2 - Support bzip2 compressed PCF fonts.
+x11-libs/libXfont:truetype - Use media-libs/freetype for font rasterization.
 x11-libs/libaosd:pango - Enable the textual helpers (requires pangocairo).
 x11-libs/libaosd:tools - Install the aosd_cat tool (requires glib-2.0).
 x11-libs/libcryptui:introspection - Use dev-libs/gobject-introspection for introspection
