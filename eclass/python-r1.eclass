@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.5 2012/10/25 16:47:30 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.7 2012/10/27 01:14:38 floppym Exp $
 
 # @ECLASS: python-r1
 # @MAINTAINER:
@@ -253,45 +253,6 @@ python_export() {
 	done
 }
 
-# @ECLASS-VARIABLE: BUILD_DIR
-# @DESCRIPTION:
-# The current build directory. In global scope, it is supposed to
-# contain an initial build directory; if unset, it defaults to ${S}.
-#
-# In functions run by python_foreach_impl(), the BUILD_DIR is locally
-# set to an implementation-specific build directory. That path is
-# created through appending a hyphen and the implementation name
-# to the final component of the initial BUILD_DIR.
-#
-# Example value:
-# @CODE
-# ${WORKDIR}/foo-1.3-python2_6
-# @CODE
-
-# @ECLASS-VARIABLE: PYTHON
-# @DESCRIPTION:
-# The absolute path to the current Python interpreter.
-#
-# Set and exported only in commands run by python_foreach_impl().
-#
-# Example value:
-# @CODE
-# /usr/bin/python2.6
-# @CODE
-
-# @ECLASS-VARIABLE: EPYTHON
-# @DESCRIPTION:
-# The executable name of the current Python interpreter.
-#
-# This variable is used consistently with python.eclass.
-#
-# Set and exported only in commands run by python_foreach_impl().
-#
-# Example value:
-# @CODE
-# python2.6
-# @CODE
-
 # @FUNCTION: python_copy_sources
 # @DESCRIPTION:
 # Create a single copy of the package sources (${S}) for each enabled
@@ -330,11 +291,6 @@ python_copy_sources() {
 #
 # For each command being run, EPYTHON, PYTHON and BUILD_DIR are set
 # locally, and the former two are exported to the command environment.
-#
-# The command is run inside the build directory. If it doesn't exist
-# yet, it is created (as an empty directory!). If your build system does
-# not support out-of-source builds, you will likely want to use
-# python_copy_sources first.
 python_foreach_impl() {
 	debug-print-function ${FUNCNAME} "${@}"
 
@@ -350,13 +306,8 @@ python_foreach_impl() {
 			local BUILD_DIR=${bdir%%/}-${impl}
 			export EPYTHON PYTHON
 
-			debug-print "${FUNCNAME}: [${impl}] build_dir = ${BUILD_DIR}"
-
-			mkdir -p "${BUILD_DIR}" || die
-			pushd "${BUILD_DIR}" &>/dev/null || die
 			einfo "${EPYTHON}: running ${@}"
 			"${@}" || die "${EPYTHON}: ${1} failed"
-			popd &>/dev/null || die
 		fi
 	done
 }
