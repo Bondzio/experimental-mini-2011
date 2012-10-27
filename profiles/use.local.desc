@@ -2905,6 +2905,8 @@ media-sound/beets:lastgenre - Enable support for importing music genres from las
 media-sound/beets:replaygain - Enable support for Replay Gain metadata calculation during import
 media-sound/beets:web - Enable embedded webserver support through dev-python/flask
 media-sound/cantata:mpg123 - Enable support for mp3 decoding over media-sound/mpg123.
+media-sound/cantata:phonon - Enable support for Phonon
+media-sound/cantata:replaygain - Enable ReplayGain support, for relative volume adjustments.
 media-sound/clementine:googledrive - Enable Google Drive support
 media-sound/clementine:kde - Enable plasma krunner global search
 media-sound/clementine:lastfm - Use liblastfm for fetching song info, scrobbling and radio streams
