@@ -10,4 +10,4 @@ RDEPEND=>=dev-libs/boost-1.41.0 dev-libs/openssl[-bindist] qrcode? ( media-gfx/q
 SLOT=0
 SRC_URI=http://gitorious.org/bitcoin/bitcoind-stable/archive-tarball/392d30f0 -> bitcoin-v0.6.4_rc3.tgz eligius? ( http://luke.dashjr.org/programs/bitcoin/files/bitcoind/eligius/sendfee/0.6.1-eligius_sendfee.patch.xz )
 _eclasses_=base	5f55566958e88506923ea360535053cc	db-use	2f5d6a2718559b90a51648d8ff58be83	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
-_md5_=02d8bcdf0e36f1aea7d593c374512e56
+_md5_=6968742d452742906d75a9ec5f0c20f3

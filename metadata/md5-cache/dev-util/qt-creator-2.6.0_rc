@@ -11,4 +11,4 @@ RDEPEND=>=x11-libs/qt-assistant-4.8.0:4[doc?] >=x11-libs/qt-core-4.8.0:4[ssl] >=
 SLOT=0
 SRC_URI=http://releases.qt-project.org/qtcreator/2.6.0-rc/qt-creator-2.6.0-rc-src.tar.gz
 _eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	l10n	33bde4fb0cfd3a21a277b66bfd837e19	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	307501b91d6f112dfc8e59e130659585	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b309326d8d8f360242700b51c36fbbbb
+_md5_=0fb8ff754e424464b15b5227eecb4aa3

@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-1.2.0.ebuild,v 1.3 2012/10/28 09:27:24 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/qemu/qemu-1.2.0.ebuild,v 1.5 2012/10/28 20:15:51 cardoe Exp $
 
 EAPI="4"
 
@@ -139,6 +139,8 @@ QA_WX_LOAD="${QA_PRESTRIPPED}
 	usr/bin/qemu-armeb
 	usr/bin/qemu-sparc32plus"
 
+S="${WORKDIR}/${MY_P}"
+
 pkg_pretend() {
 	if use kernel_linux && kernel_is lt 2 6 25; then
 		eerror "This version of KVM requres a host kernel of 2.6.25 or higher."
@@ -180,6 +182,11 @@ pkg_pretend() {
 		ewarn "on the mailing list about USE=static's place in Gentoo. As a"
 		ewarn "result what worked today may not work tomorrow."
 	fi
+
+	if [[ "${I_WAS_TOLD_NOT_TO_USE_THIS_BUT_DID_ANYWAY}" != "derp" ]]; then
+		eerror "This ebuild is masked and unkeyworded. WHY are you using it!?"
+		die "This ebuild is masked and unkeyworded. WHY are you using it!?"
+	fi
 }
 
 pkg_setup() {
@@ -196,7 +203,7 @@ src_prepare() {
 
 	python_convert_shebangs -r 2 "${S}/scripts/kvm/kvm_stat"
 
-	epatch "${FILESDIR}"/${P}-fix-mipsen.patch
+	epatch "${FILESDIR}"/${P}-cflags.patch
 	[[ -n ${BACKPORTS} ]] && \
 		EPATCH_FORCE=yes EPATCH_SUFFIX="patch" EPATCH_SOURCE="${S}/patches" \
 			epatch
@@ -336,6 +343,9 @@ src_install() {
 	fi
 
 	use python & dobin scripts/kvm/kvm_stat
+
+	# avoid collision with libcacard
+	use smartcard && mv "${ED}/usr/bin/vscclient" "${ED}/usr/bin/qemu-vscclient"
 
 	# Remove SeaBIOS since we're using the SeaBIOS packaged one
 	rm "${ED}/usr/share/qemu/bios.bin"
