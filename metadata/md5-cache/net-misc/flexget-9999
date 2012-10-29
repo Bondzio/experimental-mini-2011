@@ -1,11 +1,11 @@
 DEFINED_PHASES=compile install postinst postrm preinst prepare setup test unpack
-DEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* || ( dev-lang/python:2.7 dev-python/argparse ) dev-python/setuptools test? ( dev-python/nose ) dev-python/paver || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* dev-python/setuptools virtual/python-argparse test? ( dev-python/nose ) dev-python/paver || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
 DESCRIPTION=Multipurpose automation tool for content like torrents, nzbs, podcasts, comics
 EAPI=4
 HOMEPAGE=http://flexget.com/
 IUSE=test
 LICENSE=MIT
-RDEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* || ( dev-lang/python:2.7 dev-python/argparse ) dev-python/setuptools || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* dev-python/setuptools virtual/python-argparse || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6c4205a8a25444bfa0693de6dd90ec44
+_md5_=ed6d3e1f38838570bc480d1977d1503e

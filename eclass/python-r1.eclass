@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.7 2012/10/27 01:14:38 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.13 2012/10/29 11:27:30 mgorny Exp $
 
 # @ECLASS: python-r1
 # @MAINTAINER:
@@ -36,6 +36,8 @@ case "${EAPI}" in
 		;;
 esac
 
+inherit multilib
+
 # @ECLASS-VARIABLE: _PYTHON_ALL_IMPLS
 # @INTERNAL
 # @DESCRIPTION:
@@ -43,7 +45,7 @@ esac
 _PYTHON_ALL_IMPLS=(
 	jython2_5
 	pypy1_8 pypy1_9
-	python3_1 python3_2
+	python3_1 python3_2 python3_3
 	python2_5 python2_6 python2_7
 )
 
@@ -135,7 +137,14 @@ _python_set_globals() {
 	REQUIRED_USE="|| ( ${flags[*]} )"
 	PYTHON_USEDEP=${optflags// /,}
 
-	PYTHON_DEPS=
+	local usestr
+	[[ ${PYTHON_REQ_USE} ]] && usestr="[${PYTHON_REQ_USE}]"
+
+	# 1) well, python-exec would suffice as an RDEP
+	# but no point in making this overcomplex, BDEP doesn't hurt anyone
+	# 2) python-exec should be built with all targets forced anyway
+	# but if new targets were added, we may need to force a rebuild
+	PYTHON_DEPS="dev-python/python-exec[${PYTHON_USEDEP}]"
 	local i
 	for i in "${PYTHON_COMPAT[@]}"; do
 		local d
@@ -151,10 +160,7 @@ _python_set_globals() {
 		esac
 
 		local v=${i##*[a-z]}
-		local usestr
-		[[ ${PYTHON_REQ_USE} ]] && usestr="[${PYTHON_REQ_USE}]"
-		PYTHON_DEPS+=" python_targets_${i}? (
-			${d}:${v/_/.}${usestr} )"
+		PYTHON_DEPS+=" python_targets_${i}? ( ${d}:${v/_/.}${usestr} )"
 	done
 }
 _python_set_globals
@@ -198,6 +204,16 @@ _python_set_globals
 # python2.6
 # @CODE
 
+# @ECLASS-VARIABLE: PYTHON_SITEDIR
+# @DESCRIPTION:
+# The path to Python site-packages directory.
+#
+# Set and exported on request using python_export().
+#
+# Example value:
+# @CODE
+# @CODE
+
 # @FUNCTION: python_export
 # @USAGE: [<impl>] <variables>...
 # @DESCRIPTION:
@@ -209,8 +225,9 @@ _python_set_globals
 # or an EPYTHON one, e.g. python2.7). If no implementation passed,
 # the current one will be obtained from ${EPYTHON}.
 #
-# The variables which can be exported are: PYTHON, EPYTHON. They are
-# described more completely in the eclass variable documentation.
+# The variables which can be exported are: PYTHON, EPYTHON,
+# PYTHON_SITEDIR. They are described more completely in the eclass
+# variable documentation.
 python_export() {
 	debug-print-function ${FUNCNAME} "${@}"
 
@@ -247,10 +264,73 @@ python_export() {
 				export PYTHON=${EPREFIX}/usr/bin/${impl}
 				debug-print "${FUNCNAME}: PYTHON = ${PYTHON}"
 				;;
+			PYTHON_SITEDIR)
+				local dir
+				case "${impl}" in
+					python*)
+						dir=/usr/$(get_libdir)/${impl}
+						;;
+					jython*)
+						dir=/usr/share/${impl}/Lib
+						;;
+					pypy*)
+						dir=/usr/$(get_libdir)/${impl/-c/}
+						;;
+				esac
+
+				export PYTHON_SITEDIR=${EPREFIX}${dir}/site-packages
+				debug-print "${FUNCNAME}: PYTHON_SITEDIR = ${PYTHON_SITEDIR}"
+				;;
 			*)
 				die "python_export: unknown variable ${var}"
 		esac
 	done
+}
+
+# @FUNCTION: python_get_PYTHON
+# @USAGE: [<impl>]
+# @DESCRIPTION:
+# Obtain and print the path to the Python interpreter for the given
+# implementation. If no implementation is provided, ${EPYTHON} will
+# be used.
+#
+# If you just need to have PYTHON set (and exported), then it is better
+# to use python_export() directly instead.
+python_get_PYTHON() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	python_export "${@}" PYTHON
+	echo "${PYTHON}"
+}
+
+# @FUNCTION: python_get_EPYTHON
+# @USAGE: <impl>
+# @DESCRIPTION:
+# Obtain and print the EPYTHON value for the given implementation.
+#
+# If you just need to have EPYTHON set (and exported), then it is better
+# to use python_export() directly instead.
+python_get_EPYTHON() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	python_export "${@}" EPYTHON
+	echo "${EPYTHON}"
+}
+
+# @FUNCTION: python_get_sitedir
+# @USAGE: [<impl>]
+# @DESCRIPTION:
+# Obtain and print the 'site-packages' path for the given
+# implementation. If no implementation is provided, ${EPYTHON} will
+# be used.
+#
+# If you just need to have PYTHON_SITEDIR set (and exported), then it is
+# better to use python_export() directly instead.
+python_get_sitedir() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	python_export "${@}" PYTHON_SITEDIR
+	echo "${PYTHON_SITEDIR}"
 }
 
 # @FUNCTION: python_copy_sources
@@ -309,5 +389,156 @@ python_foreach_impl() {
 			einfo "${EPYTHON}: running ${@}"
 			"${@}" || die "${EPYTHON}: ${1} failed"
 		fi
+	done
+}
+
+# @FUNCTION: python_export_best
+# @USAGE: [<variable>...]
+# @DESCRIPTION:
+# Find the best (most preferred) Python implementation enabled
+# and export given variables for it. If no variables are provided,
+# EPYTHON & PYTHON will be exported.
+python_export_best() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	[[ ${#} -gt 0 ]] || set -- EPYTHON PYTHON
+
+	local impl best
+	for impl in "${_PYTHON_ALL_IMPLS[@]}"; do
+		if has "${impl}" "${PYTHON_COMPAT[@]}" && use "python_targets_${impl}"
+		then
+			best=${impl}
+		fi
+	done
+
+	[[ ${best+1} ]] || die "python_export_best(): no implementation found!"
+
+	debug-print "${FUNCNAME}: Best implementation is: ${impl}"
+	python_export "${impl}" "${@}"
+}
+
+# @FUNCTION: _python_rewrite_shebang
+# @INTERNAL
+# @USAGE: [<EPYTHON>] <path>...
+# @DESCRIPTION:
+# Replaces 'python' executable in the shebang with the executable name
+# of the specified interpreter. If no EPYTHON value (implementation) is
+# used, the current ${EPYTHON} will be used.
+#
+# All specified files must start with a 'python' shebang. A file not
+# having a matching shebang will be refused. The exact shebang style
+# will be preserved in order not to break anything.
+#
+# Example conversions:
+# @CODE
+# From: #!/usr/bin/python -R
+# To: #!/usr/bin/python2.7 -R
+#
+# From: #!/usr/bin/env FOO=bar python
+# To: #!/usr/bin/env FOO=bar python2.7
+# @CODE
+_python_rewrite_shebang() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	local impl
+	case "${1}" in
+		python*|jython*|pypy-c*)
+			impl=${1}
+			shift
+			;;
+		*)
+			impl=${EPYTHON}
+			[[ ${impl} ]] || die "${FUNCNAME}: no impl nor EPYTHON"
+			;;
+	esac
+	debug-print "${FUNCNAME}: implementation: ${impl}"
+
+	local f
+	for f; do
+		local shebang=$(head -n 1 "${f}")
+		debug-print "${FUNCNAME}: path = ${f}"
+		debug-print "${FUNCNAME}: shebang = ${shebang}"
+
+		if [[ "${shebang} " != *'python '* ]]; then
+			eerror "A file does not seem to have a supported shebang:"
+			eerror "  file: ${f}"
+			eerror "  shebang: ${shebang}"
+			die "${FUNCNAME}: ${f} does not seem to have a valid shebang"
+		fi
+
+		sed -i -e "s:python:${impl}:" "${f}" || die
+	done
+}
+
+# @FUNCTION: _python_ln_rel
+# @USAGE: <from> <to>
+# @DESCRIPTION:
+# Create a relative symlink.
+_python_ln_rel() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	local from=${1}
+	local to=${2}
+
+	local frpath=${from%/*}/
+	local topath=${to%/*}/
+	local rel_path=
+
+	# remove double slashes
+	frpath=${frpath/\/\///}
+	topath=${topath/\/\///}
+
+	while [[ ${topath} ]]; do
+		local frseg=${frpath%%/*}
+		local toseg=${topath%%/*}
+
+		if [[ ${frseg} != ${toseg} ]]; then
+			rel_path=../${rel_path}${frseg:+${frseg}/}
+		fi
+
+		frpath=${frpath#${frseg}/}
+		topath=${topath#${toseg}/}
+	done
+	rel_path+=${frpath}${1##*/}
+
+	debug-print "${FUNCNAME}: ${from} -> ${to}"
+	debug-print "${FUNCNAME}: rel_path = ${rel_path}"
+
+	ln -fs "${rel_path}" "${to}"
+}
+
+# @FUNCTION: python_replicate_script
+# @USAGE: <path>...
+# @DESCRIPTION:
+# Copy the given script to variants for all enabled Python
+# implementations, then replace it with a symlink to the wrapper.
+#
+# All specified files must start with a 'python' shebang. A file not
+# having a matching shebang will be refused.
+python_replicate_script() {
+	debug-print-function ${FUNCNAME} "${@}"
+
+	local suffixes=()
+
+	_add_suffix() {
+		suffixes+=( "${EPYTHON}" )
+	}
+	python_foreach_impl _add_suffix
+	debug-print "${FUNCNAME}: suffixes = ( ${suffixes[@]} )"
+
+	local f suffix
+	for suffix in "${suffixes[@]}"; do
+		for f; do
+			local newf=${f}-${suffix}
+
+			debug-print "${FUNCNAME}: ${f} -> ${newf}"
+			cp "${f}" "${newf}" || die
+		done
+
+		_python_rewrite_shebang "${suffix}" "${@/%/-${suffix}}"
+	done
+
+	for f; do
+		_python_ln_rel "${ED}"/usr/bin/python-exec "${f}" || die
 	done
 }

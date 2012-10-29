@@ -1,21 +1,20 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/go/go-9999.ebuild,v 1.7 2012/09/01 17:34:11 williamh Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/go/go-9999.ebuild,v 1.8 2012/10/29 15:57:40 williamh Exp $
 
 EAPI=4
 
 export CTARGET=${CTARGET:-${CHOST}}
 
+inherit bash-completion-r1 elisp-common eutils
+
 if [[ ${PV} = 9999 ]]; then
 	EHG_REPO_URI="https://go.googlecode.com/hg"
 	inherit mercurial
-fi
-inherit bash-completion-r1 elisp-common eutils
-
-if [[ ${PV} != 9999 ]]; then
+else
 	SRC_URI="http://go.googlecode.com/files/go${PV}.src.tar.gz"
 	# Upstream only supports go on amd64, arm and x86 architectures.
-	KEYWORDS="-* ~amd64 ~x86"
+	KEYWORDS="-* ~amd64 ~arm ~x86"
 fi
 
 DESCRIPTION="A concurrent garbage collected and typesafe programming language"
@@ -25,13 +24,11 @@ LICENSE="BSD"
 SLOT="0"
 IUSE="bash-completion emacs vim-syntax zsh-completion"
 
-DEPEND="sys-apps/ed
-	${COMMON_DEPEND}"
+DEPEND="sys-apps/ed"
 RDEPEND="bash-completion? ( app-shells/bash-completion )
 	emacs? ( virtual/emacs )
 	vim-syntax? ( || ( app-editors/vim app-editors/gvim ) )
-	zsh-completion? ( app-shells/zsh-completion )
-	${COMMON_DEPEND}"
+	zsh-completion? ( app-shells/zsh-completion )"
 
 	# The go language stores binary data for packages in *.a files.
 	# These are _NOT_ libraries, and should not be stripped.
@@ -43,6 +40,9 @@ fi
 
 src_prepare()
 {
+	if [[ ${PV} != 9999 ]]; then
+		epatch "${FILESDIR}"/${P}-hardened.patch
+	fi
 	epatch_user
 }
 
@@ -84,7 +84,7 @@ src_install()
 	# Once this is fixed, we can consider using the doc use flag to control
 	# installing the doc and src directories.
 	# [1] http://code.google.com/p/go/issues/detail?id=2775
-	doins -r doc lib pkg src
+	doins -r doc include lib pkg src
 
 	if use bash-completion; then
 		dobashcomp misc/bash/go
@@ -123,7 +123,7 @@ pkg_postinst()
 	# linker are also checked - so we need to fix them too.
 	ebegin "fixing timestamps to avoid unnecessary rebuilds"
 	tref="usr/lib/go/pkg/*/runtime.a"
-	find "${ROOT}"usr/lib/go/pkg -type f \
+	find "${ROOT}"usr/lib/go -type f \
 		-exec touch -r "${ROOT}"${tref} {} \;
 	eend $?
 }

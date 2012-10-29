@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* || ( dev-lang/python:2.7 dev-python/argparse ) dev-python/setuptools test? ( dev-python/nose ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* dev-python/setuptools virtual/python-argparse test? ( dev-python/nose ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 DESCRIPTION=Multipurpose automation tool for content like torrents, nzbs, podcasts, comics
 EAPI=4
 HOMEPAGE=http://flexget.com/
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=MIT
-RDEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* || ( dev-lang/python:2.7 dev-python/argparse ) dev-python/setuptools || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+RDEPEND=>=dev-python/feedparser-5.1.2 >=dev-python/sqlalchemy-0.7 dev-python/pyyaml dev-python/beautifulsoup:python-2 dev-python/beautifulsoup:4 dev-python/html5lib dev-python/jinja dev-python/PyRSS2Gen dev-python/pynzb dev-python/progressbar dev-python/flask dev-python/cherrypy dev-python/python-dateutil =dev-python/requests-0.14* dev-python/setuptools virtual/python-argparse || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://download.flexget.com/unstable/FlexGet-1.0r3139.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=c84bb7a14882125ffb9fc3345f4d3f84
+_md5_=ba5aca2e99c6cd95e18c673ed9e4d7d7

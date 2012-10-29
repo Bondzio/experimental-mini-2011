@@ -3,9 +3,9 @@ DEPEND==x11-libs/gtk+-1.2* dev-embedded/gputils virtual/pkgconfig
 DESCRIPTION=GUI for GPASM
 HOMEPAGE=http://xizard.free.fr/logiciels/xgpasm/xgpasm.html
 IUSE=nls
-KEYWORDS=~ppc x86
+KEYWORDS=~amd64 ~ppc x86
 LICENSE=GPL-2
 RDEPEND==x11-libs/gtk+-1.2* dev-embedded/gputils
 SLOT=0
 SRC_URI=http://xizard.free.fr/download/source/xgpasm-1.0.tar.gz
-_md5_=a245f8f38021f108f42b46ed8812e904
+_md5_=e7cc8262df3071799778249f13bc927d

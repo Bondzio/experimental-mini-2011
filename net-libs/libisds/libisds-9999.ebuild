@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/libisds/libisds-9999.ebuild,v 1.10 2012/05/05 02:54:26 jdhore Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libisds/libisds-9999.ebuild,v 1.12 2012/10/29 13:35:36 scarabeus Exp $
 
-EAPI=4
+EAPI=5
 
 [[ ${PV} = 9999* ]] && GIT="git-2 autotools"
 EGIT_REPO_URI="git://repo.or.cz/${PN}.git"
@@ -47,6 +47,7 @@ src_configure() {
 	local myeconfargs=(
 		"--disable-fatalwarnings"
 		$(use_with curl libcurl)
+		$(use_enable curl curlreauthorizationbug)
 		$(use_enable debug)
 		$(use_enable nls)
 		$(use_enable static-libs static)
