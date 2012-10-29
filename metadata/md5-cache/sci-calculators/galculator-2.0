@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/gtk+:3
 SLOT=0
 SRC_URI=mirror://sourceforge/galculator/galculator-2.0.tar.bz2
-_eclasses_=gnome2-utils	988843266dfab513b7dd325b697b83de
+_eclasses_=gnome2-utils	1551aae6c13684ead9de781fbedec5b0
 _md5_=1d3ee99e6e67c1574e7231b5343826cd

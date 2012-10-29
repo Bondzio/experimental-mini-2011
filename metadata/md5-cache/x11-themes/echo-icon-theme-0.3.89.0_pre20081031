@@ -8,5 +8,5 @@ LICENSE=CCPL-Attribution-ShareAlike-3.0
 RESTRICT=binchecks strip
 SLOT=0
 SRC_URI=mirror://gentoo/echo-icon-theme-0.3.89.0_pre20081031.tar.bz2
-_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	gnome2-utils	988843266dfab513b7dd325b697b83de	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=0dad732f99ec80c48f1c19cb107bbedf
