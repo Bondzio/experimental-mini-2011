@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/starpu/starpu-1.0.2.ebuild,v 1.2 2012/08/15 18:30:31 bicatali Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/starpu/starpu-1.0.2.ebuild,v 1.3 2012/10/30 15:00:48 bicatali Exp $
 
 EAPI=4
 
@@ -17,7 +17,7 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86 ~amd64-linux ~x86-linux"
 
-IUSE="blas cuda doc examples fftw gcc-plugin mpi opencl qt4 static-libs test"
+IUSE="blas cuda debug doc examples fftw gcc-plugin mpi opencl qt4 static-libs test"
 RDEPEND="sys-apps/hwloc
 	sci-mathematics/glpk
 	blas? ( virtual/blas )
@@ -42,16 +42,12 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-1.0.1-no-pc-ldflags.patch
 )
 
-src_prepare() {
-	# do not force -Werror, Gentoo bug #423011
-	sed -i -e '/AM_INIT_AUTOMAKE/s:-Werror ::' configure.ac || die
-	autotools-utils_src_prepare
-}
 
 src_configure() {
 	use blas && export BLAS_LIBS="$($(tc-getPKG_CONFIG) --libs blas)"
 	local myeconfargs=(
 		$(use_enable cuda)
+		$(use_enable debug)
 		$(use_enable fftw starpufft)
 		$(use_enable gcc-plugin gcc-extensions)
 		$(use_enable opencl)
