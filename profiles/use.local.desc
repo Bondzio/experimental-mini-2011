@@ -1302,6 +1302,7 @@ dev-libs/apr-util:nss - Install apr_crypto_nss module
 dev-libs/apr-util:openssl - Install apr_crypto_openssl module
 dev-libs/atk:introspection - Use dev-libs/gobject-introspection for introspection
 dev-libs/blitz:boost - Enable usage of boost::serialization
+dev-libs/boost:debug - Build and install debug versions of the Boost libraries. These libraries are not used by default, and should not be used unless you're developing against Boost.
 dev-libs/boost:eselect - Run "eselect boost update" even if version is already selected
 dev-libs/boost:tools - Build and install the boost tools (bcp, quickbook, inspect, wave)
 dev-libs/check:subunit - Enable support for the subunit unit test protocol
@@ -2638,8 +2639,6 @@ media-libs/gst-rtsp-server:vala - Add support for dev-lang/vala
 media-libs/gstreamer:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/gstreamer:orc - Disable some PaX memory protections to allow plugins that use dev-lang/orc for runtime optimization to be used on hardened PaX systems
 media-libs/gupnp-dlna:introspection - Use dev-libs/gobject-introspection for introspection
-media-libs/harfbuzz:glib - Enable support for C library routines from dev-libs/glib
-media-libs/harfbuzz:graphite - Enable support for non-Roman fonts via media-gfx/graphite2
 media-libs/leptonica:utils - Install command-line utilities
 media-libs/leptonica:webp - Adds support for the WebP image format
 media-libs/libass:enca - Enables support for charset discovery and conversion.
@@ -4384,7 +4383,7 @@ net-misc/bfgminer:padlock - Enable support for mining with VIA Padlock CPUs
 net-misc/bfgminer:scrypt - Enable support for scrypt mining algorithm
 net-misc/bfgminer:sse2_4way - Enable support for CPU SSE2 4way mining algorithm
 net-misc/bfgminer:sse4 - Enable support for CPU SSE4 mining algorithm
-net-misc/bfgminer:x6500 - Enable support for CPU X6500 mining algorithm
+net-misc/bfgminer:x6500 - Enable support for mining with X6500 FPGAs
 net-misc/bfgminer:ztex - Enable support for mining with Ztex FPGAs
 net-misc/cfengine:html - Install HTML documentation
 net-misc/cfengine:libvirt - Enable support for virtual machine management through app-emulation/libvirt

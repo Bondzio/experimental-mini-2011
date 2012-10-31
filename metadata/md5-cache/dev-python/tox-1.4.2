@@ -1,12 +1,13 @@
-DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=dev-python/setuptools dev-python/virtualenv dev-python/pip >=dev-python/pytest-2.2.3 dev-lang/python
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools >=dev-python/virtualenv-1.7 dev-python/pip dev-python/pytest >=dev-python/py-1.4.9 virtual/python-argparse doc? ( dev-python/sphinx ) dev-lang/python
 DESCRIPTION=virtualenv-based automation of test activities
 EAPI=4
 HOMEPAGE=http://tox.testrun.org http://pypi.python.org/pypi/tox
+IUSE=doc
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=dev-python/setuptools dev-python/virtualenv dev-python/pip >=dev-python/pytest-2.2.3 dev-lang/python
+RDEPEND=dev-python/setuptools >=dev-python/virtualenv-1.7 dev-python/pip dev-python/pytest >=dev-python/py-1.4.9 virtual/python-argparse doc? ( dev-python/sphinx ) dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/t/tox/tox-1.4.2.zip
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=6c07000a20b73c32d000092696dae239
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=7dc1f1816c440450f5fdb3f9765f0e69
