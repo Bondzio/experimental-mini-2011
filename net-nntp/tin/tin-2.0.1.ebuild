@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-nntp/tin/tin-2.0.1.ebuild,v 1.2 2012/06/17 18:40:55 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-nntp/tin/tin-2.0.1.ebuild,v 1.3 2012/10/30 23:02:13 jer Exp $
 
 EAPI=4
 inherit eutils toolchain-funcs versionator
@@ -56,22 +56,22 @@ src_configure() {
 	tc-export CC
 
 	econf \
-		--with-pcre=/usr \
-		--enable-nntp-only \
-		--enable-prototypes \
-		--disable-echo \
-		--disable-mime-strict-charset \
-		--with-coffee  \
-		--with-screen=${screen} \
-		--with-nntp-default-server="${TIN_DEFAULT_SERVER:-${NNTPSERVER:-news.gmane.org}}" \
-		$(use_enable ipv6) \
+		$(use_enable cancel-locks) \
 		$(use_enable debug) \
 		$(use_enable gpg pgp-gpg) \
+		$(use_enable ipv6) \
 		$(use_enable nls) \
-		$(use_enable cancel-locks) \
 		$(use_with mime metamail /usr) \
-		$(use_with spell ispell /usr) \
 		$(use_with socks5 socks) $(use_with socks5) \
+		$(use_with spell ispell /usr) \
+		--disable-mime-strict-charset \
+		--enable-echo \
+		--enable-nntp-only \
+		--enable-prototypes \
+		--with-coffee  \
+		--with-nntp-default-server="${TIN_DEFAULT_SERVER:-${NNTPSERVER:-news.gmane.org}}" \
+		--with-pcre=/usr \
+		--with-screen=${screen} \
 		${myconf}
 }
 

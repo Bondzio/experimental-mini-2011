@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ppc64/package.use.mask,v 1.47 2012/06/14 05:38:22 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ppc64/package.use.mask,v 1.49 2012/10/30 17:51:34 ssuominen Exp $
 
 # Michael Weber <xmw@gentoo.org> (14 Jun 2012)
 # Mask net-misc/networkmanager[wimax] till bug 386121 is resolved

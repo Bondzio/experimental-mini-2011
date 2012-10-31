@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-libs/ncurses-5.1 dev-util/dialog >=media-libs/alsa-lib-1.0.25 media-libs/libsamplerate selinux? ( sec-policy/selinux-alsa ) !minimal? ( sys-apps/pciutils )
 SLOT=0.9
 SRC_URI=mirror://alsaproject/utils/alsa-utils-1.0.25.tar.bz2 mirror://alsaproject/driver/alsa-driver-1.0.25.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	systemd	647a5a2d457d440371b3c86b4ccb9d38	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	systemd	fc2fa698095b76894d4516729da4337b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=04b83313386e9886f3ac084c15a143de

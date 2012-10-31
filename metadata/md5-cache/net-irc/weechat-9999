@@ -7,5 +7,5 @@ IUSE=guile lua +perl +python ruby tcl +alias +charset +fifo +logger +relay +rmod
 LICENSE=GPL-3
 RDEPEND=net-misc/curl[ssl] sys-libs/ncurses charset? ( virtual/libiconv ) guile? ( dev-scheme/guile ) lua? ( dev-lang/lua[deprecated] ) perl? ( dev-lang/perl ) ruby? ( >=dev-lang/ruby-1.9 ) ssl? ( net-libs/gnutls ) spell? ( app-text/aspell ) tcl? ( >=dev-lang/tcl-8.4.15 ) python? ( =dev-lang/python-2* )
 SLOT=0
-_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	a094e2ed549daa486e233970de3c7442	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	2c938a1fe61ea9899a2b97ea1e065f5f	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	a094e2ed549daa486e233970de3c7442	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	192fcbe64c4a25ea391beffaaeca2537	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=263fec9932d125e1bdd26f158baad185
