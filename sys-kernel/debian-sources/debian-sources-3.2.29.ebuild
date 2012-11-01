@@ -10,7 +10,7 @@ KV_FULL=${PN}-${PVR}
 EXTRAVERSION=-1
 KERNEL_ARCHIVE="linux_${PV}.orig.tar.xz"
 PATCH_ARCHIVE="linux_${PV}${EXTRAVERSION}.debian.tar.xz"
-RESTRICT="binchecks strip"
+RESTRICT="binchecks strip mirror"
 # based on : http://packages.ubuntu.com/maverick/linux-image-2.6.35-22-server
 LICENSE="GPL-2"
 KEYWORDS="~*"
@@ -20,8 +20,8 @@ RDEPEND="binary? ( >=sys-fs/udev-160 )"
 DESCRIPTION="Debian Sources (and optional binary kernel)"
 HOMEPAGE="http://www.debian.org"
 MAINPATCH="linux-2.6_${PV}${EXTRAVERSION}.diff.gz"
-SRC_URI="http://ftp.bg.debian.org/debian/pool/main/l/linux/${KERNEL_ARCHIVE}
-	http://ftp.bg.debian.org/debian/pool/main/l/linux/${PATCH_ARCHIVE}"
+SRC_URI="http://www.funtoo.org/distfiles/${PN}/${KERNEL_ARCHIVE}
+	http://www.funtoo.org/distfiles/${PN}//${PATCH_ARCHIVE}"
 S="$WORKDIR/linux-${CKV}"
 
 apply() {

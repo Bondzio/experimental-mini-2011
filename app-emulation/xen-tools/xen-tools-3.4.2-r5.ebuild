@@ -1,6 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/xen-tools/xen-tools-3.4.2-r5.ebuild,v 1.5 2012/05/08 16:04:46 xarthisius Exp $
 
 EAPI="3"
 
@@ -20,7 +18,7 @@ QA_WX_LOAD="${QA_PRESTRIPPED}"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="*"
 IUSE="doc debug screen custom-cflags pygrub hvm api acm flask"
 
 CDEPEND="dev-lang/python[ncurses,threads]

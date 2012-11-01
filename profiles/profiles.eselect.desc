@@ -15,8 +15,8 @@
 
 arch		funtoo/1.0/linux-gnu/arch/x86-32bit			stable
 arch		funtoo/1.0/linux-gnu/arch/x86-64bit			stable
-arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv7a_hardfp	testing
-arch		funtoo/1.0/linux-gnu/arch/arm-32bit/armv6j_hardfp	testing
+arch            funtoo/1.0/linux-gnu/arch/arm-32bit/armv7a_hardfp       exp
+arch            funtoo/1.0/linux-gnu/arch/arm-32bit/armv6j_hardfp       exp
 
 build		funtoo/1.0/linux-gnu/build/stable			stable
 build		funtoo/1.0/linux-gnu/build/current			stable
@@ -25,14 +25,19 @@ build		funtoo/1.0/linux-gnu/build/experimental			stable
 flavor		funtoo/1.0/linux-gnu/flavor/minimal			stable
 flavor		funtoo/1.0/linux-gnu/flavor/core			stable
 flavor		funtoo/1.0/linux-gnu/flavor/desktop			stable
+flavor		funtoo/1.0/linux-gnu/flavor/workstation			stable
 
+mix-ins		funtoo/1.0/linux-gnu/mix-ins/audio		    	stable
+mix-ins		funtoo/1.0/linux-gnu/mix-ins/console-extras	    	stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/dvd			stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/gnome			stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/kde			stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/media			stable
+mix-ins		funtoo/1.0/linux-gnu/mix-ins/print		    	stable
+mix-ins		funtoo/1.0/linux-gnu/mix-ins/python3-only	    	exp
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/rhel5-compat		stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/server-db			stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/server-mail		stable
 mix-ins		funtoo/1.0/linux-gnu/mix-ins/server-web			stable
-mix-ins		funtoo/1.0/linux-gnu/mix-ins/workstation            	stable
-mix-ins		funtoo/1.0/linux-gnu/mix-ins/workstation-minimal    	stable
+mix-ins		funtoo/1.0/linux-gnu/mix-ins/X			    	stable
+mix-ins     	funtoo/1.0/linux-gnu/mix-ins/xfce                  	stable

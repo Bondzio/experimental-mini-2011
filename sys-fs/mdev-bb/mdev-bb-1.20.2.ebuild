@@ -62,33 +62,12 @@ src_install() {
 	mkdir "${D}/sbin" || die
 	cp busybox "${D}/sbin/mdev" || die
 	chmod 750 "${D}/sbin/mdev" || die
+	mkdir -p "${D}/etc"
+	cp -a "${FILESDIR}"/mdev.conf "${D}/etc" || die
 	dodir /etc/mdev
-	dodir /etc/mdev/helpers
-	keepdir /etc/mdev
-	keepdir /etc/mdev/helpers
-	# copy basic mdev config to /etc
-	cp "${FILESDIR}"/mdev.conf "${D}/etc/"
-	# copy help scripts to /etc/mdev/helpers
-	cp -a "${FILESDIR}"/1.20.2/* "${D}/etc//mdev/helpers/"
+	exeinto /etc/mdev
+	doexe "${FILESDIR}"/catch-all || die
+	doexe "${FILESDIR}"/settle-nics || die
+	doexe "${FILESDIR}"/device-mapper || die
 	newinitd "${FILESDIR}"/mdev.init mdev || die
 }
-add_init() {
-    local runl=$1
-    if [ ! -e ${ROOT}/etc/runlevels/${runl} ]
-    then
-        install -d -m0755 ${ROOT}/etc/runlevels/${runl}
-    fi
-    for initd in $*
-    do
-        # if the initscript is not going to be installed and  is not currently installed, return
-        [[ -e ${D}/etc/init.d/${initd} || -e ${ROOT}/etc/init.d/${initd} ]] || continue
-        [[ -e ${ROOT}/etc/runlevels/${runl}/${initd} ]] && continue
-        elog "Auto-adding '${initd}' service to your ${runl} runlevel"
-        ln -snf /etc/init.d/${initd} "${ROOT}"/etc/runlevels/${runl}/${initd}
-    done
-}
-
-pkg_postinst() {
-add_init sysinit mdev
-}
-
