@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/cairo/cairo-9999.ebuild,v 1.22 2012/09/12 05:37:43 mattst88 Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/cairo/cairo-9999.ebuild,v 1.23 2012/10/31 23:12:19 chithanh Exp $
 
 EAPI=4
 
@@ -32,15 +32,13 @@ RDEPEND="media-libs/fontconfig
 	>=x11-libs/pixman-0.22.0
 	directfb? ( dev-libs/DirectFB )
 	glib? ( >=dev-libs/glib-2.28.6:2 )
-	opengl? ( virtual/opengl )
+	opengl? ( || ( media-libs/mesa[egl] media-libs/opengl-apple ) )
 	openvg? ( media-libs/mesa[openvg] )
 	qt4? ( >=x11-libs/qt-gui-4.8:4 )
-	svg? ( dev-libs/libxml2 )
 	X? (
 		>=x11-libs/libXrender-0.6
 		x11-libs/libXext
 		x11-libs/libX11
-		x11-libs/libXft
 		drm? (
 			>=sys-fs/udev-136
 			gallium? ( media-libs/mesa[gallium] )
@@ -74,6 +72,7 @@ REQUIRED_USE="
 
 src_prepare() {
 	epatch "${FILESDIR}"/${PN}-1.8.8-interix.patch
+	epatch "${FILESDIR}"/${PN}-1.10.0-buggy_gradients.patch
 	epatch "${FILESDIR}"/${PN}-1.10.2-qt-surface.patch
 	epatch "${FILESDIR}"/${PN}-respect-fontconfig.patch
 	epatch_user
