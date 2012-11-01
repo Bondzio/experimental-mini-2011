@@ -6087,6 +6087,8 @@ x11-terms/rxvt-unicode:wcwidth - Enable wide char width support
 x11-terms/terminator:libnotify - Enables desktop notifications viadev-python/notify-python
 x11-terms/xterm:toolbar - Enable the xterm toolbar to be built
 x11-themes/bespin:windeco - Enable window decoration for KWin.
+x11-themes/comix-xcursors:lefthanded - Install lefthanded version of theme in addition to default one
+x11-themes/comix-xcursors:opaque - Install non-transparent version of theme in addition to default one
 x11-themes/gentoo-artwork:grub - Install extra sys-boot/grub themes
 x11-themes/gentoo-artwork:icons - Install icons
 x11-themes/gentoo-artwork:lilo - Install extra sys-boot/lilo themes
