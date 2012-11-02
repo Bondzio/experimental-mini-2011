@@ -40,3 +40,7 @@ slotmove dev-util/boost-build 1.48 0
 slotmove dev-util/boost-build 1.49 0
 slotmove dev-util/boost-build 1.50 0
 slotmove dev-util/boost-build 1.51 0
+slotmove dev-libs/boost 1.48 0
+slotmove dev-libs/boost 1.49 0
+slotmove dev-libs/boost 1.50 0
+slotmove dev-libs/boost 1.51 0
