@@ -6,6 +6,6 @@ HOMEPAGE=http://www.emesene.org
 IUSE=jabber
 LICENSE=|| ( GPL-2 GPL-3 LGPL-3 )
 RDEPEND=dev-python/pygtk:2 dev-python/papyon dev-python/notify-python dev-python/pywebkitgtk jabber? ( dev-python/xmpppy ) =dev-lang/python-2* =dev-lang/python-2*[sqlite]
-SLOT=2
+SLOT=0
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	git-2	15733ab6a6feb34af9837b41623c2bad	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=21cdf9e1bd35546becb1bf7377d7b717
+_md5_=af974f8ed40d2c028ea8387f2b76f548
