@@ -9,4 +9,4 @@ RDEPEND=>=media-gfx/argyllcms-1.1.0 >=dev-python/wxpython-2.8.10.1 >=x11-libs/li
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~hwoarang/distfiles/dispcalGUI-1.1.0.0.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=b837f7c39366c2c9baa46cddef8bfa6f
+_md5_=40a6833531abb4ab9ef9799da89fbf05
