@@ -71,6 +71,7 @@ pkg_setup() {
 
 src_prepare() {
 	epatch \
+		"${FILESDIR}/${PN}-1.51.0-mpi_c++11.patch" \
 		"${FILESDIR}/${PN}-1.48.0-mpi_python3.patch" \
 		"${FILESDIR}/${PN}-1.51.0-respect_python-buildid.patch" \
 		"${FILESDIR}/${PN}-1.51.0-support_dots_in_python-buildid.patch" \
@@ -93,6 +94,11 @@ src_configure() {
 	# bug 298489
 	if use ppc || use ppc64; then
 		[[ $(gcc-version) > 4.3 ]] && append-flags -mno-altivec
+	fi
+
+	# https://svn.boost.org/trac/boost/ticket/7636
+	if use icu; then
+		append-cxxflags $(icu-config --cxxflags)
 	fi
 
 	use icu && OPTIONS+=" -sICU_PATH=/usr"
@@ -247,22 +253,21 @@ src_install () {
 			rm -r ${PYTHON_DIRS} || die
 
 			# Move mpi.so Python module to Python site-packages directory.
+			# https://svn.boost.org/trac/boost/ticket/2838
 			if use mpi; then
-				dodir $(python_get_sitedir)/mpi
-				mv "${D}usr/$(get_libdir)/mpi.so" "${D}$(python_get_sitedir)/mpi" || die
-				cat << EOF > "${D}$(python_get_sitedir)/mpi/__init__.py" || die
+				dodir $(python_get_sitedir)/boost
+				mv "${D}usr/$(get_libdir)/mpi.so" "${D}$(python_get_sitedir)/boost" || die
+				cat << EOF > "${D}$(python_get_sitedir)/boost/__init__.py" || die
 import sys
 if sys.platform.startswith('linux'):
 	import DLFCN
 	flags = sys.getdlopenflags()
 	sys.setdlopenflags(DLFCN.RTLD_NOW | DLFCN.RTLD_GLOBAL)
-	from .mpi import *
-	from .mpi import __author__, __copyright__, __date__, __license__, __version__
+	from . import mpi
 	sys.setdlopenflags(flags)
 	del DLFCN, flags
 else:
-	from .mpi import *
-	from .mpi import __author__, __copyright__, __date__, __license__, __version__
+	from . import mpi
 del sys
 EOF
 			fi
@@ -427,13 +432,13 @@ EOF
 
 pkg_postinst() {
 	if use mpi && use python; then
-		python_mod_optimize mpi
+		python_mod_optimize boost
 	fi
 }
 
 pkg_postrm() {
 	if use mpi && use python; then
-		python_mod_cleanup mpi
+		python_mod_cleanup boost
 	fi
 }
 

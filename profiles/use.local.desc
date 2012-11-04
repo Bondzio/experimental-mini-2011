@@ -249,6 +249,10 @@ app-backup/tsm:hsm - Installs Tivoli Storage Manager for Space Management
 app-backup/tsm:tsm_cit - IBM Tivoli Common Inventory Technology
 app-backup/tsm:tsm_hw - Difference snapshot support for NetApp and N-Series file servers
 app-benchmarks/jmeter:beanshell - Enable BeanShell scripting support
+app-benchmarks/ltp:expect - Build against the expect library for interactive testing
+app-benchmarks/ltp:open-posix - Build and install the POSIX testsuite
+app-benchmarks/ltp:pm - Build and install the power management testsuite
+app-benchmarks/ltp:rt - Build and install the realtime testsuite
 app-benchmarks/sysbench:aio - Enable libaio support
 app-cdr/backlite:mplayer - Add support for mplayer preview in addition to X11 and phonon
 app-cdr/brasero:introspection - Use dev-libs/gobject-introspection for introspection
@@ -433,6 +437,7 @@ app-emulation/libguestfs:introspection - Use dev-libs/gobject-introspection for 
 app-emulation/libguestfs:systemtap - Use dev-util/systemtap to inspect VM via "probes" way
 app-emulation/libspectrum:gcrypt - Use dev-libs/libgcrypt for low-level crypto of some features, including logfiles.
 app-emulation/libvirt:audit - support sys-process/audit
+app-emulation/libvirt:firewalld - DBus interface to iptables/ebtables allowing for better runtime management of your firewall.
 app-emulation/libvirt:iscsi - Allow using an iSCSI remote storage server as pool for disk image storage
 app-emulation/libvirt:libvirtd - Builds the libvirtd daemon as well as the client utilities instead of just the client utilities
 app-emulation/libvirt:lvm - Allow using the Logical Volume Manager (sys-apps/lvm2) as pool for disk image storage
