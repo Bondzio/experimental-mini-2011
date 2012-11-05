@@ -1,9 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-dns/pdns/pdns-2.9.22.6.ebuild,v 1.2 2012/06/14 02:17:35 zmedico Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dns/pdns/pdns-3.1.ebuild,v 1.1 2012/11/04 21:42:49 swegener Exp $
 
 EAPI=2
-inherit eutils multilib user
+
+inherit eutils multilib user toolchain-funcs
 
 DESCRIPTION="The PowerDNS Daemon"
 SRC_URI="http://downloads.powerdns.com/releases/${P}.tar.gz"
@@ -20,14 +21,11 @@ RDEPEND="mysql? ( virtual/mysql )
 	sqlite? ( =dev-db/sqlite-2.8* )
 	sqlite3? ( =dev-db/sqlite-3* )
 	opendbx? ( dev-db/opendbx )
-	!static? ( >=dev-libs/boost-1.31 )"
+	!static? ( >=dev-libs/boost-1.34 )"
 DEPEND="${RDEPEND}
-	static? ( >=dev-libs/boost-1.31[static-libs] )
+	virtual/pkgconfig
+	static? ( >=dev-libs/boost-1.34[static-libs] )
 	doc? ( app-doc/doxygen )"
-
-src_prepare() {
-	epatch "${FILESDIR}"/2.9.18-default-mysql-options.patch
-}
 
 src_configure() {
 	local modules="pipe geo" myconf=""
@@ -50,13 +48,15 @@ src_configure() {
 		--with-pgsql-lib=/usr/$(get_libdir) \
 		--with-mysql-lib=/usr/$(get_libdir) \
 		--with-sqlite-lib=/usr/$(get_libdir) \
-		--with-sqlite3-lib=/usr/$(get_libdir) \
+		--without-lua \
 		$(use_enable static static-binaries) \
 		${myconf} \
 		|| die "econf failed"
 }
 
 src_compile() {
+	emake -C pdns/ext/polarssl CC="$(tc-getCC)" OFLAGS="${CFLAGS}"
+
 	default
 
 	if use doc
