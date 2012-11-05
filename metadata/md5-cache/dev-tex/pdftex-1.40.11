@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst prepare
+DEFINED_PHASES=compile configure install postinst prepare unpack
 DEPEND=>=app-text/poppler-0.12.3-r3[xpdf-headers(+)] >=media-libs/libpng-1.4 sys-libs/zlib dev-libs/kpathsea app-admin/eselect-pdftex virtual/pkgconfig
 DESCRIPTION=Standalone version of pdftex that can be used to replace TeX Live's
 EAPI=4
@@ -9,4 +9,4 @@ RDEPEND=>=app-text/poppler-0.12.3-r3[xpdf-headers(+)] >=media-libs/libpng-1.4 sy
 SLOT=0
 SRC_URI=http://sarovar.org/frs/download.php/1300/pdftex-1.40.11.tar.bz2
 _eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	libtool	2b273eea1976cfaed3449345d94331ac	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=4ffba446f36871a201509c9f663f8d25
+_md5_=415787de86c07ea3192fff248abd75b0

@@ -229,6 +229,7 @@ app-arch/rpm5:pkcs11 - Build token data management utilities based on OpenCrypto
 app-arch/rpm5:uuid - Enable server side UUID generation (via dev-libs/ossp-uuid)
 app-arch/rpm5:webdav-neon - Include support for net-libs/neon
 app-arch/rpm5:xar - Build support for xar archives using app-arch/xar
+app-arch/tar:minimal - just install `tar`
 app-arch/unzip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-arch/zip:natspec - Use dev-libs/libnatspec to correctly decode non-ascii file names archived in Windows.
 app-backup/amanda:devpay - Support for using Amazon DevPay with S3
@@ -3887,7 +3888,6 @@ net-im/empathy:nautilus - Enable nautilus-sendto support
 net-im/empathy:sendto - Enable support for sending files to various devices using gnome-extra/nautilus-sendto
 net-im/empathy:webkit - Build support for Adium-style HTML-based conversation window themes using net-libs/webkit-gtk
 net-im/err:plugins - Enable support for installing plugins with dev-vcs/git
-net-im/gajim:gmail - Depend on net-dns/bind-tools to get gmail chats working
 net-im/gajim:idle - Enable idle module
 net-im/gajim:srv - SRV capabilities
 net-im/gajim:xhtml - Enable XHTML support
