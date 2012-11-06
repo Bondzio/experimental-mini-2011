@@ -4,10 +4,10 @@ DESCRIPTION=Manage a stack of patches using GIT as a backend
 EAPI=3
 HOMEPAGE=http://www.procode.org/stgit/
 IUSE=doc
-KEYWORDS=~amd64 ~ppc ~ppc64 ~x86
+KEYWORDS=amd64 ~ppc ~ppc64 ~x86
 LICENSE=GPL-2
 RDEPEND=>=dev-vcs/git-1.6.3.3 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://download.gna.org/stgit/stgit-0.16.tar.gz mirror://gentoo/stgit-0.16-missing-patches.tar.gz
 _eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b6cf487f48a4f7ca6c8d9035568e2c05
+_md5_=6a7dd665ad4baabffcb83d7af904997d
