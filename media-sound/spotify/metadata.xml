@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer>
-		<email>ereslibre@kde.org</email>
-		<name>Rafael Fernández López</name>
-	</maintainer>
-	<longdescription lang="en">
-		Official Spotify service application. P2P application that allows you
-		listening to music using your Spotify service account.
-	</longdescription>
+  <use>
+    <flag name="pax_kernel">Triggers a paxmarking of the main Spotify binary</flag>
+  </use>
+<maintainer>
+<email>prometheanfire@gentoo.org</email>
+<name>Matthew Thode</name>
+</maintainer>
+<longdescription lang="en">
+</longdescription>
 </pkgmetadata>
+
