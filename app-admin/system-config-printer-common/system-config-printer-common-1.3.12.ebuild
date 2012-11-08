@@ -32,7 +32,7 @@ COMMON_DEPEND="
 	dev-python/pycurl
 	>=dev-python/pygobject-2.21.5:2
 	net-print/cups[dbus]
-	>=sys-fs/udev-171
+	>=sys-fs/udev-172
 	virtual/libusb:1
 "
 DEPEND="${COMMON_DEPEND}
