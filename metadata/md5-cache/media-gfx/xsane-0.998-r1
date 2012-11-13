@@ -11,4 +11,4 @@ RDEPEND=media-gfx/sane-backends x11-libs/gtk+:2 x11-misc/xdg-utils jpeg? ( virtu
 SLOT=0
 SRC_URI=http://www.xsane.org/download/xsane-0.998.tar.gz http://dev.gentoo.org/~dilfridge/distfiles/xsane-0.998-patches-2.tar.xz
 _eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=dca69659cc94d52b081fb134f07371b2
+_md5_=4e9c4ebeb4d240003b4bf5e1d7fa802a

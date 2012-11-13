@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=dev-python/setuptools dev-python/numpy doc? ( >=dev-python/enable-4 media-fonts/font-cursor-misc media-fonts/font-misc-misc !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost ) test? ( >=dev-python/enable-4 media-fonts/font-cursor-misc media-fonts/font-misc-misc ) dev-lang/python test? ( dev-python/nose ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
+DEPEND=dev-python/setuptools dev-python/numpy doc? ( >=dev-python/enable-4 media-fonts/font-cursor-misc media-fonts/font-misc-misc !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost dev-python/sphinx ) test? ( >=dev-python/enable-4 media-fonts/font-cursor-misc media-fonts/font-misc-misc ) dev-lang/python test? ( dev-python/nose ) test? ( !prefix? ( x11-base/xorg-server[xvfb] ) x11-apps/xhost )
 DESCRIPTION=Enthought Tool Suite: Interactive plotting toolkit
 EAPI=4
 HOMEPAGE=http://code.enthought.com/projects/chaco/ http://pypi.python.org/pypi/chaco
@@ -10,4 +10,4 @@ RDEPEND=>=dev-python/enable-4 dev-python/numpy dev-lang/python
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ets/chaco-4.2.0.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7	virtualx	73cfc129b4b9ba23aed1abb10c825d86
-_md5_=1b03d9bf95165aeb0ad571d872706885
+_md5_=2f972aee37ff2781f327ee16842682ce

@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install postinst
+DEFINED_PHASES=compile configure install
 DESCRIPTION=A somewhat comprehensive collection of Linux man pages
 EAPI=3
 HOMEPAGE=http://www.kernel.org/doc/man-pages/
@@ -10,4 +10,4 @@ RDEPEND=virtual/man !<dev-libs/libaio-0.3.109-r2
 RESTRICT=binchecks
 SLOT=0
 SRC_URI=mirror://kernel/linux/docs/man-pages/Archive/man-pages-3.43.tar.gz http://man7.org/linux/man-pages/download/man-pages-3.43.tar.gz mirror://gentoo/man-pages-gentoo-2.tar.bz2 http://dev.gentoo.org/~cardoe/files/man-pages-gentoo-2.tar.bz2
-_md5_=ef53635fa0208b228607f81c08553b12
+_md5_=655d61f1c271ef43840173d4c44d5a64

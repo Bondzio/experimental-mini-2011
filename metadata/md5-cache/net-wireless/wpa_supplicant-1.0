@@ -10,5 +10,5 @@ RDEPEND=dbus? ( sys-apps/dbus ) kernel_linux? ( eap-sim? ( sys-apps/pcsc-lite ) 
 REQUIRED_USE=fasteap? ( !gnutls !ssl )
 SLOT=0
 SRC_URI=http://hostap.epitest.fi/releases/wpa_supplicant-1.0.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	307501b91d6f112dfc8e59e130659585	systemd	fc2fa698095b76894d4516729da4337b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	13d863c1ce8a9139edde5c84854e4b99	systemd	fc2fa698095b76894d4516729da4337b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=89efc5b00edd3bc4becb0076fb6f9a54
