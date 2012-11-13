@@ -1,45 +1,62 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/qtile/qtile-9999.ebuild,v 1.1 2012/11/13 05:03:09 radhermit Exp $
 
-EAPI=3
-inherit python git distutils
+EAPI="5"
 
-DESCRIPTION="QTile -- Python WM for Hackers"
-HOMEPAGE="http://qtile.org"
+PYTHON_DEPEND="2"
+SUPPORT_PYTHON_ABIS="1"
+RESTRICT_PYTHON_ABIS="3.*"
+PYTHON_MODNAME="libqtile"
+DISTUTILS_SRC_TEST="nosetests"
+
+inherit git-2 distutils virtualx
+
+EGIT_REPO_URI="git://github.com/qtile/qtile.git"
+
+DESCRIPTION="A full-featured, hackable tiling window manager written in Python"
+HOMEPAGE="http://qtile.org/"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-IUSE=""
+KEYWORDS=""
+IUSE="doc test"
 
-DEPEND="x11-libs/libxcb
-x11-libs/xpyb
-x11-libs/cairo
-dev-python/pycairo"
-RDEPEND="${DEPEND}"
+RDEPEND=">=dev-python/pycairo-1.10.0-r3[xcb]
+	dev-python/pygtk:2
+	>=x11-libs/xpyb-1.3.1"
+DEPEND="doc? ( dev-python/sphinx )
+	test? (
+		${RDEPEND}
+		dev-python/python-xlib
+		x11-base/xorg-server[kdrive]
+	)"
 
-EGIT_REPO_URI="git://github.com/cortesi/qtile.git"
-EGIT_BRANCH="master"
-EGIT_COMMIT="588645e6011fb5aa234445c74c1c9bb118483714"
-S="${WORKDIR}"/${PN}
+# tests fail due to xauth errors from python-xlib
+RESTRICT="test"
 
-src_install() { 
-	distutils_src_install 
-	install -d ${D}/usr/share/doc/${PF}
-	cp -r ${S}/examples ${D}/usr/share/doc/${PF}
-	install -d ${D}/etc/X11/Sessions
-	cp ${FILESDIR}/qtile ${D}/etc/X11/Sessions/qtile
-	chmod 755 ${D}/etc/X11/Sessions/qtile
+DOCS="TODO.rst"
+
+src_compile() {
+	distutils_src_compile
+	use doc && emake -C docs html
 }
 
-pkg_postinst() {
-	einfo
-	einfo "You need to create a configuration file for QTile"
-	einfo "It is probably the easiest to start with one of the configration files"
-	einfo "in /usr/share/doc/${PF}/examples/config directory"
-	einfo "   install -d ~/.config/qtile"
-	einfo "   cp /usr/share/doc/${PF}/examples/config/cortesi-config.py ~/.config/qtile/config.py"
-	einfo
-	einfo "If you don't use a loginmanager you need to add the following to your .xsession file"
-	einfo "   exec /usr/bin/qtile"
+src_test() {
+	testing() {
+		VIRTUALX_COMMAND="nosetests"
+		PYTHONPATH="build-${PYTHON_ABI}/lib" virtualmake
+	}
+	python_execute_function testing
+}
+
+src_install() {
+	distutils_src_install
+	use doc && dohtml -r docs/_build/html/*
+
+	insinto /usr/share/xsessions
+	doins resources/qtile.desktop
+
+	exeinto /etc/X11/Sessions
+	newexe "${FILESDIR}"/${PN}-session ${PN}
 }

@@ -1,0 +1,10 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup unpack
+DEPEND=dev-lang/python[xml] dev-lang/python dev-lang/python[xml] dev-vcs/git
+DESCRIPTION=Tool to help select distfiles mirrors for Gentoo
+EAPI=3
+HOMEPAGE=http://www.gentoo.org/proj/en/portage/tools/index.xml
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.6[xml] !>=dev-lang/python-2.6[-xml] dev-util/dialog net-analyzer/netselect dev-lang/python[xml] dev-lang/python dev-lang/python[xml]
+SLOT=0
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	prefix	21058c21ca48453d771df15500873ede	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_md5_=a7ec89488ceea379a836e58d95bcceff
