@@ -1226,8 +1226,9 @@ dev-lang/gdl:proj - Add support for sci-libs/proj (geographic projections)
 dev-lang/gdl:udunits - Add support for manipulating units of physical quantities
 dev-lang/gforth:force-reg - Enable a possibly unstable GCC flag for possibly large performance gains
 dev-lang/ghc:binary - Install the binary version directly, rather than using it to build the source version.
-dev-lang/ghc:ghcbootstrap - Internal: Bootstrap GHC from an existing GHC installation.
-dev-lang/ghc:llvm - Enable llvm code geenrator for ghc (-fllvm)
+dev-lang/ghc:ghcbootstrap - Bootstrap from an existing GHC installation.
+dev-lang/ghc:ghcmakebinary - Build with less runtime depends (bundle libffi for building bootstrap binaries).
+dev-lang/ghc:llvm - Enable llvm code geenrator for ghc (-fllvm).
 dev-lang/icc:eclipse - Install the dev-util/eclipse-sdk plugins
 dev-lang/icon:iplsrc - install the icon programming library source
 dev-lang/idb:eclipse - Install the dev-util/eclipse-sdk plugins
@@ -3750,6 +3751,7 @@ net-dns/ddclient:hardened - Use iproute2 instead of ifconfig to grab an IP addre
 net-dns/ddclient:ssl - Connect to the server utilizing SSL
 net-dns/dnsmasq:conntrack - Add support for Linux conntrack connection marking.
 net-dns/dnsmasq:dhcp - Enable support for reading ISC DHCPd lease files
+net-dns/dnsmasq:dhcp-tools - Install extra command line tools for manually managing DHCP leases
 net-dns/dnsmasq:script - Enable support for calling scripts when leases change
 net-dns/dnsmasq:tftp - Enables built in TFTP server for netbooting
 net-dns/ldns-utils:ecdsa - Enable ECDSA support
@@ -5597,6 +5599,7 @@ sys-kernel/vanilla-sources:deblob - Remove binary blobs from kernel sources to p
 sys-kernel/vserver-sources:deblob - Remove binary blobs from kernel sources to provide libre license compliance.
 sys-kernel/zen-sources:minimal - Clone git tree with --depth 1 to reduce amount of data to download. Use with caution
 sys-libs/db:rpc - Enable rpc client/server
+sys-libs/freeipmi:nagios - Install a nagios plugin to check sensors' status.
 sys-libs/gdbm:berkdb - enable compatibility layer for UNIX-like dbm and ndbm interfaces
 sys-libs/gdbm:exporter - enable gdbmexport binary for exporting data from gdbm-1.8 databases into gdbm-1.9
 sys-libs/glibc:gd - build memusage and memusagestat tools
