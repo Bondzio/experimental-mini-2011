@@ -186,6 +186,7 @@ app-admin/sagan-rules:lognorm - Install normalize rules support with dev-libs/li
 app-admin/salt:jinja - Add support to use dev-python/jinja to parse Salt states.
 app-admin/salt:libvirt - Support managing virtual machines with app-emulation/libvirt.
 app-admin/salt:mongodb - Support returning data to a mongodb server.
+app-admin/salt:openssl - Add support for using TLS via OpenSSL.
 app-admin/salt:redis - Support returning data to a redis database.
 app-admin/sshguard:ipfilter - Enable ipfilter firewall support (only for *bsd)
 app-admin/sudo:offensive - Let sudo print insults when the user types the wrong password.
@@ -424,6 +425,7 @@ app-emulation/emul-linux-x86-medialibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-motif:development - Install pkgconfig files
 app-emulation/emul-linux-x86-opengl:development - Install pkgconfig files
 app-emulation/emul-linux-x86-qtlibs:development - Install pkgconfig files
+app-emulation/emul-linux-x86-qtlibs:gtkstyle - Build a Qt style called GTK+ that mimics the activeGTK+ theme
 app-emulation/emul-linux-x86-sdl:development - Install pkgconfig files
 app-emulation/emul-linux-x86-soundlibs:development - Install pkgconfig files
 app-emulation/emul-linux-x86-xlibs:development - Install pkgconfig files
@@ -2621,6 +2623,9 @@ media-libs/coin:simage - Texture loading via media-libs/simage library
 media-libs/devil:allegro - Add support for Allegro
 media-libs/devil:nvtt - Add support for dev-util/nvidia-texture-tools
 media-libs/edje:cache - Enable caching
+media-libs/elementary:dbus - Enable integration with dev-libs/e_dbus.
+media-libs/elementary:quicklaunch - Enable quick-launch support
+media-libs/elementary:xdg - Enable integration with dev-libs/efreet for cross-desktop standards (freedesktop.org).
 media-libs/esdl:image - Enable image support
 media-libs/evas:bmp - Support windows bitmap (bmp) image loader
 media-libs/evas:eet - Support dev-libs/eet
