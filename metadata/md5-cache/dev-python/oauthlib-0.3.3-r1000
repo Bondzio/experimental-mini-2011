@@ -11,4 +11,4 @@ REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.
 SLOT=0
 SRC_URI=mirror://pypi/o/oauthlib/oauthlib-0.3.3.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=906b0d44e1b009dba722e3b91d8e8c94
+_md5_=317076afa5305447c796a7e82ba3b0cf
