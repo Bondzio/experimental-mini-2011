@@ -47,6 +47,7 @@ slotmove =media-libs/gst-rtsp-server-0.10* 0 0.10
 move games-board/jrisk games-board/domination
 move x11-libs/elementary media-libs/elementary
 move x11-misc/pnmixer media-sound/pnmixer
+move app-portage/pyGPG dev-python/pyGPG
 slotmove dev-libs/boost 1.48 0
 slotmove dev-libs/boost 1.49 0
 slotmove dev-libs/boost 1.50 0
