@@ -5072,7 +5072,10 @@ sci-libs/shogun:superlu - Enable support for sci-libs/superlu
 sci-libs/spqr:metis - Use sci-libs/metis or sci-libs/parmetis for partitioning
 sci-libs/spqr:tbb - Enable multithreading with the Intel Threads Building Block dev-cpp/tbb
 sci-libs/spr:root - Add sci-physics/root graphics and i/o support
-sci-libs/suitesparse:metis - Use METIS (sci-libs/metis or sci-libs/parmetis) for partitioning
+sci-libs/suitesparse:cuda - Enable nvidia cuda toolkit for speeding up computations
+sci-libs/suitesparse:metis - Enable the Partition module to cholmod using sci-libs/metis
+sci-libs/suitesparse:supernodal - Enable the Supernodal module (needs virtual/lapack)
+sci-libs/suitesparse:tbb - Enable multithreading with the Intel Threads Building Block dev-cpp/tbb
 sci-libs/taucs:cilk - Enable multithreading using dev-lang/cilk)
 sci-libs/umfpack:cholmod - Use sci-libs/cholmod for matrix ordering
 sci-libs/umfpack:metis - Use METIS via (sci-libs/cholmod) for matrix partitioning
@@ -5850,6 +5853,7 @@ www-servers/uwsgi:graylog2 - Enable logging to graylog2 (see http://graylog2.org
 www-servers/uwsgi:json - Support json as a configuration file format.
 www-servers/uwsgi:nagios - Add nagios-friendly logging output (see http://projects.unbit.it/uwsgi/wiki/Nagios).
 www-servers/uwsgi:pam - Add the pam plugin.
+www-servers/uwsgi:probepg - Add the PostgreSQL probe plugin (see http://projects.unbit.it/uwsgi/wiki/DjangoDBHA).
 www-servers/uwsgi:rrdtool - Enable support for writing requests data in RRD files.
 www-servers/uwsgi:rsyslog - Support direct logging to a app-admin/rsyslog socket (without going through the syslog interface).
 www-servers/uwsgi:spooler - Build a plugin which gives a network spooler (see http://projects.unbit.it/uwsgi/wiki/Spooler).
