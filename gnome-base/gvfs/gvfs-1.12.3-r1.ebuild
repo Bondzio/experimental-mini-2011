@@ -55,7 +55,7 @@ RDEPEND=">=dev-libs/glib-2.31.0:2
 	udev? (
 		cdda? ( >=dev-libs/libcdio-0.78.2[-minimal] )
 		|| ( >=sys-fs/udev-171[gudev] >=sys-fs/udev-164-r2[extras] ) )
-	udisks? ( =sys-fs/udisks-1.0.4-r2 )
+	udisks? ( >=sys-fs/udisks-1.90:2 )
 	http? ( >=net-libs/libsoup-gnome-2.26.0 )
 	samba? ( >=net-fs/samba-3.4.6[smbclient] )"
 DEPEND="${RDEPEND}
@@ -87,7 +87,7 @@ pkg_setup() {
 		$(use_enable http)
 		$(use_enable gnome-keyring keyring)
 		$(use_enable samba)
-		$(use_enable udisks)"
+		$(use_enable udisks udisks2)"
 }
 
 src_prepare() {
