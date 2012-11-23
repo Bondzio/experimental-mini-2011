@@ -1,13 +1,13 @@
 DEFINED_PHASES=install postinst postrm preinst prepare setup
-DEPEND=>=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite,threads] =dev-lang/python-2.6*[sqlite,threads] )
+DEPEND=app-text/dos2unix >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite,threads] =dev-lang/python-2.6*[sqlite,threads] )
 DESCRIPTION=Python Fitting Assistant - a ship fitting application for EVE Online
 EAPI=4
-HOMEPAGE=http://www.evefit.org/Pyfa
+HOMEPAGE=http://www.evefit.org/static/pyfa
 IUSE=+graph
 KEYWORDS=~amd64 ~x86
-LICENSE=GPL-3 LGPL-2.1 CCPL-Attribution-2.5 free-noncomm
+LICENSE=GPL-3+ LGPL-2.1+ CCPL-Attribution-2.5 free-noncomm
 RDEPEND=dev-python/sqlalchemy dev-python/wxpython:2.8 graph? ( dev-python/matplotlib[wxwidgets] dev-python/numpy ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite,threads] =dev-lang/python-2.6*[sqlite,threads] )
 SLOT=0
-SRC_URI=http://dl.evefit.org/stable/1.1.8/pyfa-1.1.8-inferno-src.tar.bz2
+SRC_URI=http://dl.evefit.org/pyfa/stable/1.1.10/pyfa-1.1.10-inferno-1.2-src.tar.bz2
 _eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b5d0a8f8ec723ef1d40585b09ef533ea
+_md5_=096cff3280ac6fc77a81c1918f4ba1c5
