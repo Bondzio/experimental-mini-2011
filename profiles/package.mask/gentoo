@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14245 2012/11/23 18:37:42 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14249 2012/11/24 18:20:39 eva Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,14 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Richard Freeman <rich0@gentoo.org> (24 Nov 2012)
+# Live ebuild.
+=app-misc/sleepyhead-9999
+
+# Jeroen Roovers <jer@gentoo.org> (24 Nov 2012)
+# Breaks ABI in nl_cache_*() (bug #444542)
+=dev-libs/libnl-3.2.15
 
 # Diego Elio Pettenò <flameeyes@gentoo.org> (23 Nov 2012)
 # Pending removal on 2012-12-23.
@@ -350,6 +358,7 @@ app-i18n/ibus-table-yinma
 >=x11-libs/gdk-pixbuf-2.26.5
 =x11-libs/gtk+-3.6*:3
 =x11-themes/gnome-themes-standard-3.6*
+>=dev-util/d-feet-0.3
 
 # Pacho Ramos <pacho@gentoo.org> (16 Sep 2012)
 # Dead upstream, fails tests (#315565), wasn't updated
