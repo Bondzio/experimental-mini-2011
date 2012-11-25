@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=opengl? ( media-libs/lcms:2 media-libs/openimageio media-libs/glew media-libs/freeglut virtual/opengl ) dev-cpp/yaml-cpp dev-libs/tinyxml doc? ( dev-python/sphinx ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) python? ( =dev-lang/python-2* )
+DEPEND=opengl? ( media-libs/lcms:2 >=media-libs/openimageio-1.1.0 media-libs/glew media-libs/freeglut virtual/opengl ) dev-cpp/yaml-cpp dev-libs/tinyxml doc? ( dev-python/sphinx ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) python? ( =dev-lang/python-2* )
 DESCRIPTION=A color management framework for visual effects and animation
 EAPI=4
 HOMEPAGE=http://opencolorio.org/
 IUSE=doc opengl python sse2 test
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD
-RDEPEND=opengl? ( media-libs/lcms:2 media-libs/openimageio media-libs/glew media-libs/freeglut virtual/opengl ) dev-cpp/yaml-cpp dev-libs/tinyxml python? ( =dev-lang/python-2* )
+RDEPEND=opengl? ( media-libs/lcms:2 >=media-libs/openimageio-1.1.0 media-libs/glew media-libs/freeglut virtual/opengl ) dev-cpp/yaml-cpp dev-libs/tinyxml python? ( =dev-lang/python-2* )
 REQUIRED_USE=doc? ( python )
 SLOT=0
 SRC_URI=https://github.com/imageworks/OpenColorIO/tarball/v1.0.7 -> opencolorio-1.0.7.tar.gz
 _eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	a094e2ed549daa486e233970de3c7442	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	e5bc4d49fb1a376c2ac3a203b3a4dc8a	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	vcs-snapshot	d7572a392e0bd8e207deae5414f6a887
-_md5_=4518e1f3e77eb46e5172dded08eeba2f
+_md5_=b63c4e6592a42c6873f772a6e2ebf022
