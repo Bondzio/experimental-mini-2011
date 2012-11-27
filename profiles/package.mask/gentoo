@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14254 2012/11/25 23:20:51 pacho Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14258 2012/11/27 05:41:27 tetromino Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -90,11 +90,6 @@ net-irc/xchat-xsys
 # Pacho Ramos <pacho@gentoo.org> (24 Nov 2012)
 # This project has been superseeded by G'MIC. Removal in a month.
 media-plugins/gimp-greycstoration
-
-# Pacho Ramos <pacho@gentoo.org> (24 Nov 2012)
-# Fails to launch (#294013), depends on nethack that has security
-# issues. Removal in a month
-games-roguelike/noegnud-nethack
 
 # Pacho Ramos <pacho@gentoo.org> (24 Nov 2012)
 # Fails to build with latest kernels (#294813), upstream dead since
@@ -265,10 +260,6 @@ net-analyzer/mwcollect
 # Richard Freeman <rich0@gentoo.org> (24 Nov 2012)
 # Live ebuild.
 =app-misc/sleepyhead-9999
-
-# Jeroen Roovers <jer@gentoo.org> (24 Nov 2012)
-# Breaks ABI in nl_cache_*() (bug #444542)
-=dev-libs/libnl-3.2.15
 
 # Diego Elio Pettenò <flameeyes@gentoo.org> (23 Nov 2012)
 # Pending removal on 2012-12-23.
@@ -589,6 +580,8 @@ app-i18n/ibus-table-yinma
 >=x11-libs/gdk-pixbuf-2.26.5
 =x11-libs/gtk+-3.6*:3
 =x11-themes/gnome-themes-standard-3.6*
+# Other stuff
+=dev-libs/libxml2-2.9*
 >=dev-util/d-feet-0.3
 
 # Pacho Ramos <pacho@gentoo.org> (16 Sep 2012)
@@ -798,6 +791,7 @@ sys-apps/systemd-sysv-utils
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
+>=www-client/opera-12.12
 
 # Hanno Boeck <hanno@gentoo.org> (15 Dec 2011)
 # Breaks pam_mount, which is its only user in the tree.
