@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/dracut/dracut-022-r6.ebuild,v 1.2 2012/11/01 10:10:12 aidecoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/dracut/dracut-022-r6.ebuild,v 1.4 2012/11/28 17:55:55 jer Exp $
 
 EAPI=4
 
-inherit eutils linux-info toolchain-funcs
+inherit eutils linux-info multilib toolchain-funcs
 
 add_req_use_for() {
 	local dep="$1"; shift
@@ -59,7 +59,7 @@ IUSE="debug device-mapper optimization net selinux ${IUSE_DRACUT_MODULES}"
 
 RESTRICT="test"
 
-CDEPEND=">=sys-fs/udev-166"
+CDEPEND=">=virtual/udev-166"
 RDEPEND="${CDEPEND}
 	app-arch/cpio
 	>=app-shells/bash-4.0
