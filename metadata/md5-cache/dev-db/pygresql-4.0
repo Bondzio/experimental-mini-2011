@@ -5,9 +5,9 @@ EAPI=3
 HOMEPAGE=http://www.pygresql.org/
 IUSE=doc
 KEYWORDS=~alpha ~amd64 ~hppa ~ia64 ~ppc ~sparc ~x86
-LICENSE=as-is
+LICENSE=POSTGRESQL
 RDEPEND=dev-db/postgresql-base =dev-lang/python-2*
 SLOT=0
 SRC_URI=ftp://ftp.pygresql.org/pub/distrib/PyGreSQL-4.0.tgz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
-_md5_=4f1f4aa3e902b5d09032a4f86335546d
+_md5_=17cd903718b06b762c8aa6e411c47a8d

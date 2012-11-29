@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile install postinst postrm preinst setup unpack
-DEPEND=dev-libs/openssl kernel_linux? ( sys-apps/module-init-tools ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
+DEPEND=dev-libs/openssl kernel_linux? ( virtual/modutils ) sys-apps/sed kernel_linux? ( virtual/linux-sources )
 DESCRIPTION=Open Source iSCSI target with professional features
 HOMEPAGE=http://iscsitarget.sourceforge.net/
 IUSE=kernel_linux
 KEYWORDS=~amd64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=dev-libs/openssl kernel_linux? ( sys-apps/module-init-tools )
+RDEPEND=dev-libs/openssl kernel_linux? ( virtual/modutils )
 SLOT=0
 SRC_URI=mirror://sourceforge/iscsitarget/iscsitarget-1.4.20.2.tar.gz
-_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	e5bc4d49fb1a376c2ac3a203b3a4dc8a	linux-info	f01ffb28843e2de3ea571f80f07e5078	linux-mod	a4e07f78bacb6b129ea7b18ad060dbfc	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	e5bc4d49fb1a376c2ac3a203b3a4dc8a	linux-info	f01ffb28843e2de3ea571f80f07e5078	linux-mod	dbc722ed035721476f23ab7b0572985e	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=8797a9efe8f2b8f4bb20d88fa7c69aa3
