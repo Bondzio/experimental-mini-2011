@@ -5,9 +5,9 @@ EAPI=3
 HOMEPAGE=http://bicyclerepair.sourceforge.net/
 IUSE=emacs
 KEYWORDS=amd64 ~ia64 ppc ppc64 x86
-LICENSE=as-is
+LICENSE=icu GPL-2+
 RDEPEND=emacs? ( app-emacs/pymacs app-emacs/python-mode ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/bicyclerepair/bicyclerepair-0.9.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	elisp-common	cdb887d0e278ea6e82ea2a5d4792c52a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=9d008f42095e33a69a08f744c19a3d4f
+_md5_=389606cad4623d22dc7b393a93431944
