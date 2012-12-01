@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile configure install postinst postrm preinst setup unpack
+DEPEND==sys-devel/automake-1.11* =sys-devel/automake-1.4* =sys-devel/automake-1.9* dev-lang/yasm >=dev-lang/python-2.4.6 || ( >=net-misc/wget-1.11.4 >=net-misc/curl-7.19.4 ) sys-libs/zlib css? ( media-libs/libdvdcss ) gtk? ( >=x11-libs/gtk+-2.8 dev-libs/glib dev-libs/dbus-glib x11-libs/libnotify media-libs/gstreamer media-libs/gst-plugins-base >=sys-fs/udev-171[gudev] ) dev-vcs/git >=sys-apps/sed-4 =dev-lang/python-2*
+DESCRIPTION=Open-source DVD to MPEG-4 converter.
+EAPI=2
+HOMEPAGE=http://handbrake.fr/
+IUSE=css gtk gst ffmpeg2
+LICENSE=GPL-2
+RDEPEND=sys-libs/zlib css? ( media-libs/libdvdcss ) gtk? ( >=x11-libs/gtk+-2.8 dev-libs/glib dev-libs/dbus-glib x11-libs/libnotify media-libs/gstreamer media-libs/gst-plugins-base >=sys-fs/udev-171[gudev] ) =dev-lang/python-2*
+RESTRICT=mirror
+SLOT=0
+_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_md5_=899d623f847e93e4a882b6249239e0a0
