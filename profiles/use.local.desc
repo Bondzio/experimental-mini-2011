@@ -2011,7 +2011,7 @@ games-rpg/sumwars:tools - Builds editor tools
 games-simulation/flightgear:jsbsim - Enables JSBSim Flight Dynamics Model (default)
 games-simulation/flightgear:oldfdm - Enables deprecated Flight Dynamics Models (LaRCsim, UIUC)
 games-simulation/flightgear:subversion - Enables terrasync scenery downloader
-games-simulation/flightgear:udev - Enables event-based Input devices through sys-fs/udev
+games-simulation/flightgear:udev - Enables event-based Input devices through virtual/udev
 games-simulation/flightgear:yasim - Enables YASim Flight Dynamics Model
 games-simulation/openttd:aplaymidi - Enables midi music in game, using aplaymidi as an external player
 games-simulation/openttd:dedicated - Build only the openttd server, and not the client.
@@ -3645,6 +3645,7 @@ net-analyzer/nfdump:ftconv - Build the flow-tools to nfdump converter
 net-analyzer/nfdump:nfprofile - Build nfprofile used by NfSen
 net-analyzer/nfdump:nftrack - Build nfprofile used by PortTracker
 net-analyzer/nfdump:sflow - Build sflow collector sfcpad
+net-analyzer/nmap:lua - Include support for the Nmap Scripting Engine (NSE) through dev-lang/lua
 net-analyzer/nmap:ncat - Install the ncat utility
 net-analyzer/nmap:ndiff - Install the ndiff utility
 net-analyzer/nmap:nmap-update - Install nmap-update, which uses dev-vcs/subversion to update nmap scripts in your home directory
@@ -4653,6 +4654,7 @@ net-nds/gosa-core:samba - Manage samba accounts with gosa.
 net-nds/nsscache:nsscache - Depend on sys-auth/libnss-cache to handle flat files
 net-nds/nsscache:nssdb - Depend on sys-libs/libnss_db to handle dbm files.
 net-nds/openldap:experimental - Enable experimental backend options
+net-nds/openldap:minimal - Build libraries & userspace tools only. Does not install any server code.
 net-nds/openldap:odbc - Enable ODBC and SQL backend options
 net-nds/openldap:overlays - Enable contributed OpenLDAP overlays
 net-nds/openldap:smbkrb5passwd - Enable overlay for syncing ldap, unix and lanman passwords
@@ -6087,6 +6089,7 @@ x11-misc/google-gadgets:soup - Enables XML HTTP request extension based on net-l
 x11-misc/lightdm:branding - Replace original gnome background with one from Gentoo ten project
 x11-misc/lightdm:introspection - Use dev-libs/gobject-introspection for introspection
 x11-misc/obconf:lxde - Add wrapper for LXDE environment
+x11-misc/openbox-menu:icons - Turn on to let icons appear in menus
 x11-misc/rednotebook:libyaml - enable libyaml support
 x11-misc/rednotebook:spell - enable gtk-spell support
 x11-misc/redshift:geoclue - Control dependency on app-misc/geoclue

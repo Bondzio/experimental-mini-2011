@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=app-crypt/qca app-crypt/qca-ossl sys-auth/libfprint sys-auth/polkit-qt sys-libs/pam x11-libs/libfakekey x11-libs/qt-core:4 !sys-auth/thinkfinger
 SLOT=0
 SRC_URI=http://www.n-view.net/Appliance/fingerprint/download/fingerprint-gui-1.04.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	13d863c1ce8a9139edde5c84854e4b99	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	udev	f7490675e06a5e4db55adf394f078b7b	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	qt4-r2	13d863c1ce8a9139edde5c84854e4b99	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	udev	4f764d2b1e34e4ef12b9b0d6e680c0ee	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=7b9b9218c0389a3110d3ae7752cd12b6
