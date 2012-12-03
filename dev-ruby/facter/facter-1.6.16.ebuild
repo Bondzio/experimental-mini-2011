@@ -1,13 +1,13 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/facter/facter-1.6.12.ebuild,v 1.1 2012/09/26 06:26:12 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/facter/facter-1.6.16.ebuild,v 1.1 2012/12/02 19:24:11 graaff Exp $
 
-EAPI="4"
+EAPI=5
 
 USE_RUBY="ruby18 ruby19 ree18 jruby"
 RUBY_FAKEGEM_TASK_DOC=""
 RUBY_FAKEGEM_RECIPE_TEST="rspec"
-RUBY_FAKEGEM_EXTRADOC="CHANGELOG README.md"
+RUBY_FAKEGEM_EXTRADOC="README.md"
 RUBY_FAKEGEM_BINWRAP="facter"
 
 inherit ruby-fakegem
@@ -21,11 +21,14 @@ IUSE=""
 KEYWORDS="~amd64 ~ppc ~ppc64 ~sparc ~x86"
 
 CDEPEND="
+	>=sys-apps/net-tools-1.60_p20120127084908[old-output]
 	sys-apps/dmidecode
 	sys-apps/lsb-release
 	sys-apps/pciutils"
 
 RDEPEND+=" ${CDEPEND}"
 DEPEND+=" test? ( ${CDEPEND} )"
+
+RUBY_PATCHES=( ${P}-ifconfig-path.patch )
 
 ruby_add_bdepend "test? ( dev-ruby/mocha )"
