@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/gv dev-libs/libxml2:2 media-libs/libpng sci-libs/cfitsio sci-libs/fftw:3.0 sci-libs/gsl sci-libs/scipy virtual/latex-base || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pyxplot/pyxplot_0.9.0.tar.gz
-_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=e7c0fb36937fffb1070a0fbf6c200b38

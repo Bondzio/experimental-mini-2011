@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-text/iso-codes dev-python/lxml dev-python/python-levenshtein sys-devel/gettext html? ( dev-python/utidylib ) ical? ( dev-python/vobject ) ini? ( dev-python/iniparse ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7*[sqlite] =dev-lang/python-2.6*[sqlite] )
 SLOT=0
 SRC_URI=mirror://sourceforge/translate/translate-toolkit-1.9.0.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=ad8513c5237bf943c92b2bb1c6a491ea

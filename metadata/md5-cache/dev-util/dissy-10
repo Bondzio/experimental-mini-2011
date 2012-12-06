@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=sys-devel/binutils dev-python/pygtk dev-python/pygobject:2 dev-python/pywebkitgtk || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://dissy.googlecode.com/files/dissy-10.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=dd774b7a7bc0e90fab116f5c529b35b2

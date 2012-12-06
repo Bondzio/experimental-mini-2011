@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=sci-libs/hdf5 >=dev-python/numpy-1.6.0 dev-python/numexpr dev-libs/lzo:2 app-arch/bzip2 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/pytables/2.4.0/tables-2.4.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=1a37876624defccdf929a42ded9251da

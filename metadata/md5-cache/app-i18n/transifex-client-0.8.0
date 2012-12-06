@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://github.com/transifex/transifex-client/tarball/0.8 -> transifex-client-0.8.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=2bbf6bf4e33e964a1391c865b5430354

@@ -6,5 +6,5 @@ HOMEPAGE=http://home.gna.org/nfoview/
 LICENSE=GPL-3
 RDEPEND=dev-python/pygobject:3 media-fonts/terminus-font || ( =dev-lang/python-3.3* =dev-lang/python-3.2* )
 SLOT=0
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	git-2	15733ab6a6feb34af9837b41623c2bad	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=e4c0d8dc6acc14c84e8689328a7ec81f

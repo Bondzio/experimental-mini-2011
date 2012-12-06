@@ -10,5 +10,5 @@ RDEPEND=pygments? ( dev-python/pygments[python_abis_2.5?,python_abis_2.6?,python
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=mirror://pypi/M/Markdown/Markdown-2.2.1.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=5f77a9f1bcb78ffc3749e05ca87cf5e7

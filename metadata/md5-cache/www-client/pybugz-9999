@@ -7,5 +7,5 @@ IUSE=zsh-completion
 LICENSE=GPL-2
 RDEPEND=zsh-completion? ( app-shells/zsh ) =dev-lang/python-2.7* =dev-lang/python-2.7*[readline]
 SLOT=0
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=9f01b5b10ba12bdbb8224e8de87f6994

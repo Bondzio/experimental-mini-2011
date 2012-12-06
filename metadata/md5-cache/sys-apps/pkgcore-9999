@@ -7,5 +7,5 @@ IUSE=+doc
 LICENSE=GPL-2
 RDEPEND=>=dev-lang/python-2.5 =dev-python/snakeoil-9999 || ( >=dev-lang/python-2.5 dev-python/pycrypto ) dev-lang/python
 SLOT=0
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=6ae081d2abd7a59b75a53e9d108a085d

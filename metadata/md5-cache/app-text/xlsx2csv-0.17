@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND==dev-lang/python-2* =dev-lang/python-2*[xml]
 SLOT=0
 SRC_URI=mirror://github/dilshod/xlsx2csv/xlsx2csv-0.17.zip
-_eclasses_=python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=7e422bfc7dd59a00d821c5799efe18ef

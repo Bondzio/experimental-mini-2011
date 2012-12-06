@@ -10,5 +10,5 @@ RDEPEND=dev-python/mozinfo[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,py
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=mirror://pypi/m/mozprocess/mozprocess-0.8.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=c4012db12dd492ccb02a3ed6939021f4

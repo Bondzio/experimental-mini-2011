@@ -10,5 +10,5 @@ RDEPEND==dev-python/twisted-12.2*[python_abis_2.6?,python_abis_2.7?,python_abis_
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.8 python_abis_2.7-pypy-1.9 )
 SLOT=0
 SRC_URI=http://twistedmatrix.com/Releases/Pair/12.2/TwistedPair-12.2.0.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	twisted	fded36486e9e0c842eb91c94819c6588	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	twisted	fded36486e9e0c842eb91c94819c6588	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=3fe52a4daefae3103df13fb20c1b48f5

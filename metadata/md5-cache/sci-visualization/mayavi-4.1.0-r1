@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/apptools dev-python/configobj dev-python/envisage dev-python/ipython dev-python/numpy dev-python/pyface dev-python/traitsui dev-python/wxpython dev-lang/python
 SLOT=2
 SRC_URI=http://www.enthought.com/repo/ets/mayavi-4.1.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	73cfc129b4b9ba23aed1abb10c825d86
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	73cfc129b4b9ba23aed1abb10c825d86
 _md5_=e9cbbfa8905beb111c109a6725930e18

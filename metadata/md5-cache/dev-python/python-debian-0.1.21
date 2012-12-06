@@ -9,5 +9,5 @@ LICENSE=GPL-2 GPL-3
 RDEPEND=dev-python/chardet || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://debian/pool/main/p/python-debian/python-debian_0.1.21.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	f5525ce607e5882f9a3dcb0bf831e6c7
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
 _md5_=0ed6cc2e3543fd5b89069a0ff681995c

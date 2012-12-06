@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( media-tv/mythtv[python] media-tv/mythtv-bindings[python] ) dev-python/imaging =media-tv/mythtv-0.26* || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=https://github.com/MythTV/mythtv/tarball/bde24c5cd3050252687890f9261e4706b513acd3 -> mythtv-0.26_pre20120706.tar.gz
-_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	mythtv	4ed311a770cfb86e57de23a032d32d85	mythtv-plugins	60ee43f1f8c65625d8409248b7268a72	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	mythtv	4ed311a770cfb86e57de23a032d32d85	mythtv-plugins	60ee43f1f8c65625d8409248b7268a72	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=fe6067fbff07eb8f254b82b2f6c187b1

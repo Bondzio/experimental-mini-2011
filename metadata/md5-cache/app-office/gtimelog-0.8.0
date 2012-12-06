@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/gobject-introspection dev-python/dbus-python dev-python/pygobject:3 gnome-base/gnome-desktop:2 x11-libs/gtk+:3[introspection] x11-libs/pango[introspection] ayatana? ( dev-libs/libappindicator:3[introspection] ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=https://launchpad.net/gtimelog/devel/0.8.0/+download/gtimelog-0.8.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	f5525ce607e5882f9a3dcb0bf831e6c7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	73cfc129b4b9ba23aed1abb10c825d86
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	virtualx	73cfc129b4b9ba23aed1abb10c825d86
 _md5_=116d0ba9a10fb682793de819e09b9830
