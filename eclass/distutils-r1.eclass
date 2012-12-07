@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/distutils-r1.eclass,v 1.24 2012/12/01 10:54:50 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/distutils-r1.eclass,v 1.28 2012/12/07 17:59:12 mgorny Exp $
 
 # @ECLASS: distutils-r1
 # @MAINTAINER:
@@ -380,14 +380,39 @@ distutils-r1_run_phase() {
 	fi
 
 	if [[ ${DISTUTILS_NO_PARALLEL_BUILD} ]]; then
-		"${@}" || die "${1} failed."
+		"${@}"
 	else
-		multijob_child_init "${@}" || die "${1} failed."
+		(
+			multijob_child_init
+			"${@}" 2>&1 | tee -a "${T}/build-${EPYTHON}.log"
+		) &
+		multijob_post_fork
 	fi
 
 	if [[ ${DISTUTILS_IN_SOURCE_BUILD} ]]; then
 		popd &>/dev/null || die
 	fi
+
+	# Store them for reuse.
+	_DISTUTILS_BEST_IMPL=(
+		"${EPYTHON}" "${PYTHON}" "${BUILD_DIR}" "${PYTHONPATH}"
+	)
+}
+
+# @FUNCTION: _distutils-r1_run_common_phase
+# @USAGE: [<argv>...]
+# @INTERNAL
+# @DESCRIPTION:
+# Run the given command, restoring the best-implementation state.
+_distutils-r1_run_common_phase() {
+	local EPYTHON=${_DISTUTILS_BEST_IMPL[0]}
+	local PYTHON=${_DISTUTILS_BEST_IMPL[1]}
+	local BEST_BUILD_DIR=${_DISTUTILS_BEST_IMPL[2]}
+	local PYTHONPATH=${_DISTUTILS_BEST_IMPL[3]}
+
+	export EPYTHON PYTHON PYTHONPATH
+
+	"${@}"
 }
 
 distutils-r1_src_prepare() {
@@ -419,7 +444,7 @@ distutils-r1_src_configure() {
 	multijob_finish
 
 	if declare -f python_configure_all >/dev/null; then
-		python_configure_all
+		_distutils-r1_run_common_phase python_configure_all
 	fi
 }
 
@@ -435,7 +460,7 @@ distutils-r1_src_compile() {
 	multijob_finish
 
 	if declare -f python_compile_all >/dev/null; then
-		python_compile_all
+		_distutils-r1_run_common_phase python_compile_all
 	fi
 }
 
@@ -451,7 +476,7 @@ distutils-r1_src_test() {
 	multijob_finish
 
 	if declare -f python_test_all >/dev/null; then
-		python_test_all
+		_distutils-r1_run_common_phase python_test_all
 	fi
 }
 
@@ -467,9 +492,9 @@ distutils-r1_src_install() {
 	multijob_finish
 
 	if declare -f python_install_all >/dev/null; then
-		python_install_all
+		_distutils-r1_run_common_phase python_install_all
 	else
-		distutils-r1_python_install_all
+		_distutils-r1_run_common_phase distutils-r1_python_install_all
 	fi
 }
 
