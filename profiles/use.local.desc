@@ -2679,6 +2679,7 @@ media-libs/gst-rtsp-server:vala - Add support for dev-lang/vala
 media-libs/gstreamer:introspection - Use dev-libs/gobject-introspection for introspection
 media-libs/gstreamer:orc - Disable some PaX memory protections to allow plugins that use dev-lang/orc for runtime optimization to be used on hardened PaX systems
 media-libs/gupnp-dlna:introspection - Use dev-libs/gobject-introspection for introspection
+media-libs/jbig2enc:webp - Add support for WEBP image format
 media-libs/leptonica:utils - Install command-line utilities
 media-libs/leptonica:webp - Adds support for the WebP image format
 media-libs/libass:enca - Enables support for charset discovery and conversion.
