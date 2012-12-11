@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/argyllcms/argyllcms-1.4.0-r1.ebuild,v 1.3 2012/12/03 11:08:36 nativemad Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/argyllcms/argyllcms-1.4.0-r1.ebuild,v 1.5 2012/12/11 16:10:46 axs Exp $
 
 EAPI=5
 
-inherit base toolchain-funcs
+inherit base udev toolchain-funcs
 
 MY_P="Argyll_V${PV}"
 DESCRIPTION="Open source, ICC compatible color management system"
@@ -72,10 +72,7 @@ src_install() {
 	insinto /usr/share/${PN}/ref
 	doins   ref/*
 
-	local udevdir=/lib/udev
-	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
-	insinto "${udevdir}"/rules.d
-	doins libusb/55-Argyll.rules
+	udev_dorules libusb/55-Argyll.rules
 }
 
 pkg_postinst() {

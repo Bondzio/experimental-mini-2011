@@ -1,10 +1,10 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/sysprof/sysprof-1.1.8-r2.ebuild,v 1.3 2012/09/18 09:59:26 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/sysprof/sysprof-1.1.8-r2.ebuild,v 1.5 2012/12/11 16:08:45 axs Exp $
 
 EAPI="4"
 
-inherit gnome2-utils eutils linux-info toolchain-funcs
+inherit gnome2-utils eutils linux-info udev toolchain-funcs
 
 DESCRIPTION="System-wide Linux Profiler"
 HOMEPAGE="http://sysprof.com/"
@@ -31,9 +31,7 @@ pkg_pretend() {
 
 src_install() {
 	# Install udev rules in the proper place
-	local udevdir=/lib/udev
-	has_version sys-fs/udev && udevdir="$($(tc-getPKG_CONFIG) --variable=udevdir udev)"
-	export MAKEOPTS="${MAKEOPTS} udevdir=${udevdir}/rules.d"
+	export MAKEOPTS="${MAKEOPTS} udevdir=$(udev_get_udevdir)"
 	default
 
 	# Symlink icons for use in application launchers
