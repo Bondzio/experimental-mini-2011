@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14293 2012/12/12 17:00:54 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14296 2012/12/13 17:07:03 bicatali Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,10 +31,21 @@
 
 #--- END OF EXAMPLES ---
 
-# Sergey Popov <pinkbyte@gentoo.org> (10 Dec 2012)
-# Mask new vzctl and ploop until all deps will be fixed
->=sys-cluster/ploop-1.5
->=sys-cluster/vzctl-4.0
+# Sebastien Fabbro <bicatali@gentoo.org> (13 Dec 2012)
+# Necessary removal to get rid of very unstable sci-libs/lapack-atlas
+# Packages are in the science overlay
+# until sci-libs/atlas replacement make it to the main tree
+sci-astronomy/sextractor
+sci-astronomy/scamp
+
+# Justin Lecher <jlec@gentoo.org> (5 Dec 2012)
+# sci-libs/(lapack/blas)-altas will be removed due to
+# fragile build and runtime behaviour #372323.
+# Alternatives are sci-libs/lapack-reference & sci-libs/blas-reference.
+# Follow up package named sci-libs/atlas can be found in
+# sci overlay and will be moved once ready for prime time
+sci-libs/blas-atlas
+sci-libs/lapack-atlas
 
 # Michał Górny <mgorny@gentoo.org> (07 Dec 2012)
 # Experimental version disabling XDM-AUTHENTICATION-1 (in favor
