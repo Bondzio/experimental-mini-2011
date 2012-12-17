@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.26 2012/12/14 08:41:59 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python-r1.eclass,v 1.28 2012/12/16 23:26:15 mgorny Exp $
 
 # @ECLASS: python-r1
 # @MAINTAINER:
@@ -133,9 +133,12 @@ fi
 
 _python_set_globals() {
 	local flags=( "${PYTHON_COMPAT[@]/#/python_targets_}" )
-	local flags_st=( "${PYTHON_COMPAT[@]/#/-python_single_target_}" )
+	#local flags_st=( "${PYTHON_COMPAT[@]/#/-python_single_target_}" )
 	local optflags=${flags[@]/%/?}
-	optflags+=,${flags_st[@]/%/(-)}
+	#optflags+=,${flags_st[@]/%/(-)}
+
+	# PYTHON_SINGLE_TARGET safety check temporarily disabled
+	# because of issues with paludis, bug #447524.
 
 	IUSE=${flags[*]}
 	REQUIRED_USE="|| ( ${flags[*]} )"
@@ -476,10 +479,6 @@ python_export_best() {
 # having a matching shebang will be refused.
 python_replicate_script() {
 	debug-print-function ${FUNCNAME} "${@}"
-
-	if [[ ${_PYTHON_SINGLE_R1} ]]; then
-		die "${FUNCNAME} must not be used with python-single-r1 eclass."
-	fi
 
 	local suffixes=()
 
