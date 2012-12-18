@@ -2397,11 +2397,6 @@ mail-filter/bogofilter:tokyocabinet - Enable Tokyo Cabinet database support
 mail-filter/clamassassin:clamd - Use the app-antivirus/clamav daemon for virus checking
 mail-filter/clamassassin:subject-rewrite - Adds support for subject rewriting
 mail-filter/dcc:rrdtool - Enable net-analyzer/rrdtool interface scripts
-mail-filter/dovecot-antispam:crm114 - Build CRM114 backend
-mail-filter/dovecot-antispam:dspam - Build mail-filter/dspam backend
-mail-filter/dovecot-antispam:mailtrain - Build mailtrain backend
-mail-filter/dovecot-antispam:signature-log - Build signature-log backend
-mail-filter/dovecot-antispam:spool2dir - Build spool directory backend
 mail-filter/dspam:daemon - Enable support for DSPAM to run in --daemon mode
 mail-filter/dspam:debug - Enable debugging support (don't enable this unless something needs testing!)
 mail-filter/dspam:domain-scale - Build for domain scale setups - puts data to $HOME/data/domain.com/user
