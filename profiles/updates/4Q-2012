@@ -55,6 +55,7 @@ move app-editors/XML-XSH app-editors/XML-XSH2
 slotmove <net-libs/farstream-0.1.90 0 0.1
 move dev-ruby/ruby-bsearch dev-ruby/bsearch
 move net-misc/ptunnel net-proxy/pingtunnel
+move media-sound/leechcraft-lemon net-misc/leechcraft-lemon
 slotmove dev-libs/boost 1.48 0
 slotmove dev-libs/boost 1.49 0
 slotmove dev-libs/boost 1.50 0
