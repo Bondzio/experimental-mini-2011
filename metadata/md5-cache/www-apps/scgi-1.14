@@ -8,5 +8,5 @@ LICENSE=CNRI
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://python.ca/scgi/releases/scgi-1.14.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=15b1776084a6b3a18a5e47537f224662

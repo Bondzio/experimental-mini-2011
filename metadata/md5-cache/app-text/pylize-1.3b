@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/empy dev-python/imaging =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.chrisarndt.de/en/software/pylize/download/pylize-1.3b.tar.bz2
-_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=0beecaabb0dcb8ad164a379c38d8aca7

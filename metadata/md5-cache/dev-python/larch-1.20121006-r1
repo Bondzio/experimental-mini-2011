@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=dev-python/cliapp dev-python/tracing dev-python/ttystatus || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=http://code.liw.fi/debian/pool/main/p/python-larch/python-larch_1.20121006.orig.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=651d4a2052ad3cfb9a8f7f465a359b24

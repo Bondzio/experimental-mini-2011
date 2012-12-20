@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=app-i18n/ibus-1.4 =dev-python/pygobject-2* =dev-python/pygtk-2* >=app-i18n/libhangul-0.1 nls? ( virtual/libintl ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=http://ibus.googlecode.com/files/ibus-hangul-1.4.0.tar.gz
-_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=20756bf4e254a501f854f29ab9c102b9

@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=https://fedorahosted.org/released/btparser/btparser-0.17.tar.xz
-_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=3191bcedc4016ee40cda0e72e72936b8

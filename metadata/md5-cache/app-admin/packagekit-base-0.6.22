@@ -10,5 +10,5 @@ RDEPEND=connman? ( net-misc/connman ) introspection? ( >=dev-libs/gobject-intros
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.packagekit.org/releases/PackageKit-0.6.22.tar.xz
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	nsplugins	b195a1306f4ee7cf507037dc6aa5ba89	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	nsplugins	b195a1306f4ee7cf507037dc6aa5ba89	python	0784adf41cd3f25a7d475ec8029bb78c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=4f80ec7ffa017b3285eeaafab154c568

@@ -8,5 +8,5 @@ LICENSE=GPL-3
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://muth.org/Robert/Apetag/apetag.1.12.tar.gz
-_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	python	cf711bf482c3e862b8daec7d25a56fd3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=multilib	9aa8a023e062fca0ba79362d9d0cc488	python	0784adf41cd3f25a7d475ec8029bb78c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=0673cbd9b0e6f02c1812855fecb03466

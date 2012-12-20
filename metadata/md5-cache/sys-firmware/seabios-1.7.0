@@ -8,5 +8,5 @@ LICENSE=LGPL-3 GPL-3
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.linuxtogo.org/~kevin/SeaBIOS/seabios-1.7.0.tar.gz http://dev.gentoo.org/~cardoe/distfiles/seabios-1.7.0-bins.tar.xz
-_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=0ca52b9e6be0b6810be2f94aeed9e909

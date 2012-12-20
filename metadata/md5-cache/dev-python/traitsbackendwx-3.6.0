@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=dev-python/setuptools dev-python/wxpython:2.8 =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/TraitsBackendWX-3.6.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=bbe3e6b33d0cfc100620bafc533be55f

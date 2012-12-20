@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=sys-apps/pkgcore-0.7.3 >=dev-python/snakeoil-0.4.4 dev-lang/python
 SLOT=0
 SRC_URI=http://pkgcore-checks.googlecode.com/files/pkgcore-checks-0.4.15.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=f83c88ed571557a93e7fe940e4bc523d

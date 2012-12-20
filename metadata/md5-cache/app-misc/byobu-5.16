@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=screen? ( app-misc/screen ) !screen? ( app-misc/tmux ) dev-libs/newt =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://launchpad.net/byobu/trunk/5.16/+download/byobu_5.16.orig.tar.gz
-_eclasses_=python	cf711bf482c3e862b8daec7d25a56fd3
+_eclasses_=python	0784adf41cd3f25a7d475ec8029bb78c
 _md5_=484d3c64e11698504c0a03e0532e6ae1
