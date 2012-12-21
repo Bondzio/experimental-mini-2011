@@ -10,7 +10,7 @@ MY_V=( $(get_version_components) )
 #RUN="${WORKDIR}/amd-driver-installer-9.00-x86.x86_64.run"
 SRC_URI="http://www2.ati.com/drivers/beta/amd-driver-installer-catalyst-12.11-beta11-x86.x86_64.zip http://developer.amd.com.php53-23.ord1-1.websitetestlink.com/wordpress/media/2012/10/xvba-sdk-0.74-404001.tar.gz"
 FOLDER_PREFIX="common/"
-IUSE="debug +modules multilib qt4 static-libs disable-watermark"
+IUSE="+vaapi debug +modules multilib qt4 static-libs disable-watermark"
 
 LICENSE="AMD GPL-2 QPL-1.0 as-is"
 KEYWORDS="-* ~amd64 ~x86"
@@ -53,6 +53,10 @@ DEPEND="${RDEPEND}
 	x11-libs/libXtst
 	sys-apps/findutils
 	app-misc/pax-utils
+"
+
+PDEPEND="
+	vaapi? ( x11-libs/xvba-video )
 "
 
 EMULTILIB_PKG="true"
@@ -581,9 +585,10 @@ src_install-libs() {
 	for so in $(find "${D}"/usr/$(get_libdir) -maxdepth 1 -name *.so.[0-9].[0-9])
 	do
 		local soname=${so##*/}
-		## let's keep also this alternative way ;)
-		#dosym ${soname} /usr/$(get_libdir)/${soname%.[0-9]}
-		dosym ${soname} /usr/$(get_libdir)/$(scanelf -qF "#f%S" ${so})
+		local soname_one=${soname%.[0-9]}
+		local soname_zero=${soname_one%.[0-9]}
+		dosym ${soname} /usr/$(get_libdir)/${soname_one}
+		dosym ${soname_one} /usr/$(get_libdir)/${soname_zero}
 	done
 
 	# See https://bugs.gentoo.org/show_bug.cgi?id=443466
@@ -592,6 +597,7 @@ src_install-libs() {
 
 	#remove static libs if not wanted
 	use static-libs || rm -rf "${D}"/usr/$(get_libdir)/libfglrx_dm.a
+
 }
 
 pkg_postinst() {
