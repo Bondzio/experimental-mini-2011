@@ -5916,7 +5916,6 @@ x11-libs/libXfont:bzip2 - Support bzip2 compressed PCF fonts.
 x11-libs/libXfont:truetype - Use media-libs/freetype for font rasterization.
 x11-libs/libaosd:pango - Enable the textual helpers (requires pangocairo).
 x11-libs/libaosd:tools - Install the aosd_cat tool (requires glib-2.0).
-x11-libs/libcryptui:introspection - Use dev-libs/gobject-introspection for introspection
 x11-libs/libdesktop-agnostic:gconf - Enable GConf as configuration backend
 x11-libs/libdesktop-agnostic:glade - Install the Glade catalog for the desktop-agnotstic GTK widgets.
 x11-libs/libdesktop-agnostic:introspection - Use dev-libs/gobject-introspection for introspection
