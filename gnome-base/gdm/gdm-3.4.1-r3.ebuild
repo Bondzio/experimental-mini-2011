@@ -5,7 +5,7 @@
 EAPI="4"
 GNOME2_LA_PUNT="yes"
 
-inherit autotools eutils gnome2 pam systemd user
+inherit autotools eutils gnome2 pam user
 
 G_PV="2012.09.25"
 G_P="gdm-gentoo-${G_PV}"
@@ -18,7 +18,7 @@ LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~sh ~x86"
 
-IUSE="accessibility audit +consolekit +fallback fprint +gnome-shell +introspection ipv6 ldap plymouth selinux smartcard systemd tcpd test xinerama +xklavier"
+IUSE="accessibility audit +consolekit +fallback fprint +gnome-shell +introspection ipv6 ldap plymouth selinux smartcard tcpd test xinerama +xklavier"
 
 # NOTE: x11-base/xorg-server dep is for X_SERVER_PATH etc, bug #295686
 # nspr used by smartcard extension
@@ -35,7 +35,6 @@ COMMON_DEPEND="
 	>=x11-misc/xdg-utils-1.0.2-r3
 	>=sys-power/upower-0.9
 	>=sys-apps/accountsservice-0.6.12
-
 	>=gnome-base/dconf-0.11.6
 	>=gnome-base/gnome-settings-daemon-3.1.4
 	gnome-base/gsettings-desktop-schemas
@@ -54,7 +53,7 @@ COMMON_DEPEND="
 	x11-apps/sessreg
 
 	virtual/pam
-	sys-auth/pambase[consolekit?,systemd?]
+	sys-auth/pambase[consolekit?]
 
 	accessibility? ( x11-libs/libXevie )
 	audit? ( sys-process/audit )
@@ -62,7 +61,6 @@ COMMON_DEPEND="
 	introspection? ( >=dev-libs/gobject-introspection-0.9.12 )
 	plymouth? ( sys-boot/plymouth )
 	selinux? ( sys-libs/libselinux )
-	systemd? ( >=sys-apps/systemd-39[pam] )
 	tcpd? ( >=sys-apps/tcp-wrappers-7.6 )
 	xinerama? ( x11-libs/libXinerama )
 	xklavier? ( >=x11-libs/libxklavier-4 )"
@@ -125,7 +123,6 @@ pkg_setup() {
 		$(use_with consolekit console-kit)
 		$(use_with plymouth)
 		$(use_with selinux)
-		$(use_with systemd)
 		$(use_with tcpd tcp-wrappers)
 		$(use_with xinerama)"
 
@@ -209,7 +206,7 @@ src_install() {
 	local LDAP
 	use ldap && LDAP=yes
 	emake LDAP=${LDAP} EPREFIX="${EPREFIX}" \
-		SYSTEMD_UNITDIR="$(systemd_get_unitdir)" DESTDIR="${D}" install
+		DESTDIR="${D}" install
 }
 
 pkg_postinst() {
