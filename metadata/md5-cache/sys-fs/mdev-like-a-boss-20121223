@@ -4,6 +4,7 @@ DESCRIPTION=Config and scripts mdev-like-a-boss
 EAPI=4
 HOMEPAGE=https://github.com/slashbeast/mdev-like-a-boss
 IUSE=+mdev-bb
+KEYWORDS=amd64 x86
 LICENSE=BSD
 RDEPEND=mdev-bb? ( sys-fs/mdev-bb )
 SLOT=0
