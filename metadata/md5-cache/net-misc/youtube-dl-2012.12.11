@@ -1,0 +1,13 @@
+DEFINED_PHASES=install prepare setup
+DEPEND=test? ( dev-python/nose )
+DESCRIPTION=A small command-line program to download videos from YouTube.
+EAPI=5
+HOMEPAGE=http://rg3.github.com/youtube-dl/
+IUSE=test python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_single_target_python2_5 python_single_target_python2_6 python_single_target_python2_7
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x86-solaris
+LICENSE=public-domain
+REQUIRED_USE=|| ( python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 ) ^^ ( python_single_target_python2_5 python_single_target_python2_6 python_single_target_python2_7 ) python_single_target_python2_5? ( python_targets_python2_5 ) python_single_target_python2_6? ( python_targets_python2_6 ) python_single_target_python2_7? ( python_targets_python2_7 )
+SLOT=0
+SRC_URI=mirror://gentoo/youtube-dl-2012.12.11.tar.xz
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	multilib	9aa8a023e062fca0ba79362d9d0cc488	python-single-r1	50388199dfecdef7b878a1b0a1349715	python-utils-r1	dcd8a7e28a2e90a45fc1875429811c73	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_md5_=00fdbb7125f02d16e8d06c7a4029e55a
