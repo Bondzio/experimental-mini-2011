@@ -11,4 +11,4 @@ REQUIRED_USE=gnutls? ( ssl )
 SLOT=0
 SRC_URI=mirror://sourceforge/msmtp/msmtp-1.4.30.tar.bz2
 _eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	0784adf41cd3f25a7d475ec8029bb78c	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=6b0e2413aea72d984b4d898a03533129
+_md5_=67f6ebc467c2385413f79b619a8a4eee
