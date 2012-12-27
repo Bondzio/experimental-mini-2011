@@ -1,10 +1,19 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.421 2012/12/25 16:48:59 chithanh Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/base/package.use.mask,v 1.423 2012/12/27 06:04:22 tetromino Exp $
 
 # This file requires >=portage-2.1.1
 # New entries go on top.
 #
+
+# Alexandre Rostovtsev <tetromino@gentoo.org> (27 Dec 2012)
+# Incompatible with evolution-data-server-3.6, blocks upgrade to gnome-3.6
+# See bug #436460 and http://git.gnome.org/browse/tracker/log/?h=evo-new-api
+app-misc/tracker eds
+
+# Christoph Jungans <ottxor@gentoo.org> (26 Dec 2012)
+# cuda/openmm/mkl only works on x86/amd64
+sci-chemistry/gromacs cuda mkl openmm
 
 # Julian Ospald <hasufell@gentoo.org> (25 Dec 2012)
 # mask systemd to allow stabilization wrt #448034
@@ -17,10 +26,6 @@ sys-apps/portage pypy2_0
 # Jory A. Pratt <anarchy@gentoo.org> (15 Dec 2012)
 # PGO is known to be busted with most configurations
 www-client/firefox pgo
-
-# Christoph Jungans <ottxor@gentoo.org> (30 Nov 2012)
-# cuda only works on x86/amd64, openmm still under testing
-sci-chemistry/gromacs cuda openmm
 
 # Sergey Popov <pinkbyte@gentoo.org> (26 Nov 2012)
 # PDF docs building failed with sandbox violation

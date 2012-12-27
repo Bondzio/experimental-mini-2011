@@ -10,4 +10,4 @@ RDEPEND=>=dev-python/docutils-0.8 >=dev-python/flask-0.8 >=dev-python/flask-babe
 SLOT=0
 SRC_URI=mirror://pypi/b/blohg/blohg-0.11.1.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
-_md5_=dbb2edbb01ca6051d24e0a5b6a4595a3
+_md5_=4ef63a9f96c997e0822f2bc8b63fdb49

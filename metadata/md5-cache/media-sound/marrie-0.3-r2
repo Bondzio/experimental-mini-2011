@@ -10,4 +10,4 @@ RDEPEND=virtual/python-argparse dev-python/feedparser =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=mirror://pypi/m/marrie/marrie-0.3.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
-_md5_=8036131e68853f662290eb03c1fa29f9
+_md5_=a288688ad2f1283e03639fc082977027
