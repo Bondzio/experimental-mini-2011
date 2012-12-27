@@ -1,6 +1,6 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/logitechmediaserver-bin/files/Gentoo-plugins-README.txt,v 1.1 2012/04/12 05:56:03 lavajoe Exp $
+# $Header$
 
 The standard Logitech Media Server package is installed differently on Gentoo
 in order that the installation complies with Gentoo's filesystem layout. These
