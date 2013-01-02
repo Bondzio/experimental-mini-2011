@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-python/compizconfig-python-0.8.4 >=dev-python/pygtk-2.12:2 gnome-base/librsvg x11-themes/hicolor-icon-theme =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://releases.compiz.org/0.8.4/ccsm-0.8.4.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=37400ca1bf8e5e69964b498b4ed2c5a0

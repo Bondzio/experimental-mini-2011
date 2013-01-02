@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/mozinfo-0.4[python_abis_2.5?,python_abis_2.6?,python_abis_2
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=mirror://pypi/m/mozrunner/mozrunner-5.14.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=0e490bd76f442413fe6c5b915b489195

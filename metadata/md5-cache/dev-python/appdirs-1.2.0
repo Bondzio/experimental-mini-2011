@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/a/appdirs/appdirs-1.2.0.zip
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=642f5bfd2b7e5095aa6f04edef35cd99

@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
-DEPEND=>=dev-lang/python-2.5 =dev-python/snakeoil-9999 || ( >=dev-lang/python-2.5 dev-python/pycrypto ) dev-python/sphinx dev-python/pyparsing dev-lang/python dev-vcs/git
+DEPEND=>=dev-lang/python-2.5 =dev-python/snakeoil-9999 || ( >=dev-lang/python-2.5 dev-python/pycrypto ) dev-python/sphinx virtual/pyparsing dev-lang/python dev-vcs/git
 DESCRIPTION=pkgcore package manager
 EAPI=3
 HOMEPAGE=http://pkgcore.googlecode.com/
@@ -7,5 +7,5 @@ IUSE=+doc
 LICENSE=GPL-2
 RDEPEND=>=dev-lang/python-2.5 =dev-python/snakeoil-9999 || ( >=dev-lang/python-2.5 dev-python/pycrypto ) dev-lang/python
 SLOT=0
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	0784adf41cd3f25a7d475ec8029bb78c
-_md5_=6ae081d2abd7a59b75a53e9d108a085d
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_md5_=618fb08c641664e0757eba00cd464352

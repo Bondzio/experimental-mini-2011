@@ -9,5 +9,5 @@ RDEPEND=sys-apps/acl dev-lang/python
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sourceforge/pylibacl/pylibacl-0.5.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=9008864a06d980e669c730368f9178ae

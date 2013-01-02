@@ -10,5 +10,5 @@ RDEPEND=dev-python/stevedore[python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=mirror://pypi/v/virtualenvwrapper/virtualenvwrapper-3.6.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c	python-namespaces	f3a539ac017667aa9b76ede9224b6e3b
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9	python-namespaces	f3a539ac017667aa9b76ede9224b6e3b
 _md5_=6ce8a166e9594d9393e32b4bb3458a52

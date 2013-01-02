@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=gtk? ( >=dev-python/pygtk-2.10 ) qt4? ( >=dev-python/PyQt4-4.1.1[X] ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SLOT=0
 SRC_URI=mirror://berlios/etc-proposals/etc-proposals-1.4.3.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=b5e8a9b55825c54d64ed63bbc2c5fcba

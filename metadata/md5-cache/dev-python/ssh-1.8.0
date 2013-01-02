@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-python/pycrypto-2.1 dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/s/ssh/ssh-1.8.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=f2bc0b651472ceb349dad799b0ed3788

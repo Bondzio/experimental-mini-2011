@@ -7,5 +7,5 @@ IUSE=+templates
 LICENSE=GPL-2
 RDEPEND=app-portage/eix app-portage/gentoolkit www-client/pybugz dev-python/configobj || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=8574fc66f9116a02a75bc344318dd1af

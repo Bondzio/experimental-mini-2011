@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/libxml2-2.7.2 >=dev-libs/libxslt-1.1.15 beautifulsoup3? ( ( p
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=0
 SRC_URI=mirror://pypi/l/lxml/lxml-3.0.2.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=996ee0454c943e7cf9c9814c3883214f

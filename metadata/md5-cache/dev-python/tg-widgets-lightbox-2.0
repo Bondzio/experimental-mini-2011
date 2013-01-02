@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-python/turbogears dev-python/tg-widgets-scriptaculous =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/tg-widgets-lightbox-2.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=bdfce79fb546d28a6e742bd5e42732a6

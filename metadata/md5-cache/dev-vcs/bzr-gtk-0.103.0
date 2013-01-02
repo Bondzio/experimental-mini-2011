@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-vcs/bzr-1.6_rc1 dev-python/pygobject dev-python/notify-python >=dev-python/pycairo-1.0 nautilus? ( >=dev-python/nautilus-python-1.0 ) dev-python/notify-python gnome-keyring? ( dev-python/gnome-keyring-python ) gpg? ( app-crypt/seahorse ) =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://launchpad.net/bzr-gtk/gtk3/0.103.0/+download/bzr-gtk-0.103.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	0784adf41cd3f25a7d475ec8029bb78c
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=69ea3057e1632453caef7097f7461445
