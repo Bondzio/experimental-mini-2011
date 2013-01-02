@@ -678,6 +678,7 @@ app-misc/mc:xdg - Toggles mc's config dir location. Enable for $XDG_CONFIG_HOME/
 app-misc/muttprint:doc - Builds documentation
 app-misc/note:general - Add support for ascii flatfile backend
 app-misc/note:text - Add support for text backend
+app-misc/pax-utils:python - Install a more powerful/faster version of lddtree
 app-misc/recoll:audio - Index audio files
 app-misc/recoll:camelcase - Enable indexing for camelCase sentences and words
 app-misc/recoll:chm - Index chm files
