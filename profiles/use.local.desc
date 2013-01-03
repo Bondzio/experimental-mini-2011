@@ -2926,6 +2926,8 @@ media-sound/banshee:web - Enable support for plugins that access web-based servi
 media-sound/banshee:youtube - Enable the Youtube plugin
 media-sound/beets:bpd - Enable support for media-sound/mpd server emulation
 media-sound/beets:chroma - Enable support for acoustic fingerprinting plugin using (media-libs/chromaprint)
+media-sound/beets:convert - Enable support for the convert plugin which makes it possible to transcode files
+media-sound/beets:echonest_tempo - Enable support for writing the BPM of a track into its metadata
 media-sound/beets:lastgenre - Enable support for importing music genres from last.fm tags
 media-sound/beets:replaygain - Enable support for Replay Gain metadata calculation during import
 media-sound/beets:web - Enable embedded webserver support through dev-python/flask
@@ -5412,6 +5414,11 @@ sys-cluster/slurm:multiple-slurmd - Allow multiple slurmd to run
 sys-cluster/slurm:munge - Enable authentication via munge
 sys-cluster/slurm:torque - Enable perl scripts that emulates pbs (qstat, qsub etc.)
 sys-cluster/slurm:ypbind - Enable ypbind based auth
+sys-cluster/swift:account - adds swift account support
+sys-cluster/swift:container - adds swift container suppport
+sys-cluster/swift:memcache - adds memcached support
+sys-cluster/swift:object - adds swift object support
+sys-cluster/swift:proxy - adds swift proxy support
 sys-cluster/torque:cpusets - Enable pbs_mom to utilize linux cpusets if available
 sys-cluster/torque:drmaa - Enable the Distributed Resource Management Application API
 sys-cluster/torque:munge - Enable authentication via munge
