@@ -6,9 +6,9 @@ HOMEPAGE=http://www.debian.org
 IUSE=openvz binary
 KEYWORDS=*
 LICENSE=GPL-2
-RDEPEND=binary? ( >=sys-fs/udev-160 )
+RDEPEND=binary? ( || ( >=sys-fs/udev-160 >=virtual/udev-171 ) )
 RESTRICT=mirror
 SLOT=2.6.32.46
 SRC_URI=http://ftp.osuosl.org/pub/funtoo/distfiles/linux-2.6_2.6.32.orig.tar.gz http://ftp.osuosl.org/pub/funtoo/distfiles/linux-2.6_2.6.32-46.diff.gz
 _eclasses_=mount-boot	410bdaef41d2c8674e24edfa9d521177
-_md5_=0b22a30399e18c8035c059d0135f5f67
+_md5_=18d71e58c60403bd6094592f8b256eb7
