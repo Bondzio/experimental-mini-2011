@@ -1,6 +1,4 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/xvba-video/xvba-video-0.8.0-r1.ebuild,v 1.3 2012/12/26 11:33:31 ulm Exp $
 
 EAPI=5
 
@@ -24,7 +22,7 @@ IUSE="debug opengl"
 RDEPEND="
 	>=x11-libs/libva-1.1.0[X,opengl?]
 	x11-libs/libvdpau
-	x11-drivers/ati-drivers
+	x11-drivers/ati-drivers[vaapi]
 "
 DEPEND="${DEPEND}
 	virtual/pkgconfig"

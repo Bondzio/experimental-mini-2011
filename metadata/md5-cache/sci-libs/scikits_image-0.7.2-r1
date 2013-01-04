@@ -10,4 +10,4 @@ RDEPEND=sci-libs/scikits sci-libs/scipy freeimage? ( media-libs/freeimage ) gtk?
 SLOT=0
 SRC_URI=mirror://pypi/s/scikit-image/scikit-image-0.7.2.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
-_md5_=38e354a76ca898b1fed1ab7f3adaa09f
+_md5_=6f64d0fa2c69a6f6273ec1b0a005da16
