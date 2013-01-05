@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 ) test? ( dev-python/nose[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) dev-vcs/git
+DESCRIPTION=Filesystem extended attributes for python
+EAPI=5-progress
+HOMEPAGE=http://pyxattr.k1024.org/ https://github.com/iustin/pyxattr http://pypi.python.org/pypi/pyxattr
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 test
+LICENSE=LGPL-2.1
+RDEPEND=sys-apps/attr python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
+SLOT=0
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_md5_=3973bbafb885c3b8ef65a9dc42f1d87d

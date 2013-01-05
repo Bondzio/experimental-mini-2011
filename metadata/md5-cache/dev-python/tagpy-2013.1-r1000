@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst postrm prepare setup
+DEPEND=>=dev-libs/boost-1.48[python,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?] >=media-libs/taglib-1.4 dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?] python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 )
+DESCRIPTION=Python Bindings for TagLib
+EAPI=5-progress
+HOMEPAGE=http://mathema.tician.de/software/tagpy http://git.tiker.net/?p=tagpy.git http://pypi.python.org/pypi/tagpy
+IUSE=examples python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4
+KEYWORDS=*
+LICENSE=MIT
+RDEPEND=>=dev-libs/boost-1.48[python,python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.1?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?] >=media-libs/taglib-1.4 python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
+SLOT=0
+SRC_URI=mirror://pypi/t/tagpy/tagpy-2013.1.tar.gz
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_md5_=9278100ad5ad7bc9b2c4214e68d2d9dc
