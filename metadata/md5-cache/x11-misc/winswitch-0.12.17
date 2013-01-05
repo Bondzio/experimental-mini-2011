@@ -9,4 +9,4 @@ RDEPEND=dev-python/gst-python dev-python/imaging dev-python/netifaces dev-python
 SLOT=0
 SRC_URI=http://winswitch.org/src/winswitch-0.12.17.src.tar.bz2
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
-_md5_=287f4b3099fdd3665a42dd3f68d384ec
+_md5_=9844a6a2cac0f55c99aeab9588c3ce50
