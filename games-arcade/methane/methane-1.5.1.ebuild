@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-arcade/methane/methane-1.5.1.ebuild,v 1.2 2013/01/05 18:19:10 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/methane/methane-1.5.1.ebuild,v 1.4 2013/01/05 20:01:28 hasufell Exp $
 
 EAPI=4
 inherit eutils games
@@ -23,6 +23,9 @@ src_prepare() {
 	sed -i \
 		-e "s:@GENTOO_DATADIR@:${GAMES_DATADIR}:" \
 		sources/target.cpp
+
+	# fix weird parallel make issue wrt #450422
+	mkdir build || die
 }
 
 src_install() {
