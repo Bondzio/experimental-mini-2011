@@ -10,4 +10,4 @@ RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~blueness/elfix/elfix-0.7.0.tar.gz
 _eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
-_md5_=f3f56efffc2846a31a6415a03c9f1600
+_md5_=842b14d82b65a24cbbe75f121a1f8ca5
