@@ -6,5 +6,5 @@ HOMEPAGE=http://github.com/pymc-devs/pymc http://pypi.python.org/pypi/pymc
 LICENSE=AFL-3.0
 RDEPEND=dev-lang/python
 SLOT=0
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	15733ab6a6feb34af9837b41623c2bad	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	git-2	e92e09651292b1bef5656592364550f7	python	4eeb18fb2c4f9098d544bf9ea32f47b9
 _md5_=a94b97c2c7228bddde8cebd48132d861

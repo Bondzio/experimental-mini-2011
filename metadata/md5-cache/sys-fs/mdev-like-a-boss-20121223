@@ -8,5 +8,5 @@ KEYWORDS=amd64 x86
 LICENSE=BSD
 RDEPEND=mdev-bb? ( sys-fs/mdev-bb )
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7
 _md5_=7c747ca128204c9e00ed9ffff06fb6a4

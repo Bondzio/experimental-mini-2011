@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=atheros-firmware
 RDEPEND=|| ( sys-fs/udev sys-apps/hotplug )
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=9d52f4782db43c286bdcdd717fb5b9b0

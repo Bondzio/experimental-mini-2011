@@ -8,5 +8,5 @@ KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86
 LICENSE=MIT
 RDEPEND=dev-lang/php
 SLOT=0
-_eclasses_=git-2	15733ab6a6feb34af9837b41623c2bad
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7
 _md5_=b628d55a78b99be6cf769137802dea0e
