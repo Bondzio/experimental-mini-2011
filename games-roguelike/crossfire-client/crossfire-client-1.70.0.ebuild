@@ -1,9 +1,9 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-roguelike/crossfire-client/crossfire-client-1.70.0.ebuild,v 1.2 2013/01/08 07:54:51 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-roguelike/crossfire-client/crossfire-client-1.70.0.ebuild,v 1.5 2013/01/08 22:38:51 mr_bones_ Exp $
 
 EAPI=5
-inherit gnome2-utils games
+inherit toolchain-funcs gnome2-utils games
 
 DESCRIPTION="Client for the nethack-style but more in the line of UO"
 HOMEPAGE="http://crossfire.real-time.com/"
@@ -11,12 +11,13 @@ SRC_URI="mirror://sourceforge/crossfire/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="amd64 ~ppc ~x86"
 IUSE="alsa lua oss sdl"
 
 RDEPEND="alsa? ( media-libs/alsa-lib )
 	virtual/opengl
 	x11-libs/gtk+:2
+	gnome-base/libglade
 	sdl? ( media-libs/libsdl[video]
 		media-libs/sdl-image )
 	lua? ( dev-lang/lua )
@@ -33,7 +34,7 @@ src_prepare() {
 
 src_configure() {
 	# bugs in configure script so we cant use $(use_enable ...)
-	local myconf="--disable-dependency-tracking"
+	local myconf
 
 	use sdl || myconf="${myconf} --disable-sdl"
 	use alsa || myconf="${myconf} --disable-alsa9 --disable-alsa"
@@ -46,9 +47,9 @@ src_configure() {
 src_compile() {
 	# bug 139785
 	if use alsa || use oss ; then
-		emake -j1 -C sound-src
+		emake -j1 -C sound-src AR="$(tc-getAR)"
 	fi
-	emake
+	emake AR="$(tc-getAR)"
 }
 
 src_install() {
