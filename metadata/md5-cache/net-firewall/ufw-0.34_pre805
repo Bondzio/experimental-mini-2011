@@ -10,5 +10,5 @@ RDEPEND=>=net-firewall/iptables-1.4[ipv6?] !<kde-misc/kcm-ufw-0.4.2 !<net-firewa
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://sabayon/net-firewall/ufw-0.34_pre805.tar.gz
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	f01ffb28843e2de3ea571f80f07e5078	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	distutils	e23bb85990664d15055ca9285afebc1a	eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	577c57349491cfe6518278f7433d6123	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a2becebf384370386ba002db2c8d7ac8
