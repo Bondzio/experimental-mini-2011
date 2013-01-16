@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2.32 >=sys-auth/polkit-0.107 >=dev-libs/libatasmart-0.19 >=virtual/udev-171[gudev,hwdb] virtual/acl introspection? ( >=dev-libs/gobject-introspection-1.30 ) systemd? ( >=sys-apps/systemd-44 ) >=sys-apps/util-linux-2.20.1-r2 >=sys-block/parted-3 virtual/eject crypt? ( sys-fs/cryptsetup ) gptfdisk? ( >=sys-apps/gptfdisk-0.8 )
 SLOT=2
 SRC_URI=http://udisks.freedesktop.org/releases/udisks-2.0.0.tar.bz2
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	577c57349491cfe6518278f7433d6123	multilib	9aa8a023e062fca0ba79362d9d0cc488	systemd	28706ddc21464b4ed255eee9fc70b516	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	6923bbfed4371639315c56d17e2da90c	multilib	9aa8a023e062fca0ba79362d9d0cc488	systemd	28706ddc21464b4ed255eee9fc70b516	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=b08450fa065a12e3e6557f907574b9a3
