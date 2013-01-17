@@ -3254,6 +3254,7 @@ media-video/ffmpeg:aacplus - AAC+ encoding via media-libs/libaacplus.
 media-video/ffmpeg:amr - Enables Adaptive Multi-Rate Audio support
 media-video/ffmpeg:avresample - Enables libavresample, media-video/libav version of libswresample (which installed and makes libavresample redundant): A conversion library between uncompressed audio formats.
 media-video/ffmpeg:avx - Adds support for Advanced Vector Extensions instructions (Intel Sandy Bridge, AMD Bulldozer and later chips)
+media-video/ffmpeg:bindist - Enforces license compatibility constraints via REQUIRED_USE.
 media-video/ffmpeg:bluray - Enable playback of Blu-ray filesystems
 media-video/ffmpeg:cdio - Enables audio CD grabbing with dev-libs/libcdio.
 media-video/ffmpeg:celt - Adds Xiph CELT audio decoding support via media-libs/celt
@@ -5468,6 +5469,7 @@ sys-devel/gettext:cvs - When running `autopoint`, use cvs to store the internal 
 sys-devel/gettext:git - When running `autopoint`, use git to store the internal development files; this requires git at runtime, but will be faster/smaller than raw archives
 sys-devel/kgcc64:multislot - Allow for SLOTs to include minor version (eg. 3.3.4 instead of just 3.3)
 sys-devel/libperl:ithreads - Enable Perl threads, has some compatibility problems
+sys-devel/llvm:doc - Build and install the HTML documentation and regenerate the man pages
 sys-devel/llvm:gold - Build the gold linker plugin
 sys-devel/llvm:llvm-gcc - Build LLVM with sys-devel/llvm-gcc
 sys-devel/llvm:multitarget - Build all host targets (default: host only)
@@ -5572,7 +5574,6 @@ sys-fs/s3ql:contrib - Install additional contributed scripts
 sys-fs/snapraid:ssl - use the MD5 fast implementation of the OpenSSL
 sys-fs/squashfs-tools:xz - Enable support for XZ ("LZMA2") compression using app-arch/xz-utils
 sys-fs/udev:action_modeswitch - switch Mobile Action cables into serial mode
-sys-fs/udev:devfs-compat - Install rules for devfs compatible device names
 sys-fs/udev:edd - create /dev/disk/by-id/edd-* links for BIOS EDD data
 sys-fs/udev:extras - Compile udev-extras requiring external dependencies
 sys-fs/udev:floppy - create historical floppy kernel device nodes (/dev/fd0h1440, ...)
@@ -5581,7 +5582,6 @@ sys-fs/udev:hwdb - read vendor/device string database and add it to udev databas
 sys-fs/udev:introspection - Use dev-libs/gobject-introspection for introspection
 sys-fs/udev:keymap - map custom hardware's multimedia keys
 sys-fs/udev:kmod - enable udev to load kernel modules
-sys-fs/udev:old-hd-rules - Install rules for /dev/hd* devices, removed upstream at udev-148
 sys-fs/udev:openrc - install the OpenRC init scripts
 sys-fs/udev:rule_generator - enable persistent network and optical device rule generator
 sys-fs/udisks:gptfdisk - Pull in sys-apps/gptfdisk for sgdisk command as used by partitioning functionality
