@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=sci-libs/cfitsio sci-astronomy/wcslib sys-libs/readline virtual/blas virtual/lapack data? ( sci-astronomy/casa-data ) fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) virtual/pkgconfig doc? ( app-doc/doxygen ) test? ( sci-astronomy/casa-data ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) virtual/fortran
+DEPEND=sci-libs/cfitsio sci-astronomy/wcslib sys-libs/readline virtual/blas virtual/lapack data? ( sci-astronomy/casa-data ) fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) virtual/pkgconfig doc? ( app-doc/doxygen ) test? ( sci-astronomy/casa-data ) >=dev-util/cmake-2.8.8 userland_GNU? ( >=sys-apps/findutils-4.4.0 ) virtual/fortran
 DESCRIPTION=Core libraries for the Common Astronomy Software Applications
 EAPI=4
 HOMEPAGE=http://code.google.com/p/casacore/
@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sci-libs/cfitsio sci-astronomy/wcslib sys-libs/readline virtual/blas virtual/lapack data? ( sci-astronomy/casa-data ) fftw? ( >=sci-libs/fftw-3 ) hdf5? ( sci-libs/hdf5 ) virtual/fortran
 SLOT=0
 SRC_URI=http://casacore.googlecode.com/files/casacore-1.5.0.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	7f26d8070c0bd5e630eb85dd5c6507c5	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	fortran-2	908af12f194392f65f1e61d7e529bd19	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	e2cae91a4ce8132db0656a6a2593b803	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	fortran-2	908af12f194392f65f1e61d7e529bd19	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=2232fcbe4ca1754f776ff0fee5ecc3f1

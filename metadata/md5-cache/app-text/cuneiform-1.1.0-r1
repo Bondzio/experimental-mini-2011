@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=>=dev-util/cmake-2.6.2 imagemagick? ( media-gfx/imagemagick ) graphicsmagick? ( media-gfx/graphicsmagick ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=>=dev-util/cmake-2.6.2 imagemagick? ( media-gfx/imagemagick ) graphicsmagick? ( media-gfx/graphicsmagick ) >=dev-util/cmake-2.8.8 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=An enterprise quality optical character recognition (OCR) engine by Cognitive Technologies
 EAPI=4
 HOMEPAGE=https://launchpad.net/cuneiform-linux
@@ -10,5 +10,5 @@ RDEPEND=imagemagick? ( media-gfx/imagemagick ) graphicsmagick? ( media-gfx/graph
 REQUIRED_USE=^^ ( imagemagick graphicsmagick )
 SLOT=0
 SRC_URI=http://launchpad.net/cuneiform-linux/1.1/1.1/+download/cuneiform-linux-1.1.0.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	7f26d8070c0bd5e630eb85dd5c6507c5	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	e2cae91a4ce8132db0656a6a2593b803	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	multilib	9aa8a023e062fca0ba79362d9d0cc488	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=cdbdb7c591ae0c818b5cc36b1b774eca

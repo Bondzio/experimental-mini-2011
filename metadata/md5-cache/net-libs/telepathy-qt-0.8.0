@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare setup test unpack
-DEPEND=dev-python/dbus-python x11-libs/qt-core:4[glib?] x11-libs/qt-dbus:4 farsight? ( dev-libs/dbus-glib dev-libs/libxml2 media-libs/gstreamer >=net-libs/telepathy-glib-0.15.1 net-libs/telepathy-farsight ) glib? ( dev-libs/glib:2 ) !net-libs/telepathy-qt4 dev-libs/libxslt virtual/pkgconfig test? ( x11-libs/qt-test:4 ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) >=dev-util/cmake-2.8.4 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DEPEND=dev-python/dbus-python x11-libs/qt-core:4[glib?] x11-libs/qt-dbus:4 farsight? ( dev-libs/dbus-glib dev-libs/libxml2 media-libs/gstreamer >=net-libs/telepathy-glib-0.15.1 net-libs/telepathy-farsight ) glib? ( dev-libs/glib:2 ) !net-libs/telepathy-qt4 dev-libs/libxslt virtual/pkgconfig test? ( x11-libs/qt-test:4 ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) >=dev-util/cmake-2.8.8 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
 DESCRIPTION=Qt4 bindings for the Telepathy D-Bus protocol
 EAPI=4
 HOMEPAGE=http://telepathy.freedesktop.org/
@@ -10,5 +10,5 @@ RDEPEND=dev-python/dbus-python x11-libs/qt-core:4[glib?] x11-libs/qt-dbus:4 fars
 RESTRICT=test
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-qt4/telepathy-qt4-0.8.0.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	7f26d8070c0bd5e630eb85dd5c6507c5	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	cmake-utils	e2cae91a4ce8132db0656a6a2593b803	eutils	d40dc948067bd3db1c8ebf7d51897313	flag-o-matic	d900015de4e092f26d8c0a18b6bd60de	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=5dee2bef2c046dc11c843c23e319bab7
