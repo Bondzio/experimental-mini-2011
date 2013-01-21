@@ -4,33 +4,38 @@
 EAPI="5-progress"
 PYTHON_MULTIPLE_ABIS="1"
 PYTHON_RESTRICTED_ABIS="2.5"
-PYTHON_TESTS_FAILURES_TOLERANT_ABIS="*-jython"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
-DESCRIPTION="Zope Configuration Markup Language (ZCML)"
-HOMEPAGE="http://pypi.python.org/pypi/zope.configuration"
+DESCRIPTION="Pluggable object copying mechanism"
+HOMEPAGE="http://pypi.python.org/pypi/zope.copy"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux"
-IUSE="doc"
+KEYWORDS="*"
+IUSE="doc test"
 
 RDEPEND="$(python_abi_depend net-zope/namespaces-zope[zope])
-	$(python_abi_depend net-zope/zope.i18nmessageid)
-	$(python_abi_depend net-zope/zope.interface)
-	$(python_abi_depend net-zope/zope.schema)"
+	$(python_abi_depend net-zope/zope.interface)"
 DEPEND="${RDEPEND}
 	$(python_abi_depend dev-python/setuptools)
 	doc? (
 		$(python_abi_depend dev-python/repoze.sphinx.autointerface)
 		$(python_abi_depend dev-python/sphinx)
-	)"
+	)
+	test? ( $(python_abi_depend net-zope/zope.location) )"
 
-DOCS="CHANGES.txt README.txt"
+DOCS="CHANGES.txt"
 PYTHON_MODULES="${PN/.//}"
+
+distutils_src_compile_post_hook() {
+	if [[ "$(python_get_implementation)" == "Jython" ]]; then
+		# http://bugs.jython.org/issue1946
+		sed -e "s/cPickle/pickle/" -i build-${PYTHON_ABI}/lib/zope/copy/_compat.py
+	fi
+}
 
 src_compile() {
 	distutils_src_compile
