@@ -486,6 +486,9 @@ app-emulation/qemu:rbd - Enable rados block device backend support, see http://c
 app-emulation/qemu:sdl - Enable the SDL-based console
 app-emulation/qemu:seccomp - Utilize sys-libs/libseccomp to enable kernel filtering of system calls to prevent malicious guests from doing damage.
 app-emulation/qemu:spice - Enable Spice protocol support via app-emulation/spice
+app-emulation/qemu:static - Enables both 'static-softmmu' and 'static-user'
+app-emulation/qemu:static-softmmu - Builds the Software MMU (system) targets as static binaries
+app-emulation/qemu:static-user - Build the User targets as static binaries
 app-emulation/qemu:systemtap - Enable SystemTAP/DTrace tracing
 app-emulation/qemu:tci - Enable the TCG Interpreter which can speed up or slowdown workloads depending on the host and guest CPUs being emulated. In the future it will be a runtime option but for now its compile time.
 app-emulation/qemu:tls - Enable TLS support for the VNC console server
@@ -2736,6 +2739,7 @@ media-libs/mesa:xorg - Enable the Xorg state tracker for Gallium3D. This is not 
 media-libs/mesa:xvmc - Enable the XvMC acceleration interface for the Gallium3D Video Layer.
 media-libs/mlt:compressed-lumas - Compress the luma files in png.
 media-libs/mlt:frei0r - Build the module for media-plugins/frei0r-plugins
+media-libs/mlt:kdenlive - Build support for media-video/kdenlive
 media-libs/mlt:lua - Build SWIG bindings for Lua
 media-libs/mlt:melt - Build the melt commandline tool
 media-libs/mlt:python - Build SWIG bindings for Python
@@ -2944,6 +2948,7 @@ media-sound/clementine:lastfm - Use liblastfm for fetching song info, scrobbling
 media-sound/clementine:moodbar - Enable moodbar support
 media-sound/clementine:projectm - Build with ProjectM visualization
 media-sound/clementine:wiimote - Enable support for Wii remote
+media-sound/cmus:cdio - use libcdio for CD support
 media-sound/cmus:cue - enable CUE sheet parsing
 media-sound/cmus:discid - enable reading the ID of the inserted CD
 media-sound/cmus:pidgin - install support script for net-im/pidgin

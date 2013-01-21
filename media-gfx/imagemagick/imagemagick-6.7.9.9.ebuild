@@ -1,9 +1,9 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.7.9.9.ebuild,v 1.1 2012/10/04 15:22:18 ssuominen Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.7.9.9.ebuild,v 1.3 2013/01/21 05:18:23 vapier Exp $
 
 EAPI=4
-inherit multilib toolchain-funcs versionator libtool
+inherit multilib toolchain-funcs versionator libtool eutils
 
 MY_P=ImageMagick-$(replace_version_separator 3 '-')
 
@@ -67,6 +67,7 @@ REQUIRED_USE="corefonts? ( truetype )
 S=${WORKDIR}/${MY_P}
 
 src_prepare() {
+	epatch "${FILESDIR}"/${PN}-6.7.8.7-freetype.patch
 	elibtoolize # for Darwin modules
 }
 
@@ -85,8 +86,8 @@ src_configure() {
 		$(use_enable opencl) \
 		--with-threads \
 		--without-included-ltdl \
-		--with-ltdl-include="${EPREFIX}"/usr/include \
-		--with-ltdl-lib="${EPREFIX}"/usr/$(get_libdir) \
+		--with-ltdl-include='' \
+		--with-ltdl-lib='' \
 		--with-modules \
 		--with-quantum-depth=${depth} \
 		$(use_with cxx magick-plus-plus) \
