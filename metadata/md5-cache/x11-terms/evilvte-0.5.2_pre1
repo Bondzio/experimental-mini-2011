@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/glib-2 x11-libs/gtk+:3 x11-libs/vte:2.90
 SLOT=0
 SRC_URI=http://www.calno.com/evilvte/evilvte-0.5.2~pre1.tar.xz
-_eclasses_=gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	9aa8a023e062fca0ba79362d9d0cc488	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
+_eclasses_=gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	ded93e450747134a079e647d888aa80b	portability	536c5e70c5fb252ed3b769e04aa3f05b	savedconfig	973a6df1a0949eba28a185eac79de815	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142
 _md5_=59bed7be462ab998490693647bf94e4d

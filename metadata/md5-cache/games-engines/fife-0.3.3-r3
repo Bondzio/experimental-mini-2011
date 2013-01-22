@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-libs/boost dev-python/pyyaml media-libs/libsdl media-libs/sdl-ttf media-libs/sdl-image[png] media-libs/libvorbis media-libs/libogg media-libs/openal sys-libs/zlib x11-libs/libXcursor x11-libs/libXext dev-games/guichan[sdl,opengl] virtual/opengl virtual/glu =dev-lang/python-2.7*
 SLOT=0
 SRC_URI=http://downloads.sourceforge.net/project/fife/active/src/fife_0.3.3r3.tar.gz
-_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	9aa8a023e062fca0ba79362d9d0cc488	python	4eeb18fb2c4f9098d544bf9ea32f47b9	scons-utils	988e24b9e2e4642189b4e97c03e5ae71	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	ded93e450747134a079e647d888aa80b	python	4eeb18fb2c4f9098d544bf9ea32f47b9	scons-utils	988e24b9e2e4642189b4e97c03e5ae71	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=67e6e2359925e445b659c811983e99cb
