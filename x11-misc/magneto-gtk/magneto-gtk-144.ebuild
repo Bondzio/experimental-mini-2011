@@ -1,6 +1,6 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/magneto-gtk/magneto-gtk-144.ebuild,v 1.1 2012/09/27 11:05:22 lxnay Exp $
+# $Header: $
 
 EAPI="3"
 PYTHON_DEPEND="2"
