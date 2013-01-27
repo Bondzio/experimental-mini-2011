@@ -1,8 +1,8 @@
 # Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/googleearth/googleearth-6.0.2.2074.ebuild,v 1.8 2012/09/24 00:48:04 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/googleearth/googleearth-6.2.2.6613.ebuild,v 1.5 2012/07/26 15:09:21 kensington Exp $
 
-EAPI=2
+EAPI="4"
 
 inherit eutils unpacker fdo-mime versionator toolchain-funcs
 
@@ -10,15 +10,18 @@ DESCRIPTION="A 3D interface to the planet"
 HOMEPAGE="http://earth.google.com/"
 # no upstream versioning, version determined from help/about
 # incorrect digest means upstream bumped and thus needs version bump
-SRC_URI="GoogleEarthLinux-${PV}.bin"
-
+SRC_URI="x86? ( http://dl.google.com/dl/earth/client/current/google-earth-stable_current_i386.deb
+			-> GoogleEarthLnux-${PV}_i386.deb )
+	amd64? ( http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
+			-> GoogleEarthLinux-${PV}_amd64.deb ) "
 LICENSE="googleearth GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-RESTRICT="fetch strip"
+RESTRICT="mirror strip"
 IUSE="mdns-bundled +qt-bundled"
 
 GCC_NEEDED="4.2"
+QA_PREBUILT="*"
 
 RDEPEND="|| ( >=sys-devel/gcc-${GCC_NEEDED}[cxx] >=sys-devel/gcc-${GCC_NEEDED}[-nocxx] )
 	x86? (
@@ -56,14 +59,7 @@ RDEPEND="|| ( >=sys-devel/gcc-${GCC_NEEDED}[cxx] >=sys-devel/gcc-${GCC_NEEDED}[-
 
 DEPEND="dev-util/patchelf"
 
-S="${WORKDIR}"
-
-pkg_nofetch() {
-	elog "This version is no longer available from Google and the license prevents mirroring."
-	elog "This ebuild is intended for users who already downloaded it previously and have problems with newer versions."
-	elog "If you can get the distfile from e.g. another computer of yours,"
-	elog "copy the file ${SRC_URI} to ${DISTDIR}."
-}
+S="${WORKDIR}/opt/google/earth/free"
 
 pkg_nofetch() {
 	einfo "Wrong checksum or file size means that Google silently replaced the distfile with a newer version."
@@ -71,36 +67,6 @@ pkg_nofetch() {
 	einfo "Please file a version bump bug on http://bugs.gentoo.org (search existing bugs for googleearth first!)."
 	einfo "By redigesting the file yourself, you will install a different version than the ebuild says, untested!"
 }
-
-QA_TEXTRELS="opt/googleearth/libflightsim.so
-opt/googleearth/libwebbrowser.so
-opt/googleearth/libinput_plugin.so
-opt/googleearth/libIGGfx.so
-opt/googleearth/liblayer.so
-opt/googleearth/libbase.so
-opt/googleearth/libevll.so
-opt/googleearth/libmoduleframework.so
-opt/googleearth/libcommon_webbrowser.so
-opt/googleearth/libbasicingest.so
-opt/googleearth/libsgutil.so
-opt/googleearth/libnavigate.so
-opt/googleearth/librender.so
-opt/googleearth/libauth.so
-opt/googleearth/libgeobaseutils.so
-opt/googleearth/libcommon.so
-opt/googleearth/libQtGui.so.4
-opt/googleearth/libcommon_platform.so
-opt/googleearth/libgoogleearth_free.so
-opt/googleearth/libcollada.so
-opt/googleearth/libviewsync.so
-opt/googleearth/libgps.so
-opt/googleearth/libgooglesearch.so
-opt/googleearth/plugins/imageformats/libqjpeg.so
-opt/googleearth/libmeasure.so
-opt/googleearth/libspatial.so
-"
-
-QA_FLAGS_IGNORED="opt/googleearth/.*"
 
 pkg_setup() {
 	GCC_VER="$(gcc-version)"
@@ -113,19 +79,14 @@ pkg_setup() {
 }
 
 src_unpack() {
-	unpack_makeself
+	# default src_unpack fails with deb2targz installed, also this unpacks the data.tar.lzma as well
+	unpack_deb ${A}
 
-	cd "${WORKDIR}"/bin || die
-	unpack ./../${PN}-linux-x86.tar
-
-	mkdir "${WORKDIR}"/data && cd "${WORKDIR}"/data || die
-	unpack ./../${PN}-data.tar
-
-	cd "${WORKDIR}"/bin || die
+	cd opt/google/earth/free || die
 
 	if ! use qt-bundled; then
-		rm -v libQt{Core,Gui,Network,WebKit}.so.4 ../data/qt.conf || die
-		rm -frv ../data/plugins/imageformats || die
+		rm -v libQt{Core,Gui,Network,WebKit}.so.4 qt.conf || die
+		rm -frv plugins/imageformats || die
 	fi
 	rm -v libcurl.so.4 || die
 	if ! use mdns-bundled; then
@@ -139,39 +100,51 @@ src_unpack() {
 }
 
 src_prepare() {
-	cd "${WORKDIR}"/bin || die
-	# bug #262780
-	epatch "${FILESDIR}/decimal-separator.patch"
+	# bug #262780 is hopefully now solved upstream
+#	epatch "${FILESDIR}/decimal-separator.patch"
 
 	# we have no ld-lsb.so.3 symlink
 	# thanks to Nathan Phillip Brink <ohnobinki@ohnopublishing.net> for suggesting patchelf
-	patchelf --set-interpreter /lib/ld-linux.so.2 googleearth-bin || die "patchelf failed"
+	patchelf --set-interpreter /lib/ld-linux.so.2 ${PN}-bin || die "patchelf failed"
 
-	# make the postinst script only create the files; it's  installation
-	# are too complicated and inserting them ourselves is easier than
-	# hacking around it
-	sed -i -e 's:$SETUP_INSTALLPATH/::' \
-		-e 's:$SETUP_INSTALLPATH:1:' \
-		-e "s:^xdg-desktop-icon.*$::" \
-		-e "s:^xdg-desktop-menu.*$::" \
-		-e "s:^xdg-mime.*$::" "${WORKDIR}"/postinstall.sh || die
+	# Set RPATH for preserve-libs handling (bug #265372).
+	local x
+	for x in * ; do
+		# Use \x7fELF header to separate ELF executables and libraries
+		[[ -f ${x} && $(od -t x1 -N 4 "${x}") == *"7f 45 4c 46"* ]] || continue
+		patchelf --set-rpath '$ORIGIN' "${x}" || \
+			die "patchelf failed on ${x}"
+	done
+	for x in plugins/imageformats/*.so ; do
+		[[ -f ${x} ]] || continue
+		patchelf --set-rpath /opt/${PN} "${x}" || \
+			die "patchelf failed on ${x}"
+	done
 }
 
 src_install() {
 	make_wrapper ${PN} ./${PN} /opt/${PN} . || die "make_wrapper failed"
-	./postinstall.sh
-	insinto /usr/share/mime/packages
-	doins ${PN}-mimetypes.xml || die
-	domenu Google-${PN}.desktop || die
-	doicon ${PN}-icon.png || die
-	dodoc README.linux || die
 
-	cd bin || die
+	# install binaries and remove them
+	binaries="${PN} ${PN}-bin *.so *.so.*"
 	exeinto /opt/${PN}
-	doexe * || die
+	doexe ${binaries} || die
+	rm ${binaries}
 
-	cp -pPR "${WORKDIR}"/data/* "${D}"/opt/${PN} || die
-	fowners -R root:root /opt/${PN}
+	insinto /usr/share/mime/packages
+	doins "${FILESDIR}/${PN}-mimetypes.xml" || die
+	sed "s#/opt/google/earth/free/google-earth#/opt/${PN}/${PN}#" -i google-earth.desktop || die
+	domenu google-earth.desktop
+	for size in 16 22 24 32 48 64 128 256 ; do
+		insinto /usr/share/icons/hicolor/${size}x${size}/apps
+		newins product_logo_${size}.png google-earth.png
+	done
+	rm -rf product_logo_* xdg-mime xdg-settings google-earth google-earth.desktop || die
+
+	# just copy everything that's left
+	cp -pPR * "${D}"/opt/${PN} || die
+
+	# some files are executable and shouldn't
 	fperms -R a-x,a+X /opt/googleearth/resources
 }
 
@@ -181,5 +154,20 @@ pkg_postinst() {
 
 	elog "The qt-bundled flag is now enabled by default due to crashes on startup with system Qt."
 	elog "Testing and reporting outcome with/without the flag is welcome (bug #319813)."
-	elog "If it crashes in both cases, disabling tips is reported to help (bug #354281)."
+	elog "If it crashes in both cases, disabling tips is reported to help (bug #354281):"
+	elog ""
+	elog "When you get a crash starting Google Earth, try adding a file ~./config/Google/GoogleEarthPlus.conf"
+	elog "the following options:"
+	elog "lastTip = 4"
+	elog "enableTips = false"
+	elog ""
+	elog "In addition, the use of free video drivers may be problems associated with using the Mesa"
+	elog "library. In this case, Google Earth 6x likely only works with the Gallium3D variant."
+	elog "To select the 32bit graphic library use the command:"
+	elog "	eselect mesa list"
+	elog "For example, for Radeon R300 (x86):"
+	elog "	eselect mesa set r300 2"
+	elog "For Intel Q33 (amd64):"
+	elog "	eselect mesa set 32bit i965 2"
+	elog "You may need to restart X afterwards"
 }
