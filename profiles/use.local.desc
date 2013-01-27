@@ -569,7 +569,6 @@ app-forensics/aide:audit - Enable support for sys-process/audit
 app-forensics/aide:prelink - Enable support for sys-devel/prelink
 app-forensics/chkrootkit:cron - Install cron script for weekly rootkit scans
 app-forensics/libewf:ewf - Enables the v1 API
-app-forensics/libewf:ewf2 - Enables the v2 API
 app-forensics/libewf:fuse - Enable fuse support for ewfmount
 app-forensics/libewf:rawio - Enables raw IO handling
 app-forensics/libewf:uuid - Enable UUID support in the ewftools
@@ -5715,10 +5714,11 @@ sys-process/procps:ncurses - Build programs that use ncurses: top, slabtop, watc
 virtual/ffmpeg:vaapi - Enables VAAPI (Video Acceleration API) for hardware decoding
 virtual/mpi:romio - Enable romio, a high-performance portable MPI-IO
 virtual/mysql:embedded - Build embedded server (libmysqld)
-virtual/udev:gudev - Build and install gudev support
-virtual/udev:hwdb - Build and install hwdb support
+virtual/udev:gudev - Build and install libgudev support
+virtual/udev:hwdb - Build and install hardware database support
 virtual/udev:introspection - Build and install introspection support
-virtual/udev:keymap - Build and install keymap support
+virtual/udev:keymap - Build and install keymaps support
+virtual/udev:kmod - Build and install module loading support
 www-apache/mod_extract_forwarded:mod_proxy - Enable support for Apache's internal proxy
 www-apache/mod_musicindex:mysql - Add MySQL cache backend support
 www-apache/mod_nss:ecc - enable Elliptical Curve Cyptography
@@ -6079,8 +6079,12 @@ x11-misc/dmenu:xft - Enable unofficial x11-libs/libXft support
 x11-misc/etm:ical - Enable export of ical format files by depending on dev-python/icalendar
 x11-misc/fbpager:xrender - Enable transparency support via x11-libs/libXrender
 x11-misc/google-gadgets:soup - Enables XML HTTP request extension based on net-libs/libsoup
+x11-misc/i3status:filecaps - Linux capabilities library is required for i3status to be able to read net bandwith
 x11-misc/lightdm:branding - Replace original gnome background with one from Gentoo ten project
+x11-misc/lightdm:gtk - Pull in the gtk+ greeter
 x11-misc/lightdm:introspection - Use dev-libs/gobject-introspection for introspection
+x11-misc/lightdm:kde - Pull in the kde greeter
+x11-misc/lightdm:razor - Pull in the razorqt greeter
 x11-misc/obconf:lxde - Add wrapper for LXDE environment
 x11-misc/openbox-menu:icons - Turn on to let icons appear in menus
 x11-misc/rednotebook:libyaml - enable libyaml support
