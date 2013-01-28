@@ -1,74 +1,48 @@
-# Copyright 1999-2006 Gentoo Foundation
+# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/mythtv.eclass,v 1.20 2009/11/16 07:59:47 cardoe Exp $
-#
+# $Header: /var/cvsroot/gentoo-x86/eclass/mythtv.eclass,v 1.21 2011/08/22 04:46:32 vapier Exp $
+
 # @ECLASS: mythtv.eclass
-# @AUTHOR: Doug Goldstein <cardoe@gentoo.org>
-# @MAINTAINER: Doug Goldstein <cardoe@gentoo.org>
+# @MAINTAINER:
+# Doug Goldstein <cardoe@gentoo.org>
+# @AUTHOR:
+# Doug Goldstein <cardoe@gentoo.org>
 # @BLURB: Downloads the MythTV source packages and any patches from the fixes branch
-#
 
 inherit versionator
+
+# temporary until all the packagers are fixed for bug #283798
+DEPEND="app-arch/unzip"
 
 # Release version
 MY_PV="${PV%_*}"
 
 # what product do we want
 case "${PN}" in
-	mythtv)
-		PROJECT="MythTV"
-		REPO="mythtv"
-		MY_PN="mythtv"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${MYTHTV_SREV}/${MY_PN}"
-		;;
-	mythtv-bindings)
-		PROJECT="MythTV"
-		REPO="mythtv"
-		MY_PN="mythtv"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${MYTHTV_SREV}/${MY_PN}"
-		;;
-	mythweb)
-		PROJECT="MythTV"
-		REPO="mythweb"
-		MY_PN="mythweb"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${MYTHTV_SREV}/"
-		;;
-	nuvexport)
-		PROJECT="MythTV"
-		REPO="nuvexport"
-		MY_PN="nuvexport"
-		MYTHTV_REV="$NUVEXPORT_REV"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${NUVEXPORT_SREV}/"
-		;;
-	libcec)
-		PROJECT="Pulse-Eight"
-		REPO="libcec"
-		MY_PN="libcec"
-		MYTHTV_REV="${LIBCEC_REV}"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${LIBCEC_SREV}/"
-		;;
-	*)
-		PROJECT="MythTV"
-		REPO="mythtv"
-		MY_PN="mythplugins"
-		S="${WORKDIR}/${PROJECT}-${REPO}-${MYTHTV_SREV}/${MY_PN}"
-		;;
+	       mythtv) MY_PN="mythtv";;
+	mythtv-themes) MY_PN="myththemes";;
+	mythtv-themes-extra) MY_PN="themes";;
+	            *) MY_PN="mythplugins";;
 esac
 
 # _pre is from SVN trunk while _p and _beta are from SVN ${MY_PV}-fixes
 # TODO: probably ought to do something smart if the regex doesn't match anything
 [[ "${PV}" =~ (_alpha|_beta|_pre|_rc|_p)([0-9]+) ]] || {
-	[[ "${PROJECT}" == "MythTV" ]] && {
-		# assume a tagged release
-		MYTHTV_REV="v${PV}"
-	}
-
-	[[ "${PROJECT}" == "Pulse-Eight" ]] && {
-		MYTHTV_REV="${REPO}-${PV}"
-	}
+	eerror "Invalid version requested (_alpha|_beta|_pre|_rc|_p) only"
+	exit 1
 }
+
+REV_PREFIX="${BASH_REMATCH[1]}" # _alpha, _beta, _pre, _rc, or _p
+MYTHTV_REV="${BASH_REMATCH[2]}" # revision number
+
+case $REV_PREFIX in
+	_pre|_alpha) MYTHTV_REPO="trunk";;
+	_p|_beta|_rc) VER_COMP=( $(get_version_components ${MY_PV}) )
+	          FIXES_VER="${VER_COMP[0]}-${VER_COMP[1]}"
+	          MYTHTV_REPO="branches/release-${FIXES_VER}-fixes";;
+esac
 
 HOMEPAGE="http://www.mythtv.org"
 LICENSE="GPL-2"
-SRC_URI="https://github.com/${PROJECT}/${REPO}/tarball/${MYTHTV_REV} -> ${REPO}-${PV}.tar.gz"
-
+SRC_URI="http://svn.mythtv.org/trac/changeset/${MYTHTV_REV}/${MYTHTV_REPO}/${MY_PN}?old_path=%2F&format=zip -> ${MY_PN}-${PV}.zip"
+S="${WORKDIR}/${MYTHTV_REPO}/${MY_PN}"
