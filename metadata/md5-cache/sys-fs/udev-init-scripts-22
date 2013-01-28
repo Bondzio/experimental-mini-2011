@@ -11,4 +11,4 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://dev.gentoo.org/~williamh/dist/udev-init-scripts-22.tar.bz2
 _eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=ff833988f8657fdaa1a04aaf10b4c4d1
+_md5_=4f35a14fd635804993e797ad8cbaadf8
