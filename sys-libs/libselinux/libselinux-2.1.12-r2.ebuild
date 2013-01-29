@@ -1,15 +1,15 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/libselinux/libselinux-2.1.12-r2.ebuild,v 1.2 2012/12/30 15:17:46 swift Exp $
 
-EAPI="4"
-PYTHON_DEPEND="python? *"
-SUPPORT_PYTHON_ABIS="1"
-RESTRICT_PYTHON_ABIS="2.5 *-jython *-pypy-*"
+EAPI="5-progress"
+PYTHON_DEPEND="python? ( <<>> )"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="2.5 *-jython *-pypy-*"
 USE_RUBY="ruby18 ruby19"
 RUBY_OPTIONAL="yes"
 
-inherit multilib python toolchain-funcs eutils ruby-ng
+inherit eutils multilib python ruby-ng toolchain-funcs
 
 SEPOL_VER="2.1.8"
 
@@ -20,7 +20,7 @@ SRC_URI="http://userspace.selinuxproject.org/releases/20120924/${P}.tar.gz
 
 LICENSE="public-domain"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="*"
 IUSE="python ruby static-libs"
 
 RDEPEND=">=sys-libs/libsepol-${SEPOL_VER}
@@ -66,9 +66,9 @@ each_ruby_compile() {
 	cd src-ruby-${RUBYLIBVER}
 
 	if [[ "${RUBYLIBVER}" == "1.8" ]]; then
-		emake CC="$(tc-getCC)" RUBY="${RUBY}" RUBYINC="-I$(ruby_get_hdrdir)" LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" rubywrap || die
+		emake CC="$(tc-getCC)" RUBY="${RUBY}" RUBYINC="-I$(ruby_get_hdrdir)" LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" rubywrap
 	else
-		emake CC="$(tc-getCC)" RUBY="${RUBY}" LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" rubywrap || die
+		emake CC="$(tc-getCC)" RUBY="${RUBY}" LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" rubywrap
 	fi
 }
 
@@ -77,7 +77,7 @@ src_compile() {
 	emake \
 		AR="$(tc-getAR)" \
 		CC="$(tc-getCC)" \
-		LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" all || die
+		LDFLAGS="-fPIC $($(tc-getPKG_CONFIG) libpcre --libs) ${LDFLAGS}" all
 
 	if use python; then
 		python_copy_sources src
@@ -96,11 +96,11 @@ each_ruby_install() {
 	local RUBYLIBVER=$(${RUBY} -e 'print RUBY_VERSION.split(".")[0..1].join(".")')
 
 	cd "${WORKDIR}/${P}/src-ruby-${RUBYLIBVER}"
-	emake RUBY="${RUBY}" DESTDIR="${D}" install-rubywrap || die
+	emake RUBY="${RUBY}" DESTDIR="${D}" install-rubywrap
 }
 
 src_install() {
-	emake DESTDIR="${D}" install || die
+	emake DESTDIR="${D}" install
 
 	if use python; then
 		installation() {
@@ -113,7 +113,7 @@ src_install() {
 		ruby-ng_src_install
 	fi
 
-	use static-libs || rm "${D}"/usr/lib*/*.a
+	use static-libs || rm "${D}"usr/lib*/*.a
 }
 
 pkg_postinst() {
