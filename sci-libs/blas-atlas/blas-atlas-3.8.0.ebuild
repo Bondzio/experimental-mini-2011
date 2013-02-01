@@ -1,26 +1,22 @@
-# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/blas-atlas/blas-atlas-3.8.0.ebuild,v 1.16 2012/10/18 21:15:45 jlec Exp $
+# $Header: $
 
-inherit eutils fortran-2 toolchain-funcs multilib
+inherit eutils toolchain-funcs multilib
 
 PATCH_V="3.7.39"
 
-MY_PN=${PN/blas-/}
-
 DESCRIPTION="Automatically Tuned Linear Algebra Software BLAS implementation"
 HOMEPAGE="http://math-atlas.sourceforge.net/"
-SRC_URI="
-	mirror://sourceforge/math-atlas/${MY_PN}${PV}.tar.bz2
+MY_PN=${PN/blas-/}
+SRC_URI="mirror://sourceforge/math-atlas/${MY_PN}${PV}.tar.bz2
 	mirror://gentoo/${MY_PN}-${PATCH_V}-shared-libs.patch.bz2"
 
-SLOT="0"
 LICENSE="BSD"
+SLOT="0"
 KEYWORDS="alpha amd64 ppc ppc64 sparc x86"
 IUSE="doc"
 
-RDEPEND="
-	app-admin/eselect-blas
+RDEPEND="app-admin/eselect-blas
 	app-admin/eselect-cblas
 	doc? ( app-doc/blas-docs )"
 DEPEND="app-admin/eselect-blas
@@ -30,7 +26,6 @@ DEPEND="app-admin/eselect-blas
 S="${WORKDIR}/ATLAS"
 
 pkg_setup() {
-	fortran-2_pkg_setup
 	# icc won't compile (as of icc-10.0.026)
 	# and will blow out $PORTAGE_TMPDIR
 	if [[ $(tc-getCC) = icc* ]]; then
