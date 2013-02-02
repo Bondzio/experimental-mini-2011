@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/php/php-5.3.18.ebuild,v 1.14 2013/01/01 19:38:55 armin76 Exp $
 
 EAPI=4
 
