@@ -1964,6 +1964,10 @@ games-fps/doomsday:resources - Enable support for games-fps/doomsday-resources i
 games-fps/doomsday:snowberry - Install Snowberry doomsday front-end
 games-fps/duke3d:demo - Install the demo files
 games-fps/duke3d:pic - disable optimized assembly code that is not PIC friendly
+games-fps/eduke32:demo - Install games-fps/duke3d-demodata as well
+games-fps/eduke32:server - Compile with server support
+games-fps/eduke32:tools - Build several tools for modding and development
+games-fps/eduke32:vpx - Enable support for WebM VP8 Codecs
 games-fps/ezquake-bin:security - install the security module needed for some servers
 games-fps/lsdldoom:freedoom - Install games-fps/freedoom wad file
 games-fps/lsdldoom:net - Enables network game support
@@ -2096,7 +2100,6 @@ gnome-base/gnome-light:fallback - Install gnome-base/gnome-panel and x11-wm/meta
 gnome-base/gnome-light:gnome-shell - Install gnome-base/gnome-shell and x11-wm/mutter for the standard GNOME 3 desktop mode
 gnome-base/gnome-panel:bonobo - Enable Bonobo compatibility modules for applets still not ported to DBUS.
 gnome-base/gnome-session:gconf - Optional support for gnome-base/gconf configuration storage system
-gnome-base/gnome-session:systemd - Use sys-apps/systemd instead of sys-auth/consolekit for session tracking
 gnome-base/gnome-settings-daemon:colord - Support color management using x11-misc/colord
 gnome-base/gnome-settings-daemon:i18n - Enable support for enhanced input methods through app-i18n/ibus
 gnome-base/gnome-settings-daemon:packagekit - Enable support for the distro-neutral package manager GUI app-admin/packagekit
