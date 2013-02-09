@@ -597,6 +597,7 @@ app-i18n/ibus:gconf - Enable support for gnome-base/gconf
 app-i18n/ibus:gtk3 - Enable support for gtk+3
 app-i18n/ibus:introspection - Use dev-libs/gobject-introspection for introspection
 app-i18n/ibus:vala - Enable support for dev-lang/vala
+app-i18n/ibus-anthy:deprecated - Install deprecated pygtk2 library
 app-i18n/ibus-m17n:gtk - Build the preference interfaces, based on x11-libs/gtk+ (GTK+ 2).
 app-i18n/ibus-pinyin:boost - Compile against dev-libs/boost libraries
 app-i18n/ibus-pinyin:opencc - Enable support for app-i18n/opencc
@@ -1321,7 +1322,7 @@ dev-libs/DirectFB:bmp - build BMP image provider
 dev-libs/DirectFB:dynload - enable dynload support
 dev-libs/DirectFB:gles2 - build gles2 gfxdriver
 dev-libs/DirectFB:imlib2 - build Imlib2 image provider
-dev-libs/DirectFB:input_devices_input_hub - build input driver input_hub
+dev-libs/DirectFB:input_hub - provides an asynchronous interface to the input devices available and those being added/removed
 dev-libs/DirectFB:mpeg2 - build MPEG2 image provider
 dev-libs/DirectFB:multicore - enable multicore support
 dev-libs/DirectFB:pnm - build PNM (PBM/PGM/PPM) image provider
@@ -1386,6 +1387,7 @@ dev-libs/geoip:perl-geoipupdate - Install pure perl version of geoipupdate, with
 dev-libs/gf2x:bindist - Disable automatic fine-tuning to local processor features like pclmul or sse2.
 dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util/systemtap
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
+dev-libs/gmp:pgo - after building gmp, run some tests against to produce faster libraries -- this option will double the compile time
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
 dev-libs/igraph:arpack - Use external sci-libs/arpack
 dev-libs/igraph:blas - Use external virtual/blas numerical library
