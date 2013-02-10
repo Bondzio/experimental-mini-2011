@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/pyserial dev-libs/libxml2[python] || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+DESCRIPTION=Free open-source tool for programming your amateur radio
+EAPI=5
+HOMEPAGE=http://chirp.danplanet.com
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+RDEPEND=dev-python/pyserial dev-libs/libxml2[python] dev-python/pygtk || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
+SLOT=0
+SRC_URI=http://chirp.danplanet.com/download/0.3.0/chirp-0.3.0.tar.gz
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_md5_=89797450deddf111d3751e010be7e4fe

@@ -11,5 +11,5 @@ RDEPEND=<=x11-base/xorg-server-1.13.49[-minimal] >=app-admin/eselect-opengl-1.0.
 RESTRICT=bindist
 SLOT=1
 SRC_URI=http://www2.ati.com/drivers/beta/amd-driver-installer-catalyst-12.11-beta11-x86.x86_64.zip http://developer.amd.com.php53-23.ord1-1.websitetestlink.com/wordpress/media/2012/10/xvba-sdk-0.74-404001.tar.gz
-_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	c27564a568491445be036a10498ed8be	linux-mod	dbc722ed035721476f23ab7b0572985e	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=eutils	d40dc948067bd3db1c8ebf7d51897313	linux-info	aeb859294322d3ba9be81ee7a26c3a23	linux-mod	dbc722ed035721476f23ab7b0572985e	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=a80c6539dc2fa6ee909d8956d4c7493a
