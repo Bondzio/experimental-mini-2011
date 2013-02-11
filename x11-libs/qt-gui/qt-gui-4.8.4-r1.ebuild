@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/qt-gui/qt-gui-4.8.4-r1.ebuild,v 1.7 2013/02/10 23:50:24 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/qt-gui/qt-gui-4.8.4-r1.ebuild,v 1.9 2013/02/11 11:15:25 ago Exp $
 
 EAPI=4
 
@@ -11,7 +11,7 @@ SLOT="4"
 if [[ ${QT4_BUILD_TYPE} == live ]]; then
 	KEYWORDS=""
 else
-	KEYWORDS="~alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
+	KEYWORDS="~alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris"
 fi
 IUSE="+accessibility cups dbus egl gif +glib gtkstyle mng nas nis qt3support tiff trace xinerama +xv"
 
@@ -19,6 +19,7 @@ REQUIRED_USE="
 	gtkstyle? ( glib )
 "
 
+# cairo[-qt4] is needed because of bug 454066
 RDEPEND="
 	app-admin/eselect-qtgraphicssystem
 	media-libs/fontconfig
@@ -43,7 +44,10 @@ RDEPEND="
 	cups? ( net-print/cups )
 	dbus? ( ~x11-libs/qt-dbus-${PV}[aqua=,debug=] )
 	egl? ( media-libs/mesa[egl] )
-	gtkstyle? ( x11-libs/gtk+:2[aqua=] )
+	gtkstyle? (
+		x11-libs/cairo[-qt4]
+		x11-libs/gtk+:2[aqua=]
+	)
 	mng? ( >=media-libs/libmng-1.0.9 )
 	nas? ( >=media-libs/nas-1.5 )
 	tiff? ( media-libs/tiff:0 )
@@ -64,27 +68,6 @@ PATCHES=(
 )
 
 pkg_setup() {
-	# this belongs to pkg_pretend, we have to upgrade to EAPI 4 :)
-	# was planning to use a dep, but to reproduce this you have to
-	# clean-emerge qt-gui[gtkstyle] while having cairo[qt4] installed.
-	# no need to restrict normal first time users for that :)
-	if use gtkstyle && ! has_version x11-libs/qt-gui && has_version x11-libs/cairo[qt4]; then
-		echo
-		eerror "When building qt-gui[gtkstyle] from scratch with cairo present,"
-		eerror "cairo must have the qt4 use flag disabled, otherwise the gtk"
-		eerror "style cannot be built."
-		ewarn
-		eerror "You have the following options:"
-		eerror "  - rebuild cairo with -qt4 USE"
-		eerror "  - build qt-gui with -gtkstyle USE"
-		ewarn
-		eerror "After you successfully install qt-gui, you'll be able to"
-		eerror "re-enable the disabled use flag and/or reinstall cairo."
-		ewarn
-		echo
-		die "can't build ${PN} with USE=gtkstyle if cairo has 'qt4' USE flag enabled"
-	fi
-
 	QT4_TARGET_DIRECTORIES="
 		src/gui
 		src/scripttools
