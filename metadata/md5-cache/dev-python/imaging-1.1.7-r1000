@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=media-libs/freetype:2 virtual/jpeg lcms? ( media-libs/lcms:0 ) scanner? ( media-gfx/sane-backends ) X? ( x11-misc/xdg-utils ) python_abis_2.5? ( dev-lang/python:2.5[tk?] ) python_abis_2.6? ( dev-lang/python:2.6[tk?] ) python_abis_2.7? ( dev-lang/python:2.7[tk?] ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 )
+DESCRIPTION=Python Imaging Library (PIL)
+EAPI=5-progress
+HOMEPAGE=http://www.pythonware.com/products/pil/index.htm
+IUSE=doc examples lcms scanner tk X python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0
+KEYWORDS=*
+LICENSE=HPND
+RDEPEND=media-libs/freetype:2 virtual/jpeg lcms? ( media-libs/lcms:0 ) scanner? ( media-gfx/sane-backends ) X? ( x11-misc/xdg-utils ) python_abis_2.5? ( dev-lang/python:2.5[tk?] ) python_abis_2.6? ( dev-lang/python:2.6[tk?] ) python_abis_2.7? ( dev-lang/python:2.7[tk?] ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
+SLOT=0
+SRC_URI=http://www.effbot.org/downloads/Imaging-1.1.7.tar.gz
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	f2731576962f01811c9573b3323fa374	multilib	ded93e450747134a079e647d888aa80b	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=638d12f9b4fa35cff5f7d0d840f31844
