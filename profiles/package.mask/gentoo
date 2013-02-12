@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14463 2013/02/11 21:31:17 hasufell Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14466 2013/02/12 16:04:45 ssuominen Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,16 +31,23 @@
 
 #--- END OF EXAMPLES ---
 
+# Ian Delaney <idella4@gentoo.org> (12 Feb 2013)
+# This is a work in progress targeting an old bug
+# but followed by very keen users.  It will be either
+# abandonned or implemented down the track pending further support
+=app-emulation/xen-tools-4.2.1-r2
+
 # Samuli Suominen <ssuominen@gentoo.org> (11 Feb 2013)
 # The 3 files from this package are part of the linux-firmware
 # package now. Removal in 30 days.
 media-tv/cx18-firmware
 
-# Hans de Graaff <hans@degraaff.org> (11 Feb 2013)
+# Hans de Graaff <graaff@gentoo.org> (11 Feb 2013)
 # No longer supported upstream even for security bugs.
 # Port your application to another version of Rails.
 # The Rails 3.0 version in the tree has security issues
 # and no new 3.0 versions will be released anymore.
+# Removal in 30 days.
 dev-ruby/rails:3.0
 dev-ruby/railties:3.0
 dev-ruby/activerecord:3.0
@@ -54,7 +61,6 @@ dev-ruby/i18n:0.5
 dev-ruby/rack-mount:0.6
 dev-ruby/rack-test:0.5
 dev-ruby/mysql2:0.2
-
 
 # Doug Goldstein <cardoe@gentoo.org> (10 Feb 2013)
 # Use the in-kernel saa717x driver, available since at least 2.6.25
@@ -106,7 +112,7 @@ x11-misc/xdaf
 # emerge -av linux-firmware
 # If you still have a reason to keep the package, please
 # let us know by filing a bug report.
-# Removal at 01 Apr 2013
+# Removal in 30 days
 net-wireless/ar9271-firmware
 net-wireless/libertas-firmware
 net-wireless/rt2860-firmware
@@ -116,20 +122,16 @@ net-wireless/rt73-firmware
 net-wireless/i2400m-fw
 
 # Samuli Suominen <ssuominen@gentoo.org> (10 Feb 2013)
-# Unfortunately these packages are missing proper licenses
-# If you can figure out the licensing issues, these can
-# be unmasked.
-# prism54 -> no license at all
-# bluez -> only COPYING with GPL-2, but where is the source then?
-# and http://www.bluez.org/download/ lists it as deprecated
-# Removal at 01 Apr 2013
+# There is no license file available for prism54-firmware
+# since it's been extracted from windows binary blob
+# drivers. And this is for very old hardware.
+# Removal in 30 days
 net-wireless/prism54-firmware
-net-wireless/bluez-firmware
 
 # Rick Farina <zerochaos@gentoo.org> (10 Feb 2013)
 # This firmware has been replaced by rtlwifi/*
 # which is already in the linux-firmware package.
-# Removal at 01 Apr 2013
+# Removal in 30 days
 net-wireless/rtl8192su-firmware
 
 # Ryan Hill <dirtyepic@gentoo.org> (07 Feb 2013)
