@@ -1,17 +1,13 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-wireless/b43-firmware/b43-firmware-5.100.138.ebuild,v 1.3 2013/02/10 16:40:26 zerochaos Exp $
-
-EAPI=5
+# $Header: $
 
 : ${B43_FIRMWARE_SRC_OBJ:=wl_apsta.o}
-
-MY_P="broadcom-wl-${PV}"
+MY_P="broadcom-wl-5.100.138"
 DESCRIPTION="broadcom firmware for b43 LP PHY and >=linux-3.2"
 HOMEPAGE="http://linuxwireless.org/en/users/Drivers/b43"
 SRC_URI="http://www.lwfinger.com/b43-firmware/${MY_P}.tar.bz2"
 
-LICENSE="Broadcom"
+LICENSE="as-is"
 SLOT="b43"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
