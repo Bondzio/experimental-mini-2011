@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/setuptools app-arch/unrar >=dev-python/imaging-1.1.5 >=dev-python/pygtk-2.14 virtual/jpeg !media-gfx/comix dev-lang/python[sqlite] dev-lang/python dev-lang/python[sqlite]
 SLOT=0
 SRC_URI=mirror://sourceforge/mcomix/mcomix-0.99.tar.bz2
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=d0e88cc7050c52f287bae843c0d571a3

@@ -10,5 +10,5 @@ RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=mirror://pypi/d/distribute/distribute-0.6.35.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	f2731576962f01811c9573b3323fa374	multilib	ded93e450747134a079e647d888aa80b	python	4eeb18fb2c4f9098d544bf9ea32f47b9	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	eutils	f2731576962f01811c9573b3323fa374	multilib	ded93e450747134a079e647d888aa80b	python	714d853f822bc2c6714b67af1c7797d3	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=60bd86025a55bc6a0fdc1b1c2363722a

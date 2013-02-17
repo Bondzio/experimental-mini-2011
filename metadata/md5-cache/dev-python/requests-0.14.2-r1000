@@ -10,5 +10,5 @@ RDEPEND=app-misc/ca-certificates dev-python/chardet[python_abis_2.6?,python_abis
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=https://github.com/kennethreitz/requests/tarball/v0.14.2 -> requests-0.14.2.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=18f349999bde7ce01a14b3596e3897a8

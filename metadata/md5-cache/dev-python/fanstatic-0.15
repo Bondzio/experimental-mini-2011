@@ -10,5 +10,5 @@ RDEPEND=dev-python/webob[python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,pyth
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=mirror://pypi/f/fanstatic/fanstatic-0.15.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=4c2640175a031e1848495d36073add27

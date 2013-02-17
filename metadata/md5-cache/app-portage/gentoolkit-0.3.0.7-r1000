@@ -10,5 +10,5 @@ RDEPEND=sys-apps/portage !<=app-portage/gentoolkit-dev-0.2.7 || ( >=sys-apps/cor
 REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=0
 SRC_URI=mirror://gentoo/gentoolkit-0.3.0.7.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=6e40c9fd957aeb27f0e65d1b6a8af1b4

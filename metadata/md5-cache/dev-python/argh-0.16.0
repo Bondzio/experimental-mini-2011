@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=|| ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 SRC_URI=mirror://pypi/a/argh/argh-0.16.0.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=4f53a8ecb75d14953e4f7881aa6669ae

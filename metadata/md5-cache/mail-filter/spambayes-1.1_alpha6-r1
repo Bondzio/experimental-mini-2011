@@ -8,5 +8,5 @@ LICENSE=PSF-2.2 GPL-2
 RDEPEND=dev-python/bsddb3 dev-python/lockfile =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/spambayes/spambayes-1.1a6.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	4eeb18fb2c4f9098d544bf9ea32f47b9
+_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=a1908138d3aa95e82141c637c694e940
