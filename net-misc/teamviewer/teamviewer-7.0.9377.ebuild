@@ -1,56 +1,111 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/teamviewer/teamviewer-7.0.9377.ebuild,v 1.1 2013/02/20 02:39:15 hasufell Exp $
 
-EAPI=4
+EAPI=5
 
-inherit eutils
+inherit eutils gnome2-utils
 
 # Major version
 MV=${PV/\.*}
-
+MY_PN=${PN}-${MV}
 DESCRIPTION="All-In-One Solution for Remote Access and Support over the Internet"
 HOMEPAGE="http://www.teamviewer.com"
-SRC_URI="http://www.teamviewer.com/download/${PN}_linux.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://www.teamviewer.com/download/version_${MV}x/teamviewer_linux.tar.gz -> ${P}.tar.gz"
 
-LICENSE="TeamViewer"
-SLOT="0"
+LICENSE="TeamViewer !system-wine? ( LGPL-2.1 )"
+SLOT=${MV}
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="system-wine"
 
-RESTRICT="mirror strip"
+RESTRICT="mirror"
 
-RDEPEND="app-emulation/wine"
-DEPEND="${RDEPEND}"
+RDEPEND="
+	x11-misc/xdg-utils
+	!system-wine? (
+		amd64? (
+			app-emulation/emul-linux-x86-baselibs
+			app-emulation/emul-linux-x86-soundlibs
+			app-emulation/emul-linux-x86-xlibs
+		)
+		x86? (
+			sys-libs/zlib
+			x11-libs/libSM
+			x11-libs/libX11
+			x11-libs/libXau
+			x11-libs/libXdamage
+			x11-libs/libXext
+			x11-libs/libXfixes
+			x11-libs/libXtst
+		)
+	)
+	system-wine? ( app-emulation/wine )"
 
-S="${WORKDIR}/teamviewer${MV}"
+QA_PREBUILT="opt/teamviewer-${MV}/*"
 
-pkg_setup() {
-	elog "This ebuild installs the TeamViewer binary and libraries and relies on"
-	elog "Funtoo's wine package to run the actual program."
-	elog
-	elog "If you encounter any problems, consider running TeamViewer with the"
-	elog "bundled wine package manually."
+S=${WORKDIR}/teamviewer${MV}
+
+make_winewrapper() {
+	cat << EOF > "${T}/${MY_PN}"
+#!/bin/sh
+exec wine "/opt/${MY_PN}/bin/TeamViewer.exe" "\$@"
+EOF
+	chmod go+rx "${T}/${MY_PN}"
+	exeinto /opt/bin
+	doexe "${T}/${MY_PN}"
+}
+
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-POSIX.patch
 }
 
 src_install () {
-	rm ${PN}
-	echo "#!/bin/bash" > ${PN}
-	echo "wine /opt/${PN}/TeamViewer.exe" >> ${PN}
+	if use system-wine ; then
+		make_winewrapper
+		exeinto /opt/${MY_PN}/bin
+		doexe "${S}/.wine/drive_c/Program Files/TeamViewer/Version7/"*
+	else
+		# install scripts and .reg
+		insinto /opt/${MY_PN}/bin
+		find ".tvscript" -type f \( \! -name "${PN}.desktop*" -a \! -name "${PN}.png" \) \
+			-maxdepth 1 -execdir doins '{}' \;
 
-	insinto /opt/${PN}/
-	doins .wine/drive_c/Program\ Files/TeamViewer/Version7/*
-	doins ${PN}
+		# install wine
+		insinto /opt/${MY_PN}/wine
+		doins -r "${S}"/.wine/*
+		dosym /opt/${MY_PN}/bin/${PN} /opt/bin/${MY_PN}
 
-	fperms 755 /opt/${PN}/${PN}
-	dosym /opt/${PN}/${PN} /opt/bin/${PN}
+		# fix permissions
+		fperms 755 /opt/${MY_PN}/bin/{${PN},wrapper,killteamviewer}
+		fperms 755 /opt/${MY_PN}/wine/bin/wine{,-preloader,server}
+		fperms 755 "/opt/${MY_PN}/wine/drive_c/Program Files/TeamViewer/Version${MV}"/TeamViewer{,_Desktop}.exe
+		find "${D}"/opt/${MY_PN} -type f -name "*.so*" -execdir chmod 755 '{}' \;
+	fi
 
-	doicon -s 48 .tvscript/${PN}.png
-
+	newicon -s 48 "${S}"/.tvscript/${PN}.png ${MY_PN}.png
 	dodoc linux_FAQ_{EN,DE}.txt
-	dodoc CopyRights_{EN,DE}.txt
+	make_desktop_entry ${MY_PN} TeamViewer ${MY_PN}
+}
 
-	make_desktop_entry ${PN} TeamViewer \
-	/opt/${PN}/.tvscript/${PN}.png 'Network;'
+pkg_preinst() {
+	gnome2_icon_savelist
+}
 
+pkg_postinst() {
+	gnome2_icon_cache_update
+
+	if use system-wine ; then
+		echo
+		eerror "IMPORTANT NOTICE!"
+		elog "Using ${PN} with system wine is not supported and experimental."
+		elog "Do not report gentoo bugs while using this version."
+		echo
+	fi
+
+	elog "Logs are written to:"
+	elog "  ~/.teamviewer/7"
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
 }
