@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/pump/pump-0.8.24-r4.ebuild,v 1.3 2013/02/20 15:57:31 ago Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/pump/pump-0.8.24-r4.ebuild,v 1.5 2013/02/20 23:17:49 pinkbyte Exp $
 
 EAPI=5
 
@@ -15,7 +15,7 @@ SRC_URI="mirror://debian/pool/main/p/${PN}/${PN}_${PV}.orig.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~hppa ~ia64 ~ppc ~sparc x86"
+KEYWORDS="amd64 ~arm hppa ~ia64 ~ppc ~sparc x86"
 IUSE=""
 
 DEPEND=">=dev-libs/popt-1.5"
@@ -33,6 +33,9 @@ src_prepare() {
 	# Debian patchset 7 include gentoo patchset too
 	epatch "${WORKDIR}/${PN}_${PV}-${PATCHLEVEL}.diff"
 	EPATCH_FORCE="yes" EPATCH_SOURCE="patches" EPATCH_SUFFIX="patch" epatch
+
+	# respect AR, wrt bug #458482
+	tc-export AR
 
 	epatch_user
 }
