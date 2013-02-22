@@ -867,6 +867,7 @@ app-shells/pdsh:rsh - This allows the use of rsh (remote shell) and rcp (remote 
 app-shells/scsh-install-lib:scsh - Use a non-FHS directory layout
 app-shells/shish:diet - Use dev-libs/dietlibc
 app-shells/tcsh:catalogs - Add support for NLS catalogs
+app-text/acroread:html - HTML support and help reading capability (only for x86).
 app-text/asciidoc:highlight - Enable source code highlighting
 app-text/calibre:udisks - Add run-time dependency on sys-fs/udisks in order to mount and unmount reading devices.
 app-text/cb2bib:poll - Use clipboard polling
@@ -1388,11 +1389,6 @@ dev-libs/glib:systemtap - Build support for profiling and tracing using dev-util
 dev-libs/glib:utils - Install gtester-report utility to generate test report files for your software.
 dev-libs/gmp:pgo - after building gmp, run some tests against to produce faster libraries -- this option will double the compile time
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
-dev-libs/igraph:arpack - Use external sci-libs/arpack
-dev-libs/igraph:blas - Use external virtual/blas numerical library
-dev-libs/igraph:gmp - Enables dev-libs/gmp support
-dev-libs/igraph:gprof - Enables profiling support
-dev-libs/igraph:lapack - Use external lapack numerical library
 dev-libs/intel-common:compiler - Install the libraries needed for the icc and ifort compilers
 dev-libs/jemalloc:stats - Enable statistics calculation/reporting
 dev-libs/keybinder:introspection - Use dev-libs/gobject-introspection for introspection
@@ -1444,6 +1440,10 @@ dev-libs/libverto:libevent - Support event loops using dev-libs/libevent
 dev-libs/libverto:tevent - Support event loops using sys-libs/tevent
 dev-libs/link-grammar:aspell - Adds support for app-text/aspell spell checker
 dev-libs/link-grammar:hunspell - Adds support for app-text/hunspell spell checker
+dev-libs/log4cplus:iconv - Use inconv for wchar_t <-> char conversions. See also log4cplus's unicode.txt documentation
+dev-libs/log4cplus:qt - Build the liblog4cplusqt4debugappender library that implements Qt4DebugAppender
+dev-libs/log4cplus:working-c-locale - Use the C99 locale facilities for wchar_t <-> char conversions. See also log4cplus's unicode.txt documentation
+dev-libs/log4cplus:working-locale - Use C++'s std::locale for wchar_t <-> char conversions. See also log4cplus's unicode.txt documentation
 dev-libs/log4cxx:smtp - Offer SMTP support via net-libs/libesmtp
 dev-libs/m17n-lib:X - Builds the Graphical User Interface API and utilities for the package.
 dev-libs/m17n-lib:anthy - Enable support for app-i18n/anthy input method.
