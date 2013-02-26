@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14504 2013/02/25 15:09:24 lu_zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14510 2013/02/26 14:43:07 mgorny Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,10 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Eray Aslan <eras@gentoo.org> (26 Feb 2013)
+# Mask release candidates
+=net-mail/dovecot-2.2_rc*
 
 # Doug Goldstein <cardoe@gentoo.org> (24 Feb 2013)
 # Working on the next stable patchset
@@ -64,10 +68,6 @@ net-misc/wxdfast
 # Development versions of net-analyzer/wireshark
 =net-analyzer/wireshark-1.9*
 
-# Eray Aslan <eras@gentoo.org> (22 Feb 2013)
-# Mask beta versions
-=net-mail/dovecot-2.2_beta*
-
 # Justin Lecher <jlec@gentoo.org> (21 Feb 2013)
 # Temporary mask, because compatibility with recent tcl is not proven
 =dev-tcltk/tcllib-1.15
@@ -76,10 +76,6 @@ net-misc/wxdfast
 # Quite dead.  Use games-engines/stratagus instead.
 # Masked for removal on 20130320.
 games-strategy/freecraft
-
-# Eray Aslan <eras@gentoo.org> (18 Feb 2013)
-# Mask beta versions
-=mail-filter/opendkim-2.8.0_beta*
 
 # Davide Pesavento <pesa@gentoo.org> (17 Feb 2013)
 # Mask beta version for testing.
@@ -897,6 +893,7 @@ dev-ruby/rcsparse
 dev-vcs/fromcvs
 sci-biology/picard
 ~dev-libs/libg15-9999
+~app-doc/devmanual-9999
 
 # Federico Ferri <mescalinum@gentoo.org> (08 Aug 2009)
 # Doesn't build with Tcl 8.5, has several bugs open
