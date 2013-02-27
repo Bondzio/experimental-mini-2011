@@ -1,6 +1,5 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/multilib-build.eclass,v 1.3 2013/02/26 14:42:24 mgorny Exp $
 
 # @ECLASS: multilib-build.eclass
 # @MAINTAINER:
@@ -19,7 +18,7 @@ if [[ ! ${_MULTILIB_BUILD} ]]; then
 
 # EAPI=5 is required for meaningful MULTILIB_USEDEP.
 case ${EAPI:-0} in
-	5) ;;
+	5|5-progress) ;;
 	*) die "EAPI=${EAPI} is not supported" ;;
 esac
 
@@ -147,6 +146,7 @@ multilib_parallel_foreach_abi() {
 # runs (if any). Dies if header files differ.
 multilib_check_headers() {
 	_multilib_header_cksum() {
+		[[ -d ${ED}usr/include ]] && \
 		find "${ED}"usr/include -type f \
 			-exec cksum {} + | sort -k2
 	}
