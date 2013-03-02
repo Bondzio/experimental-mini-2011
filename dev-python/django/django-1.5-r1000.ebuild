@@ -7,16 +7,17 @@ PYTHON_MULTIPLE_ABIS="1"
 PYTHON_RESTRICTED_ABIS="2.5 3.1"
 PYTHON_TESTS_RESTRICTED_ABIS="*-jython"
 
-inherit bash-completion-r1 distutils git-2 webapp
+inherit bash-completion-r1 distutils versionator webapp
+
+MY_P="Django-${PV}"
 
 DESCRIPTION="High-level Python web framework"
 HOMEPAGE="http://www.djangoproject.com/ https://github.com/django/django http://pypi.python.org/pypi/Django"
-SRC_URI=""
-EGIT_REPO_URI="https://github.com/django/django"
+SRC_URI="https://www.djangoproject.com/m/releases/$(get_version_component_range 1-2)/${MY_P}.tar.gz"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="*"
 IUSE="doc mysql postgres sqlite test"
 
 RDEPEND="$(python_abi_depend -e "3.* *-jython" dev-python/imaging)
@@ -27,6 +28,8 @@ RDEPEND="$(python_abi_depend -e "3.* *-jython" dev-python/imaging)
 DEPEND="${RDEPEND}
 	doc? ( $(python_abi_depend dev-python/sphinx) )
 	test? ( $(python_abi_depend -e "*-jython" virtual/python-sqlite[external]) )"
+
+S="${WORKDIR}/${MY_P}"
 
 WEBAPP_MANUAL_SLOT="yes"
 
@@ -43,6 +46,10 @@ src_prepare() {
 
 	# Avoid test failures with unittest2 and Python 3.
 	sed -e "s/from unittest2 import \*/raise ImportError/" -i django/utils/unittest/__init__.py
+
+	# Fix generation of documentation with Python 3.
+	# https://github.com/django/django/commit/a5733fcd7be7adb8b236825beff4ccda19900f9e
+	sed -e "s/with open(outfilename, 'wb') as fp:/with open(outfilename, 'w') as fp:/" -i docs/_ext/djangodocs.py
 }
 
 src_compile() {

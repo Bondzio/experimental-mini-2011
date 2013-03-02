@@ -1,4 +1,6 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/iptables/iptables-1.4.13-r2.ebuild,v 1.2 2012/10/10 12:18:24 dev-zero Exp $
 
 EAPI="4"
 
@@ -13,7 +15,7 @@ SRC_URI="http://iptables.org/projects/iptables/files/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~*"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE="ipv6 netlink static-libs"
 
 RDEPEND="
@@ -21,9 +23,13 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
 	virtual/os-headers
+	!>=sys-kernel/linux-headers-3.5
 "
 
 src_prepare() {
+	# use the saner headers from the kernel
+	rm -f include/linux/{kernel,types}.h
+
 	# Only run autotools if user patched something
 	epatch_user && eautoreconf || elibtoolize
 }
@@ -36,8 +42,8 @@ src_configure() {
 		--sbindir="${EPREFIX}/sbin" \
 		--libexecdir="${EPREFIX}/$(get_libdir)" \
 		--enable-devel \
+		--enable-libipq \
 		--enable-shared \
-		--with-ksource \
 		$(use_enable static-libs static) \
 		$(use_enable ipv6)
 }
@@ -63,15 +69,15 @@ src_install() {
 	doins include/iptables/internal.h
 
 	keepdir /var/lib/iptables
-	newinitd "${FILESDIR}"/${PN}-1.4.13.init iptables
+	newinitd "${FILESDIR}"/${PN}-1.4.13-r1.init iptables
 	newconfd "${FILESDIR}"/${PN}-1.4.13.confd iptables
 	if use ipv6 ; then
 		keepdir /var/lib/ip6tables
-		newinitd "${FILESDIR}"/iptables-1.4.13.init ip6tables
+		newinitd "${FILESDIR}"/iptables-1.4.13-r1.init ip6tables
 		newconfd "${FILESDIR}"/ip6tables-1.4.13.confd ip6tables
 	fi
 
 	# Move important libs to /lib
-	gen_usr_ldscript -a ip{4,6}tc iptc xtables
+	gen_usr_ldscript -a ip{4,6}tc ipq iptc xtables
 	find "${ED}" -type f -name '*.la' -exec rm -rf '{}' '+' || die "la removal failed"
 }

@@ -1,11 +1,13 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/iptables/iptables-1.4.13.ebuild,v 1.11 2012/10/10 12:18:24 dev-zero Exp $
 
 EAPI="4"
 
 # Force users doing their own patches to install their own tools
 AUTOTOOLS_AUTO_DEPEND=no
 
-inherit eutils toolchain-funcs autotools
+inherit eutils multilib toolchain-funcs autotools
 
 DESCRIPTION="Linux kernel (2.4+) firewall, NAT and packet mangling tools"
 HOMEPAGE="http://www.iptables.org/"
@@ -13,7 +15,7 @@ SRC_URI="http://iptables.org/projects/iptables/files/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="*"
+KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86"
 IUSE="ipv6 netlink static-libs"
 
 RDEPEND="
@@ -21,9 +23,13 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
 	virtual/os-headers
+	!>=sys-kernel/linux-headers-3.5
 "
 
 src_prepare() {
+	# use the saner headers from the kernel
+	rm -f include/linux/{kernel,types}.h
+
 	# Only run autotools if user patched something
 	epatch_user && eautoreconf || elibtoolize
 }
@@ -38,7 +44,6 @@ src_configure() {
 		--enable-devel \
 		--enable-libipq \
 		--enable-shared \
-		--with-ksource \
 		$(use_enable static-libs static) \
 		$(use_enable ipv6)
 }
