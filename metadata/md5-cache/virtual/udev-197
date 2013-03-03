@@ -1,8 +1,0 @@
-DEFINED_PHASES=-
-DESCRIPTION=Virtual to select between sys-fs/udev and sys-fs/eudev
-EAPI=2
-IUSE=gudev +hwdb introspection keymap +kmod selinux static-libs
-KEYWORDS=~*
-RDEPEND=|| ( >=sys-fs/udev-197-r3[gudev?,hwdb?,introspection?,keymap?,kmod?,selinux?,static-libs?] kmod? ( >=sys-fs/eudev-1_beta1[modutils,gudev?,hwdb?,introspection?,keymap?,selinux?,static-libs?] ) !kmod? ( >=sys-fs/eudev-1_beta1[gudev?,hwdb?,introspection?,keymap?,selinux?,static-libs?] ) )
-SLOT=0
-_md5_=e92ff59847249783cdf962332f841a69
