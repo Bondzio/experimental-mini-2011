@@ -1,4 +1,5 @@
 DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=app-arch/tar app-arch/gzip doc? ( app-arch/unzip )
 DESCRIPTION=International Components for Unicode
 EAPI=5-progress
 HOMEPAGE=http://www.icu-project.org/

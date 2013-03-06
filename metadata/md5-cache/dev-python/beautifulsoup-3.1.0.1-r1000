@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup test
-DEPEND=python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 )
+DEPEND=python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) app-arch/tar app-arch/gzip
 DESCRIPTION=HTML/XML parser for quick-turnaround applications like screen-scraping.
 EAPI=5-progress
 HOMEPAGE=http://www.crummy.com/software/BeautifulSoup/ https://launchpad.net/beautifulsoup http://pypi.python.org/pypi/BeautifulSoup

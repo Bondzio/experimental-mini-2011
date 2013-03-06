@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=dev-python/gevent[python_abis_2.6?,python_abis_2.7?] >=dev-python/requests-1.0.0[python_abis_2.6?,python_abis_2.7?] dev-python/setuptools[python_abis_2.6?,python_abis_2.7?] python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
+DEPEND=dev-python/gevent[python_abis_2.6?,python_abis_2.7?] >=dev-python/requests-1.0.0[python_abis_2.6?,python_abis_2.7?] dev-python/setuptools[python_abis_2.6?,python_abis_2.7?] python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) app-arch/tar app-arch/gzip
 DESCRIPTION=Requests + Gevent
 EAPI=5-progress
 HOMEPAGE=https://github.com/kennethreitz/grequests http://pypi.python.org/pypi/grequests

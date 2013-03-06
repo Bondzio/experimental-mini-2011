@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup test
-DEPEND=dev-python/dbus-python[python_abis_2.7?] dev-python/decorator[python_abis_2.7?] dev-python/python-slip[dbus,python_abis_2.7?] dev-python/pygobject:3[python_abis_2.7?] net-firewall/ebtables net-firewall/iptables[ipv6] || ( sys-apps/openrc sys-apps/systemd ) gui? ( dev-python/pygtk:2[python_abis_2.7?] >=x11-libs/gtk+-2.6:2 x11-libs/gtk+:3 ) dev-libs/glib:2 >=dev-util/intltool-0.35 sys-devel/gettext >=sys-apps/sed-4 python_abis_2.7? ( dev-lang/python:2.7 )
+DEPEND=dev-python/dbus-python[python_abis_2.7?] dev-python/decorator[python_abis_2.7?] dev-python/python-slip[dbus,python_abis_2.7?] dev-python/pygobject:3[python_abis_2.7?] net-firewall/ebtables net-firewall/iptables[ipv6] || ( sys-apps/openrc sys-apps/systemd ) gui? ( dev-python/pygtk:2[python_abis_2.7?] >=x11-libs/gtk+-2.6:2 x11-libs/gtk+:3 ) dev-libs/glib:2 >=dev-util/intltool-0.35 sys-devel/gettext >=sys-apps/sed-4 python_abis_2.7? ( dev-lang/python:2.7 ) app-arch/tar app-arch/bzip2
 DESCRIPTION=A firewall daemon with D-BUS interface providing a dynamic firewall
 EAPI=5-progress
 HOMEPAGE=https://fedorahosted.org/firewalld/

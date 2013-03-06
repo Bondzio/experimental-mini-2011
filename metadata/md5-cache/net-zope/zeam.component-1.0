@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst postrm prepare setup
-DEPEND=net-zope/namespaces-zeam[zeam,python_abis_2.6?,python_abis_2.7?] dev-python/martian[python_abis_2.6?,python_abis_2.7?] net-zope/grokcore.component[python_abis_2.6?,python_abis_2.7?] net-zope/zope.component[python_abis_2.6?,python_abis_2.7?] net-zope/zope.interface[python_abis_2.6?,python_abis_2.7?] net-zope/zope.testing[python_abis_2.6?,python_abis_2.7?] dev-python/setuptools[python_abis_2.6?,python_abis_2.7?] python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 )
+DEPEND=net-zope/namespaces-zeam[zeam,python_abis_2.6?,python_abis_2.7?] dev-python/martian[python_abis_2.6?,python_abis_2.7?] net-zope/grokcore.component[python_abis_2.6?,python_abis_2.7?] net-zope/zope.component[python_abis_2.6?,python_abis_2.7?] net-zope/zope.interface[python_abis_2.6?,python_abis_2.7?] net-zope/zope.testing[python_abis_2.6?,python_abis_2.7?] dev-python/setuptools[python_abis_2.6?,python_abis_2.7?] python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) app-arch/tar app-arch/gzip
 DESCRIPTION=Component infrastructure, based on zope.interface
 EAPI=5-progress
 HOMEPAGE=http://pypi.python.org/pypi/zeam.component
