@@ -2210,8 +2210,6 @@ gnome-base/gdm:gnome-shell - Enables a greeter based on GNOME Shell (uses OpenGL
 gnome-base/gdm:plymouth - Enable support for smooth transition from sys-boot/plymouth
 gnome-base/gdm:remote - Enables support for secure remote connections
 gnome-base/gdm:smartcard - Enables experimental smartcard authentication
-gnome-base/gdm:systemd - Use sys-apps/systemd for session tracking
-gnome-base/gdm:xklavier - Use x11-libs/libxklavier for keyboard management
 gnome-base/gnome:extras - Install additional GNOME applications
 gnome-base/gnome:fallback - Install gnome-base/gnome-panel and x11-wm/metacity for the GNOME 3 fallback mode
 gnome-base/gnome-applets:cpufreq - Build cpu frequency scaling monitor applet
@@ -3765,6 +3763,7 @@ net-analyzer/nfdump:compat15 - Enable read support for nfdump data files created
 net-analyzer/nfdump:ftconv - Build the flow-tools to nfdump converter
 net-analyzer/nfdump:nfprofile - Build nfprofile used by NfSen
 net-analyzer/nfdump:nftrack - Build nfprofile used by PortTracker
+net-analyzer/nfdump:readpcap - Build nfcapd collector to read from pcap file instead ofnetwork data
 net-analyzer/nfdump:sflow - Build sflow collector sfcpad
 net-analyzer/nmap:lua - Include support for the Nmap Scripting Engine (NSE) through dev-lang/lua
 net-analyzer/nmap:ncat - Install the ncat utility
