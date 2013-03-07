@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/boost-1.48[python,python_abis_2.5?,python_abis_2.6?,python_ab
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=0
 SRC_URI=mirror://pypi/t/tagpy/tagpy-2013.1.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=9278100ad5ad7bc9b2c4214e68d2d9dc

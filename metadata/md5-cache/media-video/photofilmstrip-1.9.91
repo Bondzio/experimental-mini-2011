@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-python/wxpython:2.8[cairo?] dev-python/imaging media-video/mplayer[encode] sdl? ( dev-python/pygame ) =dev-lang/python-2* =dev-lang/python-2*[sqlite]
 SLOT=0
 SRC_URI=mirror://sourceforge/photostoryx/photofilmstrip/1.9.91-unstable/photofilmstrip-1.9.91.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=bfd6dc2aa289a6c0c98f4ece15a37995

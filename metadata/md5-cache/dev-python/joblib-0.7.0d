@@ -8,5 +8,5 @@ LICENSE=BSD
 RDEPEND=dev-python/setuptools =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/j/joblib/joblib-0.7.0d.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=69e8afb410067dd8435a313094c42511

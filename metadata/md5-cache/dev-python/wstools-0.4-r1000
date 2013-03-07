@@ -10,5 +10,5 @@ RDEPEND=python_abis_2.5? ( dev-lang/python:2.5[xml] ) python_abis_2.6? ( dev-lan
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
 SLOT=0
 SRC_URI=mirror://pypi/w/wstools/wstools-0.4.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=3b90f7b247e7e1f543a4a4ce9bd14d9a

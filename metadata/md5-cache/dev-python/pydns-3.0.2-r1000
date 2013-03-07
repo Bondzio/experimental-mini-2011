@@ -10,5 +10,5 @@ RDEPEND=!dev-python/py3dns !dev-python/pydns:python-3 python_abis_3.1? ( dev-lan
 REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=3
 SRC_URI=mirror://sourceforge/pydns/py3dns-3.0.2.tar.gz
-_eclasses_=distutils	e23bb85990664d15055ca9285afebc1a	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
 _md5_=66c4de0f3a9c9a17546292501916eab3
