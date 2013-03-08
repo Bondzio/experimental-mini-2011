@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare pretend setup test
-DEPEND=icu? ( >=dev-libs/icu-3.6:=::gentoo[c++11(-)=] ) !icu? ( virtual/libiconv ) mpi? ( || ( sys-cluster/openmpi[cxx] sys-cluster/mpich2[cxx,threads] ) ) sys-libs/zlib !app-admin/eselect-boost =dev-util/boost-build-1.52* python? ( python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) ) app-arch/tar app-arch/bzip2
+DEPEND=icu? ( >=dev-libs/icu-3.6:=::gentoo[c++11(-)=] ) !icu? ( virtual/libiconv ) mpi? ( || ( sys-cluster/openmpi[cxx] sys-cluster/mpich2[cxx,threads] ) ) sys-libs/zlib !app-admin/eselect-boost =dev-util/boost-build-1.52* python? ( python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) )
 DESCRIPTION=Boost Libraries for C++
 EAPI=5-progress
 HOMEPAGE=http://www.boost.org/

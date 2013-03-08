@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=dev-qt/qtcore:4 dev-qt/qtgui:4 app-arch/tar app-arch/gzip
+DEPEND=dev-qt/qtcore:4 dev-qt/qtgui:4
 DESCRIPTION=A Qt port of Neil Hodgson's Scintilla C++ editor class
 EAPI=5-progress
 HOMEPAGE=http://www.riverbankcomputing.co.uk/software/qscintilla/intro
