@@ -1,6 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License, v2
-# $Header: $
 
 *app-admin/eselect-vi
 *app-arch/bzip2
@@ -28,8 +26,8 @@
 *sys-apps/iproute2
 *sys-apps/kbd
 *sys-apps/less
+*virtual/modutils
 *sys-apps/man-pages
-*sys-apps/module-init-tools
 *sys-apps/net-tools
 *sys-apps/sed
 *sys-apps/shadow
@@ -51,11 +49,11 @@
 *sys-process/procps
 *sys-process/psmisc
 *sys-fs/e2fsprogs
+*sys-fs/mdev-bb
 *sys-libs/ncurses
 *sys-libs/readline
 *sys-libs/zlib
 *virtual/baselayout
-*virtual/dev-manager
 *virtual/init
 *virtual/libc
 *virtual/man
