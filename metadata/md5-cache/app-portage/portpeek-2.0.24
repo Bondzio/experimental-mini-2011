@@ -9,4 +9,4 @@ RDEPEND=>=app-portage/gentoolkit-0.3.0.5 >=sys-apps/portage-2.1.10.49 || ( =dev-
 SLOT=0
 SRC_URI=http://www.mpagano.com/downloads/portpeek-2.0.24.tar.gz
 _eclasses_=python	714d853f822bc2c6714b67af1c7797d3
-_md5_=deec8065f0e77f4716ed6d3cd21fa741
+_md5_=58578e8bc4db39259b718d4c316ffe11
