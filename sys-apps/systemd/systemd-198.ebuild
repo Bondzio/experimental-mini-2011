@@ -1,11 +1,11 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/systemd/systemd-198.ebuild,v 1.1 2013/03/09 13:47:44 mgorny Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/systemd/systemd-198.ebuild,v 1.6 2013/03/10 17:20:05 floppym Exp $
 
 EAPI=5
 
 PYTHON_COMPAT=( python2_7 )
-inherit autotools-utils linux-info pam python-single-r1 systemd user
+inherit autotools-utils linux-info multilib pam python-single-r1 systemd user
 
 DESCRIPTION="System and service manager for Linux"
 HOMEPAGE="http://www.freedesktop.org/wiki/Software/systemd"
@@ -56,6 +56,10 @@ DEPEND="${COMMON_DEPEND}
 	dev-util/intltool
 	sys-fs/quota
 	>=sys-kernel/linux-headers-${MINKV}"
+
+# eautomake will likely trigger a full autoreconf
+DEPEND+=" dev-libs/gobject-introspection
+	>=dev-util/gtk-doc-1.18"
 
 src_prepare() {
 	# link against external udev.
@@ -117,12 +121,13 @@ src_install() {
 
 	# zsh completion
 	insinto /usr/share/zsh/site-functions
-	doins shell-completion/systemd-zsh-completion.zsh
+	newins shell-completion/systemd-zsh-completion.zsh "_${PN}"
 
 	# remove pam.d plugin .la-file
 	prune_libtool_files --modules
 
 	# move nss_myhostname to rootfs (bug #460640)
+	dodir /$(get_libdir)
 	mv "${D}"/usr/$(get_libdir)/libnss_myhostname* "${D}"/$(get_libdir)/ \
 		|| die "Unable to move nss_myhostname to rootfs"
 
@@ -184,6 +189,10 @@ optfeature() {
 
 pkg_postinst() {
 	enewgroup systemd-journal
+	if use http; then
+		enewgroup systemd-journal-gateway
+		enewuser systemd-journal-gateway -1 -1 -1 systemd-journal-gateway
+	fi
 	systemd_update_catalog
 
 	mkdir -p "${ROOT}"/run || ewarn "Unable to mkdir /run, this could mean trouble."
