@@ -10,5 +10,5 @@ PDEPEND=bash-completion? ( app-shells/bash-completion )
 RDEPEND=dev-libs/libaio dev-libs/openssl sys-fs/fuse sys-libs/zlib bash-completion? ( app-admin/eselect )
 SLOT=0
 SRC_URI=http://zfs-fuse.net/releases/0.7.0/zfs-fuse-0.7.0.tar.bz2
-_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	816444638a8668da9da22466b302db84	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion	003731da0df19d26955927bd534f3058	eutils	3251cdf35caea8f0388af92528a56705	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=15dc95865d32419f1e190733c3e27f2d
