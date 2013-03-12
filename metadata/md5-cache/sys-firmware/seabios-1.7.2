@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install prepare setup
+DEFINED_PHASES=compile configure install prepare pretend setup
 DEPEND=!binary? ( sys-power/iasl ) =dev-lang/python-2*
 DESCRIPTION=Open Source implementation of a 16-bit x86 BIOS
 EAPI=5
@@ -10,5 +10,5 @@ RDEPEND==dev-lang/python-2*
 REQUIRED_USE=ppc? ( binary ) ppc64? ( binary )
 SLOT=0
 SRC_URI=http://code.coreboot.org/p/seabios/downloads/get/seabios-1.7.2.tar.gz http://code.coreboot.org/p/seabios/downloads/get/bios.bin-1.7.2.gz
-_eclasses_=python	714d853f822bc2c6714b67af1c7797d3
-_md5_=711561a4228f6ac21ee6ff2ad1ccbd08
+_eclasses_=python	714d853f822bc2c6714b67af1c7797d3	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=d9dca62a7c0488edcfcd168ff97cf56c

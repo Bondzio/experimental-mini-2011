@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile configure install prepare setup
+DEFINED_PHASES=compile configure install prepare pretend setup
 DEPEND==dev-lang/python-2*
 DESCRIPTION=Open Source implementation of a 16-bit x86 BIOS
 EAPI=4
@@ -9,4 +9,4 @@ RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.linuxtogo.org/~kevin/SeaBIOS/seabios-1.7.0.tar.gz http://dev.gentoo.org/~cardoe/distfiles/seabios-1.7.0-bins.tar.xz
 _eclasses_=python	714d853f822bc2c6714b67af1c7797d3
-_md5_=0ca52b9e6be0b6810be2f94aeed9e909
+_md5_=8f98c4d0f32db7b868524c2d594a6335
