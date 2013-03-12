@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/cairo/cairo-9999.ebuild,v 1.28 2013/03/02 23:43:43 hwoarang Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/cairo/cairo-9999.ebuild,v 1.29 2013/03/11 22:46:15 remi Exp $
 
 EAPI=5
 
@@ -108,6 +108,8 @@ src_configure() {
 
 	# --disable-xcb-lib:
 	#	do not override good xlib backed by hardforcing rendering over xcb
+	# --disable-valgrind:
+	#   valgrind code is busted as per upstream
 	econf \
 		--disable-dependency-tracking \
 		$(use_with X x) \
@@ -133,6 +135,7 @@ src_configure() {
 		--enable-png \
 		--enable-ps \
 		--disable-xlib-xcb \
+		--disable-valgrind \
 		${myopts}
 }
 
