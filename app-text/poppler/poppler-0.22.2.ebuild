@@ -1,10 +1,10 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/poppler/poppler-0.22.2.ebuild,v 1.3 2013/03/13 23:48:02 dilfridge Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/poppler/poppler-0.22.2.ebuild,v 1.5 2013/03/16 17:13:11 dilfridge Exp $
 
 EAPI=5
 
-inherit cmake-utils
+inherit cmake-utils toolchain-funcs
 
 DESCRIPTION="PDF rendering library based on the xpdf-3.0 code base"
 HOMEPAGE="http://poppler.freedesktop.org/"
@@ -50,13 +50,20 @@ RDEPEND="${COMMON_DEPEND}
 	cjk? ( >=app-text/poppler-data-0.4.4 )
 "
 
-DOCS=(AUTHORS ChangeLog NEWS README README-XPDF TODO)
+DOCS=(AUTHORS NEWS README README-XPDF TODO)
 
 PATCHES=(
 	"${FILESDIR}/${P}-nojpeg.patch"
 )
 
 src_configure() {
+	# this is needed for multilib, see bug 459394
+	local ft_libdir ft_includedir
+	ft_libdir="$($(tc-getPKG_CONFIG) freetype2 --variable=libdir)"
+	ft_includedir="$($(tc-getPKG_CONFIG) freetype2 --variable=includedir)"
+	export FREETYPE_DIR="${ft_libdir}:${ft_includedir%/include}"
+	einfo "Detected FreeType at ${FREETYPE_DIR}"
+
 	mycmakeargs=(
 		-DBUILD_GTK_TESTS=OFF
 		-DBUILD_QT4_TESTS=OFF
