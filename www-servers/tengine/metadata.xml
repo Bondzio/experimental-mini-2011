@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>golodhrim@funtoo.org</email>
+		<name>Martin Scholz</name>
+	</maintainer>
+	<use>
+		<flag name='aio'>Enables file AIO support</flag>
+		<flag name='chunk'>Enables chunk sending of files</flag>
+		<flag name='http'>Enable HTTP core support</flag>
+		<flag name='http-cache'>Enable HTTP cache support</flag>
+                <flag name='ipv6'>Enables ipv6 support</flag>
+		<flag name='libatomic'>Use libatomic instead of builtin atomic operations</flag>
+		<flag name='luajit'>Enables luajit support</flag>
+		<flag name='pam'>Enables PAM module</flag>
+                <flag name='pcre'>Enables pcre support</flag>
+                <flag name='perftools'>Enables google perftools module</flag>
+                <flag name='rrd'>Enables rrd module</flag>
+                <flag name='ssl'>Enables ssl support</flag>
+                <flag name='vim-syntax'>Enables vim syntax highlighting</flag>
+	</use>
+	<upstream>
+		<changelog>http://nginx.org/en/CHANGES</changelog>
+	</upstream>
+</pkgmetadata>
