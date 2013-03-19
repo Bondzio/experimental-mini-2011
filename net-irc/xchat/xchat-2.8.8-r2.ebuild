@@ -1,4 +1,6 @@
+# Copyright 1999-2012 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/xchat/xchat-2.8.8-r2.ebuild,v 1.18 2012/05/03 06:27:14 jdhore Exp $
 
 EAPI=3
 
@@ -14,7 +16,7 @@ HOMEPAGE="http://www.xchat.org/"
 
 LICENSE="GPL-2 hires-icons? ( GPL-3 )"
 SLOT="2"
-KEYWORDS="*"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos"
 IUSE="dbus fastscroll +gtk hires-icons ipv6 libnotify mmx nls ntlm perl python spell ssl tcl xchatdccserver"
 
 RDEPEND=">=dev-libs/glib-2.6.0:2
@@ -47,8 +49,7 @@ src_prepare() {
 		"${FILESDIR}"/${P}-libnotify07.patch \
 		"${FILESDIR}"/${P}-dbus.patch \
 		"${FILESDIR}"/${PN}-2.8.8-cflags.patch \
-		"${FILESDIR}"/${P}-glib-2.31.patch \
-		"${FILESDIR}"/xchat-glib.patch
+		"${FILESDIR}"/${P}-glib-2.31.patch
 
 	use xchatdccserver && epatch "${DISTDIR}"/xchat-dccserver-0.6.patch.bz2
 
@@ -140,4 +141,3 @@ pkg_postinst() {
 
 	gnome2_icon_cache_update
 }
-
