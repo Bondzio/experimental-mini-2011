@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/kernel-2.eclass,v 1.279 2013/03/09 21:05:50 tomwij Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/kernel-2.eclass,v 1.281 2013/03/20 16:45:56 tomwij Exp $
 
 # Description: kernel.eclass rewrite for a clean base regarding the 2.6
 #              series of kernel with back-compatibility for 2.4
@@ -416,7 +416,8 @@ if [[ ${ETYPE} == sources ]]; then
 					  >=sys-devel/binutils-2.11.90.0.31 )"
 	RDEPEND="!build? ( >=sys-libs/ncurses-5.2
 					   sys-devel/make 
-					   dev-lang/perl )"
+					   dev-lang/perl
+					   sys-devel/bc )"
 	PDEPEND="!build? ( virtual/dev-manager )"
 
 	SLOT="${PVR}"
@@ -666,9 +667,9 @@ compile_headers_tweak_config() {
 # install functions
 #==============================================================
 install_universal() {
-	#fix silly permissions in tarball
+	# Fix silly permissions in tarball
 	cd "${WORKDIR}"
-	chown -R root:0 * >& /dev/null
+	chown -R 0:0 * >& /dev/null
 	chmod -R a+r-w+X,u+w *
 	cd ${OLDPWD}
 }
