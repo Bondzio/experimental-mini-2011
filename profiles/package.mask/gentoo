@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14564 2013/03/20 14:37:36 voyageur Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14568 2013/03/21 16:41:46 jer Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -30,6 +30,22 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Tiziano Müller <dev-zero@gentoo.org> (21 Mar 2013)
+# Masked for removal in 30 days (bug #462590). Open bugs:
+# #310217, #339477, #343807, #439110
+# Recent test failures in dvutil show bugs in timezone handling.
+# No new release since >3 years, upstream is not responding.
+# Not recommended for new development. Use C++11, boost, poco, etc instead.
+dev-libs/dvacm4
+dev-libs/dvnet
+dev-libs/dvssl
+dev-libs/dvthread
+dev-libs/dvutil
+
+# Sergey Popov <pinkbyte@gentoo.org> (13 Mar 2013)
+# Broken at runtime: can not be used with additional patches(bug #442482)
+=app-text/linuxdoc-tools-0.9.68
 
 # Bernard Cafarelli <voyageur@gentoo.org> (20 Mar 2013)
 # Masked for removal in 30 days, bug #462472
@@ -458,10 +474,6 @@ net-dialup/hsfmodem
 dev-vcs/gitosis
 dev-vcs/gitosis-gentoo
 
-# Ole Markus With <olemarkus@gentoo.org> (15 Nov 2012)
-# Masked for testing
->=dev-lang/php-5.4.9999
-
 # Diego Elio Pettenò <flameeyes@gentoo.org> (14 Nov 2012)
 # Masked for testing as too many packages fail.
 # See bug #443230 for tracking the progress
@@ -649,6 +661,7 @@ sys-apps/systemd-sysv-utils
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
+=www-client/opera-12.15*
 
 # Ulrich Mueller <ulm@gentoo.org> (13 Dec 2011)
 # SLOTs 21 and 22 of app-editors/emacs, corresponding to
