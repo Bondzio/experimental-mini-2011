@@ -1,19 +1,21 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-mail/dovecot/dovecot-2.1.13.ebuild,v 1.1 2013/01/07 13:43:00 eras Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-mail/dovecot/dovecot-2.2_rc3.ebuild,v 1.1 2013/03/22 09:57:06 eras Exp $
 
-EAPI=4
+EAPI=5
 inherit eutils versionator ssl-cert systemd user multilib
 
 MY_P="${P/_/.}"
 major_minor="$(get_version_component_range 1-2)"
-sieve_version="0.3.3"
-SRC_URI="http://www.dovecot.org/releases/${major_minor}/${MY_P}.tar.gz
+sieve_version="b75b00760b86"
+SRC_URI="http://dovecot.org/releases/${major_minor}/rc/${MY_P}.tar.gz
 	sieve? (
-	http://www.rename-it.nl/dovecot/${major_minor}/dovecot-${major_minor}-pigeonhole-${sieve_version}.tar.gz
+	http://hg.rename-it.nl/dovecot-${major_minor}-pigeonhole/archive/${sieve_version}.tar.bz2 \
+		-> dovecot-${major_minor}-pigeonhole-${sieve_version}.tar.bz2
 	)
 	managesieve? (
-	http://www.rename-it.nl/dovecot/${major_minor}/dovecot-${major_minor}-pigeonhole-${sieve_version}.tar.gz
+	http://hg.rename-it.nl/dovecot-${major_minor}-pigeonhole/archive/${sieve_version}.tar.bz2 \
+		-> dovecot-${major_minor}-pigeonhole-${sieve_version}.tar.bz2
 	) "
 DESCRIPTION="An IMAP and POP3 server written with security primarily in mind"
 HOMEPAGE="http://www.dovecot.org/"
@@ -42,7 +44,7 @@ DEPEND="caps? ( sys-libs/libcap )
 	virtual/libiconv"
 
 RDEPEND="${DEPEND}
-	>=net-mail/mailbase-0.00-r8"
+	net-mail/mailbase"
 
 S=${WORKDIR}/${MY_P}
 
@@ -102,7 +104,8 @@ src_configure() {
 		# The sieve plugin needs this file to be build to determine the plugin
 		# directory and the list of libraries to link to.
 		emake dovecot-config
-		cd "../dovecot-${major_minor}-pigeonhole-${sieve_version}" || die "cd failed"
+		cd "../dovecot-2-2-pigeonhole-${sieve_version}" || die "cd failed"
+		./autogen.sh
 		econf \
 			$( use_enable static-libs static ) \
 			--localstatedir="${EPREFIX}/var" \
@@ -115,7 +118,7 @@ src_configure() {
 src_compile() {
 	default
 	if use sieve || use managesieve ; then
-		cd "../dovecot-${major_minor}-pigeonhole-${sieve_version}" || die "cd failed"
+		cd "../dovecot-2-2-pigeonhole-${sieve_version}" || die "cd failed"
 		emake CC="$(tc-getCC)" CFLAGS="${CFLAGS}"
 	fi
 }
@@ -123,7 +126,7 @@ src_compile() {
 src_test() {
 	default
 	if use sieve || use managesieve ; then
-		cd "../dovecot-${major_minor}-pigeonhole-${sieve_version}" || die "cd failed"
+		cd "../dovecot-2-2-pigeonhole-${sieve_version}" || die "cd failed"
 		default
 	fi
 }
@@ -237,7 +240,7 @@ src_install () {
 	fi
 
 	if use sieve || use managesieve ; then
-		cd "../dovecot-${major_minor}-pigeonhole-${sieve_version}" || die "cd failed"
+		cd "../dovecot-2-2-pigeonhole-${sieve_version}" || die "cd failed"
 		emake DESTDIR="${ED}" install
 		sed -i -e \
 			's/^[[:space:]]*#mail_plugins = $mail_plugins/mail_plugins = sieve/' "${confd}/15-lda.conf" \
