@@ -1,6 +1,5 @@
-# Distributed under the terms of the GNU General Public License v2
 
-EAPI=4
+EAPI=3
 
 inherit eutils git
 
@@ -14,7 +13,7 @@ S="${WORKDIR}/${PN}"
 
 LICENSE="MIT MPL GPL-2"
 SLOT="0"
-KEYWORDS="~*"
+KEYWORDS="~x86 ~amd64 ~mips ~sparc"
 IUSE="smartcard pkcs11 dev"
 
 DEPEND=">=dev-libs/openssl-0.9.8

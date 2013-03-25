@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=>=dev-libs/openssl-0.9.8 >=dev-libs/libp11-0.2.7 >=x11-libs/gtk+-2.20 smartcard? ( >=sys-apps/pcsc-lite-1.6.1 ) dev? ( >=dev-libs/opensc-0.11.13 ) pkcs11? ( >=dev-libs/engine_pkcs11-0.1.8 )
+DESCRIPTION=A browser plugin to manage Swedish BankID:s
+EAPI=3
+HOMEPAGE=http://fribid.se
+IUSE=smartcard pkcs11 dev
+KEYWORDS=~x86 ~amd64 ~mips ~sparc
+LICENSE=MIT MPL GPL-2
+RDEPEND=>=dev-libs/openssl-0.9.8 >=dev-libs/libp11-0.2.7 >=x11-libs/gtk+-2.20 smartcard? ( >=sys-apps/pcsc-lite-1.6.1 ) dev? ( >=dev-libs/opensc-0.11.13 ) pkcs11? ( >=dev-libs/engine_pkcs11-0.1.8 )
+SLOT=0
+SRC_URI=http://github.com/samuellb/fribid/tarball/v0.3.1 -> fribid-0.3.1.tar.gz
+_eclasses_=eutils	50d18ebffcbd8bd63614b89c2d664d0d	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=981875a9b0a74a0ad3dc266c267b66fa

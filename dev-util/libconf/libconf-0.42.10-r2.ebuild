@@ -1,5 +1,6 @@
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/libconf/libconf-0.42.10-r2.ebuild,v 1.3 2009/12/09 18:30:15 scarabeus Exp $
 
 inherit eutils multilib toolchain-funcs
 
@@ -68,3 +69,4 @@ src_install() {
 	dodoc AUTHORS ChangeLog || die
 	use python && { newdoc bindings/ruby/src/AUTHORS AUTHORS.python || die ; }
 }
+

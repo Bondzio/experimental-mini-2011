@@ -8,4 +8,4 @@ LICENSE=BSD
 RDEPEND=dev-lang/python dev-python/python-fastimport dev-vcs/bzr dev-vcs/bzr-fastimport dev-vcs/git
 SLOT=0
 _eclasses_=eutils	50d18ebffcbd8bd63614b89c2d664d0d	git	4f17701592b15e7abf06e101478e2636	multilib	ded93e450747134a079e647d888aa80b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=8e990515b63a22960f65db57fa3128a6
+_md5_=f5beb97ba5595db10b63530fb8cd17ca
