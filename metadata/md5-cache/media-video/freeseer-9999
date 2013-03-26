@@ -8,4 +8,4 @@ LICENSE=GPL-2
 RDEPEND=sys-devel/make dev-db/sqlite:3 dev-lang/python[sqlite] dev-python/PyQt4 dev-python/gst-python dev-python/feedparser dev-python/setuptools dev-python/yapsy || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-2.7* =dev-lang/python-2.6* )
 SLOT=0
 _eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	git-2	e92e09651292b1bef5656592364550f7	python	714d853f822bc2c6714b67af1c7797d3
-_md5_=35dfe240db2b94855adb967210fb718d
+_md5_=dced11beb8a65226a88a194f79b96ba8
