@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare unpack
+DEPEND==dev-lang/python-2* =dev-lang/python-2* || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DESCRIPTION=Stand-alone python to javascript compiler
+EAPI=3
+HOMEPAGE=http://pyjs.org
+IUSE=doc
+LICENSE=Apache-2.0
+RDEPEND==dev-lang/python-2* =dev-lang/python-2*
+SLOT=0
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	eutils	50d18ebffcbd8bd63614b89c2d664d0d	multilib	ded93e450747134a079e647d888aa80b	python	714d853f822bc2c6714b67af1c7797d3	subversion	877d251a42b69543c01f6a36b4707b3b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=60880b333c66f651a9854fa8bca82ae0
