@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-power/upower/upower-0.9.20.ebuild,v 1.1 2013/03/19 08:34:05 ssuominen Exp $
 
 EAPI=5
 inherit eutils systemd udev
@@ -11,7 +9,7 @@ SRC_URI="http://${PN}.freedesktop.org/releases/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~*"
 IUSE="doc +introspection ios kernel_FreeBSD kernel_linux systemd"
 
 COMMON_DEPEND=">=dev-libs/dbus-glib-0.100
@@ -21,7 +19,7 @@ COMMON_DEPEND=">=dev-libs/dbus-glib-0.100
 	introspection? ( dev-libs/gobject-introspection )
 	kernel_linux? (
 		virtual/libusb:1
-		>=virtual/udev-197[gudev]
+		=virtual/udev-171[gudev]
 		ios? (
 			>=app-pda/libimobiledevice-1
 			>=app-pda/libplist-1
