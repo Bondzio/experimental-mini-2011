@@ -5,4 +5,4 @@ IUSE=+gudev +hwdb introspection keymap selinux static-libs
 KEYWORDS=~*
 RDEPEND=|| ( >=sys-fs/udev-196-r1[gudev?,hwdb?,introspection?,keymap?,selinux?,static-libs?] >=sys-fs/eudev-1_beta1[gudev?,hwdb?,introspection?,keymap?,selinux?,static-libs?] )
 SLOT=0
-_md5_=b07d0acd73cf0a9a2325b9a5e8f9f9fc
+_md5_=8e447c6a5767eace328fb940ca3f31b8
