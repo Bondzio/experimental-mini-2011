@@ -8,5 +8,5 @@ LICENSE=Apache-2.0
 RDEPEND=dev-lang/erlang
 SLOT=0
 SRC_URI=http://github.com/basho/rebar/tarball/2.0.0 -> rebar-2.0.0.tar.gz
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	vcs-snapshot	3facff03591093044e38f21285a02129
+_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	vcs-snapshot	9eae457a5b2c0c02eca13f7869b7bc7b
 _md5_=6174b7e9144e8113b246711960728059

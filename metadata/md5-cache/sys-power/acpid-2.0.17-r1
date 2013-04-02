@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=selinux? ( sec-policy/selinux-apm )
 SLOT=0
 SRC_URI=http://tedfelix.com/linux/acpid-2.0.17.tar.xz
-_eclasses_=systemd	2d5fcb7931404f5efa4a4ed547be1d38
+_eclasses_=systemd	1ecf6d134363f555e14ef508ae214eb9
 _md5_=adb5b78c4f6fa3364466c6ba49a24751

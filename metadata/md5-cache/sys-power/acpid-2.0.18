@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=selinux? ( sec-policy/selinux-apm )
 SLOT=0
 SRC_URI=mirror://sourceforge/acpid2/acpid-2.0.18.tar.xz
-_eclasses_=systemd	2d5fcb7931404f5efa4a4ed547be1d38
+_eclasses_=systemd	1ecf6d134363f555e14ef508ae214eb9
 _md5_=6f7f55b1ad2230bee7a108f80a1d6d5f
