@@ -15,7 +15,7 @@ DOC_PV="1.7.0"
 DOC_P="${PN}-${DOC_PV}"
 
 DESCRIPTION="Fast array and numerical python library"
-HOMEPAGE="http://www.numpy.org/ https://github.com/numpy/numpy http://pypi.python.org/pypi/numpy"
+HOMEPAGE="http://www.numpy.org/ https://github.com/numpy/numpy https://pypi.python.org/pypi/numpy"
 SRC_URI="mirror://sourceforge/numpy/${MY_P}.tar.gz
 	doc? (
 		http://docs.scipy.org/doc/${DOC_P}/${PN}-html-${DOC_PV}.zip
@@ -70,6 +70,7 @@ pc_libs() {
 }
 
 src_prepare() {
+	epatch "${FILESDIR}/${PN}-1.6.2-python-3.2.4-numpy.distutils.misc_util.get_shared_lib_extension.patch"
 	epatch "${FILESDIR}/${PN}-1.7.0-atlas.patch"
 
 	if use lapack; then

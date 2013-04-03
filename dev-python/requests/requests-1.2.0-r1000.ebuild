@@ -30,7 +30,7 @@ src_prepare() {
 	distutils_src_prepare
 
 	# Use app-misc/ca-certificates.
-	sed -e "/if certifi:/i\\    if os.path.exists('/etc/ssl/certs/ca-certificates.crt'):\n        return '/etc/ssl/certs/ca-certificates.crt'\n" -i requests/certs.py
+	sed -e "19a\\    if os.path.exists('/etc/ssl/certs/ca-certificates.crt'):\n        return '/etc/ssl/certs/ca-certificates.crt'\n" -i requests/certs.py
 
 	# Use system version of dev-python/charade.
 	sed -e "s/from .packages import charade/import charade/" -i requests/compat.py
