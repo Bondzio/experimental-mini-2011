@@ -143,7 +143,7 @@ src_configure() {
 		$(use_with dhcpcd) \
 		$(use_with doc docs) \
 		$(use_with modemmanager modem-manager-1) \
-		$(use_enable policykit polkit)
+		$(use_enable policykit polkit) \
 		$(use_with resolvconf) \
 		$(use_enable test tests) \
 		$(use_enable vala) \
@@ -178,9 +178,6 @@ src_install() {
 		newexe "${FILESDIR}/10-openrc-status-r3" 10-openrc-status
 		sed -e "s:@EPREFIX@:${EPREFIX}:g" \
 			-i "${ED}/etc/NetworkManager/dispatcher.d/10-openrc-status" || die
-
-		# Default conf.d file
-		newconfd "${FILESDIR}/conf.d.NetworkManager" NetworkManager
 	fi
 
 	# Add keyfile plugin support
