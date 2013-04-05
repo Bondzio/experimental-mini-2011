@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14628 2013/04/04 19:31:34 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14632 2013/04/05 15:52:49 tomwij Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -31,6 +31,24 @@
 
 #--- END OF EXAMPLES ---
 
+# Tom Wijsman <TomWij@gentoo.org> (05 Apr 2013)
+# Meteor has switched to a different installation approach;
+# instead of installing to the system they now install to
+# the user and their code heavily depends on that. Users
+# that want to continue to use Meteor can use the
+# `curl https://install.meteor.com | /bin/sh` approach as
+# suggested in their documentation, which now installs to
+# ~/.meteor instead of /usr/local/meteor or /opt/meteor.
+# They also heavily depend on specific versions of bundled
+# binaries, which we really can't keep supporting.
+# Removal in 30 days.
+www-servers/meteor
+
+# Ben de Groot <yngwin@gentoo.org> (05 Apr 2013)
+# Non-maintainer ebuild with experimental multilib features
+# masked for further testing
+=media-libs/freetype-2.4.11-r2
+
 # Mike Gilbert <floppym@gentoo.org> (04 Apr 2013)
 # Dev channel releases are only for people who are developers or want more
 # experimental features and accept a more unstable release.
@@ -53,7 +71,7 @@ games-emulation/xmess
 
 # Lars Wendler <polynomial-c@gentoo.org> (02 Apr 2013)
 # Dead upstream. Masked for removal in 30 days.
-# net-irc/hexchat can be used as drop-in replacement.
+# Use net-irc/hexchat instead which is a fork of xchat.
 net-irc/xchat
 
 # Sergey Popov <pinkbyte@gentoo.org> (02 Apr 2013)
@@ -284,10 +302,6 @@ sys-kernel/linuxwacom-module
 # the duplicate files.
 >=media-libs/libmikmod-3.2.0-r1
 >=media-libs/libv4l-0.8.9-r1
-
-# Tom Wijsman <TomWij@gentoo.org> (13 Mar 2013)
-# Masking vulnerable versions of Meteor.
-<www-servers/meteor-0.5.7.1
 
 # Markos Chandras <hwoarang@gentoo.org> (13 Mar 2013)
 # Mask because breaking updates out of the blue is bad
@@ -724,7 +738,6 @@ sys-apps/systemd-sysv-utils
 # Opera Next and Opera snapshots are unsupported and eternally unstable.
 # <http://my.opera.com/desktopteam/blog>
 www-client/opera-next
-=www-client/opera-12.15*
 
 # Ulrich Mueller <ulm@gentoo.org> (13 Dec 2011)
 # SLOTs 21 and 22 of app-editors/emacs, corresponding to
