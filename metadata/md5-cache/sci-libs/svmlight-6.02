@@ -4,4 +4,4 @@ HOMEPAGE=http://svmlight.joachims.org/
 KEYWORDS=~x86 ~amd64
 SLOT=0
 SRC_URI=http://osmot.cs.cornell.edu/svm_light/v6.02/svm_light.tar.gz
-_md5_=4830f2a3c16a9680340ba108c186fd4f
+_md5_=888dca7cd7d9b01a49987320c0c340f1
