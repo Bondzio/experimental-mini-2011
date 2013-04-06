@@ -21,7 +21,6 @@ kernel_linux mdnsresponder-compat mono python qt4 test +utils"
 
 DBUS_DEPEND=">=sys-apps/dbus-0.30"
 COMMON_DEPEND=">=dev-libs/libdaemon-0.14
-	dev-perl/XML-Parser
 	dev-libs/expat
 	dev-libs/glib:2
 	gdbm? ( sys-libs/gdbm )
@@ -55,6 +54,7 @@ DEPEND="${COMMON_DEPEND}
 		mono? ( >=virtual/monodoc-1.1.8 )
 	)"
 RDEPEND="${COMMON_DEPEND}
+	dev-perl/XML-Parser
 	howl-compat? ( !net-misc/howl )
 	mdnsresponder-compat? ( !net-misc/mDNSResponder )"
 
