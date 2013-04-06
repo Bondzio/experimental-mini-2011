@@ -5624,6 +5624,7 @@ sys-apps/systemd:gcrypt - Enable sealing of journal files using gcrypt
 sys-apps/systemd:gudev - enable libudev gobject interface
 sys-apps/systemd:http - Enable embedded HTTP server in journald
 sys-apps/systemd:kmod - Enable kernel module loading via sys-apps/kmod
+sys-apps/systemd:openrc - Depend on sys-fs/udev-init-scripts
 sys-apps/systemd:qrcode - Enable qrcode output support in journal
 sys-apps/systemd:vanilla - Disable Gentoo-specific behavior and compatibility quirks
 sys-apps/tcp-wrappers:netgroups - Support matching NIS (host) netgroup names via the @netgroup syntax (if you don't know what this means, you most likely need want it)
@@ -5870,6 +5871,7 @@ sys-fs/eudev:kmod - enable module loading through libkmod (requires modules)
 sys-fs/eudev:legacy-libudev - install libudev.so.0 to help with migration from udev-179 or older
 sys-fs/eudev:modutils - enable module loading support
 sys-fs/eudev:openrc - install the OpenRC init scripts
+sys-fs/eudev:rule-generator - install legacy rule generator rules and support scripts - note that the functionality within was dropped from sys-fs/udev as it is not stable in all cases; use at your own risk
 sys-fs/ext4magic:expert-mode - Builds ext4magic with expert mode. Highly useful in recovering data from a corrupted filesystem
 sys-fs/ext4magic:file-attr - Enable the recovery of file attributes (append, immutable, nodump etc)
 sys-fs/fur:void-chmod - Enable fake hook for "chmod" that will only return 0
