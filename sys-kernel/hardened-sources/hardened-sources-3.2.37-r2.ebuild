@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.37-r2.ebuild,v 1.4 2013/03/10 02:57:48 blueness Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/hardened-sources-3.2.37-r2.ebuild,v 1.5 2013/04/07 06:08:23 blueness Exp $
 
 EAPI="5"
 
@@ -33,7 +33,7 @@ pkg_postinst() {
 	local GRADM_COMPAT="sys-apps/gradm-2.9.1*"
 
 	ewarn
-	ewarn "Because some options require >=gcc-4.5, users with more than" 
+	ewarn "Because some options require >=gcc-4.5, users with more than"
 	ewarn "one version of gcc installed should use gcc-config to select"
 	ewarn "a compatible version."
 	ewarn
