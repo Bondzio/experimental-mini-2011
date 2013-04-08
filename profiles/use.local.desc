@@ -1555,7 +1555,6 @@ dev-libs/pkcs11-helper:nss - Enable NSS crypto engine
 dev-libs/ppl:lpsol - Build the ppl_lpsol linear programming problem solver
 dev-libs/ppl:watchdog - Build the PPL Watchdog library - a C++ library for multiple, concurrent watchdog timers
 dev-libs/seed:profile - Build support for profiling dev-libs/seed for development purposes
-dev-libs/soprano:clucene - Enable dev-cpp/clucene backend support.
 dev-libs/soprano:raptor - Enables support for media-libs/raptor RDF parser/serializer.
 dev-libs/soprano:redland - Enables support for the dev-libs/redland storage backend (really slow one).
 dev-libs/soprano:virtuoso - Enables support for dev-db/virtuoso storage backend.
@@ -2751,6 +2750,7 @@ media-gfx/darktable:opencl - Enable opencl support
 media-gfx/darktable:pax_kernel - Triggers paxmarking of main darktable binary
 media-gfx/darktable:rawspeed - Enable the rawspeed backend
 media-gfx/darktable:slideshow - Build the opengl slideshow viewer
+media-gfx/darktable:web-services - Add support for uploading photos to facebook and picasa
 media-gfx/digikam:addressbook - Add support for kdepim
 media-gfx/digikam:linguas_ha - Hausa translation
 media-gfx/digikam:linguas_mi - Maori translation
