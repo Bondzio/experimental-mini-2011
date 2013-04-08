@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND==dev-lang/python-2* =dev-lang/python-2*[tk]
 SLOT=0
 SRC_URI=http://download.gna.org/songwrite/EditObj-0.5.7.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
 _md5_=c10b5397273feed6c2100ead67da4c12

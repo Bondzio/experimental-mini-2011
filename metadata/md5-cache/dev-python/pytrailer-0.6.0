@@ -8,5 +8,5 @@ LICENSE=LGPL-3
 RDEPEND=dev-python/python-dateutil dev-lang/python
 SLOT=0
 SRC_URI=mirror://pypi/p/pytrailer/pytrailer-0.6.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
 _md5_=80368868b845d8bc23ec6301af7f9784

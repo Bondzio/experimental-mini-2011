@@ -1,22 +1,20 @@
-# Copyright owners: Gentoo Foundation
-#                   Arfrever Frehtes Taifersar Arahesis
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/vte/vte-0.28.2-r204.ebuild,v 1.9 2013/02/22 20:52:12 zmedico Exp $
 
-EAPI="4-python"
+EAPI="4"
 GCONF_DEBUG="yes"
 GNOME2_LA_PUNT="yes"
-PYTHON_DEPEND="python? ( <<>> )"
-PYTHON_MULTIPLE_ABIS="1"
-PYTHON_RESTRICTED_ABIS="2.5 3.* *-jython *-pypy-*"
+PYTHON_DEPEND="python? 2:2.5"
 
-inherit autotools eutils gnome2 python
+inherit eutils gnome2 python
 
 DESCRIPTION="GNOME terminal widget"
 HOMEPAGE="https://live.gnome.org/VTE"
 
 LICENSE="LGPL-2+"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-solaris ~x86-solaris"
+KEYWORDS="alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~x64-solaris ~x86-solaris"
 IUSE="debug doc glade +introspection python"
 
 PDEPEND="x11-libs/gnome-pty-helper"
@@ -30,11 +28,11 @@ RDEPEND=">=dev-libs/glib-2.26:2
 
 	glade? ( dev-util/glade:3 )
 	introspection? ( >=dev-libs/gobject-introspection-0.9.0 )
-	python? ( $(python_abi_depend ">=dev-python/pygtk-2.4:2") )"
+	python? ( >=dev-python/pygtk-2.4:2 )"
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.35
-	sys-devel/gettext
 	virtual/pkgconfig
+	sys-devel/gettext
 	doc? ( >=dev-util/gtk-doc-1.13 )"
 
 pkg_setup() {
@@ -56,8 +54,8 @@ pkg_setup() {
 	fi
 
 	DOCS="AUTHORS ChangeLog HACKING NEWS README"
-
 	if use python; then
+		python_set_active_version 2
 		python_pkg_setup
 	fi
 }
@@ -72,43 +70,11 @@ src_prepare() {
 	# Fix CVE-2012-2738, upstream bug #676090
 	epatch "${FILESDIR}"/${PN}-0.28.2-limit-arguments.patch
 
-	# Python bindings are built/installed manually.
-	sed -e "/SUBDIRS += python/d" -i Makefile.am
-
-	eautoreconf
-
 	gnome2_src_prepare
-}
-
-src_compile() {
-	gnome2_src_compile
-
-	if use python; then
-		python_copy_sources python
-
-		building() {
-			emake \
-				PYTHON_INCLUDES="-I$(python_get_includedir)" \
-				pyexecdir="$(python_get_sitedir)"
-		}
-		python_execute_function -s --source-dir python building
-	fi
 }
 
 src_install() {
 	gnome2_src_install
-	rm -f "${ED}usr/libexec/gnome-pty-helper" || die
-
-	if use python; then
-		installation() {
-			emake \
-				DESTDIR="${D}" \
-				PYTHON_INCLUDES="-I$(python_get_includedir)" \
-				pyexecdir="$(python_get_sitedir)" \
-				install
-		}
-		python_execute_function -s --source-dir python installation
-
-		python_clean_installation_image
-	fi
+	rm -v "${ED}usr/libexec/gnome-pty-helper" || die
+	use python && python_clean_installation_image
 }

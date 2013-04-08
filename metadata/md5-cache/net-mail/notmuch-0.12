@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/glib-2.22 >=dev-libs/gmime-2.6.7 dev-libs/xapian sys-libs/tal
 REQUIRED_USE=test? ( crypt emacs python )
 SLOT=0
 SRC_URI=http://notmuchmail.org/releases/notmuch-0.12.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	elisp-common	090a78f3eaf8f79b5c038c950c6fbaf7	pax-utils	a0cae5abb25d0ff197d56bf838502fa1	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	elisp-common	090a78f3eaf8f79b5c038c950c6fbaf7	pax-utils	a0cae5abb25d0ff197d56bf838502fa1	python	9b77f753831eed079d94f0682b500604
 _md5_=f81788043797db168c13b0ff17377908

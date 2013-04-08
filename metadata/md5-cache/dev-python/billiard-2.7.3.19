@@ -10,5 +10,5 @@ RDEPEND=dev-lang/python
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://pypi/b/billiard/billiard-2.7.3.19.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
 _md5_=be3ae8b830b391b8599a38330fe9ca1a

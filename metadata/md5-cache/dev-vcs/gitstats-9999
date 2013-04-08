@@ -6,5 +6,5 @@ HOMEPAGE=http://gitstats.sourceforge.net/
 LICENSE=GPL-3
 RDEPEND=sci-visualization/gnuplot[gd] dev-vcs/git =dev-lang/python-2*
 SLOT=0
-_eclasses_=git-2	e92e09651292b1bef5656592364550f7	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7	python	9b77f753831eed079d94f0682b500604
 _md5_=54bfefbc739d77e9256cc2abd91867f8

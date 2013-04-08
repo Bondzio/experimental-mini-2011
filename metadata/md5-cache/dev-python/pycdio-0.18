@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=dev-libs/libcdio-0.90 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://pypi/p/pycdio/pycdio-0.18.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	714d853f822bc2c6714b67af1c7797d3
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
 _md5_=1ce26c70a66ac5db1cdbe4213e913f79
