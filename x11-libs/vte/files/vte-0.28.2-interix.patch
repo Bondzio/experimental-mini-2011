@@ -1,7 +1,8 @@
-https://bugzilla.gnome.org/show_bug.cgi?id=652290
+reported upstream: https://bugzilla.gnome.org/show_bug.cgi?id=652290
 
---- configure.in
-+++ configure.in
+diff -ru vte-0.26.2.orig/configure.in vte-0.26.2/configure.in
+--- vte-0.26.2.orig/configure.in	2011-08-17 08:30:55 +0200
++++ vte-0.26.2/configure.in	2011-08-17 08:35:42 +0200
 @@ -362,7 +362,11 @@
  	AC_DEFINE(HAVE_RECVMSG,1,[Define if you have the recvmsg function.])
  fi
@@ -15,8 +16,20 @@ https://bugzilla.gnome.org/show_bug.cgi?id=652290
  
  # Look for tgetent
  
---- src/vte.c
-+++ src/vte.c
+--- vte-0.26.2.orig/configure	2012-04-30 20:02:55.000000000 +0200
++++ vte-0.26.2/configure	2012-04-30 20:03:16.000000000 +0200
+@@ -13277,7 +13277,7 @@
+ 
+ fi
+ 
+-for ac_func in ceil floor
++for ac_func in ceil floor round
+ do :
+   as_ac_var=`$as_echo "ac_cv_func_$ac_func" | $as_tr_sh`
+ ac_fn_c_check_func "$LINENO" "$ac_func" "$as_ac_var"
+diff -ru vte-0.26.2.orig/src/vte.c vte-0.26.2/src/vte.c
+--- vte-0.26.2.orig/src/vte.c	2011-08-17 08:30:58 +0200
++++ vte-0.26.2/src/vte.c	2011-08-17 08:38:09 +0200
 @@ -63,6 +63,18 @@
  #include <locale.h>
  #endif
