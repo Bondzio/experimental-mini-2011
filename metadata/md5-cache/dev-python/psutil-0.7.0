@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-lang/python
+DESCRIPTION=Retrieve information on running processes and system utilization
+EAPI=4
+HOMEPAGE=http://code.google.com/p/psutil/ http://pypi.python.org/pypi/psutil
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=dev-lang/python
+RESTRICT=test
+SLOT=0
+SRC_URI=http://psutil.googlecode.com/files/psutil-0.7.0.tar.gz
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_md5_=45be0775674b24036d12074e69053f3c
