@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=test? ( python_abis_2.6? ( dev-python/unittest2[python_abis_2.6] ) ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 ) app-arch/tar app-arch/gzip
+DESCRIPTION=Library for analyzing ELF files and DWARF debugging information
+EAPI=5-progress
+HOMEPAGE=https://pypi.python.org/pypi/pyelftools https://bitbucket.org/eliben/pyelftools
+IUSE=test python_abis_2.6 python_abis_2.7 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0
+KEYWORDS=*
+LICENSE=public-domain
+RDEPEND=python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 )
+REQUIRED_USE=|| ( python_abis_2.6 python_abis_2.7 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
+SLOT=0
+SRC_URI=mirror://pypi/p/pyelftools/pyelftools-0.21.tar.gz
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_md5_=9e82c630d726e696877c90e86dc7dfcd
