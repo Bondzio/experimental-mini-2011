@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] test? ( virtual/python-json[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) python_abis_2.5? ( dev-lang/python:2.5[xml] ) python_abis_2.6? ( dev-lang/python:2.6[xml] ) python_abis_2.7? ( dev-lang/python:2.7[xml] ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9[xml] ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0[xml] ) test? ( dev-python/nose[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) app-arch/tar app-arch/gzip app-arch/tar app-arch/gzip
+DESCRIPTION=HTML parser based on the WHAT-WG Web Applications 1.0 ("HTML5") specification
+EAPI=5-progress
+HOMEPAGE=http://code.google.com/p/html5lib/ https://pypi.python.org/pypi/html5lib
+IUSE=python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 test
+KEYWORDS=*
+LICENSE=MIT
+RDEPEND=python_abis_2.5? ( dev-lang/python:2.5[xml] ) python_abis_2.6? ( dev-lang/python:2.6[xml] ) python_abis_2.7? ( dev-lang/python:2.7[xml] ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9[xml] ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0[xml] )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
+SLOT=0
+SRC_URI=http://html5lib.googlecode.com/files/html5lib-0.95.tar.gz mirror://pypi/h/html5lib/html5lib-0.95.tar.gz
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_md5_=200fd0b326f99e9cc26d375b92759289
