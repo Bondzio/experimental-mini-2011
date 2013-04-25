@@ -1,10 +1,9 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-firewall/conntrack-tools/conntrack-tools-1.4.0.ebuild,v 1.2 2012/10/29 12:36:43 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/conntrack-tools/conntrack-tools-1.4.1.ebuild,v 1.3 2013/04/25 15:42:24 jer Exp $
 
-EAPI="4"
-
-inherit linux-info
+EAPI=5
+inherit autotools eutils linux-info
 
 DESCRIPTION="Connection tracking userspace tools"
 HOMEPAGE="http://conntrack-tools.netfilter.org"
@@ -17,7 +16,7 @@ IUSE="doc"
 
 RDEPEND="
 	>=net-libs/libmnl-1.0.3
-	>=net-libs/libnetfilter_conntrack-1.0.2
+	>=net-libs/libnetfilter_conntrack-1.0.3
 	>=net-libs/libnetfilter_cthelper-1.0.0
 	>=net-libs/libnetfilter_cttimeout-1.0.0
 	>=net-libs/libnetfilter_queue-1.0.2
@@ -54,6 +53,14 @@ pkg_setup() {
 			"are not set when one at least should be."
 }
 
+src_prepare() {
+	epatch "${FILESDIR}"/${P}-version.patch
+	eautoreconf
+}
+
+src_configure() {
+	econf --disable-silent-rules
+}
 src_compile() {
 	default
 	use doc && emake -C doc/manual
