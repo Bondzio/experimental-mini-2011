@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/kmod/kmod-13.ebuild,v 1.2 2013/04/10 03:12:15 williamh Exp $
 
 EAPI=5
 
@@ -13,7 +11,7 @@ if [[ ${PV} == 9999 ]]; then
 	inherit git-2
 else
 	SRC_URI="mirror://kernel/linux/utils/kernel/kmod/${P}.tar.xz"
-	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+	KEYWORDS="*"
 fi
 
 DESCRIPTION="library and tools for managing linux kernel modules"
@@ -62,7 +60,7 @@ src_prepare()
 src_configure()
 {
 	econf \
-		--bindir=/bin \
+		--bindir=/sbin \
 		--with-rootlibdir=/$(get_libdir) \
 		$(use_enable static-libs static) \
 		$(use_enable tools) \
@@ -78,15 +76,11 @@ src_install()
 	prune_libtool_files
 
 	if use tools; then
-		local bincmd sbincmd
+		local sbincmd
 		for sbincmd in depmod insmod lsmod modinfo modprobe rmmod; do
-			dosym /bin/kmod /sbin/${sbincmd}
+			dosym /sbin/kmod /sbin/${sbincmd}
 		done
 
-		# These are also usable as normal user
-		for bincmd in lsmod modinfo; do
-			dosym kmod /bin/${bincmd}
-		done
 	fi
 
 	cat <<-EOF > "${T}"/usb-load-ehci-first.conf

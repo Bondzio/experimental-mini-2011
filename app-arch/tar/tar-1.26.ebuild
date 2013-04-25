@@ -2,13 +2,12 @@
 
 EAPI="3"
 
-inherit flag-o-matic
+inherit flag-o-matic eutils
 
 DESCRIPTION="Use this to make tarballs :)"
 HOMEPAGE="http://www.gnu.org/software/tar/"
-SRC_URI="http://ftp.gnu.org/gnu/tar/${P}.tar.bz2
-	ftp://alpha.gnu.org/gnu/tar/${P}.tar.bz2
-	mirror://gnu/tar/${P}.tar.bz2"
+SRC_URI="mirror://gnu/tar/${P}.tar.bz2
+	mirror://gnu-alpha/tar/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -20,6 +19,7 @@ DEPEND="${RDEPEND}
 	nls? ( >=sys-devel/gettext-0.10.35 )"
 
 src_prepare() {
+	epatch "${FILESDIR}"/${P}-no-gets.patch
 	if ! use userland_GNU ; then
 		sed -i \
 			-e 's:/backup\.sh:/gbackup.sh:' \
