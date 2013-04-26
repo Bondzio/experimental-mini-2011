@@ -10,5 +10,5 @@ RDEPEND=python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/pyt
 REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=python-3
 SRC_URI=http://www.crummy.com/software/BeautifulSoup/bs3/download/3.1.x/BeautifulSoup-3.1.0.1.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	eutils	36e6377b0e31856b6d62af831661c4f3	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	eutils	384ae111f3649d456ed1754e3e1c4f6e	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=05a83bdc6a966e27c79d938876c654d1
