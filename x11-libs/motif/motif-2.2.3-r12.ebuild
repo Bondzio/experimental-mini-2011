@@ -1,9 +1,8 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/motif/motif-2.2.3-r12.ebuild,v 1.3 2013/04/25 17:39:47 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/motif/motif-2.2.3-r12.ebuild,v 1.5 2013/05/01 15:32:55 ulm Exp $
 
 EAPI=5
-WANT_AUTOMAKE="1.12"
 
 inherit autotools eutils flag-o-matic multilib multilib-minimal
 
@@ -11,11 +10,11 @@ MY_P=openMotif-${PV}
 DESCRIPTION="Legacy Open Motif libraries for old binaries"
 HOMEPAGE="http://motif.ics.com/"
 SRC_URI="ftp://ftp.ics.com/openmotif/2.2/${PV}/src/${MY_P}.tar.gz
-	mirror://gentoo/openmotif-${PV}-patches-4.tar.bz2"
+	mirror://gentoo/openmotif-${PV}-patches-5.tar.xz"
 
 LICENSE="MOTIF MIT"
 SLOT="2.2"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 x86"
 
 RDEPEND="x11-libs/libX11[${MULTILIB_USEDEP}]
 	x11-libs/libXext[${MULTILIB_USEDEP}]
