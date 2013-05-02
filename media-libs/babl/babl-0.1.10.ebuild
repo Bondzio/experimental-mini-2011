@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/babl/babl-0.1.10.ebuild,v 1.8 2013/04/30 20:37:44 sping Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/babl/babl-0.1.10.ebuild,v 1.10 2013/05/02 14:04:30 ago Exp $
 
 EAPI=4
 
