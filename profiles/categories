@@ -80,6 +80,9 @@ lxde-base
 mail-client
 mail-filter
 mail-mta
+mate-base
+mate-extra
+media-filter
 media-fonts
 media-gfx
 media-libs
@@ -136,8 +139,10 @@ sys-fs
 sys-infiniband
 sys-kernel
 sys-libs
+sys-monitor
 sys-power
 sys-process
+virtual
 www-apache
 www-apps
 www-client
@@ -156,4 +161,3 @@ x11-themes
 x11-wm
 xfce-base
 xfce-extra
-virtual
