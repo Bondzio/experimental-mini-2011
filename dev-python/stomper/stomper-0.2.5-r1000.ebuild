@@ -1,27 +1,32 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright owners: Gentoo Foundation
+#                   Arfrever Frehtes Taifersar Arahesis
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/stomper/stomper-0.2.4.ebuild,v 1.3 2010/10/21 22:17:37 fauli Exp $
 
-EAPI="3"
-PYTHON_DEPEND="2:2.5"
-SUPPORT_PYTHON_ABIS="1"
-# uuid module required.
-RESTRICT_PYTHON_ABIS="2.4 3.*"
+EAPI="5-progress"
+PYTHON_MULTIPLE_ABIS="1"
+PYTHON_RESTRICTED_ABIS="3.*"
 DISTUTILS_SRC_TEST="setup.py"
 
 inherit distutils
 
 DESCRIPTION="Transport neutral client implementation of the STOMP protocol"
-HOMEPAGE="http://pypi.python.org/pypi/stomper"
+HOMEPAGE="https://github.com/oisinmulvihill/stomper https://pypi.python.org/pypi/stomper"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~ppc ~ppc64 ~sparc x86"
+KEYWORDS="*"
 IUSE="examples"
 
-DEPEND="dev-python/setuptools"
+DEPEND="$(python_abi_depend dev-python/setuptools)"
 RDEPEND=""
+
+src_prepare() {
+	distutils_src_prepare
+
+	# https://github.com/oisinmulvihill/stomper/issues/1
+	sed -e "s/self.headers.items()/sorted(self.headers.items())/" -i lib/stomper/__init__.py
+}
 
 src_install() {
 	distutils_src_install
@@ -33,6 +38,6 @@ src_install() {
 
 	if use examples; then
 		insinto /usr/share/doc/${PF}/examples
-		doins lib/stomper/examples/* || die "Installation of examples failed"
+		doins lib/stomper/examples/*
 	fi
 }

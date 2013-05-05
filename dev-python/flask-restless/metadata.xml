@@ -2,7 +2,5 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<herd>python</herd>
-	<upstream>
-		<remote-id type="pypi">stomper</remote-id>
-	</upstream>
 </pkgmetadata>
+
