@@ -1,12 +1,12 @@
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare setup unpack
-DEPEND==sys-devel/automake-1.11* =sys-devel/automake-1.4* =sys-devel/automake-1.9* dev-lang/yasm >=dev-lang/python-2.4.6 || ( >=net-misc/wget-1.11.4 >=net-misc/curl-7.19.4 ) sys-libs/zlib css? ( media-libs/libdvdcss ) gtk? ( >=x11-libs/gtk+-2.8 dev-libs/glib dev-libs/dbus-glib x11-libs/libnotify media-libs/gstreamer media-libs/gst-plugins-base >=virtual/udev-171[gudev] ) || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync >=sys-apps/sed-4 =dev-lang/python-2*
-DESCRIPTION=Open-source DVD to MPEG-4 converter.
-EAPI=2
+DEPEND=media-libs/a52dec media-libs/libass media-libs/libbluray media-libs/libdvdnav media-libs/libdvdread media-libs/libmpeg2 media-libs/libmp4v2:1 media-libs/libmkv media-libs/libsamplerate media-libs/libtheora media-libs/libvorbis media-libs/x264 media-sound/lame ffmpeg? ( >=media-video/ffmpeg-1.2 ) sys-libs/glibc:2.2 sys-libs/zlib gstreamer? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 !ffmpeg? ( media-plugins/gst-plugins-mpeg2dec:1.0 ) ) gtk? ( x11-libs/gtk+:3 dev-libs/dbus-glib dev-libs/glib:2 x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/libnotify x11-libs/pango >=virtual/udev-171[gudev] ) || ( dev-lang/python:2.7 dev-lang/python:2.6 dev-lang/python:2.5 ) dev-lang/yasm sys-devel/automake >=sys-apps/sed-4 || ( dev-vcs/subversion[webdav-neon] dev-vcs/subversion[webdav-serf] ) net-misc/rsync
+DESCRIPTION=Open-source, GPL-licensed, multiplatform, multithreaded video transcoder.
+EAPI=5
 HOMEPAGE=http://handbrake.fr/
-IUSE=css gtk gst ffmpeg2
+IUSE=gtk gstreamer ffmpeg
 LICENSE=GPL-2
-RDEPEND=sys-libs/zlib css? ( media-libs/libdvdcss ) gtk? ( >=x11-libs/gtk+-2.8 dev-libs/glib dev-libs/dbus-glib x11-libs/libnotify media-libs/gstreamer media-libs/gst-plugins-base >=virtual/udev-171[gudev] ) =dev-lang/python-2*
-RESTRICT=mirror
+RDEPEND=media-libs/a52dec media-libs/libass media-libs/libbluray media-libs/libdvdnav media-libs/libdvdread media-libs/libmpeg2 media-libs/libmp4v2:1 media-libs/libmkv media-libs/libsamplerate media-libs/libtheora media-libs/libvorbis media-libs/x264 media-sound/lame ffmpeg? ( >=media-video/ffmpeg-1.2 ) sys-libs/glibc:2.2 sys-libs/zlib gstreamer? ( media-libs/gstreamer:1.0 media-libs/gst-plugins-base:1.0 !ffmpeg? ( media-plugins/gst-plugins-mpeg2dec:1.0 ) ) gtk? ( x11-libs/gtk+:3 dev-libs/dbus-glib dev-libs/glib:2 x11-libs/cairo x11-libs/gdk-pixbuf:2 x11-libs/libnotify x11-libs/pango >=virtual/udev-171[gudev] )
+REQUIRED_USE=!ffmpeg? ( gstreamer )
 SLOT=0
-_eclasses_=eutils	384ae111f3649d456ed1754e3e1c4f6e	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	subversion	869118194bbbecaa8f935e185befcdb7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=840e74d90d0440a8c25d5f4e63f167ef
+_eclasses_=eutils	384ae111f3649d456ed1754e3e1c4f6e	gnome2-utils	1551aae6c13684ead9de781fbedec5b0	multilib	892e597faee02a5b94eb02ab512e7622	python-any-r1	2bfb0c9cefbef0b3cfde3d96e3d53f46	python-utils-r1	345dcecf1ef156d1d86a98f16d3c385c	subversion	869118194bbbecaa8f935e185befcdb7	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=aa6a47e2c2c9a131676ad4067829ce6a
