@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.35 2013/03/19 02:25:59 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.36 2013/05/12 20:20:30 floppym Exp $
 
 EAPI=5
 
@@ -67,5 +67,7 @@ python_prepare_all() {
 }
 
 python_test() {
-	esetup.py test
+	cp -lr tests setup.cfg "${BUILD_DIR}" || die
+	run_in_build_dir nosetests -v --attr=!online > "${T}/tests-${EPYTHON}.log" \
+		|| die "Tests fail with ${EPYTHON}"
 }
