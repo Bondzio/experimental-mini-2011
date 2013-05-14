@@ -2,6 +2,6 @@ DEFINED_PHASES=-
 DESCRIPTION=Virtual for utilities to manage Linux kernel modules
 EAPI=2
 KEYWORDS=*
-RDEPEND=|| ( >=sys-apps/module-init-tools-3.2 sys-apps/kmod[tools] sys-apps/modutils )
+RDEPEND=|| ( sys-apps/kmod[tools] sys-apps/modutils )
 SLOT=0
-_md5_=776efc8ab1b2695b4a4997d3755be1c5
+_md5_=d59b6d9601e762be92ebb0647964aed1

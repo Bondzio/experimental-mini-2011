@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-crypt/gnupg/gnupg-2.0.19-r2.ebuild,v 1.2 2013/04/10 22:11:45 alonbl Exp $
 
 EAPI="4"
 
@@ -13,7 +11,7 @@ SRC_URI="mirror://gnupg/gnupg/${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+KEYWORDS="~*"
 IUSE="adns bzip2 doc ldap nls mta readline static selinux smartcard usb"
 
 COMMON_DEPEND_LIBS="
@@ -60,6 +58,7 @@ src_prepare() {
 	epatch "${FILESDIR}"/${PN}-2.0.17-gpgsm-gencert.patch
 	epatch -l "${FILESDIR}/${P}-support-sc-key-3072.patch"
 	epatch -l "${FILESDIR}/${P}-texinfo-5.patch"
+	epatch "${FILESDIR}"/${PN}-2.0.19-stdint_-h.patch
 }
 
 src_configure() {

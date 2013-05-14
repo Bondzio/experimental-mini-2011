@@ -1,6 +1,4 @@
-# Copyright 1999-2011 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/boo/boo-0.9.4.9.ebuild,v 1.4 2011/05/11 19:27:42 angelos Exp $
 
 EAPI=2
 
@@ -12,7 +10,7 @@ SRC_URI="http://dist.codehaus.org/boo/distributions/${P}-src.tar.bz2"
 LICENSE="BSD"
 
 SLOT="0"
-KEYWORDS="amd64 ppc x86"
+KEYWORDS="*"
 IUSE=""
 
 RDEPEND=">=dev-lang/mono-2.0
@@ -44,6 +42,8 @@ src_prepare() {
 		extras/boo.pc.in || die
 	epatch "${FILESDIR}/${PN}-0.9.1.3287-GACproblems.patch"
 	epatch "${FILESDIR}/${PN}-0.7.8.2559-gtksourceview2.patch"
+	# FIX: https://bugs.gentoo.org/show_bug.cgi?id=435684
+	epatch "${FILESDIR}/${PN}-0.9.4.9-pt-fail.patch"
 }
 
 src_compile() {
