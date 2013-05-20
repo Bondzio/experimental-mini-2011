@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst postrm prepare setup test unpack
+DEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.5-jython?,python_abis_2.7-jython?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] test? ( dev-python/mock[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.5-jython?,python_abis_2.7-jython?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.5-jython? ( dev-lang/jython:2.5 ) python_abis_2.7-jython? ( dev-lang/jython:2.7 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 ) test? ( dev-python/nose[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.5-jython?,python_abis_2.7-jython?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) app-arch/tar app-arch/gzip
+DESCRIPTION=Easy build, distribution and deployment scripting
+EAPI=5-progress
+HOMEPAGE=http://paver.github.io/paver/ https://github.com/paver/paver https://pypi.python.org/pypi/Paver
+IUSE=doc test python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 test
+KEYWORDS=*
+LICENSE=BSD
+RDEPEND=dev-python/setuptools[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.5-jython?,python_abis_2.7-jython?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] test? ( dev-python/mock[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?,python_abis_3.2?,python_abis_3.3?,python_abis_3.4?,python_abis_2.5-jython?,python_abis_2.7-jython?,python_abis_2.7-pypy-1.9?,python_abis_2.7-pypy-2.0?] ) python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/python:2.6 ) python_abis_2.7? ( dev-lang/python:2.7 ) python_abis_3.2? ( dev-lang/python:3.2 ) python_abis_3.3? ( dev-lang/python:3.3 ) python_abis_3.4? ( dev-lang/python:3.4 ) python_abis_2.5-jython? ( dev-lang/jython:2.5 ) python_abis_2.7-jython? ( dev-lang/jython:2.7 ) python_abis_2.7-pypy-1.9? ( dev-python/pypy:1.9 ) python_abis_2.7-pypy-2.0? ( dev-python/pypy:2.0 )
+REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 python_abis_3.2 python_abis_3.3 python_abis_3.4 python_abis_2.5-jython python_abis_2.7-jython python_abis_2.7-pypy-1.9 python_abis_2.7-pypy-2.0 )
+SLOT=0
+SRC_URI=https://github.com/paver/paver/archive/Paver-1.2.tar.gz
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_md5_=fb8cc4fc91ad2f0d6bb69e4609f57fc2
