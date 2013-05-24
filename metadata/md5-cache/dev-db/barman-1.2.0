@@ -9,4 +9,4 @@ RDEPEND=dev-python/argh >=dev-python/psycopg-2 dev-python/python-dateutil net-mi
 SLOT=0
 SRC_URI=http://downloads.sourceforge.net/project/pgbarman/1.2.0/barman-1.2.0.tar.gz
 _eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
-_md5_=c6b39e8cc4c1f02e944f731c881515d5
+_md5_=a197f71a8c6ace5941943cbe464564d1
