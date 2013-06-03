@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/openvswitch/openvswitch-1.9.0.ebuild,v 1.2 2013/04/09 15:41:04 dev-zero Exp $
 
 EAPI=5
 
@@ -17,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="debug modules monitor +pyside +ssl"
 
-RDEPEND=">=sys-apps/openrc-0.10.5
+RDEPEND=">=sys-apps/openrc-0.10.2
 	ssl? ( dev-libs/openssl )
 	monitor? (
 		${PYTHON_DEPS}
@@ -36,9 +34,12 @@ MODULE_NAMES="brcompat(net:${S}/datapath/linux) openvswitch(net:${S}/datapath/li
 BUILD_TARGETS="all"
 
 pkg_setup() {
-	if use modules ; then
-		CONFIG_CHECK+=" ~!OPENVSWITCH"
-		linux-mod_pkg_setup
+
+	if kernel_is -lt 3 9 ; then
+		if use modules ; then
+			CONFIG_CHECK+=" ~!OPENVSWITCH"
+			linux-mod_pkg_setup
+		fi
 	else
 		CONFIG_CHECK+=" ~OPENVSWITCH"
 		linux-info_pkg_setup
@@ -48,6 +49,7 @@ pkg_setup() {
 
 src_prepare() {
 	# Never build kernelmodules, doing this manually
+	epatch "${FILESDIR}"/"${PN}"-kernel32.patch
 	sed -i \
 		-e '/^SUBDIRS/d' \
 		datapath/Makefile.in || die "sed failed"
@@ -58,7 +60,9 @@ src_configure() {
 	use pyside || export ovs_cv_pyuic4="no"
 
 	local linux_config
-	use modules && linux_config="--with-linux=${KERNEL_DIR}"
+	if kernel_is -lt 3 9 ; then
+		use modules && linux_config="--with-linux=${KERNEL_DIR}"
+	fi
 
 	econf ${linux_config} \
 		--with-rundir=/var/run/openvswitch \
@@ -77,7 +81,9 @@ src_compile() {
 		utilities/bugtool/ovs-bugtool \
 		ovsdb/ovsdbmonitor/ovsdbmonitor
 
-	use modules && linux-mod_src_compile
+	if kernel_is -lt 3 9 ; then
+		use modules && linux-mod_src_compile
+	fi
 }
 
 src_install() {
@@ -110,11 +116,15 @@ src_install() {
 	insinto /etc/logrotate.d
 	newins rhel/etc_logrotate.d_openvswitch openvswitch
 
-	use modules && linux-mod_src_install
+	if kernel_is -lt 3 9 ; then
+		use modules && linux-mod_src_install
+	fi
 }
 
 pkg_postinst() {
-	use modules && linux-mod_pkg_postinst
+	if kernel_is -lt 3 9 ; then
+		use modules && linux-mod_pkg_postinst
+	fi
 
 	for pv in ${REPLACING_VERSIONS}; do
 		if ! version_is_at_least 1.9.0 ${pv} ; then

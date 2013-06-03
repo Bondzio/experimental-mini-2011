@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/libsdl/libsdl-1.2.15-r4.ebuild,v 1.1 2013/06/02 20:33:18 chainsaw Exp $
 
 EAPI=5
 inherit autotools base flag-o-matic multilib toolchain-funcs eutils
@@ -11,11 +9,11 @@ SRC_URI="http://www.libsdl.org/release/SDL-${PV}.tar.gz"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd"
+KEYWORDS="*"
 # WARNING:
 # If you turn on the custom-cflags use flag in USE and something breaks,
 # you pick up the pieces.  Be prepared for bug reports to be marked INVALID.
-IUSE="oss alsa nas X dga xv xinerama fbcon directfb ggi svga tslib aalib opengl libcaca +audio +video +joystick custom-cflags pulseaudio ps3 static-libs"
+IUSE="oss alsa nas X dga xv xinerama fbcon directfb ggi svga tslib aalib opengl libcaca +audio +video +joystick custom-cflags pulseaudio ps3 static-libs alsa-shared pulseaudio-shared"
 
 RDEPEND="audio? ( >=media-libs/audiofile-0.1.9 )
 	alsa? ( media-libs/alsa-lib )
@@ -87,6 +85,10 @@ src_configure() {
 		&& myconf="${myconf} --enable-video-dummy" \
 		|| myconf="${myconf} --disable-video"
 	use joystick || myconf="${myconf} --disable-joystick"
+
+	# Fix for sound in virtualbox-bin. #310793
+	use !alsa-shared && myconf="${myconf} --disable-alsa-shared"
+	use !pulseaudio-shared && myconf="${myconf} --disable-pulseaudio-shared"
 
 	local directfbconf="--disable-video-directfb"
 	if use directfb ; then
