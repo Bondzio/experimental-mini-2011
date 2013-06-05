@@ -330,6 +330,7 @@ app-crypt/shishi:null - Enable dummy NULL encryption/checksum type.
 app-crypt/tpm-tools:pkcs11 - Build Token data management utilities based on OpenCryptoki's (dev-libs/opencryptoki) PKCS#11 implementation.
 app-crypt/truecrypt:asm - Enable assembly for optimization
 app-dicts/aspell-be:classic - Support classic spelling by default
+app-dicts/gwaei:mecab - Enable app-text/mecab support
 app-dicts/gwaei:unique - Enable single instance support using dev-libs/libunique.
 app-dicts/myspell-pt:preao - Use the pre ortographic agreement version of the dictionary
 app-doc/csound-manual:html - Install HTML documentation
@@ -5930,6 +5931,10 @@ sys-fs/aufs3:pax_kernel - Apply patch needed for pax enabled kernels
 sys-fs/aufs3:ramfs - Enable initramfs/rootfs support
 sys-fs/btrfs-progs:debug-utils - Build additional utils for debugging
 sys-fs/cryptsetup:dynamic - Build cryptsetup dynamically
+sys-fs/cryptsetup:gcrypt - Enable the dev-libs/libgcrypt crypto backend
+sys-fs/cryptsetup:kernel - Enable the kernel crypto backend
+sys-fs/cryptsetup:nettle - Enable the dev-libs/nettle crypto backend
+sys-fs/cryptsetup:openssl - Enable the dev-libs/openssl crypto backend
 sys-fs/cryptsetup:reencrypt - Build cryptsetup-reencrypt
 sys-fs/cryptsetup:urandom - Use /dev/urandom instead of /dev/random
 sys-fs/dmraid:dietlibc - Compile against dev-libs/dietlibc
