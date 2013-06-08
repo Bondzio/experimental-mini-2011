@@ -1,6 +1,6 @@
 ####################################################################
 
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14811 2013/06/07 06:59:23 xmw Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14814 2013/06/08 02:58:56 patrick Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -118,10 +118,6 @@ x11-themes/pekwm-themes-hewphoria
 # Needs masked ffmpeg-9
 =media-video/mplayer2-2.0_p20130428
 =media-libs/ffmpegsource-2.17.4_pre755
-
-# Patrick Lauer <patrick@gentoo.org> (16 May 2013)
-# Dependencies broken, new version brokererer. #469264
-dev-db/desktopcouch
 
 # Johannes Huber <johu@gentoo.org> (13 May 2013)
 # Masked for removal in 30 days. Package is obsolete.
@@ -401,12 +397,6 @@ net-irc/xchatosd
 >=media-plugins/grilo-plugins-0.2.8
 >=gnome-base/gnome-common-3.7.4
 >=media-gfx/colorhug-client-0.2.0
-
-# Sebastien Fabbro <bicatali@gentoo.org> (26 Mar 2013)
-# Now included in sci-mathematics/mathgl
-# Removal in 30 days.
-sci-visualization/udav
-=sci-libs/mathgl-1*
 
 # Jeroen Roovers <jer@gentoo.org> (25 Mar 2013)
 # Unlocking fails (bug #463180)
@@ -796,10 +786,6 @@ kde-misc/kgtk
 # Masked for testing since this is known to break nearly
 # every reverse dependency wrt bug 407091
 >=dev-lang/lua-5.2.0
-
-# Sébastien Fabbro <bicatali@gentoo.org> (26 Feb 2012)
-# Needs development version x11-libs/wxGTK
->=sci-visualization/fityk-1.1
 
 # Michał Górny <mgorny@gentoo.org> (21 Jan 2012)
 # Blocks sysvinit yet doesn't provide all tools provided by it.
