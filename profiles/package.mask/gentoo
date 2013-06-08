@@ -1,6 +1,6 @@
 ####################################################################
 
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14814 2013/06/08 02:58:56 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14816 2013/06/08 12:38:58 sping Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -32,6 +32,13 @@
 
 #--- END OF EXAMPLES ---
 
+# Alexander Vershilov <qnikst@gentoo.org) (8 Jun 2013)
+# Masked for removal in ~ 30 days. Packages support mtl-2
+# and mtl-1 is no longer supported and introduces unneeded
+# breakage
+<dev-haskell/mtl-2.0
+=dev-haskell/configfile-1.0.6
+
 # Michael Weber <xmw@gentoo.org> (6 Jun 2013)
 # Masked for testing due non-maint commit (bug 440086)
 =media-libs/openjpeg-2.0.0
@@ -46,10 +53,6 @@ dev-python/elixir
 # Abandoned package, most of functions incorporated in portage
 # Masked for removal in 30 days, bug #289899
 dev-util/lafilefixer
-
-# Sebastian Pipping <sping@gentoo.org> (2 Jun 2013)
-# Effect working, freeze on opening preferences dialog
->=media-libs/freeverb3-3.0.0
 
 # Diego Elio Pettenò <flameeyes@gentoo.org> (31 May 2013)
 # Waiting for final release
@@ -1149,4 +1152,3 @@ games-fps/unreal-tournament-goty
 games-fps/unreal-tournament-strikeforce
 games-fps/unreal-tournament-bonuspacks
 games-fps/aaut
-
