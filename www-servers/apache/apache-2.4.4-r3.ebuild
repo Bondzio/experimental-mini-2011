@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-servers/apache/apache-2.4.4-r3.ebuild,v 1.4 2013/05/21 15:19:08 lxnay Exp $
 
 EAPI="2"
 
@@ -113,7 +111,7 @@ MODULE_CRITICAL="
 use ssl && MODULE_CRITICAL+=" socache_shmcb"
 use doc && MODULE_CRITICAL+=" alias negotiation setenvif"
 
-inherit eutils apache-2 systemd
+inherit eutils apache-2
 
 DESCRIPTION="The Apache Web Server."
 HOMEPAGE="http://httpd.apache.org/"
@@ -121,7 +119,7 @@ HOMEPAGE="http://httpd.apache.org/"
 # some helper scripts are Apache-1.1, thus both are here
 LICENSE="Apache-2.0 Apache-1.1"
 SLOT="2"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~sparc-fbsd ~x86-fbsd"
+KEYWORDS="~*"
 IUSE=""
 
 DEPEND="${DEPEND}
@@ -171,14 +169,6 @@ src_install() {
 	if use ssl; then
 		dodir /var/run/apache_ssl_mutex || die "Failed to mkdir ssl_mutex"
 	fi
-
-	# Note: wait for mod_systemd to be included in the next release,
-	# then apache2.4.service can be used and systemd support controlled
-	# through --enable-systemd
-	systemd_newunit "${FILESDIR}/apache2.2.service" "apache2.service"
-	systemd_dotmpfilesd "${FILESDIR}/apache.conf"
-	insinto /etc/apache2/modules.d
-	doins "${FILESDIR}/00_systemd.conf"
 }
 
 pkg_postinst()
