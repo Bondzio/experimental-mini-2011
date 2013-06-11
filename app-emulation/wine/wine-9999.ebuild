@@ -1,11 +1,11 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/wine/wine-9999.ebuild,v 1.142 2013/05/26 04:27:24 tetromino Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/wine/wine-9999.ebuild,v 1.143 2013/06/11 04:12:24 tetromino Exp $
 
 EAPI="5"
 
 AUTOTOOLS_AUTORECONF=1
-PLOCALES="ar bg ca cs da de el en en_US eo es fa fi fr he hi hu it ja ko lt ml nb_NO nl or pa pl pt_BR pt_PT rm ro ru sk sl sr_RS@cyrillic sr_RS@latin sv te th tr uk wa zh_CN zh_TW"
+PLOCALES="ar bg ca cs da de el en en_US eo es fa fi fr he hi hr hu it ja ko lt ml nb_NO nl or pa pl pt_BR pt_PT rm ro ru sk sl sr_RS@cyrillic sr_RS@latin sv te th tr uk wa zh_CN zh_TW"
 PLOCALE_BACKUP="en"
 
 inherit autotools-multilib eutils flag-o-matic gnome2-utils l10n multilib pax-utils toolchain-funcs virtualx
@@ -24,7 +24,7 @@ fi
 
 GV="2.21"
 MV="0.0.8"
-PULSE_PATCHES="winepulse-patches-1.5.30"
+PULSE_PATCHES="winepulse-patches-1.6-rc1"
 WINE_GENTOO="wine-gentoo-2012.11.24"
 DESCRIPTION="Free implementation of Windows(tm) on Unix"
 HOMEPAGE="http://www.winehq.org/"
@@ -172,6 +172,7 @@ src_prepare() {
 		"${FILESDIR}"/${PN}-1.5.17-osmesa-check.patch #429386
 		"${FILESDIR}"/${PN}-1.5.23-winebuild-CCAS.patch #455308
 		"${FILESDIR}"/${PN}-1.5.31-gnutls-3.2.0.patch #http://bugs.winehq.org/show_bug.cgi?id=33649
+		"${FILESDIR}"/${PN}-1.6_rc1-pkg-config.patch #http://bugs.winehq.org/show_bug.cgi?id=33780
 	)
 	[[ ${PV} == "9999" ]] || PATCHES+=(
 		"../${PULSE_PATCHES}"/*.patch #421365
