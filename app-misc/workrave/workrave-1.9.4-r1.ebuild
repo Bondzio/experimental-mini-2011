@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/workrave/workrave-1.9.4-r1.ebuild,v 1.6 2013/01/24 03:39:45 tetromino Exp $
 
 EAPI="4"
 GCONF_DEBUG="yes"
@@ -14,7 +12,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="amd64 ppc x86"
+KEYWORDS="*"
 IUSE="dbus doc distribution gnome gstreamer nls pulseaudio test"
 
 RDEPEND=">=dev-libs/glib-2.10:2
@@ -39,7 +37,8 @@ RDEPEND=">=dev-libs/glib-2.10:2
 	x11-libs/libX11
 	x11-libs/libXtst
 	x11-libs/libXt
-	x11-libs/libXmu"
+	x11-libs/libXmu
+	x11-libs/libXScrnSaver"
 
 DEPEND="${RDEPEND}
 	x11-proto/xproto

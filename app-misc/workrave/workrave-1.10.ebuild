@@ -1,6 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/workrave/workrave-1.10.ebuild,v 1.1 2013/04/07 14:28:04 pacho Exp $
 
 EAPI=5
 GCONF_DEBUG="yes"
@@ -35,7 +33,8 @@ RDEPEND=">=dev-libs/glib-2.28.0:2
 	x11-libs/libX11
 	x11-libs/libXtst
 	x11-libs/libXt
-	x11-libs/libXmu"
+	x11-libs/libXmu
+	x11-libs/libXScrnSaver"
 
 DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.40.0
