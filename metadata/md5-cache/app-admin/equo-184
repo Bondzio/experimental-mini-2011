@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=~sys-apps/entropy-184 sys-apps/file[python] =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sabayon/sys-apps/entropy-184.tar.bz2
-_eclasses_=bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=bash-completion-r1	5375a5e8ee7772e200b0819d58e428f5	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=a153d4e37cb55b6588fd2ced2367bb45

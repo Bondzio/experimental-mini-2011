@@ -8,5 +8,5 @@ LICENSE=GPL-2
 RDEPEND=dev-lang/perl dev-perl/DateManip dev-perl/libwww-perl
 SLOT=0
 SRC_URI=mirror://gentoo//genlop-0.30.9.tar.gz
-_eclasses_=base	5f55566958e88506923ea360535053cc	bash-completion-r1	611c0d50ce28f3e5df907f4ea024e676	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=base	5f55566958e88506923ea360535053cc	bash-completion-r1	5375a5e8ee7772e200b0819d58e428f5	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=5b0b6f016a3e2f31bd4cc8ad96749838
