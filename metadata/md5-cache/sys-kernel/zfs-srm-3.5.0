@@ -1,0 +1,11 @@
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Prebuilt ZFS System Rescue Module for System Rescue CD
+EAPI=4
+HOMEPAGE=http://jonathanvasquez.com/
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=app-misc/bliss-isomaker
+RESTRICT=mirror
+SLOT=3.5.0
+SRC_URI=http://jonathanvasquez.com/files/sysresccd/3.5.0/srms/zfs-srms-3.5.0_amd64_0.6.1.tar.bz2
+_md5_=f60c69c5f1a0bf2f49957cd2527340cf

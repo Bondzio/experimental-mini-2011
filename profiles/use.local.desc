@@ -558,6 +558,7 @@ app-emulation/vov:gprof - build with profiling support
 app-emulation/wine:capi - Enable ISDN support via CAPI
 app-emulation/wine:custom-cflags - Bypass strip-flags; use are your own peril
 app-emulation/wine:gecko - Add support for the Gecko engine when using iexplore
+app-emulation/wine:mime-handler - Register Wine as a handler for .EXE and .MSI files
 app-emulation/wine:mono - Add support for .NET using Wine's Mono add-on
 app-emulation/wine:opencl - Enable OpenCL support
 app-emulation/wine:osmesa - Add support for OpenGL in bitmaps using libOSMesa
@@ -3235,6 +3236,7 @@ media-sound/beets:echonest_tempo - Enable support for writing the BPM of a track
 media-sound/beets:lastgenre - Enable support for importing music genres from last.fm tags
 media-sound/beets:replaygain - Enable support for Replay Gain metadata calculation during import
 media-sound/beets:web - Enable embedded webserver support through dev-python/flask
+media-sound/cantata:online-services - Enable support for online services (Jamendo and Magantune)
 media-sound/cantata:phonon - Enable support for Phonon
 media-sound/cantata:replaygain - Enable ReplayGain support, for relative volume adjustments.
 media-sound/clementine:googledrive - Enable Google Drive support
