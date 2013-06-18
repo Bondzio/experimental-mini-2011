@@ -10,5 +10,5 @@ RDEPEND=!<dev-python/eyeD3-0.6.18-r1:0 python_abis_2.7? ( dev-lang/python:2.7 )
 REQUIRED_USE=python_abis_2.7
 SLOT=0.7
 SRC_URI=http://eyed3.nicfit.net/releases/eyeD3-0.7.1.tgz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=db7945a5e8ec2dfdf5326d97bd67e42a

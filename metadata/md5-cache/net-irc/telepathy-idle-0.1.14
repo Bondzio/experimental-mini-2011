@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/dbus-glib-0.51 >=dev-libs/glib-2.30.0:2 >=dev-libs/openssl-0.9.7 >=net-libs/telepathy-glib-0.15.9 sys-apps/dbus =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://telepathy.freedesktop.org/releases/telepathy-idle/telepathy-idle-0.1.14.tar.gz
-_eclasses_=python	9b77f753831eed079d94f0682b500604
+_eclasses_=python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=e3f8c8c3874934819dba409cefc22be6

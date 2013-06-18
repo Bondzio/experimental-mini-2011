@@ -8,5 +8,5 @@ LICENSE=|| ( GPL-2 BSD )
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://gentoo/python-wpactrl-20081102.tar.bz2
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=1040cca76d0eb322d8108cc384cec3c0

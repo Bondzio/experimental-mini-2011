@@ -10,5 +10,5 @@ RDEPEND=>=dev-python/apptools-3.4.1 >=dev-python/enthoughtbase-3.1.0 dev-python/
 RESTRICT=test
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/EnvisageCore-3.2.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604	virtualx	73cfc129b4b9ba23aed1abb10c825d86
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b	virtualx	73cfc129b4b9ba23aed1abb10c825d86
 _md5_=48f764933357cbe9acba0c4c21929a0a

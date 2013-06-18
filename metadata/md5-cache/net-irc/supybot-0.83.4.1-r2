@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=twisted? ( >=dev-python/twisted-8.1.0[crypt] >=dev-python/twisted-names-8.1.0 ) !<net-irc/supybot-plugins-20060723-r1 =dev-lang/python-2*
 SLOT=0
 SRC_URI=mirror://sourceforge/supybot/Supybot-0.83.4.1.tar.bz2
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=63c74a8ad6ce27379a8fb682f6eb80ba

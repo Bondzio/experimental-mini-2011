@@ -10,5 +10,5 @@ RDEPEND=dev-python/greenlet[python_abis_2.5?,python_abis_2.6?,python_abis_2.7?] 
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=mirror://pypi/e/eventlet/eventlet-0.12.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=3e16854562248501c308906f1821d1e1

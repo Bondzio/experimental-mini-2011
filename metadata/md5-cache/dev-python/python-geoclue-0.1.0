@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=app-misc/geoclue dev-python/dbus-python =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.paulocabido.com/soc/python-geoclue/python-geoclue-0.1.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604	virtualx	73cfc129b4b9ba23aed1abb10c825d86
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b	virtualx	73cfc129b4b9ba23aed1abb10c825d86
 _md5_=bca73e011a129ab0627f2e2e7d0fd293

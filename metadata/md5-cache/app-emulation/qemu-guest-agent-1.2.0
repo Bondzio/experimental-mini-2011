@@ -8,5 +8,5 @@ LICENSE=GPL-2 BSD-2
 RDEPEND=>=dev-libs/glib-2.22 !<app-emulation/qemu-1.1.1-r1
 SLOT=0
 SRC_URI=http://wiki.qemu.org/download/qemu-1.2.0.tar.bz2
-_eclasses_=multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	systemd	a8740b147f2398d1a41c9cbb6a55df36	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	udev	a9a8d051efb42bfe884c1db82ce161de
+_eclasses_=multilib	892e597faee02a5b94eb02ab512e7622	python	3b9c3f31101dd0aa8ba09f3230c8054b	systemd	a8740b147f2398d1a41c9cbb6a55df36	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	udev	a9a8d051efb42bfe884c1db82ce161de
 _md5_=5fc67b934be94413bc31a1a2898bc901

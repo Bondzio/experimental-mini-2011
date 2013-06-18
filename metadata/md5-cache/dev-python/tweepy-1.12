@@ -9,5 +9,5 @@ LICENSE=MIT
 RDEPEND==dev-lang/python-2*
 SLOT=0
 SRC_URI=https://github.com/tweepy/tweepy/tarball/1.12 -> tweepy-1.12.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604	vcs-snapshot	9eae457a5b2c0c02eca13f7869b7bc7b
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b	vcs-snapshot	9eae457a5b2c0c02eca13f7869b7bc7b
 _md5_=0c787ec73486104b8ac6cac0d80df081

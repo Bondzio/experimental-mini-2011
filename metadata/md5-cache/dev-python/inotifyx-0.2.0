@@ -8,5 +8,5 @@ LICENSE=MIT
 RDEPEND=dev-lang/python
 SLOT=0
 SRC_URI=http://launchpad.net/inotifyx/dev/v0.2.0/+download/inotifyx-0.2.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=29654e7eb4fbe6a048a22f52be29c5d0

@@ -9,5 +9,5 @@ LICENSE=BSD
 RDEPEND=dev-python/setuptools dev-vcs/subversion =dev-lang/python-2*
 SLOT=0
 SRC_URI=http://www.enthought.com/repo/ETS/ETSProjectTools-0.6.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=6ca509085c31f5d8d9ec5e533e9b1b06

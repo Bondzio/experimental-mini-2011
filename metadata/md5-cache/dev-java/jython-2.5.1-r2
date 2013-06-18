@@ -10,5 +10,5 @@ RDEPEND=>=virtual/jre-1.5 =dev-java/jakarta-oro-2.0* >=dev-java/libreadline-java
 RESTRICT=test
 SLOT=2.5
 SRC_URI=http://www.python.org/ftp/python/2.5.5/Python-2.5.5.tgz mirror://gentoo/jython-2.5.1.tar.bz2
-_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	f31a0ec0d081047cbf9c0bbb4822d831	java-ant-2	65ba8d80c13cf56bad5ccec21a6b3c37	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-utils-2	52b7cfbf4f7225fcea7e7f18b6d83328	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
+_eclasses_=base	5f55566958e88506923ea360535053cc	eutils	f31a0ec0d081047cbf9c0bbb4822d831	java-ant-2	65ba8d80c13cf56bad5ccec21a6b3c37	java-pkg-2	65bbb59987d777c1106ae8aa4bf36e7b	java-utils-2	52b7cfbf4f7225fcea7e7f18b6d83328	multilib	892e597faee02a5b94eb02ab512e7622	python	3b9c3f31101dd0aa8ba09f3230c8054b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	6601b4c5b3f019a993db59a50e1854e4
 _md5_=624049612e40d96679741a5b548b4ee0

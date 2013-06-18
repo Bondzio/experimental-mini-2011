@@ -10,5 +10,5 @@ RDEPEND=python_abis_2.5? ( dev-lang/python:2.5 ) python_abis_2.6? ( dev-lang/pyt
 REQUIRED_USE=|| ( python_abis_2.5 python_abis_2.6 python_abis_2.7 )
 SLOT=0
 SRC_URI=http://downloads.egenix.com/python/egenix-mx-base-3.2.6.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=982329459164c244bb6684c52c22dc9b

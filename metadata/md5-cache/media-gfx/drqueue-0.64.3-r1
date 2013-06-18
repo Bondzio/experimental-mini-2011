@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=X? ( x11-libs/gtk+:2 ) ruby? ( dev-lang/ruby ) app-shells/tcsh python? ( =dev-lang/python-2* )
 SLOT=0
 SRC_URI=http://drqueue.org/files/1-Sources_all_platforms/drqueue.0.64.3.tgz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	python	9b77f753831eed079d94f0682b500604	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	eutils	f31a0ec0d081047cbf9c0bbb4822d831	multilib	892e597faee02a5b94eb02ab512e7622	python	3b9c3f31101dd0aa8ba09f3230c8054b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
 _md5_=8552a46b5c93ea60bc36e33cb4042b49

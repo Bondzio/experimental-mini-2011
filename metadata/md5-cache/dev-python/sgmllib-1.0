@@ -10,5 +10,5 @@ RDEPEND=python_abis_3.1? ( dev-lang/python:3.1 ) python_abis_3.2? ( dev-lang/pyt
 REQUIRED_USE=|| ( python_abis_3.1 python_abis_3.2 python_abis_3.3 python_abis_3.4 )
 SLOT=0
 SRC_URI=http://feedparser.googlecode.com/files/feedparser-5.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=8c6dfa5933dbae334ce515867f352a48

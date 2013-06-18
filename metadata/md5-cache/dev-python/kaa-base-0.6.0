@@ -9,5 +9,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/glib-2.4.0 avahi? ( net-dns/avahi[python] ) sqlite? ( dev-python/dbus-python ) dev-python/pynotifier lirc? ( dev-python/pylirc ) tls? ( dev-python/tlslite ) =dev-lang/python-2* =dev-lang/python-2*[sqlite?,threads(+)]
 SLOT=0
 SRC_URI=mirror://sourceforge/freevo/kaa-base-0.6.0.tar.gz
-_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	9b77f753831eed079d94f0682b500604
+_eclasses_=distutils	eff3570d81107afab02b39caabc62cc7	python	3b9c3f31101dd0aa8ba09f3230c8054b
 _md5_=2c71c1b5dedfdf013a7d9807a48943ea
