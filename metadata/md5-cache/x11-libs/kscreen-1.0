@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install postinst
+DEPEND=dev-util/cmake =x11-libs/libkscreen-1.0
+DESCRIPTION=Improved screen management for KDE
+EAPI=4
+HOMEPAGE=http://kde.org/
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL
+RDEPEND=dev-util/cmake =x11-libs/libkscreen-1.0
+SLOT=0
+SRC_URI=http://download.kde.org/stable/kscreen/1.0/src/kscreen-1.0.tar.bz2
+_md5_=40887dd723e3d8ae780da3d1618b5233
