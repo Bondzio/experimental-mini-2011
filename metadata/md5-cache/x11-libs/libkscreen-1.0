@@ -8,4 +8,4 @@ LICENSE=LGPL
 RDEPEND=dev-util/cmake
 SLOT=0
 SRC_URI=http://download.kde.org/stable/libkscreen/1.0/src/libkscreen-1.0.tar.bz2
-_md5_=958a00e0a30d4af91b2bb058cff553d3
+_md5_=e4cee736dd4bb99e35a977c18e082219
