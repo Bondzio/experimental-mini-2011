@@ -1,28 +1,29 @@
-# Copyright (C) 2013 Jonathan Vasquez <jvasquez1011@gmail.com>
-# Distributed under the terms of the Simplified BSD License.
+# Copyright 1999-2013 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libkscreen/libkscreen-1.0.ebuild,v 1.1 2013/06/23 10:54:34 johu Exp $
 
-EAPI="4"
+EAPI=5
 
-DESCRIPTION="Library for KScreen: Improved screen management for KDE"
-HOMEPAGE="http://kde.org/"
-SRC_URI="http://download.kde.org/stable/${PN}/${PV}/src/${P}.tar.bz2"
+VIRTUALX_REQUIRED="test"
+inherit kde4-base
 
-LICENSE="LGPL"
-SLOT="0"
+DESCRIPTION="KDE screen management library"
+HOMEPAGE="https://projects.kde.org/projects/playground/libs/libkscreen"
+SRC_URI="mirror://kde/stable/${PN}/${PV}/src/${P}.tar.bz2"
+LICENSE="GPL-2"
+SLOT="4"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="debug"
 
-DEPEND="dev-util/cmake"
-RDEPEND="${DEPEND}"
+RDEPEND="
+	>=dev-libs/qjson-0.8
+	x11-libs/libX11
+	x11-libs/libxcb
+	x11-libs/libXrandr
+"
+DEPEND="
+	${RDEPEND}
+	test? ( dev-qt/qttest:4 )
+"
 
-src_compile()
-{
-	cmake \
-	 	-DCMAKE_INSTALL_PREFIX:PATH=/usr ${S} || die "Could not configure ${PN} with cmake."
-	emake
-}
-
-src_install()
-{
-	emake DESTDIR="${D}" install
-}
+RESTRICT="test"
