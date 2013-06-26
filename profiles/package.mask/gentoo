@@ -1,6 +1,6 @@
 ####################################################################
 
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14857 2013/06/26 03:08:32 patrick Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.14863 2013/06/26 15:46:49 lu_zero Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked. Please be extremely
@@ -32,11 +32,15 @@
 
 #--- END OF EXAMPLES ---
 
-# Patrick Lauer <patrick@gentoo.org> (26 Jun 2013)
-# Conflicts with app-emulation/emul-linux-x86-medialibs
-# and many other packages
-=media-libs/libvpx-1.2.0_pre20130625
-=media-sound/lame-3.99.5-r1
+# Julian Ospald <hasufell@gentoo.org> (26 Jun 2013)
+# Depends on masked dev-lang/lua-5.2
+>=games-emulation/sdlmame-0.149
+>=games-emulation/sdlmess-0.149
+
+# Aaron W. Swenson <titanofold@gentoo.org> (26 Jun 2013)
+# PostGIS beta/rc releases are not considered production ready neither
+# here nor upstream. Use at your own risk.
+>=dev-db/postgis-2.1.0_beta3
 
 # Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (25 Jun 2013)
 # Mask new ptlib/opal for breakage, tracked in bug #474742
@@ -194,13 +198,6 @@ dev-util/lafilefixer
 # Masked until reverse dependencies are tested bug 401009.
 =dev-python/imaging-2.0.0
 
-# Joerg Bornkessel <hd_brummy@gentoo.org> (26 May 2013)
-# dead on upstream, homepage dead
-# failed on compile >=media-video/vdr-1.7.27
-# see wrt bug 414245 414177, use as alternative media-plugins/vdr-cdplayer
-# Removal in ~ 30 days
-media-plugins/vdr-vdrcd
-
 # Justin Lecher <jlec@gentoo.org> (25 May 2013)
 # Upstream dropped support long ago
 # Switch to sys-fs/aufs3 or
@@ -239,11 +236,6 @@ dev-php/ezc-Graph
 # Removal in 30 days
 x11-themes/pekwm-themes-hewphoria
 
-# Maxim Koltsov <maksbotan@gentoo.org> (16 May 2013)
-# Needs masked ffmpeg-9
-=media-video/mplayer2-2.0_p20130428
-=media-libs/ffmpegsource-2.17.4_pre755
-
 # Markos Chandras <hwoarang@gentoo.org> (12 May 2013)
 # Does not build. Dead upstream. Bug #467286
 # Removal in 30 days
@@ -259,10 +251,6 @@ dev-python/gdl-python
 # Queries kernel source location wrong wrt #370099
 # And fails to build with Linux 3.8+
 media-sound/line6usb
-
-# Tom Wijsman <TomWij@gentoo.org> (05 May 2013)
-# Masking media-video/handbrake until =media-video/ffmpeg-1.2 is unmasked.
-media-video/handbrake
 
 # Kacper Kowalik <xarthisius@gentoo.org> (01 May 2013)
 # Removal due to licensing issue wrt #452420
@@ -590,10 +578,6 @@ media-gfx/yafaray
 # Masked until bug #456788 is fixed.
 =net-analyzer/mtr-0.83
 
-# Markos Chandras <hwoarang@gentoo.org> (17 Feb 2013)
-# Does not build with libav-0.8
-=media-video/qx11grab-0.4.7
-
 # Alexis Ballier <aballier@gentoo.org> (15 Feb 2013)
 # Starting from this version, some decoders and encoders (like AAC or APE)
 # switched to outputing or needing planar audio, this breaks some applications
@@ -708,10 +692,7 @@ net-dialup/hsfmodem
 dev-vcs/gitosis
 dev-vcs/gitosis-gentoo
 
-# Diego Elio Pettenò <flameeyes@gentoo.org> (14 Nov 2012)
-# Masked for testing as some packages fail.
-# See bug #443230 for tracking the progress
-~virtual/ffmpeg-9
+
 
 # Joerg Bornkessel <hd_brummy@gentoo.org> (04 Nov 2012)
 # masked for testing, bug #422605
