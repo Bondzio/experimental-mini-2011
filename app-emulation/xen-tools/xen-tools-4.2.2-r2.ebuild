@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/xen-tools/xen-tools-4.2.2-r2.ebuild,v 1.1 2013/06/26 14:41:37 idella4 Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/xen-tools/xen-tools-4.2.2-r2.ebuild,v 1.4 2013/06/27 15:15:54 idella4 Exp $
 
 EAPI=5
 
@@ -9,7 +9,7 @@ PYTHON_REQ_USE='xml,threads'
 
 IPXE_TARBALL_URL="http://dev.gentoo.org/~idella4/tarballs/ipxe.tar.gz"
 XEN_SEABIOS_URL="http://dev.gentoo.org/~idella4/tarballs/seabios-0-20121121.tar.bz2"
-
+XSAPATCHES="http://dev.gentoo.org/~idella4/"
 if [[ $PV == *9999 ]]; then
 	KEYWORDS=""
 	REPO="xen-unstable.hg"
@@ -20,7 +20,8 @@ else
 	KEYWORDS="~amd64 ~x86"
 	SRC_URI="http://bits.xensource.com/oss-xen/release/${PV}/xen-${PV}.tar.gz
 	$IPXE_TARBALL_URL
-	$XEN_SEABIOS_URL"
+	$XEN_SEABIOS_URL
+	$XSAPATCHES/patches/XSA-55patches.tar.gz"
 	S="${WORKDIR}/xen-${PV}"
 fi
 
@@ -68,8 +69,7 @@ DEPEND="${CDEPEND}
 		dev-texlive/texlive-pictures
 		dev-texlive/texlive-latexrecommended
 	)
-	hvm? (  x11-proto/xproto )
-	qemu? ( >=sys-apps/texinfo-5 )"
+	hvm? (  x11-proto/xproto )"
 RDEPEND="${CDEPEND}
 	sys-apps/iproute2
 	net-misc/bridge-utils
@@ -199,6 +199,9 @@ src_prepare() {
 	epatch "${FILESDIR}"/xen-4-ulong.patch \
 		"${FILESDIR}"/${PN}-4.2-xen_disk_leak.patch
 
+	# Set dom0-min-mem to kb; Bug #472982
+	epatch "${FILESDIR}"/${PN/-tools/}-4.2-configsxp.patch
+
 	#Security patches, currently valid
 	epatch "${FILESDIR}"/xen-4-CVE-2012-6075-XSA-41.patch \
 		"${FILESDIR}"/xen-4-CVE-2013-1922-XSA-48.patch \
@@ -208,12 +211,12 @@ src_prepare() {
 		"${FILESDIR}"/xen-4.2-CVE-2013-3-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-4-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-5to7-XSA-55.patch \
-		"${FILESDIR}"/xen-4.2-CVE-2013-8-XSA-55.patch \
+		"${WORKDIR}"/files/xen-4.2-CVE-2013-8-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-9to10-XSA-55.patch \
-		"${FILESDIR}"/xen-4.2-CVE-2013-11-XSA-55.patch \
+		"${WORKDIR}"/files/xen-4.2-CVE-2013-11-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-12to13-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-14-XSA-55.patch \
-		"${FILESDIR}"/xen-4.2-CVE-2013-15-XSA-55.patch \
+		"${WORKDIR}"/files/xen-4.2-CVE-2013-15-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-16-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-17-XSA-55.patch \
 		"${FILESDIR}"/xen-4.2-CVE-2013-18to19-XSA-55.patch \
