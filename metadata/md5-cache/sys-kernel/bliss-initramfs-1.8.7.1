@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Creates an initramfs for ZFS
+EAPI=4
+HOMEPAGE=https://github.com/fearedbliss/Bliss-Initramfs-Creator
+IUSE=srm luks
+KEYWORDS=amd64
+LICENSE=MPL-2.0
+RDEPEND=app-arch/cpio app-editors/nano sys-apps/busybox sys-kernel/spl sys-fs/zfs sys-fs/zfs-kmod sys-apps/kmod srm? ( sys-fs/squashfs-tools ) luks? ( sys-fs/cryptsetup app-crypt/gnupg )
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/fearedbliss/Bliss-Initramfs-Creator/archive/1.8.7.1.tar.gz -> bliss-initramfs-1.8.7.1.tar.gz
+_md5_=099db1370f340b15894ee9329f50b426
