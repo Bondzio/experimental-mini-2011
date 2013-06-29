@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/libva/libva-9999.ebuild,v 1.17 2013/06/27 13:59:58 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libva/libva-9999.ebuild,v 1.18 2013/06/29 03:43:38 aballier Exp $
 
 EAPI=4
 
@@ -77,6 +77,4 @@ src_install() {
 	emake DESTDIR="${D}" install || die
 	dodoc NEWS || die
 	find "${D}" -name '*.la' -delete
-	# collision with media-video/mjpegtools
-	mv "${ED}"/usr/bin/{mpeg2enc,mpeg2enc_libva} || die
 }
