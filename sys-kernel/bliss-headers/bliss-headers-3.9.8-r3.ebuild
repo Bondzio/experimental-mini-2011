@@ -6,7 +6,7 @@ EAPI="4"
 inherit eutils
 
 # Local Version
-LV="FB.02"
+LV="FB.03"
 
 # Other Variables
 _K="/usr/src/linux-${PV}-${LV}"
@@ -29,8 +29,8 @@ src_compile() {
 
 src_install()
 {
-	mkdir -p ${D}/usr/src/
-	cp -r ${S}/headers/* ${D}/usr/src/
+	dodir /usr/src/
+	cp -R ${S}/headers/* ${D}/usr/src/
 }
 
 pkg_postinst()
