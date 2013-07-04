@@ -4,9 +4,10 @@ DESCRIPTION=Tool for the visualization and analysis of molecular structures
 EAPI=4
 HOMEPAGE=http://www.csc.fi/gopenmol/
 KEYWORDS=~amd64 ~x86 ~amd64-linux ~x86-linux
-LICENSE=as-is
+LICENSE=all-rights-reserved
 RDEPEND=dev-lang/tk dev-tcltk/bwidget media-libs/freeglut virtual/jpeg virtual/opengl x11-libs/libICE x11-libs/libXau x11-libs/libXdmcp x11-libs/libXi x11-libs/libXmu x11-libs/libXxf86vm =dev-lang/python-2*
+RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.csc.fi/gopenmol//distribute/gopenmol-3.00-linux.tar.gz
-_eclasses_=eutils	63afaaed8aa819fdcb814c7cd39495a2	multilib	892e597faee02a5b94eb02ab512e7622	prefix	21058c21ca48453d771df15500873ede	python	3b9c3f31101dd0aa8ba09f3230c8054b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
-_md5_=b311c7db79b03458e7032d2ca25d7f98
+_eclasses_=eutils	63afaaed8aa819fdcb814c7cd39495a2	multilib	892e597faee02a5b94eb02ab512e7622	python	3b9c3f31101dd0aa8ba09f3230c8054b	toolchain-funcs	d3b5812eeab360bc41aa48b6cdbbc142	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=c25f0ad76b50c05029a8f74294ae0f4a

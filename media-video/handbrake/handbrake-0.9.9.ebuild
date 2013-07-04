@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/handbrake/handbrake-0.9.9.ebuild,v 1.3 2013/06/29 20:35:06 tomwij Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/handbrake/handbrake-0.9.9.ebuild,v 1.5 2013/07/04 14:00:32 tomwij Exp $
 
 EAPI="5"
 
@@ -42,7 +42,7 @@ RDEPEND="
 	media-libs/libvorbis
 	media-libs/x264
 	media-sound/lame
-	ffmpeg? ( =virtual/ffmpeg-9 !<media-video/ffmpeg-1.2.1 )
+	ffmpeg? ( =virtual/ffmpeg-9 !!<media-video/ffmpeg-1.2.1 )
 	sys-libs/zlib
 	gstreamer? (
 		media-libs/gstreamer:1.0
@@ -91,6 +91,7 @@ src_prepare() {
 
 	# Remove faac dependency until its compilation errors can be resolved.
 	epatch "${FILESDIR}"/handbrake-9999-remove-faac-dependency.patch
+	sed -i 's/-lfaac//' gtk/configure.ac || die
 
 	# Make use of an older version of libmkv.
 	epatch "${FILESDIR}"/handbrake-9999-use-older-libmkv.patch
