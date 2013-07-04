@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst unpack
+DEPEND=dev-vcs/git
+DESCRIPTION=Config and scripts mdev-like-a-boss
+EAPI=4
+HOMEPAGE=https://github.com/slashbeast/mdev-like-a-boss
+IUSE=+mdev-bb
+KEYWORDS=~amd64 ~x86
+LICENSE=BSD
+RDEPEND=mdev-bb? ( =sys-fs/mdev-bb-1.21.1 )
+SLOT=0
+_eclasses_=git-2	e92e09651292b1bef5656592364550f7
+_md5_=a645dbf490f061a946e9cced049b170e
