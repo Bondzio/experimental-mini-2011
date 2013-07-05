@@ -12,7 +12,7 @@ SRC_URI="
 	arm?	( http://syncapp.bittorrent.com/${PV}/btsync_arm-${PV}.tar.gz )
 	ppc?	( http://syncapp.bittorrent.com/${PV}/btsync_powerpc-${PV}.tar.gz )"
 
-RESTRICT="mirror"
+RESTRICT="mirror strip"
 LICENSE="BitTorrent"
 SLOT="0"
 KEYWORDS="amd64 x86 ~arm ~ppc"
@@ -21,9 +21,7 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
-QA_PRESTRIPPED="opt/btsync/btsync"
 QA_PREBUILT="opt/btsync/btsync"
-QA_WX_LOAD="opt/btsync/btsync"
 
 S="${WORKDIR}"
 
@@ -37,5 +35,5 @@ src_install() {
 	cp ${FILESDIR}/init.d/${NAME} ${D}/etc/init.d/
 
 	# Set more secure permissions
-	chmod 744 btsync
+	chmod 755 ${D}/etc/init.d/btsync
 }
