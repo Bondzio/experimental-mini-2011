@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.37 2013/05/27 01:33:15 floppym Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/flexget/flexget-9999.ebuild,v 1.38 2013/07/06 20:45:19 floppym Exp $
 
 EAPI=5
 
@@ -32,7 +32,8 @@ DEPEND="
 	<dev-python/sqlalchemy-0.7.99
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 	dev-python/beautifulsoup:python-2[${PYTHON_USEDEP}]
-	dev-python/beautifulsoup:4[${PYTHON_USEDEP}]
+	>=dev-python/beautifulsoup-4.1:4[${PYTHON_USEDEP}]
+	<dev-python/beautifulsoup-4.3:4[${PYTHON_USEDEP}]
 	dev-python/html5lib[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]
 	>=dev-python/jsonschema-2.0[${PYTHON_USEDEP}]
@@ -59,11 +60,7 @@ fi
 
 python_prepare_all() {
 	# Prevent setup from grabbing nose from pypi
-	sed -e /setup_requires/d \
-		-e '/SQLAlchemy/s/, <0.8//' \
-		-e '/BeautifulSoup/s/, <3.3//' \
-		-e '/beautifulsoup4/s/, <4.2//' \
-		-i pavement.py || die
+	sed -e /setup_requires/d -i pavement.py || die
 
 	distutils-r1_python_prepare_all
 }
