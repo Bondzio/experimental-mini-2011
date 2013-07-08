@@ -3740,7 +3740,6 @@ media-video/mpv:enca - Enables support for charset discovery and conversion usin
 media-video/mpv:libguess - Enables support for charset discovery and conversion using app-i18n/libguess
 media-video/mpv:mng - MNG input support
 media-video/mpv:mp3 - Enable support for mp3 decoding over media-sound/mpg123 instead of relying on ffmpeg support.
-media-video/mpv:network - Enables network streaming support
 media-video/mpv:postproc - Enable image post-processing via libpostproc
 media-video/mpv:pvr - Enable Video4Linux2 MPEG PVR
 media-video/mpv:quvi - Enable support for streaming sites using media-libs/libquvi
@@ -4113,8 +4112,6 @@ net-dns/nsd:ratelimit - Enables ratelimiting, based on query name, type and sour
 net-dns/nsd:root-server - Configure NSD as a root server
 net-dns/nsd:runtime-checks - Enable runtime checks, this could lead to a reduced service level
 net-dns/nsd:zone-stats - Enable per-zone statistics logging, this could lead to a reduced service level
-net-dns/opendnssec:auditor - Enables auditing capabilities for OpenDNSSEC
-net-dns/opendnssec:eppclient - Enables support for automatic submission of DNSSEC keys to an upstream epp server
 net-dns/opendnssec:external-hsm - Enables support for storing DNSSEC keys through an arbitrary non-portage PKCS#11 interface, specified through an environment variable
 net-dns/opendnssec:opensc - Enables support for storing DNSSEC keys through a dev-libs/opensc PKCS#11 interface
 net-dns/opendnssec:signer - Enables signing capabilities for OpenDNSSEC
