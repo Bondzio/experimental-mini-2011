@@ -1,6 +1,6 @@
 # Copyright 1999-2013 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-qt/qtcore/qtcore-4.8.5.ebuild,v 1.1 2013/07/09 10:47:48 pesa Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-qt/qtcore/qtcore-4.8.5.ebuild,v 1.3 2013/07/10 09:02:41 pesa Exp $
 
 EAPI=5
 
@@ -28,7 +28,7 @@ PDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/moc-workaround-for-BOOST_JOIN.patch"
+	"${FILESDIR}/moc-boost-lexical-cast.patch"
 )
 
 pkg_setup() {
@@ -46,13 +46,7 @@ pkg_setup() {
 		tools/linguist/lupdate"
 
 	QT4_EXTRACT_DIRECTORIES="${QT4_TARGET_DIRECTORIES}
-		include/Qt
-		include/QtCore
-		include/QtDeclarative
-		include/QtGui
-		include/QtNetwork
-		include/QtScript
-		include/QtXml
+		include
 		src/plugins/plugins.pro
 		src/plugins/qpluginbase.pri
 		src/src.pro
